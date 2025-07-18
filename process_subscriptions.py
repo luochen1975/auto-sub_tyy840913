@@ -12,6 +12,36 @@ SUBSCRIPTION_FILE = "sub.txt"
 # 代理节点输出文件路径
 OUTPUT_CONFIG_FILE = "config.txt"
 
+# --- 函数定义 ---
+# 确保 fetch_subscription_content 在所有其他函数（特别是 main 函数）之前定义
+def fetch_subscription_content(url: str) -> str | None:
+    """
+    从给定的URL获取订阅内容。
+    如果获取失败，则返回None。
+    """
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()  # 如果状态码不是200，抛出HTTPError
+        
+        # 尝试以 UTF-8 解码，如果失败则尝试其他常见编码
+        try:
+            content = response.content.decode('utf-8')
+        except UnicodeDecodeError:
+            try:
+                content = response.content.decode('gbk') # 尝试GBK，中文环境可能遇到
+            except UnicodeDecodeError:
+                content = response.content.decode('latin-1') # Fallback to latin-1
+        
+        print(f"✅ 成功获取内容: {url}")
+        return content
+    except requests.exceptions.RequestException as e:
+        print(f"❌ 获取订阅失败 ({url}): {e}")
+        return None
+    except Exception as e:
+        print(f"❌ 发生未知错误 ({url}): {e}")
+        return None
+
+
 # --- 辅助函数：将Clash YAML字典转换为标准URI ---
 def _parse_clash_proxy_entry(proxy_entry: dict) -> tuple[str, str] | None:
     """
@@ -155,8 +185,7 @@ def _parse_clash_proxy_entry(proxy_entry: dict) -> tuple[str, str] | None:
     if node_uri:
         return (dedup_id, node_uri)
     else:
-        # 如果无法重构为标准URI，将整个字典转换为字符串作为去重ID和原始URI
-        # 这确保了节点不会丢失，但可能不是可用的URI
+        # 如果无法重构为标准URI，将整个字典转换为字符串作为去重ID，确保节点不会丢失
         dedup_id = f"clash_unknown_{json.dumps(proxy_entry, sort_keys=True, ensure_ascii=False)[:100]}"
         return (dedup_id, str(proxy_entry)) # 将字典转换为字符串形式存储
 
@@ -170,10 +199,8 @@ def _parse_raw_uri_line(line: str) -> tuple[str, str] | None:
         return None
 
     # 过滤掉明显的规则行、注释行或非代理URI的行
-    # 增加对 `name:` 的过滤，因为在某些非标准订阅中，节点名称可能以 `- name:` 开头
     if line.startswith(('- DOMAIN-SUFFIX', '- DOMAIN-KEYWORD', '- IP-CIDR', '- GEOIP', '- PROCESS-NAME', '- RULE-SET', '- MATCH', '#')) or \
        '→ tg@' in line or 'name:' in line.lower() or not re.match(r'^[a-zA-Z]+://', line): # 确保以协议头开头
-        # print(f"ℹ️ 跳过非代理协议行: {line[:50]}...") # 避免过多输出
         return None
 
     # 常用协议前缀列表
@@ -194,7 +221,6 @@ def _parse_raw_uri_line(line: str) -> tuple[str, str] | None:
                 encoded_part = node_uri[len(prefix):]
                 try:
                     # 尝试将这部分编码为 ASCII 字节，如果包含非 ASCII 字符，会抛出 UnicodeEncodeError
-                    # 这是为了避免 base64.b64decode 内部的 'ascii' codec 错误
                     encoded_bytes_for_b64 = encoded_part.encode('ascii') + b'=='
                     decoded_bytes = base64.b64decode(encoded_bytes_for_b64)
                     
@@ -243,12 +269,10 @@ def _parse_raw_uri_line(line: str) -> tuple[str, str] | None:
                                 port = match.group(3)
                                 dedup_id = f"vless://{uuid}@{server}:{port}"
                                 return (dedup_id, node_uri)
-                        # 其他 Base64 编码但非 JSON 的情况，回退到通用处理
                         print(f"⚠️ {prefix} Base64解码内容既非JSON也非标准URI格式: {decoded_content[:50]}...")
 
                 except (UnicodeEncodeError, base64.binascii.Error, ValueError) as e:
                     # Base64 解码失败或包含非 ASCII 字符，回退到非 Base64 格式的解析
-                    # print(f"ℹ️ {prefix} Base64解码失败，尝试作为普通URI解析: {e}")
                     pass # 继续尝试下面的传统URI解析
 
             # 传统 URI 格式解析 (如果上面 Base64 尝试失败或不适用)
@@ -262,7 +286,6 @@ def _parse_raw_uri_line(line: str) -> tuple[str, str] | None:
                     dedup_id = f"ss://{server}:{port}"
                     return (dedup_id, node_uri)
             elif prefix == "vmess://": # VMess 几乎总是 Base64 JSON，这里作为回退
-                # 如果到这里还没返回，说明Base64解码失败，这个VMess链接可能无效
                 print(f"⚠️ VMess 链接无法解析 (非Base64 JSON): {node_uri[:50]}...")
                 return None
             elif prefix == "trojan://":
@@ -339,12 +362,10 @@ def _parse_raw_uri_line(line: str) -> tuple[str, str] | None:
                     print(f"⚠️ SSR 链接解析失败: {e} - {node_uri[:50]}...")
             
             # 如果以上所有解析都失败，但确实是协议头开头的行，则作为通用节点处理
-            # 使用协议头 + 链接前N个字符作为去重ID
             print(f"❓ 无法完全解析已知协议，但识别到协议头: {node_uri[:100]}...")
             return (dedup_id_base, node_uri) # 返回原始链接和通用去重ID
 
     # 如果一行不是任何已知协议开头，则跳过
-    # print(f"❓ 未识别的行 (非协议或规则): {line[:100]}...")
     return None
 
 def parse_nodes(content: str) -> list[tuple[str, str]]:
@@ -382,7 +403,6 @@ def parse_nodes(content: str) -> list[tuple[str, str]]:
                 print("ℹ️ 找到 YAML 中的 'proxy-providers' 部分，不深入获取其内容。")
                 for provider_name, provider_config in yaml_data['proxy-providers'].items():
                     if isinstance(provider_config, dict) and 'url' in provider_config:
-                        # print(f"   识别到代理提供者 URL: {provider_config['url']}")
                         pass # 暂时不将 provider 添加到主节点列表
 
             return nodes_info # 如果成功解析了 YAML，就返回，不再尝试其他解析方式
