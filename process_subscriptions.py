@@ -3,6 +3,7 @@ import base64
 import re
 import json
 import os
+import yaml # 导入 PyYAML 库
 from urllib.parse import urlparse, parse_qs, unquote
 
 # --- 配置部分 ---
@@ -42,7 +43,7 @@ def fetch_subscription_content(url: str) -> str | None:
 
 def parse_nodes(content: str) -> list[tuple[str, str]]:
     """
-    解析解码后的订阅内容，**只识别出代理节点，不进行深度解析**。
+    解析解码后的订阅内容，从 Clash YAML 或纯节点列表中识别并获取代理节点。
     返回一个列表，每个元素是一个元组 (去重标识, 原始节点URI)。
     去重标识使用原始链接的前缀或部分，确保尽量保留所有独特的链接。
     """
@@ -55,57 +56,119 @@ def parse_nodes(content: str) -> list[tuple[str, str]]:
         "http://", "https://", "socks5://"
     )
 
-    # 如果内容是 YAML 格式，尝试逐行处理
-    if content.strip().startswith('proxies:') or content.strip().startswith('proxy-providers:') or content.strip().startswith('rules:'):
-        # print("ℹ️ 内容被识别为 YAML 格式。")
-        for line in content.splitlines():
-            stripped_line = line.strip()
+    # 尝试作为 YAML 文件解析
+    try:
+        # 如果内容看起来是 YAML 的开头，尝试用 PyYAML 解析
+        if content.strip().startswith(('proxies:', 'proxy-providers:', 'rules:', 'port:', 'mixed-port:', 'allow-lan:')):
+            # print("ℹ️ 尝试将内容解析为 YAML。")
+            yaml_data = yaml.safe_load(content)
 
-            # 过滤掉明显的规则行、注释行或非代理URI的行
-            if stripped_line.startswith(('- DOMAIN-SUFFIX', '- DOMAIN-KEYWORD', '- IP-CIDR', '- GEOIP', '- PROCESS-NAME', '- RULE-SET', '- MATCH', '#')) or \
-               '→ tg@' in stripped_line or 'name:' in stripped_line.lower() or not stripped_line:
-                continue # 跳过规则行、注释行、杂项行和空行
-
-            # 尝试从 YAML 格式中提取完整的代理 URI
-            # 这里我们放宽匹配，只要行包含协议前缀就尝试处理
-            for prefix in protocol_prefixes:
-                if prefix in stripped_line:
-                    # 找到协议开头的实际URI部分
-                    match = re.search(r'(' + re.escape(prefix) + r'.*)', stripped_line)
-                    if match:
-                        node_uri = match.group(0).strip()
-                        # 对于 Base64 编码的整个订阅内容，如果它也是 Base64 字符串，
-                        # 则先尝试解码。这一步发生在 main 函数的 processed_content 阶段。
-                        # 这里我们只确保行本身符合URI格式。
+            # 提取 proxies 部分的节点
+            if isinstance(yaml_data, dict) and 'proxies' in yaml_data and isinstance(yaml_data['proxies'], list):
+                # print("ℹ️ 找到 YAML 中的 'proxies' 部分。")
+                for proxy_entry in yaml_data['proxies']:
+                    if isinstance(proxy_entry, dict) and 'type' in proxy_entry:
+                        # 尝试根据类型重构 URI 或直接使用某种标准格式
+                        # 这是一个简化的示例，Clash YAML 结构复杂，需要根据实际情况细化
+                        # 最简单的方式是尝试从字典中直接提取 URI 模式的字段
                         
-                        # 使用协议头 + 链接前N个字符作为去重ID，因为我们不做深度解析
-                        dedup_id = f"{prefix}{node_uri[:100]}" 
-                        nodes_info.append((dedup_id, node_uri))
-                        break # 找到一个协议就处理并跳出内层循环
-            # else: # 如果循环结束没有找到协议前缀
-                # print(f"❓ YAML 行未识别为已知代理协议: {stripped_line[:100]}...")
-        if not nodes_info and len(content) > 500: # 如果YAML解析器未能识别任何节点，且内容较长，可能是无效YAML
-             print(f"⚠️ YAML 内容未能解析出任何已知代理节点，可能是无效或非标准YAML。")
-    else: # 不是 YAML 格式，按行解析 (通常是Base64解码后的纯代理链接列表)
-        # print("ℹ️ 内容被识别为非 YAML 格式。")
-        for line in content.splitlines():
-            stripped_line = line.strip()
-            # 过滤掉明显的规则行、注释行或非代理URI的行
-            if stripped_line.startswith(('- DOMAIN-SUFFIX', '- DOMAIN-KEYWORD', '- IP-CIDR', '- GEOIP', '- PROCESS-NAME', '- RULE-SET', '- MATCH', '#')) or \
-               '→ tg@' in stripped_line or not stripped_line:
-                continue # 跳过规则行、注释行、杂项行和空行
+                        # 对于 Clash YAML，通常节点是字典形式，需要根据类型构建URI
+                        # 这里我们只尝试将常见的几种直接提取为URI
+                        node_uri = None
+                        if proxy_entry['type'] == 'ss':
+                            server = proxy_entry.get('server')
+                            port = proxy_entry.get('port')
+                            cipher = proxy_entry.get('cipher')
+                            password = proxy_entry.get('password')
+                            if server and port and cipher and password:
+                                # ss://base64(method:password)@server:port
+                                # 简化为只提取关键信息做去重，保留完整的原始字典，方便后续处理
+                                # 或者尝试拼接为最简单的ss://...
+                                try:
+                                    auth_part = base64.urlsafe_b64encode(f"{cipher}:{password}".encode()).decode().rstrip('=')
+                                    node_uri = f"ss://{auth_part}@{server}:{port}"
+                                except Exception:
+                                    node_uri = None # 拼接失败
+                        elif proxy_entry['type'] == 'vmess':
+                            # vmess://base64(json)
+                            # 从yaml字典直接构建json
+                            try:
+                                vmess_json = json.dumps(proxy_entry, ensure_ascii=False) # 允许非ASCII字符
+                                node_uri = "vmess://" + base64.b64encode(vmess_json.encode('utf-8')).decode().rstrip('=')
+                            except Exception:
+                                node_uri = None
+                        elif proxy_entry['type'] == 'trojan':
+                             server = proxy_entry.get('server')
+                             port = proxy_entry.get('port')
+                             password = proxy_entry.get('password')
+                             if server and port and password:
+                                 # trojan://password@server:port
+                                 node_uri = f"trojan://{password}@{server}:{port}"
+                        elif proxy_entry['type'] == 'vless':
+                            server = proxy_entry.get('server')
+                            port = proxy_entry.get('port')
+                            uuid = proxy_entry.get('uuid')
+                            if server and port and uuid:
+                                params = []
+                                if proxy_entry.get('udp'): params.append("udp=true")
+                                if proxy_entry.get('tls'): params.append("tls=true")
+                                if proxy_entry.get('skip-cert-verify'): params.append("skip-cert-verify=true")
+                                if proxy_entry.get('network'): params.append(f"type={proxy_entry['network']}")
+                                if proxy_entry.get('ws-path'): params.append(f"path={proxy_entry['ws-path']}")
+                                if proxy_entry.get('ws-headers') and 'Host' in proxy_entry['ws-headers']: params.append(f"host={proxy_entry['ws-headers']['Host']}")
+                                
+                                query_string = "?" + "&".join(params) if params else ""
+                                node_uri = f"vless://{uuid}@{server}:{port}{query_string}"
+                        # 可以在这里添加更多协议类型的处理 (hysteria, hysteria2, tuic, etc.)
+                        # 对于不直接是URI的字典形式节点，我们将其转换为字符串并作为去重ID
+                        if node_uri:
+                            dedup_id = f"{node_uri[:100]}"
+                            nodes_info.append((dedup_id, node_uri))
+                        else:
+                            # 如果无法重构为标准URI，将整个字典作为去重ID，保留其完整性
+                            dedup_id = f"clash_node_{json.dumps(proxy_entry, sort_keys=True, ensure_ascii=False)[:100]}"
+                            nodes_info.append((dedup_id, str(proxy_entry))) # 将字典转换为字符串形式存储
+                            # print(f"⚠️ 无法将Clash YAML节点重构为标准URI，存储为原始字典字符串: {str(proxy_entry)[:100]}...")
 
-            for prefix in protocol_prefixes:
-                if stripped_line.startswith(prefix):
-                    # 直接将原始行作为节点URI
-                    node_uri = stripped_line
-                    # 使用协议头 + 链接前N个字符作为去重ID
-                    dedup_id = f"{prefix}{node_uri[:100]}"
-                    nodes_info.append((dedup_id, node_uri))
-                    break # 找到一个协议就处理并跳出内层循环
-            # else: # 如果循环结束没有找到协议前缀
-                # print(f"❓ 未识别的协议行: {stripped_line[:100]}...") # 避免过多输出
-                
+
+            # 提取 proxy-providers 部分的节点 (通常是外部订阅，这里只作为识别，不深入获取)
+            if isinstance(yaml_data, dict) and 'proxy-providers' in yaml_data and isinstance(yaml_data['proxy-providers'], dict):
+                # print("ℹ️ 找到 YAML 中的 'proxy-providers' 部分。")
+                for provider_name, provider_config in yaml_data['proxy-providers'].items():
+                    if isinstance(provider_config, dict) and 'url' in provider_config:
+                        provider_url = provider_config['url']
+                        # 可以将 provider_url 作为一种特殊的“节点”进行记录或去重
+                        # 但通常我们不直接解析 provider_url 中的节点，因为它们是另一个订阅
+                        # 这里我们只简单识别并打印，不添加到主节点列表
+                        # print(f"   识别到代理提供者 URL: {provider_url}")
+                        pass # 暂时不将 provider 添加到主节点列表，以免重复获取或混淆
+
+            return nodes_info # 如果成功解析了 YAML，就返回，不再尝试其他解析方式
+
+    except yaml.YAMLError as e:
+        print(f"❌ 解析 YAML 内容失败 (PyYAML 错误): {e}")
+    except Exception as e:
+        print(f"❌ 解析 YAML 内容时发生未知错误: {e}")
+    
+    # 如果不是 YAML 或 YAML 解析失败，尝试按行解析 (用于 Base64 解码后的纯节点列表)
+    # print("ℹ️ 内容不是 YAML 或 YAML 解析失败，尝试按行解析。")
+    for line in content.splitlines():
+        stripped_line = line.strip()
+
+        # 过滤掉明显的规则行、注释行或非代理URI的行
+        if stripped_line.startswith(('- DOMAIN-SUFFIX', '- DOMAIN-KEYWORD', '- IP-CIDR', '- GEOIP', '- PROCESS-NAME', '- RULE-SET', '- MATCH', '#')) or \
+           '→ tg@' in stripped_line or not stripped_line:
+            continue # 跳过规则行、注释行、杂项行和空行
+
+        for prefix in protocol_prefixes:
+            if stripped_line.startswith(prefix):
+                # 直接将原始行作为节点URI
+                node_uri = stripped_line
+                # 使用协议头 + 链接前N个字符作为去重ID
+                dedup_id = f"{prefix}{node_uri[:100]}"
+                nodes_info.append((dedup_id, node_uri))
+                break # 找到一个协议就处理并跳出内层循环
+    
     return nodes_info
 
 def deduplicate_nodes(node_info_list: list[tuple[str, str]]) -> list[str]:
@@ -152,26 +215,20 @@ def main():
             processed_content = None
             parsed_url_obj = urlparse(url) 
             
-            # 如果是 .yaml 或 .yml 结尾的链接，或内容看起来是 YAML，直接作为原始文本处理
-            # 否则，尝试 Base64 解码。
-            if parsed_url_obj.path.lower().endswith(('.yaml', '.yml')) or \
-               raw_content.strip().startswith(('proxies:', 'proxy-providers:', 'rules:')):
-                processed_content = raw_content
-                print(f"   订阅链接或内容识别为 YAML 格式，作为原始文本处理。")
-            else:
-                # 尝试 Base64 解码。如果失败，则认为内容是原始文本
+            # 判断内容是否是 Base64 编码的纯文本或 YAML
+            # 优先尝试 Base64 解码，因为很多订阅是 Base64 编码的 YAML
+            try:
+                # 尝试 URL-safe Base64 解码，并处理填充
+                decoded_bytes = base64.urlsafe_b64decode(raw_content.strip() + '==')
+                # 尝试多种编码来解码 Base64 内容到字符串
                 try:
-                    # 尝试 URL-safe Base64 解码，并处理填充
-                    decoded_bytes = base64.urlsafe_b64decode(raw_content.strip() + '==')
-                    # 尝试多种编码来解码 Base64 内容到字符串
-                    try:
-                        processed_content = decoded_bytes.decode('utf-8')
-                    except UnicodeDecodeError:
-                        processed_content = decoded_bytes.decode('latin-1') # Fallback
-                    print(f"   内容被 Base64 解码。")
-                except (base64.binascii.Error, ValueError): # 捕获 Base64 格式错误或非ASCII字符导致的ValueError
-                    processed_content = raw_content
-                    print(f"   内容未被 Base64 解码 (可能是原始文本或解码失败)。")
+                    processed_content = decoded_bytes.decode('utf-8')
+                except UnicodeDecodeError:
+                    processed_content = decoded_bytes.decode('latin-1') # Fallback
+                print(f"   内容被 Base64 解码。")
+            except (base64.binascii.Error, ValueError): # 捕获 Base64 格式错误或非ASCII字符导致的ValueError
+                processed_content = raw_content
+                print(f"   内容未被 Base64 解码 (可能是原始文本或解码失败)。")
 
             if processed_content:
                 nodes_from_this_url = parse_nodes(processed_content)
