@@ -23,7 +23,6 @@ def fetch_subscription_content(url: str) -> str | None:
         response.raise_for_status()  # 如果状态码不是200，抛出HTTPError
         
         # 尝试以 UTF-8 解码，如果失败则尝试其他常见编码
-        # 注意：这里是解码 response.content (字节流) 到字符串
         try:
             content = response.content.decode('utf-8')
         except UnicodeDecodeError:
@@ -52,16 +51,8 @@ def parse_nodes(content: str) -> list[tuple[str, str]]:
     if content.strip().startswith('proxies:') or content.strip().startswith('proxy-providers:'):
         try:
             # 简化处理：从 YAML 中提取以 '  - ' 开头的行，这些通常是代理节点定义
-            # 这不是一个完整的 YAML 解析器，仅用于提取简单的 Clash/Surge 代理行
             for line in content.splitlines():
-                if line.strip().startswith('- ') and (
-                    'ss://' in line or 'vmess://' in line or 'trojan://' in line or 
-                    'vless://' in line or 'snell://' in line or 'hysteria://' in line or 
-                    'hysteria2://' in line or 'tuic://' in line or 'ssr://' in line or
-                    'http://' in line or 'https://' in line or 'socks5://' in line
-                ):
-                    # 从 YAML 格式中提取完整的代理 URI
-                    # 例如： - name: example-ss, type: ss, server: ..., port: ..., cipher: ..., password: ...
+                if line.strip().startswith('- '):
                     # 尝试用正则匹配URI部分
                     match = re.search(r'(ss|vmess|trojan|vless|snell|hysteria|hysteria2|tuic|ssr|http|https|socks5)://.*', line)
                     if match:
@@ -69,8 +60,6 @@ def parse_nodes(content: str) -> list[tuple[str, str]]:
                         # 然后将提取到的 URI 传递给现有的解析逻辑
                         temp_nodes_info = parse_single_node_uri(node_uri)
                         nodes_info.extend(temp_nodes_info)
-                    else:
-                        print(f"⚠️ 无法从 YAML 行中识别代理 URI: {line.strip()[:100]}...")
             if not nodes_info: # 如果 YAML 解析器未能识别任何节点，尝试作为普通文本列表解析
                  print(f"⚠️ YAML 内容未识别出已知代理节点，尝试按行解析。")
                  # 回退到按行解析
@@ -102,9 +91,29 @@ def parse_single_node_uri(line: str) -> list[tuple[str, str]]:
     # Shadowsocks (SS) 协议解析
     if line.startswith("ss://"):
         try:
+            # 尝试 Base64 解码，处理 Base64 编码的 SS 配置 (JSON 或其他)
             encoded_part = line[5:]
+            try:
+                # 尝试 Base64 解码
+                decoded_bytes = base64.b64decode(encoded_part + '==')
+                decoded_content = decoded_bytes.decode('utf-8')
+                
+                # 尝试作为 JSON 解析 (常见于某些 SS 链接)
+                node_info = json.loads(decoded_content)
+                server = node_info.get('add') or node_info.get('server')
+                port = node_info.get('port')
+                if server and port:
+                    dedup_id = f"ss://{server}:{port}"
+                    nodes_info_local.append((dedup_id, line))
+                    return nodes_info_local # 成功解析并返回
+            except (base64.binascii.Error, UnicodeDecodeError, json.JSONDecodeError):
+                # 如果 Base64 解码失败或不是 JSON，则继续按传统 SS URI 格式解析
+                pass
+            
+            # 传统 SS URI 格式解析: ss://[base64(method:password)]@server:port[#tag]
             parts = encoded_part.split('@', 1)
             server_part_with_tag = parts[1] if len(parts) == 2 else encoded_part
+
             server_port_match = re.search(r'([\w\d\.-]+):(\d+)', server_part_with_tag)
             if server_port_match:
                 server = server_port_match.group(1)
@@ -112,16 +121,26 @@ def parse_single_node_uri(line: str) -> list[tuple[str, str]]:
                 dedup_id = f"ss://{server}:{port}"
                 nodes_info_local.append((dedup_id, line))
             else:
-                print(f"⚠️ 无法从 SS 链接解析服务器/端口: {line[:50]}...")
+                print(f"⚠️ 无法从 SS 链接解析服务器/端口 (非Base64或传统格式): {line[:50]}...")
         except Exception as e:
             print(f"⚠️ 解析 SS 节点失败: {e} - {line[:50]}...")
 
-    # VMess 协议解析
+    # VMess 协议解析: vmess://[base64(json)]
     elif line.startswith("vmess://"):
         try:
             vmess_json_b64 = line[8:]
-            vmess_json_decoded = base64.b64decode(vmess_json_b64 + '==').decode('utf-8')
+            decoded_bytes = base64.b64decode(vmess_json_b64 + '==')
+            # 尝试多种编码来解码 Base64 内容
+            try:
+                vmess_json_decoded = decoded_bytes.decode('utf-8')
+            except UnicodeDecodeError:
+                try:
+                    vmess_json_decoded = decoded_bytes.decode('gbk')
+                except UnicodeDecodeError:
+                    vmess_json_decoded = decoded_bytes.decode('latin-1') # Fallback
+            
             node_info = json.loads(vmess_json_decoded)
+
             server = node_info.get('add')
             port = node_info.get('port')
             uuid = node_info.get('id', '')
@@ -130,8 +149,8 @@ def parse_single_node_uri(line: str) -> list[tuple[str, str]]:
                 nodes_info_local.append((dedup_id, line))
             else:
                 print(f"⚠️ 无法从 VMess JSON 解析服务器/端口: {line[:50]}...")
-        except (base64.binascii.Error, json.JSONDecodeError, KeyError) as e:
-            print(f"⚠️ 解析 VMess 节点 JSON 失败: {e} - {line[:50]}...")
+        except (base64.binascii.Error, json.JSONDecodeError, KeyError, UnicodeDecodeError) as e:
+            print(f"⚠️ 解析 VMess 节点失败: {e} - {line[:50]}...") # 统一错误信息
         except Exception as e:
             print(f"⚠️ 解析 VMess 节点失败: {e} - {line[:50]}...")
 
@@ -152,10 +171,33 @@ def parse_single_node_uri(line: str) -> list[tuple[str, str]]:
     # VLESS 协议解析
     elif line.startswith("vless://"):
         try:
+            # 尝试 Base64 解码，处理 Base64 编码的 VLESS 配置 (JSON 或其他)
+            encoded_part = line[8:]
+            try:
+                decoded_bytes = base64.b64decode(encoded_part + '==')
+                decoded_content = decoded_bytes.decode('utf-8')
+                
+                node_info = json.loads(decoded_content) # 尝试作为 JSON 解析
+                server = node_info.get('add') or node_info.get('server')
+                port = node_info.get('port')
+                uuid = node_info.get('id', '')
+                
+                if uuid and server and port:
+                    # 尝试从原始 Base64 URI 中重构 VLESS 链接，这可能有点复杂
+                    # 简单起见，如果解析出关键信息，就用这些信息做去重ID
+                    dedup_id = f"vless://{uuid}@{server}:{port}"
+                    nodes_info_local.append((dedup_id, line))
+                    return nodes_info_local # 成功解析并返回
+            except (base64.binascii.Error, UnicodeDecodeError, json.JSONDecodeError):
+                # 如果 Base64 解码失败或不是 JSON，则继续按传统 VLESS URI 格式解析
+                pass
+
+            # 传统 VLESS URI 格式解析: vless://UUID@server:port?params#tag
             parsed_url = urlparse(line)
             uuid = parsed_url.username or ""
             server = parsed_url.hostname
             port = parsed_url.port
+
             if uuid and server and port:
                 query_params = parse_qs(parsed_url.query)
                 security = query_params.get('security', [''])[0]
@@ -163,7 +205,7 @@ def parse_single_node_uri(line: str) -> list[tuple[str, str]]:
                 dedup_id = f"vless://{uuid}@{server}:{port}?security={security}&type={node_type}"
                 nodes_info_local.append((dedup_id, line))
             else:
-                print(f"⚠️ 无法从 VLESS 链接解析核心信息: {line[:50]}...")
+                print(f"⚠️ 无法从 VLESS 链接解析核心信息 (非Base64或传统格式): {line[:50]}...")
         except Exception as e:
             print(f"⚠️ 解析 VLESS 节点失败: {e} - {line[:50]}...")
 
@@ -282,8 +324,9 @@ def parse_single_node_uri(line: str) -> list[tuple[str, str]]:
             
     # 其他未知协议或无法解析的行
     else:
-        # print(f"❓ 发现未知或无法解析的协议行: {line[:50]}...") # 避免重复打印
-        nodes_info_local.append((line, line)) # 作为原始行添加，去重效果可能不佳
+        print(f"❓ 发现未知或无法解析的协议行: {line[:50]}...") 
+        # 作为原始行添加，去重效果可能不佳，但至少不丢弃
+        nodes_info_local.append((line, line)) 
 
     return nodes_info_local
 
@@ -328,7 +371,7 @@ def main():
 
         if raw_content:
             processed_content = None
-            parsed_url_obj = urlparse(url) # 解析订阅链接本身
+            parsed_url_obj = urlparse(url) 
             
             # 如果是 .yaml 或 .yml 结尾的链接，直接作为原始文本处理
             if parsed_url_obj.path.lower().endswith(('.yaml', '.yml')):
@@ -337,10 +380,18 @@ def main():
             else:
                 # 否则，尝试 Base64 解码。如果失败，则认为内容是原始文本
                 try:
+                    # 尝试 URL-safe Base64 解码，并处理填充
                     decoded_bytes = base64.urlsafe_b64decode(raw_content.strip() + '==')
-                    processed_content = decoded_bytes.decode('utf-8')
+                    # 尝试多种编码来解码 Base64 内容到字符串
+                    try:
+                        processed_content = decoded_bytes.decode('utf-8')
+                    except UnicodeDecodeError:
+                        try:
+                            processed_content = decoded_bytes.decode('gbk')
+                        except UnicodeDecodeError:
+                            processed_content = decoded_bytes.decode('latin-1')
                     print(f"   内容被 Base64 解码。")
-                except (base64.binascii.Error, UnicodeDecodeError, ValueError): # 捕获 ValueError
+                except (base64.binascii.Error, ValueError): # 捕获 Base64 格式错误或非ASCII字符导致的ValueError
                     processed_content = raw_content
                     print(f"   内容未被 Base64 解码 (可能是原始文本或解码失败)。")
 
