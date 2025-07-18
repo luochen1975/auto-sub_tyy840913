@@ -34,6 +34,7 @@ jobs:
       - name: 安装 Python 依赖
         run: |
           pip install requests # 安装你的 Python 脚本所需的 requests 库
+          pip install PyYAML
         working-directory: ${{ github.workspace }} # 确保在仓库根目录执行
 
       - name: 运行 Python 脚本处理订阅
