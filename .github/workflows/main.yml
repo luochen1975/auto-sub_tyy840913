@@ -31,7 +31,7 @@ jobs:
 
       # 运行脚本
       - name: 运行脚本
-        run: python script.py --sub-file sub.txt --config-file config.txt
+        run: python process_subscriptions.py --sub-file sub.txt --config-file config.txt
 
       # 上传输出文件作为 artifacts
       - name: 上传输出文件
