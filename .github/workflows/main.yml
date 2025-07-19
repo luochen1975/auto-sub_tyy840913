@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  更新任务:
+  update-job:           # 只能是英文、数字、_ 或 -
     runs-on: ubuntu-latest
     steps:
       - name: 检出仓库
