@@ -37,22 +37,22 @@ jobs:
 
           # 逐行解析脚本输出
           echo "$script_output" | while IFS= read -r line; do
-            if [[ "$line" =~ ^\[完成\]\ all\.txt\ :\ ([0-9]+)\ 条$ ]]; then
-              # 匹配总节点数行：[完成] all.txt : X 条
+            # 匹配总节点数行：[完成] all.txt : X 条
+            if [[ "$line" =~ ^\[完成\]\ all\.txt\ \:\ ([0-9]+)\ 条$ ]]; then
               total_updated_nodes="${BASH_REMATCH[1]}"
+            # 匹配有效订阅连接数行：[分组] 有效 X 条
             elif [[ "$line" =~ ^\[分组\]\ 有效\ ([0-9]+)\ 条$ ]]; then
-              # 匹配有效订阅连接数行：[分组] 有效 X 条
               valid_subs="${BASH_REMATCH[1]}"
+            # 匹配失效订阅连接数行：[分组] 失效 X 条
             elif [[ "$line" =~ ^\[分组\]\ 失效\ ([0-9]+)\ 条$ ]]; then
-              # 匹配失效订阅连接数行：[分组] 失效 X 条
               invalid_subs="${BASH_REMATCH[1]}"
-            elif [[ "$line" =~ ^\[写入\]\ ([a-zA-Z0-9_.]+\.(txt|yaml))\ :\ ([0-9]+)\ 条$ ]]; then
-              # 匹配写入协议文件行：[写入] filename.txt : X 条 或 [写入] filename.yaml : X 条
+            # 匹配写入协议文件行：[写入] filename.txt : X 条 或 [写入] filename.yaml : X 条
+            # 注意：这里文件名和数量之间的冒号和空格是可变的，所以使用 \s*:\s*
+            elif [[ "$line" =~ ^\[写入\]\ ([a-zA-Z0-9_.]+\.(txt|yaml))\s*:\s*([0-9]+)\ 条$ ]]; then
               file_name="${BASH_REMATCH[1]}"
               nodes="${BASH_REMATCH[3]}"
 
               # 格式化协议名显示
-              # 这里对文件名的处理逻辑保持不变，确保美观性
               protocol_name=$(echo "$file_name" | sed 's/\.txt$//; s/\.yaml$//; s/_/- /g; s/\bclash\b/Clash/i; s/\b(vmess|vless|trojan|hysteria|tuic|naive-https|wireguard|ss|ssr)\b/\U&/g' | sed 's/Hysteria- 2/Hysteria2/')
 
               # 构建用于显示的 Markdown 字符串
@@ -87,7 +87,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add *.txt *.yaml
           changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$' || true)
-          if [ -z "$changes" ]; then
+          if [ -z "$changes生产的任何更改的实际值]; then
             echo "没有检测到任何更改。"
           else
             git commit -m "更新代理节点数量 (${{ steps.run_script.outputs.total_updated_nodes }} 条)"
