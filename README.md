@@ -22,7 +22,6 @@
 
 ## 下载链接：
 - [all.txt](./all.txt)
-- [debug.txt](./debug.txt)
 - [hysteria.txt](./hysteria.txt)
 - [hysteria2.txt](./hysteria2.txt)
 - [log.txt](./log.txt)
