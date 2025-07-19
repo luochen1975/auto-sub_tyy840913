@@ -2,10 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 update.py
-1. 读取 sub.txt 全部订阅（不去除失效）
-2. 自动识别 Base64 URI 或 Clash YAML
-3. 拉取节点、去重、写入 config.txt
-4. 把全部订阅（含失效）去重后写回 sub.txt
+- 自动识别 Base64、Clash YAML、纯文本 URI
+- 不再按协议过滤，全部保留
+- 不删除失效订阅
 """
 import base64
 import os
@@ -18,24 +17,15 @@ from typing import List
 import requests
 import yaml
 
-# ---------- 配置 ----------
 REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
 SUB_FILE = os.path.join(REPO_ROOT, 'sub.txt')
 OUT_FILE = os.path.join(REPO_ROOT, 'config.txt')
-
-PROTOCOL_PATTERNS = {
-    'ss': r'^ss://', 'ssr': r'^ssr://', 'vmess': r'^vmess://',
-    'vless': r'^vless://', 'trojan': r'^trojan://',
-    'hysteria': r'^hysteria://', 'hysteria2': r'^hysteria2://',
-    'tuic': r'^tuic://', 'naive+https': r'^naive\+https://',
-    'wireguard': r'^wireguard://'
-}
 
 TIMEOUT = 10
 MAX_RETRIES = 3
 
 
-# ---------- 工具 ----------
+# ---------- 下载 ----------
 def 下载(url: str) -> bytes:
     headers = {'User-Agent': 'Mozilla/5.0'}
     for i in range(MAX_RETRIES):
@@ -44,158 +34,128 @@ def 下载(url: str) -> bytes:
             resp.raise_for_status()
             return resp.content
         except Exception as e:
-            print(f'[警告] 下载失败：{url} 原因：{e}，重试 {i+1}/{MAX_RETRIES}')
+            print(f'[警告] 下载失败：{url}  {e}')
             time.sleep(2)
     return b''
 
 
-def 解码base64(data: str) -> str:
-    missing = len(data) % 4
-    if missing:
-        data += '=' * (4 - missing)
-    try:
-        return base64.urlsafe_b64decode(data.encode()).decode('utf-8')
-    except Exception:
-        return ''
-
-
-def 订阅是否有效(url: str) -> bool:
-    raw = 下载(url)
+# ---------- 节点提取 ----------
+def 提取节点(raw: bytes) -> List[str]:
     if not raw:
-        return False
+        return []
+
+    # 1. 解码
     try:
         text = raw.decode('utf-8')
     except UnicodeDecodeError:
         text = raw.decode('latin-1')
-    # 简单判断：有节点即可
-    return bool(解码base64(text).strip()) or bool(
-        re.search(r'^proxies\s*:', text, re.MULTILINE)
-    )
+
+    # 2. 先按 Clash YAML 解析
+    if re.search(r'^proxies\s*:', text, re.MULTILINE):
+        try:
+            data = yaml.safe_load(text)
+            proxies = data.get('proxies', [])
+            nodes = [_clash_to_uri(p) for p in proxies]
+            return [n for n in nodes if n]
+        except Exception as e:
+            print('[警告] YAML 解析失败', e)
+
+    # 3. 再按 Base64 解析
+    decoded = _try_base64(text)
+    if decoded:
+        return [ln for ln in decoded.splitlines() if ln.strip()]
+
+    # 4. 直接按纯文本行处理（兜底）
+    return [ln.strip() for ln in text.splitlines() if ln.strip()]
 
 
-def 读取订阅() -> List[str]:
+# ---------- 工具 ----------
+def _try_base64(data: str) -> str:
+    """尝试 Base64 解码"""
+    try:
+        # 补 =
+        missing = len(data) % 4
+        if missing:
+            data += '=' * (4 - missing)
+        decoded = base64.urlsafe_b64decode(data.encode()).decode('utf-8')
+        return decoded
+    except Exception:
+        return ''
+
+
+def _clash_to_uri(proxy: dict) -> str:
+    """Clash 节点 → URI"""
+    t = proxy.get('type', '').lower()
+    name = urllib.parse.quote(proxy.get('name', ''))
+
+    # SS
+    if t == 'ss':
+        cipher, pwd, server, port = proxy['cipher'], proxy['password'], proxy['server'], proxy['port']
+        auth = base64.urlsafe_b64encode(f'{cipher}:{pwd}'.encode()).decode()
+        return f'ss://{auth}@{server}:{port}#{name}'
+
+    # VMess
+    if t == 'vmess':
+        vm = {
+            "v": "2", "ps": name, "add": proxy['server'], "port": str(proxy['port']),
+            "id": proxy['uuid'], "aid": str(proxy.get('alterId', 0)),
+            "net": proxy.get('network', 'tcp'), "type": proxy.get('type', 'none'),
+            "host": proxy.get('ws-headers', {}).get('Host', ''),
+            "path": proxy.get('ws-path', ''),
+            "tls": 'tls' if proxy.get('tls', False) else ''
+        }
+        return f"vmess://{base64.urlsafe_b64encode(str(vm).encode()).decode()}"
+
+    # Trojan
+    if t == 'trojan':
+        return f"trojan://{proxy['password']}@{proxy['server']}:{proxy['port']}?sni={proxy.get('sni', '')}#{name}"
+
+    # 其余协议可自行扩展
+    return ''
+
+
+# ---------- 文件读写 ----------
+def 读取链接() -> List[str]:
     if not os.path.exists(SUB_FILE):
         return []
-    with open(SUB_FILE, 'r', encoding='utf-8') as f:
-        return [line.strip() for line in f if line.strip()]
+    with open(SUB_FILE, encoding='utf-8') as f:
+        return [ln.strip() for ln in f if ln.strip()]
 
 
-def 写回全部订阅(links: List[str]):
-    seen = set()
-    dedup = [l for l in links if not (l in seen or seen.add(l))]
+def 写回全部(links: List[str]):
+    seen = {}
+    dedup = [seen.setdefault(x, x) for x in links if x not in seen]
     with open(SUB_FILE, 'w', encoding='utf-8') as f:
         f.write('\n'.join(dedup) + '\n')
 
 
 def 保存节点(nodes: List[str]):
     with open(OUT_FILE, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(sorted(set(nodes))) + '\n')
+        f.write('\n'.join(nodes) + '\n')
 
 
-# ---------- Clash YAML 转 URI ----------
-def _clash_proxy_to_uri(proxy: dict) -> str:
-    ptype = proxy.get('type', '').lower()
-    name = urllib.parse.quote(proxy.get('name', ''))
-
-    # SS
-    if ptype == 'ss':
-        cipher = proxy['cipher']
-        password = proxy['password']
-        server = proxy['server']
-        port = proxy['port']
-        auth = base64.urlsafe_b64encode(f'{cipher}:{password}'.encode()).decode()
-        return f'ss://{auth}@{server}:{port}#{name}'
-
-    # VMess
-    if ptype == 'vmess':
-        vmess_json = {
-            "v": "2",
-            "ps": name,
-            "add": proxy['server'],
-            "port": str(proxy['port']),
-            "id": proxy['uuid'],
-            "aid": str(proxy.get('alterId', 0)),
-            "net": proxy.get('network', 'tcp'),
-            "type": proxy.get('type', 'none'),
-            "host": proxy.get('ws-headers', {}).get('Host', ''),
-            "path": proxy.get('ws-path', ''),
-            "tls": 'tls' if proxy.get('tls', False) else ''
-        }
-        b64 = base64.urlsafe_b64encode(str(vmess_json).encode()).decode()
-        return f'vmess://{b64}'
-
-    # Trojan
-    if ptype == 'trojan':
-        server = proxy['server']
-        port = proxy['port']
-        password = proxy['password']
-        sni = proxy.get('sni', '')
-        return f'trojan://{password}@{server}:{port}?sni={sni}#{name}'
-
-    # 其余协议暂未实现
-    return ''
-
-
-# ---------- 主逻辑 ----------
-def 从订阅获取节点(url: str) -> List[str]:
-    raw = 下载(url)
-    if not raw:
-        return []
-
-    try:
-        text = raw.decode('utf-8')
-    except UnicodeDecodeError:
-        text = raw.decode('latin-1')
-
-    # 1. 判断是否为 Clash YAML
-    if re.search(r'^proxies\s*:', text, re.MULTILINE):
-        try:
-            data = yaml.safe_load(text)
-            proxies = data.get('proxies', [])
-            nodes = [_clash_proxy_to_uri(p) for p in proxies]
-            return [n for n in nodes if n]
-        except Exception as e:
-            print(f'[警告] 解析 Clash YAML 失败：{e}')
-            return []
-
-    # 2. Base64 URI 列表
-    decoded = 解码base64(text)
-    if not decoded:
-        return []
-    lines = [ln.strip() for ln in decoded.splitlines() if ln.strip()]
-    return [ln for ln in lines if any(re.match(p, ln) for p in PROTOCOL_PATTERNS.values())]
-
-
-def 主函数():
-    print('[信息] 开始更新订阅...')
-    subs = 读取订阅()
-    if not subs:
-        print('[错误] sub.txt 为空或不存在')
+# ---------- 主 ----------
+def main():
+    links = 读取链接()
+    if not links:
+        print('[错误] sub.txt 为空')
         sys.exit(1)
 
-    # 检测有效性（仅用于统计，不删除）
-    valid_subs, invalid_subs = [], []
-    for s in subs:
-        (valid_subs if 订阅是否有效(s) else invalid_subs).append(s)
+    nodes: List[str] = []
+    for url in links:
+        raw = 下载(url)
+        tmp = 提取节点(raw)
+        nodes.extend(tmp)
+        print(f'[信息] {url} -> {len(tmp)} 个节点')
 
-    print(f'[信息] 有效订阅 {len(valid_subs)} 个，失效订阅 {len(invalid_subs)} 个')
+    # 去重并保持顺序
+    seen = {}
+    nodes = [seen.setdefault(x, x) for x in nodes if x not in seen]
 
-    # 拉取节点（仅有效订阅）
-    all_nodes: List[str] = []
-    for sub in valid_subs:
-        nodes = 从订阅获取节点(sub)
-        all_nodes.extend(nodes)
-        print(f'[信息] {sub} -> {len(nodes)} 个节点')
-
-    # 去重
-    all_nodes = list(dict.fromkeys(all_nodes))
-    print(f'[信息] 合并去重后共 {len(all_nodes)} 个节点')
-    保存节点(all_nodes)
-
-    # 全部订阅写回（含失效）
-    写回全部订阅(subs)
-    print('[信息] 全部订阅已写回 sub.txt（未删除失效链接）')
+    保存节点(nodes)
+    写回全部(links)
+    print(f'[完成] 共 {len(nodes)} 个节点 已写入 config.txt')
 
 
 if __name__ == '__main__':
-    主函数()
+    main()
