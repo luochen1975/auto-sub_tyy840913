@@ -1,62 +1,57 @@
-name: 自动更新订阅和节点
+name: 运行代理订阅脚本
 
 on:
-  workflow_dispatch: # 允许在 GitHub Actions 页面手动触发此工作流
   schedule:
-    # 定时任务：每天 UTC 时间凌晨 0 点运行
-    # 你可以根据需要调整 cron 表达式
-    # 示例：'0 0 * * *' 每天凌晨0点
-    # 示例：'0 0 * * 1' 每周一凌晨0点
-    # 更多信息请参考：https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *'  # 每天 UTC 00:00 运行（可根据需要调整）
+  push:
+    branches:
+      - main  # 推送到 main 分支时运行
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
-  update_and_push:
-    runs-on: ubuntu-latest # 在最新的 Ubuntu 操作系统上运行此任务
+  run-script:
+    runs-on: ubuntu-latest
 
     steps:
+      # 检出代码
       - name: 检出仓库代码
-        uses: actions/checkout@v4 # 使用 GitHub 官方 action 检出仓库代码
-        with:
-          # 必须设置 token 以便 Git push 成功。
-          # 默认的 GITHUB_TOKEN 通常足够，它由 GitHub 自动提供，具有推送权限。
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # 告诉 Git 在每次推送时使用 Actions Bot 的信息，而非您的个人信息
-          persist-credentials: true
-          # 设置 Git 用户名和邮箱，以便提交信息显示
-          fetch-depth: 0 # 获取所有历史，以便Git可以正确判断文件变更
+        uses: actions/checkout@v4
 
+      # 设置 Python 环境
       - name: 设置 Python 环境
-        uses: actions/setup-python@v5 # 使用 GitHub 官方 action 设置 Python 环境
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x' # 使用最新的 Python 3 版本
+          python-version: '3.11'  # 使用 Python 3.11（可根据需要调整）
 
-      - name: 安装 Python 依赖
+      # 安装依赖
+      - name: 安装依赖
         run: |
-          pip install requests # 安装你的 Python 脚本所需的 requests 库
-          pip install PyYAML
-        working-directory: ${{ github.workspace }} # 确保在仓库根目录执行
+          python -m pip install --upgrade pip
+          pip install requests>=2.31.0 pyyaml>=6.0  # 安装脚本所需依赖
 
-      - name: 运行 Python 脚本处理订阅
-        # 你的 Python 脚本 (process_subscriptions.py) 应该位于仓库根目录
+      # 运行脚本
+      - name: 运行脚本
+        run: python script.py --sub-file sub.txt --config-file config.txt
+
+      # 上传输出文件作为 artifacts
+      - name: 上传输出文件
+        uses: actions/upload-artifact@v4
+        with:
+          name: 脚本输出
+          path: |
+            sub.txt
+            config.txt
+            script.log
+          if-no-files-found: warn  # 如果文件不存在，仅警告
+
+      # 提交更新的文件到仓库（可选）
+      - name: 提交更新文件
         run: |
-          python process_subscriptions.py
-        working-directory: ${{ github.workspace }} # 确保在仓库根目录执行
-
-      - name: 检查文件更改并提交
-        # 这个 step 会检查 Git 状态，如果有更改，则进行提交和推送
-        run: |
-          git config user.name "github-actions[bot]" # 设置提交用户名
-          git config user.email "github-actions[bot]@users.noreply.github.com" # 设置提交邮箱
-
-          # 检查是否有文件更改 (例如 sub.txt 或 config.txt)
-          if git status --porcelain | grep -q .; then
-            echo "检测到文件更改，正在提交到 Git 仓库..."
-            git add .
-            git commit -m "自动更新订阅和节点 - $(date +%Y-%m-%d %H:%M:%S)"
-            git push # 推送更改到当前分支 (默认是 workflow 所在的触发分支)
-            echo "Git 提交并推送成功！"
-          else
-            echo "没有检测到文件更改，Git 仓库保持不变。"
-          fi
-        working-directory: ${{ github.workspace }} # 确保在仓库根目录执行
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add sub.txt config.txt
+          git commit -m "更新 sub.txt 和 config.txt" || echo "没有变更需要提交"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true  # 如果没有变更，继续执行
