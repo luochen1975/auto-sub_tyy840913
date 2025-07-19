@@ -9,3 +9,4 @@
 - [hysteria 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/hysteria.txt)
 - [tuic 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/tuic.txt)
 - [naive 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/naive.txt)
+- [wireguard 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/wireguard.txt)
