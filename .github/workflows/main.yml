@@ -1,14 +1,12 @@
 name: 自动更新订阅与节点
 
 on:
-  # 每天 UTC 03:00 自动执行
   schedule:
-    - cron: '0 3 * * *'
-  # 允许手动触发
+    - cron: '0 3 * * *'   # 每天 UTC 03:00
   workflow_dispatch:
 
 jobs:
-  update-job:           # 只能是英文、数字、_ 或 -
+  update-job:
     runs-on: ubuntu-latest
     steps:
       - name: 检出仓库
@@ -22,11 +20,10 @@ jobs:
       - name: 安装依赖
         run: |
           python -m pip install --upgrade pip
-          pip install PyYAML==6.0
+          pip install PyYAML==6.0 requests
 
       - name: 执行更新脚本
-        run: |
-          python update.py
+        run: python update.py
 
       - name: 提交变更
         run: |
