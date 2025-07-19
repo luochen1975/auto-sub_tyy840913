@@ -29,41 +29,38 @@ jobs:
           script_output=$(python update.py 2>&1)
           echo "$script_output" # 打印出来以便在 Actions 日志中查看
 
-          # 初始化变量
-          total_updated_nodes=0
-          valid_subs=0
-          invalid_subs=0
-          protocol_output="" # 用于构建 Markdown 格式的输出
+          # 使用 grep -oP 直接提取关键数值
+          # total_updated_nodes (总节点数)
+          # 注意：日志中 all.txt 的数量可能没有紧挨着冒号，所以我们匹配 "all.txt" 后面紧跟着数字
+          total_updated_nodes=$(echo "$script_output" | grep -oP '\[完成\]\ all\.txt\s*:\s*\K[0-9]+(?=\s*条)' || echo 0)
+          echo "total_updated_nodes=${total_updated_nodes}" >> $GITHUB_OUTPUT
 
-          # 逐行解析脚本输出
-          echo "$script_output" | while IFS= read -r line; do
-            # 匹配总节点数行：[完成] all.txt : X 条
-            if [[ "$line" =~ ^\[完成\]\ all\.txt\ \:\ ([0-9]+)\ 条$ ]]; then
-              total_updated_nodes="${BASH_REMATCH[1]}"
-            # 匹配有效订阅连接数行：[分组] 有效 X 条
-            elif [[ "$line" =~ ^\[分组\]\ 有效\ ([0-9]+)\ 条$ ]]; then
-              valid_subs="${BASH_REMATCH[1]}"
-            # 匹配失效订阅连接数行：[分组] 失效 X 条
-            elif [[ "$line" =~ ^\[分组\]\ 失效\ ([0-9]+)\ 条$ ]]; then
-              invalid_subs="${BASH_REMATCH[1]}"
-            # 匹配写入协议文件行：[写入] filename.txt : X 条 或 [写入] filename.yaml : X 条
-            # 注意：这里文件名和数量之间的冒号和空格是可变的，所以使用 \s*:\s*
-            elif [[ "$line" =~ ^\[写入\]\ ([a-zA-Z0-9_.]+\.(txt|yaml))\s*:\s*([0-9]+)\ 条$ ]]; then
-              file_name="${BASH_REMATCH[1]}"
-              nodes="${BASH_REMATCH[3]}"
+          # valid_subs (有效订阅)
+          valid_subs=$(echo "$script_output" | grep -oP '\[分组\]\ 有效\s*\K[0-9]+(?=\s*条)' || echo 0)
+          echo "valid_subs=${valid_subs}" >> $GITHUB_OUTPUT
 
-              # 格式化协议名显示
-              protocol_name=$(echo "$file_name" | sed 's/\.txt$//; s/\.yaml$//; s/_/- /g; s/\bclash\b/Clash/i; s/\b(vmess|vless|trojan|hysteria|tuic|naive-https|wireguard|ss|ssr)\b/\U&/g' | sed 's/Hysteria- 2/Hysteria2/')
+          # invalid_subs (失效订阅)
+          invalid_subs=$(echo "$script_output" | grep -oP '\[分组\]\ 失效\s*\K[0-9]+(?=\s*条)' || echo 0)
+          echo "invalid_subs=${invalid_subs}" >> $GITHUB_OUTPUT
 
-              # 构建用于显示的 Markdown 字符串
-              protocol_output+="- ${protocol_name}: ${nodes:-0} 条\n"
-            fi
+          # 用于构建 Markdown 格式的协议输出
+          protocol_output=""
+
+          # 动态从日志中提取所有被写入的文件及其对应的节点数量
+          # 使用 grep -P 匹配并提取文件名和数量
+          echo "$script_output" | grep -P '\[写入\]\s*([a-zA-Z0-9_.]+\.(txt|yaml))\s*:\s*([0-9]+)\s*条' | while IFS= read -r line; do
+            # 从匹配到的行中再次提取捕获组，更稳定
+            file_name=$(echo "$line" | grep -oP '\[写入\]\s*\K([a-zA-Z0-9_.]+\.(txt|yaml))')
+            nodes=$(echo "$line" | grep -oP ':\s*\K[0-9]+(?=\s*条)')
+
+            # 格式化协议名显示
+            protocol_name=$(echo "$file_name" | sed 's/\.txt$//; s/\.yaml$//; s/_/- /g; s/\bclash\b/Clash/i; s/\b(vmess|vless|trojan|hysteria|tuic|naive-https|wireguard|ss|ssr)\b/\U&/g' | sed 's/Hysteria- 2/Hysteria2/')
+
+            # 构建用于显示的 Markdown 字符串
+            protocol_output+="- ${protocol_name}: ${nodes:-0} 条\n"
           done
 
-          # 将所有提取到的值写入 GITHUB_OUTPUT
-          echo "total_updated_nodes=${total_updated_nodes:-0}" >> $GITHUB_OUTPUT
-          echo "valid_subs=${valid_subs:-0}" >> $GITHUB_OUTPUT
-          echo "invalid_subs=${invalid_subs:-0}" >> $GITHUB_OUTPUT
+          # 将构建好的协议输出字符串写入 GITHUB_OUTPUT
           echo "protocol_nodes_display_output<<EOF" >> $GITHUB_OUTPUT
           echo "$protocol_output" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
@@ -87,7 +84,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add *.txt *.yaml
           changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$' || true)
-          if [ -z "$changes生产的任何更改的实际值]; then
+          if [ -z "$changes" ]; then
             echo "没有检测到任何更改。"
           else
             git commit -m "更新代理节点数量 (${{ steps.run_script.outputs.total_updated_nodes }} 条)"
