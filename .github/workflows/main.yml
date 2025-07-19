@@ -1,4 +1,4 @@
-name: 自动更新订阅与节点 main
+name: 自动更新订阅与节点
 
 on:
   schedule:
@@ -22,18 +22,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install PyYAML==6.0 requests
 
-      - name: 执行更新脚本并记录日志
+      - name: 执行更新脚本并捕获日志
         id: run-script
         run: |
-          # 执行脚本并将输出保存到日志文件
-          python update.py > update.log 2>&1
-          # 调试：检查日志文件是否存在
-          if [ -f "update.log" ]; then
-            echo "日志文件生成成功" > debug.txt
-            cat update.log >> debug.txt
-          else
-            echo "日志文件未生成" > debug.txt
-          fi
+          # 执行脚本并将输出保存到环境变量
+          output=$(python update.py 2>&1)
+          echo "script_output=$output" >> $GITHUB_OUTPUT
+          # 调试：检查输出
+          echo "脚本输出: $output" > debug.txt
 
       - name: 提取运行日志并统计节点更新
         run: |
@@ -54,8 +50,8 @@ jobs:
           echo "总共更新了 $total_updates 个节点" >> README.md
           # 添加运行日志
           echo "运行日志：" >> README.md
-          if [ -f "update.log" ]; then
-            cat update.log >> README.md
+          if [ -n "${{ steps.run-script.outputs.script_output }}" ]; then
+            echo "${{ steps.run-script.outputs.script_output }}" >> README.md
           else
             echo "无可用运行日志" >> README.md
           fi
@@ -73,8 +69,8 @@ jobs:
           # 配置 Git 用户信息
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add *.txt *.yaml README.md update.log debug.txt
-          changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$|README\.md|update\.log|debug\.txt' || true)
+          git add *.txt *.yaml README.md debug.txt
+          changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$|README\.md|debug\.txt' || true)
           if [ -z "$changes" ]; then
             echo "无检测到更改。"
           else
