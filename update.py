@@ -19,13 +19,21 @@ import yaml
 
 REPO_ROOT    = os.path.dirname(os.path.abspath(__file__))
 SUB_FILE     = os.path.join(REPO_ROOT, 'sub.txt')
-VALID_FILE   = os.path.join(REPO_ROOT, 'sub_valid.txt')    # 新增
-INVALID_FILE = os.path.join(REPO_ROOT, 'sub_invalid.txt')  # 新增
+VALID_FILE   = os.path.join(REPO_ROOT, 'sub_valid.txt')
+INVALID_FILE = os.path.join(REPO_ROOT, 'sub_invalid.txt')
 OUT_FILE     = os.path.join(REPO_ROOT, 'config.txt')
+
+# ---------- 自动创建空文件 ----------
+def _确保文件(*paths):
+    for p in paths:
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        if not os.path.exists(p):
+            open(p, 'a', encoding='utf-8').close()
+
+_确保文件(SUB_FILE, VALID_FILE, INVALID_FILE, OUT_FILE)
 
 TIMEOUT = 10
 MAX_RETRIES = 3
-
 
 # ---------- 下载 ----------
 def 下载(url: str) -> bytes:
@@ -197,7 +205,7 @@ def 订阅是否有效(url: str) -> bool:
 def main():
     links = 读取链接()
     if not links:
-        print('[错误] sub.txt 为空')
+        print('[提示] sub.txt 为空，已自动创建，请将订阅链接写入后再次运行')
         sys.exit(1)
 
     # 1. 检测有效/失效
