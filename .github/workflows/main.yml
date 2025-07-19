@@ -25,10 +25,10 @@ jobs:
       - name: 执行更新脚本
         run: python update.py
 
-      - name: 提交变更
+      - name: 自动提交结果
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "自动更新机器人"
-          git add sub.txt config.txt
-          git diff --staged --quiet || git commit -m "自动更新：订阅去重、节点合并 [跳过 CI]"
+          git config --local user.name "GitHub Action"
+          git add *.txt *.yaml
+          git diff --staged --quiet || git commit -m "chore: auto update nodes & subscriptions [skip ci]"
           git push
