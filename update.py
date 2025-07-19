@@ -4,7 +4,7 @@
 update.py
 - 自动识别 Base64、Clash YAML、纯文本 URI
 - 不再按协议过滤，全部保留
-- 不删除失效订阅
+- 新增：把有效/失效订阅分别写入 sub_valid.txt / sub_invalid.txt
 """
 import base64
 import os
@@ -17,9 +17,11 @@ from typing import List
 import requests
 import yaml
 
-REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
-SUB_FILE = os.path.join(REPO_ROOT, 'sub.txt')
-OUT_FILE = os.path.join(REPO_ROOT, 'config.txt')
+REPO_ROOT    = os.path.dirname(os.path.abspath(__file__))
+SUB_FILE     = os.path.join(REPO_ROOT, 'sub.txt')
+VALID_FILE   = os.path.join(REPO_ROOT, 'sub_valid.txt')    # 新增
+INVALID_FILE = os.path.join(REPO_ROOT, 'sub_invalid.txt')  # 新增
+OUT_FILE     = os.path.join(REPO_ROOT, 'config.txt')
 
 TIMEOUT = 10
 MAX_RETRIES = 3
@@ -37,6 +39,7 @@ def 下载(url: str) -> bytes:
             print(f'[警告] 下载失败：{url}  {e}')
             time.sleep(2)
     return b''
+
 
 # ========== 1. 提取节点（主入口） ==========
 def 提取节点(raw: bytes) -> List[str]:
@@ -149,6 +152,7 @@ def _clash_to_uri(proxy: dict) -> str:
     # 其余协议可自行扩展
     return ''
 
+
 # ========== 3. Base64 解码兜底 ==========
 def _try_base64(data: str) -> str:
     try:
@@ -156,6 +160,7 @@ def _try_base64(data: str) -> str:
         return base64.urlsafe_b64decode(data.encode()).decode('utf-8')
     except Exception:
         return ''
+
 
 # ---------- 文件读写 ----------
 def 读取链接() -> List[str]:
@@ -177,6 +182,17 @@ def 保存节点(nodes: List[str]):
         f.write('\n'.join(nodes) + '\n')
 
 
+# ---------- 订阅有效性检测 ----------
+def 订阅是否有效(url: str) -> bool:
+    """
+    只要订阅返回内容能被识别为节点，就视为有效
+    """
+    raw = 下载(url)
+    if not raw:
+        return False
+    return len(提取节点(raw)) > 0
+
+
 # ---------- 主 ----------
 def main():
     links = 读取链接()
@@ -184,20 +200,36 @@ def main():
         print('[错误] sub.txt 为空')
         sys.exit(1)
 
-    nodes: List[str] = []
+    # 1. 检测有效/失效
+    valid, invalid = [], []
     for url in links:
+        (valid if 订阅是否有效(url) else invalid).append(url)
+
+    # 2. 写分组文件
+    with open(VALID_FILE, 'w', encoding='utf-8') as f:
+        f.write(f'# 有效订阅（共 {len(valid)} 条）\n')
+        f.write('\n'.join(valid) + '\n')
+
+    with open(INVALID_FILE, 'w', encoding='utf-8') as f:
+        f.write(f'# 失效订阅（共 {len(invalid)} 条）\n')
+        f.write('\n'.join(invalid) + '\n')
+
+    print(f'[信息] 有效 {len(valid)} 条 → {VALID_FILE}')
+    print(f'[信息] 失效 {len(invalid)} 条 → {INVALID_FILE}')
+
+    # 3. 拉取节点（仅从有效订阅）
+    nodes: List[str] = []
+    for url in valid:
         raw = 下载(url)
         tmp = 提取节点(raw)
         nodes.extend(tmp)
-        print(f'[信息] {url} -> {len(tmp)} 个节点')
+        print(f'[信息] {url} → {len(tmp)} 个节点')
 
-    # 去重并保持顺序
+    # 4. 去重保序
     seen = {}
     nodes = [seen.setdefault(x, x) for x in nodes if x not in seen]
-
     保存节点(nodes)
-    写回全部(links)
-    print(f'[完成] 共 {len(nodes)} 个节点 已写入 config.txt')
+    print(f'[完成] 共 {len(nodes)} 个节点 已写入 {OUT_FILE}')
 
 
 if __name__ == '__main__':
