@@ -22,99 +22,34 @@ jobs:
           python -m pip install --upgrade pip
           pip install PyYAML==6.0 requests
 
-      - name: 执行更新脚本并捕获输出
-        id: run_script
+      - name: 执行更新脚本
+        run: python update.py
+
+      - name: 提取运行日志
         run: |
-          # 运行您的 Python 脚本，将其标准输出作为变量捕获
-          script_output=$(python update.py 2>&1)
-          echo "$script_output" # 打印出来以便在 Actions 日志中查看
+          echo "# 更新日志" > README.md
+          echo "## 最近一次运行详情" >> README.md
+          echo "```" >> README.md
+          cat /github/workflow/runs/*.log >> README.md 2>/dev/null || echo "无日志文件" >> README.md
+          echo "```" >> README.md
 
-          # 初始化变量
-          total_updated_nodes=0
-          valid_subs=0
-          invalid_subs=0
-          protocol_details="" # 用于构建协议的 Markdown 列表（带链接）
-
-          # 逐行解析脚本输出
-          echo "$script_output" | while IFS= read -r line; do
-            # 匹配总节点数行：[完成] all.txt : X 条
-            if [[ "$line" =~ ^\[完成\]\ all\.txt\s*:\s*\K([0-9]+)(?=\s*条)$ ]]; then
-              total_updated_nodes="${BASH_REMATCH[1]}"
-            # 匹配有效订阅连接数行：[分组] 有效 X 条
-            elif [[ "$line" =~ ^\[分组\]\ 有效\s*\K([0-9]+)(?=\s*条)$ ]]; then
-              valid_subs="${BASH_REMATCH[1]}"
-            # 匹配失效订阅连接数行：[分组] 失效 X 条
-            elif [[ "$line" =~ ^\[分组\]\ 失效\s*\K([0-9]+)(?=\s*条)$ ]]; then
-              invalid_subs="${BASH_REMATCH[1]}"
-            # 匹配写入协议文件行：[写入] filename.txt : X 条 或 [写入] filename.yaml : X 条
-            elif [[ "$line" =~ ^\[写入\]\s*([a-zA-Z0-9_.]+\.(txt|yaml))\s*:\s*([0-9]+)(?=\s*条)$ ]]; then
-              file_name="${BASH_REMATCH[1]}"
-              nodes="${BASH_REMATCH[3]}"
-
-              # 格式化协议名显示
-              protocol_name=$(echo "$file_name" | sed 's/\.txt$//; s/\.yaml$//; s/_/- /g; s/\bclash\b/Clash/i; s/\b(vmess|vless|trojan|hysteria|tuic|naive-https|wireguard|ss|ssr)\b/\U&/g' | sed 's/Hysteria- 2/Hysteria2/')
-              
-              # 构建下载链接
-              # !!! 请将 'tyy840913/auto-sub' 替换为您的实际 '用户名/仓库名' !!!
-              REPO_URL="https://github.com/${{ github.repository }}"
-              DOWNLOAD_LINK="${REPO_URL}/raw/${{ github.ref_name }}/${file_name}" # github.ref_name 通常是 main 或 master
-
-              # 构建用于显示的 Markdown 字符串，包含下载链接
-              protocol_details+="- ${protocol_name}: ${nodes:-0} 条 ([下载](${DOWNLOAD_LINK}))\n"
-            fi
+      - name: 为每个协议添加下载链接
+        run: |
+          echo "## 下载链接" >> README.md
+          for proto in ss ssr vmess trojan hysteria tuic naive; do
+            echo "- [$proto 订阅链接](https://raw.githubusercontent.com/${{ github.repository }}/main/${proto}.txt)" >> README.md
           done
 
-          # 将所有提取到的值写入 GITHUB_OUTPUT
-          echo "total_updated_nodes=${total_updated_nodes:-0}" >> $GITHUB_OUTPUT
-          echo "valid_subs=${valid_subs:-0}" >> $GITHUB_OUTPUT
-          echo "invalid_subs=${invalid_subs:-0}" >> $GITHUB_OUTPUT
-          echo "protocol_details_output<<EOF" >> $GITHUB_OUTPUT
-          echo "$protocol_details" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-      - name: 生成 README.md 内容
+      - name: 提交更新
         run: |
-          # 获取当前日期和时间
-          CURRENT_DATE=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') # 设置时区为上海，您可以根据需要更改
-
-          # 构建 README.md 的新内容
-          # 可以考虑读取现有的 README.md 并在指定位置插入信息
-          # 为了简化，这里直接生成一个新的 README.md 覆盖现有内容，或者在文件末尾追加
-          # 如果您有不想被覆盖的现有 README.md 内容，请调整此部分
-          NEW_README_CONTENT=$(cat <<EOF
-# 代理节点订阅
-
-## 更新日志
-
-- **最近更新时间**: ${CURRENT_DATE} (UTC+8)
-
-### 概览
-- **总节点数量**: ${{ steps.run_script.outputs.total_updated_nodes }} 条
-- **有效订阅连接**: ${{ steps.run_script.outputs.valid_subs }} 条
-- **失效订阅连接**: ${{ steps.run_script.outputs.invalid_subs }} 条
-
-### 各协议节点数量与下载
-${{ steps.run_script.outputs.protocol_details_output }}
-
----
-*此文件由 GitHub Actions 自动生成和更新。*
-EOF
-          )
-          
-          # 将生成的内容写入 README.md
-          echo "$NEW_README_CONTENT" > README.md
-
-      - name: 提交更新到 README.md
-        run: |
+          # 配置 Git 用户信息
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
-          # 检查 README.md 是否有实际变化才提交
-          if git diff --staged --quiet README.md; then
-            echo "README.md 没有变化，无需提交。"
+          git add *.txt *.yaml README.md
+          changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$|README\.md' || true)
+          if [ -z "$changes" ]; then
+            echo "无检测到更改。"
           else
-            # 获取当前日期作为提交信息
-            COMMIT_DATE=$(TZ='Asia/Shanghai' date '+%Y-%m-%d') # 设置时区为上海
-            git commit -m "更新节点信息和README.md (${COMMIT_DATE})"
+            git commit -m "更新代理节点数量和README.md"
             git push
           fi
