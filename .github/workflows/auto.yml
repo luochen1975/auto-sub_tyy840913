@@ -22,91 +22,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install PyYAML==6.0 requests
 
-      - name: 执行更新脚本并捕获输出
-        id: run_script
-        run: |
-          # 运行 Python 脚本并捕获输出
-          script_output=$(python update.py 2>&1)
-          echo "$script_output"
+      - name: 执行更新脚本
+        run: python update.py
 
-          # 初始化变量
-          total_updated_nodes=0
-          valid_subs=0
-          invalid_subs=0
-          protocol_details=""
-
-          # 保存到临时文件
-          temp_file=$(mktemp)
-          echo "$script_output" > "$temp_file"
-
-          # 提取信息
-          if grep -q '\[完成\] all.txt' "$temp_file"; then
-            total_updated_nodes=$(grep -o '\[完成\] all.txt : [0-9]*' "$temp_file" | awk '{print $NF}')
-          fi
-
-          if grep -q '\[分组\] 有效' "$temp_file"; then
-            valid_subs=$(grep -o '\[分组\] 有效 [0-9]*' "$temp_file" | awk '{print $NF}')
-          fi
-
-          if grep -q '\[分组\] 失效' "$temp_file"; then
-            invalid_subs=$(grep -o '\[分组\] 失效 [0-9]*' "$temp_file" | awk '{print $NF}')
-          fi
-
-          while read -r line; do
-            if [[ "$line" =~ \[写入\]\ ([a-zA-Z0-9_.]+\.(txt|yaml))\ :\ ([0-9]+) ]]; then
-              file_name="${BASH_REMATCH[1]}"
-              nodes="${BASH_REMATCH[3]}"
-              
-              protocol_name=$(echo "$file_name" | sed 's/\.txt$//; s/\.yaml$//; s/_/- /g; s/\bclash\b/Clash/i; s/\b\(vmess\|vless\|trojan\|hysteria\|tuic\|naive-https\|wireguard\|ss\|ssr\)\b/\U&/g' | sed 's/Hysteria- 2/Hysteria2/')
-
-              REPO_URL="https://github.com/${{ github.repository }}"
-              DOWNLOAD_LINK="${REPO_URL}/raw/${{ github.ref_name }}/${file_name}"
-
-              protocol_details+="- ${protocol_name}: ${nodes} 条 ([下载](${DOWNLOAD_LINK}))"$'\n'
-            fi
-          done < "$temp_file"
-
-          # 输出到 GITHUB_OUTPUT
-          echo "total_updated_nodes=${total_updated_nodes}" >> $GITHUB_OUTPUT
-          echo "valid_subs=${valid_subs}" >> $GITHUB_OUTPUT
-          echo "invalid_subs=${invalid_subs}" >> $GITHUB_OUTPUT
-          echo "protocol_details_output<<EOF" >> $GITHUB_OUTPUT
-          echo "$protocol_details" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-          rm "$temp_file"
-
-      - name: 生成 README.md 内容
-        run: |
-          CURRENT_DATE=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
-          cat <<EOF > README.md
-# 代理节点订阅
-
-## 更新日志
-
-- **最近更新时间**: ${CURRENT_DATE} (UTC+8)
-
-### 概览
-- **总节点数量**: ${{ steps.run_script.outputs.total_updated_nodes }} 条
-- **有效订阅连接**: ${{ steps.run_script.outputs.valid_subs }} 条
-- **失效订阅连接**: ${{ steps.run_script.outputs.invalid_subs }} 条
-
-### 各协议节点数量与下载
-${{ steps.run_script.outputs.protocol_details_output }}
-
----
-*此文件由 GitHub Actions 自动生成和更新。*
-EOF
-
-      - name: 提交更新到 README.md
+      - name: 提交更新
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
-          if git diff --staged --quiet README.md; then
-            echo "README.md 没有变化，无需提交。"
+          git add *.txt *.yaml
+          changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$' || true)
+          if [ -z "$changes" ]; then
+            echo "No changes detected."
           else
-            COMMIT_DATE=$(TZ='Asia/Shanghai' date '+%Y-%m-%d')
-            git commit -m "更新节点信息和 README.md (${COMMIT_DATE})"
+            git commit -m "更新代理节点数量"
             git push
           fi
