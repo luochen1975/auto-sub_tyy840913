@@ -28,6 +28,9 @@ SUPPORTED_PROTOCOLS = [
 
 def read_subscription_file(file_path):
     """读取订阅链接文件并返回去重后的链接列表"""
+    if not file_path:
+        logging.error("订阅文件路径为空")
+        return []
     try:
         if not os.path.exists(file_path):
             logging.error(f"订阅文件 {file_path} 不存在")
@@ -39,19 +42,22 @@ def read_subscription_file(file_path):
         logging.info(f"读取到 {len(lines)} 条订阅链接，去重后 {len(unique_lines)} 条")
         return unique_lines
     except Exception as e:
-        logging.error(f"读取订阅文件失败: {e}")
+        logging.error(f"读取订阅文件 {file_path} 失败: {e}")
         return []
 
 def write_subscription_file(links, file_path):
     """将有效的订阅链接写回文件"""
+    if not file_path:
+        logging.error("订阅文件路径为空，无法写入")
+        return
     try:
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)  # 确保目录存在
+        os.makedirs(os.path.dirname(file_path) or '.', exist_ok=True)  # 确保目录存在
         with open(file_path, 'w', encoding='utf-8') as f:
             for link in links:
                 f.write(link + '\n')
         logging.info(f"已将 {len(links)} 条有效订阅链接写回 {file_path}")
     except Exception as e:
-        logging.error(f"写回订阅文件失败: {e}")
+        logging.error(f"写回订阅文件 {file_path} 失败: {e}")
 
 def fetch_subscription_content(url, timeout=10):
     """获取订阅链接的内容"""
@@ -168,6 +174,9 @@ def deduplicate_proxies(proxies):
 
 def generate_clash_config(proxies, output_file):
     """生成Clash配置文件"""
+    if not output_file:
+        logging.error("输出文件路径为空，无法生成配置文件")
+        return
     clash_config = {
         'proxies': []
     }
@@ -181,12 +190,12 @@ def generate_clash_config(proxies, output_file):
             logging.warning(f"处理代理节点 {proxy['config']} 失败: {e}")
     
     try:
-        os.makedirs(os.path.dirname(output_file), exist_ok=True)  # 确保目录存在
+        os.makedirs(os.path.dirname(output_file) or '.', exist_ok=True)  # 确保目录存在
         with open(output_file, 'w', encoding='utf-8') as f:
             yaml.dump(clash_config, f, allow_unicode=True, sort_keys=False)
         logging.info(f"已生成Clash配置文件 {output_file}，包含 {len(clash_config['proxies'])} 个代理节点")
     except Exception as e:
-        logging.error(f"写入Clash配置文件失败: {e}")
+        logging.error(f"写入Clash配置文件 {output_file} 失败: {e}")
 
 def parse_proxy_for_clash(proxy):
     """将代理节点转换为Clash格式"""
@@ -237,6 +246,14 @@ def main():
     parser.add_argument('--sub-file', default='sub.txt', help='订阅文件路径')
     parser.add_argument('--config-file', default='config.txt', help='输出Clash配置文件路径')
     args = parser.parse_args()
+
+    # 验证文件路径
+    if not args.sub_file:
+        logging.error("订阅文件路径为空，使用默认值 sub.txt")
+        args.sub_file = 'sub.txt'
+    if not args.config_file:
+        logging.error("输出配置文件路径为空，使用默认值 config.txt")
+        args.config_file = 'config.txt'
 
     # 读取订阅链接
     subscription_urls = read_subscription_file(args.sub_file)
