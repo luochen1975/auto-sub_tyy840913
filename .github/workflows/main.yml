@@ -25,20 +25,15 @@ jobs:
       - name: 执行更新脚本
         run: python update.py
 
-      - name: 生成协议统计并提交
+      - name: 提交更新
         run: |
-          # 统计每个协议文件行数
-          stats=""
-          for f in *.txt; do
-            [ -f "$f" ] || continue
-            count=$(wc -l < "$f")
-            stats="$stats $(basename "$f" .txt):$count"
-          done
-          stats=$(echo "$stats" | xargs)  # 去掉多余空格
-
           git config --local user.email "action@github.com"
-          git config --local user.name "自动更新机器人"
+          git config --local user.name "GitHub Action"
           git add *.txt *.yaml
-          git diff --staged --quiet || git commit -m "📦 更新节点$stats [跳过 CI]"
-          git push
-
+          changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$' || true)
+          if [ -z "$changes" ]; then
+            echo "No changes detected."
+          else
+            git commit -m "更新代理节点数量"
+            git push
+          fi
