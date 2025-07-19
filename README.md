@@ -1,12 +1,40 @@
-# 更新日志
-## 最近一次运行详情
+# 节点订阅统计与下载
 
-## 下载链接
-- [ss 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/ss.txt)
-- [ssr 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/ssr.txt)
-- [vmess 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/vmess.txt)
-- [trojan 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/trojan.txt)
-- [hysteria 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/hysteria.txt)
-- [tuic 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/tuic.txt)
-- [naive 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/naive.txt)
-- [wireguard 订阅链接](https://raw.githubusercontent.com/tyy840913/auto-sub/main/wireguard.txt)
+更新时间：2025-07-19 10:26 UTC
+
+## 节点统计：
+```
+[分组] 有效 60 条
+[分组] 失效 0 条
+[写入] ss.txt : 32743 条
+[写入] ssr.txt : 38 条
+[写入] vmess.txt : 31969 条
+[写入] vless.txt : 126300 条
+[写入] trojan.txt : 29365 条
+[写入] hysteria.txt : 0 条
+[写入] hysteria2.txt : 247 条
+[写入] tuic.txt : 0 条
+[写入] naive_https.txt : 0 条
+[写入] wireguard.txt : 0 条
+[写入] clash.yaml : 0 条
+[完成] all.txt : 220706 条
+```
+
+## 下载链接：
+- [all.txt](./all.txt)
+- [debug.txt](./debug.txt)
+- [hysteria.txt](./hysteria.txt)
+- [hysteria2.txt](./hysteria2.txt)
+- [log.txt](./log.txt)
+- [naive_https.txt](./naive_https.txt)
+- [ss.txt](./ss.txt)
+- [ssr.txt](./ssr.txt)
+- [sub.txt](./sub.txt)
+- [sub_invalid.txt](./sub_invalid.txt)
+- [sub_valid.txt](./sub_valid.txt)
+- [trojan.txt](./trojan.txt)
+- [tuic.txt](./tuic.txt)
+- [vless.txt](./vless.txt)
+- [vmess.txt](./vmess.txt)
+- [wireguard.txt](./wireguard.txt)
+- [clash.yaml](./clash.yaml)
