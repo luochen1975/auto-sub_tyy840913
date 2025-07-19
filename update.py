@@ -29,13 +29,13 @@ TIMEOUT = 10
 MAX_RETRIES = 3
 
 # ---------- 自动创建空文件 ----------
-def _确保文件(*paths):
+def _ensure_files(*paths):
     for p in paths:
         os.makedirs(os.path.dirname(p), exist_ok=True)
         if not os.path.exists(p):
             open(p, 'a', encoding='utf-8').close()
 
-_确保_file(SUB_FILE, VALID_FILE, INVALID_FILE, OUT_FILE)
+_ensure_files(SUB_FILE, VALID_FILE, INVALID_FILE, OUT_FILE)
 
 # ---------- 下载 ----------
 def 下载(url: str) -> bytes:
