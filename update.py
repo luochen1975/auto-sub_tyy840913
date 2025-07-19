@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 update.py
-订阅去重、有效性检测、节点拉取、协议支持、Clash 规则合并、节点去重并写入 config.txt
+订阅去重、有效性检测、节点拉取、协议支持、节点去重并写入 config.txt
 所有提示信息及注释均为中文
 """
 import base64
@@ -10,21 +10,17 @@ import os
 import re
 import sys
 import time
-import urllib.parse
-import urllib.request
 from typing import List
 
+import requests
 import yaml
 
 # ---------- 配置 ----------
-# 项目根目录
 REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
-# 订阅文件
 SUB_FILE = os.path.join(REPO_ROOT, 'sub.txt')
-# 节点输出文件
 OUT_FILE = os.path.join(REPO_ROOT, 'config.txt')
 
-# 支持的协议（>=10 种）
+# 支持的协议（≥10 种）
 PROTOCOL_PATTERNS = {
     'ss': r'^ss://',
     'ssr': r'^ssr://',
@@ -38,19 +34,19 @@ PROTOCOL_PATTERNS = {
     'wireguard': r'^wireguard://'
 }
 
-# 网络超时（秒）
 TIMEOUT = 10
-# 最大重试次数
 MAX_RETRIES = 3
 
 
-# ---------- 工具函数 ----------
+# ---------- 工具 ----------
 def 下载(url: str) -> bytes:
-    """带重试的 HTTP 下载"""
+    """带重试并自动处理 gzip / deflate 的下载"""
+    headers = {'User-Agent': 'Mozilla/5.0'}
     for i in range(MAX_RETRIES):
         try:
-            with urllib.request.urlopen(url, timeout=TIMEOUT) as resp:
-                return resp.read()
+            resp = requests.get(url, headers=headers, timeout=TIMEOUT)
+            resp.raise_for_status()
+            return resp.content
         except Exception as e:
             print(f'[警告] 下载失败：{url}，原因：{e}，重试 {i+1}/{MAX_RETRIES}')
             time.sleep(2)
@@ -58,32 +54,45 @@ def 下载(url: str) -> bytes:
 
 
 def 解码base64(data: str) -> str:
-    """自动补全等号并解码 base64"""
+    """自动补全等号并解码 base64，失败返回空字符串"""
     missing_padding = len(data) % 4
     if missing_padding:
         data += '=' * (4 - missing_padding)
     try:
-        return base64.urlsafe_b64decode(data).decode('utf-8')
+        return base64.urlsafe_b64decode(data.encode()).decode('utf-8')
     except Exception:
         return ''
 
 
 def 订阅是否有效(url: str) -> bool:
-    """测试订阅链接能否返回内容"""
-    content = 下载(url)
-    return bool(content and 解码base64(content.decode('utf-8')))
+    """判断订阅链接能否返回节点文本"""
+    raw = 下载(url)
+    if not raw:
+        return False
+    # 先尝试 UTF-8，失败则用 latin-1 兜底
+    try:
+        text = raw.decode('utf-8')
+    except UnicodeDecodeError:
+        text = raw.decode('latin-1')
+    return bool(解码base64(text).strip())
 
 
 def 从订阅获取节点(url: str) -> List[str]:
     """解析订阅返回的节点列表"""
-    content = 下载(url)
-    if not content:
+    raw = 下载(url)
+    if not raw:
         return []
-    decoded = 解码base64(content.decode('utf-8'))
+    try:
+        text = raw.decode('utf-8')
+    except UnicodeDecodeError:
+        text = raw.decode('latin-1')
+
+    decoded = 解码base64(text)
     if not decoded:
         return []
+
     nodes = [line.strip() for line in decoded.splitlines() if line.strip()]
-    # 只保留支持的协议
+    # 过滤支持的协议
     return [n for n in nodes if any(re.match(p, n) for p in PROTOCOL_PATTERNS.values())]
 
 
@@ -115,7 +124,7 @@ def 主函数():
         print('[错误] sub.txt 为空或不存在')
         sys.exit(1)
 
-    # 去重
+    # 去重并保持顺序
     subs = list(dict.fromkeys(subs))
     print(f'[信息] 总计 {len(subs)} 个订阅')
 
