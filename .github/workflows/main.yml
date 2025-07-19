@@ -23,54 +23,37 @@ jobs:
           pip install PyYAML==6.0 requests
 
       - name: 执行更新脚本
-        id: run-script
         run: |
-          python update.py > script.log 2>&1
-          echo "日志已保存到 script.log"
+          python update.py > log.txt
 
-      - name: 提取运行日志并统计节点更新
+      - name: 生成 README.md
         run: |
-          echo "# 更新日志" > README.md
-          echo "## 最近一次运行详情" >> README.md
-          echo "```" >> README.md
-          # 统计每个协议的节点更新数量
-          total_updates=0
-          for proto in ss ssr vmess trojan hysteria tuic naive wireguard; do
-            if [ -f "${proto}.txt" ]; then
-              node_count=$(wc -l < "${proto}.txt")
-              if [ $node_count -gt 0 ]; then
-                echo "$proto 更新了 $node_count 个节点" >> README.md
-                total_updates=$((total_updates + node_count))
-              fi
+          echo "# 节点订阅统计与下载" > README.md
+          echo "" >> README.md
+          echo "更新时间：$(date -u '+%Y-%m-%d %H:%M UTC')" >> README.md
+          echo "" >> README.md
+          echo "## 节点统计：" >> README.md
+          echo '```' >> README.md
+          cat log.txt >> README.md
+          echo '```' >> README.md
+          echo "" >> README.md
+          echo "## 下载链接：" >> README.md
+
+          for file in *.txt *.yaml; do
+            if [ -s "$file" ]; then
+              echo "- [${file}](./$file)" >> README.md
             fi
-          done
-          echo "总共更新了 $total_updates 个节点" >> README.md
-          # 将日志文件内容写入 README.md
-          echo "运行日志：" >> README.md
-          if [ -f "script.log" ]; then
-            cat script.log >> README.md
-          else
-            echo "无可用运行日志" >> README.md
-          fi
-          echo "```" >> README.md
-
-      - name: 为每个协议添加下载链接
-        run: |
-          echo "## 下载链接" >> README.md
-          for proto in ss ssr vmess trojan hysteria tuic naive wireguard; do
-            echo "- [$proto 订阅链接](https://raw.githubusercontent.com/${{ github.repository }}/main/${proto}.txt)" >> README.md
           done
 
       - name: 提交更新
         run: |
-          # 配置 Git 用户信息
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add *.txt *.yaml README.md script.log
-          changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$|README\.md|script\.log' || true)
+          git add *.txt *.yaml README.md
+          changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$|README.md' || true)
           if [ -z "$changes" ]; then
-            echo "无检测到更改。"
+            echo "No changes detected."
           else
-            git commit -m "更新代理节点数量和README.md"
+            git commit -m "更新代理节点数量与 README"
             git push
           fi
