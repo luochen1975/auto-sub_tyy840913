@@ -63,7 +63,15 @@ def fetch_subscription_content(url, timeout=10):
         # 尝试解码Base64
         try:
             if not content.startswith(('vmess://', 'ss://', 'trojan://', 'vless://')):
-                content = base64.b64decode(content).decode('utf-8')
+                decoded = base64.b64decode(content).decode('utf-8')
+                # 检查是否为 YAML 格式
+                try:
+                    yaml_content = yaml.safe_load(decoded)
+                    if isinstance(yaml_content, dict) and 'proxies' in yaml_content:
+                        return yaml_content  # 返回解析后的 YAML
+                except yaml.YAMLError:
+                    pass
+                return decoded  # 返回解码后的文本
         except:
             pass
         return content
@@ -72,15 +80,29 @@ def fetch_subscription_content(url, timeout=10):
         return None
 
 def parse_proxy_node(line):
-    """解析单条代理节点"""
+    """解析单条代理节点（支持 URL 格式）"""
     try:
         for protocol in SUPPORTED_PROTOCOLS:
             if line.startswith(f"{protocol}://"):
-                return {'protocol': protocol, 'config': line}
+                return {'protocol': protocol, 'config': line, 'type': 'url'}
         return None
     except Exception as e:
         logging.warning(f"解析代理节点失败: {line}, 错误: {e}")
         return None
+
+def parse_yaml_proxies(yaml_content):
+    """解析 YAML 格式的代理节点"""
+    try:
+        if isinstance(yaml_content, dict) and 'proxies' in yaml_content:
+            proxies = []
+            for proxy in yaml_content['proxies']:
+                if 'type' in proxy and proxy['type'] in SUPPORTED_PROTOCOLS:
+                    proxies.append({'protocol': proxy['type'], 'config': proxy, 'type': 'yaml'})
+            return proxies
+        return []
+    except Exception as e:
+        logging.warning(f"解析 YAML 代理节点失败: {e}")
+        return []
 
 def fetch_proxies_from_subscription(url):
     """从订阅链接获取代理节点"""
@@ -89,15 +111,20 @@ def fetch_proxies_from_subscription(url):
         return []
     
     proxies = []
-    lines = content.splitlines()
     
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
-        node = parse_proxy_node(line)
-        if node:
-            proxies.append(node)
+    # 如果内容是 YAML 格式
+    if isinstance(content, dict):
+        proxies.extend(parse_yaml_proxies(content))
+    # 如果内容是文本（URL 格式）
+    else:
+        lines = content.splitlines()
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+            node = parse_proxy_node(line)
+            if node:
+                proxies.append(node)
     
     return proxies
 
@@ -128,9 +155,13 @@ def deduplicate_proxies(proxies):
     seen = set()
     unique_proxies = []
     for proxy in proxies:
-        config = proxy['config']
-        if config not in seen:
-            seen.add(config)
+        # 对于 YAML 格式，使用配置的序列化形式去重
+        if proxy['type'] == 'yaml':
+            config_key = yaml.dump(proxy['config'], sort_keys=True)
+        else:
+            config_key = proxy['config']
+        if config_key not in seen:
+            seen.add(config_key)
             unique_proxies.append(proxy)
     logging.info(f"去重后剩余 {len(unique_proxies)} 个代理节点")
     return unique_proxies
@@ -143,12 +174,11 @@ def generate_clash_config(proxies, output_file):
     
     for proxy in proxies:
         try:
-            config = proxy['config']
-            parsed = parse_proxy_for_clash(config)
+            parsed = parse_proxy_for_clash(proxy)
             if parsed:
                 clash_config['proxies'].append(parsed)
         except Exception as e:
-            logging.warning(f"处理代理节点 {config} 失败: {e}")
+            logging.warning(f"处理代理节点 {proxy['config']} 失败: {e}")
     
     try:
         os.makedirs(os.path.dirname(output_file), exist_ok=True)  # 确保目录存在
@@ -158,44 +188,47 @@ def generate_clash_config(proxies, output_file):
     except Exception as e:
         logging.error(f"写入Clash配置文件失败: {e}")
 
-def parse_proxy_for_clash(config):
-    """将代理节点转换为Clash格式（简化的解析逻辑）"""
+def parse_proxy_for_clash(proxy):
+    """将代理节点转换为Clash格式"""
     try:
-        protocol = None
-        for proto in SUPPORTED_PROTOCOLS:
-            if config.startswith(f"{proto}://"):
-                protocol = proto
-                break
-        
-        if not protocol:
-            return None
+        if proxy['type'] == 'yaml':
+            # 直接使用 YAML 格式的配置
+            config = proxy['config']
+            if not isinstance(config, dict) or 'type' not in config:
+                return None
+            return config  # YAML 配置已经符合 Clash 格式，直接返回
+        else:
+            # 处理 URL 格式（简化逻辑）
+            protocol = proxy['protocol']
+            config = proxy['config']
+            parsed = {
+                'name': f"{protocol}-{hash(config) % 10000}",
+                'type': protocol,
+                'server': 'example.com',  # 需从config解析
+                'port': 443,              # 需从config解析
+            }
             
-        parsed = {
-            'name': f"{protocol}-{hash(config) % 10000}",
-            'type': protocol,
-            'server': 'example.com',  # 需从config解析
-            'port': 443,              # 需从config解析
-        }
-        
-        if protocol in ['vmess', 'vless', 'trojan']:
-            parsed.update({
-                'uuid': 'example-uuid',  # 需从config解析
-                'tls': True
-            })
-        elif protocol in ['ss', 'ssr']:
-            parsed.update({
-                'password': 'example-pass',  # 需从config解析
-                'cipher': 'aes-256-gcm'     # 需从config解析
-            })
-        elif protocol in ['http', 'https', 'socks4', 'socks5']:
-            parsed.update({
-                'username': 'user',  # 可选，需从config解析
-                'password': 'pass'   # 可选，需从config解析
-            })
-        
-        return parsed
+            if protocol in ['vmess', 'vless', 'trojan']:
+                parsed.update({
+                    'uuid': 'example-uuid',  # 需从config解析
+                    'tls': True
+                })
+                if protocol == 'vmess':
+                    parsed['alterId'] = 0  # 默认值，需从config解析
+            elif protocol in ['ss', 'ssr']:
+                parsed.update({
+                    'password': 'example-pass',  # 需从config解析
+                    'cipher': 'aes-256-gcm'     # 需从config解析
+                })
+            elif protocol in ['http', 'https', 'socks4', 'socks5']:
+                parsed.update({
+                    'username': 'user',  # 可选，需从config解析
+                    'password': 'pass'   # 可选，需从config解析
+                })
+            
+            return parsed
     except Exception as e:
-        logging.warning(f"解析Clash代理配置失败 {config}: {e}")
+        logging.warning(f"解析Clash代理配置失败 {proxy['config']}: {e}")
         return None
 
 def main():
