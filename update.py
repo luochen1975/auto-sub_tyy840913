@@ -135,7 +135,6 @@ def 提取节点(raw: bytes) -> List[str]:
     # 3. 纯文本行
     return [ln.strip() for ln in text.splitlines() if ln.strip()]
 
-# ---------- 主 ----------
 def main():
     _ensure_files(SUB_FILE, VALID_FILE, INVALID_FILE, OUT_FILE)
 
@@ -172,12 +171,16 @@ def main():
         nodes.extend(tmp)
         print(f'[信息] {url} → {len(tmp)} 个节点')
 
-    # 去重后写入
+    # 去重并写日志
     nodes = list(dict.fromkeys(nodes))
+    print(f'[去重] 最终节点 {len(nodes)} 个')
     with open(OUT_FILE, 'w', encoding='utf-8') as f:
         f.write('\n'.join(nodes) + '\n')
 
-    print(f'[完成] 共 {len(nodes)} 个节点 已写入 {OUT_FILE}')
+    # 移除失效订阅
+    with open(SUB_FILE, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(valid) + '\n')
+    print(f'[清理] 已移除失效订阅，sub.txt 现剩 {len(valid)} 条')
 
 
 if __name__ == '__main__':
