@@ -9,12 +9,12 @@ import logging
 import os
 import argparse
 
-# 设置日志
+# 设置日志，输出到文件和控制台，便于调试
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('script.log'),  # 输出日志到文件，便于GitHub Actions调试
+        logging.FileHandler('script.log'),  # 日志保存到文件，供GitHub Actions调试
         logging.StreamHandler()
     ]
 )
@@ -199,9 +199,10 @@ def parse_proxy_for_clash(config):
         return None
 
 def main():
-    parser = argparse.ArgumentParser(description="Process subscription links and generate Clash config")
-    parser.add_argument('--sub-file', default='sub.txt', help='Path to subscription file')
-    parser.add_argument('--config-file', default='config.txt', help='Path to output Clash config file')
+    """主函数，处理命令行参数并执行脚本"""
+    parser = argparse.ArgumentParser(description="处理订阅链接并生成Clash配置文件")
+    parser.add_argument('--sub-file', default='sub.txt', help='订阅文件路径')
+    parser.add_argument('--config-file', default='config.txt', help='输出Clash配置文件路径')
     args = parser.parse_args()
 
     # 读取订阅链接
