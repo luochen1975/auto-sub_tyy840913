@@ -1,4 +1,4 @@
-name: 自动更新订阅与节点 main.yml
+name: 自动更新订阅与节点
 
 on:
   schedule:
@@ -23,7 +23,9 @@ jobs:
           pip install PyYAML==6.0 requests
 
       - name: 执行更新脚本
-        run: python update.py
+        run: |
+          # 将脚本输出重定向到日志文件
+          python update.py > update.log 2>&1
 
       - name: 提取运行日志并统计节点更新
         run: |
@@ -42,6 +44,9 @@ jobs:
             fi
           done
           echo "总共更新了 $total_updates 个节点" >> README.md
+          # 添加运行日志
+          echo "运行日志：" >> README.md
+          cat update.log >> README.md 2>/dev/null || echo "无可用运行日志" >> README.md
           echo "```" >> README.md
 
       - name: 为每个协议添加下载链接
@@ -56,8 +61,8 @@ jobs:
           # 配置 Git 用户信息
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add *.txt *.yaml README.md
-          changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$|README\.md' || true)
+          git add *.txt *.yaml README.md update.log
+          changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$|README\.md|update\.log' || true)
           if [ -z "$changes" ]; then
             echo "无检测到更改。"
           else
