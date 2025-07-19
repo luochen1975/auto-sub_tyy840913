@@ -1,58 +1,37 @@
-name: 运行代理订阅脚本
+name: 自动更新订阅与节点
 
 on:
+  # 每天 UTC 03:00 自动执行
   schedule:
-    - cron: '0 0 * * *'  # 每天 UTC 00:00 运行（可根据需要调整）
-  push:
-    branches:
-      - main  # 推送到 main 分支时运行
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 3 * * *'
+  # 允许手动触发
+  workflow_dispatch:
 
 jobs:
-  run-script:
+  更新任务:
     runs-on: ubuntu-latest
-
     steps:
-      # 检出代码
-      - name: 检出仓库代码
+      - name: 检出仓库
         uses: actions/checkout@v4
 
-      # 设置 Python 环境
-      - name: 设置 Python 环境
+      - name: 安装 Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'  # 使用 Python 3.11（可根据需要调整）
+          python-version: '3.11'
 
-      # 安装依赖
       - name: 安装依赖
         run: |
           python -m pip install --upgrade pip
-          pip install requests>=2.31.0 pyyaml>=6.0  # 安装脚本所需依赖
+          pip install PyYAML==6.0
 
-      # 运行脚本
-      - name: 运行脚本
-        run: python script.py --sub-file sub.txt --config-file config.txt
-        working-directory: ${{ github.workspace }}  # 确保工作目录为仓库根目录
-
-      # 上传输出文件作为 artifacts
-      - name: 上传输出文件
-        uses: actions/upload-artifact@v4
-        with:
-          name: 脚本输出
-          path: |
-            sub.txt
-            config.txt
-            script.log
-          if-no-files-found: warn  # 如果文件不存在，仅警告
-
-      # 提交更新的文件到仓库（可选）
-      - name: 提交更新文件
+      - name: 执行更新脚本
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          python update.py
+
+      - name: 提交变更
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "自动更新机器人"
           git add sub.txt config.txt
-          git commit -m "更新 sub.txt 和 config.txt" || echo "没有变更需要提交"
+          git diff --staged --quiet || git commit -m "自动更新：订阅去重、节点合并 [跳过 CI]"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true  # 如果没有变更，继续执行
