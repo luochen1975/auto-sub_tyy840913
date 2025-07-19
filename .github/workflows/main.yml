@@ -1,4 +1,4 @@
-name: 自动更新订阅与节点
+Name: 自动更新订阅与节点
 
 on:
   schedule:
@@ -22,8 +22,61 @@ jobs:
           python -m pip install --upgrade pip
           pip install PyYAML==6.0 requests
 
-      - name: 执行更新脚本
-        run: python update.py
+      - name: 执行更新脚本并捕获输出
+        id: run_script
+        run: |
+          # 运行您的 Python 脚本，将其标准输出作为变量捕获
+          script_output=$(python update.py 2>&1)
+          echo "$script_output" # 打印出来以便在 Actions 日志中查看
+
+          # 从日志中提取总节点数 (all.txt 的条目数)
+          total_updated_nodes=$(echo "$script_output" | grep "\[完成\] all.txt" | awk '{print $NF}' | sed 's/条//')
+          echo "total_updated_nodes=${total_updated_nodes:-0}" >> $GITHUB_OUTPUT
+
+          # 从日志中提取有效和无效订阅数
+          valid_subs=$(echo "$script_output" | grep "\[分组\] 有效" | awk '{print $NF}' | sed 's/条//')
+          echo "valid_subs=${valid_subs:-0}" >> $GITHUB_OUTPUT
+
+          invalid_subs=$(echo "$script_output" | grep "\[分组\] 失效" | awk '{print $NF}' | sed 's/条//')
+          echo "invalid_subs=${invalid_subs:-0}" >> $GITHUB_OUTPUT
+
+          # 动态从日志中提取所有被写入的文件及其对应的节点数量
+          # 查找所有包含 "[写入] filename : X 条" 格式的行
+          # 提取文件名和节点数量，并格式化输出
+          protocol_output="" # 用于构建 Markdown 格式的输出
+
+          echo "$script_output" | grep "\[写入\]" | while IFS= read -r line; do
+            file_name=$(echo "$line" | awk -F'[: ]+' '{print $3}') # 提取文件名，例如 "ss.txt"
+            nodes=$(echo "$line" | awk '{print $NF}' | sed 's/条//') # 提取节点数
+
+            # 格式化协议名显示
+            # 这里对文件名的处理逻辑保持不变，确保美观性
+            protocol_name=$(echo "$file_name" | sed 's/\.txt$//; s/\.yaml$//; s/_/- /g; s/\bclash\b/Clash/i; s/\b(vmess|vless|trojan|hysteria|tuic|naive-https|wireguard|ss|ssr)\b/\U&/g' | sed 's/Hysteria- 2/Hysteria2/')
+
+            # 将节点数作为单独的 output 变量写入 GITHUB_OUTPUT (可选，但推荐保留，方便调试或未来扩展)
+            # 例如：echo "${file_name//./_}_nodes=${nodes:-0}" >> $GITHUB_OUTPUT # ss_txt_nodes, clash_yaml_nodes
+
+            # 构建用于显示的 Markdown 字符串
+            protocol_output+="- ${protocol_name}: ${nodes:-0} 条\n"
+          done
+
+          # 将构建好的协议输出字符串写入 GITHUB_OUTPUT
+          echo "protocol_nodes_display_output<<EOF" >> $GITHUB_OUTPUT
+          echo "$protocol_output" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+
+      - name: 显示更新总数和各协议节点数
+        run: |
+          echo "## 代理节点更新概览"
+          echo "" # 空行用于格式化
+          echo "总节点数量: ${{ steps.run_script.outputs.total_updated_nodes }} 条"
+          echo "有效订阅连接: ${{ steps.run_script.outputs.valid_subs }} 条"
+          echo "失效订阅连接: ${{ steps.run_script.outputs.invalid_subs }} 条"
+          echo "" # 空行用于格式化
+          echo "### 各协议节点数量:"
+          echo "${{ steps.run_script.outputs.protocol_nodes_display_output }}"
+
 
       - name: 提交更新
         run: |
@@ -32,8 +85,8 @@ jobs:
           git add *.txt *.yaml
           changes=$(git diff --staged --name-only | grep -E '\.txt$|\.yaml$' || true)
           if [ -z "$changes" ]; then
-            echo "No changes detected."
+            echo "没有检测到任何更改。"
           else
-            git commit -m "更新代理节点数量"
+            git commit -m "更新代理节点数量 (${{ steps.run_script.outputs.total_updated_nodes }} 条)"
             git push
           fi
