@@ -27,7 +27,7 @@ OUT_FILE     = os.path.join(REPO_ROOT, 'config.txt')
 
 TIMEOUT = 10
 MAX_RETRIES = 3
-
+MIN_NODES_PER_SUB = 20   # 每条订阅最少节点数，低于此数视为低质量
 
 # ---------- 工具 ----------
 def _ensure_files(*paths):
@@ -138,50 +138,53 @@ def 提取节点(raw: bytes) -> List[str]:
 def main():
     _ensure_files(SUB_FILE, VALID_FILE, INVALID_FILE, OUT_FILE)
 
-    # 读取订阅
     try:
         links = [ln.strip() for ln in open(SUB_FILE, encoding='utf-8') if ln.strip()]
     except FileNotFoundError:
         links = []
 
     if not links:
-        print('[提示] sub.txt 为空，已自动创建，请将订阅链接写入后再次运行')
+        print('[提示] sub.txt 为空，已自动创建，请添加订阅后重试')
         sys.exit(0)
 
-    # 检测有效性
-    valid, invalid = [], []
+    # 1. 检测有效性并过滤低质量
+    valid, invalid, low_quality = [], [], []
     for url in links:
-        (valid if len(提取节点(下载(url))) > 0 else invalid).append(url)
+        raw = 下载(url)
+        tmp = 提取节点(raw)
+        if len(tmp) < MIN_NODES_PER_SUB:
+            low_quality.append(url)
+            continue
+        (valid if len(tmp) > 0 else invalid).append(url)
 
-    # 写分组文件
+    # 2. 写分组文件
+    os.makedirs(os.path.dirname(VALID_FILE), exist_ok=True)
     with open(VALID_FILE, 'w', encoding='utf-8') as f:
-        f.write(f'# 有效订阅（共 {len(valid)} 条）\n' + '\n'.join(valid) + '\n')
+        f.write(f'# 有效订阅（≥{MIN_NODES_PER_SUB} 节点）共 {len(valid)} 条\n' + '\n'.join(valid) + '\n')
 
     with open(INVALID_FILE, 'w', encoding='utf-8') as f:
-        f.write(f'# 失效订阅（共 {len(invalid)} 条）\n' + '\n'.join(invalid) + '\n')
+        f.write(f'# 失效订阅（0 节点）共 {len(invalid)} 条\n' + '\n'.join(invalid) + '\n')
 
-    print(f'[信息] 有效 {len(valid)} 条 → {VALID_FILE}')
-    print(f'[信息] 失效 {len(invalid)} 条 → {INVALID_FILE}')
+    if low_quality:
+        with open(os.path.join(REPO_ROOT, 'sub_lowquality.txt'), 'w', encoding='utf-8') as f:
+            f.write(f'# 低质量订阅（<{MIN_NODES_PER_SUB} 节点）共 {len(low_quality)} 条\n' + '\n'.join(low_quality) + '\n')
 
-    # 拉取节点（仅有效订阅）
+    print(f'[分组] 有效 ≥{MIN_NODES_PER_SUB} 节点：{len(valid)} 条')
+    print(f'[分组] 失效 0 节点：{len(invalid)} 条')
+    print(f'[分组] 低质量 <{MIN_NODES_PER_SUB} 节点：{len(low_quality)} 条')
+
+    # 3. 拉取节点（仅有效订阅）
     nodes: List[str] = []
     for url in valid:
         raw = 下载(url)
         tmp = 提取节点(raw)
         nodes.extend(tmp)
-        print(f'[信息] {url} → {len(tmp)} 个节点')
+        print(f'[节点] {url} → {len(tmp)} 个')
 
-    # 去重并写日志
+    # 4. 去重并写文件
     nodes = list(dict.fromkeys(nodes))
     print(f'[去重] 最终节点 {len(nodes)} 个')
     with open(OUT_FILE, 'w', encoding='utf-8') as f:
         f.write('\n'.join(nodes) + '\n')
 
-    # 移除失效订阅
-    with open(SUB_FILE, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(valid) + '\n')
-    print(f'[清理] 已移除失效订阅，sub.txt 现剩 {len(valid)} 条')
-
-
-if __name__ == '__main__':
-    main()
+    print(f'[完成] 节点已写入 {OUT_FILE}')
