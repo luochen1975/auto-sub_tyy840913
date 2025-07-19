@@ -1,4 +1,4 @@
-name: 自动更新订阅与节点
+name: 自动更新订阅与节点 main.yml
 
 on:
   schedule:
@@ -25,18 +25,29 @@ jobs:
       - name: 执行更新脚本
         run: python update.py
 
-      - name: 提取运行日志
+      - name: 提取运行日志并统计节点更新
         run: |
           echo "# 更新日志" > README.md
           echo "## 最近一次运行详情" >> README.md
           echo "```" >> README.md
-          cat /github/workflow/runs/*.log >> README.md 2>/dev/null || echo "无日志文件" >> README.md
+          # 统计每个协议的节点更新数量
+          total_updates=0
+          for proto in ss ssr vmess trojan hysteria tuic naive wireguard; do
+            if [ -f "${proto}.txt" ]; then
+              node_count=$(wc -l < "${proto}.txt")
+              if [ $node_count -gt 0 ]; then
+                echo "$proto 更新了 $node_count 个节点" >> README.md
+                total_updates=$((total_updates + node_count))
+              fi
+            fi
+          done
+          echo "总共更新了 $total_updates 个节点" >> README.md
           echo "```" >> README.md
 
       - name: 为每个协议添加下载链接
         run: |
           echo "## 下载链接" >> README.md
-          for proto in ss ssr vmess trojan hysteria tuic naive; do
+          for proto in ss ssr vmess trojan hysteria tuic naive wireguard; do
             echo "- [$proto 订阅链接](https://raw.githubusercontent.com/${{ github.repository }}/main/${proto}.txt)" >> README.md
           done
 
