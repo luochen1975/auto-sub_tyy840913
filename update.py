@@ -25,6 +25,21 @@ VALID_FILE   = os.path.join(REPO_ROOT, 'sub_valid.txt')
 INVALID_FILE = os.path.join(REPO_ROOT, 'sub_invalid.txt')
 OUT_FILE     = os.path.join(REPO_ROOT, 'config.txt')
 
+PROTO_FILES = {                 # 协议 → 文件名
+    'ss': 'ss.txt',
+    'ssr': 'ssr.txt',
+    'vmess': 'vmess.txt',
+    'vless': 'vless.txt',
+    'trojan': 'trojan.txt',
+    'hysteria': 'hysteria.txt',
+    'hysteria2': 'hysteria2.txt',
+    'tuic': 'tuic.txt',
+    'naive+https': 'naive_https.txt',
+    'wireguard': 'wireguard.txt',
+    'clash': 'clash.yaml'       # 完整 Clash YAML 单独保存
+}
+ALL_FILE = 'all.txt'           # 总节点文件
+
 TIMEOUT = 10
 MAX_RETRIES = 3
 MIN_NODES_PER_SUB = 20   # 每条订阅最少节点数，低于此数视为低质量
@@ -136,55 +151,87 @@ def 提取节点(raw: bytes) -> List[str]:
     return [ln.strip() for ln in text.splitlines() if ln.strip()]
 
 def main():
-    _ensure_files(SUB_FILE, VALID_FILE, INVALID_FILE, OUT_FILE)
+    # 确保目录存在
+    for p in (SUB_FILE, VALID_FILE, INVALID_FILE, OUT_FILE, *PROTO_FILES.values()):
+        os.makedirs(os.path.dirname(os.path.join(REPO_ROOT, p)), exist_ok=True)
 
+    # 读取订阅
     try:
         links = [ln.strip() for ln in open(SUB_FILE, encoding='utf-8') if ln.strip()]
     except FileNotFoundError:
         links = []
 
     if not links:
-        print('[提示] sub.txt 为空，已自动创建，请添加订阅后重试')
+        print('[提示] sub.txt 为空，请添加订阅后重试')
         sys.exit(0)
 
-    # 1. 检测有效性并过滤低质量
-    valid, invalid, low_quality = [], [], []
+    # 检测有效性
+    valid, invalid = [], []
     for url in links:
-        raw = 下载(url)
-        tmp = 提取节点(raw)
-        if len(tmp) < MIN_NODES_PER_SUB:
-            low_quality.append(url)
-            continue
-        (valid if len(tmp) > 0 else invalid).append(url)
+        (valid if len(提取节点(下载(url))) > 0 else invalid).append(url)
 
-    # 2. 写分组文件
-    os.makedirs(os.path.dirname(VALID_FILE), exist_ok=True)
+    # 写分组文件
     with open(VALID_FILE, 'w', encoding='utf-8') as f:
-        f.write(f'# 有效订阅（≥{MIN_NODES_PER_SUB} 节点）共 {len(valid)} 条\n' + '\n'.join(valid) + '\n')
-
+        f.write(f'# 有效订阅（共 {len(valid)} 条）\n' + '\n'.join(valid) + '\n')
     with open(INVALID_FILE, 'w', encoding='utf-8') as f:
-        f.write(f'# 失效订阅（0 节点）共 {len(invalid)} 条\n' + '\n'.join(invalid) + '\n')
+        f.write(f'# 失效订阅（共 {len(invalid)} 条）\n' + '\n'.join(invalid) + '\n')
 
-    if low_quality:
-        with open(os.path.join(REPO_ROOT, 'sub_lowquality.txt'), 'w', encoding='utf-8') as f:
-            f.write(f'# 低质量订阅（<{MIN_NODES_PER_SUB} 节点）共 {len(low_quality)} 条\n' + '\n'.join(low_quality) + '\n')
+    print(f'[分组] 有效 {len(valid)} 条')
+    print(f'[分组] 失效 {len(invalid)} 条')
 
-    print(f'[分组] 有效 ≥{MIN_NODES_PER_SUB} 节点：{len(valid)} 条')
-    print(f'[分组] 失效 0 节点：{len(invalid)} 条')
-    print(f'[分组] 低质量 <{MIN_NODES_PER_SUB} 节点：{len(low_quality)} 条')
+    # 协议桶
+    protocol_nodes = {proto: [] for proto in PROTO_FILES}
+    all_nodes = []
 
-    # 3. 拉取节点（仅有效订阅）
-    nodes: List[str] = []
+    # 拉取并分类
     for url in valid:
         raw = 下载(url)
-        tmp = 提取节点(raw)
-        nodes.extend(tmp)
-        print(f'[节点] {url} → {len(tmp)} 个')
+        tmp_nodes = 提取节点(raw)
+        all_nodes.extend(tmp_nodes)
 
-    # 4. 去重并写文件
-    nodes = list(dict.fromkeys(nodes))
-    print(f'[去重] 最终节点 {len(nodes)} 个')
-    with open(OUT_FILE, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(nodes) + '\n')
+        # 按协议分类
+        for node in tmp_nodes:
+            if node.startswith('ss://'):
+                protocol_nodes['ss'].append(node)
+            elif node.startswith('ssr://'):
+                protocol_nodes['ssr'].append(node)
+            elif node.startswith('vmess://'):
+                protocol_nodes['vmess'].append(node)
+            elif node.startswith('vless://'):
+                protocol_nodes['vless'].append(node)
+            elif node.startswith('trojan://'):
+                protocol_nodes['trojan'].append(node)
+            elif node.startswith('hysteria://'):
+                protocol_nodes['hysteria'].append(node)
+            elif node.startswith('hysteria2://'):
+                protocol_nodes['hysteria2'].append(node)
+            elif node.startswith('tuic://'):
+                protocol_nodes['tuic'].append(node)
+            elif node.startswith('naive+https://'):
+                protocol_nodes['naive+https'].append(node)
+            elif node.startswith('wireguard://'):
+                protocol_nodes['wireguard'].append(node)
+            else:
+                # 未识别协议也进 all
+                pass
 
-    print(f'[完成] 节点已写入 {OUT_FILE}')
+    # 去重（保序）
+    for proto in protocol_nodes:
+        protocol_nodes[proto] = list(dict.fromkeys(protocol_nodes[proto]))
+
+    all_nodes = list(dict.fromkeys(all_nodes))
+
+    # 写入各协议文件
+    for proto, filename in PROTO_FILES.items():
+        with open(os.path.join(REPO_ROOT, filename), 'w', encoding='utf-8') as f:
+            f.write('\n'.join(protocol_nodes[proto]) + '\n')
+        print(f'[写入] {filename} : {len(protocol_nodes[proto])} 条')
+
+    # 总节点
+    with open(os.path.join(REPO_ROOT, ALL_FILE), 'w', encoding='utf-8') as f:
+        f.write('\n'.join(all_nodes) + '\n')
+    print(f'[完成] {ALL_FILE} : {len(all_nodes)} 条')
+
+
+if __name__ == '__main__':
+    main()
