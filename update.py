@@ -38,81 +38,124 @@ def 下载(url: str) -> bytes:
             time.sleep(2)
     return b''
 
-
-# ---------- 节点提取 ----------
+# ========== 1. 提取节点（主入口） ==========
 def 提取节点(raw: bytes) -> List[str]:
     if not raw:
         return []
 
-    # 1. 解码
     try:
         text = raw.decode('utf-8')
     except UnicodeDecodeError:
         text = raw.decode('latin-1')
 
-    # 2. 先按 Clash YAML 解析
-    if re.search(r'^proxies\s*:', text, re.MULTILINE):
-        try:
-            data = yaml.safe_load(text)
-            proxies = data.get('proxies', [])
-            nodes = [_clash_to_uri(p) for p in proxies]
-            return [n for n in nodes if n]
-        except Exception as e:
-            print('[警告] YAML 解析失败', e)
+    # 1. 尝试 Clash YAML（多关键字）
+    for key in ('proxies', 'Proxy', 'proxy-providers'):
+        if re.search(rf'^{key}\s*:', text, flags=re.MULTILINE | re.IGNORECASE):
+            try:
+                data = yaml.safe_load(text)
+                proxies = data.get(key, []) if key != 'proxy-providers' else \
+                          [v for v in data.get(key, {}).values() for p in v.get('proxies', [])]
+                return [_clash_to_uri(p) for p in proxies if _clash_to_uri(p)]
+            except Exception as e:
+                print(f'[警告] YAML 解析失败：{e}')
+                return []
 
-    # 3. 再按 Base64 解析
+    # 2. Base64 解码兜底
     decoded = _try_base64(text)
     if decoded:
-        return [ln for ln in decoded.splitlines() if ln.strip()]
+        return [ln.strip() for ln in decoded.splitlines() if ln.strip()]
 
-    # 4. 直接按纯文本行处理（兜底）
+    # 3. 纯文本行兜底
     return [ln.strip() for ln in text.splitlines() if ln.strip()]
 
 
-# ---------- 工具 ----------
-def _try_base64(data: str) -> str:
-    """尝试 Base64 解码"""
-    try:
-        # 补 =
-        missing = len(data) % 4
-        if missing:
-            data += '=' * (4 - missing)
-        decoded = base64.urlsafe_b64decode(data.encode()).decode('utf-8')
-        return decoded
-    except Exception:
-        return ''
-
-
+# ========== 2. Clash → URI 转换（完整版） ==========
 def _clash_to_uri(proxy: dict) -> str:
-    """Clash 节点 → URI"""
+    """把单个 Clash proxy 转成通用 URI，容错字段"""
     t = proxy.get('type', '').lower()
     name = urllib.parse.quote(proxy.get('name', ''))
 
-    # SS
+    # 通用字段
+    server = proxy.get('server', '')
+    port = proxy.get('port', 0)
+    if not server or not port:
+        return ''
+
+    # ---------- SS ----------
     if t == 'ss':
-        cipher, pwd, server, port = proxy['cipher'], proxy['password'], proxy['server'], proxy['port']
-        auth = base64.urlsafe_b64encode(f'{cipher}:{pwd}'.encode()).decode()
+        cipher = proxy.get('cipher', '')
+        password = proxy.get('password', '')
+        if not cipher or not password:
+            return ''
+        auth = base64.urlsafe_b64encode(f'{cipher}:{password}'.encode()).decode()
         return f'ss://{auth}@{server}:{port}#{name}'
 
-    # VMess
+    # ---------- VMess ----------
     if t == 'vmess':
-        vm = {
-            "v": "2", "ps": name, "add": proxy['server'], "port": str(proxy['port']),
-            "id": proxy['uuid'], "aid": str(proxy.get('alterId', 0)),
-            "net": proxy.get('network', 'tcp'), "type": proxy.get('type', 'none'),
-            "host": proxy.get('ws-headers', {}).get('Host', ''),
-            "path": proxy.get('ws-path', ''),
-            "tls": 'tls' if proxy.get('tls', False) else ''
+        vmess = {
+            "v": "2",
+            "ps": name,
+            "add": server,
+            "port": str(port),
+            "id": proxy.get('uuid', ''),
+            "aid": str(proxy.get('alterId', proxy.get('aid', 0))),
+            "net": proxy.get('network', 'tcp'),
+            "type": proxy.get('type', 'none'),
+            "host": proxy.get('ws-headers', {}).get('Host', '') or proxy.get('ws-opts', {}).get('headers', {}).get('Host', ''),
+            "path": proxy.get('ws-path', '') or proxy.get('ws-opts', {}).get('path', ''),
+            "tls": 'tls' if proxy.get('tls', False) or proxy.get('sni') else ''
         }
-        return f"vmess://{base64.urlsafe_b64encode(str(vm).encode()).decode()}"
+        if not vmess['id']:
+            return ''
+        b64 = base64.urlsafe_b64encode(str(vmess).encode()).decode()
+        return f'vmess://{b64}'
 
-    # Trojan
+    # ---------- Trojan ----------
     if t == 'trojan':
-        return f"trojan://{proxy['password']}@{proxy['server']}:{proxy['port']}?sni={proxy.get('sni', '')}#{name}"
+        password = proxy.get('password', '')
+        if not password:
+            return ''
+        sni = proxy.get('sni', '')
+        return f'trojan://{password}@{server}:{port}?sni={sni}#{name}'
+
+    # ---------- VLESS ----------
+    if t == 'vless':
+        uuid = proxy.get('uuid', '')
+        if not uuid:
+            return ''
+        net = proxy.get('network', 'tcp')
+        tls = 'tls' if proxy.get('tls', False) else ''
+        host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', '')
+        path = proxy.get('ws-opts', {}).get('path', '')
+        uri = f'vless://{uuid}@{server}:{port}?type={net}&security={tls}&host={host}&path={path}#{name}'
+        return uri
+
+    # ---------- Hysteria / Hysteria2 ----------
+    if t in ('hysteria', 'hysteria2'):
+        auth = proxy.get('auth', proxy.get('password', ''))
+        if not auth:
+            return ''
+        alpn = ','.join(proxy.get('alpn', []))
+        return f'{t}://{auth}@{server}:{port}?alpn={alpn}#{name}'
+
+    # ---------- Tuic ----------
+    if t == 'tuic':
+        uuid = proxy.get('uuid', '')
+        password = proxy.get('password', '')
+        if not uuid or not password:
+            return ''
+        return f'tuic://{uuid}:{password}@{server}:{port}#{name}'
 
     # 其余协议可自行扩展
     return ''
 
+# ========== 3. Base64 解码兜底 ==========
+def _try_base64(data: str) -> str:
+    try:
+        data += '=' * (-len(data) % 4)
+        return base64.urlsafe_b64decode(data.encode()).decode('utf-8')
+    except Exception:
+        return ''
 
 # ---------- 文件读写 ----------
 def 读取链接() -> List[str]:
