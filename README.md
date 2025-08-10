@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2025-08-09 03:53 UTC
+更新时间：2025-08-10 04:07 UTC
 
 ## 节点统计：
 ```
@@ -9,18 +9,18 @@
 [警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
 [分组] 有效 98 条
 [分组] 失效 3 条
-[写入] ss.txt : 36407 条
-[写入] ssr.txt : 39 条
-[写入] vmess.txt : 34297 条
-[写入] vless.txt : 143174 条
-[写入] trojan.txt : 30999 条
+[写入] ss.txt : 36127 条
+[写入] ssr.txt : 32 条
+[写入] vmess.txt : 33999 条
+[写入] vless.txt : 142712 条
+[写入] trojan.txt : 30998 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 541 条
+[写入] hysteria2.txt : 573 条
 [写入] tuic.txt : 1 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 651773 条
+[完成] all.txt : 648038 条
 ```
 
 ## 下载链接：
