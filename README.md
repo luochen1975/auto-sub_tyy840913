@@ -1,26 +1,29 @@
 # 节点订阅统计与下载
 
-更新时间：2025-08-11 04:07 UTC
+更新时间：2025-08-12 03:52 UTC
 
 ## 节点统计：
 ```
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa65d4e4c50>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa65d4e5a50>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa65db88150>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
-[分组] 有效 98 条
-[分组] 失效 3 条
-[写入] ss.txt : 36290 条
-[写入] ssr.txt : 35 条
-[写入] vmess.txt : 33766 条
-[写入] vless.txt : 143946 条
-[写入] trojan.txt : 31511 条
+[警告] 下载失败：https://file.uhsea.com/2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3fb28b2290>, 'Connection to file.uhsea.com timed out. (connect timeout=10)'))
+[警告] 下载失败：https://file.uhsea.com/2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3fb28b0d90>, 'Connection to file.uhsea.com timed out. (connect timeout=10)'))
+[警告] 下载失败：https://file.uhsea.com/2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3fb241a2d0>, 'Connection to file.uhsea.com timed out. (connect timeout=10)'))
+[警告] 下载失败：https://file.uhsea.com/2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3fb241b6d0>, 'Connection to file.uhsea.com timed out. (connect timeout=10)'))
+[警告] 下载失败：https://file.uhsea.com/2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3fb637f8d0>, 'Connection to file.uhsea.com timed out. (connect timeout=10)'))
+[警告] 下载失败：https://file.uhsea.com/2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3fb637e5d0>, 'Connection to file.uhsea.com timed out. (connect timeout=10)'))
+[分组] 有效 97 条
+[分组] 失效 4 条
+[写入] ss.txt : 36579 条
+[写入] ssr.txt : 41 条
+[写入] vmess.txt : 33853 条
+[写入] vless.txt : 143856 条
+[写入] trojan.txt : 31516 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 584 条
+[写入] hysteria2.txt : 650 条
 [写入] tuic.txt : 1 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 655056 条
+[完成] all.txt : 657410 条
 ```
 
 ## 下载链接：
