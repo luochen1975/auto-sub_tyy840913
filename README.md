@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2025-09-12 03:30 UTC
+更新时间：2025-09-13 03:26 UTC
 
 ## 节点统计：
 ```
@@ -21,18 +21,18 @@
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
 [分组] 有效 92 条
 [分组] 失效 9 条
-[写入] ss.txt : 29023 条
-[写入] ssr.txt : 45 条
-[写入] vmess.txt : 21113 条
-[写入] vless.txt : 122308 条
-[写入] trojan.txt : 26340 条
+[写入] ss.txt : 28932 条
+[写入] ssr.txt : 40 条
+[写入] vmess.txt : 20617 条
+[写入] vless.txt : 133403 条
+[写入] trojan.txt : 26627 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 459 条
-[写入] tuic.txt : 7 条
+[写入] hysteria2.txt : 494 条
+[写入] tuic.txt : 8 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 631668 条
+[完成] all.txt : 643032 条
 ```
 
 ## 下载链接：
