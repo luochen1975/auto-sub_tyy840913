@@ -2,7 +2,7 @@ name: 自动更新订阅与节点 main
 
 on:
   schedule:
-    - cron: '0 22 * * *'   # 每天 UTC 22:00，CST 时间 06:00
+    - cron: '0 22 * * *'   # 北京时间 6:00 = UTC 22:00（前一天）
   workflow_dispatch:
 
 jobs:
@@ -26,11 +26,11 @@ jobs:
         run: |
           python update.py > log.txt
 
-      - name: 生成 README.md
+      - name: 生成 README.md（使用北京时间）
         run: |
           echo "# 节点订阅统计与下载" > README.md
           echo "" >> README.md
-          echo "更新时间：$(date -u '+%Y-%m-%d %H:%M UTC')" >> README.md
+          echo "更新时间：$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M CST')" >> README.md
           echo "" >> README.md
           echo "## 节点统计：" >> README.md
           echo '```' >> README.md
