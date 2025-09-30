@@ -2,7 +2,7 @@ name: 自动更新订阅与节点 main
 
 on:
   schedule:
-    - cron: '0 22 * * *'   # 每天 UTC 03:00
+    - cron: '0 22 * * *'   # 每天 UTC 22:00，CST 时间 06:00
   workflow_dispatch:
 
 jobs:
