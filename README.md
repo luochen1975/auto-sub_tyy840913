@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2025-10-03 06:20 CST
+更新时间：2025-10-04 06:19 CST
 
 ## 节点统计：
 ```
@@ -19,23 +19,23 @@
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f735f0c1d10>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f735f0c1050>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f735f0c1b90>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f27556b0990>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f27556b1e50>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f27556b2450>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
 [分组] 有效 89 条
 [分组] 失效 12 条
-[写入] ss.txt : 25002 条
+[写入] ss.txt : 25163 条
 [写入] ssr.txt : 5 条
-[写入] vmess.txt : 16006 条
-[写入] vless.txt : 104394 条
-[写入] trojan.txt : 19657 条
+[写入] vmess.txt : 16037 条
+[写入] vless.txt : 105475 条
+[写入] trojan.txt : 19687 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 536 条
+[写入] hysteria2.txt : 455 条
 [写入] tuic.txt : 0 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 165662 条
+[完成] all.txt : 166885 条
 ```
 
 ## 下载链接：
