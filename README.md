@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2025-10-07 06:20 CST
+更新时间：2025-10-08 06:21 CST
 
 ## 节点统计：
 ```
@@ -19,26 +19,26 @@
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f24398fdb90>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f24398fcd50>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2439e67290>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
-[警告] 下载失败：https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528  HTTPSConnectionPool(host='1122.yunjijd.xyz', port=443): Read timed out. (read timeout=10)
-[警告] 下载失败：https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528  HTTPSConnectionPool(host='1122.yunjijd.xyz', port=443): Read timed out. (read timeout=10)
-[警告] 下载失败：https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528  HTTPSConnectionPool(host='1122.yunjijd.xyz', port=443): Read timed out. (read timeout=10)
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc200298f50>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc200299050>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc200299250>: Failed to resolve 'api.2c.lol' ([Errno -2] Name or service not known)"))
+[警告] 下载失败：https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528  502 Server Error: Bad Gateway for url: https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528
+[警告] 下载失败：https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528  502 Server Error: Bad Gateway for url: https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528
+[警告] 下载失败：https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528  502 Server Error: Bad Gateway for url: https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528
 [分组] 有效 89 条
 [分组] 失效 12 条
-[写入] ss.txt : 25095 条
-[写入] ssr.txt : 7 条
-[写入] vmess.txt : 16675 条
-[写入] vless.txt : 105807 条
-[写入] trojan.txt : 19855 条
+[写入] ss.txt : 25273 条
+[写入] ssr.txt : 6 条
+[写入] vmess.txt : 16016 条
+[写入] vless.txt : 106183 条
+[写入] trojan.txt : 20010 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 326 条
+[写入] hysteria2.txt : 294 条
 [写入] tuic.txt : 17 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 167850 条
+[完成] all.txt : 167871 条
 ```
 
 ## 下载链接：
