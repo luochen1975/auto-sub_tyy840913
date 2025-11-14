@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2025-11-14 10:20 CST
+更新时间：2025-11-14 11:58 CST
 
 ## 节点统计：
 ```
@@ -45,18 +45,18 @@
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [分组] 有效 84 条
 [分组] 失效 17 条
-[写入] ss.txt : 26085 条
+[写入] ss.txt : 26098 条
 [写入] ssr.txt : 5 条
-[写入] vmess.txt : 17603 条
-[写入] vless.txt : 113437 条
-[写入] trojan.txt : 21532 条
+[写入] vmess.txt : 17627 条
+[写入] vless.txt : 113361 条
+[写入] trojan.txt : 21557 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 475 条
+[写入] hysteria2.txt : 465 条
 [写入] tuic.txt : 2 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 179199 条
+[完成] all.txt : 179173 条
 ```
 
 ## 下载链接：
