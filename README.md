@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2025-11-23 02:47 CST
+更新时间：2025-11-23 05:36 CST
 
 ## 节点统计：
 ```
@@ -45,19 +45,18 @@
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [分组] 有效 84 条
 [分组] 失效 17 条
-[警告] 下载失败：https://file.uhsea.com/2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Read timed out. (read timeout=10)
-[写入] ss.txt : 26468 条
+[写入] ss.txt : 24781 条
 [写入] ssr.txt : 8 条
-[写入] vmess.txt : 17802 条
-[写入] vless.txt : 114754 条
-[写入] trojan.txt : 22020 条
+[写入] vmess.txt : 17019 条
+[写入] vless.txt : 108360 条
+[写入] trojan.txt : 21758 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 635 条
+[写入] hysteria2.txt : 617 条
 [写入] tuic.txt : 0 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 181746 条
+[完成] all.txt : 172602 条
 ```
 
 ## 下载链接：
