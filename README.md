@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2025-11-28 21:07 CST
+更新时间：2025-11-28 23:41 CST
 
 ## 节点统计：
 ```
@@ -37,26 +37,26 @@
 [警告] 下载失败：https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml  521 Server Error: <none> for url: https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml
 [警告] 下载失败：https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml  521 Server Error: <none> for url: https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml
 [警告] 下载失败：https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml  521 Server Error: <none> for url: https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f6117042cd0>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f6117043450>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f6117043890>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [分组] 有效 84 条
 [分组] 失效 17 条
-[写入] ss.txt : 25703 条
-[写入] ssr.txt : 12 条
+[写入] ss.txt : 25664 条
+[写入] ssr.txt : 11 条
 [写入] vmess.txt : 17112 条
-[写入] vless.txt : 111249 条
-[写入] trojan.txt : 23182 条
+[写入] vless.txt : 111288 条
+[写入] trojan.txt : 23177 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 841 条
+[写入] hysteria2.txt : 844 条
 [写入] tuic.txt : 7 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 178164 条
+[完成] all.txt : 178161 条
 ```
 
 ## 下载链接：
