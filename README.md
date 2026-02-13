@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2026-02-14 00:09 CST
+更新时间：2026-02-14 03:15 CST
 
 ## 节点统计：
 ```
@@ -43,43 +43,38 @@
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
 [警告] 下载失败：https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/darknessm427/IranConfigCollector/main/bulk/vmess_iran.txt
-[警告] 下载失败：https://www.xrayvip.com/free.txt  HTTPSConnectionPool(host='www.xrayvip.com', port=443): Read timed out. (read timeout=10)
-[警告] 下载失败：https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml  HTTPSConnectionPool(host='fs.v2rayse.com', port=443): Read timed out. (read timeout=10)
 [警告] 下载失败：https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml  521 Server Error: <none> for url: https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml
-[警告] 下载失败：https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml  HTTPSConnectionPool(host='fs.v2rayse.com', port=443): Read timed out. (read timeout=10)
+[警告] 下载失败：https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml  521 Server Error: <none> for url: https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml
+[警告] 下载失败：https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml  521 Server Error: <none> for url: https://fs.v2rayse.com/share/20241229/x6dbi93n54.yaml
 [警告] 下载失败：https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2  404 Client Error: Not Found for url: https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
 [警告] 下载失败：https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2  404 Client Error: Not Found for url: https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
 [警告] 下载失败：https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2  404 Client Error: Not Found for url: https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
 [警告] 下载失败：https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/v2  404 Client Error: Not Found for url: https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/v2
 [警告] 下载失败：https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/v2  404 Client Error: Not Found for url: https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/v2
 [警告] 下载失败：https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/v2  404 Client Error: Not Found for url: https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/v2
-[警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  HTTPSConnectionPool(host='bujidao.cc', port=443): Read timed out. (read timeout=10)
-[警告] 下载失败：https://flynb.site/sub?token=oLKUUBC7cJPmouRzlnw2bg&tag=clash  HTTPSConnectionPool(host='flynb.site', port=443): Read timed out. (read timeout=10)
-[警告] 下载失败：https://flynb.site/sub?token=oLKUUBC7cJPmouRzlnw2bg&tag=clash  HTTPSConnectionPool(host='flynb.site', port=443): Read timed out. (read timeout=10)
-[警告] 下载失败：https://flynb.site/sub?token=oLKUUBC7cJPmouRzlnw2bg&tag=clash  HTTPSConnectionPool(host='flynb.site', port=443): Read timed out. (read timeout=10)
 [警告] 下载失败：https://aizaozao.com/s.php/gDy73LXW6O  HTTPSConnectionPool(host='aizaozao.com', port=443): Max retries exceeded with url: /s.php/gDy73LXW6O (Caused by NameResolutionError("HTTPSConnection(host='aizaozao.com', port=443): Failed to resolve 'aizaozao.com' ([Errno -2] Name or service not known)"))
 [警告] 下载失败：https://aizaozao.com/s.php/gDy73LXW6O  HTTPSConnectionPool(host='aizaozao.com', port=443): Max retries exceeded with url: /s.php/gDy73LXW6O (Caused by NameResolutionError("HTTPSConnection(host='aizaozao.com', port=443): Failed to resolve 'aizaozao.com' ([Errno -2] Name or service not known)"))
 [警告] 下载失败：https://aizaozao.com/s.php/gDy73LXW6O  HTTPSConnectionPool(host='aizaozao.com', port=443): Max retries exceeded with url: /s.php/gDy73LXW6O (Caused by NameResolutionError("HTTPSConnection(host='aizaozao.com', port=443): Failed to resolve 'aizaozao.com' ([Errno -2] Name or service not known)"))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f10eeb82110>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f10eeb82ad0>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f10eeb88cd0>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f2e0a3eb4d0>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f2e0a3e90d0>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f2e0a1bd710>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
-[分组] 有效 74 条
-[分组] 失效 27 条
-[写入] ss.txt : 9869 条
+[分组] 有效 75 条
+[分组] 失效 26 条
+[写入] ss.txt : 9982 条
 [写入] ssr.txt : 8 条
-[写入] vmess.txt : 10182 条
-[写入] vless.txt : 11166 条
-[写入] trojan.txt : 3403 条
+[写入] vmess.txt : 10304 条
+[写入] vless.txt : 11127 条
+[写入] trojan.txt : 3527 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 142 条
+[写入] hysteria2.txt : 141 条
 [写入] tuic.txt : 0 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 34839 条
+[完成] all.txt : 35158 条
 ```
 
 ## 下载链接：
