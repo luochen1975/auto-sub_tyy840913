@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2026-05-17 03:41 CST
+更新时间：2026-05-17 06:12 CST
 
 ## 节点统计：
 ```
@@ -58,27 +58,26 @@
 [警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  502 Server Error: Bad Gateway for url: https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL
 [警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  502 Server Error: Bad Gateway for url: https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL
 [警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  502 Server Error: Bad Gateway for url: https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f3e7ced2950>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f3e7ced3dd0>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f3e78eb1090>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f56100002d0>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f5610002190>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f560ff56450>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [分组] 有效 74 条
 [分组] 失效 27 条
-[警告] 下载失败：https://file.uhsea.com/2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Read timed out.
-[写入] ss.txt : 8761 条
+[写入] ss.txt : 8805 条
 [写入] ssr.txt : 0 条
-[写入] vmess.txt : 9286 条
-[写入] vless.txt : 6630 条
-[写入] trojan.txt : 4111 条
+[写入] vmess.txt : 9306 条
+[写入] vless.txt : 6683 条
+[写入] trojan.txt : 4094 条
 [写入] hysteria.txt : 0 条
-[写入] hysteria2.txt : 164 条
+[写入] hysteria2.txt : 206 条
 [写入] tuic.txt : 16 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 29486 条
+[完成] all.txt : 29628 条
 ```
 
 ## 下载链接：
