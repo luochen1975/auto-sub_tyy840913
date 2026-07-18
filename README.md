@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2026-07-18 16:19 CST
+更新时间：2026-07-18 18:49 CST
 
 ## 节点统计：
 ```
@@ -76,35 +76,44 @@
 [警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  502 Server Error: Bad Gateway for url: https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL
 [警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  502 Server Error: Bad Gateway for url: https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL
 [警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  502 Server Error: Bad Gateway for url: https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f26ab9bb490>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f26ab9b9e10>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f26ab10cfd0>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://file.uhsea.com/2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+[警告] 下载失败：https://file.uhsea.com/2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+[警告] 下载失败：https://file.uhsea.com/2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/2f1928c440325914dff2c1ffe0ccec4aR3.yaml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+[警告] 下载失败：https://file.uhsea.com/2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+[警告] 下载失败：https://file.uhsea.com/2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+[警告] 下载失败：https://file.uhsea.com/2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml  HTTPSConnectionPool(host='file.uhsea.com', port=443): Max retries exceeded with url: /2501/295ccc51ad490cb731e8a95f9212b4f1BI.yaml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f8394181910>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f8394182910>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f8394193a50>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
 [警告] 下载失败：https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml  404 Client Error: Not Found for url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml
 [警告] 下载失败：https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml  404 Client Error: Not Found for url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml
 [警告] 下载失败：https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml  404 Client Error: Not Found for url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml
 [警告] 下载失败：https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase  404 Client Error: Not Found for url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase
 [警告] 下载失败：https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase  404 Client Error: Not Found for url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase
 [警告] 下载失败：https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase  404 Client Error: Not Found for url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase
+[警告] 下载失败：https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/ssr.txt  HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=10)
+[警告] 下载失败：https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/ssr.txt  HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=10)
+[警告] 下载失败：https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/ssr.txt  HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=10)
 [警告] 下载失败：https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528  HTTPSConnectionPool(host='1122.yunjijd.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
 [警告] 下载失败：https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528  HTTPSConnectionPool(host='1122.yunjijd.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
 [警告] 下载失败：https://1122.yunjijd.xyz/api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528  HTTPSConnectionPool(host='1122.yunjijd.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=44866289e789a00fa89bfc82c05ce528 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
-[分组] 有效 68 条
-[分组] 失效 33 条
-[写入] ss.txt : 7236 条
+[分组] 有效 65 条
+[分组] 失效 36 条
+[写入] ss.txt : 7046 条
 [写入] ssr.txt : 0 条
-[写入] vmess.txt : 9025 条
-[写入] vless.txt : 14857 条
-[写入] trojan.txt : 5830 条
+[写入] vmess.txt : 8954 条
+[写入] vless.txt : 14656 条
+[写入] trojan.txt : 5842 条
 [写入] hysteria.txt : 3 条
-[写入] hysteria2.txt : 267 条
-[写入] tuic.txt : 7 条
+[写入] hysteria2.txt : 186 条
+[写入] tuic.txt : 6 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 37834 条
+[完成] all.txt : 37302 条
 ```
 
 ## 下载链接：
