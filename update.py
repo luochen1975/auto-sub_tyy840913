@@ -710,6 +710,28 @@ def main():
     print(f'[YAML] 过滤掉: {filtered_count} 条')
     print(f'[YAML] 有效写入: {len(unique_proxies)} 条 → {YAML_FILE}')
 
+    # ========== 新增：节点分组（每300个一组）==========
+    print('[分组] 开始按 300 节点/组拆分...')
+    GROUP_SIZE = 300
+    group_count = (len(unique_proxies) + GROUP_SIZE - 1) // GROUP_SIZE
+
+    for i in range(group_count):
+        start = i * GROUP_SIZE
+        end = start + GROUP_SIZE
+        group_proxies = unique_proxies[start:end]
+        group_file = os.path.join(REPO_ROOT, f'proxies_{i+1}.yaml')
+        group_yaml = yaml.safe_dump(
+            {'proxies': group_proxies},
+            allow_unicode=True,
+            sort_keys=False,
+            default_flow_style=False
+        )
+        with open(group_file, 'w', encoding='utf-8') as f:
+            f.write(group_yaml)
+        print(f'[分组] proxies_{i+1}.yaml : {len(group_proxies)} 条')
+
+    print(f'[分组] 共 {group_count} 组，保留完整版: {YAML_FILE}')
+
 
 if __name__ == '__main__':
     main()
