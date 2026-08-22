@@ -176,29 +176,41 @@ def 提取节点(raw: bytes) -> List[str]:
 
 def _parse_ss(uri: str) -> Optional[Dict]:
     """解析 ss URI 为 Mihomo proxy dict，过滤/修正不支持的 cipher"""
-    parsed = urllib.parse.urlparse(uri)
-    name = urllib.parse.unquote(parsed.fragment) if parsed.fragment else ''
-
-    # 手动处理 netloc（urlparse 对 ss://BASE64@host:port 处理不够鲁棒）
-    netloc = parsed.netloc
-    if not netloc:
-        body = uri[5:]
-        if body.startswith('//'):
-            body = body[2:]
-        netloc = body.split('#')[0]
-        if '/' in netloc:
-            netloc = netloc.split('/')[0]
-
-    if '@' not in netloc:
+    # 手动解析，避免 urlparse 对不规范 IPv6 / 特殊字符的严格检查
+    if not uri.startswith('ss://'):
         return None
 
-    userinfo, server_part = netloc.rsplit('@', 1)
+    body = uri[5:]
+    if body.startswith('//'):
+        body = body[2:]
+
+    # 分离 name (fragment)
+    if '#' in body:
+        body, name_raw = body.split('#', 1)
+        name = urllib.parse.unquote(name_raw)
+    else:
+        name = ''
+
+    # 去掉可能的尾部斜杠
+    body = body.split('/')[0]
+
+    if '@' not in body:
+        return None
+
+    userinfo, server_part = body.rsplit('@', 1)
 
     # 解析 server:port（支持 IPv6）
-    if ']:' in server_part:
-        server, port_str = server_part.rsplit(':', 1)
-        server = server[1:-1]  # 去掉 []
+    if server_part.startswith('['):
+        # IPv6: [::1]:8080
+        if ']:' in server_part:
+            server, port_str = server_part.rsplit(':', 1)
+            server = server[1:-1]  # 去掉 []
+        else:
+            # 没有端口，如 [::1]
+            server = server_part[1:-1]
+            port_str = '8388'  # 默认端口
     elif ':' in server_part:
+        # IPv4 或域名
         server, port_str = server_part.rsplit(':', 1)
     else:
         return None
@@ -355,7 +367,10 @@ def _parse_vmess(uri: str) -> Optional[Dict]:
 
 
 def _parse_vless(uri: str) -> Optional[Dict]:
-    parsed = urllib.parse.urlparse(uri)
+    try:
+        parsed = urllib.parse.urlparse(uri)
+    except ValueError:
+        return None
     name = urllib.parse.unquote(parsed.fragment) if parsed.fragment else ''
     server = parsed.hostname
     port = parsed.port
@@ -403,7 +418,10 @@ def _parse_vless(uri: str) -> Optional[Dict]:
 
 
 def _parse_trojan(uri: str) -> Optional[Dict]:
-    parsed = urllib.parse.urlparse(uri)
+    try:
+        parsed = urllib.parse.urlparse(uri)
+    except ValueError:
+        return None
     name = urllib.parse.unquote(parsed.fragment) if parsed.fragment else ''
     server = parsed.hostname
     port = parsed.port
@@ -431,7 +449,10 @@ def _parse_trojan(uri: str) -> Optional[Dict]:
 
 
 def _parse_hysteria(uri: str) -> Optional[Dict]:
-    parsed = urllib.parse.urlparse(uri)
+    try:
+        parsed = urllib.parse.urlparse(uri)
+    except ValueError:
+        return None
     name = urllib.parse.unquote(parsed.fragment) if parsed.fragment else ''
     server = parsed.hostname
     port = parsed.port
@@ -456,7 +477,10 @@ def _parse_hysteria(uri: str) -> Optional[Dict]:
 
 
 def _parse_hysteria2(uri: str) -> Optional[Dict]:
-    parsed = urllib.parse.urlparse(uri)
+    try:
+        parsed = urllib.parse.urlparse(uri)
+    except ValueError:
+        return None
     name = urllib.parse.unquote(parsed.fragment) if parsed.fragment else ''
     server = parsed.hostname
     port = parsed.port
@@ -480,7 +504,10 @@ def _parse_hysteria2(uri: str) -> Optional[Dict]:
 
 
 def _parse_tuic(uri: str) -> Optional[Dict]:
-    parsed = urllib.parse.urlparse(uri)
+    try:
+        parsed = urllib.parse.urlparse(uri)
+    except ValueError:
+        return None
     name = urllib.parse.unquote(parsed.fragment) if parsed.fragment else ''
     server = parsed.hostname
     port = parsed.port
@@ -505,7 +532,10 @@ def _parse_tuic(uri: str) -> Optional[Dict]:
 
 
 def _parse_wireguard(uri: str) -> Optional[Dict]:
-    parsed = urllib.parse.urlparse(uri)
+    try:
+        parsed = urllib.parse.urlparse(uri)
+    except ValueError:
+        return None
     name = urllib.parse.unquote(parsed.fragment) if parsed.fragment else ''
     server = parsed.hostname
     port = parsed.port
@@ -534,8 +564,13 @@ def uri_to_mihomo(uri: str) -> Optional[Dict]:
     if not uri:
         return None
 
-    parsed = urllib.parse.urlparse(uri)
-    scheme = parsed.scheme.lower()
+    # 修复：urlparse 遇到不规范 IPv6 会抛异常，需要捕获
+    try:
+        parsed = urllib.parse.urlparse(uri)
+        scheme = parsed.scheme.lower()
+    except ValueError as e:
+        print(f'[过滤] URL 解析失败: {e} | {uri[:80]}...')
+        return None
 
     handlers = {
         'ss': _parse_ss,
