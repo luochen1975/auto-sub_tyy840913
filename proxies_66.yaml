@@ -1,33 +1,4 @@
 proxies:
-- name: 🇷🇺 RU 1504 SSS
-  type: ss
-  server: 212.113.106.243
-  port: 13022
-  cipher: chacha20-ietf-poly1305
-  password: w5drAL7PfCIwQ2ycUuoDsV2Ls
-- name: 🇷🇺 RU 1505 TJN
-  type: trojan
-  server: ru01.freeflyingcloud.xyz
-  port: 30002
-  password: ebd1c3e8-a136-49a5-a76c-88c4bf0a23aa
-  sni: ru01.freeflyingcloud.xyz
-- name: 🇳🇱 NL 1506 SSS
-  type: ss
-  server: 109.107.172.30
-  port: 28190
-  cipher: chacha20-ietf-poly1305
-  password: 1f8jdOIKkxRWMUeOfXPeo8
-- name: 🇷🇺 RU 1507 SSS
-  type: ss
-  server: 94.142.138.56
-  port: 25091
-  cipher: chacha20-ietf-poly1305
-  password: hnRXsWFscwBEAvGnqQQoU2
-- name: 🇨🇦 CA 1508 TJN
-  type: trojan
-  server: ca-full.privateip.net
-  port: 443
-  password: 8b47d63f-1f8e-4f8e-a1e8-ead3686e5da6
 - name: 🇷🇺 RU 1509 SSS
   type: ss
   server: 46.226.162.112
@@ -1755,6 +1726,34 @@ proxies:
 - name: 🇺🇸 US 2074 SSS
   type: ss
   server: 47.238.168.203
+  port: 443
+  cipher: aes-128-gcm
+  password: a-wym4ovY4Yw
+- name: 🇺🇸 US 2081 SSS
+  type: ss
+  server: 38.121.43.71
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇺🇸 US 2083 TJN
+  type: trojan
+  server: fr2-full.privateip.net
+  port: 443
+  password: 88503a0a-3c8e-42ce-8fff-f67fa3171a1e
+- name: 🇸🇬 SG 2084 TJN
+  type: trojan
+  server: sg-full.privateip.net
+  port: 443
+  password: 9e21d1ce-7bcf-4733-bc02-f47b1bbc76c4
+- name: 🇺🇸 US 2085 TJN
+  type: trojan
+  server: 172.67.204.84
+  port: 2083
+  password: 0e81a9cd-d849-4101-8d64-574c283207de
+  sni: de1.trojanvpn.de
+- name: 🇭🇰 HK 2089 SSS
+  type: ss
+  server: 47.243.59.144
   port: 443
   cipher: aes-128-gcm
   password: a-wym4ovY4Yw

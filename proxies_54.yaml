@@ -1,4 +1,183 @@
 proxies:
+- name: 🇯🇵JP_960|239KB/s|A004-260618 01
+  type: trojan
+  server: 3.112.44.90
+  port: 443
+  password: EQ30679154
+  sni: brave-tomcat.rooster465.autos
+- name: 🇯🇵JP_961|327KB/s|A004-260618 01
+  type: trojan
+  server: balanced-goat.rooster465.autos
+  port: 443
+  password: PQ05174892
+  sni: balanced-goat.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇪SE_17|244KB/s|B007-260618 01
+  type: vless
+  server: 81.90.21.59
+  port: 8444
+  uuid: 15e83ced-7544-422e-863d-deafe29a1dbe
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+- name: 🇸🇪SE_18|388KB/s|B007-260618 01
+  type: vless
+  server: 81.90.21.59
+  port: 8444
+  uuid: 15e83ced-7544-422e-863d-deafe29a1dbe
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: chrome
+- name: 🇸🇪SE_19|235KB/s|B007-260618 01
+  type: vless
+  server: 81.90.21.59
+  port: 8444
+  uuid: 15e83ced-7544-422e-863d-deafe29a1dbe
+  tls: true
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇮🇷IR_1|358KB/s|B007-260618 01
+  type: vless
+  server: 94.183.157.249
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: eu-central.cendora.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷FR_1546|154KB/s|B007-260618 01
+  type: vless
+  server: 104.21.88.129
+  port: 8880
+  uuid: 48b1d8af-1720-4462-a0ec-de493331ceb3
+  network: ws
+  ws-opts:
+    headers:
+      Host: square-mountain-1d69.356-977.workers.dev
+    path: /pyip=proxyip.kr.cmliussss.net
+- name: 🇫🇷FR_1547|110KB/s|B007-260618 01
+  type: vless
+  server: 162.159.140.78
+  port: 8880
+  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
+  network: ws
+  ws-opts:
+    headers:
+      Host: odd-darkness-57ce.334-a29.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇩🇪DE_199|271KB/s|B007-260618 01
+  type: vless
+  server: 217.69.167.135
+  port: 15392
+  uuid: 9e998501-eaae-4d7e-bbe5-6cecfaef8334
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇧🇷BR_14|127KB/s|B007-260618 01
+  type: vless
+  server: 201.51.23.91
+  port: 443
+  uuid: ae2e0637-5c9d-422b-93ac-70bd3fceeb81
+  tls: true
+  servername: hys40.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇧🇷BR_15|174KB/s|B007-260618 01
+  type: vless
+  server: hys40.wba-pn.ru
+  port: 443
+  uuid: ae2e0637-5c9d-422b-93ac-70bd3fceeb81
+  tls: true
+  servername: hys40.wba-pn.ru
+  network: ws
+  ws-opts:
+    headers:
+      Host: hys40.wba-pn.ru
+    path: /
+- name: 🇩🇪DE_200|165KB/s|B007-260618 01
+  type: vless
+  server: 103.109.234.113
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  tls: true
+  servername: api.getsavesafe.space
+  client-fingerprint: chrome
+- name: 🇺🇸US_779|75KB/s|B007-260618 01
+  type: vless
+  server: 209.50.241.126
+  port: 443
+  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
+  tls: true
+  servername: us.servers.gracevpnbuy.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇷TR_6|405KB/s|B007-260618 01
+  type: vless
+  server: 194.93.61.30
+  port: 443
+  uuid: f82332b2-dc8c-4196-ac12-f276e37e278a
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇯🇵JP_970|203KB/s|A004-260618 01
+  type: trojan
+  server: open-octopus.rooster465.autos
+  port: 443
+  password: EQ30679154
+  sni: open-octopus.rooster465.autos
+- name: 🇫🇷FR_1548|361KB/s|F003-260618 01
+  type: vless
+  server: 104.17.123.101
+  port: 2083
+  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+  tls: true
+  servername: wzknb.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: wzknb.pages.dev
+    path: /proxyip=167.253.153.215
+- name: 🇮🇪IE_116|372KB/s|M001-260618 01
+  type: trojan
+  server: kind-stork.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: kind-stork.rooster465.autos
+- name: 🇩🇪DE_201|290KB/s|M003-260806 01
+  type: trojan
+  server: 3.64.59.246
+  port: 443
+  password: EQ30679154
+  sni: gentle-raptor.rooster465.autos
+- name: 🇮🇪IE_117|627KB/s|M003-260806 01
+  type: trojan
+  server: 54.217.133.71
+  port: 443
+  password: EQ30679154
+  sni: willing-beagle.rooster465.autos
+- name: 🇮🇪IE_118|339KB/s|M003-260806 01
+  type: trojan
+  server: 54.74.185.175
+  port: 443
+  password: EQ30679154
+  sni: romantic-kangaroo.rooster465.autos
+- name: 🇸🇬SG_128|266KB/s|M002-260618 01
+  type: vless
+  server: 104.254.140.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  tls: true
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    headers:
+      Host: speed.dulacloud.store
+    path: /dula?Telegram-WangCai2
 - name: 🇸🇬SG_129|201KB/s|M002-260618 01
   type: vless
   server: 45.12.30.7
@@ -2282,164 +2461,5 @@ proxies:
   uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
   tls: true
   servername: gb.servers.gracevpnbuy.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ❓Other_62|129KB/s|M002-260618 01
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
-  network: ws
-  ws-opts:
-    headers:
-      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
-    path: /vless/
-- name: 🇨🇿CZ_5|298KB/s|R002-260618 01
-  type: hysteria2
-  server: lmny.mangshe.xyz
-  port: 2056
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  sni: lmny.mangshe.xyz
-- name: 🇫🇮FI_43|412KB/s|V004-260618 01
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: e75fbac1-efaa-45a2-ac76-ac150cb37329
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-- name: 🇫🇮FI_44|97KB/s|A001-260618 01
-  type: vless
-  server: 45.195.228.227
-  port: 443
-  uuid: b55dd203-630d-46a3-b506-c52ebcafa77c
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_837|368KB/s|A001-260618 01
-  type: trojan
-  server: 128.14.148.84
-  port: 5531
-  password: fg20mtCFHy
-  sni: ycgsc.southbyte.xyz
-- name: 🇫🇷FR_1602|197KB/s|A001-260618 01
-  type: trojan
-  server: 104.18.152.244
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_1603|419KB/s|A001-260618 01
-  type: trojan
-  server: 104.18.152.161
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_1604|309KB/s|A001-260618 01
-  type: trojan
-  server: 104.18.152.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_1605|259KB/s|A001-260618 01
-  type: trojan
-  server: 104.16.174.124
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_1606|332KB/s|A001-260618 01
-  type: trojan
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_1607|266KB/s|A001-260618 01
-  type: trojan
-  server: 104.16.174.148
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_1608|150KB/s|A001-260618 01
-  type: trojan
-  server: 104.16.174.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇩🇪DE_233|186KB/s|A001-260618 01
-  type: ss
-  server: 63.186.69.235
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸US_838|354KB/s|B007-260618 01
-  type: ss
-  server: 107.170.34.46
-  port: 443
-  cipher: aes-256-gcm
-  password: p7KawP5pzJRHWI9q
-- name: 🇫🇷FR_1609|191KB/s|B007-260618 01
-  type: trojan
-  server: 35.180.10.212
-  port: 443
-  password: PQ05174892
-  sni: firm-warthog.rooster465.autos
-- name: 🇫🇷FR_1610|121KB/s|B007-260618 01
-  type: vless
-  server: node21.mxvpn.dev
-  port: 443
-  uuid: 0772109c-a680-4896-b005-d86513194f96
-  tls: true
-  servername: node21.mxvpn.dev
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇮FI_45|242KB/s|B007-260618 01
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 3babbd6d-8cd2-4970-8a9b-306d480eaf9a
-  network: ws
-  ws-opts:
-    headers:
-      Host: rb24.ir
-    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-- name: 🇮🇹IT_38|260KB/s|B007-260618 01
-  type: vless
-  server: 132.243.212.205
-  port: 41503
-  uuid: 58984fe1-5f01-486b-bb68-c2f8352d7a92
-  tls: true
-  servername: github.com
-  client-fingerprint: chrome
-- name: 🇩🇪DE_234|461KB/s|B007-260618 01
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: XpnTeam-19
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- name: 🇺🇸US_839|284KB/s|B007-260618 01
-  type: vless
-  server: 192.220.15.222
-  port: 8443
-  uuid: ad192c6d-c5ee-4a21-a6bf-85218caa4ef9
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: chrome
-- name: 🇩🇪DE_235|317KB/s|B007-260618 01
-  type: vless
-  server: 154.222.9.98
-  port: 443
-  uuid: b55dd203-630d-46a3-b506-c52ebcafa77c
-  tls: true
-  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
