@@ -1,4 +1,91 @@
 proxies:
+- name: CA加拿大丨yoyapai.com_1
+  type: vless
+  server: ad-013.pixel9xdmq.info
+  port: 8443
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: ad-013.pixel9xdmq.info
+    path: /
+- name: GB英國丨yoyapai.com
+  type: vless
+  server: ad-010.pixel9xdmq.info
+  port: 8443
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: ad-010.pixel9xdmq.info
+    path: /
+- name: 🇯🇵JP日本丨yoyapai.com_2
+  type: vless
+  server: 2.27.27.64
+  port: 443
+  uuid: 94d2d711-76e5-4d82-a3c9-4f06fd5558c8
+  tls: true
+- name: 🇹🇷土耳其丨yoyapai.com_1
+  type: vless
+  server: 170.168.97.3
+  port: 8443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇮🇷 伊朗丨yoyapai.com
+  type: vless
+  server: fn.fifapes.monster
+  port: 2090
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+- name: 🇳🇱 荷蘭丨yoyapai.com
+  type: vless
+  server: 88.218.44.4
+  port: 8443
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇳🇱 荷蘭丨yoyapai.com_1
+  type: vless
+  server: 94.102.51.218
+  port: 443
+  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
+  tls: true
+- name: 美國丨yoyapai.com_9
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  tls: true
+- name: 🇩🇪德國丨yoyapai.com_3
+  type: vless
+  server: 170.168.97.3
+  port: 443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  tls: true
+- name: 🇩🇪德國丨yoyapai.com_4
+  type: vless
+  server: 170.168.97.3
+  port: 443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  tls: true
+- name: 🇩🇪德國丨yoyapai.com_5
+  type: vless
+  server: 88.218.44.4
+  port: 443
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  tls: true
+- name: 🇩🇪德國丨yoyapai.com_6
+  type: vless
+  server: 88.218.44.4
+  port: 443
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  tls: true
 - name: 🇨🇦CA加拿大丨yoyapai.com_3
   type: vless
   server: 104.26.2.173
@@ -1945,78 +2032,6 @@ proxies:
 - name: US美国(mibei77.com 米贝节点分享)_108
   type: trojan
   server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_109
-  type: trojan
-  server: 104.18.152.73
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_110
-  type: trojan
-  server: 104.18.152.229
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_111
-  type: trojan
-  server: 104.18.152.97
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_112
-  type: trojan
-  server: 104.18.152.155
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_113
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_114
-  type: trojan
-  server: 104.18.152.113
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_115
-  type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_116
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_117
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_118
-  type: trojan
-  server: 104.16.174.6
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_119
-  type: trojan
-  server: 104.16.174.22
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_120
-  type: trojan
-  server: 104.18.152.175
   port: 443
   password: humanity
   sni: www.ignitelimit.com

@@ -1,4 +1,428 @@
 proxies:
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: vless
+  server: 92yqc126g8qwe6v23n01.haiyucloud.com
+  port: 32094
+  uuid: 485717cf-e96c-40db-9bc1-624060b89f20
+  tls: true
+  servername: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: vless
+  server: 92yqc126g8qwe6v23n01.haiyucloud.com
+  port: 50567
+  uuid: 485717cf-e96c-40db-9bc1-624060b89f20
+  tls: true
+  servername: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: trojan
+  server: vip-nl-1.hkd4fwmg.vip
+  port: 28236
+  password: 0PUoUQvkGLkxuukHJLje21MCg1DNeOpx
+  sni: vip-nl-1.hkd4fwmg.vip
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime42.workers.dev
+    path: /
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: vip-nl-1.hkd4fwmg.vip
+  port: 31883
+  uuid: 20593145-d975-46f9-9bad-d9f3c8e2d899
+  tls: true
+  servername: vip-nl-1.hkd4fwmg.vip
+  flow: xtls-rprx-vision
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: vless
+  server: 104.18.93.3
+  port: 80
+  uuid: a41322e9-d0f1-4ff1-ac5c-a486e2b680b2
+  network: ws
+  ws-opts:
+    headers:
+      Host: worker3.yahoya44555.workers.dev
+    path: /2EP6G0LoOvs5eNZj
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 2.26.224.100
+  port: 8444
+  uuid: 15e83ced-7544-422e-863d-deafe29a1dbe
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: firefox
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 162.159.152.205
+  port: 443
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  tls: true
+  servername: vless2-8vx.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: vless2-8vx.pages.dev
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 拉脱维亚(mibei77.com 米贝节点分享)
+  type: trojan
+  server: tr-latvia1.unlimited-access.ru
+  port: 443
+  password: kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi
+  sni: tr-latvia1.unlimited-access.ru
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.23.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: render.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.23.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.22.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 216.24.57.1
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: hysteria2
+  server: fast.wwwinternetvideo.click
+  port: 443
+  password: C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE
+  sni: fast.wwwinternetvideo.click
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 216.24.57.1
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 2001:bc8:32d7:1a9::2
+  port: 23388
+  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999-newpac/fanqiang
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 46.29.235.9
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 拉脱维亚(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 185.246.152.159
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: apjhdggyx.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: apjhdggyx.com
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: render.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: vless
+  server: 104.18.37.228
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  network: ws
+  ws-opts:
+    headers:
+      Host: josni.hoyes.cloudns.ch
+    path: /sg-melbi
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 2001:bc8:32d7:302::10
+  port: 65513
+  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 104.17.28.89
+  port: 443
+  uuid: 1078d418-b4e0-4668-9018-dc90c2042d61
+  tls: true
+  servername: workspace.evan00.dpdns.org
+  network: ws
+  ws-opts:
+    headers:
+      Host: workspace.evan00.dpdns.org
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 104.17.28.89
+  port: 443
+  uuid: 1078d418-b4e0-4668-9018-dc90c2042d61
+  tls: true
+  servername: workspace.evan00.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: vip-us-6.hkd4fwmg.xyz
+  port: 13758
+  password: atKbXl2I4rKzHGiRybV7fOp+OCYPz+bO
+  sni: vip-us-6.hkd4fwmg.xyz
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: vip-us-6.hkd4fwmg.xyz
+  port: 38609
+  uuid: d0af05d4-d1f0-491e-a143-1def35ad6438
+  tls: true
+  servername: vip-us-6.hkd4fwmg.xyz
+  flow: xtls-rprx-vision
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 188.241.241.3
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  tls: true
+  servername: forfreeuse.rtqa.ru
+  network: ws
+  ws-opts:
+    headers:
+      Host: forfreeuse.rtqa.ru
+    path: /
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 104.19.87.194
+  port: 443
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  tls: true
+  servername: ld.223350.xyz
+  network: ws
+  ws-opts:
+    headers:
+      Host: ld.223350.xyz
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 31.76.5.26
+  port: 13443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: auto.cendora.ru
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 104.27.82.154
+  port: 8880
+  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
+  network: ws
+  ws-opts:
+    headers:
+      Host: gentle-surf-cc74.345-604.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 31.76.5.26
+  port: 13443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: auto.cendora.ru
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 31.76.3.54
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: nordic.cendora.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 155.46.167.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime50.workers.dev
+    path: /
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 217.60.63.206
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  tls: true
+  servername: forfreeuse.rtqa.ru
+  network: ws
+  ws-opts:
+    headers:
+      Host: forfreeuse.rtqa.ru
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 200.165.234.119
+  port: 2200
+  uuid: 936b7663-a841-4b42-b639-6e3fab1dbf45
+  network: ws
+  ws-opts:
+    path: /v1
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 104.16.6.70
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  network: ws
+  ws-opts:
+    headers:
+      Host: josni.hoyes.cloudns.ch
+    path: musiclovers85?ed=512
+- name: RU俄罗斯(mibei77.com 米贝节点分享)
+  type: vless
+  server: 51.250.4.141
+  port: 8443
+  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
+  tls: true
+  servername: cloudflare.vhub.pro
+  network: ws
+  ws-opts:
+    headers:
+      Host: cloudflare.vhub.pro
+    path: /websocket?ed=2560
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 2a13:29c0:fc75:90b0:df84:b8d4:d3aa:1
+  port: 443
+  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
+  tls: true
+  servername: u643766ubfb7b8f7s861.gogocs.xyz
+  flow: xtls-rprx-vision
+- name: CA加拿大(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.17.111.8
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 77.110.100.63
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  tls: true
+  servername: forfreeuse.rtqa.ru
+  network: ws
+  ws-opts:
+    headers:
+      Host: forfreeuse.rtqa.ru
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 45.90.32.132
+  port: 4100
+  uuid: 31c2a8e8-0ab2-4f3f-8767-11f3a35d4228
+  network: ws
+  ws-opts:
+    path: /v1
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 162.19.13.248
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  tls: true
+  servername: forfreeuse.rtqa.ru
+  network: ws
+  ws-opts:
+    headers:
+      Host: forfreeuse.rtqa.ru
+    path: /
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: hysteria2
+  server: 46.229.243.137
+  port: 8443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
 - name: US美国(mibei77.com 米贝节点分享)
   type: vless
   server: 18.239.134.69
@@ -1802,403 +2226,3 @@ proxies:
   servername: itunes.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 香港 114
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 94053c6c-0f4b-4ec4-9d28-7205e17947a4
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 115
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 4ec419a5-9540-4275-b6fd-caf1064025e5
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 116
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 527142fb-4577-4054-b689-34fe78bcad2c
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 117
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: f78da120-f963-4dbc-bbba-9302f1eaffb8
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 118
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 34fe2853-9d3f-4900-b09e-eda0042def88
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 119
-  type: trojan
-  server: kind-unicorn.rooster465.autos
-  port: 443
-  password: EQ30679154
-  sni: kind-unicorn.rooster465.autos
-- name: 香港 120
-  type: trojan
-  server: dynamic-grubworm.rooster465.autos
-  port: 443
-  password: EQ30679154
-  sni: dynamic-grubworm.rooster465.autos
-- name: 香港 121
-  type: trojan
-  server: choice-worm.rooster465.autos
-  port: 443
-  password: EQ30679154
-  sni: choice-worm.rooster465.autos
-- name: 香港 122
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 57d62782-e1c7-41bc-8860-8591e28cbd30
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 123
-  type: trojan
-  server: renewing-ewe.rooster465.autos
-  port: 443
-  password: HC04361579
-  sni: renewing-ewe.rooster465.autos
-- name: 香港 124
-  type: trojan
-  server: strong-haddock.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: true
-- name: 香港 125
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 40a00f1d-2caa-43f9-88de-263f3aaab50f
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 126
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 61c26b14-0fc4-4a82-b156-4d637425ed82
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 127
-  type: vless
-  server: 118.26.59.85
-  port: 443
-  uuid: cdc86ade-9bc3-41eb-a7b9-879130378820
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 香港 128
-  type: vless
-  server: 128.1.12.97
-  port: 443
-  uuid: 86ff5721-87f2-4682-9bc2-b1b34a8ca91f
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 香港 129
-  type: trojan
-  server: full-ox.rooster465.autos
-  port: 443
-  password: EQ30679154
-  sni: full-ox.rooster465.autos
-- name: 香港 130
-  type: trojan
-  server: striking-cheetah.rooster465.autos
-  port: 443
-  password: EQ30679154
-  sni: striking-cheetah.rooster465.autos
-- name: 香港 131
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: dbfc3838-3c6c-4244-a4b3-6a95822b2816
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 132
-  type: vless
-  server: 223.122.123.74
-  port: 30100
-  uuid: 19bb341c-ee57-4899-b1e7-e9d3ebdf23df
-  tls: true
-  servername: xiweini.dpdns.org
-- name: 香港 133
-  type: vless
-  server: 128.1.12.19
-  port: 443
-  uuid: daf0c4cb-3541-4f20-bc71-cc9d94bb17bc
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 134
-  type: hysteria2
-  server: 202.146.222.174
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-- name: 香港 135
-  type: trojan
-  server: renewing-ewe.rooster465.autos
-  port: 443
-  password: HC04361579
-  sni: renewing-ewe.rooster465.autos
-- name: 香港 136
-  type: vless
-  server: 207.56.137.51
-  port: 443
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 137
-  type: trojan
-  server: glad-roughy.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: glad-roughy.rooster465.autos
-  skip-cert-verify: true
-- name: 香港 138
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: 90d70a13-15a7-488f-8808-93aa0836d72d
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 139
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: 1f612a62-e10b-4b33-a92a-be7dfa4e3dd7
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 140
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 44269a4a-8cc3-43d9-b54e-408b306c8aa0
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 141
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 0e6f4c9c-3a48-4a8b-8a7a-e3d75c6d11c8
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 142
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 3da1bc0a-5b56-4194-96f1-b2f5e128849d
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 143
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 3434fecb-d8dc-4af4-9445-a1e0ee33da34
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 144
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 98582b9a-6aad-48ec-8ad0-8006465edfab
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 145
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 3695026d-8613-431d-8d6c-5588a1bd4b5b
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 146
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 3c8e0ec5-dd18-4ecd-9900-354c70d6cac1
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 147
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: baed6e1a-460d-475b-b245-8b6e34828214
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 148
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: b30a9386-4756-43b6-aac8-fc56ed5ee46d
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 149
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: c59a0e0d-942c-40af-87bf-06a2022125de
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 150
-  type: trojan
-  server: 91.199.84.204
-  port: 443
-  password: FH72359861
-  sni: growing-oyster.rooster465.autos
-  skip-cert-verify: true
-- name: 香港 151
-  type: vless
-  server: 118.26.59.85
-  port: 443
-  uuid: cdc86ade-9bc3-41eb-a7b9-879130378820
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 152
-  type: trojan
-  server: 185.14.47.101
-  port: 443
-  password: PQ05174892
-  sni: ideal-robin.rooster465.autos
-- name: 香港 153
-  type: trojan
-  server: 185.14.47.72
-  port: 443
-  password: PQ05174892
-  sni: glad-roughy.rooster465.autos
-- name: 香港 154
-  type: trojan
-  server: 91.199.84.83
-  port: 443
-  password: PQ05174892
-  sni: full-ox.rooster465.autos
-- name: 香港 155
-  type: trojan
-  server: 185.244.208.56
-  port: 443
-  password: FH72359861
-  sni: choice-worm.rooster465.autos
-- name: 香港 156
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 15decf53-85ee-4f49-8966-8b5ee0be1863
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 157
-  type: trojan
-  server: 185.244.208.25
-  port: 443
-  password: PQ05174892
-  sni: just-alpaca.rooster465.autos
-- name: 香港 158
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: bf387633-fc4e-4afd-9983-856f08b379b1
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 159
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: df906fe4-2e5c-43c1-b57b-29127b745461
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 160
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 7d868964-36a9-4aaf-92e2-23584abb77a4
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 161
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 39b2fb1f-199a-418e-a7d9-114e67d27771
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 162
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: d16986c9-2445-48d0-a222-ad94a9fc5264
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 163
-  type: trojan
-  server: 185.244.208.60
-  port: 443
-  password: HC04361579
-  sni: renewing-ewe.rooster465.autos
