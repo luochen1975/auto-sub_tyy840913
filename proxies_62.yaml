@@ -1,281 +1,166 @@
 proxies:
-- name: US【机场推荐：https://a9a.xyz】6
+- name: 'A - 🇳🇱 NL 05 TG: @nodpai'
   type: vless
-  server: 40.160.68.186
-  port: 8080
-  uuid: 11af1c47-865a-47c6-92ff-118013655d78
-  network: ws
-  ws-opts: {}
-- name: CA【机场推荐：https://a9a.xyz】7
-  type: vless
-  server: millionaire.levikogjgfdd.ir
+  server: 46.182.24.123
   port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  uuid: 16e7af2f-4066-4fa9-ae41-3103a1250591
   tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    headers:
-      Host: josni.hoyes.cloudns.ch
-    path: /sg-melbi
-- name: HU【机场推荐：https://a9a.xyz】8
+  servername: ads.x5.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 'B - 🇳🇱 NL 06 TG: @nodpai'
   type: vless
-  server: 45.195.111.108
-  port: 443
-  uuid: 66824c94-7ba9-4113-908e-bd793f296852
+  server: nl.omuvpn.tech
+  port: 18443
+  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
   tls: true
-  servername: storage.yandex.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: GB【机场推荐：https://a9a.xyz】9
-  type: ss
-  server: 129.151.95.100
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bDu3x7drw0TT4Kl67HF9uBlmyqxTlOe82yLUnKewmJw=
-- name: BR【机场推荐：https://a9a.xyz】10
-  type: ss
-  server: 163.176.27.230
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rd44Xa86YyiRgoidTwqxqQz0IoS54br9IKRFqCZJkow=
-- name: CA【机场推荐：https://a9a.xyz】11
-  type: trojan
-  server: 104.18.152.230
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: NO【机场推荐：https://a9a.xyz】12
+  servername: www.miro.com
+  flow: xtls-rprx-vision-udp443
+- name: 'A - 🇷🇺 RU 01 TG: @nodpai'
   type: vless
-  server: 31.76.5.26
-  port: 13443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: auto.cendora.ru
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: US【机场推荐：https://a9a.xyz】13
-  type: vless
-  server: 31.76.70.31
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: baltic.cendora.ru
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: SE【机场推荐：https://a9a.xyz】14
-  type: vless
-  server: 31.76.3.54
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: nordic.cendora.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: DK【机场推荐：https://a9a.xyz】15
-  type: vless
-  server: 46.29.235.9
-  port: 443
-  uuid: d67af820-f54c-48ab-862c-19086357f276
-  tls: true
-  servername: telegraf.lv
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: SC【机场推荐：https://a9a.xyz】16
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】17
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: GB【机场推荐：https://a9a.xyz】18
-  type: vless
-  server: 91.110.174.210
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
+  server: 45.67.215.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: rubifen.adaspoloandco.com
-    path: /GOrbEh
-- name: CA【机场推荐：https://a9a.xyz】19
-  type: trojan
-  server: 104.16.174.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】20
-  type: trojan
-  server: 104.16.174.124
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】21
-  type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】22
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-- name: US【机场推荐：https://a9a.xyz】23
+      Host: vms.lifetime48.workers.dev
+    path: /
+- name: 'A - 🇮🇳 IN 01 TG: @nodpai'
   type: vless
-  server: 151.101.111.60
-  port: 443
-  uuid: 15335e88-81bf-4b53-9d54-2aa152bddc11
-  tls: true
-  servername: accounts.fastly.com
-- name: US【机场推荐：https://a9a.xyz】24
-  type: vless
-  server: gr1.panel11.ru
-  port: 443
-  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
-  tls: true
-  servername: gr1.panel11.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: JP【机场推荐：https://a9a.xyz】25
-  type: vless
-  server: 45.76.54.46
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
+  server: 66.81.247.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: rubifen.adaspoloandco.com
-    path: /GOrbEh
-- name: US【机场推荐：https://a9a.xyz】26
+      Host: vms.lifetime44.workers.dev
+    path: /
+- name: 'A - 🇧🇷 BR 01 TG: @nodpai'
   type: vless
-  server: 180.178.60.254
-  port: 10000
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
-- name: JP【机场推荐：https://a9a.xyz】27
-  type: vless
-  server: 206.251.53.91
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
+  server: 198.71.189.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: rubifen.adaspoloandco.com
-    path: /GOrbEh
-- name: HK【机场推荐：https://a9a.xyz】28
+      Host: vms.lifetime04.workers.dev
+- name: 'A - 🇮🇹 IT 01 TG: @nodpai'
   type: vless
-  server: 167.104.96.16
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
+  server: 154.206.12.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: rubifen.adaspoloandco.com
-    path: /GOrbEh
-- name: KR【机场推荐：https://a9a.xyz】29
+      Host: vms.lifetime44.workers.dev
+    path: /?ed=2560
+- name: 'A - 🇪🇸 ES 01 TG: @nodpai'
   type: vless
-  server: 85.155.176.154
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
+  server: 192.169.223.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: rubifen.adaspoloandco.com
-    path: /GOrbEh
-- name: JP【机场推荐：https://a9a.xyz】30
+      Host: vms.lifetime42.workers.dev
+    path: /
+- name: 'B - 🇫🇮 FI 01 TG: @nodpai'
   type: vless
-  server: 43.224.33.225
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  server: 176.109.101.215
+  port: 8083
+  uuid: 6cd7e37c-fd86-48bb-a930-5f685a6c0213
   tls: true
-  servername: rubifen.adaspoloandco.com
+  servername: ads.x5.ru
+- name: 'A - 🇷🇴 RO 01 TG: @nodpai'
+  type: vless
+  server: 89.116.180.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: rubifen.adaspoloandco.com
-    path: /GOrbEh
-- name: KR【机场推荐：https://a9a.xyz】31
+      Host: vms.lifetime09.workers.dev
+    path: /?ed=2560
+- name: 'A - 🇷🇴 RO 02 TG: @nodpai'
   type: vless
-  server: 85.155.176.93
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
+  server: 194.53.53.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: rubifen.adaspoloandco.com
-    path: /GOrbEh
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: ip.myip2.qzz.io
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 立陶宛+V2CROSS.COM
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 俄罗斯+V2CROSS.COM
+      Host: vms.lifetime51.workers.dev
+    path: /
+- name: 'A - 🇮🇱 IL 01 TG: @nodpai'
   type: vless
-  server: 78.159.247.253
-  port: 2027
-  uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
+  server: 45.131.209.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+    path: /
+- name: 'A - 🇧🇬 BG 01 TG: @nodpai'
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime42.workers.dev
+    path: /
+- name: 'A - 🇪🇪 EE 01 TG: @nodpai'
+  type: vless
+  server: 45.80.110.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /?ed=2560
+- name: 'A - 🇬🇷 GR 01 TG: @nodpai'
+  type: vless
+  server: gwapp-ru01.freenets.store
+  port: 443
+  uuid: 0c8a9f50-51b3-43b5-b1fb-09fc3131a800
   tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.108
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.174.71
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+V2CROSS.COM
-  type: trojan
-  server: 140.248.185.253
-  port: 443
-  password: MiTiVPN
-  sni: ssl.fastly.com
-- name: 美国+V2CROSS.COM
+  servername: gwapp-ru01.freenets.store
+  flow: xtls-rprx-vision-udp443
+- name: 'A - 🇮🇪 IE 01 TG: @nodpai'
   type: vless
-  server: 192.0.63.30
+  server: 185.170.166.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+    path: /
+- name: 'A - 🇲🇩 MD 01 TG: @nodpai'
+  type: vless
+  server: 94.103.0.230
+  port: 443
+  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
+  tls: true
+  servername: pl.prostosetup.org
+  flow: xtls-rprx-vision-udp443
+- name: 'B - 🇷🇸 RS 01 TG: @nodpai'
+  type: vless
+  server: 45.40.146.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime36.workers.dev
+- name: 'A - 🇸🇨 SC 01 TG: @nodpai'
+  type: vless
+  server: 154.197.64.30
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -283,142 +168,25 @@ proxies:
     headers:
       Host: vms.lifetime36.workers.dev
     path: /
-- name: 俄罗斯+V2CROSS.COM
+- name: 'A - 🇸🇨 SC 02 TG: @nodpai'
   type: vless
-  server: 46.29.235.9
-  port: 443
-  uuid: d67af820-f54c-48ab-862c-19086357f276
-  tls: true
-  servername: telegraf.lv
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 英国+V2CROSS.COM
-  type: vless
-  server: 31.76.70.31
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: baltic.cendora.ru
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 172.64.144.66
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  server: 154.197.121.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: vms.lifetime42.workers.dev
     path: /
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.73.213
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.140
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 防范境外势力渗透
-  type: vmess
-  server: 127.0.0.53
-  port: 80
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #1'
-  type: vmess
-  server: 127.0.0.53
-  port: 81
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #2'
-  type: vmess
-  server: 127.0.0.53
-  port: 82
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #3'
-  type: vmess
-  server: 127.0.0.53
-  port: 83
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #4'
-  type: vmess
-  server: 127.0.0.53
-  port: 84
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #5'
-  type: vmess
-  server: 127.0.0.53
-  port: 85
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #6'
-  type: vmess
-  server: 127.0.0.53
-  port: 86
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #7'
-  type: vmess
-  server: 127.0.0.53
-  port: 87
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #8'
-  type: vmess
-  server: 127.0.0.53
-  port: 88
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #9'
-  type: vmess
-  server: 127.0.0.53
-  port: 89
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
+- name: 'A - 🇸🇨 SC 03 TG: @nodpai'
+  type: vless
+  server: 45.192.224.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime17.workers.dev
 - name: 荷兰
   type: hysteria2
   server: nl.prisma-access.club
@@ -952,7 +720,7 @@ proxies:
   port: 35000
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
   sni: api.kermanshahi.org
-- name: 🇩🇪150017 | ⚡️Telegram = t.me/S...
+- name: 1🧮@oneclickvpnkeys
   type: hysteria2
   server: 194.180.188.120
   port: 8443
@@ -994,6 +762,12 @@ proxies:
   port: 8443
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-turbo-fr.roxa.org
+- name: dc-udp-🇧🇪 Belgium-Brussels
+  type: hysteria2
+  server: assets.gateway-stream.com
+  port: 52008
+  password: t8t2qojzsykqazfu
+  sni: assets.gateway-stream.com
 - name: '@v2ray313 کانالمون ❤️'
   type: hysteria2
   server: assets.gateway-stream.com
@@ -1096,13 +870,6 @@ proxies:
     headers:
       Host: Aim7HqTuvNOofcsx.v.3dns.vip
     path: /ws-vmess
-- name: 新加坡3|@ripaojiedian
-  type: trojan
-  server: 35.78.187.63
-  port: 41421
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
 - name: 美国2|@ripaojiedian
   type: vmess
   server: 3kCf86Ufi0U5xBDA.v.3dns.vip
@@ -1131,74 +898,267 @@ proxies:
     headers:
       Host: lL0GIaPVZ6Zxkd94.v.3dns.vip
     path: /ws-vmess
-- name: 🇩🇪DE_1|2.1MB/s
-  type: hysteria2
-  server: 45.128.99.14
-  port: 8443
-  password: Germany2026hy
-  sni: de.nobelchat.ru
-- name: 🇫🇮FI_1|1.7MB/s
+- name: 🇫🇮FI_1|3.6MB/s
   type: vless
-  server: 132-243-223-227.sslip.io
-  port: 2101
-  uuid: 2edfd299-fd54-4056-9d79-3c99f19bdae1
+  server: 65.109.181.252
+  port: 13470
+  uuid: '%40Cooonfig%40Cooonfig%40ZhilaVPN'
+- name: 🇷🇴RO_1|1.3MB/s
+  type: hysteria2
+  server: hy2.aspidnet.xyz
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+- name: 🇪🇪EE_1|1.1MB/s
+  type: vless
+  server: 185.36.142.111
+  port: 443
+  uuid: fbb74aa8-b89a-4f20-9504-6b25aadf6681
   tls: true
-  servername: 132-243-223-227.sslip.io
+  servername: est2.freeinternat.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇦🇪AE_1|1.3MB/s
+  type: vless
+  server: 31.56.188.43
+  port: 443
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
+  tls: true
+  servername: s3.storage.anti-zapret.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇷🇺RU_1|2.2MB/s
+  type: vless
+  server: 109.73.206.180
+  port: 443
+  uuid: 663836b2-f676-43fb-977f-47c495b1b383
+  tls: true
+  servername: st.ozone.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇦UA_1|1.0MB/s
+  type: vless
+  server: 138.249.242.140
+  port: 443
+  uuid: fbb74aa8-b89a-4f20-9504-6b25aadf6681
+  tls: true
+  servername: ukri.freeinternat.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇩🇪DE_1|1.3MB/s
+  type: vless
+  server: store20.vevluma.ir
+  port: 1234
+  uuid: cd09dc43-a55a-4f9d-920a-9e91e11e26fc
+  tls: true
+  servername: updates.cdn-apple.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇫🇮FI_2|1002KB/s
+  type: vless
+  server: 104.16.6.70
+  port: 2087
+  uuid: cd09dc43-a55a-4f9d-920a-9e91e11e26fc
+  tls: true
+  servername: football.bexait.ir
+- name: 🇷🇴RO_2|2.0MB/s
+  type: hysteria2
+  server: hy2.aspidnet.xyz
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+- name: 🇩🇪DE_2|2.2MB/s
+  type: ss
+  server: 130.61.32.138
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: z2Jh23bumSdistaAEcyEZiFiqEgmQa8jZyatjn7sn98=
+- name: 🇸🇬SG_1|1.4MB/s
+  type: vless
+  server: 166.108.235.162
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  servername: tesla.com
+- name: 🇩🇪DE_3|1.7MB/s
+  type: ss
+  server: 130.61.224.88
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: m0ES8r0o2+zmPE3ob3fEGhHMSAN+3kvRDZjWpnXOCAY=
+- name: 🇸🇬SG_2|1.1MB/s
+  type: ss
+  server: 213.35.122.158
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Acx6fWM2UF9fd1FH4MjQeMt/52+ZBrsoG0URKFjKUgs=
+- name: 🇸🇬SG_3|2.2MB/s
+  type: ss
+  server: 161.118.222.188
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7orT5c5KyvxeLiav2vJov3H7atja22MMY4p3bmDOHnE=
+- name: 🇸🇬SG_4|1.5MB/s
+  type: ss
+  server: 168.107.76.45
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: dZwPUFys9BIxuZF98ex4hUYHvTa+/az29ga3wUgOdWs=
+- name: 🇸🇬SG_5|1.7MB/s
+  type: ss
+  server: 168.107.76.118
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: NUGGVA0IjpDhkN/POu48/FOjp5fN0FE2DzqKMFrxiQk=
+- name: 🇱🇻LV_1|2.5MB/s
+  type: hysteria2
+  server: hy2-netherlands.unlimited-access.ru
+  port: 8443
+  password: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
+  sni: hy2-netherlands.unlimited-access.ru
+- name: 🇺🇸US_3|1.1MB/s
+  type: vless
+  server: 104.19.213.131
+  port: 2087
+  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+  tls: true
+  servername: wzknb.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: wzknb.pages.dev
+    path: /proxyip=179.255.104.87,179.255.116.198,179.255.101.56,142.248.218.6,142.248.218.4,45.76.79.239,179.255.152.163,208.68.180.240fp=chrome
+- name: 🇳🇱NL_2|1014KB/s
+  type: hysteria2
+  server: nl1.xiaoliyu.cyou
+  port: 4433
+  password: 1427eb10-7529-4d38-a6a2-01b337868b37
+- name: 🇬🇧GB_4|2.4MB/s
+  type: vless
+  server: ang.freeinternat.com
+  port: 443
+  uuid: fbb74aa8-b89a-4f20-9504-6b25aadf6681
+  tls: true
+  servername: ang.freeinternat.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇹🇷TR_1|2.0MB/s
+  type: vless
+  server: new3.api.go-vpn.club
+  port: 443
+  uuid: 41e71ba7-d389-47aa-94f7-ed1f55fdbcdf
+  tls: true
+  servername: cdnjs.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇹🇷TR_2|3.7MB/s
+  type: vless
+  server: 194.93.61.92
+  port: 443
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
+  tls: true
+  servername: cdnjs.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇸US_12|3.4MB/s
+  type: hysteria2
+  server: 103.246.248.227
+  port: 8443
+  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
+  sni: hopp-legend-se.roxa.org
+- name: 🇦🇹AT_1|2.6MB/s
+  type: hysteria2
+  server: srv-40a0eb.21freedom.net
+  port: 11592
+  password: 3ec082d54e
+- name: 🇹🇷TR_3|4.2MB/s
+  type: hysteria2
+  server: 162.249.124.112
+  port: 8080
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hopp-germany-new.ddnsguru.com
+- name: 🇩🇪DE_5|2.1MB/s
+  type: vless
+  server: nl3.murhost.network
+  port: 443
+  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  tls: true
+  servername: nl3.murhost.network
+  flow: xtls-rprx-vision-udp443
+- name: 🇸🇬SG_6|1.0MB/s
+  type: vless
+  server: 13.214.203.137
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  tls: true
+  servername: www.apple.com
+- name: 🇰🇷KR_1|1.5MB/s
+  type: vless
+  server: 3.36.71.216
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  tls: true
+  servername: www.apple.com
+- name: 🇩🇪DE_6|1.6MB/s
+  type: vless
+  server: ai.riotvpn.eu
+  port: 8443
+  uuid: 2e9d3568-f977-4cea-800d-fd9a876e7252
+  tls: true
+  servername: static.vkimages.io
   network: grpc
   grpc-opts:
-    grpc-service-name: fi-grpc-test
-- name: 🇯🇵JP_1|1.3MB/s
-  type: ss
-  server: 121.46.230.136
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇫🇷FR_5|3.4MB/s
+    grpc-service-name: grpc-yandex
+- name: 🇳🇱NL_3|1.5MB/s
   type: vless
-  server: francervewcwerxr24231c42v423c4v23v4.soft421.ir
-  port: 1152
-  uuid: 3b3c1bd6-3009-4d17-a27a-095e43157265
+  server: nl.riotvpn.eu
+  port: 9443
+  uuid: 2e9d3568-f977-4cea-800d-fd9a876e7252
   tls: true
-  servername: yahoo.com
-- name: 🇨🇿CZ_1|1.7MB/s
+  servername: prod.vkimages.io
+  flow: xtls-rprx-vision-udp443
+- name: 🇸🇬SG_7|4.3MB/s
   type: vless
-  server: cz.24outlook.space
-  port: 2053
-  uuid: e50f1e5f-2823-4030-9dd2-6c951b6b83d0
+  server: 172.64.151.254
+  port: 2096
+  uuid: 341832cc-ba98-425b-8225-b3db621a0da3
   tls: true
-  servername: cz.24outlook.space
-- name: 🇰🇷KR_1|1.4MB/s
-  type: ss
-  server: 121.46.230.138
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇫🇷FR_2|1017KB/s
-  type: trojan
-  server: 104.18.152.140
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_3|2.4MB/s
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_4|1.9MB/s
-  type: trojan
-  server: 104.18.152.159
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇧🇬BG_1|3.4MB/s
+  servername: oyue.rainfall0705.cc.cd
+  network: ws
+  ws-opts:
+    headers:
+      Host: oyue.rainfall0705.cc.cd
+    path: /fp=chrome
+- name: 🇳🇱NL_4|1.4MB/s
   type: vless
-  server: 94.156.155.27
+  server: 172.67.132.85
+  port: 8080
+  uuid: 3a701524-30c8-45f3-8922-d7af5d024af0
+  network: ws
+  ws-opts:
+    headers:
+      Host: server14.peekconf.workers.dev
+    path: /eyJqdW5rIjoiWDRPODRLWDd2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0=
+- name: 🇩🇪DE_7|1.6MB/s
+  type: vless
+  server: 81.31.210.140
   port: 443
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
   tls: true
-  servername: www.telekom.de
-- name: 🇬🇪GE_2|2.7MB/s
+  servername: nl3.murhost.network
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇸US_18|1.1MB/s
+  type: vless
+  server: 2.26.3.40
+  port: 443
+  uuid: 57a9cf7d-bb6c-414e-97be-1985f7123c61
+  tls: true
+  servername: errorfl.zapret-tg.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: errorfl-cdn-api-v1
+- name: 🇬🇧GB_5|1.2MB/s
+  type: vless
+  server: 85.137.249.157
+  port: 2054
+  uuid: 626c0789-16d1-4815-be8b-bd03959d7d12
+  tls: true
+  servername: max.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇬🇪GE_1|1.0MB/s
   type: vless
   server: in-ru-vk-01.ray-balance.space
   port: 443
@@ -1206,63 +1166,208 @@ proxies:
   tls: true
   servername: www.ray-balance.space
   flow: xtls-rprx-vision-udp443
-- name: 🇺🇸US_1|2.0MB/s
-  type: ss
-  server: 129.153.108.95
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: K/s/4VZqZp6jiPWuK3A03D+GbpcT3n2W5XhTZkvL1mM=
-- name: 🇺🇸US_2|3.1MB/s
-  type: ss
-  server: 129.146.217.99
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jexdsygsRbhM/kRogYZTpmtFWsww4srE1RA/4bJjBlM=
-- name: 🇺🇸US_3|1.3MB/s
-  type: hysteria2
-  server: 163.192.14.135
-  port: 50160
-  password: 099830134df5ac3a04a4b21d39b8c395
-  sni: www.bing.com
-- name: 🇳🇱NL_3|2.1MB/s
+- name: 🇺🇸US_19|1.1MB/s
   type: vless
-  server: 5.180.42.210
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  server: 143.246.198.91
+  port: 2054
+  uuid: 80d02a71-54a5-4c5b-976d-5ee573c502af
   tls: true
-  servername: nordic.cendora.ru
-  flow: xtls-rprx-vision-udp443
-- name: 🇺🇸US_18|3.4MB/s
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: MiTiVPN
-  sni: 82929473-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-- name: 🇺🇸US_20|3.3MB/s
+  servername: www.ibm.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇳🇱NL_5|2.2MB/s
   type: vless
-  server: quiet-voyager-5af5-production.up.railway.app
-  port: 443
-  uuid: 5ef8484f-996a-7c3e-8dc4-7802d5054d8a
-  tls: true
-  servername: quiet-voyager-5af5-production.up.railway.app
-- name: 🇩🇪DE_2|2.1MB/s
-  type: vless
-  server: 45.130.125.114
-  port: 80
-  uuid: b0c1d2e3-f4a5-4b6c-8d7e-8f9a0b1c2d3e
+  server: 188.114.97.6
+  port: 8080
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
   network: ws
   ws-opts:
     headers:
-      Host: free-hzr18-cdn.sabzi.name.ng.
+      Host: damp-dawn-3a96.alvlirm123.workers.dev
     path: /
-- name: 🇳🇴NO_1|1.0MB/s
+- name: 🇳🇱NL_6|2.1MB/s
   type: vless
-  server: 194.110.207.48
-  port: 443
-  uuid: 474f10e3-c205-4204-999a-466ffcca1b10
+  server: 139.100.228.66
+  port: 44001
+  uuid: 8a46f9a6-be9c-45a6-952f-3c75f4d38c67
   tls: true
-  servername: kibi-institut.de
+  servername: pool-c.pools.netcenter-cdn.com
   flow: xtls-rprx-vision-udp443
+- name: 🇳🇱NL_7|1.2MB/s
+  type: vless
+  server: 139.100.228.67
+  port: 44001
+  uuid: 8a46f9a6-be9c-45a6-952f-3c75f4d38c67
+  tls: true
+  servername: pool-c.pools.netcenter-cdn.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇳🇱NL_8|2.8MB/s
+  type: vless
+  server: 139.100.228.68
+  port: 44001
+  uuid: 8a46f9a6-be9c-45a6-952f-3c75f4d38c67
+  tls: true
+  servername: pool-c.pools.netcenter-cdn.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇳🇱NL_9|3.9MB/s
+  type: vless
+  server: 139.100.228.69
+  port: 44001
+  uuid: 8a46f9a6-be9c-45a6-952f-3c75f4d38c67
+  tls: true
+  servername: pool-c.pools.netcenter-cdn.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇬🇧GB_6|2.3MB/s
+  type: vless
+  server: 107.161.160.231
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: lapa3.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇬🇧GB_7|2.0MB/s
+  type: vless
+  server: 107.161.160.64
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: lapa2.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇬🇧GB_8|3.3MB/s
+  type: vless
+  server: 107.181.155.181
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok7.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇸US_20|2.3MB/s
+  type: vless
+  server: 143.246.136.78
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok1.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇬🇧GB_9|1.1MB/s
+  type: vless
+  server: 217.179.6.228
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: lapa6.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇸US_21|1.6MB/s
+  type: vless
+  server: 64.49.13.198
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok10.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇸US_22|1010KB/s
+  type: vless
+  server: 64.49.13.249
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok4.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇹🇷TR_4|1.9MB/s
+  type: vless
+  server: 64.49.13.250
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok8.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇸US_23|1.2MB/s
+  type: vless
+  server: wok1.api3-max.ru
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok1.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇸US_24|1.1MB/s
+  type: vless
+  server: wok10.api3-max.ru
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok10.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇬🇧GB_10|1.1MB/s
+  type: vless
+  server: wok3.api3-max.ru
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok3.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇬🇧GB_11|1.7MB/s
+  type: vless
+  server: wok5.api3-max.ru
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok5.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇸US_25|1.7MB/s
+  type: vless
+  server: wok6.api3-max.ru
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok6.api3-max.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇺🇸US_26|1.6MB/s
+  type: vless
+  server: usa.oblaco.bet
+  port: 443
+  uuid: ef2c48a7-c113-4610-9d81-b35779660d9e
+  tls: true
+  servername: usa.oblaco.bet
+  flow: xtls-rprx-vision-udp443
+- name: 🇳🇱NL_10|1.4MB/s
+  type: vless
+  server: 188.114.97.6
+  port: 8880
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  network: ws
+  ws-opts:
+    headers:
+      Host: dark-leaf-93a1.440-02e.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇦🇹AT_2|2.8MB/s
+  type: vless
+  server: node-14.optmarketshali.ru
+  port: 443
+  uuid: f8ddbec7-05c3-4669-934f-65df92b7694e
+  tls: true
+  servername: node-14.optmarketshali.ru
+  flow: xtls-rprx-vision-udp443
+- name: 🇩🇪DE_8|1.3MB/s
+  type: vless
+  server: 93.123.101.78
+  port: 443
+  uuid: fbb74aa8-b89a-4f20-9504-6b25aadf6681
+  tls: true
+  servername: germ3.freeinternat.com
+  flow: xtls-rprx-vision-udp443
+- name: 🇫🇮FI_3|1.1MB/s
+  type: vless
+  server: 172.67.189.28
+  port: 2083
+  uuid: 2b240016-2d78-4b59-a2ae-b9cd724ee714
+  tls: true
+  servername: arvan.dearhossein-taktaz.ir
+  network: ws
+  ws-opts:
+    headers:
+      Host: arvan.dearhossein-taktaz.ir
+    path: /fp=chrome
 - name: 🇷🇴_RO_罗马尼亚_1
   type: vless
   server: 95.173.199.78
@@ -1914,48 +2019,3 @@ proxies:
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸 US 132 SSS
-  type: ss
-  server: 5.8.41.89
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: YaXvybxrP9HL79Gfltym9bw/5QIQAW/f
-- name: 🇱🇻 LV 133 SSS
-  type: ss
-  server: 46.183.217.232
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇱🇻 LV 134 TJN
-  type: trojan
-  server: ua-full.privateip.net
-  port: 443
-  password: 1a57ce8f-a4dd-474a-b00f-2f907290db90
-- name: 🇱🇻 LV 135 TJN
-  type: trojan
-  server: 195.123.213.46
-  port: 443
-  password: 1a57ce8f-a4dd-474a-b00f-2f907290db90
-- name: 🇱🇻 LV 137 TJN
-  type: trojan
-  server: ua-full.privateip.net
-  port: 443
-  password: 6fd1efa0-b559-48ce-81f9-56d1765f5ab5
-- name: 🇲🇩 MD 138 SSS
-  type: ss
-  server: 178.175.134.2
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇲🇩 MD 139 SSS
-  type: ss
-  server: 192.121.87.147
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇲🇴 MO 140 TJN
-  type: trojan
-  server: 45.64.22.55
-  port: 443
-  password: KLF0qOU0ZZGw5Tnu
-  sni: swift.protocolbuffer.com

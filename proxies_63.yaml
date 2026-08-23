@@ -1,4 +1,49 @@
 proxies:
+- name: 🇺🇸 US 132 SSS
+  type: ss
+  server: 5.8.41.89
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: YaXvybxrP9HL79Gfltym9bw/5QIQAW/f
+- name: 🇱🇻 LV 133 SSS
+  type: ss
+  server: 46.183.217.232
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇱🇻 LV 134 TJN
+  type: trojan
+  server: ua-full.privateip.net
+  port: 443
+  password: 1a57ce8f-a4dd-474a-b00f-2f907290db90
+- name: 🇱🇻 LV 135 TJN
+  type: trojan
+  server: 195.123.213.46
+  port: 443
+  password: 1a57ce8f-a4dd-474a-b00f-2f907290db90
+- name: 🇱🇻 LV 137 TJN
+  type: trojan
+  server: ua-full.privateip.net
+  port: 443
+  password: 6fd1efa0-b559-48ce-81f9-56d1765f5ab5
+- name: 🇲🇩 MD 138 SSS
+  type: ss
+  server: 178.175.134.2
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇲🇩 MD 139 SSS
+  type: ss
+  server: 192.121.87.147
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇲🇴 MO 140 TJN
+  type: trojan
+  server: 45.64.22.55
+  port: 443
+  password: KLF0qOU0ZZGw5Tnu
+  sni: swift.protocolbuffer.com
 - name: 🇲🇴 MO 141 TJN
   type: trojan
   server: 45.64.22.55
@@ -1701,51 +1746,3 @@ proxies:
   port: 443
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
   sni: syndication-statutes-wanted-logo.trycloudflare.com
-- name: 🇨🇦 CA 495 TJN
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-- name: 🇨🇦 CA 497 TJN
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-- name: 🇨🇦 CA 499 TJN
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-- name: 🇨🇦 CA 500 TJN
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-- name: 🇨🇦 CA 501 TJN
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-- name: 🇺🇸 US 503 SSS
-  type: ss
-  server: 142.202.48.99
-  port: 8090
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: 🇸🇬 SG 504 SSS
-  type: ss
-  server: 47.128.64.71
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇨🇦 CA 505 TJN
-  type: trojan
-  server: 35.182.182.193
-  port: 22222
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
