@@ -1,4 +1,112 @@
 proxies:
+- name: 🇦🇪AE_22|145KB/s|A004-260618 01
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+- name: 🇯🇵JP_700|89KB/s|A004-260618 01
+  type: trojan
+  server: flexible-titmouse.rooster465.autos
+  port: 443
+  password: PQ05174892
+  sni: flexible-titmouse.rooster465.autos
+- name: 🇦🇺AU_41|86KB/s|A004-260618 01
+  type: trojan
+  server: 87.121.33.104
+  port: 443
+  password: FH72359861
+  sni: fluent-gar.rooster465.autos
+- name: 🇦🇪AE_23|289KB/s|A004-260618 01
+  type: vless
+  server: estproxy4.lockdwn.com
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    headers:
+      Host: estproxy4.lockdwn.com
+    path: /
+- name: 🇯🇵JP_701|116KB/s|A004-260618 01
+  type: trojan
+  server: robust-toucan.rooster465.autos
+  port: 443
+  password: PQ05174892
+  sni: robust-toucan.rooster465.autos
+- name: 🇯🇵JP_702|294KB/s|A004-260618 01
+  type: trojan
+  server: famous-opossum.rooster465.autos
+  port: 443
+  password: PQ05174892
+  sni: famous-opossum.rooster465.autos
+- name: 🇩🇪DE_223|292KB/s|A004-260618 01
+  type: vless
+  server: de2.mehab.me
+  port: 443
+  uuid: 58a38ebd-30e6-48bd-a1ab-d0babb1da37f
+  tls: true
+- name: 🇦🇪AE_25|409KB/s|A004-260618 01
+  type: vless
+  server: estproxy4.lockdwn.com
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    headers:
+      Host: estproxy4.lockdwn.com
+    path: /
+- name: 🇸🇬SG_220|316KB/s|A004-260618 01
+  type: trojan
+  server: 54.169.228.116
+  port: 443
+  password: PQ05174892
+  sni: amusing-grub.rooster465.autos
+- name: 🇮🇪IE_90|219KB/s|A004-260618 01
+  type: trojan
+  server: concise-bass.rooster465.autos
+  port: 443
+  password: FH72359861
+  sni: concise-bass.rooster465.autos
+- name: 🇩🇪DE_207|299KB/s|A004-260618 01
+  type: vless
+  server: derman.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    headers:
+      Host: derman.neobo-tooth.ru
+    path: /
+- name: 🇯🇵JP_703|231KB/s|A004-260618 01
+  type: trojan
+  server: aa.ccmusic.jp
+  port: 443
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+- name: 🇸🇬SG_221|285KB/s|A004-260618 01
+  type: trojan
+  server: pro-mako.rooster465.autos
+  port: 443
+  password: PQ05174892
+  sni: pro-mako.rooster465.autos
+- name: 🇯🇵JP_704|96KB/s|A004-260618 01
+  type: trojan
+  server: needed-gelding.rooster465.autos
+  port: 443
+  password: FH72359861
+  sni: needed-gelding.rooster465.autos
+- name: 🇸🇬SG_222|161KB/s|A004-260618 01
+  type: trojan
+  server: 13.250.65.224
+  port: 443
+  password: PQ05174892
+  sni: cunning-midge.rooster465.autos
+- name: 🇸🇬SG_223|194KB/s|A004-260618 01
+  type: trojan
+  server: 13.212.91.165
+  port: 443
+  password: PQ05174892
+  sni: composed-sheep.rooster465.autos
 - name: 🇸🇬SG_224|95KB/s|A004-260618 01
   type: trojan
   server: 47.128.15.18
@@ -1759,139 +1867,3 @@ proxies:
   port: 995
   cipher: aes-256-gcm
   password: NTNjMmY0YzM2OTIwYzBkNmJkZGFiNjJmNGUxZGEx
-- name: 🇺🇸US_816|361KB/s|B007-260618 01
-  type: vless
-  server: 69.46.46.71
-  port: 443
-  uuid: 6ddf87dd-8a90-4a80-b360-9e19a29dc03e
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-production-c5a8b.up.railway.app
-    path: /ws/vless/6ddf87dd-8a90-4a80-b360-9e19a29dc03e
-- name: 🇫🇷FR_1011|262KB/s|B007-260618 01
-  type: vless
-  server: 104.19.45.195
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: josni.hoyes.cloudns.ch
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
-- name: 🇩🇪DE_242|369KB/s|B007-260618 01
-  type: vless
-  server: 91.98.154.118
-  port: 57775
-  uuid: 89b794f4-cd0f-410f-b766-8bc1d8e4106a
-  network: ws
-  ws-opts:
-    headers:
-      Host: play.google.com
-    path: /
-- name: ❓Other_65|210KB/s|B007-260618 01
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: 8f20ce8e-917f-4946-e03f-31a7bbf8a965
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /
-- name: 🇬🇧GB_138|360KB/s|B007-260618 01
-  type: vless
-  server: 188.114.97.8
-  port: 443
-  uuid: '@V2XNET'
-  tls: true
-- name: 🇩🇪DE_243|341KB/s|B007-260618 01
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: XpnTeam-7
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- name: 🇺🇸US_817|200KB/s|B007-260618 01
-  type: vless
-  server: 69.46.46.15
-  port: 443
-  uuid: a390d188-091b-4644-9804-14a2539ad6c7
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-production-878d1.up.railway.app
-    path: /ws/vless/a390d188-091b-4644-9804-14a2539ad6c7
-- name: 🇺🇸US_818|137KB/s|B007-260618 01
-  type: vless
-  server: 69.46.46.229
-  port: 443
-  uuid: a390d188-091b-4644-9804-14a2539ad6c7
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-production-878d1.up.railway.app
-    path: /ws/vless/a390d188-091b-4644-9804-14a2539ad6c7
-- name: 🇷🇺RU_45|83KB/s|B007-260618 01
-  type: vless
-  server: 212.67.9.113
-  port: 2200
-  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
-  network: ws
-  ws-opts:
-    path: /v1
-- name: 🇫🇷FR_1013|369KB/s|F003-260618 01
-  type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
-  network: ws
-  ws-opts:
-    headers:
-      Host: morning-feather-dc98.136-25b.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇷🇺RU_48|335KB/s|K001-260618 01
-  type: ss
-  server: 45.140.169.123
-  port: 20887
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: 🇸🇬SG_324|132KB/s|K001-260618 01
-  type: ss
-  server: 192.124.176.166
-  port: 8388
-  cipher: aes-256-gcm
-  password: Ls7am30jwmpkerD3
-- name: 🇨🇦CA_45|276KB/s|K001-260618 01
-  type: ss
-  server: 166.88.130.218
-  port: 50118
-  cipher: aes-256-gcm
-  password: fbcec76953a2d173
-- name: 🇷🇺RU_49|199KB/s|K001-260618 01
-  type: ss
-  server: 195.133.23.5
-  port: 20998
-  cipher: aes-256-gcm
-  password: d99c422199e62b6b
-- name: 🇷🇺RU_50|255KB/s|K001-260618 01
-  type: ss
-  server: 195.133.23.200
-  port: 10998
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-- name: 🇷🇺RU_51|424KB/s|K001-260618 01
-  type: ss
-  server: 46.17.40.234
-  port: 20996
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede

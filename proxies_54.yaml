@@ -1,4 +1,154 @@
 proxies:
+- name: 🇸🇬SG_129|201KB/s|M002-260618 01
+  type: vless
+  server: 45.12.30.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  tls: true
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    headers:
+      Host: speed.dulacloud.store
+    path: /dula?Telegram-WangCai2
+- name: 🇸🇬SG_130|291KB/s|M002-260618 01
+  type: vless
+  server: 185.162.228.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  tls: true
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    headers:
+      Host: speed.dulacloud.store
+    path: /dula?Telegram-WangCai2
+- name: 🇸🇬SG_131|296KB/s|M002-260618 01
+  type: vless
+  server: 45.135.235.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  tls: true
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    headers:
+      Host: speed.dulacloud.store
+    path: /dula?Telegram-WangCai2
+- name: 🇫🇷FR_1549|244KB/s|Q001-260618 01
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+    path: /sg-amz
+- name: 🇧🇷BR_16|212KB/s|S004-260618 01
+  type: vless
+  server: hys40.wba-pn.ru
+  port: 443
+  uuid: ae2e0637-5c9d-422b-93ac-70bd3fceeb81
+  tls: true
+  servername: hys40.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇯🇵JP_964|139KB/s|A004-260618 01
+  type: trojan
+  server: 57.180.27.225
+  port: 443
+  password: PQ05174892
+  sni: picked-guinea.rooster465.autos
+  skip-cert-verify: true
+- name: 🇨🇦CA_51|91KB/s|A004-260618 01
+  type: ss
+  server: 154.127.56.212
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇯🇵JP_967|140KB/s|A004-260618 01
+  type: trojan
+  server: 54.238.220.71
+  port: 443
+  password: HC04361579
+  sni: settling-shad.rooster465.autos
+- name: 🇺🇸US_782|66KB/s|A004-260618 01
+  type: vless
+  server: 172.96.121.6
+  port: 443
+  uuid: 83c18ff2-0565-4b53-89ad-57357fef153b
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇷🇺RU_11|141KB/s|A004-260618 01
+  type: vless
+  server: 45.138.100.226
+  port: 2083
+  uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
+  tls: true
+  servername: using.neobo-tooth.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇸🇬SG_132|302KB/s|A004-260618 01
+  type: vless
+  server: 6fzw-19369ic.meibao.site
+  port: 443
+  uuid: 8d1e0577-bfcb-4cbd-91c0-1f8788d4ba44
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇮🇳IN_12|371KB/s|A004-260618 01
+  type: vless
+  server: nsuc-znkbig.avonex.top
+  port: 443
+  uuid: ec31f6d7-c71a-413d-93aa-24296805a594
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸US_784|364KB/s|A004-260618 01
+  type: vless
+  server: 31.58.50.200
+  port: 8443
+  uuid: b8fca50e-e3bb-4ae2-a44e-bde0e0495b2e
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇻🇳VN_4|265KB/s|A004-260618 01
+  type: vless
+  server: 216.133.158.108
+  port: 443
+  uuid: c08c499f-21bd-46ba-9146-5c770204342b
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇺🇸US_785|297KB/s|A004-260618 01
+  type: vless
+  server: 31.58.50.200
+  port: 8443
+  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇳🇱NL_286|79KB/s|A004-260618 01
+  type: vless
+  server: 5.253.28.189
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: asia.cendora.ru
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
 - name: 🇸🇬SG_133|336KB/s|A004-260618 01
   type: hysteria2
   server: 43.156.90.144
@@ -2292,142 +2442,4 @@ proxies:
   tls: true
   servername: storage.yandex.net
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇮FI_46|269KB/s|B007-260618 01
-  type: vless
-  server: connecto1.kolman.com.de
-  port: 8080
-  uuid: ce71b8c2-54a4-4dd0-b780-a4521b16f2fb
-  network: ws
-  ws-opts:
-    headers:
-      Host: 1.sidin.com.de
-    path: /eQ7EK5s88mh1QkQrKDwYqh6Dbhd
-- name: 🇨🇾CY_1|385KB/s|B007-260618 01
-  type: vless
-  server: se1.se-cdn.ru
-  port: 443
-  uuid: d96e05a1-18bb-45da-9e9f-ab7caab6952a
-  tls: true
-  servername: se1.se-cdn.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_236|553KB/s|B007-260618 01
-  type: vless
-  server: 63.188.40.90
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪IE_126|296KB/s|G001-260618 01
-  type: trojan
-  server: funny-hen.rooster465.autos
-  port: 443
-  password: EQ30679154
-  sni: funny-hen.rooster465.autos
-  skip-cert-verify: true
-- name: 🇦🇺AU_52|135KB/s|G001-260618 01
-  type: trojan
-  server: 87.121.33.162
-  port: 443
-  password: AE62539071
-  sni: together-dingo.rooster465.autos
-- name: 🇱🇺LU_66|400KB/s|C002-260622 01
-  type: trojan
-  server: 202.78.163.175
-  port: 443
-  password: FH72359861
-  sni: optimal-urchin.rooster465.autos
-- name: 🇩🇪DE_237|172KB/s|M002-260618 01
-  type: vless
-  server: 178.162.253.64
-  port: 443
-  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
-  tls: true
-  servername: de.servers.gracevpnbuy.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇸🇬SG_147|265KB/s|M002-260618 01
-  type: vless
-  server: 5.10.215.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  tls: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    headers:
-      Host: speed.dulacloud.store
-    path: /dula?Telegram-WangCai2
-- name: 🇸🇬SG_148|126KB/s|M002-260618 01
-  type: vless
-  server: 185.18.250.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  tls: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    headers:
-      Host: speed.dulacloud.store
-    path: /dula?Telegram-WangCai2
-- name: 🇸🇬SG_149|317KB/s|M002-260618 01
-  type: vless
-  server: 188.42.88.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  tls: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    headers:
-      Host: speed.dulacloud.store
-    path: /dula?Telegram-WangCai2
-- name: 🇫🇷FR_1612|146KB/s|R002-260618 01
-  type: vless
-  server: 104.18.93.3
-  port: 80
-  uuid: a41322e9-d0f1-4ff1-ac5c-a486e2b680b2
-  network: ws
-  ws-opts:
-    headers:
-      Host: worker3.yahoya44555.workers.dev
-    path: /2EP6G0LoOvs5eNZj
-- name: 🇺🇸US_844|321KB/s|S001-260618 01
-  type: trojan
-  server: 128.14.148.84
-  port: 5531
-  password: fg20mtCFHy
-  sni: ycgsc.southbyte.xyz
-  skip-cert-verify: true
-- name: 🇸🇬SG_150|342KB/s|S001-260618 01
-  type: hysteria2
-  server: 64.235.45.208
-  port: 12645
-  password: 9gWt2z3KdC9VI8kAQYVvvSvhT9e05CfI
-  sni: vip-sg-1.hkd4fwmg.vip
-- name: 🇩🇪DE_238|367KB/s|V010-260618 01
-  type: vless
-  server: 172.236.210.140
-  port: 8443
-  uuid: 32626a62-8ca5-4b36-bef0-f771df8805ab
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇸🇬SG_151|334KB/s|V010-260618 01
-  type: vless
-  server: yebm-1936hwy.revora.top
-  port: 443
-  uuid: be154d71-04ca-4389-8a89-d14219b25cd7
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇧🇷BR_19|219KB/s|V002-260618 01
-  type: vless
-  server: 23.251.56.78
-  port: 443
-  uuid: 9638a83e-f1f7-4cc8-a602-924965d9534f
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
   flow: xtls-rprx-vision

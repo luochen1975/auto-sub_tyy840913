@@ -1,4 +1,140 @@
 proxies:
+- name: 🇺🇸US_816|361KB/s|B007-260618 01
+  type: vless
+  server: 69.46.46.71
+  port: 443
+  uuid: 6ddf87dd-8a90-4a80-b360-9e19a29dc03e
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: web-production-c5a8b.up.railway.app
+    path: /ws/vless/6ddf87dd-8a90-4a80-b360-9e19a29dc03e
+- name: 🇫🇷FR_1011|262KB/s|B007-260618 01
+  type: vless
+  server: 104.19.45.195
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: josni.hoyes.cloudns.ch
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
+- name: 🇩🇪DE_242|369KB/s|B007-260618 01
+  type: vless
+  server: 91.98.154.118
+  port: 57775
+  uuid: 89b794f4-cd0f-410f-b766-8bc1d8e4106a
+  network: ws
+  ws-opts:
+    headers:
+      Host: play.google.com
+    path: /
+- name: ❓Other_65|210KB/s|B007-260618 01
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: 8f20ce8e-917f-4946-e03f-31a7bbf8a965
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: c12.com
+    path: /
+- name: 🇬🇧GB_138|360KB/s|B007-260618 01
+  type: vless
+  server: 188.114.97.8
+  port: 443
+  uuid: '@V2XNET'
+  tls: true
+- name: 🇩🇪DE_243|341KB/s|B007-260618 01
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-7
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
+- name: 🇺🇸US_817|200KB/s|B007-260618 01
+  type: vless
+  server: 69.46.46.15
+  port: 443
+  uuid: a390d188-091b-4644-9804-14a2539ad6c7
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: web-production-878d1.up.railway.app
+    path: /ws/vless/a390d188-091b-4644-9804-14a2539ad6c7
+- name: 🇺🇸US_818|137KB/s|B007-260618 01
+  type: vless
+  server: 69.46.46.229
+  port: 443
+  uuid: a390d188-091b-4644-9804-14a2539ad6c7
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: web-production-878d1.up.railway.app
+    path: /ws/vless/a390d188-091b-4644-9804-14a2539ad6c7
+- name: 🇷🇺RU_45|83KB/s|B007-260618 01
+  type: vless
+  server: 212.67.9.113
+  port: 2200
+  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
+  network: ws
+  ws-opts:
+    path: /v1
+- name: 🇫🇷FR_1013|369KB/s|F003-260618 01
+  type: vless
+  server: 172.67.152.71
+  port: 8880
+  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
+  network: ws
+  ws-opts:
+    headers:
+      Host: morning-feather-dc98.136-25b.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇷🇺RU_48|335KB/s|K001-260618 01
+  type: ss
+  server: 45.140.169.123
+  port: 20887
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+- name: 🇸🇬SG_324|132KB/s|K001-260618 01
+  type: ss
+  server: 192.124.176.166
+  port: 8388
+  cipher: aes-256-gcm
+  password: Ls7am30jwmpkerD3
+- name: 🇨🇦CA_45|276KB/s|K001-260618 01
+  type: ss
+  server: 166.88.130.218
+  port: 50118
+  cipher: aes-256-gcm
+  password: fbcec76953a2d173
+- name: 🇷🇺RU_49|199KB/s|K001-260618 01
+  type: ss
+  server: 195.133.23.5
+  port: 20998
+  cipher: aes-256-gcm
+  password: d99c422199e62b6b
+- name: 🇷🇺RU_50|255KB/s|K001-260618 01
+  type: ss
+  server: 195.133.23.200
+  port: 10998
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: 🇷🇺RU_51|424KB/s|K001-260618 01
+  type: ss
+  server: 46.17.40.234
+  port: 20996
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
 - name: 🇰🇷KR_435|91KB/s|M001-260618 01
   type: trojan
   server: 43.203.240.219
@@ -1712,102 +1848,6 @@ proxies:
 - name: 🏁RELAY-104.16.174.36-1032
   type: trojan
   server: 104.16.174.36
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.18.152.159-1034
-  type: trojan
-  server: 104.18.152.159
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.16.174.46-1035
-  type: trojan
-  server: 104.16.174.46
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-8.6.112.0-1041
-  type: trojan
-  server: 8.6.112.0
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.18.152.204-1043
-  type: trojan
-  server: 104.18.152.204
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-188.114.97.7-1045
-  type: trojan
-  server: 188.114.97.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.18.152.50-1046
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.16.174.71-1050
-  type: trojan
-  server: 104.16.174.71
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.16.174.121-1051
-  type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.18.152.244-1052
-  type: trojan
-  server: 104.18.152.244
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-198.41.223.96-1054
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.18.152.233-1055
-  type: trojan
-  server: 104.18.152.233
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.16.174.117-1057
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.18.152.225-1058
-  type: trojan
-  server: 104.18.152.225
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.18.152.229-1066
-  type: trojan
-  server: 104.18.152.229
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.16.174.72-1070
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏁RELAY-104.18.152.179-1074
-  type: trojan
-  server: 104.18.152.179
   port: 443
   password: humanity
   sni: www.ignitelimit.com
