@@ -1,4 +1,629 @@
 proxies:
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  network: ws
+  ws-opts:
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+    path: /
+- name: CA加拿大(mibei77.com 米贝节点分享)
+  type: vless
+  server: vip-ca-1.hkd4fwmg.xyz
+  port: 44547
+  uuid: 6419b6a6-87a1-4822-86a3-c5c391f80674
+  tls: true
+  servername: vip-ca-1.hkd4fwmg.xyz
+  flow: xtls-rprx-vision
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: hysteria2
+  server: olp.crsmaps.com
+  port: 443
+  password: 16ab4d4a-fd81-4535-9b7b-346677226ce8
+  sni: olp.crsmaps.com
+- name: 瑞士(mibei77.com 米贝节点分享)
+  type: hysteria2
+  server: 46.229.243.137
+  port: 8080
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
+- name: 拉脱维亚(mibei77.com 米贝节点分享)
+  type: vless
+  server: 195.123.209.50.fwqfw783rg2dad.website
+  port: 443
+  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
+  tls: true
+  servername: 195.123.209.50.fwqfw783rg2dad.website
+  network: ws
+  ws-opts:
+    path: /websocket
+- name: US美国(mibei77.com 米贝节点分享)
+  type: hysteria2
+  server: 31.76.70.78
+  port: 8443
+  password: 5ca83936-136d-4314-8453-4ba10a86cf60
+  sni: quic.tyr-agentstvo.tech
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: vless
+  server: 92yqc126g8qwe6v23n01.haiyucloud.com
+  port: 49475
+  uuid: 485717cf-e96c-40db-9bc1-624060b89f20
+  tls: true
+  servername: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 91.110.174.210
+  port: 8443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: rubifen.adaspoloandco.com
+    path: /GOrbEh
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 31.76.5.26
+  port: 13443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: auto.cendora.ru
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 31.76.70.31
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: baltic.cendora.ru
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.17.111.3
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 2a0f:5707:aaf1:1ecd::1
+  port: 443
+  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
+  tls: true
+  servername: u643766u44ea3b0cs71.gogocs.xyz
+  flow: xtls-rprx-vision
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 31.76.70.32
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: baltic.cendora.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 31.76.5.26
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: nordic.cendora.ru
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 46.101.163.124
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  tls: true
+  servername: forfreeuse.rtqa.ru
+  network: ws
+  ws-opts:
+    headers:
+      Host: forfreeuse.rtqa.ru
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 31.76.5.26
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: nordic.cendora.ru
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.17.177.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 176.117.75.143
+  port: 2087
+  uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.113
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: www.speedtest.org
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.21.46.3
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.159
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.17.111.4
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.12.149
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: join-telegram-channel.tirexnet.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.37
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 143.110.163.137
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  tls: true
+  servername: forfreeuse.rtqa.ru
+  network: ws
+  ws-opts:
+    headers:
+      Host: forfreeuse.rtqa.ru
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.71
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 188.114.97.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 84.247.171.77
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  tls: true
+  servername: forfreeuse.rtqa.ru
+  network: ws
+  ws-opts:
+    headers:
+      Host: forfreeuse.rtqa.ru
+    path: /
+- name: JP日本(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.44
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.34
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.208
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.73.213
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.50
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.210
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.73
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.175
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.73.213
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.36
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.187
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 8.6.112.0
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.207
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.103
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: JP日本(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.97
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: vless
+  server: 2605:e440:15::6b
+  port: 443
+  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
+  tls: true
+  servername: u643766uccbf75e5s298.wagahaha.xyz
+  flow: xtls-rprx-vision
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 172.67.149.60
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: ip.myip2.qzz.io
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.7.70
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.46
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.73
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.26.15.137
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.155
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 198.41.223.96
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.22
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.225
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.208
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 172.67.221.242
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.133
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.229
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.204
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.44
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.109
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.97
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.121
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.117
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.179
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.155
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 8.6.112.0
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: RU俄罗斯(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.219
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.140
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.73
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.117
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: JP日本(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.219
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.72
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.133
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.246
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.152
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.219
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.121
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.6
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.117
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.152.77
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 86.38.214.205
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.7.70
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: FR法国(mibei77.com 米贝节点分享)
   type: trojan
   server: 104.17.111.4
@@ -1577,796 +2202,3 @@ proxies:
   port: 443
   password: HC04361579
   sni: renewing-ewe.rooster465.autos
-- name: 香港 164
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: d1b6ab5e-bd16-4178-bf03-81d5da2b8abe
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 165
-  type: trojan
-  server: 185.14.47.222
-  port: 443
-  password: PQ05174892
-  sni: well-marmot.rooster465.autos
-- name: 香港 166
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 1f612a62-e10b-4b33-a92a-be7dfa4e3dd7
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 167
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: 40a00f1d-2caa-43f9-88de-263f3aaab50f
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 168
-  type: vless
-  server: fv2026.node2.top
-  port: 21001
-  uuid: 90d70a13-15a7-488f-8808-93aa0836d72d
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 169
-  type: vless
-  server: gem.cryptoofarm.com
-  port: 8443
-  uuid: ef18d810-719c-4bf1-83c6-615d01f217eb
-  tls: true
-  servername: gem.cryptoofarm.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 170
-  type: vless
-  server: 186.246.19.131
-  port: 8443
-  uuid: ef18d810-719c-4bf1-83c6-615d01f217eb
-  tls: true
-  servername: gem.cryptoofarm.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 172
-  type: vless
-  server: hk3n.wxgqlfx.vip
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 173
-  type: trojan
-  server: 47.86.107.20
-  port: 5443
-  password: fg20mtCFHy
-  sni: hytfes.southbyte.xyz
-- name: 香港 174
-  type: trojan
-  server: 185.14.47.228
-  port: 443
-  password: PQ05174892
-  sni: wealthy-loon.rooster465.autos
-- name: 香港 175
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: 91f9838d-860e-40b0-a69a-8bb97d0d6694
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 176
-  type: trojan
-  server: kind-unicorn.rooster465.autos
-  port: 443
-  password: EQ30679154
-  sni: kind-unicorn.rooster465.autos
-  skip-cert-verify: true
-- name: 香港 177
-  type: vless
-  server: hk3n.wxgqlfx.vip
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 178
-  type: ss
-  server: evjd8xfji5of.cdn000.com
-  port: 31001
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:ODNiMjQ4NDMtYTY2Mi00Mg==
-- name: 香港 179
-  type: trojan
-  server: 185.14.47.56
-  port: 443
-  password: EQ30679154
-  sni: kind-unicorn.rooster465.autos
-- name: 香港 180
-  type: vless
-  server: o3t7-wroxn9.finvanta360.top
-  port: 443
-  uuid: cdc86ade-9bc3-41eb-a7b9-879130378820
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 181
-  type: vless
-  server: cr36-zili01.infraix.top
-  port: 443
-  uuid: 86ff5721-87f2-4682-9bc2-b1b34a8ca91f
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 香港 182
-  type: vless
-  server: 128.1.12.19
-  port: 443
-  uuid: daf0c4cb-3541-4f20-bc71-cc9d94bb17bc
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 183
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: c3d5af4c-e615-4a1b-b8bf-be24cfeb4975
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 184
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: b77d2cc5-94f7-41fb-b5c1-04df10e2e79a
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 185
-  type: trojan
-  server: 185.244.208.185
-  port: 443
-  password: EQ30679154
-  sni: striking-cheetah.rooster465.autos
-- name: 香港 186
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: 540c01b3-e1d2-4372-9309-e67c9f0b52e3
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 187
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: 1f612a62-e10b-4b33-a92a-be7dfa4e3dd7
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 188
-  type: vless
-  server: 141.11.76.57
-  port: 21001
-  uuid: d16986c9-2445-48d0-a222-ad94a9fc5264
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 香港 189
-  type: trojan
-  server: 91.199.84.120
-  port: 443
-  password: FH72359861
-  sni: dynamic-grubworm.rooster465.autos
-  skip-cert-verify: true
-- name: 香港 190
-  type: tuic
-  server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
-  port: 443
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  sni: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
-- name: 香港 191
-  type: ss
-  server: evjd8xfji5of.cdn000.com
-  port: 31003
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:ODNiMjQ4NDMtYTY2Mi00Mg==
-- name: 香港 193
-  type: tuic
-  server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
-  port: 443
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  sni: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
-- name: 🇺🇸US_3|224KB/s 01
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US_4|371KB/s 01
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇳🇱NL_1|209KB/s 01
-  type: ss
-  server: 82.38.31.48
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱NL_2|330KB/s 01
-  type: ss
-  server: 82.38.31.210
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱NL_3|198KB/s 01
-  type: ss
-  server: 82.38.31.15
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱NL_4|231KB/s 01
-  type: ss
-  server: 109.201.152.181
-  port: 443
-  cipher: aes-128-cfb
-  password: shadowsocks
-- name: 🇳🇱NL_5|109KB/s 01
-  type: ss
-  server: 82.38.31.219
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇦🇺AU_1|113KB/s 01
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: 🇳🇱NL_6|303KB/s 01
-  type: ss
-  server: 82.38.31.180
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱NL_7|441KB/s 01
-  type: ss
-  server: 82.38.31.215
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱NL_8|264KB/s 01
-  type: ss
-  server: 82.38.31.32
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇰🇷KR_1|216KB/s 01
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_9|202KB/s 01
-  type: ss
-  server: 82.38.31.174
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇫🇷FR_2|256KB/s 01
-  type: trojan
-  server: 104.18.152.97
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇳🇱NL_10|169KB/s 01
-  type: ss
-  server: 82.38.31.11
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇫🇷FR_3|263KB/s 01
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_4|232KB/s 01
-  type: trojan
-  server: 104.18.152.219
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_5|249KB/s 01
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
-  network: ws
-  ws-opts:
-    headers:
-      Host: soft-band-8da6.426.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 🇫🇷FR_6|247KB/s 01
-  type: vless
-  server: 172.66.170.53
-  port: 8880
-  uuid: e4927998-38dd-4bf4-a37d-4cc67a06ee2d
-  network: ws
-  ws-opts:
-    headers:
-      Host: cold-shadow-66a0.278.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_7|254KB/s 01
-  type: vless
-  server: 104.16.8.66
-  port: 8880
-  uuid: 1560c0b2-3cb8-45a3-988b-7103b031a815
-  network: ws
-  ws-opts:
-    headers:
-      Host: delicate-wood-49a8.214-451.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_8|211KB/s 01
-  type: vless
-  server: 104.27.82.154
-  port: 8880
-  uuid: 7ed93ccf-6a54-4b19-a9b4-aedfc79bab7d
-  network: ws
-  ws-opts:
-    headers:
-      Host: muddy-sky-4767.344-7a7.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇫🇷FR_9|170KB/s 01
-  type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
-  network: ws
-  ws-opts:
-    headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 🇫🇷FR_10|180KB/s 01
-  type: vless
-  server: flat-night-edd0.hosein9saleazhuongooyeh87.workers.dev
-  port: 443
-  uuid: 49c0ae46-767c-47d1-9703-8740e0c4b15a
-  tls: true
-  servername: FLAT-night-EDD0.hOsEin9saLEAZhuongOoYeH87.wOrkerS.DeV
-  network: ws
-  ws-opts:
-    headers:
-      Host: flat-night-edd0.hosein9saleazhuongooyeh87.workers.dev
-    path: /eyJqdW5rIjoiZU1pQlVqNTBYVmpTeDlCIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
-- name: 🇫🇷FR_11|126KB/s 01
-  type: vless
-  server: 172.66.200.130
-  port: 8880
-  uuid: 4c37df21-0a34-41bf-8bc7-78efd823c03b
-  network: ws
-  ws-opts:
-    headers:
-      Host: shiny-salad-e491.479.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 🇫🇷FR_12|357KB/s 01
-  type: trojan
-  server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_13|202KB/s 01
-  type: trojan
-  server: 188.114.97.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇳🇱NL_11|316KB/s 01
-  type: ss
-  server: 82.38.31.39
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇫🇷FR_14|136KB/s 01
-  type: vless
-  server: 104.24.152.211
-  port: 8880
-  uuid: def8ed1e-e07b-40e0-9bc0-7a2ba2cedd56
-  network: ws
-  ws-opts:
-    headers:
-      Host: lucky-haze-724d.330-8c5.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_15|228KB/s 01
-  type: vless
-  server: bab-6.site
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  tls: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    headers:
-      Host: bab-6.site
-    path: /vws/
-- name: 🇸🇬SG_1|320KB/s 01
-  type: tuic
-  server: sg2-8sb.6121999.dpdns.org
-  port: 33738
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  sni: sg2-8sb.6121999.dpdns.org
-- name: 🇫🇷FR_16|252KB/s 01
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: fe467f51-b2cc-4b16-b50b-a78865ed3dd9
-  network: ws
-  ws-opts:
-    headers:
-      Host: crimson-wind-71bc.19-5fd.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_17|131KB/s 01
-  type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
-  network: ws
-  ws-opts:
-    headers:
-      Host: patient-cake-39c7.44-e7a.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇫🇷FR_18|345KB/s 01
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
-  network: ws
-  ws-opts:
-    headers:
-      Host: summer-hill-7f65.275-521.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_19|452KB/s 01
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 090e5985-bbeb-4400-8278-d3a8e9ae5d92
-  network: ws
-  ws-opts:
-    headers:
-      Host: shy-star-7967.311-f0b.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_20|296KB/s 01
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 59a0424b-d36b-4685-bac5-89d50d8969a8
-  network: ws
-  ws-opts:
-    headers:
-      Host: billowing-snowflake-f056.63-f14.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇩🇪DE_1|436KB/s 01
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-- name: 🇬🇧GB_1|373KB/s 01
-  type: ss
-  server: 146.70.61.37
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇫🇷FR_21|151KB/s 01
-  type: trojan
-  server: 104.18.152.113
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_22|284KB/s 01
-  type: vless
-  server: 104.18.0.1
-  port: 443
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  tls: true
-  servername: all.speedtest03.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: all.speedtest03.ccwu.cc
-    path: /
-- name: 🇫🇷FR_23|393KB/s 01
-  type: vless
-  server: cf5.466688.xyz
-  port: 8880
-  uuid: 9c772ed7-2843-4554-9a96-4a88f827de58
-  network: ws
-  ws-opts:
-    headers:
-      Host: nameless-tree-08b8.352.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
-- name: 🇫🇷FR_24|350KB/s 01
-  type: vless
-  server: cf7.466688.xyz
-  port: 8880
-  uuid: 9c772ed7-2843-4554-9a96-4a88f827de58
-  network: ws
-  ws-opts:
-    headers:
-      Host: nameless-tree-08b8.352.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
-- name: 🇫🇷FR_25|285KB/s 01
-  type: vless
-  server: cf8.466688.xyz
-  port: 8880
-  uuid: 9c772ed7-2843-4554-9a96-4a88f827de58
-  network: ws
-  ws-opts:
-    headers:
-      Host: nameless-tree-08b8.352.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
-- name: 🇫🇷FR_26|200KB/s 01
-  type: vless
-  server: 104.21.12.116
-  port: 8880
-  uuid: ad85a1ce-3519-4634-9ea1-66c60d3694ba
-  network: ws
-  ws-opts:
-    headers:
-      Host: little-pond-8731.81-68e.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 🇫🇷FR_27|347KB/s 01
-  type: hysteria2
-  server: vpn-fr-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-001.fastervpn.world
-- name: 🇫🇷FR_28|137KB/s 01
-  type: vless
-  server: www.ipget.net
-  port: 8880
-  uuid: bbecfa92-4f64-4eb8-82e6-388394d909fe
-  network: ws
-  ws-opts:
-    headers:
-      Host: empty-poetry-07b6.477-e0d.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_29|221KB/s 01
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 9b7d9618-29a6-45e9-9eca-dcc7ad42f974
-  network: ws
-  ws-opts:
-    headers:
-      Host: shrill-frost-6da5.155-dec.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_30|240KB/s 01
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: cfb74ef3-f868-43c5-b05a-56509e2c948f
-  network: ws
-  ws-opts:
-    headers:
-      Host: flat-limit-5b5e.472-cf5.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_31|307KB/s 01
-  type: vless
-  server: 172.66.200.130
-  port: 8880
-  uuid: c6171ace-4580-45c7-b00f-5e6c56f48794
-  network: ws
-  ws-opts:
-    headers:
-      Host: withered-cloud-1202.405-42c.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇳🇱NL_12|130KB/s 01
-  type: vless
-  server: 91.84.117.29
-  port: 443
-  uuid: vl_test1
-  tls: true
-  servername: vk.com
-  client-fingerprint: edge
-- name: 🇫🇷FR_32|354KB/s 01
-  type: vless
-  server: 104.21.12.116
-  port: 8880
-  uuid: d6d0ba7b-fa88-4b2c-9915-530ae4a81035
-  network: ws
-  ws-opts:
-    headers:
-      Host: aged-mud-9b4c.202-2dc.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_33|378KB/s 01
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
-  network: ws
-  ws-opts:
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇫🇷FR_34|185KB/s 01
-  type: vless
-  server: o.server3peekconfig.workers.dev
-  port: 443
-  uuid: 78abbe41-95dd-4f6f-a500-1450913fb933
-  tls: true
-  servername: o.SERVeR3PeEkConFIG.WOrKerS.dEv
-  network: ws
-  ws-opts:
-    headers:
-      Host: o.server3peekconfig.workers.dev
-    path: /eyJqdW5rIjoiZ3VVMHdacGtDIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
-- name: 🇫🇷FR_35|236KB/s 01
-  type: vless
-  server: muddy-shadow-8905.qara-atayi-1.workers.dev
-  port: 2086
-  uuid: 9ef1d60d-9e38-49c5-9405-131e11be1f9c
-  network: ws
-  ws-opts:
-    headers:
-      Host: muddy-shadow-8905.qara-atayi-1.workers.dev
-    path: /eyJqdW5rIjoiVGtvRGR4TXdHSzdseGpZWCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
-- name: 🇫🇷FR_36|145KB/s 01
-  type: vless
-  server: loading.uploado.ir
-  port: 2083
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
-  tls: true
-  servername: testmiKOnIM.HyDrYmhmDamyN7.wOrKers.dEv
-  network: ws
-  ws-opts:
-    headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
-    path: /OAZko425kNFF0PpQ
-- name: 🇫🇷FR_37|433KB/s 01
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: dec6b197-3211-46f0-bca8-71dfca535709
-  network: ws
-  ws-opts:
-    headers:
-      Host: patient-bread-62cc.473-002.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_38|270KB/s 01
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
-  network: ws
-  ws-opts:
-    headers:
-      Host: red-flower-a2bf.363.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_39|260KB/s 01
-  type: vless
-  server: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
-  port: 443
-  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
-  tls: true
-  servername: eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV
-  network: ws
-  ws-opts:
-    headers:
-      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
-    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-- name: 🇫🇷FR_40|434KB/s 01
-  type: trojan
-  server: 104.18.155.119
-  port: 443
-  password: 988sR-269PKCKlb&3pMrFTEr
-  sni: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
-- name: 🇫🇷FR_41|424KB/s 01
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: 9c772ed7-2843-4554-9a96-4a88f827de58
-  network: ws
-  ws-opts:
-    headers:
-      Host: nameless-tree-08b8.352.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇫🇷FR_42|217KB/s 01
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
-  network: ws
-  ws-opts:
-    headers:
-      Host: shrill-recipe-0c1d.404-a1d.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_43|180KB/s 01
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: 86d998bc-a5a2-45d5-8169-b906259110a6
-  network: ws
-  ws-opts:
-    headers:
-      Host: muddy-art-8cda.197-0c6.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_44|168KB/s 01
-  type: vless
-  server: anydesk.com
-  port: 8880
-  uuid: 1399f473-ffb5-4942-b05c-7dd3fc0007fb
-  network: ws
-  ws-opts:
-    headers:
-      Host: round-truth-dcf1.34-719.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_45|146KB/s 01
-  type: vless
-  server: 104.17.58.113
-  port: 8880
-  uuid: 14e0ab2e-fb3e-4fd1-a6d9-62eeae62976b
-  network: ws
-  ws-opts:
-    headers:
-      Host: jolly-shape-3ce6.392.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_46|163KB/s 01
-  type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: f22856f8-66f0-4655-ba86-5385971e1302
-  network: ws
-  ws-opts:
-    headers:
-      Host: throbbing-mountain-45e9.314-df3.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_47|179KB/s 01
-  type: vless
-  server: 104.17.144.29
-  port: 8880
-  uuid: 85e14d59-02ea-4642-a317-50f1e1691660
-  network: ws
-  ws-opts:
-    headers:
-      Host: icy-hat-20f3.328-99f.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇫🇷FR_48|158KB/s 01
-  type: vless
-  server: 172.67.187.219
-  port: 8880
-  uuid: a8985e6a-f338-4b44-9a41-f94495603a96
-  network: ws
-  ws-opts:
-    headers:
-      Host: dawn-cell-346f.238-df6.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
