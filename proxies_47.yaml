@@ -1,189 +1,46 @@
 proxies:
-- name: 🇫🇷FR_1116|160KB/s|A004-260618 01
-  type: vless
-  server: odd-violet-5440.asdgrweeee13.workers.dev
+- name: 🇩🇪DE_47|500KB/s|A004-260618 01
+  type: hysteria2
+  server: vpn-de-001.fastervpn.world
   port: 443
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-de-001.fastervpn.world
+- name: 🇹🇼TW_6|199KB/s|R002-260618 01
+  type: vless
+  server: 60.248.219.78
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   tls: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /
-- name: 🇮🇹IT_23|159KB/s|A004-260618 01
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+- name: 🇫🇷FR_742|326KB/s|S004-260618 01
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇦CA_30|299KB/s|A004-260618 01
-  type: vless
-  server: 209.200.246.86
+  server: 172.67.74.10
   port: 443
-  uuid: f9c6ae5c-a537-4ce1-8ad5-d1e579e0275f
+  uuid: 577699f7-468d-4b63-ae21-cdcdfd8d11c2
   tls: true
-  servername: www.cloudflare.com
+  servername: baguette.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: baguette.adaspoloandco.com
+    path: /GoorBah
+- name: 🇳🇱NL_163|320KB/s|B007-260618 01
+  type: vless
+  server: 154.83.246.52
+  port: 443
+  uuid: c90f26f0-5a20-4573-a31a-c27b3c96933e
+  tls: true
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇺🇸US_375|120KB/s|A004-260618 01
-  type: hysteria2
-  server: 5.180.27.210
-  port: 8443
-  password: owefv0_92Z540k2F_nx83245_J9130oS_tY
-  sni: borat-hopp.bumbleshrimp.com
-- name: 🇳🇱NL_196|313KB/s|A004-260618 01
-  type: ss
-  server: 82.38.31.149
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱NL_197|150KB/s|A004-260618 01
-  type: ss
-  server: 193.29.139.230
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱NL_198|75KB/s|A004-260618 01
-  type: ss
-  server: 193.29.139.225
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱NL_199|246KB/s|A004-260618 01
-  type: ss
-  server: 82.38.31.164
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇺🇸US_376|250KB/s|A004-260618 01
-  type: trojan
-  server: 14.1.28.76
-  port: 50740
-  password: r49gssuondznyu2eex83
-  sni: 14.1.28.76
-  skip-cert-verify: true
-- name: 🇮🇳IN_3|307KB/s|A004-260618 01
-  type: trojan
-  server: tttyder.wsone.icu
-  port: 443
-  password: M7v%w11Se*
-  sni: tttyder.wsone.icu
-- name: 🇺🇸US_682|326KB/s|B007-260618 01
-  type: trojan
-  server: 64.74.163.118
-  port: 58536
-  password: lEjtI3pFYfU7O1UYozJcfZV5K6Fwfths
-  sni: 64.74.163.118
-  skip-cert-verify: true
-- name: 🇹🇼TW_10|217KB/s|C002-260622 01
-  type: hysteria2
-  server: 160.187.100.109
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
-- name: 🇫🇷FR_1117|239KB/s|M003-260806 01
+- name: 🇫🇷FR_744|189KB/s|M003-260806 01
   type: vless
-  server: 172.67.208.1
-  port: 443
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  tls: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: odd-violet-5440.asdgrweeee13.workers.dev
-    path: /sync
-- name: 🇫🇷FR_1118|139KB/s|M003-260806 01
-  type: vless
-  server: 172.67.137.223
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  tls: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-    path: /sync
-- name: 🇫🇷FR_1119|293KB/s|M003-260806 01
-  type: vless
-  server: 104.18.32.47
-  port: 2053
-  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
-  tls: true
-  servername: music1000.melobitmusic1.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: music1000.melobitmusic1.ir
-    path: /
-- name: 🇬🇧GB_55|235KB/s|M002-260618 01
-  type: vless
-  server: 107.181.151.39
-  port: 443
-  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
-  tls: true
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1120|204KB/s|A001-260618 01
-  type: hysteria2
-  server: fr.vpn.legendaah.xyz
-  port: 36723
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: www.cloudflare.com
-- name: 🇫🇷FR_1121|209KB/s|A004-260618 01
-  type: vless
-  server: 104.16.79.73
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    headers:
-      Host: josni.hoyes.cloudns.ch
-    path: /musiclovers85?ed=512
-- name: 🇫🇷FR_1122|203KB/s|A004-260618 01
-  type: vless
-  server: 104.25.3.165
-  port: 443
-  uuid: 737678dc-cc15-4643-85a4-ca9359df1aa4
-  tls: true
-  servername: patient-moon-c61f.ggfsa55.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: patient-moon-c61f.ggfsa55.workers.dev
-    path: /
-- name: 🇺🇸US_378|90KB/s|A004-260618 01
-  type: vless
-  server: 195.211.99.45
-  port: 443
-  uuid: 1f999bcd-f85e-47c3-afd7-92b6dd6b14b0
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1123|303KB/s|A004-260618 01
-  type: vless
-  server: 213.136.92.67
-  port: 443
-  uuid: af348651-1624-4710-b55f-0307a22d891f
-  tls: true
-  servername: status.play.google.com
-  client-fingerprint: ios
-- name: 🇦🇺AU_14|118KB/s|A004-260618 01
-  type: trojan
-  server: humorous-llama.rooster465.autos
-  port: 443
-  password: AE62539071
-  sni: humorous-llama.rooster465.autos
-  skip-cert-verify: true
-- name: 🇫🇷FR_1124|366KB/s|A004-260618 01
-  type: vless
-  server: 8.47.69.6
+  server: 104.18.28.234
   port: 2053
   uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
   tls: true
@@ -193,1487 +50,97 @@ proxies:
     headers:
       Host: ov.iran-servers.shop
     path: /J5aLQOY1R9ONWYCM
-- name: ❓Other_15|66KB/s|A004-260618 01
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-- name: 🇮🇳IN_4|212KB/s|A004-260618 01
-  type: hysteria2
-  server: 5.180.27.210
-  port: 8080
-  password: owefv0_92Z540k2F_nx83245_J9130oS_tY
-  sni: borat-hopp.bumbleshrimp.com
-- name: 🇮🇩ID_1|191KB/s|B007-260618 01
-  type: trojan
-  server: edu.ruangguru.com
-  port: 443
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
-  sni: id1.nathaya.web.id
-  skip-cert-verify: true
-- name: 🇱🇺LU_32|334KB/s|C002-260622 01
-  type: trojan
-  server: tolerant-mosquito.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: tolerant-mosquito.rooster465.autos
-- name: 🇱🇺LU_37|353KB/s|B007-260618 01
-  type: trojan
-  server: magnetic-caiman.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: magnetic-caiman.rooster465.autos
-- name: 🇦🇺AU_24|124KB/s|C002-260622 01
-  type: trojan
-  server: national-stingray.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: national-stingray.rooster465.autos
-- name: 🇦🇺AU_46|87KB/s|M003-260806 01
-  type: trojan
-  server: square-pheasant.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: square-pheasant.rooster465.autos
-- name: 🇺🇸US_408|310KB/s|A004-260618 01
-  type: trojan
-  server: neutral-quail.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: neutral-quail.rooster465.autos
-- name: 🇺🇸US_398|172KB/s|F003-260618 01
-  type: trojan
-  server: tough-tuna.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: tough-tuna.rooster465.autos
-- name: 🇳🇱NL_207|105KB/s|C002-260622 01
-  type: trojan
-  server: whole-woodcock.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: whole-woodcock.rooster465.autos
-- name: 🇳🇱NL_256|408KB/s|M003-260806 01
-  type: trojan
-  server: pro-crane.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: pro-crane.rooster465.autos
-- name: 🇳🇱NL_214|436KB/s|A004-260618 01
-  type: trojan
-  server: renewed-chigger.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: renewed-chigger.rooster465.autos
-- name: 🇱🇺LU_36|330KB/s|B007-260618 01
-  type: trojan
-  server: primary-leech.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: primary-leech.rooster465.autos
-- name: 🇱🇺LU_82|270KB/s|A004-260618 01
-  type: trojan
-  server: game-firefly.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: game-firefly.rooster465.autos
-- name: 🇱🇺LU_66|87KB/s|M003-260806 01
-  type: trojan
-  server: optimal-urchin.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: optimal-urchin.rooster465.autos
-- name: 🇫🇷FR_1125|145KB/s|S004-260618 01
+- name: 🇫🇷FR_1454|169KB/s|S004-260618 01
   type: vless
-  server: 185.193.30.94
+  server: node21.mxvpn.dev
   port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
   tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    headers:
-      Host: josni.hoyes.cloudns.ch
-    path: /musiclovers85?ed=512
-- name: 🇨🇦CA_31|107KB/s|A004-260618 01
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇹🇭TH_6|224KB/s|A004-260618 01
-  type: hysteria2
-  server: gorbachev-new-th.kvnfreetest.uk
-  port: 55443
-  password: 083417772bc618cd61f0cca23dd91680
-  sni: 127.0.0.1
-- name: 🇩🇪DE_78|475KB/s|A004-260618 01
-  type: vless
-  server: 144.31.125.60
-  port: 443
-  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
-  tls: true
-  servername: www.intel.com
+  servername: node21.mxvpn.dev
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇳🇱NL_208|293KB/s|C002-260622 01
-  type: trojan
-  server: alive-snapper.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: alive-snapper.rooster465.autos
-- name: 🇦🇺AU_57|228KB/s|A004-260618 01
-  type: trojan
-  server: true-pony.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: true-pony.rooster465.autos
-- name: 🇫🇷FR_1126|305KB/s|M002-260618 01
+- name: 🇫🇷FR_746|657KB/s|M003-260806 01
   type: vless
-  server: 172.64.52.175
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 172.67.199.62
+  port: 443
+  uuid: 9fa6d846-5961-8e0e-ce27-77de00000000
   tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: fancy-wind-799d.cloudneryacc.workers.dev
   network: ws
   ws-opts:
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- name: 🇫🇷FR_1127|143KB/s|T001-260618 01
-  type: vless
-  server: 172.64.145.93
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-    path: /
-- name: 🇨🇦CA_34|209KB/s|C002-260622 01
-  type: hysteria2
-  server: vpn-ca-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-- name: 🇺🇸US_383|175KB/s|A004-260618 01
-  type: hysteria2
-  server: 5.180.27.221
-  port: 8443
-  password: owefv0_92Z540k2F_nx83245_J9130oS_tY
-  sni: borat-hopp.bumbleshrimp.com
-- name: 🇩🇪DE_79|596KB/s|A004-260618 01
-  type: vless
-  server: 193.58.121.95
-  port: 2053
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-  tls: true
-  servername: vk.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇱🇻LV_4|270KB/s|A004-260618 01
-  type: vless
-  server: 89.36.161.222
-  port: 2053
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: vk.ru
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_206|145KB/s|A004-260618 01
-  type: trojan
-  server: pro-crane.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: pro-crane.rooster465.autos
-  skip-cert-verify: true
-- name: 🇫🇷FR_1128|266KB/s|A004-260618 01
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-- name: 🇺🇸US_384|240KB/s|C002-260622 01
-  type: trojan
-  server: obliging-louse.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: obliging-louse.rooster465.autos
-- name: 🇫🇷FR_1129|88KB/s|M003-260806 01
-  type: vless
-  server: 172.67.118.45
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    headers:
-      Host: josni.hoyes.cloudns.ch
-    path: /musiclovers85?ed=512
-- name: 🇬🇧GB_56|185KB/s|M002-260618 01
-  type: vless
-  server: 162.159.253.41
-  port: 8443
-  uuid: ef66f257-2187-48a0-ae46-fbd0519d24ab
-  tls: true
-  servername: focalin.adaspoloandco.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: focalin.adaspoloandco.com
-    path: /RizZrAcK
-- name: 🇫🇷FR_1130|192KB/s|M002-260618 01
-  type: vless
-  server: 104.18.38.47
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-    path: /
-- name: 🇫🇷FR_1131|155KB/s|A004-260618 01
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    headers:
-      Host: josni.hoyes.cloudns.ch
-    path: /
-- name: 🇫🇷FR_1325|176KB/s|A004-260618 01
-  type: hysteria2
-  server: fr.vpn.legendaah.xyz
-  port: 36723
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 127.0.0.1
-- name: 🇦🇺AU_34|119KB/s|M003-260806 01
-  type: trojan
-  server: 87.121.33.238
-  port: 443
-  password: AE62539071
-  sni: wanted-marmoset.rooster465.autos
-- name: 🇫🇷FR_1133|118KB/s|A004-260618 01
-  type: vless
-  server: 162.19.10.99
-  port: 443
-  uuid: nasnet
-  tls: true
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  flow: xtls-rprx-vision
-- name: 🇦🇪AE_7|142KB/s|A004-260618 01
-  type: vless
-  server: 94.183.209.43
-  port: 443
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸US_387|308KB/s|A004-260618 01
-  type: vless
-  server: 104.21.76.231
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    headers:
-      Host: fuckfangbinxing.pusytroller.gq
-    path: /
-- name: 🇺🇸US_388|176KB/s|A004-260618 01
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-    path: /
-- name: 🇬🇧GB_57|722KB/s|A004-260618 01
-  type: ss
-  server: fr4.levikogjgfdd.ir
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-- name: 🇫🇷FR_1134|284KB/s|B007-260618 01
-  type: vless
-  server: 164.68.127.108
-  port: 24144
-  uuid: 7e85ed3f-3829-45b1-8b1c-6a2e45ebc967
-- name: 🇺🇸US_389|183KB/s|B007-260618 01
-  type: vless
-  server: us3.levikogjgfdd.ir
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_209|374KB/s|A004-260618 01
-  type: ss
-  server: 193.29.139.129
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇨🇦CA_33|225KB/s|A004-260618 01
-  type: vless
-  server: 51.161.204.242
-  port: 443
-  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_210|470KB/s|A004-260618 01
-  type: ss
-  server: 82.38.31.48
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇧🇷BR_1|469KB/s|A004-260618 01
-  type: vless
-  server: 201.51.1.84
-  port: 16923
-  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: neurex
-- name: 🇮🇳IN_5|302KB/s|A004-260618 01
-  type: vless
-  server: 148.113.5.44
-  port: 443
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_391|185KB/s|A004-260618 01
-  type: trojan
-  server: 44.251.158.80
-  port: 443
-  password: FH72359861
-  sni: obliging-louse.rooster465.autos
-- name: 🇺🇸US_392|173KB/s|A004-260618 01
-  type: vless
-  server: 162.159.36.5
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    headers:
-      Host: fangbinxingnmsl.pusytroller.gq
-    path: /
-- name: 🇳🇱NL_211|395KB/s|A004-260618 01
-  type: ss
-  server: 82.38.31.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇦🇪AE_8|492KB/s|A004-260618 01
-  type: vless
-  server: 94.183.170.231
-  port: 443
-  uuid: 19f54e37-5fae-47f6-bc10-e71ccbc58389
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷FR_1135|170KB/s|B007-260618 01
-  type: vless
-  server: 104.16.155.170
-  port: 2083
-  uuid: 50414e45-4c5f-5a45-5553-bb2d0bc74f3c
-  tls: true
-  servername: ez-e46ef3.ezaccess16b9d1f.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: ez-e46ef3.ezaccess16b9d1f.workers.dev
-    path: /stream/PANEL_ZEUS/bb2d0bc74f3c
-- name: 🇩🇪DE_80|92KB/s|B007-260618 01
-  type: vless
-  server: 185.125.103.62
-  port: 8082
-  uuid: 7909e164-d482-4620-a370-07e6fda6676b
-  tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-    path: /@Marisa_kristi
-- name: 🇺🇸US_393|216KB/s|C002-260622 01
-  type: trojan
-  server: dominant-jaguar.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: dominant-jaguar.rooster465.autos
-- name: 🇬🇧GB_58|217KB/s|F003-260618 01
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 98286408-b683-4c0f-96c5-7e00da649d90
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-    path: /@Marisa_kristi
-- name: 🇫🇷FR_1136|268KB/s|M003-260806 01
-  type: vless
-  server: 104.20.23.154
-  port: 8880
-  uuid: 15ce0fde-88e2-42b0-91e6-e4a1b4568f6e
-  network: ws
-  ws-opts:
-    headers:
-      Host: old-truth-de8a.110-187.workers.dev
-    path: /pyip
-- name: 🇫🇷FR_1137|225KB/s|M003-260806 01
-  type: vless
-  server: 172.67.174.37
-  port: 8880
-  uuid: 25322a43-4ef3-45cc-9e96-db44bcccd7be
-  network: ws
-  ws-opts:
-    headers:
-      Host: purple-disk-f68d.14-360.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_1138|333KB/s|M003-260806 01
-  type: vless
-  server: 104.17.21.137
-  port: 8880
-  uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
-  network: ws
-  ws-opts:
-    headers:
-      Host: blue-rice-7142.30-346.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_1139|133KB/s|M003-260806 01
-  type: vless
-  server: 104.16.97.215
-  port: 8880
-  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
-  network: ws
-  ws-opts:
-    headers:
-      Host: super-sunset-010c.24-43d.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇫🇷FR_1140|170KB/s|M003-260806 01
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 4e81922a-1c2e-41ee-bb4c-9095a0a363fe
-  network: ws
-  ws-opts:
-    headers:
-      Host: gentle-cell-501a.273-d6b.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 🇫🇷FR_1141|151KB/s|M003-260806 01
-  type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: 565326ee-c588-4843-9472-a051578ab1ae
-  network: ws
-  ws-opts:
-    headers:
-      Host: lucky-cell-e8c5.490-f12.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇱🇻LV_5|124KB/s|M003-260806 01
-  type: vless
-  server: 89.36.161.222
-  port: 8443
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: laoye.in-gect.fun
-  client-fingerprint: firefox
-- name: 🇫🇷FR_1142|376KB/s|M003-260806 01
-  type: vless
-  server: 104.26.6.214
-  port: 8880
-  uuid: 878dd962-027b-4bd3-a1f8-66be68a03c4d
-  network: ws
-  ws-opts:
-    headers:
-      Host: young-wind-3c58.240-2ce.workers.dev
-    path: /
-- name: 🇫🇷FR_1143|178KB/s|M003-260806 01
-  type: vless
-  server: 172.64.144.180
-  port: 8880
-  uuid: a429499b-6237-44b2-ae4d-0d53d14cf46a
-  network: ws
-  ws-opts:
-    headers:
-      Host: small-wave-9851.441-57f.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_1144|382KB/s|M003-260806 01
-  type: vless
-  server: 172.67.179.98
-  port: 8880
-  uuid: caa0f615-2598-4b78-b339-2824658a602b
-  network: ws
-  ws-opts:
-    headers:
-      Host: soft-dream-429a.319.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_1145|100KB/s|M003-260806 01
-  type: vless
-  server: 172.66.132.196
-  port: 8880
-  uuid: d8a7b463-dc98-474d-a87e-8781476aef32
-  network: ws
-  ws-opts:
-    headers:
-      Host: ancient-tree-7dc9.336-5f9.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇺🇸US_394|277KB/s|P002-260618 01
-  type: vless
-  server: 51.81.223.225
-  port: 11094
-  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1146|151KB/s|A004-260618 01
-  type: hysteria2
-  server: 151.247.197.253
-  port: 36723
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: www.cloudflare.com
-- name: 🇺🇸US_395|233KB/s|A004-260618 01
-  type: ss
-  server: 15.204.247.124
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: 🇦🇺AU_20|91KB/s|A004-260618 01
-  type: trojan
-  server: 87.121.33.185
-  port: 443
-  password: AE62539071
-  sni: humorous-llama.rooster465.autos
-  skip-cert-verify: true
-- name: 🇬🇧GB_59|223KB/s|A004-260618 01
-  type: vless
-  server: 144.31.213.225
-  port: 443
-  uuid: 9e3de7f7-a595-4117-b1b6-dc41eb870ab1
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1147|512KB/s|A004-260618 01
-  type: vless
-  server: 66.81.247.155
-  port: 2083
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
-  tls: true
-  servername: testmikonim.hydrymhmdamyn7.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
-    path: /OAZko425kNFF0PpQ
-- name: 🇫🇷FR_1148|685KB/s|A004-260618 01
-  type: vless
-  server: 164.68.127.108
-  port: 24144
-  uuid: 7e85ed3f-3829-45b1-8b1c-6a2e45ebc967
-- name: 🇺🇸US_697|189KB/s|B007-260618 01
-  type: trojan
-  server: 34.210.213.17
-  port: 443
-  password: FH72359861
-  sni: tough-tuna.rooster465.autos
-- name: 🇯🇵JP_17|219KB/s|A004-260618 01
-  type: vless
-  server: 156.246.88.125
-  port: 26518
-  uuid: e01fcb68-3112-49da-b85d-dffb799cfc9b
-  tls: true
-  servername: github.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_81|205KB/s|A004-260618 01
-  type: vless
-  server: 194.31.223.87
-  port: 5443
-  uuid: d71aecee-ef16-418e-baf5-2b2458122d5a
-  tls: true
-  servername: de.wlrus.cfd
-- name: 🇬🇧GB_60|345KB/s|A004-260618 01
-  type: vless
-  server: usejh2.neobo-tooth.ru
-  port: 2053
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: vk.ru
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 🇱🇻LV_8|196KB/s|A004-260618 01
-  type: vless
-  server: laoye.in-gect.fun
-  port: 2083
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: laoye.in-gect.fun
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇦🇹AT_3|172KB/s|A004-260618 01
-  type: vless
-  server: as.tunnelx.space
-  port: 443
-  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
-  tls: true
-  servername: as.tunnelx.space
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇰🇷KR_14|450KB/s|A004-260618 01
-  type: hysteria2
-  server: 3.36.96.245
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
-- name: 🇸🇬SG_32|282KB/s|A004-260618 01
-  type: vless
-  server: support.zoom.us
-  port: 8080
-  uuid: ce9e52ff-7069-4b43-91a9-c8bd4a5b38d3
-  network: ws
-  ws-opts:
-    headers:
-      Host: zero.csmaster.ggff.net
-    path: /
-- name: 🇰🇷KR_15|231KB/s|A004-260618 01
-  type: hysteria2
-  server: 3.36.93.74
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
-- name: 🇰🇷KR_16|269KB/s|A004-260618 01
-  type: hysteria2
-  server: 3.36.93.74
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-- name: 🇫🇷FR_1158|300KB/s|C002-260622 01
-  type: hysteria2
-  server: 151.247.197.253
-  port: 36723
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 151.247.197.253
-- name: 🇵🇦PA_2|64KB/s|A004-260618 01
-  type: hysteria2
-  server: 82.38.60.122
-  port: 8080
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  sni: hopp-us.yyuyy.com
-- name: 🇳🇱NL_212|116KB/s|A004-260618 01
-  type: ss
-  server: 193.29.139.235
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇫🇷FR_1150|178KB/s|A004-260618 01
-  type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
-  tls: true
-  servername: ov.iran-servers.shop
-  network: ws
-  ws-opts:
-    headers:
-      Host: ov.iran-servers.shop
-    path: /J5aLQOY1R9ONWYCM
-- name: 🇹🇭TH_7|240KB/s|A004-260618 01
-  type: hysteria2
-  server: 167.179.34.31
-  port: 55443
-  password: 083417772bc618cd61f0cca23dd91680
-  sni: gorbachev-new-th.kvnfreetest.uk
-- name: ❓Other_16|211KB/s|B007-260618 01
-  type: vless
-  server: laoye.in-gect.fun
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  network: ws
-  ws-opts:
-    headers:
-      Host: laoye.in-gect.fun
-    path: /
-- name: 🇩🇪DE_82|218KB/s|M003-260806 01
-  type: vless
-  server: 104.16.63.25
-  port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  tls: true
-  servername: germany-2.ariyuz.org
-  network: ws
-  ws-opts:
-    headers:
-      Host: germany-2.ariyuz.org
-    path: /
-- name: 🇱🇻LV_7|323KB/s|M003-260806 01
-  type: vless
-  server: laoye.in-gect.fun
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  network: ws
-  ws-opts:
-    headers:
-      Host: laoye.in-gect.fun
-    path: /
-- name: 🇫🇷FR_1152|174KB/s|M003-260806 01
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 8dd8af16-cae0-4431-b04c-a637b4d7645b
-  network: ws
-  ws-opts:
-    headers:
-      Host: wild-frog-c709.403-6ff.workers.dev
-    path: /pyip=proxyip.us.cmliussss.net
-- name: 🇫🇷FR_1153|108KB/s|T001-260618 01
-  type: vless
-  server: 188.114.98.16
-  port: 2082
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    headers:
-      Host: index.harmonica02.workers.dev
-    path: /rry8le3tt8f3g5j7kr
-- name: 🇺🇸US_400|371KB/s|A001-260618 01
-  type: hysteria2
-  server: node1.sferavpn.pro
-  port: 443
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: node1.sferavpn.pro
-- name: 🇸🇬SG_34|313KB/s|A004-260618 01
-  type: vless
-  server: support.zoom.us
-  port: 8080
-  uuid: 3670ab0a-1af7-4f1d-9a19-8bb8ae42ec08
-  network: ws
-  ws-opts:
-    headers:
-      Host: zero.csmaster.ggff.net
-    path: /
-- name: 🇺🇸US_401|277KB/s|A004-260618 01
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇹🇼TW_11|163KB/s|A004-260618 01
-  type: vless
-  server: 220.130.75.247
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- name: 🇰🇷KR_17|249KB/s|A004-260618 01
-  type: hysteria2
-  server: 3.36.96.245
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-- name: 🇩🇪DE_85|297KB/s|A004-260618 01
-  type: vless
-  server: derman.neobo-tooth.ru
-  port: 2083
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: derman.neobo-tooth.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇷FR_1154|226KB/s|A004-260618 01
-  type: vless
-  server: 104.17.29.89
-  port: 443
-  uuid: 33e6d4f8-5bd2-4b9c-8123-3c9d9d94514d
-  tls: true
-  servername: 6q7ur2wcmgu9hymh-xzqg140tdp86.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: 6q7ur2wcmgu9hymh-xzqg140tdp86.pages.dev
-    path: /vl/Oo7KuQEty2wqQDXCPlgaK8RdPqZflNY?ed=2560
-- name: 🇸🇬SG_36|223KB/s|A004-260618 01
-  type: vless
-  server: 206.206.78.36
-  port: 443
-  uuid: e3f0c894-0f76-4683-a751-6a93da8fd14d
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇬🇧GB_61|301KB/s|A004-260618 01
-  type: vless
-  server: usejh2.neobo-tooth.ru
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  network: ws
-  ws-opts:
-    headers:
-      Host: usejh2.neobo-tooth.ru
-    path: /
-- name: 🇦🇪AE_9|433KB/s|A004-260618 01
-  type: vless
-  server: 94.183.209.43
-  port: 443
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸US_406|279KB/s|A004-260618 01
-  type: hysteria2
-  server: 82.38.60.122
-  port: 8443
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  sni: hopp-us.yyuyy.com
-- name: 🇬🇧GB_62|225KB/s|A004-260618 01
-  type: vless
-  server: 31.76.4.103
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-central.cendora.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_84|263KB/s|A004-260618 01
-  type: ss
-  server: 144.31.168.176
-  port: 45640
-  cipher: chacha20-ietf-poly1305
-  password: eQvKkykBEbCky5p4BVghO0
-- name: 🇳🇱NL_213|159KB/s|A004-260618 01
-  type: vless
-  server: 85.155.226.87
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1155|321KB/s|A004-260618 01
-  type: vless
-  server: 161.97.160.224
-  port: 443
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-  tls: true
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇱🇻LV_9|500KB/s|A004-260618 01
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  network: ws
-  ws-opts:
-    headers:
-      Host: laoye.in-gect.fun
-    path: /
-- name: 🇳🇱NL_215|171KB/s|A004-260618 01
-  type: vless
-  server: 85.155.226.31
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_410|265KB/s|A004-260618 01
-  type: hysteria2
-  server: hy2.561891.xyz
-  port: 44356
-  password: dongtaiwang.com
-  sni: 127.0.0.1
-- name: 🇫🇷FR_1156|227KB/s|M003-260806 01
-  type: vless
-  server: 172.64.155.209
-  port: 2053
-  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
-  tls: true
-  servername: music1000.melobitmusic1.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: music1000.melobitmusic1.ir
-    path: /
-- name: 🇨🇦CA_37|174KB/s|M003-260806 01
-  type: vless
-  server: 188.114.97.4
-  port: 8443
-  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
-  tls: true
-  servername: maple.adaspoloandco.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: maple.adaspoloandco.com
-    path: /uploader.php
-- name: 🇺🇸US_412|339KB/s|A001-260618 01
-  type: vless
-  server: 169.40.42.35
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇯🇵JP_18|311KB/s|A004-260618 01
-  type: vless
-  server: jp.wxgqlfx.top
-  port: 26518
-  uuid: e01fcb68-3112-49da-b85d-dffb799cfc9b
-  tls: true
-  servername: github.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_423|269KB/s|C002-260622 01
-  type: hysteria2
-  server: 18.118.193.169
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 18.118.193.169
-- name: 🇨🇦CA_38|141KB/s|A004-260618 01
-  type: vless
-  server: 51.161.204.242
-  port: 443
-  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_414|301KB/s|A004-260618 01
-  type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  network: ws
-  ws-opts:
-    path: /usserver
-- name: 🇸🇬SG_37|209KB/s|A004-260618 01
-  type: vless
-  server: zero.csmaster.ggff.net
-  port: 443
-  uuid: 840476ec-64a2-496e-b406-c5a0ca1e4a13
-  tls: true
-  servername: zero.csmaster.ggff.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: zero.csmaster.ggff.net
-    path: /
-- name: 🇬🇧GB_64|411KB/s|C002-260622 01
-  type: vless
-  server: usejh2.neobo-tooth.ru
-  port: 2083
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: usejh2.neobo-tooth.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇨🇦CA_39|221KB/s|A004-260618 01
-  type: vless
-  server: 209.200.246.143
-  port: 443
-  uuid: 6ca50712-c5cd-4e32-97c5-bfa6485b848a
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: 🇮🇳IN_6|242KB/s|A004-260618 01
-  type: vless
-  server: 148.113.5.44
-  port: 443
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇯🇵JP_19|176KB/s|A004-260618 01
-  type: hysteria2
-  server: 185.39.31.40
-  port: 8443
-  password: Foc_Mcxi45rM9v3ve_N92fdrK_10_Ssc5
-  sni: grape-beer.yyuyy.com
-- name: 🇸🇨SC_2|430KB/s|A004-260618 01
-  type: vless
-  server: 154.196.139.50
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: asia.cendora.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇹🇷TR_1|192KB/s|A004-260618 01
-  type: vless
-  server: 216.9.224.172
-  port: 443
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  tls: true
-  servername: us.rexten.cc
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_216|437KB/s|A004-260618 01
-  type: vless
-  server: 64.188.77.13
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-west.cendora.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_416|96KB/s|A004-260618 01
-  type: trojan
-  server: 35.88.120.18
-  port: 443
-  password: FH72359861
-  sni: dominant-jaguar.rooster465.autos
-- name: 🇳🇱NL_217|274KB/s|B007-260618 01
-  type: vless
-  server: 95.85.247.155
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-west.cendora.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇦CA_40|368KB/s|B007-260618 01
-  type: vless
-  server: 104.18.1.1
-  port: 2087
-  uuid: 97ea73b6-2043-4238-903c-a1e3d4a43c96
-  tls: true
-  servername: amphetamine.adaspoloandco.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: amphetamine.adaspoloandco.com
-    path: /download.php
-- name: 🇫🇷FR_1157|269KB/s|B007-260618 01
-  type: vless
-  server: 104.16.73.106
-  port: 2053
-  uuid: a8d89815-be40-4c47-8c35-4fb2e590aebf
-  tls: true
-  servername: darkwoob.darkoob01.wORkeRs.dEV
-  network: ws
-  ws-opts:
-    headers:
-      Host: darkwoob.darkoob01.workers.dev
-    path: /eyJqdW5rIjoiNFRUZllkNnBWdCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjkxLjEwNy4xNDguMTU0IiwiOTEuMTA3LjI1NS4xOTYiLCI5MS4xMDcuMTcxLjI1MSIsIjkxLjEwNy4xNTguNzciLCI5MS4xMDcuMTU1LjEzIiwiOTEuMTA3LjI1MS4xMTMiXX0=?ed=2560
-- name: 🇺🇸US_417|333KB/s|M003-260806 01
-  type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  network: ws
-  ws-opts:
-    headers:
-      Host: uspanel.unixzone.us
-    path: /usserver
-- name: 🇫🇷FR_1159|238KB/s|M003-260806 01
-  type: vless
-  server: 104.16.72.50
-  port: 8880
-  uuid: 15ce0fde-88e2-42b0-91e6-e4a1b4568f6e
-  network: ws
-  ws-opts:
-    headers:
-      Host: old-truth-de8a.110-187.workers.dev
-    path: /pyip
-- name: 🇫🇷FR_1160|255KB/s|M003-260806 01
-  type: vless
-  server: 104.17.29.89
-  port: 443
-  uuid: 33e6d4f8-5bd2-4b9c-8123-3c9d9d94514d
-  tls: true
-  servername: 6q7uR2WCmgu9hYMh-xzQG140tdP86.PAGES.deV
-  network: ws
-  ws-opts:
-    headers:
-      Host: 6q7ur2wcmgu9hymh-xzqg140tdp86.pages.dev
-    path: /vl/Oo7KuQEty2wqQDXCPlgaK8RdPqZflNY?ed=2560
-- name: 🇫🇷FR_1161|185KB/s|M003-260806 01
-  type: vless
-  server: 172.64.151.134
-  port: 8880
-  uuid: 9bf81377-d077-4569-9fc9-5f0a55180651
-  network: ws
-  ws-opts:
-    headers:
-      Host: super-feather-91c4.267.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_1162|175KB/s|M003-260806 01
-  type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: afb13fa2-bba2-417f-b8c2-62565f92a78d
-  network: ws
-  ws-opts:
-    headers:
-      Host: orange-block-5cd1.124-199.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇨🇦CA_41|137KB/s|M003-260806 01
-  type: vless
-  server: 198.202.211.1
-  port: 8443
-  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
-  tls: true
-  servername: maple.adaspoloandco.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: maple.adaspoloandco.com
-    path: /uploader.php
-- name: 🇺🇸US_419|451KB/s|S001-260618 01
-  type: vless
-  server: 169.40.42.231
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇱🇾LY_4|131KB/s|T001-260618 01
-  type: vless
-  server: 88.216.69.144
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4d64f1370eeb
-  tls: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
-    path: /stream/PANEL_ZEUS/4d64f1370eeb/loc-0
-- name: 🇳🇱NL_218|171KB/s|A001-260618 01
-  type: hysteria2
-  server: 46.229.243.131
-  port: 8443
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-turbo-fr.roxa.org
-- name: 🇺🇸US_420|272KB/s|A004-260618 01
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇦🇺AU_22|182KB/s|A004-260618 01
-  type: trojan
-  server: 87.121.33.162
-  port: 443
-  password: AE62539071
-  sni: together-dingo.rooster465.autos
-- name: 🇺🇸US_421|295KB/s|A004-260618 01
-  type: vless
-  server: 150.241.102.202
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: america.cendora.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇸🇪SE_9|130KB/s|A004-260618 01
-  type: vless
-  server: 144.31.171.143
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-central.cendora.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_422|623KB/s|A004-260618 01
-  type: vless
-  server: 169.40.42.74
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1163|175KB/s|A004-260618 01
-  type: vless
-  server: 89.208.113.16
-  port: 443
-  uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
-- name: 🇳🇱NL_219|296KB/s|A004-260618 01
-  type: vless
-  server: 85.155.226.75
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_86|319KB/s|A004-260618 01
-  type: vless
-  server: 144.31.168.24
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-central.cendora.ru
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_87|134KB/s|A004-260618 01
-  type: vless
-  server: 144.31.166.71
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-central.cendora.ru
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_220|225KB/s|A004-260618 01
-  type: hysteria2
-  server: nl.vpn.legendaah.xyz
-  port: 36723
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: www.cloudflare.com
-- name: 🇬🇧GB_65|312KB/s|F003-260618 01
-  type: vless
-  server: 2.26.48.130
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-central.cendora.ru
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇪🇪EE_7|229KB/s|C002-260622 01
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-- name: 🇧🇷BR_2|165KB/s|F003-260618 01
-  type: vless
-  server: neth6.lckdwn.ru
-  port: 8443
-  uuid: 14da77da-4fb3-4e49-ac4f-7881ea19b267
-  tls: true
-  servername: neth6.lckdwn.ru
-- name: 🇫🇷FR_1164|240KB/s|M002-260618 01
-  type: vless
-  server: 172.64.145.93
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- name: 🇿🇦ZA_3|180KB/s|M002-260618 01
-  type: vless
-  server: 109.121.44.81
-  port: 443
-  uuid: 6179ce37-97b2-4ac7-9591-b4b2bfaca09d
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1165|190KB/s|M002-260618 01
-  type: vless
-  server: 8.6.112.6
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-    path: /?ed=2560
-- name: 🇮🇹IT_24|200KB/s|M002-260618 01
-  type: vless
-  server: 116.204.164.60
-  port: 7443
-  uuid: c676be7d-b481-4bba-88d0-65855e09dc67
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-    path: /@Marisa_kristi
-- name: 🇫🇷FR_1166|144KB/s|C002-260622 01
-  type: vless
-  server: 194.226.169.36
-  port: 443
-  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸US_426|287KB/s 01
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇫🇷FR_1167|386KB/s 01
-  type: trojan
-  server: 104.17.111.8
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇩🇪DE_88|208KB/s 01
-  type: vless
-  server: 80.66.72.179
-  port: 8443
-  uuid: 7b1727dc-f481-440b-b7f5-a515dcf34306
-  tls: true
-  servername: teamdocs.su
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_221|245KB/s|A003-260618 01
-  type: ss
-  server: 82.38.31.189
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇰🇷KR_18|96KB/s|A004-260618 01
-  type: ss
-  server: 141.164.45.187
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇿🇦ZA_4|104KB/s|A004-260618 01
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: 🇺🇸US_428|227KB/s|B007-260618 01
-  type: vless
-  server: 15.204.97.214
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇯🇵JP_20|242KB/s|A004-260618 01
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇳🇱NL_222|461KB/s|M002-260618 01
-  type: vless
-  server: 50.7.41.142
-  port: 443
-  uuid: b8794f67-80d9-4124-8fc5-2d2ce5516573
-  tls: true
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇬🇧GB_66|69KB/s|B007-260618 01
-  type: vless
-  server: 144.31.213.150
-  port: 443
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-  tls: true
-  servername: cdn.pinecloud.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_435|284KB/s|A004-260618 01
-  type: vless
-  server: 169.40.42.95
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_436|378KB/s 01
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧GB_68|229KB/s|M002-260618 01
-  type: vless
-  server: staging.lastilhame.monster
-  port: 443
-  uuid: ee39fb11-56a3-4ee7-9e7c-35a4235bd30e
-  tls: true
-  servername: www.tradingview.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_437|127KB/s|A004-260618 01
-  type: vless
-  server: 154.19.184.40
-  port: 52535
-  uuid: a1ac8747-4fd7-486b-b099-19fbb45610be
-- name: 🇬🇧GB_69|264KB/s|M002-260618 01
+      Host: fancy-wind-799d.cloudneryacc.workers.dev
+    path: /sync
+- name: 🇬🇧GB_41|182KB/s|M002-260618 01
   type: vless
   server: server.slavkiti.monster
   port: 443
-  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
   tls: true
-  servername: www.microsoft.com
+  servername: www.mozilla.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇳🇱NL_223|543KB/s|F003-260618 01
+- name: 🇫🇷FR_747|251KB/s|M002-260618 01
   type: vless
-  server: free-amsterdam-node-1.cloudwidecdn.com
-  port: 443
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
+  server: 104.16.150.108
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇸🇬SG_38|224KB/s|F003-260618 01
-  type: vless
-  server: 64.176.36.17
-  port: 443
-  uuid: 1bc380b1-cff7-446f-b13f-5c0ad29fc75a
-  tls: true
-  servername: zero.csmaster.ggff.net
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
     headers:
-      Host: zero.csmaster.ggff.net
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
     path: /
-- name: 🇳🇱NL_224|192KB/s|C002-260622 01
+- name: 🇬🇧GB_42|68KB/s|M002-260618 01
   type: vless
-  server: 51.158.206.12
+  server: server.slavkiti.monster
+  port: 443
+  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
+  tls: true
+  servername: www.foxsports.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷FR_748|143KB/s|T001-260618 01
+  type: vless
+  server: 188.114.96.3
+  port: 80
+  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
+  network: ws
+  ws-opts:
+    headers:
+      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
+    path: /eyJqdW5rIjoiMm40VHVzc2JqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
+- name: 🇺🇸US_292|238KB/s 01
+  type: ss
+  server: 108.181.57.93
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: RSo52SbxW40r
+- name: 🇳🇱NL_164|431KB/s|A004-260618 01
+  type: ss
+  server: 108.181.126.122
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+- name: 🇳🇱NL_165|386KB/s|A004-260618 01
+  type: ss
+  server: 108.181.58.239
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+- name: 🇺🇸US_294|96KB/s|B007-260618 01
+  type: vless
+  server: 15.204.97.206
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   tls: true
   servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇫🇷FR_1168|305KB/s|M002-260618 01
+- name: 🇫🇷FR_749|266KB/s|B007-260618 01
   type: vless
-  server: 162.159.253.41
+  server: 104.26.14.85
   port: 8443
   uuid: f798a2c4-c51b-409d-b349-ca8455b36796
   tls: true
@@ -1683,35 +150,400 @@ proxies:
     headers:
       Host: chopin.adaspoloandco.com
     path: /download.php
-- name: 🇬🇧GB_70|224KB/s|M002-260618 01
+- name: 🇫🇷FR_750|113KB/s|M002-260618 01
+  type: vless
+  server: 104.19.64.105
+  port: 8443
+  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
+  tls: true
+  servername: chopin.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: chopin.adaspoloandco.com
+    path: /download.php
+- name: 🇫🇷FR_751|319KB/s|M002-260618 01
+  type: vless
+  server: 104.27.66.214
+  port: 8443
+  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
+  tls: true
+  servername: chopin.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: chopin.adaspoloandco.com
+    path: /download.php
+- name: 🇬🇧GB_43|273KB/s|M002-260618 01
   type: vless
   server: staging.lastilhame.monster
   port: 443
-  uuid: 317bc783-340f-453c-afb5-b6bf637c0b23
+  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
   tls: true
-  servername: www.tradingview.com
+  servername: www.microsoft.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: ❓Other_19|222KB/s 01
+- name: 🇺🇸US_304|355KB/s|A004-260618 01
   type: vless
-  server: 103.75.118.228
-  port: 12683
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ❓Other_20|390KB/s|C002-260622 01
-  type: vless
-  server: 194.226.169.36
+  server: 169.40.42.184
   port: 443
-  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   tls: true
   servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇫🇷FR_1169|158KB/s|C002-260622 01
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+- name: 🇬🇧GB_44|315KB/s|M002-260618 01
   type: vless
-  server: 103.169.142.30
+  server: 104.19.64.105
+  port: 8443
+  uuid: ef66f257-2187-48a0-ae46-fbd0519d24ab
+  tls: true
+  servername: focalin.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: focalin.adaspoloandco.com
+    path: /RizZrAcK
+- name: 🇬🇧GB_45|204KB/s|M003-260806 01
+  type: vless
+  server: 104.21.93.245
+  port: 8443
+  uuid: ef66f257-2187-48a0-ae46-fbd0519d24ab
+  tls: true
+  servername: focalin.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: focalin.adaspoloandco.com
+    path: /RizZrAcK
+- name: 🇬🇧GB_46|384KB/s|M003-260806 01
+  type: vless
+  server: 172.67.216.227
+  port: 8443
+  uuid: ef66f257-2187-48a0-ae46-fbd0519d24ab
+  tls: true
+  servername: focalin.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: focalin.adaspoloandco.com
+    path: /RizZrAcK
+- name: 🇫🇷FR_752|150KB/s|M003-260806 01
+  type: trojan
+  server: 193.239.160.134
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+- name: 🇫🇷FR_753|124KB/s|M003-260806 01
+  type: vless
+  server: 104.16.101.215
+  port: 8880
+  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
+  network: ws
+  ws-opts:
+    headers:
+      Host: steep-thunder-97fa.108-d10.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_754|338KB/s|M003-260806 01
+  type: vless
+  server: 104.16.98.215
+  port: 8880
+  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
+  network: ws
+  ws-opts:
+    headers:
+      Host: steep-thunder-97fa.108-d10.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_755|233KB/s|M003-260806 01
+  type: vless
+  server: 172.64.156.60
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  tls: true
+  servername: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+    path: /
+- name: 🇫🇷FR_756|141KB/s|M003-260806 01
+  type: vless
+  server: 104.20.29.61
+  port: 443
+  uuid: 7a657573-7d3c-ff65-ebed-bdfc484fe288
+  tls: true
+  servername: klz9ipeuubas.9uz3s8e2u0zs.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: klz9ipeuubas.9uz3s8e2u0zs.workers.dev
+    path: /stream/PANEL_ZEUS/bdfc484fe288/loc-0
+- name: 🇫🇷FR_757|204KB/s|M003-260806 01
+  type: vless
+  server: 104.19.35.170
+  port: 443
+  uuid: bd8c736e-cae1-43d7-b573-9672e6ca4989
+  tls: true
+  servername: l0n0QgKdtTu061g57fhqZBet333S4t.adE-1004.WOrkerS.Dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: l0n0qgkdttu061g57fhqzbet333s4t.ade-1004.workers.dev
+    path: /vl/zXLTmz3hE3szn64f?ed=2560
+- name: 🇺🇸US_309|440KB/s|A004-260618 01
+  type: vless
+  server: 169.40.42.95
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+- name: 🇫🇷FR_758|176KB/s|A003-260618 01
+  type: vless
+  server: 172.64.155.209
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  servername: ov.iran-servers.shop
+  network: ws
+  ws-opts:
+    headers:
+      Host: ov.iran-servers.shop
+    path: /J5aLQOY1R9ONWYCM
+- name: 🇺🇸US_310|316KB/s|B007-260618 01
+  type: hysteria2
+  server: 142.249.37.90
+  port: 44356
+  password: dongtaiwang.com
+  sni: hy2.561891.xyz
+- name: 🇨🇦CA_24|251KB/s|M002-260618 01
+  type: vless
+  server: 104.26.0.7
+  port: 2087
+  uuid: 97ea73b6-2043-4238-903c-a1e3d4a43c96
+  tls: true
+  servername: amphetamine.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: amphetamine.adaspoloandco.com
+    path: /download.php
+- name: 🇳🇱NL_166|134KB/s|A004-260618 01
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  tls: true
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇦CA_25|474KB/s|A004-260618 01
+  type: vless
+  server: 130.107.73.148
+  port: 41373
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇮FI_3|107KB/s|A004-260618 01
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇬🇧GB_49|131KB/s|F003-260618 01
+  type: vless
+  server: italy.funvideorus.net
+  port: 443
+  uuid: 33c150b7-c0ca-4133-9a52-6f1207da9b8b
+  tls: true
+  servername: deepl.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇫🇷FR_759|319KB/s|M003-260806 01
+  type: vless
+  server: 172.64.149.65
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  tls: true
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+    path: /
+- name: 🇫🇷FR_760|212KB/s|T001-260618 01
+  type: vless
+  server: 172.64.53.215
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇳🇴NO_1|474KB/s|A004-260618 01
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇰🇷KR_10|204KB/s|A004-260618 01
+  type: vless
+  server: 178.83.31.93
+  port: 443
+  uuid: 4a97788b-5d8a-410c-875c-ba36930e185e
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇷🇴RO_332|201KB/s|B007-260618 01
+  type: hysteria2
+  server: 185.156.44.99
+  port: 443
+  password: gf1
+  sni: whatsapp.com
+- name: 🇩🇪DE_48|184KB/s|B007-260618 01
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: 🇫🇷FR_761|260KB/s|M002-260618 01
+  type: vless
+  server: 104.18.38.47
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_762|347KB/s|M002-260618 01
+  type: vless
+  server: 172.64.52.230
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_763|235KB/s|T001-260618 01
+  type: trojan
+  server: 185.220.100.168
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+- name: 🇫🇷FR_764|349KB/s 01
+  type: vless
+  server: 45.131.209.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+    path: /
+- name: 🇫🇷FR_765|188KB/s 01
+  type: vless
+  server: 104.21.88.129
+  port: 8880
+  uuid: 18a7834f-bf89-4c87-ad57-49927a56deed
+  network: ws
+  ws-opts:
+    headers:
+      Host: holy-violet-858e.471.workers.dev
+    path: /pyip=proxyip.sg.cmliussss.net
+- name: 🇫🇷FR_766|157KB/s 01
+  type: vless
+  server: 104.27.82.154
+  port: 8880
+  uuid: 7ed93ccf-6a54-4b19-a9b4-aedfc79bab7d
+  network: ws
+  ws-opts:
+    headers:
+      Host: muddy-sky-4767.344-7a7.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_767|614KB/s 01
+  type: vless
+  server: 141.101.114.8
+  port: 443
+  uuid: 5d8eb33a-2166-4daf-88fe-4be5799c493b
+  tls: true
+  servername: noisy-term-e657.airdrop2014aa5168.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: noisy-term-e657.airdrop2014aa5168.workers.dev
+    path: /
+- name: 🇫🇷FR_768|278KB/s 01
+  type: vless
+  server: 45.142.120.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime08.workers.dev
+    path: /
+- name: 🇫🇷FR_769|217KB/s 01
+  type: vless
+  server: www.speedtest.net
+  port: 80
+  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
+  network: ws
+  ws-opts:
+    headers:
+      Host: young-rice-749e.heliy78750.workers.dev
+    path: /nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=
+- name: 🇫🇷FR_770|217KB/s 01
+  type: vless
+  server: 104.18.42.163
+  port: 8880
+  uuid: ce977d82-824b-4209-87f1-0719f78d6a2e
+  network: ws
+  ws-opts:
+    headers:
+      Host: royal-mode-cf74.210-62d.workers.dev
+    path: /
+- name: 🇫🇷FR_771|375KB/s 01
+  type: vless
+  server: 45.80.110.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /
+- name: 🇫🇷FR_772|442KB/s 01
+  type: vless
+  server: 141.193.27.4
+  port: 80
+  uuid: e403856e-4e50-49e6-9edc-d9536a803a6a
+  network: ws
+  ws-opts:
+    headers:
+      Host: proud-cloud-5c50.113-8dc.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_773|219KB/s 01
+  type: trojan
+  server: blackshadow.dpdns.org
+  port: 443
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  sni: blackshadow.dpdns.org
+- name: 🇫🇷FR_774|299KB/s 01
+  type: vless
+  server: 192.169.220.30
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -1719,790 +551,2554 @@ proxies:
     headers:
       Host: vms.lifetime38.workers.dev
     path: /
-- name: 🇺🇸US_450|362KB/s|A004-260618 01
+- name: 🇫🇷FR_775|303KB/s 01
   type: vless
-  server: 159.89.87.21
-  port: 28190
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-  tls: true
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1170|269KB/s|B007-260618 01
-  type: vless
-  server: 80.93.202.147
+  server: 188.114.97.6
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
   tls: true
-  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+  servername: odd-disk-98c5.assassincreed4048.workers.dev
   network: ws
   ws-opts:
     headers:
-      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
-    path: /stream/TrexBridge/b52a90ada6ab
-- name: 🇸🇬SG_39|69KB/s|B007-260618 01
-  type: vless
-  server: 54.254.145.25
-  port: 6768
-  uuid: edd5f4a0-19dd-4017-8d67-03482fd6472a
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-    path: /@Marisa_kristi
-- name: 🇫🇷FR_1171|107KB/s|A003-260618 01
-  type: trojan
-  server: 185.225.68.232
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-- name: 🇫🇷FR_1172|238KB/s|A004-260618 01
-  type: vless
-  server: 104.16.98.215
-  port: 8880
-  uuid: 3aaabf99-32c6-4032-8695-c9f0eb28be6f
-  network: ws
-  ws-opts:
-    headers:
-      Host: divine-sound-9e93.22-be2.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 🇫🇷FR_1173|306KB/s 01
-  type: vless
-  server: 104.21.45.213
-  port: 443
-  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
-  tls: true
-  servername: ez-541f9d.ezaccess1d3db24.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: ez-541f9d.ezaccess1d3db24.workers.dev
+      Host: odd-disk-98c5.assassincreed4048.workers.dev
     path: /sync
-- name: 🇱🇾LY_5|312KB/s|B007-260618 01
-  type: vless
-  server: 104.16.194.233
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-88ceed27d643
-  tls: true
-  servername: z-e-u-s-panel-231cq2.nova-3bd4a6.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: z-e-u-s-panel-231cq2.nova-3bd4a6.workers.dev
-    path: /stream/PANEL_ZEUS/88ceed27d643/loc-0
-- name: 🇬🇧GB_72|273KB/s|M002-260618 01
-  type: vless
-  server: staging.lastilhame.monster
-  port: 443
-  uuid: de38389f-5651-4f2f-8276-5aabf3b861c9
-  tls: true
-  servername: www.hollywoodreporter.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_453|92KB/s|A004-260618 01
+- name: 🇩🇪DE_49|214KB/s 01
   type: ss
-  server: 217.28.129.81
-  port: 42982
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-- name: 🇺🇸US_454|97KB/s|A004-260618 01
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇫🇷FR_776|528KB/s 01
   type: vless
-  server: 195.211.99.45
-  port: 443
-  uuid: 1f999bcd-f85e-47c3-afd7-92b6dd6b14b0
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1174|257KB/s|T001-260618 01
-  type: trojan
-  server: 84.21.172.81
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-- name: 🇳🇱NL_225|93KB/s|A004-260618 01
-  type: vless
-  server: 86.54.28.75
-  port: 443
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ❓Other_21|295KB/s|A001-260618 01
-  type: hysteria2
-  server: fiproxy1.lockdwn.com
-  port: 443
-  password: 6aab8efdf13945829ae3699c342be406
-  sni: fiproxy1.lockdwn.com
-- name: 🇪🇸ES_17|515KB/s|A004-260618 01
-  type: hysteria2
-  server: xby.mangshe.xyz
-  port: 2056
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  sni: mg2.mangshe.xyz
-- name: 🇮🇳IN_8|297KB/s|A004-260618 01
-  type: hysteria2
-  server: 5.180.27.221
-  port: 8080
-  password: owefv0_92Z540k2F_nx83245_J9130oS_tY
-  sni: borat-hopp.bumbleshrimp.com
-- name: 🇫🇷FR_1175|213KB/s|B007-260618 01
-  type: vless
-  server: 104.17.154.178
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-9568000eed47
-  tls: true
-  servername: urzpn8e9ub5s.shoameni2.workers.dev
+  server: www.wto.org
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
   ws-opts:
     headers:
-      Host: urzpn8e9ub5s.shoameni2.workers.dev
-    path: /stream/PANEL_ZEUS/9568000eed47/loc-1
-- name: 🇷🇺RU_3|93KB/s|A004-260618 01
-  type: hysteria2
-  server: els1.mangshe.xyz
-  port: 2056
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  sni: 127.0.0.1
-- name: 🇺🇸US_457|360KB/s|A001-260618 01
-  type: hysteria2
-  server: de.1.23.h2corp.org
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
-- name: 🇸🇨SC_4|328KB/s|A001-260618 01
-  type: hysteria2
-  server: 46.229.243.131
-  port: 8080
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-turbo-fr.roxa.org
-- name: 🇩🇪DE_89|149KB/s|A001-260618 01
-  type: hysteria2
-  server: de.1.22.washing.help
-  port: 443
-  password: umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx
-  sni: germany1.h2corp.local
-- name: ❓Other_22|138KB/s|A004-260618 01
+      Host: cnmfangbinxing.cnmfangbinxing-f.workers.dev
+    path: /
+- name: 🇫🇷FR_777|150KB/s 01
   type: vless
-  server: 185.140.12.160
-  port: 2083
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  server: skk.moe
+  port: 8880
+  uuid: cf39cbf2-8926-43b5-ba3e-45b975019094
+  network: ws
+  ws-opts:
+    headers:
+      Host: snowy-feather-39d3.428.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_778|256KB/s 01
+  type: vless
+  server: 63.141.128.22
+  port: 443
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
   tls: true
-  servername: derman.neobo-tooth.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇷FR_1177|293KB/s|A004-260618 01
+  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: misty-tooth-78ca.fobogah414-e7b.workers.dev
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+- name: 🇫🇷FR_779|332KB/s 01
+  type: vless
+  server: www.baipiao.eu.org
+  port: 8880
+  uuid: 8c9be850-32a0-4cc1-809b-4a5161413a90
+  network: ws
+  ws-opts:
+    headers:
+      Host: sparkling-frog-59e1.256-d4e.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_781|291KB/s 01
   type: vless
   server: log.bpminecraft.com
   port: 8880
-  uuid: 15ce0fde-88e2-42b0-91e6-e4a1b4568f6e
+  uuid: bd3eb105-b048-47fa-9a1d-63a66f9830a2
   network: ws
   ws-opts:
     headers:
-      Host: old-truth-de8a.110-187.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net🇺🇸
-- name: ❓Other_23|158KB/s|B007-260618 01
+      Host: misty-flower-4d15.372-912.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_782|318KB/s 01
   type: vless
-  server: 104.21.90.215
-  port: 443
-  uuid: 13da3f61-36bc-4f4f-9b49-4152de570bd3
-  tls: true
-  servername: 0-M14.AyUTTHayA-1.KDnS.fr
+  server: 185.225.195.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: 0-M14.ayutTHAYa-1.kDNS.FR
-    path: /awsDCktnglce5OhBQMBK8JLBwh2V
-- name: 🇬🇧GB_73|179KB/s|B007-260618 01
-  type: vless
-  server: 144.31.213.188
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-west.cendora.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_90|187KB/s|B007-260618 01
-  type: vless
-  server: 144.31.219.161
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-west.cendora.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_226|144KB/s|B007-260618 01
-  type: vless
-  server: 144.31.86.136
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-west.cendora.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_458|87KB/s|B007-260618 01
-  type: vless
-  server: 150.241.73.137
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: eu-central.cendora.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_232|350KB/s|C002-260622 01
-  type: trojan
-  server: casual-bullfrog.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: casual-bullfrog.rooster465.autos
-- name: 🇺🇸US_511|94KB/s|C002-260622 01
-  type: trojan
-  server: absolute-teal.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: absolute-teal.rooster465.autos
-- name: 🇳🇱NL_314|95KB/s|A004-260618 01
-  type: trojan
-  server: actual-aardvark.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: actual-aardvark.rooster465.autos
-- name: 🇺🇸US_460|226KB/s 01
-  type: trojan
-  server: smooth-sculpin.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: smooth-sculpin.rooster465.autos
-- name: 🇳🇱NL_319|318KB/s|A004-260618 01
-  type: trojan
-  server: powerful-squid.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: powerful-squid.rooster465.autos
-- name: 🇳🇱NL_234|170KB/s|C002-260622 01
-  type: trojan
-  server: whole-woodcock.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: whole-woodcock.rooster465.autos
-- name: 🇦🇺AU_26|139KB/s 01
-  type: trojan
-  server: true-pony.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: true-pony.rooster465.autos
-- name: 🇦🇺AU_31|121KB/s|C002-260622 01
-  type: trojan
-  server: wanted-marmoset.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: wanted-marmoset.rooster465.autos
-- name: 🇦🇺AU_59|206KB/s|A004-260618 01
-  type: trojan
-  server: big-bonefish.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: big-bonefish.rooster465.autos
-- name: 🇱🇺LU_46|413KB/s|C002-260622 01
-  type: trojan
-  server: electric-sturgeon.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: electric-sturgeon.rooster465.autos
-- name: 🇱🇺LU_45|445KB/s|C002-260622 01
-  type: trojan
-  server: more-trout.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: more-trout.rooster465.autos
-- name: 🇱🇺LU_44|386KB/s|C002-260622 01
-  type: trojan
-  server: primary-leech.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: primary-leech.rooster465.autos
-- name: 🇱🇺LU_80|381KB/s|A004-260618 01
-  type: trojan
-  server: suitable-feline.rooster465.autos
-  port: 443
-  password: PQ05174892
-  sni: suitable-feline.rooster465.autos
-- name: 🇫🇷FR_1178|137KB/s|M003-260806 01
-  type: trojan
-  server: 104.16.180.203
-  port: 443
-  password: fd5d3c04-9a43-7702-e70d-a3c53ff216f4
-  sni: ezpanslll.samankarami0686.workers.dev
-- name: 🇫🇷FR_1179|131KB/s|M003-260806 01
-  type: trojan
-  server: 104.16.174.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸US_461|116KB/s|M003-260806 01
-  type: vless
-  server: 15.204.97.209
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_462|366KB/s|S004-260618 01
-  type: vless
-  server: 172.67.161.109
-  port: 443
-  uuid: 13da3f61-36bc-4f4f-9b49-4152de570bd3
-  tls: true
-  servername: 7-m14.aYuttHAya-1.kdNs.Fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7-M14.AyUTThaya-1.KDNs.Fr
-    path: /awsDCktnglce5OhBQMBK8JLBwh2V
-- name: 🇺🇸US_463|358KB/s|S004-260618 01
-  type: vless
-  server: 104.21.90.215
-  port: 443
-  uuid: 13da3f61-36bc-4f4f-9b49-4152de570bd3
-  tls: true
-  servername: 6-m14.ayUTTHAYa-1.kdns.Fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 6-M14.AyUTThayA-1.kdnS.Fr
-    path: /awsDCktnglce5OhBQMBK8JLBwh2V
-- name: 🇳🇱NL_231|181KB/s|A004-260618 01
-  type: ss
-  server: 82.38.31.195
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇺🇸US_464|281KB/s|B007-260618 01
-  type: vless
-  server: 15.204.97.195
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1180|140KB/s|A003-260618 01
-  type: vless
-  server: 163.5.153.153
-  port: 443
-  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇦🇪AE_10|159KB/s|T001-260618 01
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
+      Host: vms.lifetime18.workers.dev
     path: /
-- name: 🇺🇸US_470|233KB/s|T001-260618 01
+- name: 🇫🇷FR_783|268KB/s 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 06e00e3d-f71f-4621-99a2-779793daf449
+  server: 104.16.106.213
+  port: 8880
+  uuid: afb13fa2-bba2-417f-b8c2-62565f92a78d
+  network: ws
+  ws-opts:
+    headers:
+      Host: orange-block-5cd1.124-199.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_784|182KB/s 01
+  type: vless
+  server: www.gov.ua
+  port: 8880
+  uuid: 1b3ad465-d37e-48a2-bb53-d7fddfc97b11
+  network: ws
+  ws-opts:
+    headers:
+      Host: calm-silence-d4a1.217.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_785|128KB/s 01
+  type: vless
+  server: 104.238.68.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime47.workers.dev
+    path: /
+- name: 🇫🇷FR_786|540KB/s 01
+  type: vless
+  server: 89.116.161.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime08.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_787|306KB/s 01
+  type: vless
+  server: 45.192.224.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime17.workers.dev
+    path: /
+- name: 🇫🇷FR_788|150KB/s 01
+  type: vless
+  server: 88.216.66.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+    path: /
+- name: 🇫🇷FR_789|306KB/s 01
+  type: vless
+  server: cf3.466688.xyz
+  port: 8880
+  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
+  network: ws
+  ws-opts:
+    headers:
+      Host: nameless-poetry-12fb.8-0a2.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
+- name: 🇫🇷FR_790|193KB/s 01
+  type: vless
+  server: 104.21.44.253
+  port: 8080
+  uuid: c6ba83a7-c4b5-481f-8f71-0f17deff0bf2
+  network: ws
+  ws-opts:
+    headers:
+      Host: billowing-sunset-e340.qaraatayi.workers.dev
+    path: /eyJqdW5rIjoiOUhPbnRlV0xaekI1cjciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+- name: 🇩🇪DE_50|79KB/s 01
+  type: vless
+  server: 193.29.225.249
+  port: 4443
+  uuid: 573bd634-8fad-46bd-9d76-7828df6dd05f
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_471|361KB/s|T001-260618 01
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_791|383KB/s 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 8a02c9f7-936a-4d78-a88f-c1e9229f4d5d
+  server: 172.64.146.66
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-f.workers.dev
+    path: /
+- name: 🇫🇷FR_792|497KB/s 01
+  type: vless
+  server: 91.193.58.22
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_793|186KB/s 01
+  type: vless
+  server: 176.124.223.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime38.workers.dev
+    path: /
+- name: 🇫🇷FR_794|294KB/s 01
+  type: vless
+  server: 135.84.75.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime08.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_795|438KB/s 01
+  type: vless
+  server: 91.193.58.244
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇩🇪DE_51|289KB/s 01
+  type: vless
+  server: 147.45.42.73
+  port: 20443
+  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_472|328KB/s|A004-260618 01
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@Marisa_kristi
+- name: 🇺🇸US_319|216KB/s 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: f9bd8170-6d98-4623-85e6-c86b14ea9b9c
+  server: 211.48.30.184
+  port: 30017
+  uuid: beec57a5-8266-4279-b279-f495bdc70699
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_473|77KB/s|T001-260618 01
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@Marisa_kristi
+- name: 🇮🇹IT_6|99KB/s 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 9775116b-b463-4fca-9f61-d01ac2355b21
+  server: 95.181.162.170
+  port: 444
+  uuid: 7094cade-110a-4be0-b657-15d606dcea6d
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇬🇧GB_74|81KB/s|M002-260618 01
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@Marisa_kristi
+- name: 🇩🇪DE_52|190KB/s 01
   type: vless
-  server: staging.lastilhame.monster
+  server: 79.137.199.52
+  port: 21
+  uuid: e7b1256f-aba7-460e-8246-8d6a5156972a
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_796|267KB/s|B007-260618 01
+  type: vless
+  server: 192.0.63.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime36.workers.dev
+    path: /
+- name: 🇫🇷FR_797|230KB/s|B007-260618 01
+  type: vless
+  server: 91.193.58.13
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_798|228KB/s|B007-260618 01
+  type: vless
+  server: 104.17.181.19
+  port: 8880
+  uuid: 3bc49320-3dcd-4f30-9215-a4fa964e54c7
+  network: ws
+  ws-opts:
+    headers:
+      Host: tight-moon-2d50.457.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_799|135KB/s|B007-260618 01
+  type: vless
+  server: cf10.466688.xyz
+  port: 8880
+  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
+  network: ws
+  ws-opts:
+    headers:
+      Host: autumn-base-0eb9.116-d25.workers.dev
+    path: /pyip=ProxyIP.JP.autumniussss.net
+- name: 🇫🇷FR_800|114KB/s|B007-260618 01
+  type: vless
+  server: cf3.466688.xyz
+  port: 8880
+  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
+  network: ws
+  ws-opts:
+    headers:
+      Host: autumn-base-0eb9.116-d25.workers.dev
+    path: /pyip=ProxyIP.JP.autumniussss.net
+- name: 🇫🇷FR_801|398KB/s|B007-260618 01
+  type: vless
+  server: 185.148.107.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime55.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_802|350KB/s|B007-260618 01
+  type: vless
+  server: 166.62.108.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime17.workers.dev
+    path: /
+- name: 🇫🇷FR_803|388KB/s|B007-260618 01
+  type: vless
+  server: free.server11peekconfig.workers.dev
   port: 443
-  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
+  uuid: 63f1ce15-1a88-4698-8a0e-59b85d75e607
   tls: true
-  servername: www.foxsports.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_474|237KB/s|A004-260618 01
+  servername: FRee.SeRver11pEEkcONFIg.WorkeRS.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.server11peekconfig.workers.dev
+    path: /eyJqdW5rIjoiNDIxWGNPNW5CQXYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==
+- name: 🇫🇷FR_804|307KB/s|B007-260618 01
   type: vless
-  server: 31.58.50.200
+  server: 188.114.97.3
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: newwk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    headers:
+      Host: newwk1.f1w.de5.net
+    path: /
+- name: 🇫🇷FR_805|382KB/s|B007-260618 01
+  type: vless
+  server: 172.66.44.211
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: wk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    headers:
+      Host: wk1.f1w.de5.net
+    path: /
+- name: 🇩🇪DE_53|99KB/s|B007-260618 01
+  type: vless
+  server: 23.251.47.193
+  port: 30011
+  uuid: d28c8147-7c3d-40ec-96e9-aec3995337dc
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_806|322KB/s|B007-260618 01
+  type: vless
+  server: www.gov.ua
+  port: 8880
+  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+  network: ws
+  ws-opts:
+    headers:
+      Host: calm-haze-d105.21-7cd.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_807|120KB/s|C002-260622 01
+  type: vless
+  server: 154.83.2.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /
+- name: 🇫🇷FR_808|149KB/s|C002-260622 01
+  type: vless
+  server: 160.153.138.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+    path: /
+- name: 🇫🇷FR_809|193KB/s|C002-260622 01
+  type: vless
+  server: 172.67.151.77
+  port: 443
+  uuid: 73796e63-0000-4000-8000-000000000000
+  tls: true
+  servername: nahan-core.fatitelegram.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: nahan-core.fatitelegram.workers.dev
+    path: /sync
+- name: 🇫🇷FR_810|436KB/s|C002-260622 01
+  type: vless
+  server: 92.53.189.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime19.workers.dev
+    path: /
+- name: 🇫🇷FR_811|189KB/s|C002-260622 01
+  type: vless
+  server: 45.130.125.207
   port: 8443
-  uuid: e27dce75-b33b-49b6-afb7-17e29ce67bb1
+  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_475|275KB/s|A004-260618 01
+  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
+  network: ws
+  ws-opts:
+    headers:
+      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
+    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+- name: 🇫🇷FR_812|234KB/s|C002-260622 01
   type: vless
-  server: 31.58.50.200
+  server: 188.114.96.3
+  port: 2087
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
+  tls: true
+  servername: ez-98919a.motoricb.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: ez-98919a.motoricb.workers.dev
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+- name: 🇫🇷FR_813|507KB/s|C002-260622 01
+  type: vless
+  server: 172.67.148.26
+  port: 80
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  network: ws
+  ws-opts:
+    headers:
+      Host: restless-boat-ebf2.moha102030.workers.dev
+    path: /sync
+- name: 🇫🇷FR_814|360KB/s|C002-260622 01
+  type: vless
+  server: free.server6peekconfig.workers.dev
+  port: 443
+  uuid: d195909a-eff4-489d-a261-955b904894cb
+  tls: true
+  servername: fREE.sERVer6PeeKCOnFIG.wOrkErs.dEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.server6peekconfig.workers.dev
+    path: /eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
+- name: 🇫🇷FR_815|200KB/s|C002-260622 01
+  type: vless
+  server: peekconfig.hamrahfree1.workers.dev
+  port: 2096
+  uuid: c49a0981-6d37-4ec0-9a01-1b63ccc07e4f
+  tls: true
+  servername: pEeKcOnFig.haMRaHfREe1.wOrKerS.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: peekconfig.hamrahfree1.workers.dev
+    path: /eyJqdW5rIjoiZHlCcVpqeEYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
+- name: 🇫🇷FR_816|171KB/s|C002-260622 01
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+    path: /
+- name: 🇫🇷FR_817|127KB/s|C002-260622 01
+  type: vless
+  server: 45.12.30.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /
+- name: 🇺🇸US_320|236KB/s|C002-260622 01
+  type: vless
+  server: 128.241.25.215
+  port: 30036
+  uuid: 196b7228-58df-4bcf-af2a-2e96608d5add
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_818|351KB/s|C002-260622 01
+  type: vless
+  server: 172.67.78.254
+  port: 2083
+  uuid: fc8a0708-951a-4027-860f-2a154ebc4dd7
+  tls: true
+  servername: crimson-king-301d.nexoxnet.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: crimson-king-301d.nexoxnet.workers.dev
+    path: /
+- name: 🇫🇷FR_819|285KB/s|C002-260622 01
+  type: vless
+  server: 104.19.1.100
+  port: 2082
+  uuid: e11664a1-39e9-4dd8-a432-b712ec423262
+  network: ws
+  ws-opts:
+    headers:
+      Host: tianshu.kevqwkt451.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_820|256KB/s|C002-260622 01
+  type: vless
+  server: soskeynets.hamrahfree1.workers.dev
+  port: 2096
+  uuid: c49a0981-6d37-4ec0-9a01-1b63ccc07e4f
+  tls: true
+  servername: pEeKcOnFig.haMRaHfREe1.wOrKerS.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: peekconfig.hamrahfree1.workers.dev
+    path: /eyJqdW5rIjoiZHlCcVpqeEYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
+- name: 🇫🇷FR_821|347KB/s|C002-260622 01
+  type: vless
+  server: 199.181.197.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime19.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_822|154KB/s|C002-260622 01
+  type: vless
+  server: www.gov.ua
+  port: 8880
+  uuid: afb13fa2-bba2-417f-b8c2-62565f92a78d
+  network: ws
+  ws-opts:
+    headers:
+      Host: orange-block-5cd1.124-199.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_823|177KB/s|C002-260622 01
+  type: vless
+  server: 188.114.97.8
   port: 8443
-  uuid: a4b34b65-d393-410a-b41f-f255300ea053
+  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_476|265KB/s|A003-260618 01
+  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
+  network: ws
+  ws-opts:
+    headers:
+      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
+    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+- name: 🇫🇷FR_824|240KB/s|C002-260622 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 6038e39a-d05e-483d-b853-a176707d4f69
+  server: skk.moe
+  port: 8880
+  uuid: adda46c3-eab1-40bc-b88d-6b92c1e8c558
+  network: ws
+  ws-opts:
+    headers:
+      Host: delicate-base-12ed.287-133.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_825|185KB/s|C002-260622 01
+  type: vless
+  server: cf4.466688.xyz
+  port: 8880
+  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
+  network: ws
+  ws-opts:
+    headers:
+      Host: nameless-poetry-12fb.8-0a2.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
+- name: 🇫🇷FR_826|123KB/s|C002-260622 01
+  type: vless
+  server: 104.254.140.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime54.workers.dev
+    path: /
+- name: 🇫🇷FR_827|164KB/s|C002-260622 01
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: f32b0ea8-5b9f-4ee2-b20c-0bdfd2057e1d
+  network: ws
+  ws-opts:
+    headers:
+      Host: throbbing-shape-b190.478-57a.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_828|251KB/s|C002-260622 01
+  type: vless
+  server: 216.24.57.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /
+- name: 🇫🇷FR_829|276KB/s|C002-260622 01
+  type: vless
+  server: 45.80.110.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_830|404KB/s|C002-260622 01
+  type: vless
+  server: 104.21.55.229
+  port: 8880
+  uuid: 31f345f3-b8eb-4ca6-8b14-bb555ae2c1f9
+  network: ws
+  ws-opts:
+    headers:
+      Host: tiny-feather-4c41.227.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_831|296KB/s|C002-260622 01
+  type: vless
+  server: 162.159.252.211
+  port: 80
+  uuid: 3087ca05-1a7c-45fa-aec9-805adeaedb1b
+  network: ws
+  ws-opts:
+    headers:
+      Host: tianshu.kevqwkt451.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_832|149KB/s|C002-260622 01
+  type: vless
+  server: 198.71.189.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+    path: /
+- name: 🇫🇷FR_833|438KB/s|C002-260622 01
+  type: vless
+  server: 154.83.2.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_834|174KB/s|C002-260622 01
+  type: vless
+  server: 155.46.213.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /
+- name: 🇫🇷FR_835|152KB/s|C002-260622 01
+  type: vless
+  server: 45.85.118.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime55.workers.dev
+    path: /
+- name: 🇫🇷FR_836|321KB/s|C002-260622 01
+  type: vless
+  server: 77.75.199.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime59.workers.dev
+    path: /
+- name: 🇫🇷FR_837|192KB/s|C002-260622 01
+  type: vless
+  server: 185.159.247.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime59.workers.dev
+    path: /
+- name: 🇫🇷FR_838|303KB/s|C002-260622 01
+  type: vless
+  server: nahan-core.fatitelegram.workers.dev
+  port: 443
+  uuid: 73796e63-0000-4000-8000-000000000000
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_477|245KB/s|A004-260618 01
+  servername: nahan-core.fatitelegram.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: nahan-core.fatitelegram.workers.dev
+    path: /sync
+- name: 🇫🇷FR_839|245KB/s|C002-260622 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 72109745-9dbe-42a6-93c7-8b6eeb7aaed3
+  server: 91.193.58.247
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_840|140KB/s|C002-260622 01
+  type: vless
+  server: 172.67.219.176
+  port: 2087
+  uuid: f2f4e2dc-3e7b-402f-a461-b48acc6aa310
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_478|116KB/s|T001-260618 01
+  servername: sTeEp-BoNUs-8E6A.AmIrhon1376.woRKeRS.dEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: steep-bonus-8e6a.amirhon1376.workers.dev
+    path: /eyJqdW5rIjoid2JBOTRVclNMOVdBSVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+- name: 🇮🇹IT_7|426KB/s|C002-260622 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 984ab184-21c2-44a0-9705-0ebaa410dc87
+  server: 95.181.162.170
+  port: 444
+  uuid: f9d2937a-94e4-444a-95df-103faf1dd3fd
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_479|335KB/s|A004-260618 01
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_841|257KB/s|C002-260622 01
   type: vless
-  server: 169.40.42.173
+  server: 154.194.12.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime35.workers.dev
+    path: /?ed=2560
+- name: 🇮🇹IT_8|297KB/s|C002-260622 01
+  type: vless
+  server: 116.204.164.17
+  port: 7443
+  uuid: 57c830ca-19a2-441c-811d-db5d81b86b47
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_842|494KB/s|C002-260622 01
+  type: vless
+  server: 216.24.57.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /
+- name: 🇫🇷FR_843|100KB/s|C002-260622 01
+  type: vless
+  server: 188.114.98.66
+  port: 80
+  uuid: b4025216-e996-7591-2608-e19e00000001
+  network: ws
+  ws-opts:
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+    path: /sync
+- name: 🇫🇷FR_844|217KB/s|C002-260622 01
+  type: vless
+  server: 91.193.58.204
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_845|426KB/s|C002-260622 01
+  type: vless
+  server: 114.129.43.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+    path: /
+- name: 🇫🇷FR_846|518KB/s|C002-260622 01
+  type: vless
+  server: 185.162.229.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime61.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_847|173KB/s|C002-260622 01
+  type: vless
+  server: 188.114.98.0
+  port: 2083
+  uuid: 273e9057-8167-4d17-8de3-d44c82037cda
+  tls: true
+  servername: old-sky-2b90.seyowkclient.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: old-sky-2b90.seyowkclient.workers.dev
+    path: /
+- name: 🇫🇷FR_848|297KB/s|C002-260622 01
+  type: vless
+  server: 66.235.200.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime47.workers.dev
+    path: /
+- name: 🇫🇷FR_849|177KB/s|C002-260622 01
+  type: vless
+  server: 167.68.11.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /
+- name: 🇫🇷FR_850|340KB/s|C002-260622 01
+  type: vless
+  server: 162.159.140.78
+  port: 8880
+  uuid: 6d73dc1e-1627-4b16-b471-53e63aa16c78
+  network: ws
+  ws-opts:
+    headers:
+      Host: sweet-truth-ccdb.134-7e9.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_851|109KB/s|C002-260622 01
+  type: vless
+  server: 172.64.145.202
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: newwk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    headers:
+      Host: newwk1.f1w.de5.net
+    path: /
+- name: 🇫🇷FR_852|323KB/s|X001-260618 01
+  type: vless
+  server: log.bpminecraft.com
+  port: 8880
+  uuid: cf39cbf2-8926-43b5-ba3e-45b975019094
+  network: ws
+  ws-opts:
+    headers:
+      Host: snowy-feather-39d3.428.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_853|177KB/s|X001-260618 01
+  type: vless
+  server: 23.227.60.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime18.workers.dev
+    path: /
+- name: 🇫🇷FR_854|151KB/s|B007-260618 01
+  type: vless
+  server: 45.40.146.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime36.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_855|295KB/s|B007-260618 01
+  type: vless
+  server: cf2.466688.xyz
+  port: 8880
+  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
+  network: ws
+  ws-opts:
+    headers:
+      Host: autumn-base-0eb9.116-d25.workers.dev
+    path: /pyip=ProxyIP.JP.autumniussss.net
+- name: 🇫🇷FR_856|171KB/s|C002-260622 01
+  type: vless
+  server: restless-boat-ebf2.moha102030.workers.dev
+  port: 443
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  tls: true
+  servername: restless-boat-ebf2.moha102030.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: restless-boat-ebf2.moha102030.workers.dev
+    path: /sync
+- name: 🇫🇷FR_857|261KB/s|C002-260622 01
+  type: vless
+  server: 185.193.29.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime08.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_858|163KB/s|C002-260622 01
+  type: vless
+  server: cf4.466688.xyz
+  port: 8880
+  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
+  network: ws
+  ws-opts:
+    headers:
+      Host: autumn-base-0eb9.116-d25.workers.dev
+    path: /pyip=ProxyIP.JP.autumniussss.net
+- name: 🇫🇷FR_859|237KB/s|C002-260622 01
+  type: vless
+  server: 50.62.91.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_860|203KB/s|C002-260622 01
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+  network: ws
+  ws-opts:
+    headers:
+      Host: calm-haze-d105.21-7cd.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_861|283KB/s|C002-260622 01
+  type: trojan
+  server: 45.131.4.118
+  port: 443
+  password: f18d6149-e214-8554-e737-f7523c8b2eea
+  sni: 0403.infinityconfig4.workers.dev
+- name: 🇫🇷FR_862|85KB/s|C002-260622 01
+  type: vless
+  server: www.visa.com.sg
+  port: 8880
+  uuid: d7ec3e31-a9c4-4bdf-a2d8-7f75a8381035
+  network: ws
+  ws-opts:
+    headers:
+      Host: weathered-lake-e883.35-bc4.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_863|184KB/s|C002-260622 01
+  type: trojan
+  server: blackshadow.dpdns.org
+  port: 443
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  sni: support.zoom.us.blackshadow.dpdns.org
+- name: 🇫🇷FR_864|236KB/s|B007-260618 01
+  type: vless
+  server: 104.26.13.40
+  port: 8880
+  uuid: 16586b3b-9e26-4fe9-b137-389ea48f088c
+  network: ws
+  ws-opts:
+    headers:
+      Host: ancient-glade-34d6.6-07d.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_865|163KB/s|X001-260618 01
+  type: vless
+  server: 91.193.58.20
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_866|259KB/s|C002-260622 01
+  type: vless
+  server: 104.27.2.172
+  port: 80
+  uuid: 234c52f2-0d7b-dc4a-0d6b-b0b300000025
+  network: ws
+  ws-opts:
+    headers:
+      Host: billowing-surf-d251.netizo06.workers.dev
+    path: /sync
+- name: 🇫🇷FR_867|288KB/s|C002-260622 01
+  type: vless
+  server: 104.27.2.172
+  port: 80
+  uuid: 234c52f2-0d7b-dc4a-0d6b-b0b300000025
+  network: ws
+  ws-opts:
+    headers:
+      Host: billowing-surf-d251.netizo06.workers.dev
+    path: /sync
+- name: 🇫🇷FR_868|338KB/s|B007-260618 01
+  type: vless
+  server: 104.16.100.66
+  port: 8880
+  uuid: 3fe8191f-52ae-4e38-8385-5869ab47fb70
+  network: ws
+  ws-opts:
+    headers:
+      Host: jolly-violet-a006.10-ae8.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_869|319KB/s|B007-260618 01
+  type: vless
+  server: 172.67.153.110
+  port: 443
+  uuid: 63f1ce15-1a88-4698-8a0e-59b85d75e607
+  tls: true
+  servername: FRee.SeRver11pEEkcONFIg.WorkeRS.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.server11peekconfig.workers.dev
+    path: /eyJqdW5rIjoiNDIxWGNPNW5CQXYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==
+- name: 🇫🇷FR_870|195KB/s|B007-260618 01
+  type: vless
+  server: 8.39.125.213
+  port: 443
+  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  tls: true
+  servername: whitecreeper.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: whitecreeper.pages.dev
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+- name: 🇫🇷FR_871|151KB/s|B007-260618 01
+  type: vless
+  server: 104.18.1.1
+  port: 2083
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  tls: true
+  servername: testmiKOnIM.HyDrYmhmDamyN7.wOrKers.dEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
+    path: /OAZko425kNFF0PpQ
+- name: 🇫🇷FR_872|296KB/s|B007-260618 01
+  type: vless
+  server: 104.21.55.229
+  port: 8880
+  uuid: f32b0ea8-5b9f-4ee2-b20c-0bdfd2057e1d
+  network: ws
+  ws-opts:
+    headers:
+      Host: throbbing-shape-b190.478-57a.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_873|381KB/s|F003-260618 01
+  type: vless
+  server: 91.193.58.21
+  port: 2087
+  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  tls: true
+  servername: whitecreeper.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: whitecreeper.pages.dev
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+- name: 🇫🇷FR_874|404KB/s 01
+  type: vless
+  server: 45.131.4.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime59.workers.dev
+    path: /
+- name: 🇩🇪DE_54|99KB/s|A001-260618 01
+  type: vless
+  server: 94.159.97.247
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  tls: true
+  servername: vp58.cc.cd
+  network: ws
+  ws-opts:
+    headers:
+      Host: vp58.cc.cd
+    path: /Telegram🇨🇳 @VPNine1
+- name: 🇬🇧GB_50|307KB/s|T001-260618 01
+  type: vless
+  server: 57.128.177.198
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  tls: true
+  servername: vp58.cc.cd
+  network: ws
+  ws-opts:
+    headers:
+      Host: vp58.cc.cd
+    path: /Telegram🇨🇳 @VPNine1fp=chrome
+- name: 🇫🇷FR_875|287KB/s 01
+  type: vless
+  server: 88.216.67.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime05.workers.dev
+    path: /?ed=2560
+- name: 🇩🇪DE_55|254KB/s|B007-260618 01
+  type: vless
+  server: 23.251.47.193
+  port: 30011
+  uuid: 48919b51-1cfe-4077-b46f-0a8751374461
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_876|104KB/s|B007-260618 01
+  type: vless
+  server: 188.164.248.81
+  port: 2087
+  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  tls: true
+  servername: whitecreeper.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: whitecreeper.pages.dev
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+- name: 🇫🇷FR_877|200KB/s|B007-260618 01
+  type: trojan
+  server: 104.21.17.125
+  port: 443
+  password: Telegram_healer_config
+  sni: 30f67sBQ8jJwMt7GYtfc14.0M68-Qz3hqYfnLAR6n3Iq.wORkErs.dEv
+- name: 🇺🇸US_322|369KB/s|A004-260618 01
+  type: vless
+  server: 169.40.42.212
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   tls: true
   servername: yahoo.com
   client-fingerprint: ios
   flow: xtls-rprx-vision
-- name: 🇺🇸US_480|92KB/s|A004-260618 01
+- name: 🇫🇷FR_878|294KB/s|S004-260618 01
+  type: trojan
+  server: 6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev
+  port: 443
+  password: Telegram_healer_config
+  sni: 6m1rGyIEclMRx9HeF1.Z6-0hlNUbJIBwZPa85.wOrKerS.DEV
+- name: 🇮🇹IT_9|106KB/s|S004-260618 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: b222ebc7-569c-45ca-a0e4-756f171b247b
+  server: 116.204.164.5
+  port: 7443
+  uuid: 0f2765c2-1845-4545-987e-337c7cfb4e52
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_481|251KB/s|A004-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: a4b34b65-d393-410a-b41f-f255300ea053
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_482|155KB/s|A004-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 00dda8ac-c263-4106-a740-1e4478a7dc44
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_483|199KB/s|A004-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 2733bd9c-4f35-45f2-a59f-e67b618664f2
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_484|249KB/s|T001-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 18f3c22c-27c8-45e8-9ca3-925c98638f66
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_486|185KB/s|A004-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 9775116b-b463-4fca-9f61-d01ac2355b21
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_487|146KB/s|T001-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 6ae3c57a-f5fb-4b7e-a886-b8c00af5c693
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪AE_11|235KB/s|M003-260806 01
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
   network: ws
   ws-opts:
     headers:
-      Host: uae.unixzone.us
-    path: /
-- name: 🇺🇸US_488|110KB/s|T001-260618 01
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_879|229KB/s|A004-260618 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 2ba5d80f-c28b-4247-bc07-bdedc8705857
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_490|323KB/s|A003-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: ec83e1b5-f535-4219-b530-49fdab9ca1ef
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_491|267KB/s 01
-  type: ss
-  server: 216.105.168.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: hCCWOcIsK5wrFz4OX70rWf
-- name: 🇺🇸US_492|283KB/s|T001-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 880e605a-082b-47d5-8a37-cac00309ec7c
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇪🇸ES_18|92KB/s|B007-260618 01
-  type: vless
-  server: 194.5.65.36
-  port: 443
-  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
-  tls: true
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇺🇸US_493|342KB/s|T001-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 137c30a7-d172-4b6c-a97b-c3a6a4fda042
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_494|250KB/s|T001-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 94648954-d422-4854-9573-28e061319b2b
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_495|331KB/s|T001-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 8ed35e81-16b9-4316-bcb4-4be6c4db4449
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: ❓Other_24|131KB/s|A004-260618 01
-  type: ss
-  server: 141.164.45.187
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇯🇵JP_21|237KB/s|M002-260618 01
-  type: vless
-  server: 172.111.146.64
-  port: 80
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  server: 104.18.13.229
+  port: 8880
+  uuid: d7ec3e31-a9c4-4bdf-a2d8-7f75a8381035
   network: ws
   ws-opts:
-    path: /vless/
-- name: 🇯🇵JP_22|137KB/s|A004-260618 01
+    headers:
+      Host: weathered-lake-e883.35-bc4.workers.dev
+    path: /
+- name: 🇫🇷FR_880|275KB/s|B007-260618 01
   type: vless
-  server: rm-jp-01.409648.xyz
-  port: 20725
-  uuid: 6dcb725e-947e-4bbe-bb35-903374d57179
-  tls: true
-  servername: buylite.tv.apple.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: ❓Other_25|77KB/s|M003-260806 01
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-- name: 🇺🇸US_496|129KB/s|B007-260618 01
-  type: ss
-  server: 38.180.135.156
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: YHtesZ0qvgtg
-- name: 🇺🇸US_497|257KB/s|T001-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 729a4d09-67a5-4e62-af06-68539f3d7721
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇬🇧GB_75|314KB/s|T001-260618 01
-  type: vless
-  server: 45.150.66.201
+  server: 104.21.74.24
   port: 443
-  uuid: 19ac8928-fe6e-49af-a223-9ca127e4018f
+  uuid: 63f1ce15-1a88-4698-8a0e-59b85d75e607
   tls: true
-  servername: www.nvidia.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_91|250KB/s|M003-260806 01
+  servername: FRee.SeRver11pEEkcONFIg.WorkeRS.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.server11peekconfig.workers.dev
+    path: /eyJqdW5rIjoiNDIxWGNPNW5CQXYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==
+- name: 🇫🇷FR_881|217KB/s|T001-260618 01
   type: vless
-  server: derman.neobo-tooth.ru
-  port: 8443
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: derman.neobo-tooth.ru
-  client-fingerprint: qq
-- name: 🇺🇸US_498|273KB/s|T001-260618 01
+  server: 160.153.168.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime05.workers.dev
+    path: /
+- name: 🇰🇿KZ_1|234KB/s|B007-260618 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 1925051c-083e-401a-8f53-de39d83bfc94
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 5🎗️@oneclickvpnkeys&packetEncoding=xudp&sni=tradingview.com&fp=chrome&flow=xtls-rprx-vision&pbk=mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU#🇺🇸US_499|390KB/s|A004-260618
-    01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 00dda8ac-c263-4106-a740-1e4478a7dc44
-  tls: true
-  client-fingerprint: chrome
-- name: 🇫🇷FR_1181|330KB/s|A004-260618 01
-  type: vless
-  server: 89.208.113.16
+  server: 185.136.12.190
   port: 443
-  uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
-- name: 🇺🇸US_500|155KB/s|A004-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: fcdee475-6aa0-4b8b-be8d-f587b5c5478c
+  uuid: 2cca8201-c93e-40eb-bd8a-fea4170c169e
   tls: true
-  servername: tradingview.com
+  servername: deu683.lackerdeu.org
+- name: 🇫🇷FR_882|350KB/s|B007-260618 01
+  type: vless
+  server: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  port: 443
+  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
+  tls: true
+  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/ERYN0G44hia16zhR
+- name: 🇫🇷FR_883|200KB/s|B007-260618 01
+  type: vless
+  server: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  port: 443
+  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
+  tls: true
+  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+    path: /vl/ERYN0G44hia16zhR
+- name: 🇫🇷FR_884|92KB/s|X001-260618 01
+  type: vless
+  server: 91.193.58.93
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_885|301KB/s|X001-260618 01
+  type: vless
+  server: 91.193.58.92
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇳🇱NL_170|145KB/s|A004-260618 01
+  type: vless
+  server: 85.17.145.65
+  port: 12068
+  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+  network: ws
+  ws-opts:
+    headers:
+      Host: mypanel.unixzone.us
+    path: /
+- name: ❓Other_11|358KB/s|T001-260618 01
+  type: vless
+  server: 172.67.148.41
+  port: 80
+  uuid: 8be64379-08a5-4362-b8cf-234a65409bda
+  network: ws
+  ws-opts:
+    headers:
+      Host: telegram4.freepersianland8.workers.dev
+    path: /eyJqdW5rIjoiOW56N0hTRm9IS252IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ
+- name: 🇫🇮FI_4|276KB/s|M002-260618 01
+  type: vless
+  server: 185.218.194.69
+  port: 443
+  uuid: f5a3bf49-07ca-0021-a96b-9606781e3600
+  tls: true
+  servername: www.amd.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇺🇸US_501|327KB/s|A004-260618 01
+- name: 🇫🇷FR_887|73KB/s|C002-260622 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 5c31ca5d-0094-4a7e-a06e-7f2ce96e44db
+  server: 104.238.71.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /
+- name: 🇫🇷FR_888|171KB/s|C002-260622 01
+  type: vless
+  server: 94.140.0.100
+  port: 8880
+  uuid: 78e6619e-e82a-cd8d-b482-0973d8498305
+  network: ws
+  ws-opts:
+    headers:
+      Host: silent-pine-a674.jfadwkglaugul.workers.dev
+    path: /sync
+- name: 🇫🇷FR_889|335KB/s|C002-260622 01
+  type: vless
+  server: cf5.466688.xyz
+  port: 8880
+  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
+  network: ws
+  ws-opts:
+    headers:
+      Host: autumn-base-0eb9.116-d25.workers.dev
+    path: /pyip=ProxyIP.JP.autumniussss.net
+- name: 🇫🇷FR_890|207KB/s|C002-260622 01
+  type: vless
+  server: 185.162.229.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime61.workers.dev
+    path: /
+- name: 🇳🇱NL_171|141KB/s|F003-260618 01
+  type: vless
+  server: 103.133.1.160
+  port: 80
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  network: ws
+  ws-opts:
+    headers:
+      Host: soft-shadow-1e33.xicav73335.workers.dev
+    path: /ws
+- name: 🇳🇱NL_172|90KB/s|M002-260618 01
+  type: vless
+  server: 103.133.1.160
+  port: 80
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  network: ws
+  ws-opts:
+    headers:
+      Host: soft-shadow-1e33.xicav73335.workers.dev
+    path: /ws
+- name: 🇫🇷FR_891|176KB/s|S001-260618 01
+  type: vless
+  server: www.glassdoor.com
+  port: 8880
+  uuid: 5fc8a5e4-d0c5-4ad2-8bfe-db589553c6c1
+  network: ws
+  ws-opts:
+    headers:
+      Host: red-disk-58df.153-2ce.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_892|209KB/s|B007-260618 01
+  type: vless
+  server: 141.101.123.76
+  port: 443
+  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
   tls: true
-  servername: tradingview.com
+  servername: nahan-fog-af01.dfghttr2012.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: nahan-fog-af01.dfghttr2012.workers.dev
+    path: /sync
+- name: 🇫🇷FR_893|171KB/s|B007-260618 01
+  type: vless
+  server: 172.66.140.62
+  port: 8880
+  uuid: adda46c3-eab1-40bc-b88d-6b92c1e8c558
+  network: ws
+  ws-opts:
+    headers:
+      Host: delicate-base-12ed.287-133.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇯🇵JP_11|241KB/s|X001-260618 01
+  type: vless
+  server: 212.135.210.195
+  port: 14430
+  uuid: 745c6729-a23e-49a9-a385-5c2a59fda160
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_894|203KB/s|M002-260618 01
+  type: vless
+  server: 104.21.50.18
+  port: 443
+  uuid: 9fa6d846-5961-8e0e-ce27-77de00000000
+  tls: true
+  servername: fancy-wind-799d.cloudneryacc.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: fancy-wind-799d.cloudneryacc.workers.dev
+    path: /sync
+- name: 🇫🇷FR_895|155KB/s|T001-260618 01
+  type: vless
+  server: 188.114.99.169
+  port: 443
+  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
+  tls: true
+  servername: nahan-fog-af01.dfghttr2012.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: nahan-fog-af01.dfghttr2012.workers.dev
+    path: /sync
+- name: 🇫🇮FI_5|180KB/s|A004-260618 01
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇷FR_896|204KB/s|B007-260618 01
+  type: vless
+  server: 104.20.37.53
+  port: 8080
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  network: ws
+  ws-opts:
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+    path: /stream/TrexBridge/b52a90ada6ab
+- name: 🇫🇷FR_897|211KB/s|B007-260618 01
+  type: vless
+  server: millionaire.levikogjgfdd.ir
+  port: 8880
+  uuid: 1b3ad465-d37e-48a2-bb53-d7fddfc97b11
+  network: ws
+  ws-opts:
+    headers:
+      Host: calm-silence-d4a1.217.workers.dev
+    path: /pyip
+- name: 🇫🇷FR_898|428KB/s|B007-260618 01
+  type: vless
+  server: 104.20.37.53
+  port: 80
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  network: ws
+  ws-opts:
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+    path: /stream/TrexBridge/b52a90ada6ab
+- name: 🇫🇮FI_6|190KB/s|T001-260618 01
+  type: vless
+  server: 5.61.91.206
+  port: 443
+  uuid: bd99da97-265e-0021-82cc-4ec009fe9ce2
+  tls: true
+  servername: www.amd.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: 🇺🇸US_502|101KB/s|A004-260618 01
+- name: 🇫🇷FR_899|184KB/s|B007-260618 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 9327c85f-68a9-40fe-8328-6e372ba922de
+  server: 91.193.58.215
+  port: 2083
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_503|309KB/s|A004-260618 01
+  servername: vlso300.1d.mom
+  network: ws
+  ws-opts:
+    headers:
+      Host: vlso300.1d.mom
+    path: /socks5=888:888@hkip.1d.mom:1080
+- name: 🇫🇷FR_900|131KB/s|C002-260622 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: c91b7fa9-e8d1-4b49-94fa-72cce126e61b
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_504|287KB/s|A004-260618 01
+  server: cf8.466688.xyz
+  port: 8880
+  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
+  network: ws
+  ws-opts:
+    headers:
+      Host: autumn-base-0eb9.116-d25.workers.dev
+    path: /pyip=ProxyIP.JP.autumniussss.net
+- name: 🇫🇷FR_901|328KB/s|B007-260618 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 11cf4be2-8e22-410b-ac9f-c389d2b2e1cd
+  server: 104.18.1.1
+  port: 2083
+  uuid: 273e9057-8167-4d17-8de3-d44c82037cda
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1182|268KB/s|T001-260618 01
+  servername: old-sky-2b90.seyowkclient.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: old-sky-2b90.seyowkclient.workers.dev
+    path: /
+- name: 🇫🇷FR_902|207KB/s|B007-260618 01
+  type: vless
+  server: time.is
+  port: 2096
+  uuid: c49a0981-6d37-4ec0-9a01-1b63ccc07e4f
+  tls: true
+  servername: pEeKcOnFig.haMRaHfREe1.wOrKerS.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: peekconfig.hamrahfree1.workers.dev
+    path: /eyJqdW5rIjoiZHlCcVpqeEYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
+- name: 🇫🇷FR_903|402KB/s|B007-260618 01
+  type: vless
+  server: cf.levikogjgfdd.ir
+  port: 8880
+  uuid: d7ec3e31-a9c4-4bdf-a2d8-7f75a8381035
+  network: ws
+  ws-opts:
+    headers:
+      Host: weathered-lake-e883.35-bc4.workers.dev
+    path: /
+- name: 🇫🇷FR_904|252KB/s|M003-260806 01
   type: trojan
-  server: 77.221.138.199
-  port: 8443
-  password: humanity
-  sni: www.calmlunch.com
-- name: 🇺🇸US_505|251KB/s|A004-260618 01
+  server: 188.114.97.6
+  port: 443
+  password: f18d6149-e214-8554-e737-f7523c8b2eea
+  sni: 0403.infinityconfig4.workers.dev
+- name: 🇫🇷FR_905|346KB/s|M003-260806 01
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: c0fbbe19-764c-4941-b0db-e7099fbc2028
+  server: 104.21.46.219
+  port: 2096
+  uuid: c49a0981-6d37-4ec0-9a01-1b63ccc07e4f
   tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1183|331KB/s|A004-260618 01
+  servername: pEeKcOnFig.haMRaHfREe1.wOrKerS.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: peekconfig.hamrahfree1.workers.dev
+    path: /eyJqdW5rIjoiZHlCcVpqeEYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
+- name: 🇫🇷FR_906|279KB/s|B007-260618 01
+  type: vless
+  server: 45.131.4.115
+  port: 80
+  uuid: a7b22989-6c1f-4b59-b0f3-0605401813c4
+  network: ws
+  ws-opts:
+    headers:
+      Host: worker3.gigak25604.workers.dev
+    path: /eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+- name: 🇫🇷FR_907|160KB/s|M003-260806 01
+  type: vless
+  server: 104.18.12.149
+  port: 443
+  uuid: 615d9f74-4d51-bad3-f240-2a840000000a
+  tls: true
+  servername: main.packetloss-com.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: main.packetloss-com.workers.dev
+    path: /silaber
+- name: 🇫🇷FR_908|183KB/s|M003-260806 01
+  type: vless
+  server: 104.21.10.136
+  port: 443
+  uuid: 615d9f74-4d51-bad3-f240-2a8400000013
+  tls: true
+  servername: main.packetloss-com.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: main.packetloss-com.workers.dev
+    path: /silaber
+- name: 🇫🇷FR_909|153KB/s|M003-260806 01
+  type: vless
+  server: 172.67.131.125
+  port: 443
+  uuid: 615d9f74-4d51-bad3-f240-2a8400000014
+  tls: true
+  servername: main.packetloss-com.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: main.packetloss-com.workers.dev
+    path: /silaber
+- name: 🇫🇷FR_910|237KB/s|B007-260618 01
+  type: trojan
+  server: 104.21.24.95
+  port: 443
+  password: Telegram_healer_config
+  sni: 1V95V6TjywCyTbAHl7f7Lx8b27G.L4495eYcqmsE9he0yVoEMJFc4IBYf-4.wORkERS.DeV
+- name: 🇫🇷FR_911|302KB/s|B007-260618 01
+  type: vless
+  server: 104.26.3.125
+  port: 2052
+  uuid: e8d06b09-acd9-448c-9874-3c36151d36ee
+  network: ws
+  ws-opts:
+    headers:
+      Host: icy-wildflower-2590.lihuifeng595.workers.dev
+    path: /
+- name: 🇫🇷FR_912|367KB/s|B007-260618 01
+  type: vless
+  server: 104.18.34.245
+  port: 8880
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  network: ws
+  ws-opts:
+    headers:
+      Host: dawn-waterfall-6052.360-001.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇮🇹IT_10|610KB/s|M003-260806 01
+  type: vless
+  server: 116.204.164.30
+  port: 7443
+  uuid: 097e0483-50a9-4adf-8f62-031057710d11
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+    path: /@Marisa_kristi
+- name: 🇮🇹IT_11|312KB/s|M003-260806 01
+  type: vless
+  server: 116.204.164.17
+  port: 7443
+  uuid: 4e2efa26-2969-486b-ae60-390ba54af31b
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_913|156KB/s|M003-260806 01
+  type: vless
+  server: 104.18.28.234
+  port: 443
+  uuid: 615d9f74-4d51-bad3-f240-2a8400000001
+  tls: true
+  servername: main.packetloss-com.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: main.packetloss-com.workers.dev
+    path: /silaber
+- name: 🇫🇷FR_914|118KB/s|M003-260806 01
+  type: vless
+  server: 104.18.32.47
+  port: 443
+  uuid: 615d9f74-4d51-bad3-f240-2a8400000002
+  tls: true
+  servername: main.packetloss-com.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: main.packetloss-com.workers.dev
+    path: /silaber
+- name: 🇫🇷FR_915|255KB/s|M003-260806 01
+  type: vless
+  server: 172.64.155.209
+  port: 443
+  uuid: 615d9f74-4d51-bad3-f240-2a8400000003
+  tls: true
+  servername: main.packetloss-com.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: main.packetloss-com.workers.dev
+    path: /silaber
+- name: 🇫🇷FR_916|321KB/s|M003-260806 01
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 615d9f74-4d51-bad3-f240-2a8400000016
+  tls: true
+  servername: main.packetloss-com.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: main.packetloss-com.workers.dev
+    path: /silaber
+- name: 🇸🇪SE_5|316KB/s|M003-260806 01
+  type: vless
+  server: 2.26.91.98
+  port: 1443
+  uuid: 9ba09caf-da90-48ef-9dac-1a4611bc88d1
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+    path: /@Marisa_kristi
+- name: 🇮🇹IT_12|320KB/s|M003-260806 01
+  type: vless
+  server: 116.204.164.27
+  port: 7443
+  uuid: c82e5af9-5fef-4fdd-9454-2682873e1563
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+    path: /@Marisa_kristi
+- name: 🇮🇹IT_13|106KB/s|M003-260806 01
+  type: vless
+  server: 116.204.164.60
+  port: 7443
+  uuid: fc85cf23-75e6-4b91-b468-8adc9407047b
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_917|160KB/s|A004-260618 01
+  type: vless
+  server: 172.64.80.1
+  port: 8880
+  uuid: 84270e8b-567e-45c6-b2f2-56ec9a67ae1e
+  network: ws
+  ws-opts:
+    headers:
+      Host: young-leaf-a723.162-4da.workers.dev
+    path: /pyip
+- name: 🇫🇷FR_918|306KB/s|A004-260618 01
+  type: vless
+  server: 104.21.12.116
+  port: 8880
+  uuid: 999c9769-28db-425a-84d8-ccd7a3321406
+  network: ws
+  ws-opts:
+    headers:
+      Host: jolly-glitter-123c.196-2b3.workers.dev
+    path: /pyip
+- name: 🇪🇸ES_14|149KB/s|A004-260618 01
+  type: vless
+  server: 172.65.90.53
+  port: 8880
+  uuid: 812b1aeb-c6f7-43cb-8d8b-981711fea21a
+  network: ws
+  ws-opts:
+    headers:
+      Host: dark-cake-4743.198-46c.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇳🇱NL_173|311KB/s|B007-260618 01
   type: ss
-  server: fr3.levikogjgfdd.ir
+  server: nl1.levikogjgfdd.ir
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇩🇰DK_1|457KB/s|B007-260618 01
+  password: CJmTCCx7Ltud
+- name: 🇫🇷FR_919|366KB/s|B007-260618 01
   type: vless
-  server: rm1.levikogjgfdd.ir
+  server: downloadk1.11gig.ir
   port: 443
-  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
+  uuid: 50414e45-4c5f-5a45-5553-b138b248da68
   tls: true
-  servername: google.com
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+    path: /stream/PANEL_ZEUS/b138b248da68
+- name: 🇫🇷FR_920|252KB/s|B007-260618 01
+  type: vless
+  server: 172.67.173.138
+  port: 443
+  uuid: 78b9ac78-ebdf-4e51-8114-f6b0cd6d2169
+  tls: true
+  servername: sErVER15.PEeKCOnF1-741.wOrkErs.Dev.
+  network: ws
+  ws-opts:
+    headers:
+      Host: server15.peekconf1-741.workers.dev.
+    path: /eyJqdW5rIjoiOUZIcXVMV3FlbnoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
+- name: 🇫🇷FR_921|236KB/s|B007-260618 01
+  type: vless
+  server: 172.67.173.138
+  port: 443
+  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
+  tls: true
+  servername: odd-disk-98c5.assassincreed4048.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: odd-disk-98c5.assassincreed4048.workers.dev
+    path: /sync
+- name: 🇯🇵JP_12|129KB/s|F003-260618 01
+  type: vless
+  server: 151.241.129.98
+  port: 7219
+  uuid: 03f3932c-5680-44f6-84f1-447d86971aeb
+  tls: true
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_922|136KB/s|M003-260806 01
+  type: vless
+  server: 172.66.216.117
+  port: 443
+  uuid: 103744ce-0153-49b1-2eac-d293a6ddd7e2
+  tls: true
+  servername: nahan-mouse-7749.amirsina2026.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: nahan-mouse-7749.amirsina2026.workers.dev
+    path: /sync
+- name: 🇫🇷FR_923|138KB/s|M003-260806 01
+  type: vless
+  server: 104.18.12.229
+  port: 8880
+  uuid: 380de97f-1d87-4394-acb8-f9ad7a422ac1
+  network: ws
+  ws-opts:
+    headers:
+      Host: proud-recipe-239d.305-0da.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇳🇱NL_174|236KB/s|M003-260806 01
+  type: vless
+  server: 51.158.206.26
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  servername: fuck.rkn
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇮🇹IT_14|195KB/s|M003-260806 01
+  type: vless
+  server: 104.26.14.85
+  port: 8443
+  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  tls: true
+  servername: milan.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: milan.adaspoloandco.com
+    path: /RoBeRt
+- name: 🇫🇮FI_7|162KB/s|M003-260806 01
+  type: vless
+  server: 65.109.188.209
+  port: 3389
+  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
+  tls: true
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 🇫🇷FR_924|175KB/s|M003-260806 01
+  type: vless
+  server: 104.17.178.154
+  port: 8880
+  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
+  network: ws
+  ws-opts:
+    headers:
+      Host: billowing-fire-a10b.301-d6c.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇪🇸ES_15|172KB/s|M003-260806 01
+  type: vless
+  server: 172.65.90.52
+  port: 8880
+  uuid: b0b406f8-1f30-484c-9fcf-2fdffc715473
+  network: ws
+  ws-opts:
+    headers:
+      Host: round-thunder-8e62.265-833.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_925|95KB/s|M003-260806 01
+  type: vless
+  server: 172.67.208.235
+  port: 2096
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  tls: true
+  servername: courses.mftplus.qzz.io
+  network: ws
+  ws-opts:
+    headers:
+      Host: courses.mftplus.qzz.io
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+- name: 🇫🇷FR_926|337KB/s|M003-260806 01
+  type: vless
+  server: 104.21.89.181
+  port: 8880
+  uuid: d6c595c9-bff4-4510-893a-dfa3c87fa0cd
+  network: ws
+  ws-opts:
+    headers:
+      Host: lucky-cell-d20c.78-107.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_927|155KB/s|M003-260806 01
+  type: vless
+  server: 172.67.159.65
+  port: 443
+  uuid: d8c14c5c-a80a-4f6f-a5fb-52071849c443
+  tls: true
+  servername: CgxGqchEiAMnA-jkS01FiDlsnqOjwF-S.ALIAmA.WOrKErS.DeV
+  network: ws
+  ws-opts:
+    headers:
+      Host: cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev
+    path: /eyJqdW5rIjoiZTFWRGJFS0NUd2F2NkRmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
+- name: 🇫🇷FR_928|293KB/s|M003-260806 01
+  type: vless
+  server: 172.66.170.172
+  port: 80
+  uuid: e081da45-9fae-4687-9376-f9a6a0dbbe83
+  network: ws
+  ws-opts:
+    headers:
+      Host: e33xr.qzz.io
+    path: /id-amz
+- name: 🇫🇷FR_929|577KB/s|M003-260806 01
+  type: vless
+  server: 104.17.191.15
+  port: 8880
+  uuid: f7cc1898-52f8-4e8e-9a90-320fc7fdadb8
+  network: ws
+  ws-opts:
+    headers:
+      Host: raspy-truth-565b.394-8bb.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_930|330KB/s|M002-260618 01
+  type: vless
+  server: 104.19.214.97
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_931|440KB/s|M002-260618 01
+  type: vless
+  server: 172.64.149.209
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_932|456KB/s 01
+  type: vless
+  server: 72.167.230.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /
+- name: 🇫🇷FR_933|156KB/s 01
+  type: vless
+  server: 50.62.195.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime38.workers.dev
+    path: /
+- name: 🇫🇷FR_934|289KB/s 01
+  type: vless
+  server: 166.62.109.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime18.workers.dev
+    path: /
+- name: 🇫🇷FR_935|296KB/s 01
+  type: vless
+  server: 104.25.244.62
+  port: 80
+  uuid: 3076f0f0-558c-cbb3-0570-ca4200000014
+  network: ws
+  ws-opts:
+    headers:
+      Host: abolfazl-1.danayyabwalfdl6.workers.dev
+    path: /sync
+- name: 🇫🇷FR_936|302KB/s 01
+  type: vless
+  server: 172.64.189.5
+  port: 2083
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+  tls: true
+  servername: calm-smoke-1a21.alvlirm6262.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: calm-smoke-1a21.alvlirm6262.workers.dev
+    path: /
+- name: 🇫🇷FR_937|129KB/s 01
+  type: vless
+  server: loading.uploado.ir
+  port: 2083
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  tls: true
+  servername: testmiKOnIM.HyDrYmhmDamyN7.wOrKers.dEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
+    path: /OAZko425kNFF0PpQ
+- name: 🇫🇷FR_938|223KB/s 01
+  type: vless
+  server: 104.18.131.112
+  port: 80
+  uuid: 3087ca05-1a7c-45fa-aec9-805adeaedb1b
+  network: ws
+  ws-opts:
+    headers:
+      Host: tianshu.kevqwkt451.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_939|130KB/s 01
+  type: vless
+  server: 104.18.41.190
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-f.workers.dev
+    path: /
+- name: 🇫🇷FR_940|227KB/s 01
+  type: vless
+  server: 162.159.156.214
+  port: 8880
+  uuid: cf39cbf2-8926-43b5-ba3e-45b975019094
+  network: ws
+  ws-opts:
+    headers:
+      Host: snowy-feather-39d3.428.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_941|198KB/s 01
+  type: vless
+  server: 45.142.120.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime08.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_942|190KB/s 01
+  type: vless
+  server: skk.moe
+  port: 8880
+  uuid: afb13fa2-bba2-417f-b8c2-62565f92a78d
+  network: ws
+  ws-opts:
+    headers:
+      Host: orange-block-5cd1.124-199.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_943|319KB/s 01
+  type: vless
+  server: 185.193.30.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime09.workers.dev
+    path: /
+- name: 🇫🇷FR_944|150KB/s|B007-260618 01
+  type: vless
+  server: 172.66.47.45
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: wk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    headers:
+      Host: wk1.f1w.de5.net
+    path: /
+- name: 🇫🇷FR_945|206KB/s|B007-260618 01
+  type: vless
+  server: medium.com
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+    path: /?ed=2560
+- name: 🇳🇱NL_175|201KB/s|B007-260618 01
+  type: vless
+  server: 72.56.92.177
+  port: 40443
+  uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
+  tls: true
+  servername: deepl.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷FR_946|231KB/s|C002-260622 01
+  type: vless
+  server: 91.193.58.198
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_947|120KB/s|C002-260622 01
+  type: vless
+  server: 45.40.155.4
+  port: 80
+  uuid: e403856e-4e50-49e6-9edc-d9536a803a6a
+  network: ws
+  ws-opts:
+    headers:
+      Host: proud-cloud-5c50.113-8dc.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_948|248KB/s|C002-260622 01
+  type: vless
+  server: skk.moe
+  port: 8880
+  uuid: 5990e0a5-fc5f-43c6-8fdc-39612c60a9cd
+  network: ws
+  ws-opts:
+    headers:
+      Host: jolly-butterfly-24e0.212-cb3.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_949|223KB/s|C002-260622 01
+  type: vless
+  server: 50.62.91.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /
+- name: 🇫🇷FR_950|194KB/s|C002-260622 01
+  type: vless
+  server: 103.133.1.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime36.workers.dev
+    path: /
+- name: 🇰🇷KR_11|123KB/s|C002-260622 01
+  type: vless
+  server: 220.72.143.166
+  port: 12016
+  uuid: 9487e433-862e-4b53-893a-5a4f6bc911f0
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_951|275KB/s|C002-260622 01
+  type: vless
+  server: 172.67.179.98
+  port: 8880
+  uuid: 18a7834f-bf89-4c87-ad57-49927a56deed
+  network: ws
+  ws-opts:
+    headers:
+      Host: holy-violet-858e.471.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_952|298KB/s|C002-260622 01
+  type: vless
+  server: 50.62.195.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime38.workers.dev
+    path: /?ed=2560
+- name: 🇩🇪DE_56|320KB/s|C002-260622 01
+  type: vless
+  server: 79.137.195.150
+  port: 444
+  uuid: 090d7431-d8e6-4dd2-aa75-cee72573510b
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_953|142KB/s|C002-260622 01
+  type: vless
+  server: 188.114.96.3
+  port: 2087
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
+  tls: true
+  servername: Ez-98919A.MOtoRicb.Workers.DeV
+  network: ws
+  ws-opts:
+    headers:
+      Host: ez-98919a.motoricb.workers.dev
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+- name: 🇫🇷FR_954|423KB/s|C002-260622 01
+  type: vless
+  server: 91.193.58.23
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_955|216KB/s|C002-260622 01
+  type: vless
+  server: cf6.466688.xyz
+  port: 8880
+  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
+  network: ws
+  ws-opts:
+    headers:
+      Host: nameless-poetry-12fb.8-0a2.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
+- name: 🇮🇹IT_15|230KB/s|C002-260622 01
+  type: vless
+  server: 116.204.164.27
+  port: 7443
+  uuid: 4c7480b2-d67b-4bb9-9f33-0700dfcbdee6
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_956|376KB/s|C002-260622 01
+  type: vless
+  server: 154.197.64.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime36.workers.dev
+    path: /
+- name: 🇫🇷FR_957|432KB/s|C002-260622 01
+  type: vless
+  server: 102.177.176.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /
+- name: 🇫🇷FR_958|248KB/s|C002-260622 01
+  type: vless
+  server: 104.26.13.40
+  port: 8880
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_959|204KB/s|C002-260622 01
+  type: vless
+  server: 173.245.49.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime36.workers.dev
+    path: /
+- name: 🇫🇷FR_960|266KB/s|C002-260622 01
+  type: vless
+  server: 172.67.179.98
+  port: 8880
+  uuid: 8c9be850-32a0-4cc1-809b-4a5161413a90
+  network: ws
+  ws-opts:
+    headers:
+      Host: sparkling-frog-59e1.256-d4e.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_961|207KB/s|C002-260622 01
+  type: vless
+  server: 45.12.30.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime28.workers.dev
+    path: /?ed=2560
+- name: 🇫🇷FR_962|183KB/s|C002-260622 01
+  type: vless
+  server: skk.moe
+  port: 8880
+  uuid: 3fe8191f-52ae-4e38-8385-5869ab47fb70
+  network: ws
+  ws-opts:
+    headers:
+      Host: jolly-violet-a006.10-ae8.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇮🇹IT_16|699KB/s|V004-260618 01
+  type: vless
+  server: 116.204.164.60
+  port: 7443
+  uuid: 48942ced-a272-41c1-98ac-75745d83bf93
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@Marisa_kristi
+- name: 🇩🇪DE_57|129KB/s|X001-260618 01
+  type: vless
+  server: 109.120.150.17
+  port: 7443
+  uuid: b0105618-904b-48f8-8ffc-ea5754da6206
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_963|340KB/s|C002-260622 01
+  type: vless
+  server: 31.185.108.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime23.workers.dev
+    path: /?https://t.me/youtube@ZYFXSfp=chrome
+- name: 🇫🇷FR_964|550KB/s|C002-260622 01
+  type: vless
+  server: 192.0.54.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime35.workers.dev
+    path: /
+- name: 🇫🇷FR_965|119KB/s|C002-260622 01
+  type: vless
+  server: 194.53.53.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /
+- name: 🇺🇸US_323|250KB/s|C002-260622 01
+  type: vless
+  server: 84.32.44.232
+  port: 15084
+  uuid: f0280f19-7fae-4c4e-a1ae-ddc2922d8c27
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_966|331KB/s|X001-260618 01
+  type: vless
+  server: 104.25.244.62
+  port: 80
+  uuid: 3076f0f0-558c-cbb3-0570-ca4200000014
+  network: ws
+  ws-opts:
+    headers:
+      Host: abolfazl-1.danayyabwalfdl6.workers.dev
+    path: /sync
+- name: 🇸🇪SE_6|217KB/s|F003-260618 01
+  type: vless
+  server: 2.26.91.98
+  port: 1443
+  uuid: d4c6b1ad-9ec4-4273-854a-f0bbf0448ab6
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+    path: /@Marisa_kristi
+- name: 🇫🇷FR_967|358KB/s|F003-260618 01
+  type: vless
+  server: 172.67.75.194
+  port: 2096
+  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  tls: true
+  servername: whitecreeper.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: whitecreeper.pages.dev
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+- name: 🇫🇷FR_968|146KB/s|F003-260618 01
+  type: vless
+  server: 104.17.28.83
+  port: 2087
+  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  tls: true
+  servername: whitecreeper.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: whitecreeper.pages.dev
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+- name: 🇫🇷FR_969|152KB/s|S001-260618 01
+  type: vless
+  server: 104.21.39.47
+  port: 8080
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  network: ws
+  ws-opts:
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
+    path: /taha3
+- name: 🇫🇷FR_970|242KB/s|C002-260622 01
+  type: vless
+  server: 185.148.104.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /
+- name: 🇫🇷FR_971|295KB/s|C002-260622 01
+  type: vless
+  server: 172.67.96.178
+  port: 80
+  uuid: 234c52f2-0d7b-dc4a-0d6b-b0b300000023
+  network: ws
+  ws-opts:
+    headers:
+      Host: billowing-surf-d251.netizo06.workers.dev
+    path: /sync
+- name: 🇫🇷FR_972|178KB/s|B007-260618 01
+  type: vless
+  server: 154.218.15.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime47.workers.dev
+    path: /
+- name: 🇫🇷FR_973|227KB/s|X001-260618 01
+  type: vless
+  server: 130.250.137.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime05.workers.dev
+    path: /
+- name: 🇺🇸US_324|338KB/s|A004-260618 01
+  type: vless
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷FR_974|201KB/s|K001-260618 01
+  type: vless
+  server: 172.67.148.41
+  port: 80
+  uuid: 8be64379-08a5-4362-b8cf-234a65409bda
+  network: ws
+  ws-opts:
+    headers:
+      Host: telegram4.freepersianland8.workers.dev
+    path: /eyJqdW5rIjoiOW56N0hTRm9IS252IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==?ed=2560
