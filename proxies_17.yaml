@@ -1,4 +1,32 @@
 proxies:
+- name: 🇭🇰 香港 39
+  type: trojan
+  server: strong-haddock.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: strong-haddock.rooster465.autos
+- name: 🇭🇰 香港 40
+  type: vless
+  server: xmm5.130209.xyz
+  port: 8443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: hongkong.11459178.xyz
+    path: /cdn/packages/runtime-core.tar.gz
+- name: 🇭🇰 香港 41
+  type: vless
+  server: cf.130209.xyz
+  port: 8443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: hongkong.11459178.xyz
+    path: /cdn/packages/runtime-core.tar.gz
 - name: 🇭🇰 香港 42
   type: trojan
   server: smiling-ray.rooster465.autos
@@ -2015,30 +2043,3 @@ proxies:
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇫🇷FR_89|452KB/s|M002-260618 01
-  type: vless
-  server: 172.67.180.173
-  port: 2053
-  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: music1000.melobitmusic1.ir
-    path: /
-- name: 🇰🇷KR_9|76KB/s|A004-260618 01
-  type: ss
-  server: p141.panda001.net
-  port: 4652
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇺🇸US_167|343KB/s|A004-260618 01
-  type: vless
-  server: 172.64.145.158
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-    path: /

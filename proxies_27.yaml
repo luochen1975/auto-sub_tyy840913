@@ -1,4 +1,27 @@
 proxies:
+- name: 🇺🇸US_715|161KB/s|B007-260618 01
+  type: vless
+  server: rvg-production-4b16.up.railway.app
+  port: 443
+  uuid: 766b03ff-d7f4-b35e-2715-fd5029df106f
+  tls: true
+- name: 🇫🇷FR_987|197KB/s|B007-260618 01
+  type: vless
+  server: 104.16.80.73
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: josni.hoyes.cloudns.ch
+    path: /musiclovers85
+- name: 🇯🇵JP_687|119KB/s 01
+  type: trojan
+  server: concise-guinea.rooster465.autos
+  port: 443
+  password: PQ05174892
+  sni: concise-guinea.rooster465.autos
 - name: 🇯🇵JP_688|203KB/s|C002-260622 01
   type: trojan
   server: pretty-rat.rooster465.autos
@@ -1859,19 +1882,3 @@ proxies:
   port: 443
   password: PQ05174892
   sni: open-caribou.rooster465.autos
-- name: 🇯🇵JP_793|97KB/s|A004-260618 01
-  type: vless
-  server: 14.137.238.40
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- name: 🇺🇸US_793|88KB/s|A004-260618 01
-  type: vless
-  server: us2mianboor.spaidan.ir
-  port: 52915
-  uuid: 7fa08f7f-15e1-4c1c-80c9-0940a0366c9f
-- name: 🇯🇵JP_796|274KB/s|A004-260618 01
-  type: trojan
-  server: 3.112.4.72
-  port: 443
-  password: PQ05174892
-  sni: definite-hen.rooster465.autos

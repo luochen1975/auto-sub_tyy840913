@@ -1,4 +1,31 @@
 proxies:
+- name: 🇫🇷FR_89|452KB/s|M002-260618 01
+  type: vless
+  server: 172.67.180.173
+  port: 2053
+  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: music1000.melobitmusic1.ir
+    path: /
+- name: 🇰🇷KR_9|76KB/s|A004-260618 01
+  type: ss
+  server: p141.panda001.net
+  port: 4652
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇺🇸US_167|343KB/s|A004-260618 01
+  type: vless
+  server: 172.64.145.158
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+    path: /
 - name: 🇳🇱NL_115|254KB/s|B007-260618 01
   type: ss
   server: 193.29.139.168
@@ -2261,33 +2288,3 @@ proxies:
     headers:
       Host: wild-mode-4ca6.234-8f6.workers.dev
     path: /pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian
-- name: 🇫🇷FR_200|207KB/s 01
-  type: vless
-  server: cf7.466688.xyz
-  port: 8880
-  uuid: 1a5e2e63-64e2-4737-95b6-c2ee60c979a1
-  network: ws
-  ws-opts:
-    headers:
-      Host: wild-mode-4ca6.234-8f6.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian
-- name: 🇫🇷FR_201|293KB/s 01
-  type: vless
-  server: cf6.466688.xyz
-  port: 8880
-  uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655
-  network: ws
-  ws-opts:
-    headers:
-      Host: broken-star-c5ae.446.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
-- name: 🇫🇷FR_202|329KB/s 01
-  type: vless
-  server: cf7.466688.xyz
-  port: 8880
-  uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655
-  network: ws
-  ws-opts:
-    headers:
-      Host: broken-star-c5ae.446.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian

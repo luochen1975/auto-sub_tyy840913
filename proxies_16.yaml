@@ -1,4 +1,29 @@
 proxies:
+- name: 🇵🇱PL波兰丨yoyapai.com
+  type: vless
+  server: 144.31.171.143
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+- name: 🇺🇸US美国丨yoyapai.com_1
+  type: vless
+  server: 200.165.228.51
+  port: 2200
+  uuid: e3a625d4-5adb-463d-bbff-bbe06b8e2c5c
+  network: ws
+  ws-opts:
+    path: /v1
+- name: 🇫🇮FI芬兰丨yoyapai.com
+  type: vless
+  server: 65.109.12.58
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: forfreeuse.rtqa.ru
+    path: /
 - name: 🇷🇴RO罗马尼亚丨yoyapai.com
   type: vless
   server: 188.241.241.28
@@ -1902,31 +1927,3 @@ proxies:
   port: 443
   password: AE62539071
   sni: magical-kodiak.rooster465.autos
-- name: 🇭🇰 香港 39
-  type: trojan
-  server: strong-haddock.rooster465.autos
-  port: 443
-  password: AE62539071
-  sni: strong-haddock.rooster465.autos
-- name: 🇭🇰 香港 40
-  type: vless
-  server: xmm5.130209.xyz
-  port: 8443
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: hongkong.11459178.xyz
-    path: /cdn/packages/runtime-core.tar.gz
-- name: 🇭🇰 香港 41
-  type: vless
-  server: cf.130209.xyz
-  port: 8443
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: hongkong.11459178.xyz
-    path: /cdn/packages/runtime-core.tar.gz
