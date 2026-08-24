@@ -1,23 +1,4 @@
 proxies:
-- name: 'B - 🇺🇸 US 17 TG: @nodpai'
-  type: vless
-  server: www.udacity.com
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  tls: true
-  servername: misaka.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: misaka.cndyw.ggff.net
-    path: /?ed=2560fp=random
-- name: 'B - 🇺🇸 US 18 TG: @nodpai'
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: 'B - 🇺🇸 US 19 TG: @nodpai'
   type: vless
   server: 85.234.114.53
@@ -1112,6 +1093,18 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
+- name: 日本2|@ripaojiedian
+  type: ss
+  server: 103.236.66.4
+  port: 40001
+  cipher: aes-256-gcm
+  password: Butterfly123@qwe9527
+- name: 美国|@ripaojiedian
+  type: ss
+  server: 103.236.66.4
+  port: 50001
+  cipher: aes-256-gcm
+  password: Butterfly123@qwe9527
 - name: 香港|@ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -1125,6 +1118,19 @@ proxies:
   port: 8443
   password: Germany2026hy
   sni: de.nobelchat.ru
+- name: 🇬🇧GB_1|2.6MB/s
+  type: ss
+  server: 13.135.73.177
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬SG_1|4.9MB/s
+  type: trojan
+  server: 104.18.32.47
+  port: 443
+  password: MiTiVPN
+  sni: fls-bbg--MiTiVPN---MiTiVPN-u.aPp-cLoud.IR
+  skip-cert-verify: true
 - name: 🇷🇺RU_1|1.3MB/s
   type: vless
   server: 46.8.41.42
@@ -1172,6 +1178,12 @@ proxies:
     headers:
       Host: round-haze-8783.294.workers.dev
     path: /pyip=Telegram🇨🇳 @WangCai2
+- name: 🇫🇷FR_1|1.7MB/s
+  type: trojan
+  server: 104.18.152.244
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: ❓Other_1|2.3MB/s
   type: vless
   server: 66.42.62.84
@@ -1180,6 +1192,37 @@ proxies:
   tls: true
   servername: www.apple.com
   flow: xtls-rprx-vision-udp443
+- name: 🇮🇹IT_1|2.3MB/s
+  type: ss
+  server: 211.91.158.26
+  port: 21113
+  cipher: chacha20-ietf-poly1305
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+- name: 🇫🇷FR_2|2.1MB/s
+  type: ss
+  server: 211.91.158.26
+  port: 21126
+  cipher: chacha20-ietf-poly1305
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+- name: 🇹🇭TH_1|2.3MB/s
+  type: trojan
+  server: kkvlvvq-a.catcat321.com
+  port: 20006
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇬🇧GB_2|3.0MB/s
+  type: ss
+  server: 13.135.161.144
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇨🇦CA_1|2.5MB/s
+  type: ss
+  server: 3.97.15.59
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇫🇮FI_1|3.3MB/s
   type: vless
   server: k2.cloud--vpn.site
@@ -1192,6 +1235,12 @@ proxies:
     headers:
       Host: c12.com
     path: /fp=firefox
+- name: 🇯🇵JP_1|1.4MB/s
+  type: ss
+  server: 211.91.158.26
+  port: 21119
+  cipher: chacha20-ietf-poly1305
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
 - name: 🇿🇦ZA_1|1.5MB/s
   type: vless
   server: 109.121.44.51
@@ -1210,6 +1259,12 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpcacc225ca6bcafad270c1c0e69972889a7f90c58f
+- name: 🇭🇰HK_1|5.1MB/s
+  type: ss
+  server: mn.qwer-cn.org
+  port: 10933
+  cipher: aes-128-gcm
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
 - name: 🇳🇱NL_3|2.0MB/s
   type: vless
   server: 188.114.97.6
@@ -1967,63 +2022,3 @@ proxies:
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇷🇴 RO 154 SSS
-  type: ss
-  server: 194.14.217.89
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇷🇴 RO 156 SSS
-  type: ss
-  server: 194.14.217.115
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇳 UN 159 SSS
-  type: ss
-  server: 23.157.40.89
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-- name: 🇺🇳 UN 160 SSS
-  type: ss
-  server: 23.157.40.89
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- name: 🇺🇳 UN 161 SSS
-  type: ss
-  server: 23.162.200.181
-  port: 5500
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: 🇺🇳 UN 162 SSS
-  type: ss
-  server: 23.157.40.20
-  port: 8000
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: 🇺🇳 UN 163 SSS
-  type: ss
-  server: 23.162.200.189
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-- name: 🇺🇳 UN 164 SSS
-  type: ss
-  server: 23.162.200.181
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: 🇺🇳 UN 165 SSS
-  type: ss
-  server: 23.157.40.120
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: 🇺🇳 UN 166 SSS
-  type: ss
-  server: 23.162.200.181
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP

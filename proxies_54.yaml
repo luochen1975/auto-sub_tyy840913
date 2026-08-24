@@ -1,32 +1,4 @@
 proxies:
-- name: 🇺🇸US_782|66KB/s|A004-260618 01
-  type: vless
-  server: 172.96.121.6
-  port: 443
-  uuid: 83c18ff2-0565-4b53-89ad-57357fef153b
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇷🇺RU_11|141KB/s|A004-260618 01
-  type: vless
-  server: 45.138.100.226
-  port: 2083
-  uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
-  tls: true
-  servername: using.neobo-tooth.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇸🇬SG_132|302KB/s|A004-260618 01
-  type: vless
-  server: 6fzw-19369ic.meibao.site
-  port: 443
-  uuid: 8d1e0577-bfcb-4cbd-91c0-1f8788d4ba44
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇮🇳IN_12|371KB/s|A004-260618 01
   type: vless
   server: nsuc-znkbig.avonex.top
@@ -2430,3 +2402,37 @@ proxies:
     headers:
       Host: speed.dulacloud.store
     path: /dula?Telegram-WangCai2
+- name: 🇸🇬SG_148|126KB/s|M002-260618 01
+  type: vless
+  server: 185.18.250.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  tls: true
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    headers:
+      Host: speed.dulacloud.store
+    path: /dula?Telegram-WangCai2
+- name: 🇸🇬SG_149|317KB/s|M002-260618 01
+  type: vless
+  server: 188.42.88.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  tls: true
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    headers:
+      Host: speed.dulacloud.store
+    path: /dula?Telegram-WangCai2
+- name: 🇫🇷FR_1612|146KB/s|R002-260618 01
+  type: vless
+  server: 104.18.93.3
+  port: 80
+  uuid: a41322e9-d0f1-4ff1-ac5c-a486e2b680b2
+  network: ws
+  ws-opts:
+    headers:
+      Host: worker3.yahoya44555.workers.dev
+    path: /2EP6G0LoOvs5eNZj

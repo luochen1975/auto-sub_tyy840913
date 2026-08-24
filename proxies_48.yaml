@@ -1,34 +1,4 @@
 proxies:
-- name: 🇫🇷FR_1057|402KB/s|A004-260618 01
-  type: vless
-  server: restless-base-fe24.alirezahabibi20009.workers.dev
-  port: 443
-  uuid: 4908acbe-485f-4e1c-bb11-5dd04b9f7e88
-  tls: true
-  servername: restless-base-fe24.alirezahabibi20009.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiRjhycEV5WUpJTGZpQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-- name: 🇧🇬BG_2|388KB/s|A004-260618 01
-  type: vless
-  server: 94.156.155.27
-  port: 443
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-  tls: true
-  servername: www.telekom.de
-  client-fingerprint: firefox
-- name: 🇫🇷FR_1058|284KB/s|A004-260618 01
-  type: vless
-  server: 104.18.28.234
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /sg-melbi
 - name: 🇫🇷FR_1059|301KB/s|A004-260618 01
   type: ss
   server: 54.36.174.134
@@ -2345,5 +2315,29 @@ proxies:
   uuid: 9500cf8b-020a-4a70-906c-e14bb5375875
   tls: true
   servername: www.sciencedirect.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇬🇧GB_59|367KB/s|T001-260618 01
+  type: vless
+  server: 45.150.66.201
+  port: 443
+  uuid: 19ac8928-fe6e-49af-a223-9ca127e4018f
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇯🇵JP_373|162KB/s|A004-260618 01
+  type: trojan
+  server: 52.198.117.121
+  port: 443
+  password: AE62539071
+  sni: relevant-cicada.rooster465.autos
+- name: 🇹🇷TR_2|367KB/s|F003-260618 01
+  type: vless
+  server: ru9.aimodelhub.top
+  port: 443
+  uuid: b85b1e90-b5ed-0002-b433-bf9d2eca0e42
+  tls: true
+  servername: ru9.aimodelhub.top
   client-fingerprint: chrome
   flow: xtls-rprx-vision

@@ -1,28 +1,4 @@
 proxies:
-- name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
-  type: vmess
-  server: 51.79.102.253
-  port: 80
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 🇸🇬SG新加坡
-  type: trojan
-  server: 35.78.187.63
-  port: 41421
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-- name: 未知
-  type: trojan
-  server: 104.26.15.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
 - name: 🇭🇰HK香港
   type: trojan
   server: 35.78.187.63
@@ -1631,62 +1607,58 @@ proxies:
   flow: xtls-rprx-vision
 - name: 美国+CloudFlare节点
   type: trojan
-  server: 104.16.174.121
+  server: 104.16.174.148
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 新加坡+Amazon数据中心
-  type: hysteria2
-  server: 13.229.82.184
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
 - name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 巴西圣保罗+CloudFlare节点
   type: vless
-  server: 188.114.97.6
+  server: 172.64.151.134
   port: 8880
-  uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
+  uuid: 9bf81377-d077-4569-9fc9-5f0a55180651
   network: ws
   ws-opts:
     headers:
-      Host: new.106-79e.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 英国+V2CROSS.COM
+      Host: super-feather-91c4.267.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 美国+V2CROSS.COM
   type: vless
-  server: 31.76.5.26
-  port: 13443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  server: sjzhehzs-production.up.railway.app
+  port: 443
+  uuid: 5331798d-827a-47b2-8a00-d62db5077812
   tls: true
-  servername: auto.cendora.ru
-  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    headers:
+      Host: sjzhehzs-production.up.railway.app
+    path: /ws/5331798d-827a-47b2-8a00-d62db5077812
+- name: 美国+Xerox
+  type: vless
+  server: 13.143.129.2
+  port: 443
+  uuid: f463819c-5e64-458a-808b-6693afb47aa4
+  tls: true
+  servername: temp.adleger.ru
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 法国+ONLINE+S.A.S.数据中心
-  type: hysteria2
-  server: 62.210.147.2
-  port: 43115
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-- name: 挪威+V2CROSS.COM
-  type: hysteria2
-  server: 138.124.0.168
-  port: 8080
-  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  sni: hopp-legend-se.roxa.org
+- name: 美国+V2CROSS.COM
+  type: vless
+  server: 167.104.223.66
+  port: 443
+  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  tls: true
+  servername: 167.104.223.66.sslip.io
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 美国+CloudFlare节点
   type: trojan
-  server: 104.18.152.144
+  server: 104.16.174.143
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
+- name: 法国巴黎+CloudFlare节点
   type: trojan
-  server: 104.17.111.4
+  server: 141.101.90.101
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1697,57 +1669,73 @@ proxies:
   password: humanity
   sni: www.ignitelimit.com
 - name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.161
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+V2CROSS.COM
   type: vless
-  server: 104.18.42.163
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  server: 192.0.63.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: vms.lifetime36.workers.dev
     path: /
-- name: 日本+V2CROSS.COM
+- name: 俄罗斯+V2CROSS.COM
+  type: hysteria2
+  server: srv-0dc9de.21freedom.net
+  port: 11592
+  password: d532115bea
+  sni: srv-0dc9de.21freedom.net
+- name: 巴西+圣保罗
   type: vless
-  server: 150.40.117.221
-  port: 8443
-  uuid: 47388561-cf0c-4cfc-91f8-fdfd9fa3d756
+  server: 200.165.230.19
+  port: 443
+  uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
   tls: true
-  servername: www.amazon.com
-  client-fingerprint: chrome
+  servername: www.kinopoisk.ru
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
 - name: 美国+CloudFlare节点
+  type: vless
+  server: deepl.com
+  port: 8880
+  uuid: 9bf81377-d077-4569-9fc9-5f0a55180651
+  network: ws
+  ws-opts:
+    headers:
+      Host: super-feather-91c4.267.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 美国+CloudFlare节点
   type: trojan
-  server: 104.18.152.77
+  server: 198.41.223.96
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.20.6.134
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.207
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: 巴西+V2CROSS.COM
   type: vless
-  server: gd-0z.whit3.net
+  server: 177.3.212.189
   port: 443
   uuid: a6cf4b28-ba72-4e8c-90f8-6a884107ab3c
   tls: true
   servername: gd-0z.whit3.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 172.66.44.97
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: 香港+Simcentric网络公司
-  type: vless
-  server: 180.178.60.254
-  port: 10000
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
 - name: 防范境外势力渗透
   type: vmess
   server: 127.0.0.53
@@ -2301,3 +2289,22 @@ proxies:
   server: 155.117.127.137
   port: 443
   uuid: 5a20b5d0-3a98-4792-9559-95f4e24277ec
+- name: 'B - 🇺🇸 US 17 TG: @nodpai'
+  type: vless
+  server: www.udacity.com
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: misaka.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    headers:
+      Host: misaka.cndyw.ggff.net
+    path: /?ed=2560fp=random
+- name: 'B - 🇺🇸 US 18 TG: @nodpai'
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto

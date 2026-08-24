@@ -1,22 +1,4 @@
 proxies:
-- name: 🇺🇸US_827|97KB/s|B007-260618 01
-  type: trojan
-  server: 34.220.224.252
-  port: 443
-  password: PQ05174892
-  sni: smooth-sculpin.rooster465.autos
-- name: 🇺🇸US_828|206KB/s|B007-260618 01
-  type: trojan
-  server: 35.90.27.143
-  port: 443
-  password: PQ05174892
-  sni: evident-ant.rooster465.autos
-- name: 🇺🇸US_829|88KB/s|B007-260618 01
-  type: trojan
-  server: 35.91.138.234
-  port: 443
-  password: PQ05174892
-  sni: sure-bengal.rooster465.autos
 - name: 🇯🇵JP_761|160KB/s|A004-260618 01
   type: trojan
   server: 52.195.206.148
@@ -2470,3 +2452,36 @@ proxies:
   port: 443
   password: PQ05174892
   sni: noted-cougar.rooster465.autos
+- name: 🇫🇷FR_1499|322KB/s|A004-260618 01
+  type: vless
+  server: 104.18.40.152
+  port: 443
+  uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a
+  tls: true
+  servername: sie704.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: sie704.pages.dev
+    path: /
+- name: 🇫🇷FR_1500|298KB/s|A004-260618 01
+  type: vless
+  server: 172.64.147.104
+  port: 443
+  uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a
+  tls: true
+  servername: sie704.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: sie704.pages.dev
+    path: /
+- name: 🇬🇷GR_4|266KB/s|A004-260618 01
+  type: vless
+  server: edge.netraidly.ru
+  port: 40443
+  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+  tls: true
+  servername: deepl.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision

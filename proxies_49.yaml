@@ -1,28 +1,4 @@
 proxies:
-- name: 🇬🇧GB_59|367KB/s|T001-260618 01
-  type: vless
-  server: 45.150.66.201
-  port: 443
-  uuid: 19ac8928-fe6e-49af-a223-9ca127e4018f
-  tls: true
-  servername: www.nvidia.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇯🇵JP_373|162KB/s|A004-260618 01
-  type: trojan
-  server: 52.198.117.121
-  port: 443
-  password: AE62539071
-  sni: relevant-cicada.rooster465.autos
-- name: 🇹🇷TR_2|367KB/s|F003-260618 01
-  type: vless
-  server: ru9.aimodelhub.top
-  port: 443
-  uuid: b85b1e90-b5ed-0002-b433-bf9d2eca0e42
-  tls: true
-  servername: ru9.aimodelhub.top
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇺🇸US_520|127KB/s|A004-260618 01
   type: trojan
   server: 44.243.85.47
@@ -2770,3 +2746,35 @@ proxies:
     headers:
       Host: square-waterfall-c1de.199-82d.workers.dev
     path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_1283|297KB/s|B007-260618 01
+  type: vless
+  server: 154.218.15.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime47.workers.dev
+    path: /
+- name: 🇫🇷FR_1284|306KB/s|B007-260618 01
+  type: vless
+  server: 104.16.100.66
+  port: 8880
+  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
+  network: ws
+  ws-opts:
+    headers:
+      Host: red-flower-a2bf.363.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_1285|171KB/s|A003-260618 01
+  type: vless
+  server: www.baipiao.eu.org
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  tls: true
+  servername: misaka.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    headers:
+      Host: misaka.cndyw.ggff.net
+    path: /?ed=2560fp=random

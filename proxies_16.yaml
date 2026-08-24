@@ -1,135 +1,4 @@
 proxies:
-- name: 🇵🇱PL波兰丨yoyapai.com
-  type: vless
-  server: 144.31.171.143
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-- name: 🇺🇸US美国丨yoyapai.com_1
-  type: vless
-  server: 200.165.228.51
-  port: 2200
-  uuid: e3a625d4-5adb-463d-bbff-bbe06b8e2c5c
-  network: ws
-  ws-opts:
-    path: /v1
-- name: 🇫🇮FI芬兰丨yoyapai.com
-  type: vless
-  server: 65.109.12.58
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: forfreeuse.rtqa.ru
-    path: /
-- name: 🇷🇴RO罗马尼亚丨yoyapai.com
-  type: vless
-  server: 188.241.241.28
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: forfreeuse.rtqa.ru
-    path: /
-- name: 🇳🇱NL荷兰丨yoyapai.com
-  type: vless
-  server: 185.18.52.77
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: forfreeuse.rtqa.ru
-    path: /
-- name: 🇵🇱PL波兰丨yoyapai.com_1
-  type: vless
-  server: 31.133.0.133
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: forfreeuse.rtqa.ru
-    path: /
-- name: 🇵🇱PL波兰丨yoyapai.com_2
-  type: vless
-  server: 31.133.0.103
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: forfreeuse.rtqa.ru
-    path: /
-- name: 🇵🇱PL波兰丨yoyapai.com_3
-  type: vless
-  server: 31.133.0.70
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: forfreeuse.rtqa.ru
-    path: /
-- name: 🇳🇱NL荷兰丨yoyapai.com_1
-  type: vless
-  server: 31.15.17.129
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: forfreeuse.rtqa.ru
-    path: /
-- name: 🇷🇴RO罗马尼亚丨yoyapai.com_1
-  type: vless
-  server: 188.241.241.28
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: forfreeuse.rtqa.ru
-    path: /
-- name: 芬兰(mibei77.com 米贝节点分享)
-  type: vless
-  server: 217.163.76.118
-  port: 2086
-  uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
-- name: 芬兰(mibei77.com 米贝节点分享)_1
-  type: vless
-  server: 87.121.89.80
-  port: 13443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-- name: 瑞典(mibei77.com 米贝节点分享)
-  type: vless
-  server: 31.76.69.40
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-- name: 西班牙(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: AU澳大利亚(mibei77.com 米贝节点分享)
-  type: trojan
-  server: powerful-troll.rooster465.autos
-  port: 443
-  password: HC04361579
-  sni: powerful-troll.rooster465.autos
 - name: CA加拿大(mibei77.com 米贝节点分享)
   type: trojan
   server: 104.18.22.63
@@ -1927,3 +1796,118 @@ proxies:
   port: 443
   password: AE62539071
   sni: magical-kodiak.rooster465.autos
+- name: 🇭🇰 香港 39
+  type: trojan
+  server: strong-haddock.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: strong-haddock.rooster465.autos
+- name: 🇭🇰 香港 40
+  type: vless
+  server: xmm5.130209.xyz
+  port: 8443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: hongkong.11459178.xyz
+    path: /cdn/packages/runtime-core.tar.gz
+- name: 🇭🇰 香港 41
+  type: vless
+  server: cf.130209.xyz
+  port: 8443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: hongkong.11459178.xyz
+    path: /cdn/packages/runtime-core.tar.gz
+- name: 🇭🇰 香港 42
+  type: trojan
+  server: smiling-ray.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: smiling-ray.rooster465.autos
+- name: 🇭🇰 香港 43
+  type: trojan
+  server: wealthy-loon.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: wealthy-loon.rooster465.autos
+- name: 🇭🇰 香港 44
+  type: trojan
+  server: modest-foal.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: modest-foal.rooster465.autos
+- name: 🇭🇰 香港 48
+  type: trojan
+  server: strong-haddock.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: strong-haddock.rooster465.autos
+- name: 🇭🇰 香港 49
+  type: trojan
+  server: strong-haddock.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: strong-haddock.rooster465.autos
+- name: 🇭🇰 香港 50
+  type: vless
+  server: 91.110.209.75
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: vp10.pages.dev
+    path: /
+- name: 🇭🇰 香港 51
+  type: vless
+  server: 91.110.209.67
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: vp10.pages.dev
+    path: /
+- name: 🇭🇰 香港 52
+  type: vless
+  server: 172.64.157.48
+  port: 8443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: hongkong.11459178.xyz
+    path: /cdn/packages/runtime-core.tar.gz
+- name: 🇭🇰 香港 53
+  type: trojan
+  server: modern-bedbug.rooster465.autos
+  port: 443
+  password: FH72359861
+  sni: modern-bedbug.rooster465.autos
+- name: 🇭🇰 香港 54
+  type: trojan
+  server: natural-swan.rooster465.autos
+  port: 443
+  password: FH72359861
+  sni: natural-swan.rooster465.autos
+- name: 🇭🇰 香港 55
+  type: trojan
+  server: strong-haddock.rooster465.autos
+  port: 443
+  password: FH72359861
+  sni: strong-haddock.rooster465.autos
+- name: 🇭🇰 香港 56
+  type: trojan
+  server: dynamic-grubworm.rooster465.autos
+  port: 443
+  password: FH72359861
+  sni: dynamic-grubworm.rooster465.autos

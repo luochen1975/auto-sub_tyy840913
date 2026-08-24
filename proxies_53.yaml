@@ -1,37 +1,4 @@
 proxies:
-- name: 🇫🇷FR_1499|322KB/s|A004-260618 01
-  type: vless
-  server: 104.18.40.152
-  port: 443
-  uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a
-  tls: true
-  servername: sie704.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: sie704.pages.dev
-    path: /
-- name: 🇫🇷FR_1500|298KB/s|A004-260618 01
-  type: vless
-  server: 172.64.147.104
-  port: 443
-  uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a
-  tls: true
-  servername: sie704.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: sie704.pages.dev
-    path: /
-- name: 🇬🇷GR_4|266KB/s|A004-260618 01
-  type: vless
-  server: edge.netraidly.ru
-  port: 40443
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
-  tls: true
-  servername: deepl.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
 - name: 🇫🇷FR_1501|209KB/s|A004-260618 01
   type: trojan
   server: 104.16.3.189
@@ -2316,3 +2283,31 @@ proxies:
   port: 443
   password: HC04361579
   sni: settling-shad.rooster465.autos
+- name: 🇺🇸US_782|66KB/s|A004-260618 01
+  type: vless
+  server: 172.96.121.6
+  port: 443
+  uuid: 83c18ff2-0565-4b53-89ad-57357fef153b
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇷🇺RU_11|141KB/s|A004-260618 01
+  type: vless
+  server: 45.138.100.226
+  port: 2083
+  uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
+  tls: true
+  servername: using.neobo-tooth.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇸🇬SG_132|302KB/s|A004-260618 01
+  type: vless
+  server: 6fzw-19369ic.meibao.site
+  port: 443
+  uuid: 8d1e0577-bfcb-4cbd-91c0-1f8788d4ba44
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
