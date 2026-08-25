@@ -1,470 +1,4 @@
 proxies:
-- name: NL【机场推荐：https://a9a.xyz】37
-  type: vless
-  server: ned.waldron.ir
-  port: 46142
-  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: edge
-- name: US【机场推荐：https://a9a.xyz】38
-  type: trojan
-  server: 140.248.185.253
-  port: 443
-  password: MiTiVPN
-  sni: ssl.fastly.com
-- name: CA【机场推荐：https://a9a.xyz】39
-  type: trojan
-  server: 104.16.174.33
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US【机场推荐：https://a9a.xyz】40
-  type: vless
-  server: 180.178.60.254
-  port: 10000
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
-- name: 台湾省台北市+中华电信
-  type: vless
-  server: wwhgbmxaycrqwzxhfa.cfooov.xyz
-  port: 32178
-  uuid: 8d05cda5-c9ba-43cf-846e-b9521b872c71
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: www.speedtest.org
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 英国+V2CROSS.COM
-  type: vless
-  server: 31.76.70.32
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  servername: baltic.cendora.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 美国+Merit网络公司
-  type: hysteria2
-  server: vpn-us-006.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-us-006.fastervpn.world
-- name: 美国+V2CROSS.COM
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: XpnTeam-35
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- name: 亚太地区+V2CROSS.COM
-  type: ss
-  server: 103.236.66.4
-  port: 10001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 伊朗+V2CROSS.COM
-  type: trojan
-  server: 2.144.21.112
-  port: 40443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 防范境外势力渗透
-  type: vmess
-  server: 127.0.0.53
-  port: 80
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #1'
-  type: vmess
-  server: 127.0.0.53
-  port: 81
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #2'
-  type: vmess
-  server: 127.0.0.53
-  port: 82
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #3'
-  type: vmess
-  server: 127.0.0.53
-  port: 83
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #4'
-  type: vmess
-  server: 127.0.0.53
-  port: 84
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #5'
-  type: vmess
-  server: 127.0.0.53
-  port: 85
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #6'
-  type: vmess
-  server: 127.0.0.53
-  port: 86
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #7'
-  type: vmess
-  server: 127.0.0.53
-  port: 87
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #8'
-  type: vmess
-  server: 127.0.0.53
-  port: 88
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: '防范境外势力渗透 #9'
-  type: vmess
-  server: 127.0.0.53
-  port: 89
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-- name: 波兰
-  type: hysteria2
-  server: 144.31.5.9
-  port: 2101
-  password: 08794874-93d0-4cf2-b9d6-1f2774cdffeb
-  sni: panel.vlessbotkey.ru
-- name: 🏓33@oneclickvpnkeys
-  type: hysteria2
-  server: 94.156.250.67
-  port: 55000
-  password: 0bacdaea-099b-462b-b625-d7d44c89aace
-  sni: www.bing.com
-- name: 香港
-  type: hysteria2
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  password: 1427eb10-7529-4d38-a6a2-01b337868b37
-  sni: hk2.xiaoliyu.cyou
-- name: 🇺🇸US
-  type: hysteria2
-  server: do.aigh.store
-  port: 10929
-  password: 17aVvwmiSU
-  sni: do.aigh.store
-- name: 🇭🇰HK
-  type: hysteria2
-  server: fg7xl1div.d33tqmk.cc
-  port: 10030
-  password: 1dcc3b89-0b45-3908-9120-19741361d55d
-  sni: xk7q3.ckpfef.top
-- name: 荷兰
-  type: hysteria2
-  server: 31.177.111.213
-  port: 443
-  password: 2b3e8750-b944-42fc-b36e-ec2c64b48a98
-  sni: hy222.routeon.pro
-- name: 德国
-  type: hysteria2
-  server: pixelcast.wwwinternetvideo.click
-  port: 443
-  password: 2vwMMy8t5Sjl5lfK9dNF1OrU9d0K25V2RNWLbTKwJ6o
-  sni: pixelcast.wwwinternetvideo.click
-- name: '波兰 #1'
-  type: hysteria2
-  server: node.embrofree.org
-  port: 443
-  password: 3703ccc0-ae74-49bd-b9d7-0897192bf8c4
-  sni: node.embrofree.org
-- name: 瑞典
-  type: hysteria2
-  server: swe.frkn.org
-  port: 8443
-  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
-  sni: swe.frkn.org
-- name: 保加利亚
-  type: hysteria2
-  server: bg185.mechvpn.online
-  port: 443
-  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  sni: bg185.mechvpn.online
-- name: 法国
-  type: hysteria2
-  server: fr194.mechvpn.online
-  port: 443
-  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  sni: fr194.mechvpn.online
-- name: '荷兰 #1'
-  type: hysteria2
-  server: nl174.mechvpn.online
-  port: 443
-  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  sni: nl174.mechvpn.online
-- name: '荷兰 #2'
-  type: hysteria2
-  server: nl8.mechvpn.online
-  port: 443
-  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  sni: nl8.mechvpn.online
-- name: 英国
-  type: hysteria2
-  server: uk196.mechvpn.online
-  port: 443
-  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-- name: 芬兰
-  type: hysteria2
-  server: 31.76.70.109
-  port: 8443
-  password: 83deb5ce-cd1c-41a6-8ec5-2ebc91f6f861
-  sni: quic.tyr-agentstvo.tech
-- name: '波兰 #2'
-  type: hysteria2
-  server: streambox.wwwinternetvideo.click
-  port: 443
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
-  sni: streambox.wwwinternetvideo.click
-- name: 🏓75@oneclickvpnkeys
-  type: hysteria2
-  server: deu0003ntrhy01.tcp-reset-club.net
-  port: 443
-  password: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
-  sni: deu0003ntrhy01.tcp-reset-club.net
-- name: IN
-  type: hysteria2
-  server: 144.24.109.215
-  port: 51000
-  password: 91283e34-8674-4961-b202-c3491b72eeb9
-  sni: cn.cremedelamer.com
-- name: 土耳其
-  type: hysteria2
-  server: 162.249.124.105
-  port: 8080
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: mercedes-grape.yyuyy.com
-- name: '土耳其 #1'
-  type: hysteria2
-  server: 162.249.124.114
-  port: 8080
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hopp-germany-new.ddnsguru.com
-- name: '🇭🇰HK #1'
-  type: hysteria2
-  server: 18.162.42.61
-  port: 16001
-  password: 9q3Mb0IzSVbnwaqK
-  sni: hk-ls-r-1.czzhkractqqakfzdmrgd.cc
-- name: 日本
-  type: hysteria2
-  server: 185.39.31.117
-  port: 8443
-  password: Foc_Mcxi45rM9v3ve_N92fdrK_10_Ssc5
-  sni: grape-beer.yyuyy.com
-- name: 🇺🇦UKraine
-  type: hysteria2
-  server: hy2-germany.unlimited-access.ru
-  port: 8443
-  password: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
-  sni: hy2-germany.unlimited-access.ru
-- name: 美国
-  type: hysteria2
-  server: 18.226.172.222
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-us-003.fastervpn.world
-- name: 加拿大
-  type: hysteria2
-  server: vpn-ca-001.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-- name: '荷兰 #3'
-  type: hysteria2
-  server: hysteria.udpgw.com
-  port: 8443
-  password: HowdyHysteria2023w0W
-  sni: sni-here.com
-- name: '德国 #2'
-  type: hysteria2
-  server: 85.204.107.169
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: grape-zet-ro-turbo.bumbleshrimp.com
-- name: '德国 #3'
-  type: hysteria2
-  server: 85.204.107.174
-  port: 8080
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-- name: '荷兰 #4'
-  type: hysteria2
-  server: 86.107.178.75
-  port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  sni: grape-zet-turbo-nl.yyuyy.com
-- name: '荷兰 #5'
-  type: hysteria2
-  server: 86.107.178.78
-  port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  sni: hopp-netherland-new.dynuddns.net
-- name: '美国 #1'
-  type: hysteria2
-  server: 82.39.214.98
-  port: 8080
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  sni: hopp-us.yyuyy.com
-- name: '波兰 #3'
-  type: hysteria2
-  server: go.wwwinternetvideo.click
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-- name: SG
-  type: hysteria2
-  server: vip-sg-2.hkd4fwmg.vip
-  port: 55793
-  password: ZYTopBPE6fGijECIcT3KxqFEpjQJ44ND
-  sni: vip-sg-2.hkd4fwmg.vip
-- name: '德国 #4'
-  type: hysteria2
-  server: ndge4.whit3.net
-  port: 443
-  password: a6cf4b28-ba72-4e8c-90f8-6a884107ab3c
-  sni: ndge4.whit3.net
-- name: '法国 #1'
-  type: hysteria2
-  server: dora3.api3-max.ru
-  port: 443
-  password: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  sni: dora3.api3-max.ru
-- name: '法国 #2'
-  type: hysteria2
-  server: dora4.api3-max.ru
-  port: 443
-  password: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  sni: dora4.api3-max.ru
-- name: '土耳其 #2'
-  type: hysteria2
-  server: gora4.api3-max.ru
-  port: 443
-  password: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  sni: gora4.api3-max.ru
-- name: 澳大利亚
-  type: hysteria2
-  server: 137.23.2.19
-  port: 443
-  password: b42d90fa667942aebc734d60
-  sni: rmgyvpn.rest
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: hysteria2
-  server: 181.214.99.162
-  port: 35000
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  sni: api.kermanshahi.org
-- name: 比利时
-  type: hysteria2
-  server: 113.30.152.25
-  port: 443
-  password: belgium_hysteria2_fastlane_a118d9y0r
-  sni: be1.h.fastlanehosting.ru
-- name: '美国 #2'
-  type: hysteria2
-  server: nl1.sferavpn.pro
-  port: 443
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: nl1.sferavpn.pro
-- name: '德国 #5'
-  type: hysteria2
-  server: 194.180.188.104
-  port: 8443
-  password: dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s
-  sni: keyhop-offshore.roxa.org
-- name: '德国 #6'
-  type: hysteria2
-  server: 194.180.188.97
-  port: 8443
-  password: dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s
-  sni: keyhop-offshore.roxa.org
-- name: '日本 #1'
-  type: hysteria2
-  server: jp.cryptoofarm.com
-  port: 443
-  password: ef18d810-719c-4bf1-83c6-615d01f217eb
-  sni: jp.cryptoofarm.com
-- name: '美国 #3'
-  type: hysteria2
-  server: uswx4.wxgqlfx.vip
-  port: 11683
-  password: fe475179-d8a8-420d-a4ac-3e415ed8dc72
-  sni: 144.225.187.153
-- name: '英国 #2'
-  type: hysteria2
-  server: 138.124.0.168
-  port: 8080
-  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  sni: hopp-legend-se.roxa.org
-- name: '英国 #3'
-  type: hysteria2
-  server: 222.167.212.81
-  port: 8080
-  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  sni: hopp-legend-se.roxa.org
-- name: '德国 #7'
-  type: hysteria2
-  server: de.1.23.h2corp.org
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
-- name: 新加坡
-  type: hysteria2
-  server: 13.229.82.184
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-- name: '新加坡 #1'
-  type: hysteria2
-  server: 47.129.155.42
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-- name: 🇺🇸139909 | ⚡️Telegram = t.me/S...
-  type: hysteria2
-  server: 54.213.89.22
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vk.com
-- name: '新加坡 #2'
-  type: hysteria2
-  server: 54.254.190.23
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
 - name: 🏓11@oneclickvpnkeys
   type: hysteria2
   server: 46.229.243.139
@@ -477,7 +11,7 @@ proxies:
   port: 8080
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-turbo-fr.roxa.org
-- name: '美国 #4'
+- name: '美国 #3'
   type: hysteria2
   server: faq.wwwinternetvideo.click
   port: 443
@@ -761,19 +295,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: 🇩🇪DE_1|3.0MB/s
-  type: hysteria2
-  server: de1.sferavpn.pro
-  port: 443
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: de1.sferavpn.pro
-- name: 🇺🇸US_1|1.1MB/s
-  type: ss
-  server: 129.146.75.36
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: S4/cn46uCvcxFYEqFddqHdwLcF/ba2L60uH7TW1I12k=
-- name: 🇭🇰HK_2|4.4MB/s
+- name: 🇭🇰HK_2|1.6MB/s
   type: vmess
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -785,50 +307,26 @@ proxies:
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
-- name: 🇦🇪AE_1|1.3MB/s
+- name: 🇯🇵JP_1|3.8MB/s
   type: vless
-  server: 151.242.160.111
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  server: jp4-r.link-t7.com
+  port: 10034
+  uuid: D8ED7FFD-7AA8-4EEB-9020-18A1A38AE6CC
   tls: true
-  servername: eu-central.cendora.ru
-  flow: xtls-rprx-vision-udp443
-- name: 🇺🇸US_5|1.2MB/s
-  type: vless
-  server: 104.19.144.140
-  port: 8443
-  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
-  tls: true
-  servername: wzknb.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: wzknb.pages.dev
-    path: /proxyip=179.255.104.87,179.255.116.198,179.255.101.56,142.248.218.6,142.248.218.4,45.76.79.239,179.255.152.163,208.68.180.240fp=chrome
-- name: 🇺🇸US_6|2.4MB/s
-  type: vless
-  server: 13.143.139.174
-  port: 443
-  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
-  tls: true
-  servername: plb.webinarly.fun
+  servername: s0.awsstatic.com
   network: grpc
   grpc-opts:
-    grpc-service-name: edge.sync.v1
-- name: 🇸🇪SE_1|1.3MB/s
+    grpc-service-name: update
+- name: 🇸🇬SG_1|4.9MB/s
   type: vless
-  server: 31.76.34.102
-  port: 443
-  uuid: 423b1d79-08c4-0002-9d5e-c541f791b55f
+  server: sg3-r.link-t7.com
+  port: 10038
+  uuid: D8ED7FFD-7AA8-4EEB-9020-18A1A38AE6CC
   tls: true
-  servername: russia.cendora.ru
-  flow: xtls-rprx-vision-udp443
-- name: 🇳🇱NL_1|1.1MB/s
-  type: ss
-  server: 92.5.237.218
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5KKOLmUuOXRZDwtpcLxGtQqcW1EaY0klPWV5lvAQkYQ=
+  servername: d1.awsstatic.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
 - name: 🇩🇪_DE_德国_1
   type: vless
   server: 52.57.117.158
@@ -1833,3 +1331,465 @@ proxies:
   port: 7001
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
+- name: 🇺🇳 UN 219 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇺🇳 UN 220 SSS
+  type: ss
+  server: 23.157.40.20
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇺🇳 UN 221 SSS
+  type: ss
+  server: 23.162.200.225
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇺🇳 UN 222 SSS
+  type: ss
+  server: 23.162.200.149
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇨🇦 CA 223 SSS
+  type: ss
+  server: 134.195.196.178
+  port: 808
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇺🇳 UN 224 SSS
+  type: ss
+  server: 23.162.200.181
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇺🇳 UN 225 SSS
+  type: ss
+  server: 23.162.200.28
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 226 SSS
+  type: ss
+  server: 23.157.40.66
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇺🇳 UN 227 SSS
+  type: ss
+  server: 23.162.200.77
+  port: 5499
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: 🇺🇳 UN 228 SSS
+  type: ss
+  server: 23.162.200.189
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 229 SSS
+  type: ss
+  server: 23.157.40.16
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇳 UN 230 SSS
+  type: ss
+  server: 23.162.200.181
+  port: 7306
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇨🇦 CA 231 SSS
+  type: ss
+  server: 134.195.196.178
+  port: 810
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇺🇳 UN 232 SSS
+  type: ss
+  server: 23.157.40.26
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇺🇳 UN 233 SSS
+  type: ss
+  server: 23.157.40.83
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇺🇳 UN 234 SSS
+  type: ss
+  server: 23.157.40.66
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇺🇳 UN 235 SSS
+  type: ss
+  server: 23.162.200.181
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇳 UN 236 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 237 SSS
+  type: ss
+  server: 23.157.40.66
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇨🇦 CA 238 SSS
+  type: ss
+  server: 134.195.196.178
+  port: 811
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇺🇳 UN 239 SSS
+  type: ss
+  server: 23.157.40.83
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇺🇳 UN 240 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇺🇳 UN 241 SSS
+  type: ss
+  server: 23.157.40.66
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇳 UN 242 SSS
+  type: ss
+  server: 23.157.40.6
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇺🇳 UN 243 SSS
+  type: ss
+  server: 23.157.40.20
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇺🇳 UN 244 SSS
+  type: ss
+  server: 23.157.40.26
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇳 UN 245 SSS
+  type: ss
+  server: 23.162.200.181
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇺🇳 UN 246 SSS
+  type: ss
+  server: 23.157.40.89
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇳 UN 247 SSS
+  type: ss
+  server: 23.157.40.120
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇺🇳 UN 248 SSS
+  type: ss
+  server: 23.157.40.26
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 249 TJN
+  type: trojan
+  server: 23.142.200.175
+  port: 443
+  password: 27876_t7d7f4e3f
+- name: 🇺🇳 UN 250 SSS
+  type: ss
+  server: 23.157.40.89
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 251 SSS
+  type: ss
+  server: 23.157.40.29
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇺🇳 UN 252 SSS
+  type: ss
+  server: 23.162.200.189
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇳 UN 253 SSS
+  type: ss
+  server: 23.157.40.26
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 254 SSS
+  type: ss
+  server: 23.157.40.24
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 255 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 256 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇺🇳 UN 257 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇺🇳 UN 258 SSS
+  type: ss
+  server: 23.157.40.29
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇺🇳 UN 259 SSS
+  type: ss
+  server: 23.162.200.181
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇳 UN 260 SSS
+  type: ss
+  server: 23.162.200.181
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇳 UN 261 SSS
+  type: ss
+  server: 23.162.200.225
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇺🇳 UN 262 SSS
+  type: ss
+  server: 23.162.200.225
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇳 UN 263 SSS
+  type: ss
+  server: 23.157.40.83
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 264 SSS
+  type: ss
+  server: 23.157.40.120
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇺🇳 UN 265 SSS
+  type: ss
+  server: 23.162.200.225
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇳 UN 266 SSS
+  type: ss
+  server: 23.157.40.120
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 267 SSS
+  type: ss
+  server: 23.157.40.89
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇺🇳 UN 268 SSS
+  type: ss
+  server: 23.157.40.120
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇳 UN 269 SSS
+  type: ss
+  server: 23.157.40.89
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇳 UN 270 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇺🇳 UN 271 SSS
+  type: ss
+  server: 23.157.40.20
+  port: 7306
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇺🇳 UN 272 SSS
+  type: ss
+  server: 23.157.40.81
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇺🇳 UN 273 SSS
+  type: ss
+  server: 23.157.40.120
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇺🇳 UN 274 SSS
+  type: ss
+  server: 23.157.40.81
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇺🇳 UN 275 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇺🇳 UN 276 SSS
+  type: ss
+  server: 23.157.40.83
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇺🇳 UN 277 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 278 SSS
+  type: ss
+  server: 23.157.40.87
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇳 UN 279 SSS
+  type: ss
+  server: 23.157.40.39
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇳 UN 280 SSS
+  type: ss
+  server: 23.157.40.120
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇺🇳 UN 281 SSS
+  type: ss
+  server: 23.157.40.83
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 282 SSS
+  type: ss
+  server: 23.157.40.89
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 283 SSS
+  type: ss
+  server: 23.157.40.89
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇸🇪 SE 285 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 286 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 288 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 290 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 292 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 294 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 295 TJN
+  type: trojan
+  server: 13.48.197.19
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇸🇪 SE 296 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 299 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 300 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 303 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 304 TJN
+  type: trojan
+  server: 13.49.201.57
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇸🇪 SE 305 TJN
+  type: trojan
+  server: 185.146.173.66
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇸🇪 SE 307 TJN
+  type: trojan
+  server: 13.49.197.205
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
