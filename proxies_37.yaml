@@ -1,179 +1,4 @@
 proxies:
-- name: 11|🇭🇰 香港2|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 10001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 11|🇭🇰 香港3|@ripaojiedian
-  type: ss
-  server: 112.28.141.77
-  port: 10006
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 11,12|香港4|@ripaojiedian
-  type: trojan
-  server: 18.181.83.46
-  port: 2944
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-- name: 11,12|香港5|@ripaojiedian
-  type: trojan
-  server: 43.206.117.36
-  port: 1103
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-- name: 11,12|日本|@ripaojiedian
-  type: trojan
-  server: 95.40.27.43
-  port: 16691
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-- name: 11|🇯🇵 日本2|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 40001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 11|🇯🇵 日本3|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 40002
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 11,12|新加坡3|@ripaojiedian
-  type: trojan
-  server: 95.40.27.43
-  port: 32434
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-- name: 11|🇺🇸 美国2|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 50003
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 11|🇺🇸 美国|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 50001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 11,12|美国3|@ripaojiedian
-  type: trojan
-  server: 18.163.118.157
-  port: 10418
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-- name: 11|🇨🇳 台湾|@ripaojiedian
-  type: ss
-  server: 36.33.35.105
-  port: 30001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇸🇬_SG_新加坡
-  type: ss
-  server: 140.245.117.116
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: y0lUf5WDcD0z4Vm/57XU5GWoPKS+07qwaHOhXiwQekA=
-- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  type: ss
-  server: 103.236.66.4
-  port: 10001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇩🇰_DK_丹麦
-  type: vless
-  server: 46.29.235.9
-  port: 443
-  uuid: d67af820-f54c-48ab-862c-19086357f276
-  tls: true
-- name: 🇨🇳_CN_中国->🇹🇼_TW_中国台湾
-  type: ss
-  server: 36.33.35.105
-  port: 30001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-  type: ss
-  server: 103.236.66.4
-  port: 40002
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇩🇪_DE_德国
-  type: vless
-  server: 89.34.90.68
-  port: 8443
-  uuid: fe8e2ffb-8796-408c-af5b-0d4774215e00
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇬🇧_GB_英国
-  type: ss
-  server: 13.135.252.176
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇵🇱_PL_波兰->🇳🇴_NO_挪威
-  type: trojan
-  server: kkvlvvq-a.catcat321.com
-  port: 20085
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  sni: hk.catxstar.com
-- name: 🇨🇳_CN_中国
-  type: vless
-  server: 120.227.1.43
-  port: 12528
-  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
-- name: 🇳🇴_NO_挪威
-  type: vless
-  server: 31.76.5.26
-  port: 13443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本_2
-  type: ss
-  server: 103.236.66.4
-  port: 40001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本_3
-  type: ss
-  server: 121.46.230.136
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇹🇭_TH_泰国
-  type: ss
-  server: 103.169.67.34
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港_1
-  type: ss
-  server: 36.33.35.105
-  port: 10006
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇬🇧_GB_英国_1
-  type: ss
-  server: 13.135.73.3
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  type: ss
-  server: 121.46.230.138
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   type: ss
   server: 103.236.66.4
@@ -405,81 +230,78 @@ proxies:
   port: 101
   password: 4568465a-a435-4569-b3ab-7f606018474f
   skip-cert-verify: true
-- name: 亚太地区+V2CROSS.COM
-  type: ss
-  server: 103.236.66.4
-  port: 40002
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
 - name: 英国+V2CROSS.COM
+  type: vless
+  server: 31.76.5.26
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: nordic.cendora.ru
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+- name: 巴西圣保罗+CloudFlare节点
   type: trojan
-  server: 176.97.66.175
+  server: 188.114.97.7
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 美国+V2CROSS.COM
+- name: 伊朗+V2CROSS.COM
+  type: trojan
+  server: 2.144.21.112
+  port: 40443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 英国+V2CROSS.COM
   type: vless
-  server: 152.53.33.73
-  port: 443
-  uuid: 85cc845e-644c-4148-8288-f0c03c83c1ec
+  server: 31.76.5.26
+  port: 13443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   tls: true
-  servername: at.quattro-tech.ru
+  servername: auto.cendora.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+Merit网络公司
-  type: trojan
-  server: dggg.wsone.icu
-  port: 443
-  password: M7v%w11Se*
-  sni: dggg.wsone.icu
-- name: 英国+V2CROSS.COM
-  type: hysteria2
-  server: faq.wwwinternetvideo.click
-  port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 104.18.40.152
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
 - name: 挪威+V2CROSS.COM
   type: hysteria2
   server: 138.124.0.168
   port: 8080
   password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
   sni: hopp-legend-se.roxa.org
-- name: 俄罗斯+V2CROSS.COM
-  type: ss
-  server: 62.76.234.92
-  port: 10901
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
-- name: 美国+CloudFlare节点
+- name: 美国+V2CROSS.COM
   type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
+  server: 140.248.185.253
+  port: 443
+  password: MiTiVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+- name: 俄罗斯+V2CROSS.COM
+  type: vless
+  server: 176.109.88.216
+  port: 443
+  uuid: 2c7f1414-87ae-4a01-9796-a02c067891a6
+  tls: true
+  servername: api-maps.yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 美国 CloudFlare节点
+  type: vmess
+  server: rush-w1niu.teeopp.online
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rush-w1niu.teeopp.online
+  network: ws
+  ws-opts:
+    headers:
+      Host: rush-w1niu.teeopp.online
+    path: /video/v4sx3q/zxzrurkc.m3u8
+- name: 英国+V2CROSS.COM
+  type: trojan
+  server: 176.97.66.175
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 安徽省合肥市+联通
-  type: ss
-  server: 36.33.35.105
-  port: 30001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
 - name: 荷兰+V2CROSS.COM
   type: vless
   server: 194.26.192.76
@@ -489,15 +311,28 @@ proxies:
   servername: nl1.tsumshop.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 拉脱维亚+V2CROSS.COM
+- name: 广东省广州市+电信IDC机房(校场西)
   type: vless
-  server: 195.123.210.168
-  port: 13443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+- name: 广东省广州市+腾讯云
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+- name: 美国+V2CROSS.COM
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-35
   tls: true
-  servername: auto.cendora.ru
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
 - name: 日本 001
   type: trojan
   server: 18.183.103.86
@@ -2504,4 +2339,278 @@ proxies:
   server: 31.15.16.154
   port: 13423
   uuid: 4a6013ef-36ed-4db7-9fde-f9a4f3171acf
+  tls: true
+- name: 美国 181
+  type: vless
+  server: 104.17.147.22
+  port: 2053
+  uuid: 4c41d237-630a-4d02-8ec0-c3b775190ee5
+  tls: true
+- name: 美国 182
+  type: vless
+  server: 162.159.137.54
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+    path: /sg-melbi
+- name: 美国 183
+  type: vless
+  server: 170.114.46.6
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+    path: /sg-melbi
+- name: 美国 184
+  type: vless
+  server: 172.64.146.86
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+    path: /sg-melbi
+- name: 美国 185
+  type: vless
+  server: 172.66.44.97
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+    path: /sg-melbi
+- name: 巴西 014
+  type: vless
+  server: 188.114.97.3
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+    path: /sg-melbi
+- name: 美国 186
+  type: vless
+  server: 51.91.251.198
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+    path: /sg-melbi
+- name: 德国 021
+  type: vless
+  server: 3.120.187.17
+  port: 36632
+  uuid: 4d259f79-e02b-4aa3-ebde-92c177df2d87
+  tls: true
+- name: 巴西 015
+  type: vless
+  server: 188.114.96.3
+  port: 80
+  uuid: 4d6d8e9b-0738-43c6-994f-ab475a7b3381
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: cxrolvpn.vipserver4.workers.dev
+    path: /c6L2QcfPLGJiqj1c?ed=2560
+- name: 巴西 016
+  type: vless
+  server: 188.114.97.3
+  port: 80
+  uuid: 4d6d8e9b-0738-43c6-994f-ab475a7b3381
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: cxrolvpn.vipserver4.workers.dev
+    path: /I7f6VOnkgtdCosoK?ed=2560
+- name: 美国 187
+  type: vless
+  server: 141.101.115.71
+  port: 443
+  uuid: 4e125438-1a39-440e-95fc-36b9dec03e5f
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: adderall.adaspoloandco.com
+    path: /faq
+- name: 美国 188
+  type: vless
+  server: 104.21.16.211
+  port: 80
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: nnmkl.2nn.ccwu.cc
+    path: /hBasD7EdpBQ0zGAzsYHmsMrnO
+- name: 美国 189
+  type: vless
+  server: 172.67.159.58
+  port: 80
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: bgn.1dd.ccwu.cc
+    path: /hBasD7EdpBQ0zGAzsYHmsMrnO
+- name: 美国 190
+  type: vless
+  server: 172.67.215.240
+  port: 80
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: nnmkl.2nn.ccwu.cc
+    path: /hBasD7EdpBQ0zGAzsYHmsMrnO
+- name: 美国 191
+  type: vless
+  server: 141.193.213.21
+  port: 443
+  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: amoosamiii.net
+    path: /poiuyws
+- name: 美国 192
+  type: vless
+  server: 13.51.238.84
+  port: 42316
+  uuid: 4f160454-fbf5-4e61-9d83-78f6b6c25d80
+  tls: true
+- name: 美国 193
+  type: vless
+  server: 104.19.176.230
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-71f6a5b5a016
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 84z7ogexunjs.hgzgyuedu79s.workers.dev
+    path: /stream/PANEL_ZEUS/71f6a5b5a016
+- name: 美国 194
+  type: vless
+  server: 104.24.189.34
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-71f6a5b5a016
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 84z7ogexunjs.hgzgyuedu79s.workers.dev
+    path: /stream/PANEL_ZEUS/71f6a5b5a016/loc-3
+- name: 美国 195
+  type: vless
+  server: 172.67.205.14
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-71f6a5b5a016
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 84z7ogexunjs.hgzgyuedu79s.workers.dev
+    path: /stream/PANEL_ZEUS/71f6a5b5a016
+- name: 美国 196
+  type: vless
+  server: 104.26.14.16
+  port: 8443
+  uuid: 51d19c6d-d0bf-4e0b-8eef-9a1d3f13c7e6
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: vip-romax-tiktok.hsjsak.ir
+    path: vless-ws/?ed
+- name: 美国 197
+  type: vless
+  server: 172.67.69.236
+  port: 8443
+  uuid: 51d19c6d-d0bf-4e0b-8eef-9a1d3f13c7e6
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: vip-romax-tiktok.hsjsak.ir
+    path: vless-ws/?ed
+- name: 美国 198
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: 52c0dab9-2187-49a4-8e31-f1db94bd7a9e
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: alesis724.global.ssl.fastly.net
+    path: /
+- name: 美国 199
+  type: vless
+  server: 104.16.250.153
+  port: 443
+  uuid: 52f86c87-afd4-48e4-8371-7874590b999b
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: ez-b9a267.ezaccess141636a.workers.dev
+    path: /?u=user1
+- name: 伊朗 014
+  type: vless
+  server: 151.242.160.94
+  port: 443
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+- name: 德国 022
+  type: vless
+  server: 185.55.240.199
+  port: 443
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+- name: 德国 023
+  type: vless
+  server: 194.24.161.133
+  port: 443
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+- name: 德国 024
+  type: vless
+  server: 194.24.161.140
+  port: 443
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+- name: 英国 011
+  type: vless
+  server: 82.38.4.126
+  port: 443
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  tls: true
+- name: 德国 025
+  type: vless
+  server: 176.65.151.52
+  port: 19819
+  uuid: 55dea358-343a-42d4-8a8b-4ddb30a2ec82
   tls: true

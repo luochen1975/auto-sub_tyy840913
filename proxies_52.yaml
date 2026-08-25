@@ -1,221 +1,4 @@
 proxies:
-- name: ❓Other_80|218KB/s|B007-260618 01
-  type: vless
-  server: 194.93.61.100
-  port: 443
-  uuid: 41e71ba7-d389-47aa-94f7-ed1f55fdbcdf
-  tls: true
-  servername: cdnjs.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇬🇧GB_134|394KB/s|B007-260618 01
-  type: vless
-  server: 109.169.37.129
-  port: 443
-  uuid: 4c44adcd-d4ff-48fc-a35d-8c882381a9ef
-  tls: true
-  servername: foodnetwork.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1195|275KB/s|B007-260618 01
-  type: vless
-  server: 160.153.0.2
-  port: 443
-  uuid: 506e4a91-1d05-5683-b84c-2113f673cb19
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-    path: /sg-amz
-- name: 🇳🇱NL_242|106KB/s|B007-260618 01
-  type: vless
-  server: 212.34.154.213
-  port: 8080
-  uuid: 80af4ec8-70a8-4432-ba61-0c7b4424dfca
-  tls: true
-  servername: the.world.of.the.champions.retrovip.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_132|465KB/s|B007-260618 01
-  type: vless
-  server: 91.99.51.173
-  port: 443
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-- name: 🇫🇷FR_1196|184KB/s|F003-260618 01
-  type: vless
-  server: liang92.dpdns.org
-  port: 443
-  uuid: 0aab6adc-104c-4339-8d25-09755ffe2cbd
-  tls: true
-  servername: liang92.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇷🇺RU_17|75KB/s|M003-260806 01
-  type: vless
-  server: 193.168.46.180
-  port: 443
-  uuid: 25f6470e-6d8d-4740-b3b5-b509f5b0757d
-  tls: true
-  servername: rruu.persik.host
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇷🇺RU_18|216KB/s|M003-260806 01
-  type: vless
-  server: 193.168.46.180
-  port: 443
-  uuid: 8a974558-ec0f-4a5a-bfbe-6b285c14daf3
-  tls: true
-  servername: rruu.persik.host
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇷🇺RU_19|81KB/s|M003-260806 01
-  type: vless
-  server: 193.168.46.180
-  port: 443
-  uuid: 8e1704e0-e774-4056-a7f9-e5269abb1870
-  tls: true
-  servername: rruu.persik.host
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: 🇦🇪AE_72|128KB/s|P001-260618 01
-  type: vless
-  server: pl2.lckdwn.ru
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  network: ws
-  ws-opts:
-    headers:
-      Host: pl2.lckdwn.ru
-    path: /
-- name: ❓Other_81|85KB/s|P002-260618 01
-  type: ss
-  server: 3.99.171.23
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇦UA_7|224KB/s|P002-260618 01
-  type: trojan
-  server: hkdcrtc-e.catcat321.com
-  port: 20066
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇩🇪DE_134|324KB/s|P002-260618 01
-  type: vless
-  server: 94.20.154.22
-  port: 443
-  uuid: a5194487-9b9a-462f-a047-ac7580d80201
-  tls: true
-  servername: kotakbla.b-cdn.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: kotakbla.b-cdn.net
-    path: /
-- name: 🇫🇷FR_1197|210KB/s|P002-260618 01
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: ad40a583-2d59-44ff-88cf-b5db0e1e00a7
-  network: ws
-  ws-opts:
-    headers:
-      Host: edgetunnel.kalmevebto.workers.dev
-    path: /
-- name: 🇳🇴NO_9|166KB/s|P002-260618 01
-  type: trojan
-  server: kkvlvvq-a.catcat321.com
-  port: 20085
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇹🇼TW_24|91KB/s|R002-260618 01
-  type: trojan
-  server: hkdcrtc-e.catcat321.com
-  port: 20025
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  sni: tw.catxstar.com
-  skip-cert-verify: true
-- name: 🇬🇧GB_136|277KB/s|R002-260618 01
-  type: ss
-  server: 18.175.227.220
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧GB_137|247KB/s|R002-260618 01
-  type: ss
-  server: 13.135.73.3
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧GB_138|153KB/s|R002-260618 01
-  type: ss
-  server: 140.238.64.207
-  port: 42345
-  cipher: chacha20-ietf-poly1305
-  password: e936372a-d976-4e25-8b3b-29c1a5841e06
-- name: 🇬🇧GB_139|247KB/s|R002-260618 01
-  type: ss
-  server: 3.8.123.237
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧GB_140|131KB/s|R002-260618 01
-  type: vless
-  server: 31.76.87.115
-  port: 443
-  uuid: ef2c48a7-c113-4610-9d81-b35779660d9e
-  tls: true
-  servername: fi2.oblaco.bet
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇴CO_3|284KB/s|R002-260618 01
-  type: vless
-  server: 157.137.238.218
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- name: 🇨🇦CA_51|176KB/s|R002-260618 01
-  type: ss
-  server: 35.182.226.235
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸US_642|320KB/s|R002-260618 01
-  type: vless
-  server: cf.laowu.life
-  port: 443
-  uuid: 9534fcd9-ded1-4fed-ab90-53a80e2aa799
-  tls: true
-  servername: cf.laowu.life
-  network: ws
-  ws-opts:
-    headers:
-      Host: cf.laowu.life
-    path: /api/v1/stream
-- name: 🇬🇧GB_143|535KB/s|R002-260618 01
-  type: vless
-  server: 45.89.60.105
-  port: 8443
-  uuid: 2a6a619b-3a18-0017-b40f-d028ea60465d
-  tls: true
-  servername: auto.quattro-tech.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇪IE_4|372KB/s|R002-260618 01
-  type: ss
-  server: 52.30.74.16
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇨🇱CL_1|369KB/s|R002-260618 01
-  type: ss
-  server: 129.151.99.94
-  port: 23345
-  cipher: chacha20-ietf-poly1305
-  password: be6cbb46-ebb0-4726-9202-6a3bac1d0afb
 - name: 🇺🇸US_646|233KB/s|V004-260618 01
   type: vless
   server: 162.35.231.94
@@ -1886,3 +1669,165 @@ proxies:
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: XF0klw7870vXn3uQIxe19Q
+- name: 未知 SS-250 | free-nodes
+  type: ss
+  server: vpna.poorifast.ir
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: XFPpyuqk3H0Y8JVpVGqSJw
+- name: 未知 SS-251 | free-nodes
+  type: ss
+  server: 161.118.210.227
+  port: 56927
+  cipher: chacha20-ietf-poly1305
+  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
+- name: 未知 SS-252 | free-nodes
+  type: ss
+  server: 168.107.93.104
+  port: 56927
+  cipher: chacha20-ietf-poly1305
+  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
+- name: 未知 SS-253 | free-nodes
+  type: ss
+  server: 134.98.145.69
+  port: 45819
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+- name: 未知 SS-254 | free-nodes
+  type: ss
+  server: 144.21.34.152
+  port: 45819
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+- name: 未知 SS-255 | free-nodes
+  type: ss
+  server: 152.70.53.15
+  port: 45819
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+- name: 未知 SS-256 | free-nodes
+  type: ss
+  server: 158.101.199.246
+  port: 45819
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+- name: 未知 SS-257 | free-nodes
+  type: ss
+  server: 158.101.208.107
+  port: 45819
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+- name: 未知 SS-258 | free-nodes
+  type: ss
+  server: 193.123.37.158
+  port: 45819
+  cipher: chacha20-ietf-poly1305
+  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
+- name: 未知 SS-259 | free-nodes
+  type: ss
+  server: 129.148.49.241
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-260 | free-nodes
+  type: ss
+  server: 136.248.81.138
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-261 | free-nodes
+  type: ss
+  server: 137.131.170.144
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-262 | free-nodes
+  type: ss
+  server: 144.22.183.254
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-263 | free-nodes
+  type: ss
+  server: 147.15.107.7
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-264 | free-nodes
+  type: ss
+  server: 147.15.111.224
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-265 | free-nodes
+  type: ss
+  server: 147.15.15.231
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-266 | free-nodes
+  type: ss
+  server: 147.15.32.94
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-267 | free-nodes
+  type: ss
+  server: 147.15.51.28
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-268 | free-nodes
+  type: ss
+  server: 147.15.95.165
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-269 | free-nodes
+  type: ss
+  server: 163.176.1.85
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-270 | free-nodes
+  type: ss
+  server: 163.176.113.239
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-271 | free-nodes
+  type: ss
+  server: 163.176.114.47
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-272 | free-nodes
+  type: ss
+  server: 163.176.152.109
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-273 | free-nodes
+  type: ss
+  server: 163.176.178.63
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-274 | free-nodes
+  type: ss
+  server: 163.176.191.165
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-275 | free-nodes
+  type: ss
+  server: 163.176.191.41
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
+- name: 未知 SS-276 | free-nodes
+  type: ss
+  server: 163.176.198.213
+  port: 59319
+  cipher: chacha20-ietf-poly1305
+  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
