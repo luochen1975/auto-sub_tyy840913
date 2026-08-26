@@ -1,297 +1,225 @@
 proxies:
-- name: '@filembad'
+- name: '@ATOVPN'
   type: vless
-  server: rs2.univesalsrv.com
+  server: 159.69.193.221
+  port: 1234
+  uuid: cf546c96-ed5e-46cc-b080-1cacf1770a5c
+- name: 🇺🇸 美国 CNServer 21
+  type: vless
+  server: 104.21.74.8
   port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
   tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: 'Channel : @Daily_Configs'
-  type: vless
-  server: rs2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: '[28931] - Telegram : @V2All'
-  type: vless
-  server: rs2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: کانال ما
-  type: vless
-  server: rs2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: 🇩🇪 @ConfigV2RayNG
-  type: vless
-  server: rs2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: rs2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: Proxy_mtm🍐
-  type: vless
-  server: rs2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: '[28951] - Telegram : @V2All'
-  type: vless
-  server: rs2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: '[🇷🇸]t.me/ConfigV2RayNG'
-  type: vless
-  server: rs2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: filembad-158
-  type: vless
-  server: rs2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
-- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  type: vless
-  server: 31.76.76.26
-  port: 443
-  uuid: 2f956d32-8a67-4bc9-8995-e1621ad20ddc
-  network: ws
-  ws-opts:
-    path: /
-- name: گیگی ۵۵۰۰ @ATOVPN
-  type: vless
-  server: 89.34.230.155
-  port: 20615
-  uuid: 2fb65709-0be4-4003-b10b-86de70d9b75d
-- name: ✅  @vistav2ray  👈👈کانال ما ✅
-  type: vless
-  server: 66.78.40.202
-  port: 443
-  uuid: 302c2e89-6f2d-4500-90ce-26d075c7e84f
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '4'
-  type: vless
-  server: 66.78.40.202
-  port: 443
-  uuid: 302c2e89-6f2d-4500-90ce-26d075c7e84f
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@v2ray313 کانالمون ⚡'
-  type: vless
-  server: 66.78.40.202
-  port: 443
-  uuid: 302c2e89-6f2d-4500-90ce-26d075c7e84f
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ♾️𝗝𝗼𝗶𝗻➠🆔️@ATLAS_V2VPN🆓️📶‎🛰️526🌐🆕️
-  type: vless
-  server: 66.78.40.202
-  port: 443
-  uuid: 302c2e89-6f2d-4500-90ce-26d075c7e84f
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ♾️𝗝𝗼𝗶𝗻➠🆔️@ATLAS_V2VPN🆓️📶🔷️525🌐🆕️
-  type: vless
-  server: 66.78.40.202
-  port: 443
-  uuid: 302c2e89-6f2d-4500-90ce-26d075c7e84f
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@leviconfigs🪐-3'
-  type: vless
-  server: 66.78.40.202
-  port: 443
-  uuid: 302c2e89-6f2d-4500-90ce-26d075c7e84f
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ❤️‍🔥 کانال تلگرام HiByeVPNN@
-  type: vless
-  server: 104.16.6.70
-  port: 443
-  uuid: 30693e15-1014-443b-88dd-1232b55a06b6
-  tls: true
-  servername: sub.rfiksma.top
+  servername: vps.181110.xyz
   network: ws
   ws-opts:
     headers:
-      Host: mos.rfiksma.top
+      Host: vps.181110.xyz
+    path: /cf63446e-vl
+- name: 🇺🇸 美国 CNServer 15
+  type: vless
+  server: 104.21.80.209
+  port: 443
+  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
+  tls: true
+  servername: vps.181110.xyz
+  network: ws
+  ws-opts:
+    headers:
+      Host: vps.181110.xyz
+    path: /cf63446e-vl
+- name: 🇺🇸 美国 CNServer 16
+  type: vless
+  server: 162.159.160.22
+  port: 443
+  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
+  tls: true
+  servername: vps.181110.xyz
+  network: ws
+  ws-opts:
+    headers:
+      Host: vps.181110.xyz
+    path: /cf63446e-vl
+- name: 🇺🇸 美国 CNServer 25
+  type: vless
+  server: cf.0sm.com
+  port: 443
+  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
+  tls: true
+  servername: vps.181110.xyz
+  network: ws
+  ws-opts:
+    headers:
+      Host: vps.181110.xyz
+    path: /cf63446e-vl
+- name: 🇺🇸 美国 CNServer 17
+  type: vless
+  server: cfip.1323123.xyz
+  port: 443
+  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
+  tls: true
+  servername: vps.181110.xyz
+  network: ws
+  ws-opts:
+    headers:
+      Host: vps.181110.xyz
+    path: /cf63446e-vl
+- name: 🍑80@oneclickvpnkeys
+  type: vless
+  server: 116.202.19.249
+  port: 443
+  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
+- name: '@v2ray313 کانالمون 🤟🏻'
+  type: vless
+  server: rvg-production-a8ad.up.railway.app
+  port: 443
+  uuid: cfa68865-5010-b107-a538-85d6d97516b8
+  tls: true
+  servername: rvg-production-a8ad.up.railway.app
+  network: ws
+  ws-opts:
+    headers:
+      Host: rvg-production-a8ad.up.railway.app
+    path: /ws/cfa68865-5010-b107-a538-85d6d97516b8
+- name: 'کانال تلگرام : Free_VPN_CH@'
+  type: vless
+  server: 45.130.125.69
+  port: 8443
+  uuid: cff6f361-828a-43c8-a8b5-8d10b32e57fb
+  tls: true
+  servername: zh.hollowspot.ir
+  network: ws
+  ws-opts:
+    headers:
+      Host: zh.hollowspot.ir
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
+- name: '@V2rayng_Fast'
+  type: vless
+  server: 167.233.132.108
+  port: 443
+  uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@V2rayng_Fast 🇸🇪'
+  type: vless
+  server: 167.233.132.108
+  port: 443
+  uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 德国
+  type: vless
+  server: 46.225.156.169
+  port: 2087
+  uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: MTMVPN12
+  type: vless
+  server: 83.217.201.244
+  port: 445
+  uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+  tls: true
+  servername: www.avito.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: MTMVPN
+  type: vless
+  server: de.lobbytech.ru
+  port: 443
+  uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: Telegram 🆔@cnetvpn 🇩🇪
+  type: vless
+  server: de.lobbytech.ru
+  port: 443
+  uuid: d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 荷兰
+  type: vless
+  server: 94.237.124.107
+  port: 3389
+  uuid: d024662a-397e-4fac-9643-8b7939e6bf33
+- name: '@v2ray313 کانالمون 🇳🇱'
+  type: vless
+  server: 94.237.124.107
+  port: 3389
+  uuid: d024662a-397e-4fac-9643-8b7939e6bf33
+- name: ' telegram @mtmvpn'
+  type: vless
+  server: 66.33.22.224
+  port: 57573
+  uuid: d029c820-5db5-49fb-801a-8a75679e5bc7
+  tls: true
+  servername: is1-ssl.mzstatic.com
+  client-fingerprint: chrome
+- name: 🍑39@oneclickvpnkeys
+  type: vless
+  server: 208.103.161.5
+  port: 443
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
+  tls: true
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
     path: /
-- name: 🇯🇵 Join+Telegram:@Farah_VPN 🇯🇵
+- name: 🥎21@oneclickvpnkeys
   type: vless
-  server: 31.76.91.138
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
+  server: 208.103.161.5
+  port: 443
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
   tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@leviconfigs🪐-15'
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+    path: /
+- name: TEL:Father_vpn
   type: vless
-  server: 31.76.91.138
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
+  server: 45.130.125.0
+  port: 443
+  uuid: d08d180d-cb07-4d82-b1bd-1e42fa523cd7
   tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@leviconfigs🪐-3'
+  servername: ads.ruangguru.com.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: ads.ruangguru.com.cyylr.eu.cc
+    path: /sg-orcl
+- name: 🇨🇦 Join+Telegram:@Farah_VPN 🇨🇦
   type: vless
-  server: 31.76.91.138
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
+  server: 148.251.41.50
+  port: 10000
+  uuid: d096c0b7-2205-478f-9e2f-0c8366e5a2b8
   tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@V2rayng_Fast 🇳🇱'
-  type: vless
-  server: 31.76.91.138
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@mehrosaboran'
-  type: vless
-  server: 31.76.91.138
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@appsooner کانال تلگرام 🕊️'
-  type: vless
-  server: 31.76.91.138
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: Telegram:@v2rayng3
-  type: vless
-  server: 31.76.91.138
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇯🇵AZARBAYJAB1
-  type: vless
-  server: ja10.levikogjgfdd.ir
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇰🇷AZARBAYJAB1
-  type: vless
-  server: ja10.levikogjgfdd.ir
-  port: 2087
-  uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: ⚡️ 𝗡𝗲𝗧𝗠𝗲𝗹𝗶 ⚡️ | @prrofile_purple
+  servername: 3byyf8q0.qnts33mtgi0ebq9tjd34.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: 3byyf8q0.qnts33mtgi0ebq9tjd34.workers.dev
+    path: /
+- name: ✅  @vistav2ray  👈👈کانال ما ✅
   type: vless
   server: 199.232.78.159
   port: 443
-  uuid: 30a6ad20-2d4c-4c4d-a301-66b74d15f000
+  uuid: d0b812f3-a74a-45f5-ac3a-24bcc21b44ea
   tls: true
   servername: ssl.fastly.com
   network: ws
@@ -299,700 +227,1821 @@ proxies:
     headers:
       Host: lsjaoijji.global.ssl.fastly.neT
     path: /
-- name: نتورلد تو تلگرام جستجو کنید
-  type: vless
-  server: 45.76.87.125
-  port: 14750
-  uuid: 30f6c75f-8fcd-4555-854f-439f09d3e2e3
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-    path: /@Marisa_kristi
-- name: 🍑40@oneclickvpnkeys
-  type: vless
-  server: 45.76.87.125
-  port: 14750
-  uuid: 30f6c75f-8fcd-4555-854f-439f09d3e2e3
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-    path: /@Marisa_kristi
-- name: 🇩🇪 @Config_On کانال تلگرام
-  type: vless
-  server: www.speedtest.net
-  port: 80
-  uuid: 31146a3a-3b5f-478c-bf71-f8ae3bca430b
-  network: ws
-  ws-opts:
-    headers:
-      Host: ok-config-10.4zkaban.xyz
-    path: /@Config_On , @Config_On , @Config_On , @Config_On , @Config_On , @Config_On
-      , @Config_On , @Config_On , @Config_On , @Config_On , @Config_On , @Config_On
-      , @Config_On , @Config_On , @Config_On , @Config_On , @Config_On , @Config_On
-      , @Config_On , @Config_On , @Config_On , @Config_On , @Config_On , @Config_On
-- name: '@CUSTOMVPNSERVER'
-  type: vless
-  server: dd.openaccessnode.com
-  port: 504
-  uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
-  tls: true
-  servername: nobitex.ir
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: JNIR
-- name: '@KAFING_2'
-  type: vless
-  server: dd.openaccessnode.com
-  port: 504
-  uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
-  tls: true
-  servername: nobitex.ir
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: JNIR
-- name: 🇩🇪
-  type: vless
-  server: 104.18.1.1
-  port: 2053
-  uuid: 3193066d-6f38-4466-80b6-40ce3bcd4b54
-  tls: true
-  servername: late-leaf-f4d0.java00code.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: late-leaf-f4d0.java00code.workers.dev
-    path: /
-- name: 🇩🇪3
-  type: vless
-  server: time.is
-  port: 8443
-  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
-  tls: true
-  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
-  network: ws
-  ws-opts:
-    headers:
-      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
-    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0?ed=8443
-- name: '@Evay_vpn'
-  type: vless
-  server: 104.17.108.1
-  port: 443
-  uuid: 31d3bb30-fbb1-4e25-ac62-6dbca39fe439
-  tls: true
-  servername: aa.farxmode.ir
-- name: 🍑13@oneclickvpnkeys
-  type: vless
-  server: 193.23.194.167
-  port: 8443
-  uuid: 32349ee8-8551-45fa-a265-8704cec72936
-  tls: true
-  servername: neth.lckdwn.ru
-- name: '@hex_proxy ²'
-  type: vless
-  server: 193.23.194.167
-  port: 8443
-  uuid: 32349ee8-8551-45fa-a265-8704cec72936
-  tls: true
-  servername: neth.lckdwn.ru
-- name: '[28926] - Telegram : @V2All'
-  type: vless
-  server: 193.23.194.167
-  port: 8443
-  uuid: 32349ee8-8551-45fa-a265-8704cec72936
-  tls: true
-  servername: neth.lckdwn.ru
-- name: '@outline_ir'
-  type: vless
-  server: 193.23.194.167
-  port: 8443
-  uuid: 32349ee8-8551-45fa-a265-8704cec72936
-  tls: true
-  servername: neth.lckdwn.ru
-- name: '@B2Hub'
-  type: vless
-  server: 5.75.193.127
-  port: 443
-  uuid: 32894620-d039-4269-b57b-08647f3dc31c
-- name: '@meliproxyy'
-  type: vless
-  server: 5.75.193.127
-  port: 443
-  uuid: 32894620-d039-4269-b57b-08647f3dc31c
-- name: '🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆: @'
-  type: vless
-  server: 5.75.193.127
-  port: 443
-  uuid: 32894620-d039-4269-b57b-08647f3dc31c
-- name: '🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆: @v2ryNG01'
-  type: vless
-  server: 5.75.193.127
-  port: 443
-  uuid: 32894620-d039-4269-b57b-08647f3dc31c
 - name: '@FarazV2ray'
   type: vless
-  server: plot.whit3.net
+  server: 185.226.92.143
   port: 443
-  uuid: 32bf865b-e98c-494d-bcb6-23c3cde2429c
+  uuid: d0bc51a0-ba30-438d-82e2-84b7344273c2
+- name: 'Channel : @Daily_Configs'
+  type: vless
+  server: 109.169.84.146
+  port: 443
+  uuid: d0f6c857-c814-438a-83f8-f34232294194
   tls: true
-  servername: plot.whit3.net
+  servername: strapi.io
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '@erfanandroid'
+- name: ProxyMtpVPN-384
   type: vless
-  server: plot.whit3.net
+  server: 5iehome.cc
   port: 443
-  uuid: 32bf865b-e98c-494d-bcb6-23c3cde2429c
+  uuid: d1153291-7d6f-4528-b8b1-a8a4920a1a8b
   tls: true
-  servername: plot.whit3.net
+  servername: onisni.irandoc.info
+  network: ws
+  ws-opts:
+    headers:
+      Host: onisni.irandoc.info
+    path: /11030/api1
+- name: '@filembad'
+  type: vless
+  server: 194.93.61.95
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-9'
+- name: کانال ما
   type: vless
-  server: plot.whit3.net
+  server: 194.93.61.95
   port: 443
-  uuid: 32bf865b-e98c-494d-bcb6-23c3cde2429c
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: plot.whit3.net
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔵@chillguy_vpn
+  type: vless
+  server: 194.93.61.95
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@FarazV2ray'
+  type: vless
+  server: 194.93.61.95
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@Napsternetvirani'
+  type: vless
+  server: 194.93.61.95
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@meliproxyy'
+  type: vless
+  server: 194.93.61.95
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@vmesskhodam'
+  type: vless
+  server: 194.93.61.95
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 'Channel : @Daily_Configs'
   type: vless
-  server: plot.whit3.net
+  server: 194.93.61.95
   port: 443
-  uuid: 32bf865b-e98c-494d-bcb6-23c3cde2429c
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: plot.whit3.net
+  servername: cdnjs.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: MTMVPN
+- name: '[🏁]t.me/ConfigV2RayNG'
   type: vless
-  server: plot.whit3.net
+  server: 194.93.61.95
   port: 443
-  uuid: 32bf865b-e98c-494d-bcb6-23c3cde2429c
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: plot.whit3.net
+  servername: cdnjs.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '@MARAMBASHI 🇮🇹'
+- name: kurdconfig
   type: vless
-  server: plot.whit3.net
+  server: 194.93.61.95
   port: 443
-  uuid: 32bf865b-e98c-494d-bcb6-23c3cde2429c
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: plot.whit3.net
+  servername: cdnjs.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '@V2rayng_Fast 🇮🇹'
+- name: برای اتصال دائمی جوین شو🕖 TelegramID ⌲Express_freevpn 🪩
   type: vless
-  server: plot.whit3.net
+  server: 194.93.61.95
   port: 443
-  uuid: 32bf865b-e98c-494d-bcb6-23c3cde2429c
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: plot.whit3.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-4'
-  type: vless
-  server: plot.whit3.net
-  port: 443
-  uuid: 32bf865b-e98c-494d-bcb6-23c3cde2429c
-  tls: true
-  servername: plot.whit3.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: vpnsal
-  type: vless
-  server: 147.182.156.111
-  port: 8039
-  uuid: 32d851aa-b5f8-7d42-45cc-01e541b4cb90
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪All¹² | @BigSmoke_Config
-  type: vless
-  server: 147.182.156.111
-  port: 8039
-  uuid: 32d851aa-b5f8-7d42-45cc-01e541b4cb90
-  tls: true
-  servername: amp-api-edge.apps.apple.com
+  servername: cdnjs.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: ✅  @vistav2ray  👈👈کانال ما ✅
   type: vless
-  server: 185.168.195.211
-  port: 21527
-  uuid: 32ed7262-74d2-40ea-a038-6bf074bc463e
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: Telegram:@v2rayng3
-  type: vless
-  server: 185.168.195.211
-  port: 21527
-  uuid: 32ed7262-74d2-40ea-a038-6bf074bc463e
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 'channel : @freedomofinfor'
-  type: vless
-  server: 104.17.73.206
+  server: 194.93.61.95
   port: 443
-  uuid: 3321a819-889d-40b3-b8fa-f34208827ef1
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: o00o.snip.qzz.io
-  network: ws
-  ws-opts:
-    headers:
-      Host: o00o.snip.qzz.io
-    path: /Tel-@V2rayAlpha
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: vless
-  server: w.smarteracloud.com
-  port: 2096
-  uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
-  tls: true
-  servername: otthnu73.indosoxr.info
-- name: '@Hope_Net-join-us-on-Telegram'
-  type: vless
-  server: 199.247.5.104
-  port: 80
-  uuid: 33837aa4-a41f-441c-a0d5-fa7a8e18ae40
-  network: ws
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /wgTNq5m7eYC6zhndZEfzC
-- name: '@Daily_Configs'
-  type: vless
-  server: xhttpru.enotvpn.net
-  port: 443
-  uuid: 33c150b7-c0ca-4133-9a52-6f1207da9b8b
-  tls: true
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 'channel : @freedomofinfor'
-  type: vless
-  server: 104.20.1.252
-  port: 80
-  uuid: 33e1a095-1e25-4198-bfe7-ec312e4f98ee
-  network: ws
-  ws-opts:
-    headers:
-      Host: CREDibLe-pLaNt7ddV4jJ7et.OnEeaT.CO.
-    path: /?ed
-- name: 🇳🇱 - NL - @FreeOnlineVPN
-  type: vless
-  server: nodejs.org
-  port: 80
-  uuid: 33e1a095-1e25-4198-bfe7-ec312e4f98ee
-  network: ws
-  ws-opts:
-    headers:
-      Host: CREDibLe-pLaNt7ddV4jJ7et.OnEeaT.CO.
-    path: /?ed
-- name: '@prrofile_purple  ♥️👈 تلگرام'
-  type: vless
-  server: core.noneok.com
-  port: 443
-  uuid: 340e4de3-144b-49c4-ad72-b49b35713728
-  tls: true
-  servername: core.noneok.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-- name: 🇪🇪 Join+Telegram:@Farah_VPN 🇪🇪
-  type: vless
-  server: 95.85.224.51
-  port: 443
-  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
-  tls: true
-  servername: max.ru
+  servername: cdnjs.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 5🍑@oneclickvpnkeys
-  type: vless
-  server: 51.89.194.151
-  port: 2053
-  uuid: 34b7efee-3c88-440f-9495-92c12a0de50e
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 👉@V2RAYNG_IP 🚀VIP6
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@V2rayng3'
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@configprxy'
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@FarazV2ray'
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@confiig_hub'
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: MTMVPN
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: 🪢2@ConfigV2RayNG
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@icv2ray'
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '[28953] - Telegram : @V2All'
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '[🏁]t.me/ConfigV2RayNG'
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: kurdconfig
-  type: vless
-  server: 206.71.158.124
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
 - name: 🇳🇱@FreakConfig
   type: vless
-  server: 206.71.158.124
+  server: 194.93.61.95
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: dey.lnmarketplace.net
-- name: 🍥8@ConfigV2RayNG
-  type: vless
-  server: 2a14:3f87:f001:46::a
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: • 🇳🇱 | 𝗡𝗲𝘁𝗵𝗲𝗿𝗹𝗮𝗻𝗱𝘀 - @HesarWeb
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@TEHRANARGO'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@v2ray313 کانالمون 🌚'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@Selinc'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: تلگرام MTMVPN 5
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: 🎈14@ConfigV2RayNG
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@v2ray_phoenix'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@confiig_hub'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@icv2ray'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@meliproxyy'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@v2ray313 کانالمون ⚡'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: Proxy_mtm
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: Proxy_mtm🍊
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '[🏁]t.me/ConfigV2RayNG'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@appsooner کانال تلگرام 🕊️'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: ' telegram mtmvpn'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@leviconfigs🪐-14'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@v2rayng3'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: MTMVPN
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: Telegram:@v2rayng3
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: ‎🛰️ @TEHRANARGO
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@V2rayng_Fast'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@leviconfigs🪐-1'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@tootffarangi🍓-15'
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: MTMVPN🗾
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: Telegram 🆔@cnetvpn
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: '@SylphNet | 2026-07-12 21:21'
-  type: vless
-  server: bypass.fr-gt-01.com
-  port: 8443
-  uuid: 356ccb34-22cc-4446-a137-072bc60d65ca
-  tls: true
-  servername: storage.yandex.net
+  servername: cdnjs.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: '@filembad'
   type: vless
-  server: nsnsjsjjejejekeieieoooooo.fanzeka.ir
-  port: 11790
-  uuid: 3599c717-f4cc-42d9-91ce-d7da122c9707
+  server: 194.93.61.96
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: www.samsung.com
+  servername: cdnjs.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: کانال ما
   type: vless
-  server: nsnsjsjjejejekeieieoooooo.fanzeka.ir
-  port: 11790
-  uuid: 3599c717-f4cc-42d9-91ce-d7da122c9707
+  server: 194.93.61.96
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: www.samsung.com
+  servername: cdnjs.com
   client-fingerprint: chrome
-- name: canfingV2rayNG-166
+  flow: xtls-rprx-vision
+- name: 🔵@chillguy_vpn
   type: vless
-  server: 31.43.179.111
-  port: 2096
-  uuid: 359b9ad3-0009-4655-8872-d0ab566751d3
+  server: 194.93.61.96
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: d03298146e8e2fe6.hozheen.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: newgen14.hozheen.ir
-    path: /ws?ed=2560
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@Napsternetvirani'
+  type: vless
+  server: 194.93.61.97
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@meliproxyy'
+  type: vless
+  server: 194.93.61.97
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: configprxy
+  type: vless
+  server: 194.93.61.97
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: تو کانال نتورلت نباشید قطع میشن@networld_vpn
+  type: vless
+  server: 194.93.61.97
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🍑23@oneclickvpnkeys
+  type: vless
+  server: 194.93.61.97
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@FarazV2ray'
+  type: vless
+  server: 194.93.61.97
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@V2V2rayng_Fast'
+  type: vless
+  server: 194.93.61.97
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@vmesskhodam'
+  type: vless
+  server: 194.93.61.97
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '[🏁]t.me/ConfigV2RayNG'
+  type: vless
+  server: 194.93.61.97
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@filembad'
+  type: vless
+  server: 194.93.61.98
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: کانال ما
   type: vless
-  server: 31.43.179.111
-  port: 2096
-  uuid: 359b9ad3-0009-4655-8872-d0ab566751d3
+  server: 194.93.61.98
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: d03298146e8e2fe6.hozheen.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: newgen14.hozheen.ir
-    path: /ws?ed=2560
-- name: 🇰🇿152592 | ⚡️Telegram = t.me/SOSkeyNET
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇳🇱NL-🚀@VPNine1
   type: vless
-  server: 31.43.179.111
-  port: 2096
-  uuid: 359b9ad3-0009-4655-8872-d0ab566751d3
+  server: 194.93.61.98
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   tls: true
-  servername: d03298146e8e2fe6.hozheen.ir
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔵@chillguy_vpn
+  type: vless
+  server: 194.93.61.98
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🍑58@oneclickvpnkeys
+  type: vless
+  server: 94.183.157.209
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: s7.objcache.anti-zapret.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@meliproxyy'
+  type: vless
+  server: s4.arch.anti-zapret.com
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: ru.srv.anti-zapret.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: configprxy
+  type: vless
+  server: s4.arch.anti-zapret.com
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: ru.srv.anti-zapret.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔵@chillguy_vpn
+  type: vless
+  server: s4.arch.anti-zapret.com
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
+  tls: true
+  servername: ru.srv.anti-zapret.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: تو کانال نتورلت نباشید قطع میشن@networld_vpn
+  type: vless
+  server: bla-bla-bla-de.anti-zapret.com
+  port: 8443
+  uuid: d11613a1-2e1f-eac4-a275-aabd986b7ad1
+  tls: true
+  servername: bla-bla-bla-de.anti-zapret.com
+  client-fingerprint: chrome
+- name: 🍑32@oneclickvpnkeys
+  type: vless
+  server: bla-bla-bla-de.anti-zapret.com
+  port: 8443
+  uuid: d11613a1-2e1f-eac4-a275-aabd986b7ad1
+  tls: true
+  servername: bla-bla-bla-de.anti-zapret.com
+  client-fingerprint: chrome
+- name: '@hex_proxy ²'
+  type: vless
+  server: bla-bla-bla-de.anti-zapret.com
+  port: 8443
+  uuid: d11613a1-2e1f-eac4-a275-aabd986b7ad1
+  tls: true
+  servername: bla-bla-bla-de.anti-zapret.com
+  client-fingerprint: chrome
+- name: MTMVPN11
+  type: vless
+  server: 104.26.0.7
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
   network: ws
   ws-opts:
     headers:
-      Host: newgen14.hozheen.ir
-    path: /ws?ed=2560
+      Host: sertraline.adaspoloandco.com
+    path: /download.php
+- name: '@leviconfigs🪐-23'
+  type: vless
+  server: 104.26.0.7
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+    path: /download.php
+- name: '@tootffarangi🍓-8'
+  type: vless
+  server: 104.26.0.7
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+    path: /download.php
+- name: TELEGRAM-MARAMBASHI?ed=2560&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@MARAMBASHI
+    🇫🇮
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-MARAMBASHI?ed=512&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@MARAMBASHI
+    🇨🇦
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-MARAMBASHI?ed=512&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@V2rayng_Fast
+    🇨🇦
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-MARAMBASHI_MARAMBASHI?ed=2560&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@B2Hub
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-TOOTFFARANGI?ed=2560&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@B2Hub
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-TOOTFFARANGI?ed=2560&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@FarazV2ray
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-TOOTFFARANGI?ed=2560&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@V2ray_Alpha🏠
+    2
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-TOOTFFARANGI?ed=2560&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#configprxy
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: 'TELEGRAM-TOOTFFARANGI?ed=2560&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#☑➜چنلمون:
+    Express_freevpn@'
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-bored_vpn ?ed=512&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@bored_vpn
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-leviconfigs ?ed=512&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@leviconfigs🪐-12
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-leviconfigs?ed=512&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@V2rayng_Fast
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-leviconfigs?ed=512&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@leviconfigs🪐-8
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: TELEGRAM-leviconfigs_leviconfigs?ed=512&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#@leviconfigs🪐-4
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+- name: '@Iran_v2ray1'
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+    path: /download.php
+- name: '@leviconfigs🪐-13'
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+    path: /download.php
+- name: '@leviconfigs🪐-17'
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+    path: /download.php
+- name: '@leviconfigs🪐-7'
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+    path: /download.php
+- name: '@vpnserverrr ☂️'
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+    path: /download.php
+- name: '@meliproxyy'
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+- name: MTMVPN✨
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+- name: Proxy_mtm
+  type: vless
+  server: 172.67.74.10
+  port: 443
+  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+- name: 🇺🇲1
+  type: vless
+  server: time.is
+  port: 443
+  uuid: d195909a-eff4-489d-a261-955b904894cb
+  tls: true
+  servername: fREE.sERVer6PeeKCOnFIG.wOrkErs.dEv.
+  network: ws
+  ws-opts:
+    headers:
+      Host: free.server6peekconfig.workers.dev.
+    path: /eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
 - name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
   type: vless
-  server: 172.66.213.38
-  port: 2096
-  uuid: 35d2a009-4f71-4b99-85ef-369bb75908e1
+  server: 69.46.46.40
+  port: 443
+  uuid: d1da87ee-28d8-f2ae-1c2f-5b81d3b6679b
   tls: true
-  servername: golden-garden-d12d.sazrerd.workers.dev
+  servername: rvg-production-7574.up.railway.app
   network: ws
   ws-opts:
     headers:
-      Host: golden-garden-d12d.sazrerd.workers.dev
-    path: /?u
-- name: 📦 60.46 GB 𓏺 ∞ Day
+      Host: rvg-production-7574.up.railway.app
+    path: /ws/d1da87ee-28d8-f2ae-1c2f-5b81d3b6679b
+- name: 'کانال تلگرام : Free_VPN_CH@'
+  type: vless
+  server: almas4.alireza031.shop
+  port: 44873
+  uuid: d1df455e-55e1-43a0-a3de-78efdb79a212
+  network: ws
+  ws-opts:
+    headers:
+      Host: D2R57.divarcdn.com,0ziwu.snappfood.ir,BXTLd.yjc.ir,1QjBQ.digikala.com,7fYt7.tic.ir
+    path: /ALMAS4
+- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
+  type: vless
+  server: 154.222.9.166
+  port: 443
+  uuid: d2042070-c247-4226-a3ac-15337923e00d
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇪🇸139848 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 45.196.208.84
+  port: 443
+  uuid: d2042070-c247-4226-a3ac-15337923e00d
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🍑64@oneclickvpnkeys
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  network: ws
+  ws-opts:
+    path: /
+- name: '@Cfox_SerVer 🇩🇪'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@freenettir'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@meliproxyy'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@Capoit'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@FarazV2ray'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@Selinc'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@V2ray_Alpha🐘 6'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@V2rayng_Fast'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@leviconfigs🪐-13'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: Telegram:@v2rayng3
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: vpnsal
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: برای اتصال دائمی جوین شو🥏 TelegramID ⌲Express_freevpn 🪩
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: ✅  @vistav2ray  👈👈کانال ما ✅
+  type: vless
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
+  type: vless
+  server: xn-de.dbsll.ir
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: '@Capoit'
+  type: vless
+  server: xn-ht.dbsll.ir
+  port: 8080
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: 🇩🇪152631 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 23.251.47.193
+  port: 30011
+  uuid: d28c8147-7c3d-40ec-96e9-aec3995337dc
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@Marisa_kristi
+- name: 🥎38@oneclickvpnkeys
+  type: vless
+  server: 23.251.47.193
+  port: 30011
+  uuid: d28c8147-7c3d-40ec-96e9-aec3995337dc
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@Marisa_kristi
+- name: 🇩🇪DE-🚀@VPNine1
+  type: vless
+  server: 23.251.47.193
+  port: 30011
+  uuid: d28c8147-7c3d-40ec-96e9-aec3995337dc
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+    path: /@VPNine1
+- name: '@Ap_Ir6'
+  type: vless
+  server: 89.23.116.82
+  port: 1293
+  uuid: d2a8066a-1e0e-4098-8941-4acb50e9417a
+- name: '@Begoo_VPN ²⁷⁸'
+  type: vless
+  server: 77.221.141.20
+  port: 20851
+  uuid: d3074030-0133-4691-ac4c-f8b8321b522a
+- name: '@Bisto4_Service'
+  type: vless
+  server: 144.31.140.127
+  port: 443
+  uuid: d31aefb3-775b-4e87-a093-a4677addf10a
+  tls: true
+  servername: stackoverflow.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@FarazV2ray'
+  type: vless
+  server: 144.31.140.127
+  port: 443
+  uuid: d31aefb3-775b-4e87-a093-a4677addf10a
+  tls: true
+  servername: stackoverflow.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@tootffarangi🍓-15'
+  type: vless
+  server: 144.31.140.127
+  port: 443
+  uuid: d31aefb3-775b-4e87-a093-a4677addf10a
+  tls: true
+  servername: stackoverflow.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'Channel id: @ConfigV2RayNG 🇩🇪'
+  type: vless
+  server: 144.31.140.127
+  port: 443
+  uuid: d31aefb3-775b-4e87-a093-a4677addf10a
+  tls: true
+  servername: stackoverflow.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 💁🏻'
+  type: vless
+  server: 84.21.189.193
+  port: 443
+  uuid: d31aefb3-775b-4e87-a093-a4677addf10a
+  tls: true
+  servername: stackoverflow.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@meliproxyy'
+  type: vless
+  server: 104.16.57.85
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: edtunnel-csc.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: edtunnel-csc.pages.dev
+    path: /?ed=2048
+- name: '@Napsternetvirani'
+  type: vless
+  server: 79.174.92.85
+  port: 6443
+  uuid: d34a3c99-5ea8-488b-8df4-a20af43b740b
+  tls: true
+  servername: iv.kommersant.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: '@hopev2ray🧡'
+  type: vless
+  server: 104.18.32.47
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  servername: ov.iran-servers.shop
+  network: ws
+  ws-opts:
+    headers:
+      Host: ov.iran-servers.shop
+    path: /J5aLQOY1R9ONWYCM
+- name: '@hopev2ray❤️'
+  type: vless
+  server: 172.64.155.209
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  servername: ov.iran-servers.shop
+  network: ws
+  ws-opts:
+    headers:
+      Host: ov.iran-servers.shop
+    path: /J5aLQOY1R9ONWYCM
+- name: '@hopev2ray🩵'
+  type: vless
+  server: 172.64.155.209
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  servername: ov.iran-servers.shop
+  network: ws
+  ws-opts:
+    headers:
+      Host: ov.iran-servers.shop
+    path: /J5aLQOY1R9ONWYCM
+- name: 🇫🇷@V2RAYNG_IP
+  type: vless
+  server: cf.levikogjgfdd.ir
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  servername: ov.iran-servers.shop
+  network: ws
+  ws-opts:
+    headers:
+      Host: ov.iran-servers.shop
+    path: /J5aLQOY1R9ONWYCM
+- name: 🇫🇷AZARBAYJAB1
+  type: vless
+  server: cf.levikogjgfdd.ir
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  servername: ov.iran-servers.shop
+  network: ws
+  ws-opts:
+    headers:
+      Host: ov.iran-servers.shop
+    path: /J5aLQOY1R9ONWYCM
+- name: TELEGRAM-leviconfigs_leviconfigs?ed=512&security=tls&encryption=none&insecure=0&host=ov.iran-servers.shop&fp=chrome&type=ws&allowInsecure=0&sni=ov.iran-servers.shop#@leviconfigs🪐-3
+  type: vless
+  server: chatgpt.com
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+- name: '@appsooner کانال تلگرام 🕊️'
+  type: vless
+  server: chatgpt.com
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  servername: ov.iran-servers.shop
+  network: ws
+  ws-opts:
+    headers:
+      Host: ov.iran-servers.shop
+    path: /J5aLQOY1R9ONWYCM
+- name: '@V2rayng_market_1378_bot'
+  type: vless
+  server: millionaire.levikogjgfdd.ir
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  servername: ov.iran-servers.shop
+  network: ws
+  ws-opts:
+    headers:
+      Host: ov.iran-servers.shop
+    path: /J5aLQOY1R9ONWYCM
+- name: '@hopev2ray💕'
+  type: vless
+  server: 191.101.130.131
+  port: 38001
+  uuid: d38fb586-bec2-4892-f774-7789068e32d5
+- name: TEL;Father_vpn
+  type: vless
+  server: germany-vip.soft26.ir
+  port: 8443
+  uuid: d39664df-5bc0-4f49-9894-8f03b4150082
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: ❤️‍🔥 کانال تلگرام HiByeVPNN@
+  type: vless
+  server: 45.130.125.194
+  port: 8443
+  uuid: d3d046fa-d372-430a-8ed9-083d62c44efb
+  tls: true
+  servername: ssd.mojaz-persian-music.ir
+- name: 🔥 @free_conf_iran 🔥 7
+  type: vless
+  server: 45.130.125.194
+  port: 8443
+  uuid: d3d046fa-d372-430a-8ed9-083d62c44efb
+  tls: true
+  servername: vip.mojaz-persian-music.ir
+- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
+  type: vless
+  server: 194.5.65.36
+  port: 443
+  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
+  tls: true
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
+  type: vless
+  server: 194.5.65.36
+  port: 443
+  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
+  tls: true
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: ProxyMtpVPN-397
+  type: vless
+  server: 194.5.65.36
+  port: 443
+  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
+  tls: true
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: کانال ما
+  type: vless
+  server: 194.5.65.36
+  port: 443
+  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
+  tls: true
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇩🇪152710 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 194.5.65.36
+  port: 443
+  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
+  tls: true
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
+  type: vless
+  server: 87.58.205.88
+  port: 443
+  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+- name: '@hopev2ray❤️‍🔥'
+  type: vless
+  server: 168.222.140.205
+  port: 2200
+  uuid: d4aad26f-70b6-4411-8517-17f7b4281886
+  network: ws
+  ws-opts:
+    path: /v1
+- name: 🇩🇪 Join+Telegram:@Farah_VPN 🇩🇪
+  type: vless
+  server: 168.222.140.233
+  port: 2200
+  uuid: d4aad26f-70b6-4411-8517-17f7b4281886
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '@leviconfigs🪐-28'
+  type: vless
+  server: 185.206.170.114
+  port: 20184
+  uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57
+  tls: true
+  servername: jgirpgor3g54.vpvr4ib84nuv6hdkt.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🏓38@oneclickvpnkeys
+  type: vless
+  server: 2.27.9.209
+  port: 443
+  uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57
+  tls: true
+  servername: nodefulcrum.mooo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@leviconfigs🪐-19'
+  type: vless
+  server: jgirpgor3g54.vpvr4ib84nuv6hdkt.ru
+  port: 20184
+  uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57
+  tls: true
+  servername: jgirpgor3g54.vpvr4ib84nuv6hdkt.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@hex_proxy ²'
+  type: vless
+  server: nodefulcrum.mooo.com
+  port: 443
+  uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57
+  tls: true
+  servername: nodefulcrum.mooo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@hex_proxy ⁵'
+  type: vless
+  server: nodefulcrum.mooo.com
+  port: 443
+  uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57
+  tls: true
+  servername: nodefulcrum.mooo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@hex_proxy ⁶'
+  type: vless
+  server: nodefulcrum.mooo.com
+  port: 443
+  uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57
+  tls: true
+  servername: nodefulcrum.mooo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '😇Tel: @pPal03😇'
+  type: vless
+  server: 104.16.183.83
+  port: 80
+  uuid: d4e672e0-bc04-45c1-b710-df097fa41d23
+  network: ws
+  ws-opts:
+    headers:
+      Host: jolly-fog-9e08-ppal03.revog68198.workers.dev
+    path: /?ed=2560
+- name: '😇Tel: @pPal03😇'
+  type: vless
+  server: 104.24.219.162
+  port: 80
+  uuid: d4e672e0-bc04-45c1-b710-df097fa41d23
+  network: ws
+  ws-opts:
+    headers:
+      Host: jolly-fog-9e08-ppal03.revog68198.workers.dev
+    path: /?ed=2560
+- name: '@v2rayng3'
+  type: vless
+  server: 47.89.186.170
+  port: 55861
+  uuid: d51ed55c-d6dd-400b-aaf6-017c33969bfe
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'Telegram channel : @Daily_Configs'
+  type: vless
+  server: 194.110.207.48
+  port: 443
+  uuid: d551dc1e-a0d3-4d52-a8bb-756cb9dac0b2
+  tls: true
+  servername: kibi-institut.de
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray_phoenix'
+  type: vless
+  server: 194.110.207.48
+  port: 443
+  uuid: d551dc1e-a0d3-4d52-a8bb-756cb9dac0b2
+  tls: true
+  servername: kibi-institut.de
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸139736 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 95.182.114.74
+  port: 443
+  uuid: d5948eae-ef1b-45e4-81aa-d27076b56530
+- name: '[🇨🇦]t.me/ConfigV2RayNG'
+  type: vless
+  server: b2n.ir
+  port: 443
+  uuid: d5af4dfe-eaf1-460c-87aa-fefe930db0ba
+  tls: true
+  servername: chopin.kaftarkakolbesarwifi.com
+- name: ✅  @vistav2ray  👈👈کانال ما ✅
+  type: vless
+  server: 45.195.228.198
+  port: 443
+  uuid: d5b44b89-ca73-4b82-a494-a72054c31df3
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@leviconfigs🪐-5'
+  type: vless
+  server: 45.195.228.198
+  port: 443
+  uuid: d5b44b89-ca73-4b82-a494-a72054c31df3
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'کانال تلگرام : Free_VPN_CH@'
+  type: vless
+  server: 46.38.138.221
+  port: 8081
+  uuid: d5c88c60-0293-4356-ebd8-046560abfc4f
+- name: 新加坡
+  type: vless
+  server: 163.128.99.239
+  port: 443
+  uuid: d64d50bb-fe6f-49bd-bbfd-a6f02dc47d69
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'کانال تلگرام : Free_VPN_CH@'
+  type: vless
+  server: 143.20.236.51
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 🫂'
+  type: vless
+  server: 169.40.42.104
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'Channel : @Daily_Configs'
+  type: vless
+  server: 169.40.42.104
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸139822 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 169.40.42.133
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون ♥️'
+  type: vless
+  server: 169.40.42.133
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 🫶🏻'
+  type: vless
+  server: 169.40.42.133
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@icv2ray'
+  type: vless
+  server: 169.40.42.16
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'Channel : @Daily_Configs'
+  type: vless
+  server: 169.40.42.16
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸139899 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 169.40.42.16
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 😁'
+  type: vless
+  server: 169.40.42.173
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@hopev2ray❤️‍🩹'
+  type: vless
+  server: 169.40.42.179
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون ⭐'
+  type: vless
+  server: 169.40.42.179
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 🌚'
+  type: vless
+  server: 169.40.42.184
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 🥶'
+  type: vless
+  server: 169.40.42.184
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@leviconfigs🪐-5'
+  type: vless
+  server: 169.40.42.212
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 💕'
+  type: vless
+  server: 169.40.42.212
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 🔥'
+  type: vless
+  server: 169.40.42.212
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2rayng3'
+  type: vless
+  server: 169.40.42.212
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@leviconfigs🪐-12'
+  type: vless
+  server: 169.40.42.225
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
+  type: vless
+  server: 169.40.42.232
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'Channel : @Daily_Configs'
+  type: vless
+  server: 169.40.42.52
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸139823 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 169.40.42.75
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vless
+  server: 169.40.42.75
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 🥶'
+  type: vless
+  server: 169.40.42.89
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'Channel : @Daily_Configs'
+  type: vless
+  server: 169.40.42.90
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: T.me/Vpn_Mafia 🇺🇸
+  type: vless
+  server: 169.40.42.95
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@icv2ray'
+  type: vless
+  server: 169.40.42.95
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'Channel : @Daily_Configs'
+  type: vless
+  server: 169.40.42.95
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vless
+  server: 169.40.42.95
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇧🇷 @V2RAYNG_IP
+  type: vless
+  server: br1.levikogjgfdd.ir
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇫AZARBAYJAB1
+  type: vless
+  server: br1.levikogjgfdd.ir
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸AZARBAYJAB1
+  type: vless
+  server: br1.levikogjgfdd.ir
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@vmess_ir'
+  type: vless
+  server: us3.levikogjgfdd.ir
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 1 🇺🇸 @V2RAYNG_IP
+  type: vless
+  server: us3.levikogjgfdd.ir
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 🌟'
+  type: vless
+  server: 46.29.235.9
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@FarazV2ray'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@MIGAVPNPRO'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@V2ray_Alpha🍏 6'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@V2rayng_Fast'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@bored_vpn'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@mehrosaboran'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@meliproxyy'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 'Channel id: @ConfigV2RayNG 🇫🇷'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: configprxy
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '☑➜چنلمون: Express_freevpn@'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '[🇫🇷]t.me/ConfigV2RayNG'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: • 🇳🇱 | 𝗡𝗲𝘁𝗵𝗲𝗿𝗹𝗮𝗻𝗱𝘀 - @HesarWeb
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@MARAMBASHI 🇹🇷'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@V2rayng_Fast 🇹🇷'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@freenettir'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: filembad-405
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷152663 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@MIGAVPNPRO 🇹🇷'
+  type: vless
+  server: 62.133.62.179
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@Cfox_SerVer 🇫🇷'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@filembad'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: کانال ما
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 60 MTMVPN
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@Bisto4_Service'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@Nexus_Panell چنل تلگرام'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@TEHRANARGO کانالمون 🌝'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@TEHRANARGO کانالمون 💔'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@icv2ray'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@leviconfigs🪐-12'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@leviconfigs🪐-16'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 🌝'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@v2ray313 کانالمون 💔'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: MTMVPN
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '[🇫🇷]t.me/ConfigV2RayNG'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: تلگرام MTMVPN 15
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: ♾️𝗝𝗼𝗶𝗻➠🆔️@ATLAS_V2VPN🆓️🛜🔷️517🌐🆕️
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷152640 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷FR-🚀@VPNine1
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🏎️ @ConfigV2RayNG
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: ' telegram @PROXY_MTM'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@Azaranv2ray'
+  type: vless
+  server: node5.get-tres.ru
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸139836 | ⚡️Telegram = t.me/SOSkeyNET
   type: vless
   server: 199.232.78.159
   port: 443
-  uuid: 35dd6ec8-acb7-44be-9cde-7f03c6b9ef5b
+  uuid: d6a909a7-d8d7-44e3-8c81-a0e1ddae231b
   tls: true
   servername: ssl.fastly.com
   network: ws
@@ -1000,1595 +2049,554 @@ proxies:
     headers:
       Host: SvnTeamChannel.global.ssl.fastly.net
     path: /
-- name: kurdconfig
+- name: '@Begoo_VPN ²⁶⁶'
   type: vless
-  server: 85.234.69.247
-  port: 2083
-  uuid: 35f955ac-6904-4eae-81d5-432dbb545c21
-- name: 🇩🇪@FreakConfig
-  type: vless
-  server: 85.234.69.247
-  port: 2083
-  uuid: 35f955ac-6904-4eae-81d5-432dbb545c21
-- name: 🇨🇦 Join+Telegram:@Farah_VPN 🇨🇦
-  type: vless
-  server: 95.164.53.184
-  port: 6443
-  uuid: 36582c2b-a3eb-4e4a-ad7f-50b6f2e697e7
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-    path: /@Marisa_kristi
-- name: '@Alpha_V2rayip'
-  type: vless
-  server: 104.18.12.149
-  port: 443
-  uuid: 3666e25b-a1c2-48ec-b060-075392b1aa6e
-  tls: true
-  servername: GERMAN.sarzamiiinahang.ir
-- name: '@Nexus_Panell چنل تلگرام'
-  type: vless
-  server: chatgpt-async-webps-prod-centralus-0.chatgpt.com
-  port: 443
-  uuid: 3666e25b-a1c2-48ec-b060-075392b1aa6e
-  tls: true
-  servername: german.sarzamiiinahang.ir
-- name: T.me/Vpn_Mafia 🏳️
-  type: vless
-  server: fn2-unlimited.pavilof.ir
-  port: 1020
-  uuid: 37182b68-6422-4414-9518-7df6776c0150
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: TEL;Father_vpn
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 371dd7e4-c3ff-42de-aebc-0ab3bc62fb2d
-  network: ws
-  ws-opts:
-    headers:
-      Host: daRk-CHOICEzJa8lf7vEO.SPORTLANd.cOmPany.
-    path: /?ed=2048
-- name: 🇸🇬 @GozargahVPN
-  type: vless
-  server: cncdn.cc
-  port: 80
-  uuid: 37c8b06a-25cf-42d7-b2ea-31d3c8561998
-  network: ws
-  ws-opts:
-    headers:
-      Host: imap.mmadcoffee.info
-    path: /14708/31d3c8561998/
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: vless
-  server: finland.netpllus.ir
-  port: 2095
-  uuid: 384bc9c9-28cc-54ae-812f-2847a473f5bf
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: 82.158.120.66
-  port: 4433
-  uuid: 388db6b7-93f3-4a43-805e-20d863dab397
-- name: MTMVPN🔒
-  type: vless
-  server: 82.158.120.66
-  port: 4433
-  uuid: 388db6b7-93f3-4a43-805e-20d863dab397
-- name: ✅  @vistav2ray  👈👈کانال ما ✅
-  type: vless
-  server: 82.158.120.66
-  port: 443
-  uuid: 388db6b7-93f3-4a43-805e-20d863dab397
-  tls: true
-  servername: rzqfntub2c6b.doprik.com
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: 82.158.120.66
-  port: 443
-  uuid: 388db6b7-93f3-4a43-805e-20d863dab397
-  tls: true
-  servername: rzqfntub2c6b.doprik.com
-- name: MTMVPN🔆
-  type: vless
-  server: 82.158.120.66
-  port: 443
-  uuid: 388db6b7-93f3-4a43-805e-20d863dab397
-  tls: true
-  servername: rzqfntub2c6b.doprik.com
-- name: 新加坡
-  type: vless
-  server: 66.42.62.84
-  port: 443
-  uuid: 389e0591-86d6-408f-bf24-18f611a0c94b
+  server: 171.97.18.114
+  port: 8443
+  uuid: d6c81f6d-24a8-46d9-a3bf-c38d51fc5fe5
   tls: true
   servername: www.apple.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: mci+@vpnsal @vpnsal @vpnsal
+- name: '@Lent_Gc'
   type: vless
-  server: mci.vpncustomize.website
-  port: 2096
-  uuid: 38a6b5c4-3534-4a31-9d77-81d3a06ede79
-  tls: true
-  servername: multi.TrV2ray.cfd
-  network: grpc
-  grpc-opts:
-    grpc-service-name: '@VPNCUSTOMIZE'
-- name: '@v2rayng3'
-  type: vless
-  server: tun.temas-bor.ir
+  server: 172.67.161.136
   port: 443
-  uuid: 38df5518-26c5-449b-98d9-a4f456f5f689
+  uuid: d713a25e-d96c-4755-94f4-9a0e0cd1ad68
   tls: true
-  servername: login.yahoo.com
-  client-fingerprint: chrome
-- name: 🇮🇷139880 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 185.212.49.141
-  port: 443
-  uuid: 39036971-c66f-423d-b304-caf61016c1df
-  tls: true
-  servername: www.aparat.com
-  client-fingerprint: chrome
-- name: TEL;Father_vpn
-  type: vless
-  server: 152.233.35.228
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  tls: true
-  servername: de1.fromblancwithlove.com
-- name: '@CUSTOMVPNSERVER'
-  type: vless
-  server: 172.64.152.23
-  port: 443
-  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
-  tls: true
-  servername: pages.dev
+  servername: bpb-PanEl-4e2C.SAkWra939.wORKErS.DEV
   network: ws
   ws-opts:
     headers:
-      Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
-    path: /eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-- name: '@KAFING_2'
+      Host: bpb-panel-4e2c.sakwra939.workers.dev
+    path: /eyJqdW5rIjoiVndBTWp2RGsyc0g4TlgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed
+- name: '@freenettir'
   type: vless
-  server: 172.64.152.23
+  server: 172.67.161.136
   port: 443
-  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
+  uuid: d713a25e-d96c-4755-94f4-9a0e0cd1ad68
   tls: true
-  servername: pages.dev
+  servername: bpb-PanEl-4e2C.SAkWra939.wORKErS.DEV
   network: ws
   ws-opts:
     headers:
-      Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
-    path: /eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-- name: Arshiavpn12
-  type: vless
-  server: 172.64.152.23
-  port: 443
-  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
-  tls: true
-  servername: pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
-    path: /eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=@abasbijan2560
-- name: '@KAFING_2'
-  type: vless
-  server: 188.114.96.3
-  port: 443
-  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
-  tls: true
-  servername: pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
-    path: /eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-- name: 美国
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-- name: '@Begoo_VPN ²⁷³'
-  type: vless
-  server: 89.167.12.115
-  port: 22579
-  uuid: 39ad12ba-914a-4aa1-a825-3ee4db7c0a52
+      Host: bpb-panel-4e2c.sakwra939.workers.dev
+    path: /eyJqdW5rIjoiVndBTWp2RGsyc0g4TlgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed
 - name: '@meliproxyy'
   type: vless
-  server: 85.155.226.133
+  server: 172.67.161.136
   port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  uuid: d713a25e-d96c-4755-94f4-9a0e0cd1ad68
   tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: configprxy
-  type: vless
-  server: 85.155.226.133
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪All¹⁰ | @BigSmoke_Config
-  type: vless
-  server: 85.155.226.133
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪All¹⁵ | @BigSmoke_Config
-  type: vless
-  server: 85.155.226.133
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪All⁵ | @BigSmoke_Config
-  type: vless
-  server: 85.155.226.133
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@FarazV2ray'
-  type: vless
-  server: 85.155.226.133
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Nexus_Panell چنل تلگرام'
-  type: vless
-  server: 85.155.226.133
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@v2ray_phoenix'
-  type: vless
-  server: 85.155.226.133
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel : @Daily_Configs'
-  type: vless
-  server: 85.155.226.133
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@hex_proxy ⁴'
-  type: vless
-  server: 85.155.226.134
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@icv2ray'
-  type: vless
-  server: 85.155.226.134
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🍑95@oneclickvpnkeys
-  type: vless
-  server: 85.155.226.137
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: configprxy
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: vpnsal
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪All¹⁴ | @BigSmoke_Config
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪All⁴ | @BigSmoke_Config
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪All⁹ | @BigSmoke_Config
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Ap_Ir6'
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@B2Hub'
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Nexus_Panell چنل تلگرام'
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  type: vless
-  server: 85.155.226.156
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🍑83@oneclickvpnkeys
-  type: vless
-  server: 85.155.226.168
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🍑85@oneclickvpnkeys
-  type: vless
-  server: 85.155.226.207
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@icv2ray'
-  type: vless
-  server: 85.155.226.211
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🍑92@oneclickvpnkeys
-  type: vless
-  server: 85.155.226.30
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🍑86@oneclickvpnkeys
-  type: vless
-  server: 85.155.226.37
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🍑87@oneclickvpnkeys
-  type: vless
-  server: 85.155.226.69
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 1🍑@oneclickvpnkeys
-  type: vless
-  server: 85.155.226.78
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 3🍑@oneclickvpnkeys
-  type: vless
-  server: 85.155.226.86
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🍑94@oneclickvpnkeys
-  type: vless
-  server: 85.155.226.92
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@appsooner کانال تلگرام 🕊️'
-  type: vless
-  server: nl1.levikogjgfdd.ir
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇱@iNetChnl
-  type: vless
-  server: inetchnl-production-af9e.up.railway.app
-  port: 443
-  uuid: 3a619f5e-af27-968b-e42a-39fa07424821
-  tls: true
-  servername: inetchnl-production-af9e.up.railway.app
+  servername: bpb-PanEl-4e2C.SAkWra939.wORKErS.DEV
   network: ws
   ws-opts:
     headers:
-      Host: inetchnl-production-af9e.up.railway.app
-    path: /ws/3a619f5e-af27-968b-e42a-39fa07424821
-- name: US+🇺🇸+|+@Bisto4_Service+|+61ED5D
+      Host: bpb-panel-4e2c.sakwra939.workers.dev
+    path: /eyJqdW5rIjoiVndBTWp2RGsyc0g4TlgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed
+- name: 🇨🇦152713 | ⚡️Telegram = t.me/SOSkeyNET
   type: vless
-  server: inetchnl-production-af9e.up.railway.app
+  server: 172.67.161.136
   port: 443
-  uuid: 3a619f5e-af27-968b-e42a-39fa07424821
+  uuid: d713a25e-d96c-4755-94f4-9a0e0cd1ad68
   tls: true
-  servername: inetchnl-production-af9e.up.railway.app
+  servername: bpb-PanEl-4e2C.SAkWra939.wORKErS.DEV
   network: ws
   ws-opts:
     headers:
-      Host: inetchnl-production-af9e.up.railway.app
-    path: /ws/3a619f5e-af27-968b-e42a-39fa07424821
-- name: 🇷🇺152505 | ⚡️Telegram = t.me/SOSkeyNET
+      Host: bpb-panel-4e2c.sakwra939.workers.dev
+    path: /eyJqdW5rIjoiVndBTWp2RGsyc0g4TlgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed
+- name: 🔵@chillguy_vpn
   type: vless
-  server: 185.147.27.183
-  port: 8443
-  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
-  tls: true
-  servername: user-6a8d949a.noooo.win
-  flow: xtls-rprx-vision-udp443
-- name: 🇷🇺RU-🚀@VPNine1
-  type: vless
-  server: 185.147.27.183
-  port: 8443
-  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
-  tls: true
-  servername: user-6a8d949a.noooo.win
-  flow: xtls-rprx-vision-udp443
-- name: 🇷🇺 Join+Telegram:@Farah_VPN 🇷🇺
-  type: vless
-  server: 45.91.52.125
+  server: 172.67.161.136
   port: 443
-  uuid: 3ab2615c-689d-463b-8990-a95013894348
+  uuid: d713a25e-d96c-4755-94f4-9a0e0cd1ad68
   tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@appsooner کانال تلگرام 🕊️'
-  type: vless
-  server: ddc-chr.astralweb.tech
-  port: 443
-  uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
-  tls: true
-  servername: ddc-chr.astralweb.tech
-- name: '@V2ray_Alpha🐘 8'
-  type: vless
-  server: francervewcwerxr24231c42v423c4v23v4.soft421.ir
-  port: 1152
-  uuid: 3b3c1bd6-3009-4d17-a27a-095e43157265
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: vpnsal
-  type: vless
-  server: francervewcwerxr24231c42v423c4v23v4.soft421.ir
-  port: 1152
-  uuid: 3b3c1bd6-3009-4d17-a27a-095e43157265
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 𝗝𝗼𝗶𝗻➠@TEHRANARGO
-  type: vless
-  server: fardad-no.berzema.ir
-  port: 6800
-  uuid: 3b5fddd1-b156-4544-80fb-7c3071e63bc1
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: '[28921] - Telegram : @V2All'
-  type: vless
-  server: cd3.postshup.ir
-  port: 2086
-  uuid: 3b715892-8610-4fdc-9086-647b36af5443
-- name: canfingV2rayNG-172
-  type: vless
-  server: cd3.postshup.ir
-  port: 2086
-  uuid: 3b715892-8610-4fdc-9086-647b36af5443
-- name: کانال ما
-  type: vless
-  server: cd3.postshup.ir
-  port: 2086
-  uuid: 3b715892-8610-4fdc-9086-647b36af5443
-- name: 🌍152568 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: cd3.postshup.ir
-  port: 2086
-  uuid: 3b715892-8610-4fdc-9086-647b36af5443
-- name: 🇹🇷 - TR - @FreeOnlineVPN
-  type: vless
-  server: ip-data.turkserver.ir
-  port: 2087
-  uuid: 3b7ec44b-66d8-4822-b772-f1f50c3fec95
-  tls: true
-  servername: all-tm1.netsnap.ir.
+  servername: bpb-PanEl-4e2C.SAkWra939.wORKErS.DEV
   network: ws
   ws-opts:
     headers:
-      Host: all-tm1.netsnap.ir.
-    path: /
-- name: 🇫🇷152632 | ⚡️Telegram = t.me/SOSkeyNET
+      Host: bpb-panel-4e2c.sakwra939.workers.dev
+    path: /eyJqdW5rIjoiVndBTWp2RGsyc0g4TlgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed
+- name: '@Lent_Gc'
   type: vless
-  server: 141.101.123.76
+  server: bpb-panel-4e2c.sakwra939.workers.dev
   port: 443
-  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
+  uuid: d713a25e-d96c-4755-94f4-9a0e0cd1ad68
   tls: true
-  servername: nahan-fog-af01.dfghttr2012.workers.dev
+  servername: bpb-PanEl-4e2C.SAkWra939.wORKErS.DEV
   network: ws
   ws-opts:
     headers:
-      Host: nahan-fog-af01.dfghttr2012.workers.dev
-    path: /sync
-- name: 🥎39@oneclickvpnkeys
-  type: vless
-  server: 141.101.123.76
-  port: 443
-  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
-  tls: true
-  servername: nahan-fog-af01.dfghttr2012.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: nahan-fog-af01.dfghttr2012.workers.dev
-    path: /sync
-- name: '@Cfox_SerVer 🇬🇧'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@filembad'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@erfanandroid'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@icv2ray'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[🏁]t.me/ConfigV2RayNG'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: filembad-177
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: برای اتصال دائمی جوین شو🕖 TelegramID ⌲Express_freevpn 🪩
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@MARAMBASHI 🇹🇷'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2rayng_Fast 🇹🇷'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@MIGAVPNPRO 🇹🇷'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-1'
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '🥑Tel: @pPal03🥑Join🥑'
-  type: vless
-  server: 103.21.244.75
-  port: 80
-  uuid: 3c1eef35-015b-48cd-9f0a-23d9ef5816cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: little-haze-1600-ppal03.gabonim122.workers.dev
-    path: /?ed=2560
-- name: '🥑Tel: @pPal03🥑Join🥑'
-  type: vless
-  server: 104.16.8.237
-  port: 80
-  uuid: 3c1eef35-015b-48cd-9f0a-23d9ef5816cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: little-haze-1600-ppal03.gabonim122.workers.dev
-    path: /?ed=2560
-- name: '118'
-  type: vless
-  server: subgift5.up.railway.app
-  port: 443
-  uuid: 3c3e05e8-abea-f9f8-6100-aaf974372db5
-  tls: true
-  servername: subgift5.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: subgift5.up.railway.app
-    path: /ws/3c3e05e8-abea-f9f8-6100-aaf974372db5
-- name: '@SylphNet | 2026-06-27 01:57'
-  type: vless
-  server: 116.206.124.228
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-    path: /ws
-- name: '@SylphNet | 2026-06-27 03:52'
-  type: vless
-  server: 116.206.124.228
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-    path: /ws
-- name: TEL;Father_vpn
-  type: vless
-  server: 5.75.196.174
-  port: 20141
-  uuid: 3ccf9767-6648-4efa-b13c-1cdef021c371
-  tls: true
-  servername: arvancloud.ir
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Net2ray 2'
-  type: vless
-  server: 206.72.205.152
-  port: 40296
-  uuid: 3d0135ce-97f0-4b2f-90c3-e8aaa01be795
+      Host: bpb-panel-4e2c.sakwra939.workers.dev
+    path: /eyJqdW5rIjoiVndBTWp2RGsyc0g4TlgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed
 - name: 'کانال تلگرام : Free_VPN_CH@'
   type: vless
-  server: 199.232.79.229
-  port: 80
-  uuid: 3d142a41-8e57-47d7-a579-f52c6eae79f7
-- name: '@CUSTOMVPNSERVER'
-  type: vless
-  server: cart.ankerios.ir
-  port: 8443
-  uuid: 3d4ea5b8-501a-426c-8ba3-554e089bc1d9
-- name: '@KAFING_2'
-  type: vless
-  server: cart.ankerios.ir
-  port: 8443
-  uuid: 3d4ea5b8-501a-426c-8ba3-554e089bc1d9
-- name: ⚡Telegram =@CUSTOMVPNSERVER
-  type: vless
-  server: cart.ankerios.ir
-  port: 8443
-  uuid: 3d4ea5b8-501a-426c-8ba3-554e089bc1d9
-- name: 🔥 @free_conf_iran 🔥 11
-  type: vless
-  server: 45.130.125.192
-  port: 8443
-  uuid: 3d7c04ea-0d63-4847-b916-1103cc6a488f
+  server: pxqhkkokwtgf.eu-central-1.clawcloudrun.com
+  port: 43144
+  uuid: d749c2c0-4ba4-45fe-f8f4-2f422d689a21
   tls: true
-  servername: vh.mojaz-persian-music.ir
-- name: '@outline_ir'
-  type: vless
-  server: 151.242.169.44
-  port: 443
-  uuid: 3e5cc22b-a471-412d-bf84-6da9c929a0d9
-  tls: true
-  servername: frantax.my3cx.de
-  client-fingerprint: chrome
+  servername: devblogs.microsoft.com
   flow: xtls-rprx-vision
-- name: چنل عضو شو @v2ra_config
+- name: 🇨🇦152574 | ⚡️Telegram = t.me/SOSkeyNET
   type: vless
-  server: 45.194.10.68
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2rayng_market_1378_bot'
-  type: vless
-  server: 78.17.150.127
-  port: 443
-  uuid: 3f02f5cd-3e03-436c-a151-02a9b9ac5966
-  tls: true
-  servername: smartcaptcha.yandexcloud.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'channel : @freedomofinfor'
-  type: vless
-  server: delilah.ns.cloudflare.com
-  port: 2096
-  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
-  tls: true
-  servername: hetz.x-smm.com
+  server: 104.21.11.152
+  port: 8080
+  uuid: d7a8ae86-9904-4f71-8fe4-d754ded610d7
   network: ws
   ws-opts:
     headers:
-      Host: hetz.x-smm.com
-    path: /45.76.183.217=49292
-- name: '@confing_v2rayy کانفینگ بیشتر در چنل 👈'
+      Host: server6.diwir81236.workers.dev
+    path: /eyJqdW5rIjoiOHNqQ3Bqc2dTZlppTEl1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed
+- name: 🚀@VPNine1
   type: vless
-  server: netherland.panelbaz.com
-  port: 5000
-  uuid: 3f176170-afe0-4847-91f9-64e05d004eec
+  server: 104.21.11.152
+  port: 8080
+  uuid: d7a8ae86-9904-4f71-8fe4-d754ded610d7
+  network: ws
+  ws-opts:
+    headers:
+      Host: server6.diwir81236.workers.dev
+    path: /eyJqdW5rIjoiOHNqQ3Bqc2dTZlppTEl1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed
+- name: '@Hope_Net-join-us-on-Telegram'
+  type: vless
+  server: 152.70.239.134
+  port: 34237
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  tls: true
+  servername: dns68.putata.eu.org
+  network: ws
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
+- name: کانال ما
+  type: vless
+  server: 152.70.239.134
+  port: 34237
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  tls: true
+  servername: dns68.putata.eu.org
+  network: ws
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
+- name: 🇰🇷152684 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 152.70.239.134
+  port: 34237
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  tls: true
+  servername: dns68.putata.eu.org
+  network: ws
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
+- name: '@appsooner کانال تلگرام 🕊️'
+  type: vless
+  server: uk.khabarvarzesh3.com
+  port: 443
+  uuid: d840e1ca-5432-425a-40e6-4f8791b6474d
+  tls: true
+  servername: cdn-apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '@appsooner کانال تلگرام 🕊️'
+  type: vless
+  server: pars.khabarvarzesh3.com
+  port: 443
+  uuid: d840e1ca-5432-425a-40e6-4f8791b6474d
   tls: true
   servername: play.google.com
   client-fingerprint: chrome
-- name: TEL;Father_vpn
-  type: vless
-  server: 18.192.50.101
-  port: 443
-  uuid: 3f3bb5cc-da8b-4551-8b76-ba223f1a5255
-- name: 🇩🇪 @GozargahVPN
-  type: vless
-  server: 18.192.50.101
-  port: 443
-  uuid: 3f3bb5cc-da8b-4551-8b76-ba223f1a5255
-- name: '119'
-  type: vless
-  server: 66.33.22.36
-  port: 443
-  uuid: 3f5ebdae-4d8e-db0c-41fd-15029566f398
-  tls: true
-  servername: subgift5.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: subgift5.up.railway.app
-    path: /ws/3f5ebdae-4d8e-db0c-41fd-15029566f398
-- name: 🇺🇸152637 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 45.86.245.225
-  port: 10444
-  uuid: 4005ddae-29bb-431e-a212-7737316d08ea
-  network: ws
-  ws-opts:
-    headers:
-      Host: vpnpolar.online
-    path: /beeline
-- name: 🥎44@oneclickvpnkeys
-  type: vless
-  server: 45.86.245.225
-  port: 10444
-  uuid: 4005ddae-29bb-431e-a212-7737316d08ea
-  network: ws
-  ws-opts:
-    headers:
-      Host: vpnpolar.online
-    path: /beeline
-- name: '@GozargahAzad|🇳🇱'
-  type: vless
-  server: qq.utiltools.ru
-  port: 443
-  uuid: 4054fdc2-ee80-4419-8a8e-d937df4719e2
-  tls: true
-  client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: Arshiavpn12
+  type: vless
+  server: 188.114.98.0
+  port: 2053
+  uuid: d84c0e47-7575-44cb-bc05-b55de8b51ca0
+  tls: true
+  servername: hz.badomzamini.uk
+  network: ws
+  ws-opts:
+    path: /latest?ed=2560
+- name: '@Begoo_VPN ²⁶⁸'
+  type: vless
+  server: 31.76.46.138
+  port: 20422
+  uuid: d8523317-503e-43ad-b2c3-e5f77d725848
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: ♾️𝗝𝗼𝗶𝗻➠🆔️@ATLAS_V2VPN🆓️🛜🔷️515🌐🆕️
+  type: vless
+  server: 31.76.46.138
+  port: 20422
+  uuid: d8523317-503e-43ad-b2c3-e5f77d725848
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇬🇧152635 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 23.81.34.207
+  port: 444
+  uuid: d89b3577-a0f4-4327-bb16-2313b02a25f2
+  tls: true
+  servername: fr.vpber.info
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇬🇧GB-🚀@VPNine1
+  type: vless
+  server: 23.81.34.207
+  port: 444
+  uuid: d89b3577-a0f4-4327-bb16-2313b02a25f2
+  tls: true
+  servername: fr.vpber.info
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🥎42@oneclickvpnkeys
+  type: vless
+  server: 23.81.34.207
+  port: 444
+  uuid: d89b3577-a0f4-4327-bb16-2313b02a25f2
+  tls: true
+  servername: fr.vpber.info
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: '@KAFING_2'
+  type: vless
+  server: creativecommons.org
+  port: 443
+  uuid: d89d6641-3b1a-4f51-a194-9c9109fd21b6
+  tls: true
+  servername: DiprOX.pages.DEV
+  network: ws
+  ws-opts:
+    headers:
+      Host: diprox.pages.dev
+    path: /assets
+- name: '@KAFING_2'
+  type: vless
+  server: cf.gafe-marz.ir
+  port: 2083
+  uuid: d8ade4cc-c672-4195-964b-473f21584100
+  tls: true
+  servername: austrish.digishopcenter.ir
+  network: grpc
+  grpc-opts:
+    grpc-service-name: Love
+- name: 𝗡𝗲𝗧𝗠𝗲𝗹𝗶⚡️@prrofile_purple 🌩
+  type: vless
+  server: 178.83.157.130
+  port: 2551
+  uuid: d8b42cd5-a149-4356-9e61-000000000000
 - name: '@filembad'
   type: vless
-  server: qq.utiltools.ru
-  port: 443
-  uuid: 4054fdc2-ee80-4419-8a8e-d937df4719e2
-  tls: true
-  servername: qq.utiltools.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  server: 45.140.36.74
+  port: 1040
+  uuid: d8b42cd5-b149-4356-9e61-111111111111
 - name: کانال ما
   type: vless
-  server: qq.utiltools.ru
-  port: 443
-  uuid: 4054fdc2-ee80-4419-8a8e-d937df4719e2
+  server: 45.140.36.74
+  port: 1040
+  uuid: d8b42cd5-b149-4356-9e61-111111111111
+- name: 🇩🇪DE-🚀@VPNine1
+  type: vless
+  server: 45.140.36.74
+  port: 1040
+  uuid: d8b42cd5-b149-4356-9e61-111111111111
+- name: 🇬🇧152583 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 45.140.36.74
+  port: 1040
+  uuid: d8b42cd5-b149-4356-9e61-111111111111
+- name: 🔵@chillguy_vpn
+  type: vless
+  server: 45.140.36.74
+  port: 1040
+  uuid: d8b42cd5-b149-4356-9e61-111111111111
+- name: '@filembad'
+  type: vless
+  server: 45.140.36.74
+  port: 1056
+  uuid: d8b42cd5-b149-4356-9e61-333333333333
+- name: کانال ما
+  type: vless
+  server: 45.140.36.74
+  port: 1056
+  uuid: d8b42cd5-b149-4356-9e61-333333333333
+- name: 🇩🇪DE-🚀@VPNine1
+  type: vless
+  server: 45.140.36.74
+  port: 1056
+  uuid: d8b42cd5-b149-4356-9e61-333333333333
+- name: 🇬🇧152590 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 45.140.36.74
+  port: 1056
+  uuid: d8b42cd5-b149-4356-9e61-333333333333
+- name: '@filembad'
+  type: vless
+  server: 45.140.36.74
+  port: 1062
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: 🔵@chillguy_vpn
+  type: vless
+  server: 45.140.36.74
+  port: 1062
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: '@V2ray_Alpha👢 1'
+  type: vless
+  server: 45.140.36.74
+  port: 1062
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: '@freenettir'
+  type: vless
+  server: 45.140.36.74
+  port: 1062
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: '@meliproxyy'
+  type: vless
+  server: 45.140.36.74
+  port: 1062
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: کانال ما
+  type: vless
+  server: 45.140.36.74
+  port: 1062
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: 🇩🇪DE-🚀@VPNine1
+  type: vless
+  server: 45.140.36.74
+  port: 1062
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: 🇬🇧152584 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 45.140.36.74
+  port: 1062
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: '@filembad'
+  type: vless
+  server: 45.140.36.74
+  port: 1063
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: کانال ما
+  type: vless
+  server: 45.140.36.74
+  port: 1063
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: 🇩🇪DE-🚀@VPNine1
+  type: vless
+  server: 45.140.36.74
+  port: 1063
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: 🇬🇧152589 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vless
+  server: 45.140.36.74
+  port: 1063
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+- name: '@SylphNet | 2026-06-27 03:57'
+  type: vless
+  server: 64.23.143.23
+  port: 34045
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
   tls: true
-  servername: qq.utiltools.ru
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  client-fingerprint: chrome
+- name: vless-132.243.174.112
+  type: vless
+  server: 132.243.174.112
+  port: 2054
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  tls: true
+  servername: www.swisscom.ch
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: '@V2ray_Alpha🐱 7'
+  type: vless
+  server: 132.243.174.112
+  port: 2054
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  tls: true
+  servername: www.swisscom.ch
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: '@V2ray_Alpha🐱 8'
+  type: vless
+  server: 132.243.174.112
+  port: 2054
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  tls: true
+  servername: www.swisscom.ch
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: '@vmesskhodam'
+  type: vless
+  server: 132.243.174.112
+  port: 2054
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  tls: true
+  servername: www.swisscom.ch
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: bisto_service
+  type: vless
+  server: 132.243.174.112
+  port: 2054
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  tls: true
+  servername: www.swisscom.ch
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: کانال ما
+  type: vless
+  server: 159.195.242.180
+  port: 443
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  tls: true
+  servername: at2.tsumshop.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇳🇱152647 | ⚡️Telegram = t.me/SOSkeyNET
+- name: 🇸🇬152673 | ⚡️Telegram = t.me/SOSkeyNET
   type: vless
-  server: qq.utiltools.ru
+  server: 159.195.242.180
   port: 443
-  uuid: 4054fdc2-ee80-4419-8a8e-d937df4719e2
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
   tls: true
-  servername: qq.utiltools.ru
+  servername: at2.tsumshop.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇳🇱152648 | ⚡️Telegram = t.me/SOSkeyNET
+- name: '@networld_vpn'
   type: vless
-  server: qq.utiltools.ru
-  port: 443
-  uuid: 4054fdc2-ee80-4419-8a8e-d937df4719e2
-  tls: true
-  servername: qq.utiltools.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Hope_Net-join-us-on-Telegram'
-  type: vless
-  server: 104.17.153.239
+  server: 188.114.97.6
   port: 8080
-  uuid: 406d0357-ecd8-46ce-afa8-22b0e139348c
+  uuid: d9224de0-fcff-4534-bfcb-1d7bdb1453e8
   network: ws
   ws-opts:
     headers:
-      Host: join-to.vmessorg.Community.
-- name: 🇨🇦152488 | ⚡️Telegram = t.me/SOSkeyNET
+      Host: blacknet0.blacknet89.workers.dev
+    path: /eyJqdW5rIjoiaEZzc0lFSmlmbHdNUWYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+- name: 🇨🇦152616 | ⚡️Telegram = t.me/SOSkeyNET
   type: vless
-  server: 104.17.153.239
+  server: 188.114.97.6
   port: 8080
-  uuid: 406d0357-ecd8-46ce-afa8-22b0e139348c
+  uuid: d9224de0-fcff-4534-bfcb-1d7bdb1453e8
   network: ws
   ws-opts:
     headers:
-      Host: join-to.vmessorg.Community.
+      Host: blacknet0.blacknet89.workers.dev
+    path: /eyJqdW5rIjoiaEZzc0lFSmlmbHdNUWYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
 - name: 🚀@VPNine1
   type: vless
-  server: 104.17.153.239
+  server: 188.114.97.6
   port: 8080
-  uuid: 406d0357-ecd8-46ce-afa8-22b0e139348c
+  uuid: d9224de0-fcff-4534-bfcb-1d7bdb1453e8
   network: ws
   ws-opts:
     headers:
-      Host: join-to.vmessorg.Community.
-- name: floor 555
+      Host: blacknet0.blacknet89.workers.dev
+    path: /eyJqdW5rIjoiaEZzc0lFSmlmbHdNUWYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+- name: 🥎17@oneclickvpnkeys
   type: vless
-  server: 104.16.7.70
-  port: 443
-  uuid: 406d8436-0eb9-4eb2-84fb-960e076ffba6
-  tls: true
-  servername: de.xn--q9jyb4c.online
-- name: '@free_conf_iran 👈 کانفیگ بیشتر'
-  type: vless
-  server: 104.16.7.70
-  port: 443
-  uuid: 406d8436-0eb9-4eb2-84fb-960e076ffba6
-  tls: true
-  servername: de.xn--q9jyb4c.online
-- name: '@brayirani •☕ | عضو شید قطع نشید.'
-  type: vless
-  server: 104.16.7.70
-  port: 443
-  uuid: 406d8436-0eb9-4eb2-84fb-960e076ffba6
-  tls: true
-  servername: de.xn--q9jyb4c.online
-- name: '@ai_duet تنهانت'
-  type: vless
-  server: 45.130.125.160
-  port: 443
-  uuid: 406d8436-0eb9-4eb2-84fb-960e076ffba6
-  tls: true
-  servername: de.lezzatzone.ir
-- name: 🇩🇪139762 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 167.233.54.146
-  port: 2087
-  uuid: 4077de3d-64cb-41cb-bee2-9178210e5fb4
-- name: '@proSSH'
-  type: vless
-  server: 104.20.6.134
-  port: 8880
-  uuid: 4085e7cf-989e-4f92-a9c6-891b4b6e8daa
+  server: 188.114.97.6
+  port: 8080
+  uuid: d9224de0-fcff-4534-bfcb-1d7bdb1453e8
+  network: ws
+  ws-opts:
+    headers:
+      Host: blacknet0.blacknet89.workers.dev
+    path: /eyJqdW5rIjoiaEZzc0lFSmlmbHdNUWYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
 - name: '@v2rayng3'
   type: vless
-  server: 5.254.14.165
-  port: 443
-  uuid: 408e08b4-4e08-4819-9eb6-0e660ec87530
+  server: 39.109.117.110
+  port: 43646
+  uuid: d92afe21-8e8b-42c7-98c2-8a33da64d28f
+  network: ws
+  ws-opts:
+    path: /d92afe21
+- name: SPDNET-2 🇳🇱
+  type: vless
+  server: 91.84.97.47
+  port: 14085
+  uuid: d96ed52a-95dc-4d8f-a12e-d83015aa626e
   tls: true
-  servername: cdn4-81.yahoo.com
+  servername: play.google.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇳🇱139783 | ⚡️Telegram = t.me/SOSkeyNET
+- name: '@Alfred_Config'
   type: vless
-  server: 95.179.159.222
-  port: 19436
-  uuid: 40b46f64-d8a5-4496-b86f-1d6db7d4bf39
-- name: جهت خرید به چنل  @cnetvpn مراجعه کنید 🇩🇪
-  type: vless
-  server: cf2.coixconqwe1.ir
+  server: 45.130.125.66
   port: 443
-  uuid: 40c4b66b-88d7-407a-a161-6b3dc0003cfa
+  uuid: d98c757d-2be3-49ff-8b9f-76ffdc924a61
   tls: true
-  servername: cdn-gr.coixconqwe2.ir.
+  servername: chrome.yas-nowin.ir
+  network: ws
+  ws-opts:
+    path: /cloud-vps
+- name: awlix_ir
+  type: vless
+  server: v2.jexu.ir
+  port: 2003
+  uuid: d997b836-7ad5-433e-af01-e0adc687dc6b
+- name: ✅  @vistav2ray  👈👈کانال ما ✅
+  type: vless
+  server: 69.46.46.102
+  port: 443
+  uuid: d99de2b5-782e-246e-383d-cbc44f8b1eeb
+  tls: true
+  servername: shahr-production-lkij4.up.railway.app
   network: ws
   ws-opts:
     headers:
-      Host: cdn-gr.coixconqwe2.ir.
-    path: /news
-- name: 🇺🇦 Join+Telegram:@Farah_VPN 🇺🇦
+      Host: shahr-production-lkij4.up.railway.app
+    path: /ws/d99de2b5-782e-246e-383d-cbc44f8b1eeb
+- name: '@FarazV2ray'
   type: vless
-  server: 193.238.153.15
+  server: 69.46.46.102
   port: 443
-  uuid: 40cfbd0a-f133-4174-8e03-ab0e587e1099
+  uuid: d99de2b5-782e-246e-383d-cbc44f8b1eeb
   tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: TEL;Father_vpn
-  type: vless
-  server: 217.179.221.234
-  port: 24986
-  uuid: 40e32120-08c8-4a48-aa0b-156b653f364f
-- name: 🇫🇮 - FI - @FreeOnlineVPN
-  type: vless
-  server: blog.arioonlineshop.ir
-  port: 13465
-  uuid: 4166019f-0448-4eda-b29a-f824ff017083
-- name: 🍑62@oneclickvpnkeys
-  type: vless
-  server: server16.peekconfig.workers.dev
-  port: 443
-  uuid: 419b7a2c-9fa2-4870-b58a-0498ccc7d6c4
-  tls: true
-  servername: sERveR16.pEeKCoNFIg.worKerS.DeV
+  servername: shahr-production-lkij4.up.railway.app
   network: ws
   ws-opts:
     headers:
-      Host: server16.peekconfig.workers.dev
-    path: /eyJqdW5rIjoiYXdUWFpSYnZubU5hIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSIsIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
-- name: '@ | 𝗙𝗮𝗦𝗧 💚'
+      Host: shahr-production-lkij4.up.railway.app
+    path: /ws/d99de2b5-782e-246e-383d-cbc44f8b1eeb
+- name: '@V2ray_Alpha🐇 9'
   type: vless
-  server: 162.35.231.31
+  server: 69.46.46.102
   port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  uuid: d99de2b5-782e-246e-383d-cbc44f8b1eeb
   tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Napsternetvirani'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@erfanandroid'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  servername: shahr-production-lkij4.up.railway.app
+  network: ws
+  ws-opts:
+    headers:
+      Host: shahr-production-lkij4.up.railway.app
+    path: /ws/d99de2b5-782e-246e-383d-cbc44f8b1eeb
 - name: '@meliproxyy'
   type: vless
-  server: 162.35.231.31
+  server: 69.46.46.102
   port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  uuid: d99de2b5-782e-246e-383d-cbc44f8b1eeb
   tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@mtmvpn'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@vmesskhodam'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: MTMVPN
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: Proxy_mtm
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[🇩🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: برای اتصال دائمی جوین شو🕖 TelegramID ⌲Express_freevpn 🪩
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@ConfigV2RayNG 🇨🇦'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@MARAMBASHI 🇨🇦'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2rayng_Fast 🇨🇦'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: vless-162.35.231.31
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  client-fingerprint: chrome
-- name: '@FarazV2ray'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2rayng_Fast'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-11'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@v2raybaaz'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@bored_vpn'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@mehrosaboran'
-  type: vless
-  server: 162.35.231.31
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 162.35.231.31.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Azaranv2ray'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: • 🇬🇧  | United Kingdom - @HesarWeb
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Alpha_V2rayip'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@FarazV2ray'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Napsternetvirani'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2rayng_Fast'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@erfanandroid'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@mtmvpn'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-12'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-14'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-3'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@v2raybaaz'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@vmesskhodam'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel : @Daily_Configs'
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: MTMVPN
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: MTMVPN🎱
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: Proxy_mtm
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: Proxy_mtm🍑
-  type: vless
-  server: 167.104.223.29
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.29.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@FarazV2ray'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2rayng_Fast'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@vmesskhodam'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: kurdconfig
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: برای اتصال دائمی جوین شو🕖 TelegramID ⌲Express_freevpn 🪩
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@vmess_ir'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@MARAMBASHI 🇩🇪'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@MARAMBASHI 🇮🇹'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2rayng_Fast 🇮🇹'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-6'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-9'
-  type: vless
-  server: 167.104.223.66
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: 167.104.223.66.sslip.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2ray_Alpha🪨 6'
-  type: vless
-  server: it1.murhost.network
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: it1.murhost.network
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: Bisto4_Service
-  type: vless
-  server: it1.murhost.network
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: it1.murhost.network
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: برای اتصال دائمی جوین شو🕖 TelegramID ⌲Express_freevpn 🪩
-  type: vless
-  server: it1.murhost.network
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: it1.murhost.network
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2ray_Alpha🪨 1'
-  type: vless
-  server: nl3.murhost.network
-  port: 443
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  tls: true
-  servername: nl3.murhost.network
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  servername: shahr-production-lkij4.up.railway.app
+  network: ws
+  ws-opts:
+    headers:
+      Host: shahr-production-lkij4.up.railway.app
+    path: /ws/d99de2b5-782e-246e-383d-cbc44f8b1eeb
