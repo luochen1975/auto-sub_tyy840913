@@ -1,6 +1,6 @@
 # 节点订阅统计与下载
 
-更新时间：2026-08-26 18:07 CST
+更新时间：2026-08-26 21:35 CST
 
 ## 节点统计：
 ```
@@ -76,9 +76,9 @@
 [警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  502 Server Error: Bad Gateway for url: https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL
 [警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  502 Server Error: Bad Gateway for url: https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL
 [警告] 下载失败：https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL  502 Server Error: Bad Gateway for url: https://bujidao.cc/sub?key=I6MmA30LKRgZfVzgiDWcW3KFbN5BGxWL
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f06ad0b1190>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f06ad0b0f50>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
-[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f06ad137f50>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f2551305790>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f25513073d0>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
+[警告] 下载失败：https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false  HTTPSConnectionPool(host='api.2c.lol', port=443): Max retries exceeded with url: /sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.2c.lol', port=443) at 0x7f2551306c50>, 'Connection to api.2c.lol timed out. (connect timeout=10)'))
 [警告] 下载失败：https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml  404 Client Error: Not Found for url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml
 [警告] 下载失败：https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml  404 Client Error: Not Found for url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml
 [警告] 下载失败：https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml  404 Client Error: Not Found for url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/trinity_clash.yaml
@@ -93,18 +93,18 @@
 [警告] 下载失败：https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt  404 Client Error: Not Found for url: https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
 [分组] 有效 68 条
 [分组] 失效 33 条
-[写入] ss.txt : 7655 条
+[写入] ss.txt : 7735 条
 [写入] ssr.txt : 2 条
-[写入] vmess.txt : 8011 条
-[写入] vless.txt : 15996 条
-[写入] trojan.txt : 4354 条
+[写入] vmess.txt : 8478 条
+[写入] vless.txt : 16931 条
+[写入] trojan.txt : 4286 条
 [写入] hysteria.txt : 3 条
-[写入] hysteria2.txt : 771 条
+[写入] hysteria2.txt : 760 条
 [写入] tuic.txt : 1 条
 [写入] naive_https.txt : 0 条
 [写入] wireguard.txt : 0 条
 [写入] clash.yaml : 0 条
-[完成] all.txt : 37675 条
+[完成] all.txt : 39078 条
 
 [YAML] 开始转换并过滤 Mihomo 不兼容节点...
 [过滤] URL 解析失败: Invalid IPv6 URL | trojan://8r<[9'l6hAO#🔥Join+Telegram:@Farah_VPN🟣...
@@ -132,9 +132,9 @@
 [过滤] 不支持的 SS cipher: chacha20 | ss://Y2hhY2hhMjA6QURabVJRVUdIVHdY@14.18.253.178:8339#%F0%9F%...
 [过滤] 不支持的 SS cipher: chacha20 | ss://Y2hhY2hhMjA6cjhqaDZaZXlrSHZC@14.18.253.178:8342#%F0%9F%...
 [过滤] 不支持的 SS cipher: chacha20 | ss://Y2hhY2hhMjA6ZDNiYUs2TlcySEVj@14.18.253.178:8349#%F0%9F%...
-[YAML] 原始节点: 37675
-[YAML] 过滤掉: 7431 条
-[YAML] 有效写入: 24374 条 → /home/runner/work/auto-sub_tyy840913/auto-sub_tyy840913/proxies.yaml
+[YAML] 原始节点: 39078
+[YAML] 过滤掉: 7908 条
+[YAML] 有效写入: 25148 条 → /home/runner/work/auto-sub_tyy840913/auto-sub_tyy840913/proxies.yaml
 [分组] 开始按 300 节点/组拆分...
 [分组] proxies_1.yaml : 300 条
 [分组] proxies_2.yaml : 300 条
@@ -217,8 +217,10 @@
 [分组] proxies_79.yaml : 300 条
 [分组] proxies_80.yaml : 300 条
 [分组] proxies_81.yaml : 300 条
-[分组] proxies_82.yaml : 74 条
-[分组] 共 82 组，保留完整版: /home/runner/work/auto-sub_tyy840913/auto-sub_tyy840913/proxies.yaml
+[分组] proxies_82.yaml : 300 条
+[分组] proxies_83.yaml : 300 条
+[分组] proxies_84.yaml : 248 条
+[分组] 共 84 组，保留完整版: /home/runner/work/auto-sub_tyy840913/auto-sub_tyy840913/proxies.yaml
 ```
 
 ## 下载链接：
