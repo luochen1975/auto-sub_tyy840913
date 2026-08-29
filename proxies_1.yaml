@@ -1,197 +1,317 @@
 proxies:
-- name: 🇨🇦 加拿大 | CAN
-  type: ss
-  server: 16.54.243.229
+- name: 🇦🇪 阿联酋 | ARE
+  type: vless
+  server: 84.235.250.237
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇦🇱 AL_33
+  type: vless
+  server: 85.155.228.197
+  port: 10000
+  uuid: 8ad85ca5-7572-4ee7-8a42-a2e5c9a0e479
+  tls: true
+- name: 🇦🇲 AM_36
+  type: vless
+  server: 2.56.207.67
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇦🇹 奥地利 | AUT
+  type: vless
+  server: 92.61.71.49
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇦🇹 奥地利 | AUT 2
+  type: trojan
+  server: 212.183.88.136
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+- name: 🇧🇬 保加利亚 | BGR
+  type: vless
+  server: 91.250.248.151
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇧🇬 保加利亚 | BGR 2
+  type: vless
+  server: 82.118.18.224
+  port: 443
+  uuid: bfb66910-f920-42c6-b52a-5f56e1dabcb4
+  tls: true
+- name: 🇧🇾 BY_46
+  type: vless
+  server: 185.179.82.246
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇨🇭 瑞士 | CHE
   type: vless
-  server: 185.145.245.179
+  server: 89.124.251.166
   port: 443
-  uuid: 618acefa-2ff1-41b0-a295-f8a08858a897
+  uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
   tls: true
-- name: 🇨🇭 瑞士 | CHE 2
-  type: vless
-  server: lv03.tranzit-net.ru
-  port: 443
-  uuid: 618acefa-2ff1-41b0-a295-f8a08858a897
-  tls: true
-- name: 🇨🇴 哥伦比亚 | COL
-  type: vless
-  server: 157.137.209.135
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- name: 🇨🇴 哥伦比亚 | COL 2
-  type: vless
-  server: 157.137.222.68
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- name: 🇨🇳 CN_10
+  type: ss
+  server: 121.46.230.138
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇨🇳 CN_11
+  type: ss
+  server: 121.46.230.232
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇨🇿 捷克 | CZE
   type: vless
-  server: 141.133.172.160
+  server: 193.124.57.19
   port: 443
-  uuid: 88f9c3c2-b3dc-44aa-9490-8e9bc8133535
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇩🇪 德国 | DEU
-  type: ss
-  server: 79.76.111.162
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4DVAG9NsTUzTh92HBVoFkMfiynB9a44tbm2jMaCwL5o=
-- name: 🇩🇪 德国 | DEU 2
-  type: vless
-  server: 31.77.202.252
-  port: 20532
-  uuid: b72fbee7-5ca7-4fb6-9d91-e92d803149dd
-  tls: true
-- name: 🇩🇪 德国 | DEU 3
-  type: ss
-  server: 130.61.81.43
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: t6L2d1ZjOdzQU4fn680FJUbIrKvpNzDdzNDnU1m1Z4k=
-- name: 🇩🇪 德国 | DEU 4
-  type: ss
-  server: 158.180.50.45
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 0x6PTrJCGMD7Pz0EQnpRsIKEJ3Cy55hPKAAgJiA58ic=
-- name: 🇩🇪 德国 | DEU 5
-  type: vless
-  server: 31.77.202.252
-  port: 443
-  uuid: b72fbee7-5ca7-4fb6-9d91-e92d803149dd
-  tls: true
-- name: 🇩🇪 德国 | DEU 6
   type: hysteria2
   server: fin14qr.wwwinternetvideo.click
   port: 443
   password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+- name: 🇩🇪 德国 | DEU 2
+  type: vless
+  server: fin2.helper-internet.com
+  port: 443
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  tls: true
+- name: 🇩🇪 德国 | DEU 3
+  type: vless
+  server: 85.192.26.210
+  port: 2053
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇩🇪 德国 | DEU 4
+  type: vless
+  server: 31.76.71.133
+  port: 443
+  uuid: 82d145c1-d691-4eef-9de1-9c316db4859a
+  tls: true
+- name: 🇩🇪 德国 | DEU 5
+  type: vless
+  server: 104.105.18.183
+  port: 23147
+  uuid: 2cf1f3f4-f949-495f-95d6-7f3f6675c13f
+  tls: true
+- name: 🇩🇪 德国 | DEU 6
+  type: vless
+  server: 89.46.236.118
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇩🇪 德国 | DEU 7
   type: vless
-  server: de.zhenzhang.org
-  port: 10000
-  uuid: 635dfef5-1417-4803-ad8d-3add9e4705e2
+  server: 31.76.71.133
+  port: 443
+  uuid: 80d02a71-54a5-4c5b-976d-5ee573c502af
   tls: true
 - name: 🇩🇪 德国 | DEU 8
   type: vless
-  server: 104.19.231.252
-  port: 443
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
+  server: 144.31.119.82
+  port: 2083
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   tls: true
   network: ws
   ws-opts:
     headers:
-      Host: froshali.dearhossein-taktaz.ir
+      Host: eded-52n.pages.dev
     path: /
 - name: 🇩🇪 德国 | DEU 9
   type: ss
-  server: 130.61.84.183
+  server: 92.5.185.32
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: nBUnNjOjb/9X9+Vprc/AkrCNcCbkHhNLQehcSFfrS9M=
+  password: zEoIXTFhh/Z+Mf6dR5l7gdbRVuB0tFFEFUqKxi8hOt8=
 - name: 🇩🇪 德国 | DEU 10
   type: vless
-  server: 188.114.97.3
+  server: jaber.speedoraa.ir
   port: 443
-  uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
+  uuid: be4cecbe-3658-4daf-8c9a-7b00898c7318
   tls: true
   network: ws
   ws-opts:
     headers:
-      Host: fast.iqiraq.shop.
+      Host: pas.speedoraa.ir
     path: /
 - name: 🇩🇪 德国 | DEU 11
-  type: vless
-  server: fast.iqiraq.shop
-  port: 443
-  uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: fast.iqiraq.shop
-    path: /
+  type: ss
+  server: 130.61.87.118
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: fvf8HrzAP5nIMchC+4SuGnNzU/nWjBbpe6moSwFGzWw=
 - name: 🇩🇪 德国 | DEU 12
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 54b9a633-61b3-4727-8d83-04a595431e25
-  network: ws
-  ws-opts:
-    headers:
-      Host: rb24.ir
-    path: /ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
+  type: ss
+  server: 158.180.59.229
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: kN17ITmzNrnFpaTp4JSEAy/PV/tKXm+zGT9GaeWm9hU=
 - name: 🇫🇷 法国 | FRA
-  type: vless
-  server: 35.180.96.123
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  type: trojan
+  server: 104.16.174.44
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: 🇫🇷 法国 | FRA 2
   type: trojan
-  server: 104.16.174.121
+  server: 104.20.6.134
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: 🇫🇷 法国 | FRA 3
   type: trojan
-  server: 104.18.152.219
+  server: 104.16.174.36
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 4
+  type: trojan
+  server: 172.67.74.2
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 5
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 6
+  type: trojan
+  server: 172.67.221.242
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 7
+  type: trojan
+  server: 104.16.174.121
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 8
+  type: trojan
+  server: 104.18.152.204
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 9
+  type: trojan
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 10
+  type: trojan
+  server: 104.16.174.22
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 11
+  type: trojan
+  server: 104.16.174.33
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 12
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷 法国 | FRA 13
+  type: trojan
+  server: 104.18.152.159
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: 🇬🇧 英国 | GBR
-  type: ss
-  server: 129.151.85.23
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IrAOLcmiZJ3pvgUluPeP0O59kPd6FLCTr1thF8LfKXU=
+  type: vless
+  server: 3.9.135.156
+  port: 51847
+  uuid: 391a01e9-b664-407b-9158-610fab3f5920
+  tls: true
 - name: 🇬🇧 英国 | GBR 2
   type: vless
-  server: 185.178.208.137
+  server: 50.7.193.131
   port: 443
-  uuid: 0a63c7fa-1cfd-4f54-8275-4cd50422c127
+  uuid: ec537bff-dc14-495c-b65f-65393ad7ee75
   tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: games22.fun
-    path: /v1/data/sync
 - name: 🇬🇧 英国 | GBR 3
-  type: ss
-  server: 144.24.228.8
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: aJDDrOnNoK7sY+Nppl9cwE3IsZKyeANsnXUcJETinYU=
-- name: 🇬🇧 英国 | GBR 4
   type: vless
-  server: adminv2.jikecloud.cc
+  server: 109.169.84.72
   port: 443
-  uuid: d896043a-440a-4377-88db-2dac132bc176
+  uuid: 7f437070-a14e-4355-bfbc-a6036a6bb040
   tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: adminv2.jikecloud.cc
-    path: /vless
-- name: 🇬🇧 英国 | GBR 5
+- name: 🇬🇧 英国 | GBR 4
   type: ss
-  server: 18.171.210.5
+  server: 35.176.118.152
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇬🇷 希腊 | GRC
+  type: vless
+  server: 38.54.29.210
+  port: 2053
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇭🇰 香港 | HKG
-  type: trojan
-  server: 209.248.32.117
-  port: 18293
-  password: HOrViv
-  sni: ctldl.windowsupdate.com
+  type: vless
+  server: 82.38.46.66
+  port: 15003
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+  tls: true
 - name: 🇭🇰 香港 | HKG 2
-  type: hysteria2
-  server: hk.mjhy2.com
-  port: 1443
-  password: dd1fd40d-7e11-43ee-8460-94a4170ccdc8
-- name: 🇭🇰 香港 | HKG 3
   type: vless
   server: hk2-r.link-t7.com
   port: 10127
@@ -200,84 +320,137 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇮🇪 爱尔兰 | IRL
-  type: ss
-  server: 34.244.150.119
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 | JPN
+- name: 🇭🇺 匈牙利 | HUN
   type: vless
-  server: 52.197.69.21
-  port: 16205
-  uuid: 3927f763-dc90-4053-a912-318de0dc6c03
-  tls: true
-- name: 🇯🇵 日本 | JPN 2
-  type: trojan
-  server: 209.248.32.116
-  port: 28133
-  password: HOrViv
-  sni: ctldl.windowsupdate.com
-- name: 🇯🇵 日本 | JPN 3
-  type: trojan
-  server: 209.248.32.117
-  port: 28104
-  password: HOrViv
-  sni: ctldl.windowsupdate.com
-- name: 🇯🇵 日本 | JPN 4
-  type: trojan
-  server: 209.248.32.117
-  port: 28105
-  password: HOrViv
-  sni: ctldl.windowsupdate.com
-- name: 🇯🇵 日本 | JPN 5
-  type: vless
-  server: 172.64.229.189
+  server: 37.221.210.113
   port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   tls: true
   network: ws
   ws-opts:
     headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇭🇺 匈牙利 | HUN 2
+  type: vless
+  server: 38.180.108.148
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇭🇺 匈牙利 | HUN 3
+  type: vless
+  server: 38.180.109.174
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇮🇪 爱尔兰 | IRL
+  type: ss
+  server: 52.16.228.57
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇮🇪 爱尔兰 | IRL 2
+  type: ss
+  server: 176.34.158.52
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇮🇱 以色列 | ISR
+  type: vless
+  server: 64.176.170.68
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇮🇷 伊朗 | IRN
+  type: vless
+  server: 185.143.233.5
+  port: 80
+  uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
+  network: ws
+  ws-opts:
+    headers:
+      Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
+    path: /
+- name: 🇮🇹 意大利 | ITA
+  type: vless
+  server: 89.46.70.144
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇯🇵 日本 | JPN
+  type: hysteria2
+  server: 140.238.43.0
+  port: 50160
+  password: 9c5be37406b6584005b8de0ee3734dd9
+- name: 🇯🇵 日本 | JPN 2
+  type: vless
+  server: 35.72.188.24
+  port: 41773
+  uuid: 440ffeb3-72ce-4301-8039-2bfc329c460b
+  tls: true
+- name: 🇯🇵 日本 | JPN 3
+  type: vless
+  server: 18.183.215.124
+  port: 28573
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  tls: true
+- name: 🇯🇵 日本 | JPN 4
+  type: vless
+  server: 13.231.69.194
+  port: 35229
+  uuid: caaa44ad-b3d5-4f55-9507-5b57942f6922
+  tls: true
+- name: 🇯🇵 日本 | JPN 5
+  type: vless
+  server: 13.114.89.187
+  port: 16611
+  uuid: 059fbe5b-21dc-413f-8f5c-dac39201914c
+  tls: true
 - name: 🇯🇵 日本 | JPN 6
   type: vless
-  server: 43.206.235.72
-  port: 15476
-  uuid: fa0286aa-e023-4f20-b634-e61e1e8c32aa
+  server: 54.178.54.169
+  port: 59497
+  uuid: 2c178adb-54c2-4eaa-8e30-1322d17922c4
   tls: true
 - name: 🇯🇵 日本 | JPN 7
-  type: trojan
-  server: 209.248.32.117
-  port: 28110
-  password: HOrViv
-  sni: download.windowsupdate.com
+  type: vless
+  server: 3.112.129.179
+  port: 36024
+  uuid: 7ad407b1-b8f3-4591-ae75-05cf4035e09e
+  tls: true
 - name: 🇯🇵 日本 | JPN 8
   type: vless
-  server: jp2-r.link-t7.com
-  port: 10032
-  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
+  server: 52.193.64.73
+  port: 33528
+  uuid: 519a17ff-05a3-4488-8fd8-47cf13d1310c
   tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇯🇵 日本 | JPN 10
-  type: trojan
-  server: 209.248.32.116
-  port: 28122
-  password: HOrViv
-  sni: ctldl.windowsupdate.com
-- name: 🇰🇷 韩国 | KOR
+- name: 🇯🇵 日本 | JPN 9
   type: vless
-  server: kr2-r.link-t7.com
-  port: 10047
-  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
+  server: 3.112.131.211
+  port: 48086
+  uuid: 620ca966-d78b-4c88-a5c9-acf13c7d252f
   tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇰🇷 韩国 | KOR 2
+- name: 🇰🇷 韩国 | KOR
   type: vless
   server: kr5-r.link-t7.com
   port: 10050
@@ -286,19 +459,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇰🇷 韩国 | KOR 4
-  type: ss
-  server: 121.46.230.138
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇰🇷 韩国 | KOR 5
-  type: vless
-  server: kghgalybqwqqnqnbdb.jiedddym.com
-  port: 25636
-  uuid: 0234cdd9-35ee-40a5-b698-9820f09a04f5
-  tls: true
-- name: 🇰🇷 韩国 | KOR 6
+- name: 🇰🇷 韩国 | KOR 2
   type: vless
   server: kr4-r.link-t7.com
   port: 10049
@@ -307,532 +468,237 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
+- name: 🇰🇷 韩国 | KOR 3
+  type: vless
+  server: kr2-r.link-t7.com
+  port: 10047
+  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇰🇿 哈萨克斯坦 | KAZ
+  type: vless
+  server: 2.27.130.172
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇱🇹 立陶宛 | LTU
   type: vless
-  server: lit9.helper-internet.com
-  port: 443
-  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  server: 194.135.83.166
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇲🇩 摩尔多瓦 | MDA
+  type: vless
+  server: 193.36.38.222
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇲🇾 马来西亚 | MYS
-  type: ss
-  server: 118.107.222.231
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  type: vless
+  server: 149.118.158.90
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇳🇱 荷兰 | NLD
   type: vless
-  server: 92.5.228.242
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: 188.114.97.6
+  port: 8880
+  uuid: 94977b19-6720-48a6-92fd-00238757ea30
+  network: ws
+  ws-opts:
+    headers:
+      Host: fragrant-credit-c4cf.148-e68.workers.dev
+    path: /
 - name: 🇳🇱 荷兰 | NLD 2
   type: vless
-  server: 141.148.233.24
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: 151.101.56.7
+  port: 443
+  uuid: 363c62f2-3f2e-4b20-87eb-78765a67df25
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: pane2.global.ssl.fastly.net
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
 - name: 🇳🇱 荷兰 | NLD 3
   type: trojan
-  server: 45.130.125.160
-  port: 443
+  server: 168.100.9.178
+  port: 2053
   password: humanity
-  sni: www.ignitelimit.com
+  sni: www.calmlunch.com
 - name: 🇳🇱 荷兰 | NLD 4
-  type: vless
-  server: ip.kickfarsi.com
-  port: 2087
-  uuid: 412d7fbe-7474-4f1d-86c6-7eebdc628f72
-  tls: true
+  type: ss
+  server: 84.235.172.207
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: gpgaPaPD/9AU6TgWL6Y2wqB6/8LyckOfyN3ZMBjtfaI=
 - name: 🇳🇱 荷兰 | NLD 5
-  type: hysteria2
-  server: 195.133.24.124
+  type: vless
+  server: 188.190.26.243
   port: 443
-  password: OD6gGbGU9a
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇳🇱 荷兰 | NLD 6
   type: vless
-  server: 141.148.237.3
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- name: 🇳🇱 荷兰 | NLD 7
-  type: vless
-  server: 69.46.46.123
+  server: 91.232.114.148
   port: 443
-  uuid: ccaf200f-e758-7629-152a-fcf7333d3d3a
+  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
   tls: true
   network: ws
   ws-opts:
     headers:
-      Host: norl-production-dc09.up.railway.app
-    path: /ws/ccaf200f-e758-7629-152a-fcf7333d3d3a
-- name: 🇳🇱 荷兰 | NLD 8
+      Host: vod.ensf.top
+    path: /api/v1/irc
+- name: 🇳🇴 挪威 | NOR
   type: vless
-  server: cloudflare.dev
+  server: 194.110.207.146
   port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
+  uuid: 9c3d8e77-82ca-48d5-9981-dfce97b20ab1
+  tls: true
+- name: 🇳🇴 挪威 | NOR 2
+  type: vless
+  server: 80.78.24.239
+  port: 2053
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   tls: true
   network: ws
   ws-opts:
     headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇳🇱 荷兰 | NLD 9
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇳🇴 挪威 | NOR 3
   type: vless
-  server: skk.moe
-  port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
+  server: 194.5.98.105
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   tls: true
   network: ws
   ws-opts:
     headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇳🇱 荷兰 | NLD 10
-  type: vless
-  server: 134.98.143.119
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- name: 🇳🇱 荷兰 | NLD 11
-  type: vless
-  server: 51.158.236.122
-  port: 8080
-  uuid: 11af1c47-865a-47c6-92ff-118013655d78
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-- name: 🇳🇱 荷兰 | NLD 12
-  type: vless
-  server: 50.7.188.162
-  port: 443
-  uuid: ec537bff-dc14-495c-b65f-65393ad7ee75
-  tls: true
-- name: 🇳🇱 荷兰 | NLD 13
-  type: vless
-  server: 50.7.240.210
-  port: 443
-  uuid: ec537bff-dc14-495c-b65f-65393ad7ee75
-  tls: true
-- name: 🇳🇱 荷兰 | NLD 14
-  type: vless
-  server: 31.76.61.232
-  port: 443
-  uuid: 4829c2f5-f45a-4330-9b3c-d381b9efdbec
-  tls: true
-- name: 🇳🇱 荷兰 | NLD 15
-  type: vless
-  server: 84.235.167.18
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- name: 🇳🇱 荷兰 | NLD 16
-  type: hysteria2
-  server: hys34.wba-pn.ru
-  port: 443
-  password: EkF2Yw0Lc7
-- name: 🇳🇱 荷兰 | NLD 17
-  type: vless
-  server: 144.21.35.32
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇵🇱 波兰 | POL
-  type: hysteria2
-  server: streambox.wwwinternetvideo.click
-  port: 443
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
-- name: 🇵🇱 波兰 | POL 2
   type: vless
-  server: 217.60.25.51
+  server: 193.42.36.84
   port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇷🇴 罗马尼亚 | ROU
+  type: vless
+  server: 185.39.30.18
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇷🇺 俄罗斯 | RUS
-  type: ss
-  server: 135.106.194.88
-  port: 140
-  cipher: chacha20-ietf-poly1305
-  password: iibqDfY-xDEyF0J8ntYH28gLob2ycGgy
+  type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: ru05.abvpn.ru
+    path: /websocket
 - name: 🇷🇺 俄罗斯 | RUS 2
-  type: hysteria2
-  server: els2.mangshe.xyz
-  port: 2056
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
+  type: vless
+  server: 89.124.251.180
+  port: 443
+  uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
+  tls: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  type: ss
+  server: 46.17.40.234
+  port: 10051
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+- name: 🇷🇺 俄罗斯 | RUS 4
+  type: ss
+  server: 195.133.23.200
+  port: 10501
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
 - name: 🇸🇪 瑞典 | SWE
   type: vless
-  server: 84.32.106.178
+  server: 5.175.236.53
   port: 443
-  uuid: 4928c901-be72-4f81-8d59-091ce9e01692
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   tls: true
-- name: 🇸🇪 瑞典 | SWE 2
-  type: vless
-  server: 84.238.133.186
-  port: 443
-  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
-  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 🇸🇬 新加坡 | SGP
   type: vless
-  server: 13.213.249.57
-  port: 52786
-  uuid: dd28ba19-c082-4472-96d8-a5c03d9cbacb
+  server: 54.254.51.144
+  port: 52457
+  uuid: 81853004-816d-40c1-973f-2be269ba8051
   tls: true
 - name: 🇸🇬 新加坡 | SGP 2
   type: vless
-  server: 13.212.45.128
-  port: 12322
-  uuid: a2d84cff-5a0f-4559-b793-355d363a4738
+  server: 13.212.143.2
+  port: 18516
+  uuid: 5e4c4ee0-9a52-421e-8427-7ad6ff027312
   tls: true
 - name: 🇸🇬 新加坡 | SGP 3
   type: vless
-  server: 54.251.59.156
-  port: 40785
-  uuid: 9e53f46e-bf21-41c7-8398-45e9edf7f12d
+  server: 47.131.134.63
+  port: 49449
+  uuid: bada4ed8-1cc0-4f68-851d-5b084c97fd4c
   tls: true
 - name: 🇸🇬 新加坡 | SGP 4
   type: vless
-  server: 47.131.32.199
-  port: 35470
-  uuid: 91db3abd-bb9a-4c40-9ef9-90fb62b96332
+  server: 47.131.211.4
+  port: 33164
+  uuid: 3b733177-14f5-49d5-91e6-4dce73c038e3
   tls: true
 - name: 🇸🇬 新加坡 | SGP 5
   type: vless
-  server: 47.129.204.35
-  port: 58335
-  uuid: 0f4ce6d4-b4b4-41b9-b1e7-c109ad32b274
+  server: 54.251.9.130
+  port: 24146
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
   tls: true
 - name: 🇸🇬 新加坡 | SGP 6
   type: vless
-  server: 52.76.84.249
-  port: 12804
-  uuid: d7baca0b-1255-4c1c-9fed-f615a059c9d5
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 7
-  type: vless
-  server: www.allianz.com
-  port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇸🇬 新加坡 | SGP 8
-  type: vless
-  server: onetrust.com
-  port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇸🇬 新加坡 | SGP 9
-  type: vless
-  server: 47.131.13.46
-  port: 16176
-  uuid: c5eb33ed-5539-4ebf-8081-298bb1405338
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 10
-  type: vless
-  server: 162.159.43.187
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- name: 🇸🇬 新加坡 | SGP 11
-  type: vless
-  server: 47.128.228.95
-  port: 20069
-  uuid: f7d1b40f-c424-47be-809e-9d4e75a1b993
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 12
-  type: vless
-  server: cfyx.qdqqd.com
-  port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇸🇬 新加坡 | SGP 13
-  type: vless
-  server: 46.137.202.178
-  port: 12512
-  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 14
-  type: vless
-  server: 122.248.209.131
-  port: 25436
-  uuid: d64d6845-5da0-42b7-b81e-8263ca49a9d8
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 15
-  type: vless
-  server: sg3-r.link-t7.com
-  port: 10038
-  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇸🇬 新加坡 | SGP 16
-  type: vless
-  server: 47.129.168.63
-  port: 18603
-  uuid: 3bd62f91-36cd-4fb9-8051-73fa853db876
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 17
-  type: vless
-  server: 172.64.146.211
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- name: 🇸🇬 新加坡 | SGP 18
-  type: vless
-  server: 54.169.200.246
-  port: 41688
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 19
-  type: vless
-  server: 52.76.82.32
-  port: 17611
-  uuid: ffa3ea5e-d64f-4dab-8d82-f1e7aee3b1c6
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 20
-  type: vless
-  server: 18.143.103.4
-  port: 33709
-  uuid: 3e43ab01-5397-483c-a2c2-c97a6a0e5d62
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 21
-  type: vless
-  server: 47.131.253.190
-  port: 11380
-  uuid: b0706a50-eef2-4e24-a6ff-d5b6f4caa6a2
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 22
-  type: vless
-  server: 18.136.125.3
-  port: 54618
-  uuid: 5b314c69-b427-4648-a8aa-6c38bc87fdc7
-  tls: true
-- name: 🇸🇬 新加坡 | SGP 23
-  type: vless
-  server: sg2-r.link-t7.com
-  port: 10037
-  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇸🇬 新加坡 | SGP 24
-  type: vless
-  server: admin.jikecloud.cc
-  port: 443
-  uuid: e55fa822-ad91-4133-8dcf-2587aec10baf
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: admin.jikecloud.cc
-    path: /vless
-- name: 🇸🇬 新加坡 | SGP 25
-  type: vless
-  server: 54.151.153.129
-  port: 59180
-  uuid: 44aedcca-28f8-411d-bed2-9bd6aa491cb5
-  tls: true
-- name: 🇹🇷 土耳其 | TUR
-  type: vless
-  server: f43a79a4ff5a203af43a79a4ff5a203a.drwrdoh.org
-  port: 2025
-  uuid: 65e294c6-9733-40cd-ade4-9bcf4017a1bd
-  tls: true
-- name: 🇺🇸 美国 | USA
-  type: vless
-  server: 69.46.46.203
-  port: 443
-  uuid: 71765f27-af1c-1b36-0f6f-3785e273bbf4
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: arctic-compass-2fd0-production.up.railway.app
-    path: /ws/71765f27-af1c-1b36-0f6f-3785e273bbf4
-- name: 🇺🇸 美国 | USA 2
-  type: vless
-  server: 172.233.139.46
-  port: 53734
-  uuid: 56a1b253-cde4-490f-9c5e-09a523882bdd
-  tls: true
-- name: 🇺🇸 美国 | USA 3
-  type: vless
-  server: 162.159.198.1
-  port: 8443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇺🇸 美国 | USA 4
-  type: vless
-  server: 104.16.150.130
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- name: 🇺🇸 美国 | USA 5
-  type: vless
-  server: 45.33.107.60
-  port: 10974
-  uuid: da249715-4a6f-4873-ac3d-260f2b6e0065
-  tls: true
-- name: 🇺🇸 美国 | USA 6
-  type: vless
-  server: store.epicgames.com
-  port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇺🇸 美国 | USA 7
-  type: trojan
-  server: 104.16.174.33
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 8
-  type: vless
-  server: us5-r.link-t7.com
-  port: 10242
-  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇺🇸 美国 | USA 9
-  type: vless
-  server: 192.155.87.188
-  port: 10092
-  uuid: a0b4d03b-b561-46aa-96f6-d03fa222a65e
-  tls: true
-- name: 🇺🇸 美国 | USA 11
-  type: trojan
-  server: 104.18.152.108
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 12
-  type: vless
-  server: cloudflare-ech.com
-  port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇺🇸 美国 | USA 13
-  type: vless
-  server: www.shopify.com
-  port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇺🇸 美国 | USA 14
-  type: trojan
-  server: 104.18.152.204
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 15
-  type: ss
-  server: 129.146.79.168
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5zQYEH/taJ/IGKB9jxn8ljEFZ2TB3vemTfYsGN4jCmY=
-- name: 🇺🇸 美国 | USA 16
-  type: vless
-  server: cloudflare.net
-  port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇺🇸 美国 | USA 17
-  type: trojan
-  server: 104.18.152.233
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 18
-  type: ss
-  server: 129.146.127.111
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IAaq/dxoRe2IQqHLE2jF0+o1l54hnnu5/wf3KBwri/k=
-- name: 🇺🇸 美国 | USA 19
-  type: vless
-  server: 179.198.49.32
-  port: 443
-  uuid: 9df64172-ca96-4fab-998c-d6412f5ad674
-  tls: true
-- name: 🇺🇸 美国 | USA 20
-  type: trojan
-  server: 172.67.74.2
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 21
-  type: vless
-  server: 162.159.197.1
-  port: 443
-  uuid: a30a3f37-1ab2-46bd-8c6b-a26d7c775f2a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: grc.ccwu.cc
-    path: /?ed=2560
-- name: 🇺🇸 美国 | USA 22
-  type: vless
-  server: 172.236.252.35
-  port: 46645
-  uuid: 3b769a8b-1c42-4c1d-9113-f90e81019c42
-  tls: true
-- name: 🇺🇸 美国 | USA 23
-  type: vless
-  server: 192.81.131.225
-  port: 11256
-  uuid: 4817e138-8370-4fdd-aa59-36a6ec0247e2
-  tls: true
-- name: 🇺🇸 美国 | USA 24
-  type: vless
-  server: 162.159.43.187
+  server: 172.64.32.108
   port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
@@ -840,46 +706,280 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
-- name: 🇺🇸 美国 | USA 25
-  type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 26
-  type: trojan
-  server: 104.18.152.229
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 27
+- name: 🇸🇬 新加坡 | SGP 7
   type: vless
-  server: 38.77.133.141
-  port: 443
-  uuid: 0eb057bc-f4b2-425b-80c9-1ed982916480
+  server: 172.64.151.254
+  port: 2096
+  uuid: 341832cc-ba98-425b-8225-b3db621a0da3
   tls: true
-- name: 🇺🇸 美国 | USA 28
-  type: vless
-  server: update.asshole.eu.cc
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
   ws-opts:
     headers:
-      Host: update.asshole.eu.cc
+      Host: oyue.rainfall0705.cc.cd
     path: /
-- name: 🇺🇸 美国 | USA 29
+- name: 🇸🇬 新加坡 | SGP 8
+  type: vless
+  server: 13.212.253.233
+  port: 41077
+  uuid: 32d1be4e-5094-4881-984f-f927e9961edb
+  tls: true
+- name: 🇸🇬 新加坡 | SGP 9
+  type: vless
+  server: 172.64.32.108
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
+- name: 🇸🇬 新加坡 | SGP 10
+  type: vless
+  server: 54.254.241.82
+  port: 53836
+  uuid: a205aa45-9314-43c6-ab0f-8718c573ee78
+  tls: true
+- name: 🇸🇬 新加坡 | SGP 11
+  type: vless
+  server: 52.77.240.16
+  port: 15562
+  uuid: 302debe4-0cc7-48d1-9433-3242dbb6730a
+  tls: true
+- name: 🇸🇬 新加坡 | SGP 12
+  type: vless
+  server: 47.129.144.8
+  port: 39742
+  uuid: 0a6c8184-d202-41b2-acdb-1a95df2f74d3
+  tls: true
+- name: 🇸🇬 新加坡 | SGP 13
+  type: vless
+  server: 52.221.220.242
+  port: 22872
+  uuid: 8abb4009-5efe-4d27-aa56-d50c37d2b1b8
+  tls: true
+- name: 🇸🇰 斯洛伐克 | SVK
+  type: vless
+  server: 89.46.42.141
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇹🇭 泰国 | THA
+  type: ss
+  server: 103.169.67.34
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇹🇭 泰国 | THA 2
+  type: vless
+  server: 45.150.131.246
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇹🇷 土耳其 | TUR
+  type: vless
+  server: 91.228.227.112
+  port: 110
+  uuid: 4003d537-6128-4206-b86a-3444f88990c4
+- name: 🇹🇷 土耳其 | TUR 2
+  type: vless
+  server: 201.50.115.175
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  type: vless
+  server: 34.80.164.239
+  port: 21776
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
+  tls: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  type: vless
+  server: 34.81.129.171
+  port: 34376
+  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
+  tls: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  type: vless
+  server: 35.236.181.11
+  port: 35190
+  uuid: 97e46b0b-d27c-4e94-aa00-034e29acd046
+  tls: true
+- name: 🇺🇸 美国 | USA 2
   type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
+  server: 212.18.104.164
+  port: 14166
+  password: WQSShTQIMW
+  sni: v.qq.com
+- name: 🇺🇸 美国 | USA 3
+  type: vless
+  server: cos-cdn-k.alicdn.win
+  port: 443
+  uuid: 6a95cfe5-9cd5-46a1-99d4-553b9c66348e
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: mms-static-path-e.hzedu.men
+    path: /live/7WUAS350/images/apple-account/locale/zh-cn
+- name: 🇺🇸 美国 | USA 4
+  type: vless
+  server: www.5h.com
+  port: 443
+  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: youxuanku.kdns.fr
+    path: /
+- name: 🇺🇸 美国 | USA 5
+  type: vless
+  server: 45.33.107.237
+  port: 51486
+  uuid: 72e4f3f6-3382-4a68-9817-8d65927e9bbd
+  tls: true
+- name: 🇺🇸 美国 | USA 6
+  type: vless
+  server: 172.64.32.108
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
+- name: 🇺🇸 美国 | USA 7
+  type: vless
+  server: 104.18.208.202
+  port: 8880
+  uuid: 7a2df38b-2d8b-486b-9b43-641c81e11f40
+  network: ws
+  ws-opts:
+    headers:
+      Host: shiny-mud-d9fa.466.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇺🇸 美国 | USA 9
+  type: vless
+  server: 43.174.193.1
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇺🇸 美国 | USA 10
+  type: trojan
+  server: 104.18.23.63
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 30
+- name: 🇺🇸 美国 | USA 11
+  type: trojan
+  server: 172.235.54.63
+  port: 11890
+  password: WQSShTQIMW
+  sni: v.qq.com
+- name: 🇺🇸 美国 | USA 12
   type: vless
-  server: 216.167.21.162
-  port: 39035
-  uuid: 5e130ea4-8a35-43b3-809a-b33b4bf15d2a
+  server: 104.21.83.92
+  port: 80
+  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
+  network: ws
+  ws-opts:
+    headers:
+      Host: web-app-aug8yr.app-f1qsy1.workers.dev
+    path: /api/ws
+- name: 🇺🇸 美国 | USA 13
+  type: trojan
+  server: 188.114.97.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇺🇸 美国 | USA 14
+  type: trojan
+  server: 104.26.15.137
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇺🇸 美国 | USA 15
+  type: vless
+  server: 172.239.67.231
+  port: 52553
+  uuid: 4c0cae78-1b6c-4860-8295-d938829f1d64
   tls: true
+- name: 🇺🇸 美国 | USA 16
+  type: trojan
+  server: 104.18.152.207
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇺🇸 美国 | USA 17
+  type: vless
+  server: 79.141.162.144
+  port: 8443
+  uuid: 58f133a9-0b8c-4237-ba40-c69d32a35e27
+  tls: true
+- name: 🇺🇸 美国 | USA 18
+  type: vless
+  server: 45.33.62.166
+  port: 43595
+  uuid: 2642f590-2bce-4031-8f93-7eed983621f5
+  tls: true
+- name: 🇺🇸 美国 | USA 19
+  type: vless
+  server: 72.56.40.152
+  port: 443
+  uuid: 3f054fce-df15-4f7c-8616-56a8b17e84b4
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: usa.korgivps.ru
+    path: /api/user
+- name: 🇺🇸 美国 | USA 20
+  type: vless
+  server: 208.103.161.249
+  port: 80
+  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
+  network: ws
+  ws-opts:
+    headers:
+      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
+    path: /
+- name: 🇺🇸 美国 | USA 21
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: 🇿🇦 南非 | ZAF
+  type: vless
+  server: 139.84.230.41
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: 爱尔兰 - Dublin - 1
   type: ss
   server: 3.250.223.202
@@ -935,64 +1035,712 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
 - name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: trojan
-  server: render.com
+  type: vless
+  server: pars.khabarvarzesh3.com
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
+  uuid: d840e1ca-5432-425a-40e6-4f8791b6474d
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: markovps.iransazentworkteh.top
+  port: 2082
+  uuid: 20f3d76e-5ecd-4dd0-8039-cbf690184cf8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: console.hptune.ir
-  port: 443
-  uuid: 3b9d36c8-48ef-494b-8f0f-ec96d8616561
+  server: 46.137.202.178
+  port: 12512
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
   tls: true
-  servername: console.hptune.ir
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 72.56.92.177
-  port: 40443
-  uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
-  tls: true
-  servername: deepl.com
+  servername: www.intel.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 82.40.62.214
-  port: 37430
-  uuid: 04dd8897-835e-43e1-a39f-1536be6d7cd5
+  server: node-fra01.rkitman.ru
+  port: 443
+  uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
   tls: true
-  servername: amp-api-edge.apps.apple.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 104.18.32.47
+  server: 212.41.11.152
   port: 443
-  uuid: 55b0463c-e27f-455b-a25a-70123297b9f4
+  uuid: 1a6fe500-59da-4598-8576-256f06765ffb
   tls: true
-  servername: rAyAn-cOnFiG-sg-1.pAriSa.dPdNs.oRg
+  servername: ru.sfasti.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: www.homaxcorp.com.homaxcorp.com
+  port: 2055
+  uuid: 042adee0-9b4f-43f5-a915-a627313f28c0
   network: ws
   ws-opts:
     headers:
-      Host: rAyAn-cOnFiG-sg-1.pAriSa.dPdNs.oRg
-    path: /ws
+      Host: images.mzstatic.com
+    path: /
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 31.76.80.69
-  port: 2083
-  uuid: 8975546a-375c-4966-8064-19fc0f66f30a
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 89.35.14.32
+  server: www.speedtest.net
   port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  uuid: 98dc8a17-0e58-4270-8407-95869d24bb5c
   tls: true
-  servername: md3.univesalsrv.com
-  client-fingerprint: firefox
+  servername: Parsa-0ShPE1.pARsa-E06.wOrkERs.Dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: Parsa-0ShPE1.pARsa-E06.wOrkERs.Dev
+    path: /?ed=2560
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 198.41.208.172
+  port: 443
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: sg-gcore-2.sharecentre.online
+  network: ws
+  ws-opts:
+    headers:
+      Host: sg-gcore-2.sharecentre.online
+    path: /shirker
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 172.67.187.251
+  port: 8080
+  uuid: b6e97b8a-1b43-4fa9-ab1b-d0139df07f59
+  network: ws
+  ws-opts:
+    headers:
+      Host: 11tg.w79kip11.workers.dev
+    path: /?ed=2560
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: trojan
+  server: srv1.khatibirepair.ir
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: api.pl.pngv.top
+  port: 4999
+  uuid: 2e35ca4c-00cd-4e0b-bb51-f69d19c9f3df
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 104.20.1.252
+  port: 80
+  uuid: 4c97ec3e-3527-48c5-80ff-b715463896ba
+  network: ws
+  ws-opts:
+    headers:
+      Host: kIndhEArTeD-PARkb5Rjo2juEr.sPorTLaNd.COMpAny.
+    path: /?ed
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 31.76.91.72
+  port: 2087
+  uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: stats.v2.PushService
+    grpc-service-name: grpc
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 202.47.89.133
+  port: 53548
+  uuid: 3a03613b-bbac-4a22-bee6-2c9a751a2761
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /dkfjh222
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: xnforo.ir
+  port: 2087
+  uuid: 8c561eb2-f643-49ce-b5b6-81690ec268c0
+  tls: true
+  servername: fish.nemidunamkheilimohennist.ir
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 169.40.32.48
+  port: 5062
+  uuid: f54e93d1-cd8e-434f-8122-4887e62c97f5
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: rush-6it6b.teeopp.quest
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rush-6it6b.teeopp.quest
+  network: ws
+  ws-opts:
+    headers:
+      Host: rush-6it6b.teeopp.quest
+    path: /video/kz49hf/gbin5jve.m3u8
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 61.245.11.60
+  port: 80
+  uuid: a3e3a710-79f8-4ae0-b83c-607aab40d197
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 72.35.246.31
+  port: 1244
+  uuid: 2d96d4d6-a276-4ab5-9f20-8dc5cbf6e902
+  tls: true
+  servername: axisvpn.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 139.28.241.77
+  port: 443
+  uuid: 5d5c40b1-102c-4343-94cc-d5b794dbd0c6
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: zula.ir
+  port: 2096
+  uuid: 8e5c836e-d815-4166-a0c5-a6b083f130aa
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: kingo.hightechservice.ir
+  network: ws
+  ws-opts:
+    headers:
+      Host: kingo.hightechservice.ir
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 95.85.227.142
+  port: 8443
+  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
+  tls: true
+  servername: wikihow.com
+  client-fingerprint: chrome
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: trojan
+  server: 160.16.107.37
+  port: 3169
+  password: 44e660b0ee21cf3ac66aee2c08af85d2
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: channel.tradeip.store
+  port: 443
+  uuid: t.me.TradeIP
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: page.irhubby.ir
+  port: 2053
+  uuid: 0a7ef86e-b897-4358-b57f-215d05a26d0b
+  tls: true
+  servername: vips.irhubby.ir
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 154.12.242.150
+  port: 80
+  cipher: aes-256-gcm
+  password: Hi9wk14VntzGq7kq
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: 24c2a873-4584-4c53-8679-61029682d0bb
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: universe.whit3.net
+  port: 4443
+  uuid: a6cf4b28-ba72-4e8c-90f8-6a884107ab3c
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 217.179.220.226
+  port: 443
+  uuid: fbb74aa8-b89a-4f20-9504-6b25aadf6681
+  tls: true
+  servername: ang.freeinternat.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 193.23.194.167
+  port: 8443
+  uuid: 32349ee8-8551-45fa-a265-8704cec72936
+  tls: true
+  servername: neth.lckdwn.ru
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: t245hvl0VMtlXR4v.v.3dns.vip
+  port: 443
+  uuid: 1abe49dedb6e4f65a0f0a5ea79ddefad
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: t245hvl0VMtlXR4v.v.3dns.vip
+  network: ws
+  ws-opts:
+    headers:
+      Host: t245hvl0VMtlXR4v.v.3dns.vip
+    path: /ws-vmess
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: trojan
+  server: df.xiguajiasu.xyz
+  port: 46002
+  password: 4ea1d07c-41c2-42b5-954d-414fee051856
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: wok1.api3-max.ru
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  tls: true
+  servername: wok1.api3-max.ru
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 45.131.208.62
+  port: 2096
+  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
+  tls: true
+  servername: LhCgBjGr29.vElTrIxS.OrG
+  network: ws
+  ws-opts:
+    headers:
+      Host: LhCgBjGr29.vElTrIxS.OrG
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 104.20.156.248
+  port: 443
+  uuid: 6e34f2c5-6c71-4010-c292-10d05ef4a9a2
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 172.67.157.75
+  port: 443
+  uuid: 9a407093-e267-4f2a-91da-b7bfc63dcaf6
+  tls: true
+  servername: damp-moon-9a22.houmandadash84.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: damp-moon-9a22.houmandadash84.workers.dev
+    path: /?ed=2048
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: aaa.app9.ir
+  port: 2082
+  cipher: 2022-blake3-aes-256-gcm
+  password: KComEQ28cVXIzVlxdpTy6LXLockXExZUh1xUJT49/nk=:hPqMImCwa6rdBbI/rlAMiUeSZEi5QpNNUZC5G/89ZHc=
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: mankadmu.com
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: mankadmu.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: mankadmu.com
+    path: /linkvws
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 138.197.186.182
+  port: 440
+  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 65.109.218.179
+  port: 2083
+  uuid: e39ea9ab-a0ee-4ca9-cc5d-32cda0258cbc
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 159.203.170.52
+  port: 80
+  cipher: aes-256-gcm
+  password: nLqpwVxdbMUL6M4F
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 185.150.117.51
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: speedtest.net
+  port: 80
+  uuid: 056d10f1-4ebd-40e1-9f78-c7e11fce5258
+  network: ws
+  ws-opts:
+    headers:
+      Host: sabzb2.global.ssl.fastly.net
+    path: /download
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: five.nothingnewtodo.online
+  port: 36096
+  uuid: a341c649-ff95-49d5-8d2b-6d5cebf09dfb
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: 38.107.234.57
+    path: /vmess/
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 79.127.196.11
+  port: 8443
+  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+  tls: true
+  servername: cdg-1.fromblancwithlove.com
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 89.105.195.35
+  port: 443
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  tls: true
+  servername: nl3.freeinternat.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 69.46.46.7
+  port: 443
+  uuid: 7f53840b-51d8-491a-8618-5067d8e809b1
+  tls: true
+  servername: production-ae0f.up.railway.app
+  network: ws
+  ws-opts:
+    headers:
+      Host: production-ae0f.up.railway.app
+    path: /api
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: trojan
+  server: 107.150.105.84
+  port: 59385
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  sni: us01.duotg.top
+  skip-cert-verify: true
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 162.19.192.89
+  port: 16632
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: bbde90cd-b6a9-49ba-cab0-71ae12738502
+  tls: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: c12.com
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 99.79.128.42
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: hollowcon-6ogo.onrender.com
+  port: 443
+  uuid: cccdb266-e17a-4411-9017-6935bd2a5fbf
+  tls: true
+  servername: hollowcon-6ogo.onrender.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: hollowcon-6ogo.onrender.com
+    path: /ws/cccdb266-e17a-4411-9017-6935bd2a5fbf
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 104.19.6.247
+  port: 2087
+  uuid: 5018af7c-dea3-427a-885c-6984e5792ce5
+  tls: true
+  servername: ftp.xvpn.cam
+  network: ws
+  ws-opts:
+    headers:
+      Host: ftp.xvpn.cam
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 193.58.119.134
+  port: 443
+  uuid: 97d216c9-7561-45fa-fd67-e56fde36360b
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 89.23.103.150
+  port: 443
+  uuid: 588f094b-431b-422c-b80b-007945037072
+  tls: true
+  servername: nl08.abvpn.ru
+  network: ws
+  ws-opts:
+    headers:
+      Host: nl08.abvpn.ru
+    path: /websocket
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 185.140.12.160
+  port: 2083
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  tls: true
+  servername: derman.neobo-tooth.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 188.114.99.192
+  port: 443
+  uuid: ad4aa165-c30d-48ec-9397-af1d1d3b1c4f
+  tls: true
+  servername: zamimm.e59b57f84c.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: zamimm.e59b57f84c.workers.dev
+    path: /?ed=2560
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 92.38.163.53
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 238bc88c-6f47-4622-9d6f-cab2ed76f098
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 45.195.111.108
+  port: 443
+  uuid: 219762a7-b918-4e2b-8a3d-d309ef98bb61
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: vips.irhubby.ir
+  port: 8080
+  uuid: 0a7ef86e-b897-4358-b57f-215d05a26d0b
+  network: ws
+  ws-opts:
+    headers:
+      Host: vips.irhubby.ir
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 178.83.157.130
+  port: 2551
+  uuid: d8b42cd5-a149-4356-9e61-000000000000
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: rf5.helper-internet.com
+  port: 443
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  tls: true
+  servername: rf5.helper-internet.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 51.158.206.29
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: dashboard.aframarket.top
+  port: 5384
+  uuid: cfd42ad2-6fc7-443f-994e-10e3d7df24d1
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 167.104.223.29
+  port: 443
+  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  tls: true
+  servername: 167.104.223.29.sslip.io
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 5b9503aa-119b-4288-aa4f-0bbee2b4d5af
+  tls: true
+  servername: t04.tzteam.online
+  network: ws
+  ws-opts:
+    headers:
+      Host: t04.tzteam.online
+    path: /?ed=2048
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 89.35.14.30
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 188.114.97.6
+  port: 80
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  network: ws
+  ws-opts:
+    headers:
+      Host: de.vpnbase.net
+    path: /http
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 104.21.38.220
+  port: 443
+  uuid: 85c4c0ce-08ef-493d-96f3-a711a70ec995
+  tls: true
+  servername: cxrolvpn.vipserver2.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: cxrolvpn.vipserver2.workers.dev
+    path: /TvPAJHXEXlFdLMqF?ed=2560
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: adelmeli.com
+  port: 80
+  uuid: 89e25562-d0f1-4f54-8afb-6ee374e30fbb
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts: {}
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 172.105.244.165
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 144.31.86.136
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  servername: eu-west.cendora.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 84.38.187.134
+  port: 443
+  uuid: 53ffd172-de4c-002f-aa77-1a6830a36cf8
+  tls: true
+  servername: git.xpkg.ru
+  client-fingerprint: chrome
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 139.59.24.215
+  port: 3389
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: meli_netbot.team-pluss.com
+  port: 8080
+  uuid: 80af4ec8-70a8-4432-ba61-0c7b4424dfca
+  tls: true
+  servername: the.world.of.the.champions.retrovip.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: de2.pi10.ir
+  port: 54102
+  uuid: 113ae61b-d6da-4d08-9221-48595cb8436c
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 104.17.176.142
+  port: 80
+  uuid: 435bda4c-fe5e-42c9-a3ad-15334943b38a
+  network: ws
+  ws-opts:
+    headers:
+      Host: us3.rtacg.com
+    path: /
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
   server: one-for-all.levikogjgfdd.ir
@@ -1007,341 +1755,220 @@ proxies:
     path: /
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vmess
-  server: c7.620720.xyz
-  port: 8443
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 9051f1e1-0ebe-4df8-be2f-3848c2ccfe1e
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: 70d94f75-064c-4e34-d2cf-0b6ef4d49ef7
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: node-fra01.rkitman.ru
-  port: 443
-  uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
-  tls: true
-  client-fingerprint: chrome
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 159.246.55.251
-  port: 443
-  uuid: AlfredConfig
-  tls: true
-  servername: alfi.yas-nowin.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: alfi.yas-nowin.ir
-    path: /?ed=2048
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: dashboard.afrawebsite.top
-  port: 3071
-  uuid: bbefddcb-9484-46cd-8664-3be3dde98bc7
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 151.101.3.8
+  server: 104.21.230.51
   port: 80
-  uuid: telegram-id-ArV2ray
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 104.18.21.226
-  port: 80
-  uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     headers:
-      Host: sanggoro6.nextvpn.cc
-    path: /vpnneo
+      Host: a.prapt1.ir
+    path: '/?ed=2048&Telegram🇨🇳 '
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 82.40.62.36
-  port: 37430
-  uuid: fa1dc3a7-6879-455c-a4dc-bab4bcc05b16
+  server: rssm-1btto92.joxenly.com
+  port: 443
+  uuid: 83c18ff2-0565-4b53-89ad-57357fef153b
   tls: true
-  servername: amp-api-edge.apps.apple.com
   client-fingerprint: chrome
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vmess
-  server: hms082.gwdef.sbs
-  port: 443
-  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: gwdef.sbs
-  network: ws
-  ws-opts:
-    headers:
-      Host: gwdef.sbs
-    path: /linkws
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 104.18.117.159
-  port: 443
-  uuid: 82241d60-2bdf-4de7-9a29-2d57ebc09b76
-  tls: true
-  servername: h18I2JaM-v6hTJQ-F-vwAI0PvGltC6On.hGhOrBAni-MC70.WoRkErS.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: h18i2jam-v6htjq-f-vwai0pvgltc6on.hghorbani-mc70.workers.dev
-    path: /eyJqdW5rIjoiSWVocjJHeWRvSGxYaThvIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 45.15.167.13
-  port: 443
-  uuid: 1lpxy6haqm
-  tls: true
-  servername: 1lpxy6haqm-451516713-direct.zamam.co
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 69.46.46.25
-  port: 443
-  uuid: 0014fa64-cd57-361b-1d44-7b52d286b9bd
-  tls: true
-  servername: limo-production-c1f7.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: limo-production-c1f7.up.railway.app
-    path: /ws/0014fa64-cd57-361b-1d44-7b52d286b9bd
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 109.69.218.217
-  port: 443
-  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
-  tls: true
-  servername: bold-kestrel.cdn.cachefleet.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: d0ee468a-084b-411d-b2be-b886a61065d1
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 109.248.162.194
-  port: 443
-  uuid: 94e32bc4-9d3c-4d39-9858-7adb3aa5c754
+  server: shahinnet-freenetcdn.melodyshopone2.ir
+  port: 8080
+  uuid: 96588912-3bcb-491c-8ce3-7a965bbec07f
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
+    headers:
+      Host: sog.shahinnet.shop
     path: /
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 104.18.155.141
+  server: uk1.cnyvpn.com
+  port: 2083
+  uuid: 60e2a548-96aa-4850-a279-1edab743c39b
+  tls: true
+  client-fingerprint: chrome
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 185.254.205.79
+  port: 19842
+  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
+  tls: true
+  servername: www.tesla.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 185.147.27.164
   port: 8443
-  uuid: dbdf1950-b40e-4533-88bb-05ebca375781
+  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
   tls: true
-  servername: dig.jhju.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: dig.jhju.ir
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: hardres.hardvezoo.ir
-  port: 2059
-  uuid: 1b9b3368-f613-4f5e-b464-63ffa6228e60
-  tls: true
-  servername: sbs.hardvezoo.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: www.speedtest.net
-    path: /slInmZE289zR1Kon2W
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 188.137.235.179
-  port: 443
-  uuid: 1f619326-cd93-4d6b-aebe-e0b5f8831d02
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 51.83.52.172
-  port: 2085
-  uuid: 2c72c667-093c-47a5-a108-493c93282b57
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: cis.visa.com
-  port: 443
-  uuid: 2196f28b-8217-4631-a28e-1d34112aa947
-  tls: true
-  servername: RAyaN107-gXrV00-2.raYan-107.WORKERs.dEv
-  network: ws
-  ws-opts:
-    headers:
-      Host: RAyaN107-gXrV00-2.raYan-107.WORKERs.dEv
-    path: /?ed=2560
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 172.64.146.59
-  port: 443
-  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
-  tls: true
-  servername: nls-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-  network: ws
-  ws-opts:
-    headers:
-      Host: nlls-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NL---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 129.121.95.159
-  port: 443
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: jpaws.ccwink.photos
-  port: 64294
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  tls: true
-  servername: docs.aws.amazon.com
-  client-fingerprint: chrome
+  servername: user-6a8d949a.noooo.win
   flow: xtls-rprx-vision
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 45.130.125.207
+  server: 144.31.40.96
+  port: 8443
+  uuid: 7ab9fe4f-6699-427f-a828-9fcf2496d714
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: darsadgir.ir
   port: 443
-  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
+  uuid: 14c44521-e28f-4561-a12c-337d8cc44d87
   tls: true
-  servername: 1111--MiTiVPN---MiTiVPN-o.KinGNetWork.iR
-  network: ws
-  ws-opts:
-    headers:
-      Host: De1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/dde---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+  servername: beaver.kaftarkakolbesarwifi.com
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 188.137.235.179
-  port: 8444
-  uuid: 1f619326-cd93-4d6b-aebe-e0b5f8831d02
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: db5dc039-a37e-4c23-b7a9-bdf6c729f7f3
+  server: 104.18.151.14
+  port: 2053
+  uuid: fef1a72a-5a44-4e22-8439-3670924b7805
+  tls: true
+  servername: de.ginnaro.ir
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: ss
-  server: 213.174.159.247
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 85.192.49.141
+  server: 158.173.20.208
   port: 443
-  uuid: 85cc845e-644c-4148-8288-f0c03c83c1ec
-  tls: true
-  servername: fi.quattro-tech.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 194.87.47.204
+  port: 10901
+  cipher: aes-256-gcm
+  password: d1fa2f4b98a38bc8
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: sca12.myfymain.com
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  server: rvg-production-3182.up.railway.app
+  port: 443
+  uuid: 9229da01-d8d4-0d1a-0e33-eb59a8b25234
+  tls: true
+  servername: rvg-production-3182.up.railway.app
+  network: ws
+  ws-opts:
+    headers:
+      Host: rvg-production-3182.up.railway.app
+    path: /ws/9229da01-d8d4-0d1a-0e33-eb59a8b25234
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: koviraaa.kovira2.ir
+  port: 8443
+  uuid: f5f77177-4937-4f40-b6fc-7c4278151f01
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+  tls: true
+  servername: dev.twistsparrow.xyz
+  network: ws
+  ws-opts:
+    headers:
+      Host: dev.twistsparrow.xyz
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 79.175.134.193
+  port: 4187
+  uuid: 981e14a7-50ec-4bfb-aa96-7ea3f9226137
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 31.15.16.154
+  port: 13423
+  uuid: 4a6013ef-36ed-4db7-9fde-f9a4f3171acf
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 31.76.80.69
+  port: 2083
+  uuid: 8975546a-375c-4966-8064-19fc0f66f30a
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: chrome
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 91.219.215.67
+  port: 40282
+  cipher: aes-256-gcm
+  password: Pvvaw486867D2w4yctL2ULTQ
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 172.66.163.170
+  port: 80
+  uuid: 2922fb61-54ae-4bcf-997b-18deec77d47c
+  network: ws
+  ws-opts:
+    headers:
+      Host: auto-546300.avl-4de9e9.workers.dev
+    path: BIA_TELEGRAM?=@ShadowFlux2---@ShadowFlux2---@ShadowFlux2---@ShadowFlux2---@ShadowFlux2
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: md4.univesalsrv.com
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  tls: true
+  servername: md4.univesalsrv.com
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: ''
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  network: ws
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /fp
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 172.66.44.97
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    headers:
-      Host: josni.hoyes.cloudns.ch
-    path: musiclovers85_musiclovers85?ed=512
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: ch-play.mobileemdad.top
-  port: 443
-  uuid: a379c14c-20d0-4e87-a230-d5c971ecf404
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 162.159.38.119
-  port: 443
-  uuid: 8ad6f598-cd8d-4fca-848e-05fc9be15ff3
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: trojan
-  server: 166.1.36.83
-  port: 443
-  password: 50414e45-4c5f-5a45-5553-6cb928e8df1e
-  sni: sazxlkeeuo9s.8264291.workers.dev
+    grpc-service-name: hub.v1.ApiService
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: ss
-  server: 51.79.166.171
-  port: 50004
-  cipher: aes-256-cfb
-  password: '4415934295'
+  server: 167.160.91.118
+  port: 10077
+  cipher: aes-256-gcm
+  password: dongtaiwang.com
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 2.58.242.157
+  port: 33992
+  cipher: aes-256-gcm
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 195.123.210.168
+  server: sitoman.info
+  port: 443
+  uuid: bbab81f3-87a0-4e63-8b3b-010c645d8da7
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: pxqhkkokwtgf.eu-central-1.clawcloudrun.com
+  port: 43144
+  uuid: d749c2c0-4ba4-45fe-f8f4-2f422d689a21
+  tls: true
+  servername: devblogs.microsoft.com¬e
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: xt.ylks01.eu.org
+  port: 2095
+  uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605
+  alterId: 64
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /blue
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 138.197.1.222
+  port: 8881
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 139.59.191.88
+  port: 443
+  uuid: a6c5f4c7-073f-416b-b5e3-4a86ec2d9f22
+  tls: true
+  servername: www.stanford.edu
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 150.241.94.59
   port: 13443
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   tls: true
@@ -1350,84 +1977,92 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 172.64.84.228
+  server: 141.193.213.21
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-b45978f6d773
+  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
   tls: true
-  servername: ljz5fuexub6s.nova-705deb.workers.dev
+  servername: amoosamiii.net
   network: ws
   ws-opts:
     headers:
-      Host: ljz5fuexub6s.nova-705deb.workers.dev
-    path: /stream/PANEL_ZEUS/b45978f6d773/loc-1
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 185.219.134.182
-  port: 50003
-  cipher: aes-256-cfb
-  password: '8460400130'
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 3.124.132.221
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+      Host: amoosamiii.net
+    path: /poiuyws
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vmess
-  server: 78.111.102.232
-  port: 3389
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
   alterId: 0
   cipher: auto
 - name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  type: vmess
+  server: cf.levikogjgfdd.ir
+  port: 2053
+  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
+  alterId: 0
+  cipher: auto
   tls: true
+  servername: deapp.jisuyun.top
+  network: ws
+  ws-opts:
+    headers:
+      Host: deapp.jisuyun.top
+    path: /devm
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: neth.lckdwn.ru
+  port: 443
+  uuid: 32349ee8-8551-45fa-a265-8704cec72936
+  network: ws
+  ws-opts:
+    headers:
+      Host: neth.lckdwn.ru
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 83.168.71.216
+  port: 443
+  uuid: a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a
+  tls: true
+  servername: ads.x5.ru
   client-fingerprint: chrome
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: ss
-  server: 87.239.255.109
-  port: 40282
+  server: 62.212.239.45
+  port: 43893
   cipher: aes-256-gcm
-  password: Pvvaw486867D2w4yctL2ULTQ
+  password: YyCBeDdYX4cadHpCkkmdJLq8
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 38.68.135.18
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 52.47.166.121
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 7d3b945d-0f23-4719-9fae-50033251e2fd
+  server: 172.236.252.35
+  port: 46645
+  uuid: 3b769a8b-1c42-4c1d-9113-f90e81019c42
   tls: true
-  servername: qwhtnnrgop7cjp05p2q0.khodavakili.buzz
-  network: ws
-  ws-opts:
-    headers:
-      Host: dl.khodavakili.buzz
-    path: /kos_madar_publisher
+  servername: www.sony.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 104.26.14.85
-  port: 8443
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
+  server: 193.160.32.36
+  port: 2053
+  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
   tls: true
-  servername: chopin.adaspoloandco.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: chopin.adaspoloandco.com
-    path: /download.php
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 95.182.83.239
-  port: 42117
-  uuid: c2f2676a-6af6-44f7-9050-dbf7b4482258
+  server: soskeynets.net
+  port: 8880
+  uuid: 9d328839-6d44-44bb-af3e-075f7f0002d6
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 185.207.196.48
+  server: 172.67.172.95
   port: 443
   uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   tls: true
@@ -1439,95 +2074,264 @@ proxies:
     path: /GOrbEh
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 57.128.182.21
-  port: 443
-  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-  tls: true
-  servername: vod.ensf.top
+  server: go.lumen.com
+  port: 2052
+  uuid: 436251af-af1b-4f91-9a86-cb9faf2e9d91
   network: ws
   ws-opts:
     headers:
-      Host: vod.ensf.top
-    path: /api/v1/irc
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: usejh2.neobo-tooth.ru
-  port: 2083
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: usejh2.neobo-tooth.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: fsxhh.fastshop1.com
-  port: 443
-  uuid: a08af6fb-21af-4c99-99d6-a3361e7a8456
-  tls: true
-  servername: ssl.fastly.com
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 185.137.232.194
-  port: 443
-  uuid: 2b092ee6-5e4b-0032-8236-a46bec9393fd
-  tls: true
-  servername: aispir.ru
-  client-fingerprint: chrome
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 89.35.14.31
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: md2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hub.v1.SyncService
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: one-for-all.levikogjgfdd.ir
-  port: 443
-  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-    path: /id-tksi?ed=2048
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 104.21.234.52
-  port: 80
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
+      Host: fin.v2shop.xyz
     path: /
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: rose5.lhpuniversity.online
-  port: 54338
-  uuid: 44289654-8618-403b-a573-a79a849100ce
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: vah4urdzl3jdx5r2.v.3dns.vip
+  server: 150.251.114.43
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 851b2819-b359-40bc-ad61-a5d41027be2c
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 172.67.139.85
+  port: 443
+  uuid: 429efff7-16bd-499e-85a5-a6f4b89c2773
   tls: true
-  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  servername: cxrolvpn.vipserver2.workers.dev
   network: ws
   ws-opts:
     headers:
-      Host: VAH4URdZL3jDX5r2.v.3dns.vip
-    path: /ws-vmess
+      Host: cxrolvpn.vipserver2.workers.dev
+    path: /K2w7vCx3fNcdCrSc?ed=2560
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: cf-wkrs-pages-vless-aoy.pages.dev
+  port: 443
+  uuid: 884f9b2c-f0c5-44dd-a68e-3e39ce93bb39
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 213.156.152.63
+  port: 8080
+  uuid: d9681916-5a85-44c8-86a2-9fcae87cf850
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 154.92.9.155
+  port: 443
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  tls: true
+  servername: cfed.tgzdyz2.top
+  network: ws
+  ws-opts:
+    path: tg@zdyz2
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: fbi.gov
+  port: 8880
+  uuid: caeaefa9-91fc-481a-8680-3479d5982042
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 45.9.156.28
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 35.181.234.51
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 82.38.31.2
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  tls: true
+  servername: dey.lnmarketplace.net
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 31.76.76.26
+  port: 443
+  uuid: 2f956d32-8a67-4bc9-8995-e1621ad20ddc
+  network: ws
+  ws-opts:
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 199.232.79.229
+  port: 80
+  uuid: 3d142a41-8e57-47d7-a579-f52c6eae79f7
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: join.melodyfreenet2.shop
+  port: 443
+  uuid: 50ef0b23-f14b-459f-97aa-d0f346189d2a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: Join.MelodyFeenEt2.shoP.
+  network: ws
+  ws-opts:
+    path: /mail/
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 05d2f580-0faa-40fe-ab98-b18e7f9ed8eb
+  network: ws
+  ws-opts:
+    headers:
+      Host: rb24.ir
+    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 144.172.119.9
+  port: 8080
+  uuid: 9f2e47b5-7cfd-4dbd-9fea-446840f18002
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 138.124.29.81
+  port: 57021
+  uuid: My-chanel-5-@ATOVPN
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: ss
+  server: 82.38.31.49
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 81.12.91.190
+  port: 443
+  uuid: daa76981-27fb-4943-8311-c46391ff0847
+  tls: true
+  servername: git-scm.com
+  client-fingerprint: chrome
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: kukuprogram1.herokuapp.com
+  port: 443
+  uuid: d170fb8f-bb43-41a0-930b-5889483c087f
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: kukuprogram1.herokuapp.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: kukuprogram1.herokuapp.com
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 194.146.68.140
+  port: 500
+  uuid: df207a99-2eab-4383-9082-33cf9a54c7b9
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 216.167.27.153
+  port: 24959
+  uuid: bd046aab-1c63-401a-9167-eef01d767578
+  tls: true
+  servername: www.sony.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 5.253.30.99
+  port: 40443
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  tls: true
+  servername: deepl.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: pl154.slovovpn.com
+  port: 26417
+  uuid: 48cb335c-2210-4f81-bde9-e9c8d454ed7b
+  tls: true
+  servername: github.com
+  client-fingerprint: chrome
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 104.16.7.70
+  port: 2095
+  uuid: 2b5f8588-87f6-40af-a785-322c8fa1df77
+  network: ws
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.azazilvpn.sbs
+    path: /XnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXn?ed=2560
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vmess
+  server: 178.83.45.29
+  port: 38998
+  uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
+  alterId: 0
+  cipher: auto
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 172.64.152.23
+  port: 2087
+  uuid: 213426db-afb7-48d1-ae51-5093317212df
+  tls: true
+  servername: iopl90nn.bingnet.online
+  network: ws
+  ws-opts:
+    headers:
+      Host: iopl90nn.bingnet.online
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: svr-lanei.mikikoo.com
+  port: 2087
+  uuid: 15150c26-7e7f-42a7-8e7a-d0b9ab359214
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: yourServiceName
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: support.cloudflare.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    headers:
+      Host: update.asshole.eu.cc
+    path: /
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: banko.cncoo.ir
+  port: 443
+  uuid: 0bbe023b-0a73-4a1d-af0f-c3dd793cfa17
+  tls: true
+  servername: banko.cncoo.ir
+  network: ws
+  ws-opts:
+    path: /connect/yUdhkk0l8Fwb5sQ3bwI8FJcK
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
   server: derman.neobo-tooth.ru
@@ -1537,25 +2341,66 @@ proxies:
   ws-opts:
     path: /
 - name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: pasarguardpanelmmd6.vahidzhv.ir
-  port: 5051
-  uuid: 7715a37f-866a-4845-8c1c-4ee7d450ac96
+  type: trojan
+  server: 89.39.70.64
+  port: 443
+  password: PQ05174892
 - name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 176.65.140.210
-  port: 28267
-  uuid: 5a07247c-ea05-4dac-ab9f-6d778b5e0583
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 142.91.105.104
+  port: 443
+  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
+  tls: true
+  servername: jp.servers.gracevpnbuy.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 185.141.227.153
+  port: 9001
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  tls: true
+  servername: api-maps.yandex.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-reality
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: md3.univesalsrv.com
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  tls: true
+  servername: md3.univesalsrv.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: stats.v2.PushService
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 104.18.8.83
+  port: 443
+  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
+  tls: true
+  servername: SG-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
   network: ws
   ws-opts:
     headers:
-      Host: bobo.badrangteb.ir
+      Host: S-G-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 172.67.161.1
+  port: 2095
+  uuid: 636b1684-b26c-4a9c-bc6e-8e1197a36d74
+  network: ws
+  ws-opts:
+    headers:
+      Host: workerr.hashdiler.workers.dev
     path: /
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 169.40.42.35
+  server: 169.40.42.104
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   tls: true
@@ -1564,811 +2409,38 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 144.31.40.96
-  port: 8443
-  uuid: 7ab9fe4f-6699-427f-a828-9fcf2496d714
-  tls: true
-  servername: www.max.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: a2e3c24ab3
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 217.138.193.6
-  port: 812
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 45.195.111.108
+  server: 83.228.231.66
   port: 443
-  uuid: 219762a7-b918-4e2b-8a3d-d309ef98bb61
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: jsv-ir.randino.ir
-  port: 443
-  uuid: fc7f5780-4c4e-11f1-a3f8-b58432c62d9c
-  tls: true
-  servername: aparat.com
-  client-fingerprint: chrome
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 104.16.151.21
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 104.26.13.40
-  port: 8880
-  uuid: b9ea760d-3200-4d6d-8000-30514ebbce5a
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 104.19.47.158
-  port: 8080
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /?ed=2048&Telegram🇨🇳 @VPNine1
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 63.180.184.26
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 122.248.209.131
-  port: 25436
-  uuid: d64d6845-5da0-42b7-b81e-8263ca49a9d8
-  tls: true
-  servername: www.sony.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 37.156.46.193
-  port: 8443
   uuid: Masir_Sefid
   tls: true
   servername: store.steampowered.com
   client-fingerprint: chrome
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 151.101.65.242
+  server: 172.66.44.100
   port: 443
-  uuid: 57a8ea50-1a8d-4e9f-b6e8-e991a9914a8a
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 82.38.31.17
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 138.197.166.205
-  port: 811
-  cipher: chacha20-ietf-poly1305
-  password: Ultr@r00t_2017
+  uuid: 052e510d-d892-4dc4-a686-8986a01535cd
+  tls: true
+  servername: SprING-HaLl-14EF.WOOzY-cHAmOis2822.WorkERs.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: spring-hall-14ef.woozy-chamois2822.workers.dev
+    path: /Telegram@mtmvpn/?ed=2560
 - name: 🔥Join+Telegram:@Farah_VPN🟣
   type: vless
-  server: 109.169.76.39
+  server: 39.109.117.110
+  port: 43646
+  uuid: d92afe21-8e8b-42c7-98c2-8a33da64d28f
+  network: ws
+  ws-opts:
+    path: /d92afe21
+- name: 🔥Join+Telegram:@Farah_VPN🟣
+  type: vless
+  server: 31.76.34.146
   port: 443
-  uuid: 0fcbc45d-acdc-40cf-9a66-961c00f5b4a5
+  uuid: 7bc2c010-dffd-4c81-8fa3-25e8f3781dca
   tls: true
-  servername: slashdot.org
+  servername: cdn3-85.cdn-vkvideo.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: pasarguardpanelmmd4.nenenet1.ir
-  port: 5055
-  uuid: 7715a37f-866a-4845-8c1c-4ee7d450ac96
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: web-production-397a4.up.railway.app
-  port: 443
-  uuid: Default
-  tls: true
-  servername: web-production-397a4.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-production-397a4.up.railway.app
-    path: /ws/Default
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 151.242.251.131
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 69.46.46.123
-  port: 443
-  uuid: 4107ea1d-6d72-cdc3-49e3-acd0f9522617
-  tls: true
-  servername: sr-production-1bab.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: sr-production-1bab.up.railway.app
-    path: /ws/4107ea1d-6d72-cdc3-49e3-acd0f9522617
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 45.131.209.253
-  port: 80
-  uuid: 9ac947aa-de86-41c3-9a60-4c061c7c95f0
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: dl3.plot.cценарий.劇情голов0рез.fir3brand.煽動者追逐雷恩.погонезаpейн.wonkacapitano.buzz.
-    path: /vmess
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 104.17.190.157
-  port: 80
-  uuid: 435bda4c-fe5e-42c9-a3ad-15334943b38a
-  network: ws
-  ws-opts:
-    headers:
-      Host: us3.rtacg.com
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 188.166.123.201
-  port: 443
-  uuid: 603819a3-dd65-408a-abab-15d8dc49887f
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: trojan
-  server: 104.16.29.250
-  port: 443
-  password: 50414e45-4c5f-5a45-5553-865be6c6aed4
-  sni: yvzagcelunqs.73927482.workers.dev
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: handsome-device.oneeat.co
-  port: 80
-  uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
-  network: ws
-  ws-opts:
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 188.114.99.0
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /sg-melbi
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: sellvipvpn.myiran1.pw
-  port: 2083
-  uuid: 3390a631-90cf-48b3-cd13-3ad559f01796
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 31.77.170.30
-  port: 443
-  uuid: 00506574-3b10-4f7d-9b2f-8afdc5919b93
-  tls: true
-  servername: stackoverflow.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 51.158.151.24
-  port: 31727
-  uuid: a02e0f63-d96e-4b0f-8270-56c28caef171
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 104.21.224.174
-  port: 80
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: check-host.net
-  port: 8880
-  uuid: 2e622f08-444a-46d0-8dac-6f9709f4d172
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: asia6.novahomedesigntips.com
-  port: 6677
-  uuid: b7c0b208-8f36-4433-ac80-1737a49209b1
-  network: ws
-  ws-opts:
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 47.85.1.255
-  port: 34067
-  uuid: c67e538f-5717-49f3-9a30-1a015d5b5cc1
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /c67e538f-5717-49f3-9a30-1a015d5b5cc1
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: switcher-nick-croquet.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 180.178.60.253
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 185.219.134.52
-  port: 50003
-  cipher: aes-256-cfb
-  password: '8460400130'
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: cf.levikogjgfdd.ir
-  port: 2053
-  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
-  tls: true
-  servername: ov.iran-servers.shop
-  network: ws
-  ws-opts:
-    headers:
-      Host: ov.iran-servers.shop
-    path: /J5aLQOY1R9ONWYCM
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: configfori.up.railway.app
-  port: 443
-  uuid: a70646b9-a42b-48a9-80f6-a74e4eeb0d54
-  tls: true
-  servername: configfori.up.railway.app
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: md2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: md2.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hub.v1.SyncService
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 445a3a7a-59aa-4f3d-8258-d54713ea6475
-  network: ws
-  ws-opts:
-    headers:
-      Host: rb24.ir
-    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 5.181.171.2
-  port: 443
-  uuid: 8e6acce9-8b56-7190-d491-7d84f8189e26
-  tls: true
-  servername: speed.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 104.16.190.41
-  port: 443
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 104.19.32.46
-  port: 2086
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: ip006.dtku47.xyz
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 216.167.21.162
-  port: 39035
-  uuid: 5e130ea4-8a35-43b3-809a-b33b4bf15d2a
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: pqh30v8.waipdirect.shop
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6003
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 13.36.179.14
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 89.34.90.30
-  port: 443
-  uuid: 54a33907-c356-40fa-b6f3-844b3e6a8b7c
-  tls: true
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: change.org
-  port: 443
-  uuid: 82ebd58c-156a-4c2b-9cf9-1762f0a1e04f
-  tls: true
-  servername: rAyAn-007.lEiLa.dPdNs.oRg
-  network: ws
-  ws-opts:
-    headers:
-      Host: rAyAn-007.lEiLa.dPdNs.oRg
-    path: /?ed=2560
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 43.245.227.70
-  port: 443
-  uuid: f1c496bf-d2ab-45be-bc13-051d60d227b7
-  tls: true
-  servername: 2mdn-cn.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: s1.test.anti-zapret.com
-  port: 8443
-  uuid: f82332b2-dc8c-eac4-ac12-f276e37e278a
-  tls: true
-  servername: s1.test.anti-zapret.com
-  client-fingerprint: chrome
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 45.196.208.84
-  port: 443
-  uuid: d2042070-c247-4226-a3ac-15337923e00d
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 151.101.65.57
-  port: 80
-  uuid: 96eec36e-2c44-5b09-898e-6f0f0526e57f
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 151.242.168.238
-  port: 443
-  uuid: cf51b1d9-9be7-4e14-957e-bbb288bc1e9e
-  tls: true
-  servername: frantax.my3cx.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 185.146.173.58
-  port: 2095
-  uuid: 8549a266-ddcf-4ee8-9fb8-3c2406e95e8e
-  network: ws
-  ws-opts:
-    headers:
-      Host: Alimddhsnmddasgharamemd.mogrenspore.nl.
-    path: VMESSKHODAM-VMESSKHODAM-VMESSKHODAM-VMESSKHODAM-VMESSKHODAM-VMESSKHODAM-VMESSKHODAM/VMESSKHODAM?ed=1024
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: client.bluwave.ir
-  port: 80
-  uuid: e3eec9d9-ab70-4617-9e19-60860112c634
-  network: ws
-  ws-opts:
-    headers:
-      Host: Bluewave.ai
-    path: /?ed=1861
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 192.71.227.17
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 166.88.131.195
-  port: 52952
-  cipher: chacha20-ietf-poly1305
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: ppu.foot8all.ir
-  port: 50567
-  uuid: 5ee4ce84-c0b1-4230-ae32-b5266621cbf6
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 154.219.5.64
-  port: 443
-  uuid: eae02a50-e329-4647-926e-8439e685f317
-  tls: true
-  servername: first.pinocchio1.ir.
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 82.38.31.122
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: am.alertyagency.com
-  port: 443
-  uuid: a704443d-655e-4d9f-8ce6-12eeb17a9a08
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: time.is
-  port: 443
-  uuid: d195909a-eff4-489d-a261-955b904894cb
-  tls: true
-  servername: fREE.sERVer6PeeKCOnFIG.wOrkErs.dEv.
-  network: ws
-  ws-opts:
-    headers:
-      Host: free.server6peekconfig.workers.dev.
-    path: /eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 185.17.113.234
-  port: 804
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 18.169.233.193
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 45.59.125.228
-  port: 443
-  uuid: 691a9a35-76a6-48ea-9379-4f4f638c2b66
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: chrome
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: www.speedtest.net
-  port: 2052
-  uuid: 35c4c09c-85b9-44fb-9d5f-e3cae3011c1f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: 2d.irvn.debian.6.6.1b71.8.fxp.debian.org.speedtest.net.列列男事的事列上赛男.boland-sho-tokhm-sag.cyou.
-    path: /@irvpnn,@irvpnn,@irvpnn,@irvpnn?ed=80
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 176.65.140.210
-  port: 23981
-  uuid: e2ab9425-a3d5-4001-8b31-6a259935fe72
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: bobo.badrangteb.ir
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: u8.huvicloud.com
-  port: 443
-  uuid: 6796611b-260e-4d63-9016-20c27b12e420
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: u8.huvicloud.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: u8.huvicloud.com
-    path: /6796611b-260e-4d63-9016-20c27b12e420
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: cdnjs.com
-  port: 443
-  uuid: 6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: hdfy1c3.iraniancpi.uk
-  network: ws
-  ws-opts:
-    headers:
-      Host: hdfy1c3.iraniancpi.uk
-    path: /QvtvPdDXXIlSdZMqnuxG
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 164.90.171.176
-  port: 55397
-  uuid: 2b9889fd-c379-46a0-88bf-0b1c13df2de1
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 130.185.122.177
-  port: 443
-  uuid: f232d454-b014-4e00-a7ae-430341909db4
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: 130.185.122.177
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 95.216.5.254
-  port: 50007
-  cipher: aes-256-cfb
-  password: '7122910143'
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 167.172.232.63
-  port: 8881
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 18.168.171.125
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 179.61.251.89
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: vip-nl-1.hkd4fwmg.vip
-  port: 31883
-  uuid: 20593145-d975-46f9-9bad-d9f3c8e2d899
-  tls: true
-  servername: vip-nl-1.hkd4fwmg.vip
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: trojan
-  server: 64.74.163.118
-  port: 58536
-  password: lEjtI3pFYfU7O1UYozJcfZV5K6Fwfths
-  skip-cert-verify: true
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: md5.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: md5.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: app.v1.PushService
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 162.128.71.118
-  port: 443
-  uuid: 690ad3be-991b-4a2c-b351-42dd06789d03
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 52.47.166.121
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: tst00.paydar.site
-  port: 443
-  uuid: 014ee7ce-1d68-44bf-bfa5-638cb94769ba
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: GR1-Public-IR.g2gstore.ir
-  port: 9119
-  uuid: ae56511d-6b39-454b-847b-b711782d18cb
-  alterId: 0
-  cipher: auto
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: ss
-  server: 20.106.241.226
-  port: 9806
-  cipher: chacha20-ietf
-  password: '9806'
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: cfcdn3.sanfencdn9.com
-  port: 2052
-  uuid: 3c5046b4-1a9c-427c-8a55-e355846a9e4a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: kvjqqknzjp6.yofnhkfc.xyz
-    path: /video/Zo98PYfE
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 51.158.206.96
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 45.9.156.27
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 82.40.62.199
-  port: 37430
-  uuid: 09908e66-a2a1-48f8-9ff1-60c5f8c9ac25
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: hk2.lrzdx.uk
-  port: 443
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: hk2.lrzdx.uk
-  network: ws
-  ws-opts:
-    headers:
-      Host: hk2.lrzdx.uk
-    path: /register
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: afrcloud22.mmv.kr
-  port: 443
-  uuid: bbafc769-441b-4f06-9aae-9cc04ede1980
-  tls: true
-  servername: afrcloud22.mmv.kr
-  network: ws
-  ws-opts:
-    headers:
-      Host: afrcloud22.mmv.kr
-    path: /
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 141.133.172.160
-  port: 443
-  uuid: 88f9c3c2-b3dc-44aa-9490-8e9bc8133535
-  tls: true
-  servername: w-mebel.pro
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vmess
-  server: 46.182.107.65
-  port: 41000
-  uuid: 078eb24d-8d1d-4fbd-b914-ee58a897a35e
-  alterId: 64
-  cipher: auto
-  tls: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /path/1710638116560
-- name: 🔥Join+Telegram:@Farah_VPN🟣
-  type: vless
-  server: 132.243.212.205
-  port: 41503
-  uuid: 58984fe1-5f01-486b-bb68-c2f8352d7a92
-  tls: true
-  servername: github.com
-  client-fingerprint: chrome
