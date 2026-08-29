@@ -1,4 +1,109 @@
 proxies:
+- name: 🇳🇱NL_308|169KB/s|B007-260618 01
+  type: vless
+  server: nla.mythos-wargame.fun
+  port: 443
+  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇸🇪SE_15|114KB/s|B007-260618 01
+  type: vless
+  server: swa.mythos-wargame.fun
+  port: 443
+  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇱🇻LV_15|322KB/s|B007-260618 01
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇷FR_1378|348KB/s|B007-260618 01
+  type: vless
+  server: www.speedtest.net
+  port: 2053
+  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: music1000.melobitmusic1.ir
+    path: /
+- name: 🇬🇧GB_155|274KB/s|M003-260806 01
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: a2ec6ed8-ef05-4fa9-b6c5-aec54186f89a
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: cloud.dev.fosonmine.site
+    path: /api/v2/session/channel/connect
+- name: 🇳🇱NL_311|162KB/s|P002-260618 01
+  type: vless
+  server: 89.105.218.102
+  port: 11443
+  uuid: 0f4baf0a-1da1-40e0-8472-058e93cd5bef
+- name: 🇺🇸US_551|133KB/s|R002-260618 01
+  type: trojan
+  server: 50.7.177.42
+  port: 28443
+  password: 8b809212-9697-4053-a8fc-9a3ae7c4bacb
+  sni: vpn-node.internal
+- name: ❓Other_47|116KB/s|A001-260618 01
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-35
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
+- name: 🇫🇷FR_1379|349KB/s|A004-260618 01
+  type: vless
+  server: 164.68.127.108
+  port: 24144
+  uuid: 7e85ed3f-3829-45b1-8b1c-6a2e45ebc967
+- name: 🇫🇷FR_1380|233KB/s|A004-260618 01
+  type: vless
+  server: 162.159.24.131
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
+- name: 🇫🇷FR_1381|626KB/s|A004-260618 01
+  type: vless
+  server: 172.64.32.108
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
+- name: 🇫🇷FR_1382|427KB/s|A004-260618 01
+  type: vless
+  server: 172.64.53.55
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
 - name: 🇫🇷FR_1383|161KB/s|A004-260618 01
   type: vless
   server: 172.64.154.8
@@ -2372,75 +2477,3 @@ proxies:
   port: 449
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   sni: russiapower.accesscam.org
-- name: 🇳🇱NL-109.201.152.181-0139
-  type: ss
-  server: 109.201.152.181
-  port: 443
-  cipher: aes-128-cfb
-  password: shadowsocks
-- name: 🇺🇸US-37.19.198.244-0140
-  type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-37.19.198.243-0141
-  type: ss
-  server: 37.19.198.243
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸US-37.19.198.236-0142
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇳🇱NL-108.181.58.239-0144
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-- name: 🇺🇸US-37.19.198.160-0145
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇨🇦CA-137.184.174.93-0146
-  type: ss
-  server: 137.184.174.93
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇳🇱NL-108.181.126.122-0147
-  type: ss
-  server: 108.181.126.122
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-- name: 🇩🇪DE-209.46.102.22-0149
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-- name: 🇯🇵JP-149.22.87.240-0150
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵JP-149.22.87.204-0151
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵JP-149.22.87.241-0152
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks

@@ -1,4 +1,102 @@
 proxies:
+- name: 🇺🇸US_427|326KB/s|A004-260618 01
+  type: ss
+  server: 94.72.127.55
+  port: 80
+  cipher: aes-256-gcm
+  password: kRKZE3ZhECwawy1N
+- name: 🇺🇸US_428|404KB/s|A004-260618 01
+  type: ss
+  server: 154.53.60.212
+  port: 80
+  cipher: aes-256-gcm
+  password: Nxv8ypErRfCSczD7
+- name: ❓Other_34|277KB/s|A004-260618 01
+  type: ss
+  server: 154.12.242.150
+  port: 443
+  cipher: aes-256-gcm
+  password: Hi9wk14VntzGq7kq
+- name: 🇫🇷FR_1230|143KB/s|A004-260618 01
+  type: vless
+  server: ed8d.wdz.de5.net
+  port: 443
+  uuid: 0b06f318-ab9d-4de7-8779-360bd5f7ea67
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇬🇧GB_74|210KB/s|A004-260618 01
+  type: vless
+  server: 45.144.28.39
+  port: 2083
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇯🇵JP_28|257KB/s|B007-260618 01
+  type: ss
+  server: 121.46.230.136
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇫🇷FR_1231|377KB/s|T001-260618 01
+  type: vless
+  server: 45.80.111.175
+  port: 8880
+  uuid: 6ed59a5b-efef-4ddf-99f2-57d200caed47
+  network: ws
+  ws-opts:
+    headers:
+      Host: cnd.poland.myfilecdn.com
+    path: /cdn/assets/stream
+- name: 🇫🇷FR_1232|104KB/s|B007-260618 01
+  type: vless
+  server: 162.19.228.119
+  port: 80
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  network: ws
+  ws-opts:
+    headers:
+      Host: de.vpnbase.net
+    path: /http
+- name: 🇫🇷FR_1233|116KB/s|T001-260618 01
+  type: vless
+  server: 91.193.59.191
+  port: 2087
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: vlso5.1d.mom
+    path: /socks5=888:888@hkip.1d.mom:1080
+- name: 🇺🇸US_430|190KB/s|B007-260618 01
+  type: trojan
+  server: 64.74.163.118
+  port: 58536
+  password: lEjtI3pFYfU7O1UYozJcfZV5K6Fwfths
+- name: 🇫🇷FR_1234|94KB/s|B007-260618 01
+  type: vless
+  server: 104.16.100.215
+  port: 8880
+  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+  network: ws
+  ws-opts:
+    headers:
+      Host: super-sunset-010c.24-43d.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇫🇷FR_1235|411KB/s|B007-260618 01
+  type: vless
+  server: 172.66.132.196
+  port: 8880
+  uuid: d8a7b463-dc98-474d-a87e-8781476aef32
+  network: ws
+  ws-opts:
+    headers:
+      Host: ancient-tree-7dc9.336-5f9.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
 - name: 🇫🇷FR_1236|140KB/s|B007-260618 01
   type: vless
   server: 91.193.58.125
@@ -2305,108 +2403,3 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇳🇱NL_308|169KB/s|B007-260618 01
-  type: vless
-  server: nla.mythos-wargame.fun
-  port: 443
-  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇸🇪SE_15|114KB/s|B007-260618 01
-  type: vless
-  server: swa.mythos-wargame.fun
-  port: 443
-  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇱🇻LV_15|322KB/s|B007-260618 01
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷FR_1378|348KB/s|B007-260618 01
-  type: vless
-  server: www.speedtest.net
-  port: 2053
-  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: music1000.melobitmusic1.ir
-    path: /
-- name: 🇬🇧GB_155|274KB/s|M003-260806 01
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: a2ec6ed8-ef05-4fa9-b6c5-aec54186f89a
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: cloud.dev.fosonmine.site
-    path: /api/v2/session/channel/connect
-- name: 🇳🇱NL_311|162KB/s|P002-260618 01
-  type: vless
-  server: 89.105.218.102
-  port: 11443
-  uuid: 0f4baf0a-1da1-40e0-8472-058e93cd5bef
-- name: 🇺🇸US_551|133KB/s|R002-260618 01
-  type: trojan
-  server: 50.7.177.42
-  port: 28443
-  password: 8b809212-9697-4053-a8fc-9a3ae7c4bacb
-  sni: vpn-node.internal
-- name: ❓Other_47|116KB/s|A001-260618 01
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: XpnTeam-35
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- name: 🇫🇷FR_1379|349KB/s|A004-260618 01
-  type: vless
-  server: 164.68.127.108
-  port: 24144
-  uuid: 7e85ed3f-3829-45b1-8b1c-6a2e45ebc967
-- name: 🇫🇷FR_1380|233KB/s|A004-260618 01
-  type: vless
-  server: 162.159.24.131
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- name: 🇫🇷FR_1381|626KB/s|A004-260618 01
-  type: vless
-  server: 172.64.32.108
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- name: 🇫🇷FR_1382|427KB/s|A004-260618 01
-  type: vless
-  server: 172.64.53.55
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
