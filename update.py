@@ -710,9 +710,9 @@ def main():
     print(f'[YAML] 过滤掉: {filtered_count} 条')
     print(f'[YAML] 有效写入: {len(unique_proxies)} 条 → {YAML_FILE}')
 
-    # ========== 新增：节点分组（每300个一组）==========
-    print('[分组] 开始按 300 节点/组拆分...')
-    GROUP_SIZE = 300
+    # ========== 新增：节点分组（每500个一组）==========
+    print('[分组] 开始按 500 节点/组拆分...')
+    GROUP_SIZE = 500
     group_count = (len(unique_proxies) + GROUP_SIZE - 1) // GROUP_SIZE
 
     for i in range(group_count):
