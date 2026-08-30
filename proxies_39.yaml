@@ -1,15 +1,4 @@
 proxies:
-- name: LV 1 → tg@nicevpn123
-  type: ss
-  server: 46.183.217.232
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: LV 2 → tg@nicevpn123
-  type: trojan
-  server: ua-full.privateip.net
-  port: 443
-  password: 1a57ce8f-a4dd-474a-b00f-2f907290db90
 - name: LV 3 → tg@nicevpn123
   type: trojan
   server: 195.123.213.46
@@ -2945,3 +2934,15 @@ proxies:
   port: 44421
   cipher: aes-128-gcm
   password: d9c577328fb349fe
+- name: 🇨🇳 CN 355 → tg@nicevpn123
+  type: ss
+  server: 36.212.129.235
+  port: 27254
+  cipher: chacha20-ietf-poly1305
+  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
+- name: 🇨🇳 CN 357 → tg@nicevpn123
+  type: trojan
+  server: gcdddd0001.likeone.lol
+  port: 26681
+  password: 575bc4d8-e9e0-48d4-9286-f922c17b35fc
+  sni: us04.ckcloud.info

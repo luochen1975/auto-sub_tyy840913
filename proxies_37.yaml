@@ -1,16 +1,4 @@
 proxies:
-- name: 🇵🇱 PL 1481 SSS
-  type: ss
-  server: 51.77.53.200
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇫🇷 FR 1482 SSS
-  type: ss
-  server: 54.36.174.181
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
 - name: 🇨🇦 CA 1483 TJN
   type: trojan
   server: ca-full.privateip.net
@@ -2941,3 +2929,15 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: Bog0ELmMM9DSxDdQ
+- name: 🇺🇸 US 2511 TJN
+  type: trojan
+  server: 146.190.84.34
+  port: 443
+  password: GToK9gzuwh
+  sni: aka.ms
+- name: 🇸🇬 SG 2514 SSS
+  type: ss
+  server: 13.214.212.171
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05

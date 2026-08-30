@@ -1,16 +1,4 @@
 proxies:
-- name: 🇺🇸 US 2511 TJN
-  type: trojan
-  server: 146.190.84.34
-  port: 443
-  password: GToK9gzuwh
-  sni: aka.ms
-- name: 🇸🇬 SG 2514 SSS
-  type: ss
-  server: 13.214.212.171
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇺🇸 US 2515 SSS
   type: ss
   server: 38.110.1.43
@@ -2965,3 +2953,14 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: YaXvybxrP9HL79Gfltym9bw/5QIQAW/f
+- name: LV 1 → tg@nicevpn123
+  type: ss
+  server: 46.183.217.232
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: LV 2 → tg@nicevpn123
+  type: trojan
+  server: ua-full.privateip.net
+  port: 443
+  password: 1a57ce8f-a4dd-474a-b00f-2f907290db90
