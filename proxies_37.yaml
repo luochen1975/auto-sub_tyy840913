@@ -1,516 +1,4 @@
 proxies:
-- name: 🇨🇦 CA 1483 TJN
-  type: trojan
-  server: ca-full.privateip.net
-  port: 443
-  password: 71ab3866-4c8b-4a0b-a4bd-a64f110afe0b
-- name: 🇷🇺 RU 1485 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇷🇺 RU 1487 SSS
-  type: ss
-  server: 45.139.24.63
-  port: 57456
-  cipher: chacha20-ietf-poly1305
-  password: 3fbeb668f48414f6
-- name: 🇷🇺 RU 1489 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇹🇷 TR 1490 SSS
-  type: ss
-  server: 45.89.52.66
-  port: 9043
-  cipher: aes-256-cfb
-  password: HSZuyJQcWe8dxNdF
-- name: 🇵🇱 PL 1491 SSS
-  type: ss
-  server: 217.30.10.68
-  port: 9038
-  cipher: aes-256-cfb
-  password: gYCYXfkUQEs2TaJQ
-- name: 🇷🇺 RU 1492 SSS
-  type: ss
-  server: 212.192.9.220
-  port: 998
-  cipher: chacha20-ietf-poly1305
-  password: cg0KkMjbGdJEh
-- name: 🇷🇺 RU 1493 TJN
-  type: trojan
-  server: ru01.freeflyingcloud.xyz
-  port: 30002
-  password: faa0fd1b-ecf9-42ae-a5f3-0a96274b64cb
-  sni: ru01.freeflyingcloud.xyz
-- name: 🇷🇺 RU 1494 SSS
-  type: ss
-  server: 139.28.220.18
-  port: 5700
-  cipher: chacha20-ietf-poly1305
-  password: UXoGWyjwDVZIl1WMuHtxSi
-- name: 🇷🇺 RU 1495 SSS
-  type: ss
-  server: 77.105.140.135
-  port: 2562
-  cipher: chacha20-ietf-poly1305
-  password: tEO1As10EffDW5svXAwgvb
-- name: 🇵🇱 PL 1497 SSS
-  type: ss
-  server: 217.30.10.68
-  port: 9079
-  cipher: aes-256-cfb
-  password: TPqX8edgbAURcAMb
-- name: 🇷🇺 RU 1498 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇹🇷 TR 1499 SSS
-  type: ss
-  server: 45.89.52.66
-  port: 9030
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇷🇺 RU 1500 SSS
-  type: ss
-  server: 89.19.216.18
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NC7jORVNrruV/+3+PwOJrnnOeG7n75X1
-- name: 🇷🇺 RU 1501 TJN
-  type: trojan
-  server: 89.221.224.94
-  port: 80
-  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
-  sni: is2-t.sshmax.xyz
-- name: 🇷🇺 RU 1502 TJN
-  type: trojan
-  server: 185.236.233.111
-  port: 2053
-  password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765
-- name: 🇷🇺 RU 1504 SSS
-  type: ss
-  server: 212.113.106.243
-  port: 13022
-  cipher: chacha20-ietf-poly1305
-  password: w5drAL7PfCIwQ2ycUuoDsV2Ls
-- name: 🇷🇺 RU 1505 TJN
-  type: trojan
-  server: ru01.freeflyingcloud.xyz
-  port: 30002
-  password: ebd1c3e8-a136-49a5-a76c-88c4bf0a23aa
-  sni: ru01.freeflyingcloud.xyz
-- name: 🇳🇱 NL 1506 SSS
-  type: ss
-  server: 109.107.172.30
-  port: 28190
-  cipher: chacha20-ietf-poly1305
-  password: 1f8jdOIKkxRWMUeOfXPeo8
-- name: 🇷🇺 RU 1507 SSS
-  type: ss
-  server: 94.142.138.56
-  port: 25091
-  cipher: chacha20-ietf-poly1305
-  password: hnRXsWFscwBEAvGnqQQoU2
-- name: 🇨🇦 CA 1508 TJN
-  type: trojan
-  server: ca-full.privateip.net
-  port: 443
-  password: 8b47d63f-1f8e-4f8e-a1e8-ead3686e5da6
-- name: 🇷🇺 RU 1509 SSS
-  type: ss
-  server: 46.226.162.112
-  port: 32913
-  cipher: chacha20-ietf-poly1305
-  password: KTwIQM1cQJwtkrjfld6Usn
-- name: 🇷🇺 RU 1510 SSS
-  type: ss
-  server: 212.113.106.243
-  port: 12949
-  cipher: chacha20-ietf-poly1305
-  password: P2zxXPewlV3BlfqqYiSthvtLc
-- name: 🇪🇸 ES 1511 SSS
-  type: ss
-  server: 5.188.181.201
-  port: 9030
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇳🇱 NL 1512 TJN
-  type: trojan
-  server: 188.119.112.242
-  port: 443
-  password: bf2307e1-a58f-41c2-8392-d76197fc2866
-- name: 🇷🇺 RU 1513 SSS
-  type: ss
-  server: 92.246.136.190
-  port: 32025
-  cipher: chacha20-ietf-poly1305
-  password: VRKnPTULDqxaExI5yLJjoc
-- name: 🇪🇸 ES 1514 SSS
-  type: ss
-  server: 5.188.181.201
-  port: 9041
-  cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
-- name: 🇷🇺 RU 1516 SSS
-  type: ss
-  server: 78.153.149.211
-  port: 25365
-  cipher: aes-128-gcm
-  password: Telegram-ZEDMODEON
-- name: 🇷🇺 RU 1518 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇷🇺 RU 1519 SSS
-  type: ss
-  server: 195.2.76.71
-  port: 60422
-  cipher: chacha20-ietf-poly1305
-  password: u3vnfMkutB4brBoGSkAphE
-- name: 🇷🇺 RU 1520 SSS
-  type: ss
-  server: 85.192.63.92
-  port: 31212
-  cipher: chacha20-ietf-poly1305
-  password: xCoBqYZGaMivNlzIhjpIH5
-- name: 🇷🇺 RU 1521 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇷🇺 RU 1522 TJN
-  type: trojan
-  server: 45.140.169.83
-  port: 30002
-  password: ebd1c3e8-a136-49a5-a76c-88c4bf0a23aa
-  sni: ru01.freeflyingcloud.xyz
-- name: 🇷🇺 RU 1523 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇷🇺 RU 1525 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇷🇺 RU 1526 SSS
-  type: ss
-  server: 94.228.165.234
-  port: 15214
-  cipher: chacha20-ietf-poly1305
-  password: DmMQUmI7pgQDnrWqLXC00L
-- name: 🇷🇺 RU 1527 SSS
-  type: ss
-  server: 91.192.81.21
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1q7RNKaIk2wYO8fEPmEX0vWQ7Va+QRTA
-- name: 🇹🇷 TR 1529 SSS
-  type: ss
-  server: 45.89.52.66
-  port: 9040
-  cipher: aes-256-cfb
-  password: p9z5BVADH2YFs3MN
-- name: 🇷🇺 RU 1530 SSS
-  type: ss
-  server: 46.226.164.2
-  port: 16006
-  cipher: chacha20-ietf-poly1305
-  password: IKDBUJ8RH6qI10QR1MSTqR
-- name: 🇪🇸 ES 1531 SSS
-  type: ss
-  server: 5.188.181.201
-  port: 9042
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇷🇺 RU 1532 SSS
-  type: ss
-  server: 185.229.65.157
-  port: 8234
-  cipher: chacha20-ietf-poly1305
-  password: u6RYZyNId5RmoWTNTum0nz
-- name: 🇷🇺 RU 1533 SSS
-  type: ss
-  server: 94.228.169.114
-  port: 25663
-  cipher: chacha20-ietf-poly1305
-  password: 1ef9jGvAyzXLLnjssRFr8M
-- name: 🇷🇺 RU 1534 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇷🇺 RU 1535 SSS
-  type: ss
-  server: 212.113.106.76
-  port: 61992
-  cipher: chacha20-ietf-poly1305
-  password: xG1e8ntN2cff9zWCkKqXEd
-- name: 🇹🇷 TR 1536 SSS
-  type: ss
-  server: 45.89.52.66
-  port: 9041
-  cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
-- name: 🇷🇺 RU 1537 SSS
-  type: ss
-  server: 83.217.9.199
-  port: 59393
-  cipher: chacha20-ietf-poly1305
-  password: NdipHbnILjBtQgQx0Iww5q
-- name: 🇹🇷 TR 1538 SSS
-  type: ss
-  server: 45.89.52.66
-  port: 9001
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇳🇱 NL 1539 TJN
-  type: trojan
-  server: nl-full.privateip.net
-  port: 443
-  password: bf2307e1-a58f-41c2-8392-d76197fc2866
-- name: 🇷🇺 RU 1540 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇷🇺 RU 1542 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇷🇺 RU 1544 SSS
-  type: ss
-  server: 146.185.198.44
-  port: 51348
-  cipher: chacha20-ietf-poly1305
-  password: Zu5sVdhPITkII1Rf9bUTjt0ws1nks4vgBoHhe7QxwEk0j3Ai
-- name: 🇹🇷 TR 1546 SSS
-  type: ss
-  server: 45.89.52.66
-  port: 9031
-  cipher: aes-256-cfb
-  password: BwcAUZk8hUFAkDGN
-- name: 🇷🇺 RU 1547 SSS
-  type: ss
-  server: 212.113.106.76
-  port: 61992
-  cipher: chacha20-ietf-poly1305
-  password: oog65JXEql48VTve79V89g
-- name: 🇰🇿 KZ 1548 SSS
-  type: ss
-  server: 213.156.137.67
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇪🇸 ES 1549 SSS
-  type: ss
-  server: 5.188.181.201
-  port: 9031
-  cipher: aes-256-cfb
-  password: BwcAUZk8hUFAkDGN
-- name: 🇳🇱 NL 1550 TJN
-  type: trojan
-  server: nl-full.privateip.net
-  port: 443
-  password: d2b376a2-c9b7-42be-8f52-26c0987f2884
-- name: 🇷🇺 RU 1551 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇦🇪 AE 1553 SSS
-  type: ss
-  server: 5.44.42.60
-  port: 64930
-  cipher: chacha20-ietf-poly1305
-  password: CkMpBwWZ0Cr1RhVVNSXXMp
-- name: 🇷🇺 RU 1555 TJN
-  type: trojan
-  server: 176.32.35.167
-  port: 1007
-  password: 85bce006-4885-11ee-8792-f23c9164ca5d
-- name: 🇷🇺 RU 1556 SSS
-  type: ss
-  server: 217.196.103.206
-  port: 29312
-  cipher: chacha20-ietf-poly1305
-  password: qgpdyzHj8rZW9fDxxkUHRI
-- name: 🇷🇺 RU 1559 SSS
-  type: ss
-  server: 46.19.69.244
-  port: 50211
-  cipher: chacha20-ietf-poly1305
-  password: XZMPTXYRC2XB8jet5UiHOn
-- name: 🇷🇺 RU 1561 SSS
-  type: ss
-  server: 5.42.86.33
-  port: 16991
-  cipher: chacha20-ietf-poly1305
-  password: zErfOQDf3lOXZ24DK9EcAL
-- name: 🇨🇿 CZ 1562 SSS
-  type: ss
-  server: 194.87.179.169
-  port: 40928
-  cipher: chacha20-ietf-poly1305
-  password: uSFiNtjwzC1y2QMPNhrXAT5gknE1mgHggsqL6gPkUFPvWqrHC63U5p5VCNZBktT7BNoykGd1gxPZy9zoSsj6Hrw5YV3XvoPh
-- name: 🇷🇺 RU 1563 SSS
-  type: ss
-  server: 185.174.137.72
-  port: 57262
-  cipher: chacha20-ietf-poly1305
-  password: WrszSP43UAOcFljDkb8vAL
-- name: 🇷🇺 RU 1564 TJN
-  type: trojan
-  server: ru01.freeflyingcloud.xyz
-  port: 30002
-  password: 4aa4c780-e45f-4011-8b0d-5ce48071bfa0
-  sni: ru01.freeflyingcloud.xyz
-- name: 🇷🇺 RU 1566 TJN
-  type: trojan
-  server: 185.176.24.84
-  port: 80
-  password: maHanVPpN
-- name: 🇵🇱 PL 1567 SSS
-  type: ss
-  server: 217.30.10.68
-  port: 9033
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
-- name: 🇵🇱 PL 1568 SSS
-  type: ss
-  server: 217.30.10.18
-  port: 9019
-  cipher: aes-256-cfb
-  password: GA9KzeEgvfxNrgmM
-- name: 🇷🇺 RU 1570 SSS
-  type: ss
-  server: 62.113.110.233
-  port: 15174
-  cipher: chacha20-ietf-poly1305
-  password: LLVD6lbENjzG1vj15Fvq7r
-- name: 🇷🇺 RU 1572 TJN
-  type: trojan
-  server: hk-full.privateip.net
-  port: 443
-  password: 01278779-3f58-4477-8ae7-7b82033a5d2e
-- name: 🇨🇭 CH 1573 SSS
-  type: ss
-  server: 5.182.36.245
-  port: 10141
-  cipher: chacha20-ietf-poly1305
-  password: ndJuPjq7WbFDjB4oacljGw
-- name: 🇪🇸 ES 1574 SSS
-  type: ss
-  server: 5.188.181.201
-  port: 9037
-  cipher: aes-256-cfb
-  password: TN2YqghxeFDKZfLU
-- name: 🇷🇺 RU 1575 SSS
-  type: ss
-  server: 45.67.32.147
-  port: 13896
-  cipher: chacha20-ietf-poly1305
-  password: ygSXLTCrL8zeKb2n6mghK8J26GVHWmZA4pyy84Pyg6E=
-- name: 🇦🇲 AM 1576 SSS
-  type: ss
-  server: 146.185.248.22
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇸🇬 SG 1578 TJN
-  type: trojan
-  server: sg1.520s.pro
-  port: 37508
-  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
-  sni: sg01.520s.pro
-- name: 🇸🇬 SG 1579 TJN
-  type: trojan
-  server: 139.162.39.206
-  port: 443
-  password: 557340ab-4ae8-4593-989f-a8053bec73b6
-- name: 🇸🇬 SG 1580 SSS
-  type: ss
-  server: 13.250.63.15
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 US 1581 TJN
-  type: trojan
-  server: 128.199.13.40
-  port: 30020
-  password: e9edd1db-e6f0-4c37-9be7-135335a81e6c
-  sni: us05.freeflyingcloud.xyz
-- name: 🇸🇬 SG 1582 SSS
-  type: ss
-  server: 13.250.57.60
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇬 SG 1583 SSS
-  type: ss
-  server: 52.221.183.250
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇬 SG 1584 SSS
-  type: ss
-  server: 18.142.225.182
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇬 SG 1585 SSS
-  type: ss
-  server: 139.59.119.251
-  port: 20182
-  cipher: chacha20-ietf-poly1305
-  password: df30da54-317f-4726-98bd-8bc8ec8140c9
-- name: 🇸🇬 SG 1586 TJN
-  type: trojan
-  server: 139.162.50.211
-  port: 443
-  password: af7d4ea7-e793-4030-9766-9a13e1f099f5
-- name: 🇸🇬 SG 1587 SSS
-  type: ss
-  server: 3.0.50.219
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇬 SG 1588 TJN
-  type: trojan
-  server: 134.209.105.33
-  port: 443
-  password: yR7hP9aw5L
-  sni: aka.ms
-- name: 🇸🇬 SG 1589 SSS
-  type: ss
-  server: 52.221.231.138
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇬 SG 1590 SSS
-  type: ss
-  server: 139.59.119.251
-  port: 20172
-  cipher: chacha20-ietf-poly1305
-  password: df30da54-317f-4726-98bd-8bc8ec8140c9
-- name: 🇭🇰 HK 1591 SSS
-  type: ss
-  server: 8.210.89.240
-  port: 81
-  cipher: aes-128-gcm
-  password: a-wym4ovY4Yw
-- name: 🇸🇬 SG 1592 SSS
-  type: ss
-  server: 13.228.23.150
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇸🇬 SG 1593 TJN
   type: trojan
   server: 188.166.252.91
@@ -2941,3 +2429,527 @@ proxies:
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇺🇸 US 2515 SSS
+  type: ss
+  server: 38.110.1.43
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇺🇸 US 2521 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-my.1ytnode.com
+  port: 56366
+  password: cd7239af-77ad-4628-a871-00acfa219f02
+- name: 🇫🇷 FR 2525 TJN
+  type: trojan
+  server: 129.151.227.223
+  port: 30502
+  password: 184833a5-9dff-4e2b-bc03-c0b8f9ec157f
+  sni: fr01.freeflyingcloud.xyz
+- name: 🇺🇳 UN 2528 TJN
+  type: trojan
+  server: 104.16.192.159
+  port: 443
+  password: cb1f26aa437d4bfa9b841d28503ce8cc
+  sni: jobsapplyworld.com
+- name: 🇺🇳 UN 2529 TJN
+  type: trojan
+  server: 104.16.192.159
+  port: 443
+  password: cb1f26aa437d4bfa9b841d28503ce8cc
+  sni: jobsapplyworld.com
+- name: 🇺🇸 US 2534 SSS
+  type: ss
+  server: 38.114.114.208
+  port: 7306
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇺🇸 US 2540 SSS
+  type: ss
+  server: 38.114.114.143
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇸 US 2542 SSS
+  type: ss
+  server: 38.68.134.9
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇺🇳 UN 2543 TJN
+  type: trojan
+  server: 104.16.123.175
+  port: 2083
+  password: qG9K8AGnn9XH5jUqeFu96g
+  sni: cdn13.cdn2cdn.com
+- name: 🇺🇸 US 2544 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56320
+  password: cd7239af-77ad-4628-a871-00acfa219f02
+- name: 🇺🇸 US 2546 TJN
+  type: trojan
+  server: zula.ir
+  port: 443
+  password: 7f746cd0-fcfb-11ee-a867-1239d0255272
+  sni: us1.test3.net
+- name: 🇯🇵 JP 2548 TJN
+  type: trojan
+  server: 185.212.56.168
+  port: 443
+  password: share.mjj-home.com
+  sni: share.softbank.mjj-home.com
+- name: 🇺🇳 UN 2549 TJN
+  type: trojan
+  server: 104.17.61.7
+  port: 443
+  password: 4732adfa16c6450bbef87264e41332db
+  sni: jobscareerfortoday.com
+- name: 🇺🇸 US 2552 SSS
+  type: ss
+  server: 38.110.1.105
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇺🇸 US 2554 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56349
+  password: cd7239af-77ad-4628-a871-00acfa219f02
+- name: 🇺🇳 UN 2557 TJN
+  type: trojan
+  server: 104.21.41.21
+  port: 443
+  password: 64559da0-f51c-11ee-8db0-1239d0255272
+  sni: fr1.test3.net
+- name: 🇺🇸 US 2561 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-kr.1ytnode.com
+  port: 56362
+  password: cd7239af-77ad-4628-a871-00acfa219f02
+- name: 🇺🇳 UN 2563 TJN
+  type: trojan
+  server: 104.17.147.8
+  port: 443
+  password: 4aec4e7f8cf8454ea4613659822e1a61
+  sni: jobscareerforstudent.com
+- name: 🇺🇸 US 2565 TJN
+  type: trojan
+  server: 172.66.213.38
+  port: 2087
+  password: 8380da47-5632-4b0a-8047-b0939f797112
+  sni: hamrah.havafaza.shop
+- name: 🇺🇳 UN 2566 TJN
+  type: trojan
+  server: 104.21.69.44
+  port: 443
+  password: aa28db40-fc4a-11ee-83c8-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 2568 TJN
+  type: trojan
+  server: 18.118.163.183
+  port: 17400
+  password: pBmaAMoBqHGR
+  sni: appsvs.shop
+- name: 🇺🇳 UN 2569 TJN
+  type: trojan
+  server: 104.21.41.21
+  port: 443
+  password: 64559da0-f51c-11ee-8db0-1239d0255272
+  sni: fr1.test3.net
+- name: 🇺🇸 US 2570 TJN
+  type: trojan
+  server: 34.217.86.31
+  port: 17415
+  password: yUGbZAv7LW35
+  sni: appsvs.shop
+- name: 🇺🇸 US 2571 SSS
+  type: ss
+  server: 38.75.136.33
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇺🇸 US 2572 SSS
+  type: ss
+  server: 38.68.134.9
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 2574 TJN
+  type: trojan
+  server: zula.ir
+  port: 443
+  password: 7f746cd0-fcfb-11ee-a867-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇳 UN 2575 TJN
+  type: trojan
+  server: 104.21.41.21
+  port: 443
+  password: 64559da0-f51c-11ee-8db0-1239d0255272
+  sni: fr1.test3.net
+- name: 🇺🇸 US 2576 TJN
+  type: trojan
+  server: 146.190.84.34
+  port: 443
+  password: GToK9gzuwh
+  sni: aka.ms
+- name: 🇺🇸 US 2577 SSS
+  type: ss
+  server: 38.68.135.18
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇳 UN 2579 TJN
+  type: trojan
+  server: zula.ir
+  port: 443
+  password: 7cb94590-fd39-11ee-b4f1-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 2582 SSS
+  type: ss
+  server: 205.134.180.151
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 5cp9Z3iWnJZ2
+- name: 🇺🇸 US 2583 SSS
+  type: ss
+  server: 167.88.61.175
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇳 UN 2584 TJN
+  type: trojan
+  server: 104.16.192.159
+  port: 443
+  password: cb1f26aa437d4bfa9b841d28503ce8cc
+  sni: jobsapplyworld.com
+- name: 🇮🇹 IT 2585 TJN
+  type: trojan
+  server: it01.freeflyingcloud.xyz
+  port: 48102
+  password: 6d257b63-0632-4dd6-b021-3085f8dc28b2
+  sni: it01.freeflyingcloud.xyz
+- name: 🇺🇳 UN 2587 TJN
+  type: trojan
+  server: 104.16.4.103
+  port: 2087
+  password: 8380da47-5632-4b0a-8047-b0939f797112
+  sni: mokhaber.havafaza.shop
+- name: 🇺🇸 US 2590 TJN
+  type: trojan
+  server: 146.190.84.34
+  port: 443
+  password: GToK9gzuwh
+  sni: aka.ms
+- name: 🇺🇳 UN 2591 TJN
+  type: trojan
+  server: 104.16.192.155
+  port: 443
+  password: e8105dfd24414268b6c7652c63731097
+  sni: jobscareerfortoday.com
+- name: 🇺🇸 US 2593 SSS
+  type: ss
+  server: 38.75.137.93
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇺🇸 US 2595 SSS
+  type: ss
+  server: 167.88.62.62
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇺🇸 US 2596 TJN
+  type: trojan
+  server: 138.197.5.103
+  port: 443
+  password: xxoo
+  sni: us.blazeppn.info
+- name: 🇺🇸 US 2597 TJN
+  type: trojan
+  server: 104.26.14.85
+  port: 2083
+  password: 5041df4c-b3ae-481d-adf9-79b39f4810f2
+  sni: taqboostan.zagros.top
+- name: 🇺🇸 US 2598 SSS
+  type: ss
+  server: 38.114.114.208
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇸 US 2599 SSS
+  type: ss
+  server: 38.68.134.9
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇺🇸 US 2601 SSS
+  type: ss
+  server: 74.226.208.42
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇺🇸 US 2603 SSS
+  type: ss
+  server: 34.222.20.208
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 2605 SSS
+  type: ss
+  server: 13.215.208.103
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US 2615 SSS
+  type: ss
+  server: 167.88.61.175
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇺🇳 UN 2616 TJN
+  type: trojan
+  server: 104.19.159.6
+  port: 443
+  password: b0b861c2c85346a389b9e95769c3cba4
+  sni: jobscareerforstudent.com
+- name: 🇺🇸 US 2617 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56303
+  password: cd7239af-77ad-4628-a871-00acfa219f02
+- name: 🇯🇵 JP 2618 TJN
+  type: trojan
+  server: 18.183.228.134
+  port: 46885
+  password: bb1fe31e-097b-3960-9305-da72fa195920
+  sni: us-lala.zodport.com
+- name: 🇺🇸 US 2619 TJN
+  type: trojan
+  server: 146.190.84.34
+  port: 443
+  password: GToK9gzuwh
+  sni: aka.ms
+- name: 🇺🇸 US 2624 TJN
+  type: trojan
+  server: zula.ir
+  port: 443
+  password: 7f746cd0-fcfb-11ee-a867-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 2625 SSS
+  type: ss
+  server: 38.75.136.21
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇺🇸 US 2627 SSS
+  type: ss
+  server: 38.110.1.105
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇺🇸 US 2630 SSS
+  type: ss
+  server: 45.79.66.9
+  port: 443
+  cipher: aes-256-cfb
+  password: 9d6cceaa373bf2c8acb22e60b6a58be6
+- name: 🇺🇸 US 2633 SSS
+  type: ss
+  server: 38.110.1.202
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇦🇺 AU 2634 TJN
+  type: trojan
+  server: au-full.privateip.net
+  port: 443
+  password: 4b1b3f03-6493-44a9-afcf-0ccf7c754154
+- name: 🇺🇳 UN 2637 TJN
+  type: trojan
+  server: 104.19.171.5
+  port: 443
+  password: cb1f26aa437d4bfa9b841d28503ce8cc
+  sni: jobscareerforlawyers.com
+- name: 🇺🇸 US 2638 SSS
+  type: ss
+  server: 172.67.198.153
+  port: 443
+  cipher: aes-128-gcm
+  password: a-wym4ovY4Yw
+- name: 🇺🇸 US 2646 SSS
+  type: ss
+  server: 34.216.106.166
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US 2654 SSS
+  type: ss
+  server: 38.114.114.208
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇳 UN 2655 TJN
+  type: trojan
+  server: 104.21.41.21
+  port: 443
+  password: 64559da0-f51c-11ee-8db0-1239d0255272
+  sni: fr1.test3.net
+- name: 🇺🇸 US 2656 SSS
+  type: ss
+  server: 52.32.221.7
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US 2657 TJN
+  type: trojan
+  server: 172.67.158.153
+  port: 443
+  password: 01a7ed92-3ff7-4872-84a8-fcb4757783c7
+  sni: rsfndc1.cpionline.us
+- name: 🇺🇸 US 2659 TJN
+  type: trojan
+  server: 146.190.84.34
+  port: 443
+  password: GToK9gzuwh
+  sni: aka.ms
+- name: 🇺🇳 UN 2667 TJN
+  type: trojan
+  server: 104.16.159.7
+  port: 443
+  password: 4732adfa16c6450bbef87264e41332db
+  sni: bangladeshipatri.com
+- name: 🇺🇸 US 2668 SSS
+  type: ss
+  server: 66.225.246.221
+  port: 30129
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇺🇳 UN 2669 TJN
+  type: trojan
+  server: 104.21.41.21
+  port: 443
+  password: 64559da0-f51c-11ee-8db0-1239d0255272
+  sni: fr1.test3.net
+- name: 🇺🇸 US 2670 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56333
+  password: cd7239af-77ad-4628-a871-00acfa219f02
+- name: 🇺🇸 US 2671 SSS
+  type: ss
+  server: 38.75.137.105
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇺🇳 UN 2674 TJN
+  type: trojan
+  server: 104.17.147.2
+  port: 443
+  password: 71409d3e488548e8bb076d229778f008
+  sni: jobscareerfortoday.com
+- name: 🇺🇸 US 2676 TJN
+  type: trojan
+  server: 172.66.213.38
+  port: 2087
+  password: 8380da47-5632-4b0a-8047-b0939f797112
+  sni: hamrah.havafaza.shop
+- name: 🇺🇸 US 2682 SSS
+  type: ss
+  server: 38.75.136.33
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇳 UN 2685 TJN
+  type: trojan
+  server: 104.16.123.175
+  port: 2083
+  password: qG9K8AGnn9XH5jUqeFu96g
+  sni: cdn13.cdn2cdn.com
+- name: 🇺🇸 US 2688 TJN
+  type: trojan
+  server: 172.67.204.84
+  port: 2083
+  password: 0e81a9cd-d849-4101-8d64-574c283207de
+  sni: de1.trojanvpn.de
+- name: 🇺🇸 US 2694 SSS
+  type: ss
+  server: 38.75.136.108
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇺🇳 UN 2696 TJN
+  type: trojan
+  server: 104.16.123.175
+  port: 2083
+  password: qG9K8AGnn9XH5jUqeFu96g
+  sni: cdn13.cdn2cdn.com
+- name: 🇺🇸 US 2699 SSS
+  type: ss
+  server: 38.86.135.225
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇺🇸 US 2700 TJN
+  type: trojan
+  server: 138.197.5.103
+  port: 443
+  password: xxoo
+  sni: telewebion.com
+- name: 🇺🇸 US 2701 SSS
+  type: ss
+  server: shct.pkyun.xyz
+  port: 51706
+  cipher: chacha20-ietf-poly1305
+  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
+- name: 🇺🇸 US 2704 TJN
+  type: trojan
+  server: 45.79.9.98
+  port: 443
+  password: be968c88-86db-48e7-b8f8-ecebb33a022f
+- name: 🇺🇸 US 2707 SSS
+  type: ss
+  server: 192.227.206.115
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇺🇸 US 2714 TJN
+  type: trojan
+  server: 45.77.161.86
+  port: 443
+  password: wkmY1R4EcP
+  sni: z-v2-003314.kailib.com
+- name: 🇺🇸 US 2716 SSS
+  type: ss
+  server: 38.86.135.225
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇺🇸 US 2717 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-ph.1ytnode.com
+  port: 56381
+  password: cd7239af-77ad-4628-a871-00acfa219f02
+- name: 🇺🇳 UN 2719 TJN
+  type: trojan
+  server: 104.16.192.159
+  port: 443
+  password: cb1f26aa437d4bfa9b841d28503ce8cc
+  sni: jobsapplyworld.com
+- name: 🇯🇵 JP 2720 TJN
+  type: trojan
+  server: 157.254.193.251
+  port: 20220
+  password: d31bd2ae-7be8-4e5f-a781-2f41c442d034
+  sni: zzjp01.gutingting.com
+- name: 🇺🇸 US 2722 TJN
+  type: trojan
+  server: 3.14.180.101
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇺🇸 US 2723 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56311
+  password: cd7239af-77ad-4628-a871-00acfa219f02

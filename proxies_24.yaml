@@ -1,279 +1,4 @@
 proxies:
-- name: C🟠🇹🇷[🎬🤖🎭🎪]_dokng.com_21b33d3f
-  type: vless
-  server: premium-tr.geodema.network
-  port: 8443
-  uuid: 78eb4455-0d07-4bc2-93e3-7c8654f11d74
-  tls: true
-- name: A🟢🇸🇨[🎬📺🎭🎪]_dokng.com_3a647cb1
-  type: vless
-  server: nexusmods.com
-  port: 443
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: mao.kipfel.kdns.fr
-    path: /glasspanel/guest000_0_5de14443985f/
-- name: U⚪🏳️[🤖📺✨🎞️]_dokng.com_4b4e6659
-  type: hysteria2
-  server: 140.238.43.0
-  port: 50160
-  password: 9c5be37406b6584005b8de0ee3734dd9
-- name: C🟠🇺🇸_dokng.com_216af303
-  type: ss
-  server: www.syfe.com
-  port: 80
-  cipher: 2022-blake3-aes-128-gcm
-  password: YTE1ZWU4ZTEyZjc3YmEzZA==:ZjQ4NzExMzUtMGYzNy00NA==
-- name: D🔴🇸🇬[📦]_dokng.com_c7548c9f
-  type: vless
-  server: 82.38.46.66
-  port: 15006
-  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
-  tls: true
-- name: A🟢🇷🇺[🎪]_dokng.com_816f5138
-  type: vless
-  server: 201.24.49.79
-  port: 2200
-  uuid: 3b4274c1-4744-452e-9903-e11ccc0c9900
-  network: ws
-  ws-opts:
-    path: /v1
-- name: A🟢🇨🇳[📺🎪🔍]_dokng.com_4accb5eb
-  type: hysteria2
-  server: xg1.mangshe.xyz
-  port: 2056
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-- name: C🟠🇵🇱_dokng.com_77d50efa
-  type: vless
-  server: 62.113.106.165
-  port: 5012
-  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
-  tls: true
-- name: A🟢🇷🇺[🎪]_dokng.com_3bd65949
-  type: hysteria2
-  server: ru1.xiaoliyu.cyou
-  port: 4433
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-- name: C🟠🇨🇴[🎬🤖📺🎭]_dokng.com_8ce9c201
-  type: vless
-  server: 149.130.180.150
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- name: D🔴🇫🇮[🤖📺🎪✨]_dokng.com_4e065ca9
-  type: vless
-  server: 208.123.190.14
-  port: 2046
-  uuid: 8535e46f-4c0b-4b02-9369-d4d553c9a892
-  tls: true
-  network: ws
-  ws-opts: {}
-- name: A🟢🇭🇰[📺🎭✨📦]_dokng.com_0619e2fb
-  type: vless
-  server: bzgwleqqngnbdbwwybhmqqn.cfooov.xyz
-  port: 26787
-  uuid: 0234cdd9-35ee-40a5-b698-9820f09a04f5
-  tls: true
-- name: C🟠🇷🇺[📺]_dokng.com_a50be98e
-  type: vless
-  server: 193.124.125.135
-  port: 443
-  uuid: 968469ec-67c9-4fe6-bf72-dd20716add3b
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: w2.tunnelgate.org
-    path: /ws/v1/ru
-- name: A🟢🇷🇺[📺]_dokng.com_60e78891
-  type: hysteria2
-  server: els1.mangshe.xyz
-  port: 2056
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-- name: C🟠🇷🇺[🎪]_dokng.com_f80343b3
-  type: vless
-  server: 185.185.69.26
-  port: 2200
-  uuid: 7ee53e03-96ed-4121-9da2-62f3d3374506
-  network: ws
-  ws-opts:
-    headers:
-      Host: rzd.ru
-    path: /v1
-- name: tg频道:@ripaojiedian
-  type: ss
-  server: 63.180.254.10
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇭🇰 香港2|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 10001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇭🇰 香港3|@ripaojiedian
-  type: ss
-  server: 112.28.141.77
-  port: 10006
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇭🇰 香港4|@ripaojiedian
-  type: trojan
-  server: 95.40.24.249
-  port: 53001
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-- name: 🇯🇵 日本2|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 40001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇯🇵 日本3|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 40002
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇸🇬 新加坡3|@ripaojiedian
-  type: trojan
-  server: 54.255.201.71
-  port: 41421
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-- name: 🇺🇸 美国2|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 50003
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇺🇸 美国|@ripaojiedian
-  type: ss
-  server: 103.236.66.4
-  port: 50001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇺🇸 美国3|@ripaojiedian
-  type: trojan
-  server: 43.198.210.207
-  port: 1431
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-- name: 🇨🇳 台湾|@ripaojiedian
-  type: ss
-  server: 36.33.35.105
-  port: 30001
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
-- name: 🇩🇪德國丨yoyapai.com
-  type: vless
-  server: 91.206.71.8
-  port: 80
-  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
-  network: ws
-  ws-opts:
-    headers:
-      Host: round-haze-8783.294.workers.dev
-    path: /pyip=Telegram🇨🇳 @WangCai2
-- name: ❓未知丨yoyapai.com
-  type: vless
-  server: 91.206.71.8
-  port: 80
-  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
-  network: ws
-  ws-opts:
-    headers:
-      Host: round-haze-8783.294.workers.dev
-    path: /pyip=Telegram🇨🇳+@WangCai2
-- name: ❓未知丨yoyapai.com
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  tls: true
-  servername: dey.lnmarketplace.net
-- name: 🇺🇸美國丨yoyapai.com
-  type: vless
-  server: 45.40.150.4
-  port: 80
-  uuid: 72c2b7cc-fcd9-494f-8a2e-21dcd062ff11
-  network: ws
-  ws-opts:
-    headers:
-      Host: holy-breeze-0bac.47-dec.workers.dev
-    path: /pyip=Telegram🇨🇳++
-- name: ❓未知丨
-  type: vmess
-  server: 2001:bc8:32d7:1a9::2
-  port: 23388
-  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /github.com/Alvin9999-newpac/fanqiang
-- name: ❓未知丨yoyapai.com
-  type: trojan
-  server: 104.26.14.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: ❓未知丨yoyapai.com
-  type: trojan
-  server: 104.18.152.108
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦CA加拿大丨yoyapai.com
-  type: trojan
-  server: 104.18.152.140
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷法国丨yoyapai.com
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR法國丨yoyapai.com
-  type: trojan
-  server: www.speedtest.org
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸US美國丨yoyapai.com
-  type: trojan
-  server: 104.26.15.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸US美國丨yoyapai.com
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-- name: 🇺🇸US美國丨yoyapai.com
-  type: trojan
-  server: 104.16.174.22
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷法国丨yoyapai.com
-  type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦CA加拿大丨yoyapai.com
-  type: trojan
-  server: 104.16.73.213
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
 - name: ❓未知丨yoyapai.com
   type: trojan
   server: 104.18.152.143
@@ -4127,3 +3852,335 @@ proxies:
     headers:
       Host: damp-sky-9aaa.224-8b4.workers.dev
     path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇺🇸US_14|289KB/s|C002-260622 01
+  type: hysteria2
+  server: hy2.123266.xyz
+  port: 33333
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: hy2.123266.xyz
+- name: 🇹🇼TW_2|217KB/s|C002-260622 01
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
+- name: 🇫🇷FR_102|299KB/s|C002-260622 01
+  type: vless
+  server: 104.21.55.229
+  port: 8880
+  uuid: 3adac494-0eb1-4d89-a187-b2181691444d
+  network: ws
+  ws-opts:
+    headers:
+      Host: tiny-lake-bbf1.369-766.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇷🇴RO_3|252KB/s|X001-260618 01
+  type: hysteria2
+  server: hy2-new.aspidnet.xyz
+  port: 443
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+- name: 🇫🇷FR_103|159KB/s|C002-260622 01
+  type: vless
+  server: anydesk.com
+  port: 8880
+  uuid: 2e3431ac-0b98-4471-9822-6b7ae94a9a11
+  network: ws
+  ws-opts:
+    headers:
+      Host: polished-hall-7427.463-5d2.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_104|303KB/s|C002-260622 01
+  type: vless
+  server: 172.67.209.127
+  port: 8880
+  uuid: 24c2a873-4584-4c53-8679-61029682d0bb
+  network: ws
+  ws-opts:
+    headers:
+      Host: soft-thunder-bc22.111-f59.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_105|119KB/s|C002-260622 01
+  type: vless
+  server: cf9.466688.xyz
+  port: 8880
+  uuid: 1a5e2e63-64e2-4737-95b6-c2ee60c979a1
+  network: ws
+  ws-opts:
+    headers:
+      Host: wild-mode-4ca6.234-8f6.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian
+- name: 🇫🇷FR_106|142KB/s|C002-260622 01
+  type: vless
+  server: 172.64.88.168
+  port: 8880
+  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
+  network: ws
+  ws-opts:
+    headers:
+      Host: damp-surf-aacf.296-8ed.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇳🇱NL_31|202KB/s|C002-260622 01
+  type: vless
+  server: 51.158.206.29
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷FR_107|324KB/s|C002-260622 01
+  type: vless
+  server: log.bpminecraft.com
+  port: 8880
+  uuid: ba026f72-b6b6-448b-8a8e-39e60e375f5f
+  network: ws
+  ws-opts:
+    headers:
+      Host: plain-cell-7c51.415-172.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_108|255KB/s|T001-260618 01
+  type: vless
+  server: 62.210.91.2
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇫🇷FR_109|235KB/s|X001-260618 01
+  type: vless
+  server: www.ipget.net
+  port: 8880
+  uuid: 90f0ae37-5a8f-4649-98ad-ac5323840f93
+  network: ws
+  ws-opts:
+    headers:
+      Host: silent-king-06b6.297-842.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇺🇸US_24|298KB/s|C002-260622 01
+  type: hysteria2
+  server: 155.248.209.237
+  port: 33333
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: 155.248.209.237
+- name: 🇫🇷FR_110|108KB/s|X001-260618 01
+  type: vless
+  server: www.gov.ua
+  port: 8880
+  uuid: da5ff974-c135-4b57-a0ff-53dd2502e71e
+  network: ws
+  ws-opts:
+    headers:
+      Host: long-smoke-b6cb.290-cd1.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇳🇱NL_32|152KB/s|S004-260618 01
+  type: ss
+  server: 82.38.31.36
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷FR_111|235KB/s|M002-260618 01
+  type: trojan
+  server: 104.21.26.36
+  port: 443
+  password: bpb-trojan
+  sni: vless.herogoing.top
+- name: 🇫🇷FR_112|561KB/s|M002-260618 01
+  type: vless
+  server: 104.21.96.1
+  port: 443
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  tls: true
+  servername: D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev
+    path: /Pl67KhTLWmJqQ2lY?ed=2560
+- name: 🇺🇸US_25|227KB/s 01
+  type: ss
+  server: 173.244.56.6
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL_34|153KB/s 01
+  type: ss
+  server: 82.38.31.48
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_35|258KB/s 01
+  type: ss
+  server: 82.38.31.192
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_36|281KB/s 01
+  type: ss
+  server: 82.38.31.2
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇹🇼TW_3|87KB/s 01
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+- name: 🇳🇱NL_37|117KB/s 01
+  type: ss
+  server: 82.38.31.183
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇫🇷FR_113|222KB/s 01
+  type: vless
+  server: 104.16.106.213
+  port: 8880
+  uuid: 82a3c394-55b7-4780-93a0-5f45c0e89625
+  network: ws
+  ws-opts:
+    headers:
+      Host: square-brook-e650.353-3ac.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_114|345KB/s 01
+  type: vless
+  server: www.ipget.net
+  port: 8880
+  uuid: bbecfa92-4f64-4eb8-82e6-388394d909fe
+  network: ws
+  ws-opts:
+    headers:
+      Host: empty-poetry-07b6.477-e0d.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_115|193KB/s 01
+  type: vless
+  server: 104.16.106.213
+  port: 8880
+  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
+  network: ws
+  ws-opts:
+    headers:
+      Host: red-flower-a2bf.363.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_116|323KB/s 01
+  type: trojan
+  server: 104.18.155.119
+  port: 443
+  password: 988sR-269PKCKlb&3pMrFTEr
+  sni: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
+- name: 🇫🇷FR_117|291KB/s 01
+  type: vless
+  server: www.gov.ua
+  port: 8880
+  uuid: 1742863c-ce4b-4bb7-b807-80da29cbec86
+  network: ws
+  ws-opts:
+    headers:
+      Host: icy-fog-9a41.70-a39.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇫🇷FR_118|120KB/s 01
+  type: vless
+  server: cf7.466688.xyz
+  port: 8880
+  uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655
+  network: ws
+  ws-opts:
+    headers:
+      Host: broken-star-c5ae.446.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
+- name: 🇫🇷FR_119|260KB/s 01
+  type: vless
+  server: www.gov.ua
+  port: 8880
+  uuid: 942bdcfc-e522-44f1-b899-3bd8db7c5ae2
+  network: ws
+  ws-opts:
+    headers:
+      Host: winter-leaf-b4da.122-6c9.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_120|180KB/s 01
+  type: vless
+  server: 172.66.170.53
+  port: 8880
+  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
+  network: ws
+  ws-opts:
+    headers:
+      Host: polished-meadow-2ac5.228-76d.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇫🇷FR_121|467KB/s 01
+  type: vless
+  server: www.visa.com.sg
+  port: 8880
+  uuid: 4af06e6a-63ae-43c1-83c0-f8f613aef263
+  network: ws
+  ws-opts:
+    headers:
+      Host: withered-sea-c187.445-608.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: 🇫🇷FR_122|213KB/s 01
+  type: vless
+  server: 104.16.106.213
+  port: 8880
+  uuid: a3cd0fea-482b-4b67-be46-de041690b657
+  network: ws
+  ws-opts:
+    headers:
+      Host: solitary-firefly-e2dc.495-398.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇳🇱NL_38|87KB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.57
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇺🇸US_26|436KB/s|A004-260618 01
+  type: ss
+  server: 108.181.0.177
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+- name: 🇨🇦CA_4|215KB/s|A004-260618 01
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL_39|280KB/s|A004-260618 01
+  type: ss
+  server: 193.29.139.235
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_40|290KB/s|B007-260618 01
+  type: ss
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇫🇷FR_123|218KB/s|B007-260618 01
+  type: trojan
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇺🇸US_27|183KB/s|B007-260618 01
+  type: vless
+  server: 15.204.97.219
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇳🇱NL_41|163KB/s|C002-260622 01
+  type: vless
+  server: 51.158.206.96
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
