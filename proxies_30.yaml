@@ -1,3132 +1,2938 @@
 proxies:
-- name: 🇭🇰_HK_中国香港
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-- name: 🇫🇷_FR_法国
-  type: vless
-  server: 13.37.22.60
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v8.hdacd.com
-  port: 30808
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇹🇷_TR_土耳其
-  type: vless
-  server: 45.196.201.14
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  tls: true
-  servername: storage.yandex.net
-  flow: xtls-rprx-vision
-- name: 🇯🇵_JP_日本->🇺🇸_US_美国
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇫🇷_FR_法国
-  type: vless
-  server: 13.37.22.60
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇸🇬_SG_新加坡
+- name: 🇩🇪 DE 1090 TJN
   type: trojan
-  server: resolved-gelding.rooster465.autos
+  server: de-full.privateip.net
   port: 443
-  password: FC60532879
-  sni: resolved-gelding.rooster465.autos
-- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇩🇪_DE_德国
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-- name: 🇹🇷_TR_土耳其
-  type: vless
-  server: 45.196.201.105
+  password: 8ea03cb9-e073-4904-8081-f43cb43fddac
+- name: 🇩🇪 DE 1093 TJN
+  type: trojan
+  server: de-full.privateip.net
   port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  tls: true
-  servername: storage.yandex.net
-  flow: xtls-rprx-vision
-- name: 🇹🇷_TR_土耳其
-  type: vless
-  server: 45.196.201.170
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  tls: true
-  servername: storage.yandex.net
-  flow: xtls-rprx-vision
-- name: 🇭🇰_HK_中国香港
-  type: vmess
-  server: 47.76.127.88
-  port: 5566
-  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷_TR_土耳其
-  type: vless
-  server: 45.196.201.92
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  tls: true
-  servername: storage.yandex.net
-  flow: xtls-rprx-vision
-- name: 🇹🇷_TR_土耳其
-  type: vless
-  server: 45.196.201.37
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  tls: true
-  servername: storage.yandex.net
-  flow: xtls-rprx-vision
-- name: 未知 SS-01 | free-nodes
-  type: ss
-  server: 144.24.225.94
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +KGg1IPCmwou/Tbox35CD4DDdNYoAFN+ywjSch2F6LE=
-- name: 未知 SS-02 | free-nodes
-  type: ss
-  server: 129.151.86.44
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +R74ooPJ4PHFZKttB9Zh35Fg9N7SxRbRYDFNN1vGabk=
-- name: 未知 SS-03 | free-nodes
-  type: ss
-  server: 144.24.226.232
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 0ZQmK4h6FYfJ1g8JU3Jmh0vKH6WlCFtEkcmbSRCyAoM=
-- name: 未知 SS-04 | free-nodes
-  type: ss
-  server: 130.61.41.25
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 0g/TsnuY8fpXjGhv1QMzb/3s3CD00hkrUffPgishOvo=
-- name: 未知 SS-05 | free-nodes
-  type: ss
-  server: 129.151.84.137
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 1MX/11eaRm2ObfaODRKi4ZNAWWxrsaPFCKtiyssCJMs=
-- name: 未知 SS-06 | free-nodes
-  type: ss
-  server: 161.153.115.187
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2ecH6KjZ47PFvs90eNt1AAstlT3n5eZergD2O5IXEas=
-- name: 未知 SS-07 | free-nodes
-  type: ss
-  server: 163.176.56.46
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw=
-- name: 未知 SS-08 | free-nodes
-  type: ss
-  server: 152.67.52.97
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2gtecrcNXbLo1qmEHIqeVBmaBEafjnm8XJMuL2dGPlQ=
-- name: 未知 SS-09 | free-nodes
-  type: ss
-  server: 158.178.159.220
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2w4/eGbaFaK8GlJMa+yKZO1EwfIe1nOpojVM3qPFKkU=
-- name: 未知 SS-10 | free-nodes
-  type: ss
-  server: 129.151.88.180
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc=
-- name: 未知 SS-11 | free-nodes
-  type: ss
-  server: 147.15.91.100
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7qKgkFPiuE7SbagJv9Qjyb1QXHPEMi2tuEnVaavwhcM=
-- name: 未知 SS-12 | free-nodes
-  type: ss
-  server: 130.61.176.82
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4/4O8tTGmtVVsD2fk70j39adoR7JWg8u114Kfy15IAw=
-- name: 未知 SS-13 | free-nodes
-  type: ss
-  server: 137.131.228.121
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 55nlrXTkb08jPEwboRS7GOlM3LiBb4sqMGC0wmvKhw0=
-- name: 未知 SS-14 | free-nodes
-  type: ss
-  server: 134.65.62.195
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5CkaY/EgA106Ec/ceWI2A4I7BXIgbDUJ6hRnDiCWX60=
-- name: 未知 SS-15 | free-nodes
-  type: ss
-  server: 92.5.228.26
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5Xn2qHoVdu6aJjp6R2KjKrk10+qFniNh5OjKW93TdWk=
-- name: 未知 SS-16 | free-nodes
-  type: ss
-  server: 130.61.85.53
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 67WnA2slMaP+SEtj7R8eea9uFlTg19yFTrOQMmz2QRI=
-- name: 未知 SS-17 | free-nodes
-  type: ss
-  server: 129.146.73.229
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 6EIW6TpEGUAHz8tihBsiDpDi+HMwEG0ZvHmx80Z9hwE=
-- name: 未知 SS-18 | free-nodes
-  type: ss
-  server: 129.151.75.132
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 6pOYXynds0NHaX5zmVUEpWxt9hdlhhl7W4oIOL4EHKs=
-- name: 未知 SS-19 | free-nodes
-  type: ss
-  server: 129.150.48.175
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8C+C41HLztRjvq+sf6K94V2i+6SYGHN/ldg2UttNNY4=
-- name: 未知 SS-20 | free-nodes
-  type: ss
-  server: 134.65.61.49
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8IpzGj+4Dz13GyB7G5h1DuG0klyKJ4Ku73CAYi6cs5Y=
-- name: 未知 SS-21 | free-nodes
-  type: ss
-  server: 140.245.123.126
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9PvikasSAkf6uo3YfXr/N6WffBIsBQt0Nid+CxbSXDM=
-- name: 未知 SS-22 | free-nodes
-  type: ss
-  server: 129.151.65.11
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9UMwtuEIWbCj7f9y8bx+o3CumyaG15feQ3VbyjaD3nQ=
-- name: 未知 SS-23 | free-nodes
-  type: ss
-  server: 132.226.71.250
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9X1MAxGhs1ni3zLUnZn/IHSClJTA2wy2PfIfcpapHJw=
-- name: 未知 SS-24 | free-nodes
-  type: ss
-  server: 129.151.76.241
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9hCTQgXc8nHfYc1TUZmrQax7am1SKNsUSRlCHRMhITM=
-- name: 未知 SS-25 | free-nodes
-  type: ss
-  server: 141.148.234.216
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ChsbgW3Or5iKoWxNZQyTSxGx3KIKHjOD+w1t9/MbeeA=
-- name: 未知 SS-26 | free-nodes
-  type: ss
-  server: 129.153.203.166
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: A23Zvh1OLiC2Y+dr+da8RDCNlqeYEdn6Luu/gWk/6rs=
-- name: 未知 SS-27 | free-nodes
-  type: ss
-  server: 129.151.70.252
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ACBxVu50k3V8Oy+U4V+ad2Z85fnNVys6MfGj5Sinz70=
-- name: 未知 SS-28 | free-nodes
-  type: ss
-  server: 129.151.89.37
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: AYhW0WCXnkWSVLU1TWzGkAAutfAlRaf3PPe++vWpKV4=
-- name: 未知 SS-29 | free-nodes
-  type: ss
-  server: 130.61.236.143
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Al3fRrC5DVErEdhREpouv5xxxkU+5wgYtkGRYiEDhQw=
-- name: 未知 SS-30 | free-nodes
-  type: ss
-  server: 168.107.84.216
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
-- name: 未知 SS-31 | free-nodes
-  type: ss
-  server: 147.15.47.5
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BFQyHWB20qvH0asuixcidL1wLU6XLdmFzANF3GjLFQw=
-- name: 未知 SS-32 | free-nodes
-  type: ss
-  server: 144.21.33.206
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BV86qPJylUk7GQtbhPEO8PRzZ+78F9XD24HIU2z7k4o=
-- name: 未知 SS-33 | free-nodes
-  type: ss
-  server: 137.131.35.71
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BXx9inbBMWJ1C9RDbASzhzsgJy4rvTPibOWqVhLFdNo=
-- name: 未知 SS-34 | free-nodes
-  type: ss
-  server: 144.24.160.250
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: C1U/t2iR/+R2DqqWk+e6cFFEhaAdGJfGBR+GeNrkoME=
-- name: 未知 SS-35 | free-nodes
-  type: ss
-  server: 129.146.74.96
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: DM4XRM+YsXKRBV8vbBFXyLX1k1pwNMwXivSMmiXKZF4=
-- name: 未知 SS-36 | free-nodes
-  type: ss
-  server: 134.98.133.97
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Di0niuJKfaX3xE2XbjXVE3LnDahhHuRY3OehphQn+dw=
-- name: 未知 SS-37 | free-nodes
-  type: ss
-  server: 129.151.77.233
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: DlT2mkkr4HdSTn3gCzKZ8iF+//KKBL8Kw2ytl1qprhU=
-- name: 未知 SS-38 | free-nodes
-  type: ss
-  server: 144.24.229.230
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EOMKHJ7htCaQWlQV7lWfaNS5jnhWg94TbhEMDEby7sE=
-- name: 未知 SS-39 | free-nodes
-  type: ss
-  server: 129.146.202.210
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EoVbt6nGXCEmXrCMByEIS4GVfeplyyrCfeITadO2Td8=
-- name: 未知 SS-40 | free-nodes
-  type: ss
-  server: 161.118.203.141
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: F2M12ztwS+zxs2LT5+VDiHt3FuhbuzBMYRiswQM8b74=
-- name: 未知 SS-41 | free-nodes
-  type: ss
-  server: 92.5.66.224
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: FRVDR68yoH7fh5rIYxMxG/xkQDwzAJwXk73cBP3PLvs=
-- name: 未知 SS-42 | free-nodes
-  type: ss
-  server: 64.181.178.255
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Fw9bgI7CnhMMq21OpAvd0AG6kI8jmhvwPPxJ/ZV+ZaM=
-- name: 未知 SS-43 | free-nodes
-  type: ss
-  server: 161.118.225.224
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: KA1/OAHhawU2vWpzCWzboh5Sy7Pf5oJRaWpUUdVGnVw=
-- name: 未知 SS-44 | free-nodes
-  type: ss
-  server: 129.151.85.177
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: HEZMw3e3ObzQ4hOH3EwEh3RsD3u7zzmSOHpVGDATZRk=
-- name: 未知 SS-45 | free-nodes
-  type: ss
-  server: 129.148.44.181
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: HWBXhJoxrIyNrENJIipt9FVnzqRABmuXjSW0HtgNGI0=
-- name: 未知 SS-46 | free-nodes
-  type: ss
-  server: 146.235.35.83
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IcsKPKHKW9DOiQEeXcRnYMR4dcZ3zP5g0DgZk6CQHWw=
-- name: 未知 SS-47 | free-nodes
-  type: ss
-  server: 163.176.36.206
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: M1Ha2O5QMCqUpIt8Xgvk42c4NWqsMt6z1tRNZ3gMW/Y=
-- name: 未知 SS-48 | free-nodes
-  type: ss
-  server: 130.61.81.111
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: N1wWAclBS1JWHoN3JOOUOEpvV0+NKZFdBpGMHZSMFuU=
-- name: 未知 SS-49 | free-nodes
-  type: ss
-  server: 144.24.228.102
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: N32MvyKWcvB2dfd9+8tDGsdDPkfZtsmmm6eik9yxW/E=
-- name: 未知 SS-50 | free-nodes
-  type: ss
-  server: 130.61.34.182
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: NLrckFvmYxeqGAR3dbSZb2ImAvMylV4p8yhCAIrQ+hI=
-- name: 未知 SS-51 | free-nodes
-  type: ss
-  server: 147.15.126.231
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Nb4cyfUWNhfcSQUm/3QbpS8DvPiigNgg9Vrx2v+siFo=
-- name: 未知 SS-52 | free-nodes
-  type: ss
-  server: 167.234.225.164
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: O68yo+vY7gEcToIytfKJGZCG7lQkBW4VzsP1ZXRsTIU=
-- name: 未知 SS-53 | free-nodes
-  type: ss
-  server: 168.107.81.254
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: SeX7cLfW+WWgFoc3nPSBxPxBPtE63qwODMqpUf7Slho=
-- name: 未知 SS-54 | free-nodes
-  type: ss
-  server: 163.176.167.208
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: PYC1z5v6m+bo2axydtFbbI3GQQy/ZEcP8BjAVh6s7b8=
-- name: 未知 SS-55 | free-nodes
-  type: ss
-  server: 163.176.61.216
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Q9hM7ALoZdFYyLDQYsQLjK0qE9gnz4/OuEI1XlJNYPU=
-- name: 未知 SS-56 | free-nodes
-  type: ss
-  server: 150.230.157.58
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: T4U8Yut/MwgzDc5v2QDgEQ8kNm7ne2Q7V4MUN86I2u0=
-- name: 未知 SS-57 | free-nodes
-  type: ss
-  server: 158.180.13.253
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: T8nDZA9hyAy2MrDlJBL1w5F6HMzfNNyN8Ysk1Se1INc=
-- name: 未知 SS-58 | free-nodes
-  type: ss
-  server: 129.151.94.56
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: TIA8kOrHKFpcEamkLCrKJjJXhUujmpW7N6vp5rtWh2I=
-- name: 未知 SS-59 | free-nodes
-  type: ss
-  server: 147.15.34.121
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: XVdJDPuYb1x072JrCC2+BfeiCgIMDhDO3q3hl467FZU=
-- name: 未知 SS-60 | free-nodes
-  type: ss
-  server: 163.176.175.199
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: YJJy7dk2gzKOwuowrsJ+v6QZGEy0q0GZyC0n4NHg8pk=
-- name: 未知 SS-61 | free-nodes
-  type: ss
-  server: 152.70.53.76
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: YyppYr+19SFyy4WAU2OmSlq+NwKjR+L0oV2CCJ6rMAM=
-- name: 未知 SS-62 | free-nodes
-  type: ss
-  server: 129.151.75.194
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: a/UK8LHF/90SAehQnn56RP5pUgdXKFLeP4sXt/D7VOw=
-- name: 未知 SS-63 | free-nodes
-  type: ss
-  server: 136.248.80.6
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo=
-- name: 未知 SS-64 | free-nodes
-  type: ss
-  server: 158.101.222.193
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: c1X6HxfuG20TnAmSC8ZYQYDJqmxgjOP1vwvrkQcPMdQ=
-- name: 未知 SS-65 | free-nodes
-  type: ss
-  server: 129.151.74.128
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: dIQ//bx/BDhH5+YWp3RN0CvBfWy9WJPELBxOF3ta93k=
-- name: 未知 SS-66 | free-nodes
-  type: ss
-  server: 129.159.55.129
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: e7n6+Uknur6uXiP4zuJYN+n6KACAX9+s17J3MLnzNB4=
-- name: 未知 SS-67 | free-nodes
-  type: ss
-  server: 129.146.113.93
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: fLNIIbHAv/g58k4JwMx87hCjA8+Uod3DuU7fo6yi1Bk=
-- name: 未知 SS-68 | free-nodes
-  type: ss
-  server: 129.151.66.31
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: fr5M3Mv/8HIcozWHJCfI8SeuOYixEodurkiYtFmanP8=
-- name: 未知 SS-69 | free-nodes
-  type: ss
-  server: 143.47.186.208
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kPWjZHoxMU/XHy8n7QCOdvJx8GQeDr6m5/SDM6wPX2c=
-- name: 未知 SS-70 | free-nodes
-  type: ss
-  server: 141.144.250.61
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kdTMVAm8v43BRuJZr+GI+udAziQPGR2QdYITH9w2WNg=
-- name: 未知 SS-71 | free-nodes
-  type: ss
-  server: 134.65.61.103
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kl3y4L+253t5duqM0xIkuYbiQS6Q/UL4fjXfuoqiG0I=
-- name: 未知 SS-72 | free-nodes
-  type: ss
-  server: 130.61.148.92
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: iMCyLh/KjHKyfw2Y9uT9AK5zu6o04oI6AtshYHbgpVY=
-- name: 未知 SS-73 | free-nodes
-  type: ss
-  server: 161.153.119.148
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ifrTlZy7Avf81frUk4hicQ8bxe7Vm9kV+JngePHDDTk=
-- name: 未知 SS-74 | free-nodes
-  type: ss
-  server: 130.61.40.100
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jeFxHeDLdS3v1c6txqm38GivrrSQFTuxRBft80ewg6Q=
-- name: 未知 SS-75 | free-nodes
-  type: ss
-  server: 129.153.74.252
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jpJxo3GBO0Z7kQjyDLt0HTiPuI+R5S6UQxnaxaHJUGg=
-- name: 未知 SS-76 | free-nodes
-  type: ss
-  server: 134.65.60.219
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oNh1eL/Q4w8hzh0wY6/JPnFjFMidf6FZLhICWd1Gmok=
-- name: 未知 SS-77 | free-nodes
-  type: ss
-  server: 129.146.167.224
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
-- name: 未知 SS-78 | free-nodes
-  type: ss
-  server: 136.248.118.107
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: l9J76M7suWl7vAPE/4hyTmUNqoImWoumsZ2fhuRX7cI=
-- name: 未知 SS-79 | free-nodes
-  type: ss
-  server: 163.176.194.118
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: lpYNiPiwJ1rV1HSmT5yzHLcLsv9qVgXIXWSuNw3ohhY=
-- name: 未知 SS-80 | free-nodes
-  type: ss
-  server: 134.98.144.146
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mSsDylEWEVs4RJudck4O0ScHhezXB9RZs9N70l5esqM=
-- name: 未知 SS-81 | free-nodes
-  type: ss
-  server: 129.151.77.35
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sC1RiQOK5Ts5zgUYDwB/AGFbqjpytI0/AczgkgCCnew=
-- name: 未知 SS-82 | free-nodes
-  type: ss
-  server: 163.176.213.34
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sGdbihOb/q/EbANW26ODkZvW+bFxtL5OISohA64vCqQ=
-- name: 未知 SS-83 | free-nodes
-  type: ss
-  server: 129.146.221.27
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak/bQds=
-- name: 未知 SS-84 | free-nodes
-  type: ss
-  server: 134.98.146.23
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: stWyUk6orboi395iL0FnR3BPusuEjio2VBywW09OOO0=
-- name: 未知 SS-85 | free-nodes
-  type: ss
-  server: 89.168.121.246
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: pQSE/JNCbTTwg9CA8m9uAW30avkS6ILWPUsXZB8L3C0=
-- name: 未知 SS-86 | free-nodes
-  type: ss
-  server: 129.146.201.41
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: piv++49uk9UdI6Jo8B/FTMz4ncNmAoBu/mALAqyG/X0=
-- name: 未知 SS-87 | free-nodes
-  type: ss
-  server: 161.153.82.253
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: plOiPuT3hE6D4+jexk3dGDPQyjA68wlwEbM9QobMze8=
-- name: 未知 SS-88 | free-nodes
-  type: ss
-  server: 130.61.87.93
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rQBkxl+vWEXIM9zEq+JTULCxCQuNmxhkFGjwFEXs+Wc=
-- name: 未知 SS-89 | free-nodes
-  type: ss
-  server: 141.148.244.61
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rccNBXGUPgDWHLt9USQQukjqF2JvS5yU+TUxLxL473Y=
-- name: 未知 SS-90 | free-nodes
-  type: ss
-  server: 129.151.80.73
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ryZz0qsI8llQKuhaJ02nbzalvk3ODhYCheJVffEB/XI=
-- name: 未知 SS-91 | free-nodes
-  type: ss
-  server: 129.151.36.160
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: wN0e81acGsb1w99rzzhp0DuSnVw6j6bc1SHwsNE4O4M=
-- name: 未知 SS-92 | free-nodes
-  type: ss
-  server: 141.144.192.7
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: wVBWzY/eiDFBHGbshp5iuKUjL8OZsp++y8WAZtVHPvk=
-- name: 未知 SS-93 | free-nodes
-  type: ss
-  server: 130.61.102.33
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: wh/mzP9iT6c54QgTLig1SPpUQ0j2kv9x6Fm8CQF7zFo=
-- name: 未知 SS-94 | free-nodes
-  type: ss
-  server: 129.146.25.229
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tPMgeY+xhHlfxddjcZTwVeBFlAYUBzzF+umr56wt6l8=
-- name: 未知 SS-95 | free-nodes
-  type: ss
-  server: 144.24.174.125
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tmFOxyMUiiKVOqVsp4jzbeZHwYigf22m2TRLy5gEbOs=
-- name: 未知 SS-96 | free-nodes
-  type: ss
-  server: 129.151.93.193
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: uTP7T8hg8KZuMkMy3aRzZP2UQkaTUhrW7NKgP/vT8I4=
-- name: 未知 SS-97 | free-nodes
-  type: ss
-  server: 130.61.145.58
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: vDCasqZ8xPuCuDY7ExMXv+kgbwu8OS6yEQMRsb38zUc=
-- name: 未知 SS-98 | free-nodes
-  type: ss
-  server: 130.61.42.202
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: vd3JxzAJjh5/VoQ+VAZNhrdY7FdJ9zZdOvA7LAtQars=
-- name: 未知 SS-99 | free-nodes
-  type: ss
-  server: 129.151.71.151
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: x4n4+aCgMuK8+Tkl+hezK0/cMVRblreR4FODa2twE+w=
-- name: 未知 SS-100 | free-nodes
-  type: ss
-  server: 138.2.87.37
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: z5RtKfqcjsueEgSEK5FzRSUrIvUzlLfJgEWo5BkZqI4=
-- name: 未知 SS-101 | free-nodes
-  type: ss
-  server: 129.151.80.36
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ztWQ/Cl3aqqvDwxiDYlh/xFqmmD7O5ZhwJM5V7WTgxI=
-- name: 未知 SS-102 | free-nodes
-  type: ss
-  server: 47.80.24.245
-  port: 8127
-  cipher: 2022-blake3-aes-128-gcm
-  password: 3UebYm8HW8DU7iMs1O0pew==
-- name: 未知 SS-103 | free-nodes
-  type: ss
-  server: 47.88.85.254
-  port: 23226
-  cipher: 2022-blake3-aes-128-gcm
-  password: 5jfrMoSGPSR1FqwTFtpc8g==
-- name: 未知 SS-104 | free-nodes
-  type: ss
-  server: 151.242.125.198
-  port: 51886
-  cipher: 2022-blake3-aes-128-gcm
-  password: LvImXNGRwa5fZSQw+RbPKw==
-- name: 未知 SS-105 | free-nodes
-  type: ss
-  server: 192.3.196.182
-  port: 8416
-  cipher: 2022-blake3-aes-128-gcm
-  password: Z7+ihCahl4v8UUYCgPv93w==
-- name: 未知 SS-106 | free-nodes
-  type: ss
-  server: 217.70.14.216
-  port: 8443
+  password: ea630804-4d5d-4180-a464-a360e3793dc2
+- name: 🇩🇪 DE 1094 TJN
+  type: trojan
+  server: 3.122.135.247
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇩🇪 DE 1095 SSS
+  type: ss
+  server: 185.242.86.156
+  port: 54170
   cipher: chacha20-ietf-poly1305
-  password: 48UQWJVetDr7ETiOXF+aEQ==
-- name: 未知 SS-107 | free-nodes
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+- name: 🇩🇪 DE 1096 TJN
+  type: trojan
+  server: 3.122.21.121
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇩🇪 DE 1097 TJN
+  type: trojan
+  server: 3.124.56.58
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇱🇹 LT 1098 SSS
   type: ss
-  server: 80.208.229.172
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 4LuSQluWs3meAy5vOo7ikZ
-- name: 未知 SS-108 | free-nodes
-  type: ss
-  server: 45.129.96.62
-  port: 41348
-  cipher: chacha20-ietf-poly1305
-  password: 6U3psR0sQuQxWXoBHB4KTD3YacwQwS21XvSEy9
-- name: 未知 SS-109 | free-nodes
-  type: ss
-  server: 45.129.96.62
-  port: 41348
-  cipher: chacha20-ietf-poly1305
-  password: 6U3psR0sQuQxWXoBHB4KTD3YacwQwS21XvSEy9
-- name: 未知 SS-110 | free-nodes
-  type: ss
-  server: ss.041.node-for-bigairport.win
-  port: 16688
-  cipher: chacha20-ietf-poly1305
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-- name: 未知 SS-111 | free-nodes
-  type: ss
-  server: ss.047.node-for-bigairport.win
-  port: 19001
-  cipher: chacha20-ietf-poly1305
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-- name: 未知 SS-112 | free-nodes
-  type: ss
-  server: ss.045.node-for-bigairport.win
-  port: 19000
-  cipher: chacha20-ietf-poly1305
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-- name: 未知 SS-113 | free-nodes
-  type: ss
-  server: ru.moktana.app
-  port: 51523
-  cipher: chacha20-ietf-poly1305
-  password: 7SEstdmLhf-aFK_G9eaYHKT_YpSov58B
-- name: 未知 SS-114 | free-nodes
-  type: ss
-  server: ru.moktana.app
-  port: 51523
-  cipher: chacha20-ietf-poly1305
-  password: 7SEstdmLhf-aFK_G9eaYHKT_YpSov58B
-- name: 未知 SS-115 | free-nodes
-  type: ss
-  server: 61.231.25.172
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-116 | free-nodes
-  type: ss
-  server: 61.231.48.199
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-117 | free-nodes
-  type: ss
-  server: r3mrcg001269pz2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-118 | free-nodes
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-119 | free-nodes
-  type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-120 | free-nodes
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-121 | free-nodes
-  type: ss
-  server: 36.224.147.65
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-122 | free-nodes
-  type: ss
-  server: 36.224.174.236
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-123 | free-nodes
-  type: ss
-  server: 36.224.177.236
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-124 | free-nodes
-  type: ss
-  server: 36.230.16.90
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-125 | free-nodes
-  type: ss
-  server: 61.231.22.178
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-126 | free-nodes
-  type: ss
-  server: 61.231.49.100
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-127 | free-nodes
-  type: ss
-  server: 61.231.49.125
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-128 | free-nodes
-  type: ss
-  server: r3mrcg001269pz2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-129 | free-nodes
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-130 | free-nodes
-  type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-131 | free-nodes
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 未知 SS-132 | free-nodes
-  type: ss
-  server: 77.83.245.116
-  port: 9753
-  cipher: chacha20-ietf-poly1305
-  password: 7exNiN1wA7fVCOV8YdOvBN
-- name: 未知 SS-133 | free-nodes
-  type: ss
-  server: 20.223.152.73
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 9zN6WDw5Wbad7ZVb
-- name: 未知 SS-134 | free-nodes
-  type: ss
-  server: creativegermany.zanity.net
-  port: 5228
-  cipher: chacha20-ietf-poly1305
-  password: 0XCI4pQcZ2nxzVT40CCc0K
-- name: 未知 SS-135 | free-nodes
-  type: ss
-  server: bot.sobhanpor.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 1w72_4vS68ge8ht2Vjc37ckI
-- name: 未知 SS-136 | free-nodes
-  type: ss
-  server: 193.0.179.84
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: 21DuJOEMxyefCUlK3Ees8urFzcpTw3XjLW3L9N
-- name: 未知 SS-137 | free-nodes
-  type: ss
-  server: hg1.levikogjgfdd.ir
-  port: 40028
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: 未知 SS-138 | free-nodes
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40003
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: 未知 SS-139 | free-nodes
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: 未知 SS-140 | free-nodes
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40008
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: 未知 SS-141 | free-nodes
-  type: ss
-  server: 66.70.190.236
-  port: 41344
-  cipher: chacha20-ietf-poly1305
-  password: 2CpIdAu1olwcOdGOMrG637nsQudmDXQWMLCn0o
-- name: 未知 SS-142 | free-nodes
-  type: ss
-  server: 66.70.190.236
-  port: 41344
-  cipher: chacha20-ietf-poly1305
-  password: 2CpIdAu1olwcOdGOMrG637nsQudmDXQWMLCn0o
-- name: 未知 SS-143 | free-nodes
-  type: ss
-  server: 185.5.38.89
-  port: 57327
-  cipher: chacha20-ietf-poly1305
-  password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP
-- name: 未知 SS-144 | free-nodes
-  type: ss
-  server: mail2.thirdpaull.monster
-  port: 57327
-  cipher: chacha20-ietf-poly1305
-  password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP
-- name: 未知 SS-145 | free-nodes
-  type: ss
-  server: 185.5.38.89
-  port: 57327
-  cipher: chacha20-ietf-poly1305
-  password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP
-- name: 未知 SS-146 | free-nodes
-  type: ss
-  server: mail2.thirdpaull.monster
-  port: 57327
-  cipher: chacha20-ietf-poly1305
-  password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP
-- name: 未知 SS-147 | free-nodes
-  type: ss
-  server: 104.249.22.75
-  port: 43377
-  cipher: chacha20-ietf-poly1305
-  password: 2MaqmLJwWXtdJPvpzXD2MSYiZrXDwneqZbAEXqZUw7RzX7ndd3xFM9C3u9NdRXZPTNgDBenPLn6B6VrwmodCSEQc8RfuxBn8
-- name: 未知 SS-148 | free-nodes
-  type: ss
-  server: 72.56.91.165
-  port: 9999
-  cipher: chacha20-ietf-poly1305
-  password: 2pCwqZ2qR55vF13c4LFr4xWeBr2DwoRB
-- name: 未知 SS-149 | free-nodes
-  type: ss
-  server: 89.125.33.16
-  port: 1234
-  cipher: chacha20-ietf-poly1305
-  password: 36-MSsmwqV497atZ2dngqyJegd2kT6gf
-- name: 未知 SS-150 | free-nodes
-  type: ss
-  server: 38.60.255.97
-  port: 11201
-  cipher: chacha20-ietf-poly1305
-  password: 366aa1ba14af3f1a
-- name: 未知 SS-151 | free-nodes
-  type: ss
-  server: 157.22.240.141
-  port: 57925
-  cipher: chacha20-ietf-poly1305
-  password: 3JB91l5ol2HvkPUduw2hj4
-- name: 未知 SS-152 | free-nodes
-  type: ss
-  server: 150.251.138.76
-  port: 1234
-  cipher: chacha20-ietf-poly1305
-  password: 3o0bHRt8dtPRko9q60zt93k2toFn58xp
-- name: 未知 SS-153 | free-nodes
-  type: ss
-  server: 139.84.247.164
+  server: 213.183.44.17
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-- name: 未知 SS-154 | free-nodes
-  type: ss
-  server: 94.20.56.155
-  port: 8443
-  cipher: chacha20-ietf-poly1305
-  password: tjq0wZAr2Ww215njMIjatR
-- name: 未知 SS-155 | free-nodes
-  type: ss
-  server: 212.67.17.239
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: vwc9nGgP8O5KeWbyrwiUow
-- name: 未知 SS-156 | free-nodes
-  type: ss
-  server: 67.219.106.119
-  port: 26286
-  cipher: chacha20-ietf-poly1305
-  password: xfscSDcb-SeEqqRb.omzVGgVgNpXh3bA1u
-- name: 未知 SS-157 | free-nodes
-  type: ss
-  server: 20.87.2.40
+  password: XwWVRmO2kKu6qK1Xlih3Lfe6Lh3RRa9r
+- name: 🇫🇷 FR 1099 TJN
+  type: trojan
+  server: fr-full.privateip.net
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: yQ3varyJ3ZhSYTA4
-- name: 未知 SS-158 | free-nodes
-  type: ss
-  server: 217.28.129.81
-  port: 42982
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-- name: 未知 SS-159 | free-nodes
-  type: ss
-  server: autodiscover.fuzzyaytor.cyou
-  port: 42982
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-- name: 未知 SS-160 | free-nodes
-  type: ss
-  server: bot.sobhanpor.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: yb5Q9tR2SYDeFYw9DColp6RqouiuFGaR
-- name: 未知 SS-161 | free-nodes
-  type: ss
-  server: 148.253.208.76
-  port: 3478
-  cipher: chacha20-ietf-poly1305
-  password: yu2XnSPWhmQjxn83iJA3DA
-- name: 未知 SS-162 | free-nodes
-  type: ss
-  server: 207.2.120.46
-  port: 3478
-  cipher: chacha20-ietf-poly1305
-  password: yu2XnSPWhmQjxn83iJA3DA
-- name: 未知 SS-163 | free-nodes
-  type: ss
-  server: 91.208.75.251
-  port: 3478
-  cipher: chacha20-ietf-poly1305
-  password: yu2XnSPWhmQjxn83iJA3DA
-- name: 未知 SS-164 | free-nodes
-  type: ss
-  server: 194.164.92.198
-  port: 1234
-  cipher: chacha20-ietf-poly1305
-  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
-- name: 未知 SS-165 | free-nodes
-  type: ss
-  server: 194.164.92.198
-  port: 1234
-  cipher: chacha20-ietf-poly1305
-  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
-- name: 未知 SS-166 | free-nodes
-  type: ss
-  server: 68.168.222.210
-  port: 1234
-  cipher: chacha20-ietf-poly1305
-  password: zz0dHjDfoaSaZuRFLGH-hNfBALSEJUYD
-- name: 未知 SS-167 | free-nodes
-  type: ss
-  server: 130.49.189.158
-  port: 10792
-  cipher: chacha20-ietf-poly1305
-  password: ETUOOQTpdrrKln72UYxwio
-- name: 未知 SS-168 | free-nodes
-  type: ss
-  server: 193.188.21.165
-  port: 8390
-  cipher: chacha20-ietf-poly1305
-  password: EyGy11BMfeP-6UHjsgajWw
-- name: 未知 SS-169 | free-nodes
-  type: ss
-  server: 193.233.161.92
-  port: 8390
-  cipher: chacha20-ietf-poly1305
-  password: EyGy11BMfeP-6UHjsgajWw
-- name: 未知 SS-170 | free-nodes
-  type: ss
-  server: 64.188.77.159
-  port: 8390
-  cipher: chacha20-ietf-poly1305
-  password: EyGy11BMfeP-6UHjsgajWw
-- name: 未知 SS-171 | free-nodes
-  type: ss
-  server: 176.65.151.212
-  port: 36937
-  cipher: chacha20-ietf-poly1305
-  password: FPLQa3tXOMxNKC4_Q3Dy5ZFDRoweUbi8
-- name: 未知 SS-172 | free-nodes
-  type: ss
-  server: 157.22.240.141
-  port: 57925
-  cipher: chacha20-ietf-poly1305
-  password: FXpDf7WV6lfD6n9hpz7HF2
-- name: 未知 SS-173 | free-nodes
-  type: ss
-  server: 185.202.93.194
-  port: 41348
-  cipher: chacha20-ietf-poly1305
-  password: HSpc9IH8JsQkeHSzzYXChjHsl7nHgSaA8K60Cd
-- name: 未知 SS-174 | free-nodes
-  type: ss
-  server: 185.202.93.194
-  port: 41348
-  cipher: chacha20-ietf-poly1305
-  password: HSpc9IH8JsQkeHSzzYXChjHsl7nHgSaA8K60Cd
-- name: 未知 SS-175 | free-nodes
-  type: ss
-  server: 45.32.122.179
-  port: 23027
-  cipher: chacha20-ietf-poly1305
-  password: I-bP3lFh.dTG3XitF7XtVK83CZ7rI2Ut=n
-- name: 未知 SS-176 | free-nodes
-  type: ss
-  server: 91.198.166.110
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: I5ihJzedSnGzDoeQZh6pkT
-- name: 未知 SS-177 | free-nodes
-  type: ss
-  server: 91.108.254.252
-  port: 18982
-  cipher: chacha20-ietf-poly1305
-  password: IIMxFMyq3FwyPd21UGWgmNJCAiYN9m2vOo
-- name: 未知 SS-178 | free-nodes
-  type: ss
-  server: 158.101.100.112
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: IpC8bVGTwsYGYN+QpVB5XDy2iKDGpA/zP5CumReC
-- name: 未知 SS-179 | free-nodes
-  type: ss
-  server: 144.31.243.2
-  port: 16015
-  cipher: chacha20-ietf-poly1305
-  password: J1InuU6QRT5JOh1mQfkjU2
-- name: 未知 SS-180 | free-nodes
-  type: ss
-  server: creativeboxlv.zanity.net
-  port: 5228
-  cipher: chacha20-ietf-poly1305
-  password: JlOogWdbpnfIWiJ1KyvzMw
-- name: 未知 SS-181 | free-nodes
-  type: ss
-  server: 46.224.2.35
-  port: 47199
-  cipher: chacha20-ietf-poly1305
-  password: Jx2HKJK7kiti86e8AnQIbX
-- name: 未知 SS-182 | free-nodes
-  type: ss
-  server: sub.almavpn.shop
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: KxJVQc8ZjDgRNhFaesshNDEZqBexyyZv
-- name: 未知 SS-183 | free-nodes
-  type: ss
-  server: 129.151.66.64
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 未知 SS-184 | free-nodes
-  type: ss
-  server: 129.151.73.137
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 未知 SS-185 | free-nodes
-  type: ss
-  server: 129.151.86.242
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 未知 SS-186 | free-nodes
-  type: ss
-  server: 129.151.91.246
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 未知 SS-187 | free-nodes
-  type: ss
-  server: 134.65.56.165
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 未知 SS-188 | free-nodes
-  type: ss
-  server: 134.65.57.138
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 未知 SS-189 | free-nodes
-  type: ss
-  server: 144.24.226.223
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 未知 SS-190 | free-nodes
-  type: ss
-  server: 144.24.227.140
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 未知 SS-191 | free-nodes
-  type: ss
-  server: 144.24.227.218
-  port: 61312
-  cipher: chacha20-ietf-poly1305
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-- name: 未知 SS-192 | free-nodes
-  type: ss
-  server: 3.71.8.174
-  port: 1003
-  cipher: chacha20-ietf-poly1305
-  password: NlV5xsk_CeoMM2jQuZ1dGA
-- name: 未知 SS-193 | free-nodes
-  type: ss
-  server: 130.61.102.202
-  port: 59924
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 未知 SS-194 | free-nodes
-  type: ss
-  server: 130.61.150.162
-  port: 59924
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 未知 SS-195 | free-nodes
-  type: ss
-  server: 130.61.178.74
-  port: 59924
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 未知 SS-196 | free-nodes
-  type: ss
-  server: 130.61.180.245
-  port: 59924
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 未知 SS-197 | free-nodes
-  type: ss
-  server: 130.61.226.94
-  port: 59924
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 未知 SS-198 | free-nodes
-  type: ss
-  server: 130.61.86.126
-  port: 59924
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 未知 SS-199 | free-nodes
-  type: ss
-  server: 92.5.131.125
-  port: 59924
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-- name: 未知 SS-200 | free-nodes
-  type: ss
-  server: 138.124.68.88
-  port: 1443
-  cipher: chacha20-ietf-poly1305
-  password: OTgxZ
-- name: 未知 SS-201 | free-nodes
-  type: ss
-  server: tr.mamad-imnix.ir
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: OykUi46TJz-c-Dee6RDB3_2b7ns30sUm
-- name: 未知 SS-202 | free-nodes
-  type: ss
-  server: 130.51.22.8
-  port: 2096
-  cipher: chacha20-ietf-poly1305
-  password: SSUiN4nEoL7IV711WrmmsA
-- name: 未知 SS-203 | free-nodes
-  type: ss
-  server: 45.77.232.213
-  port: 15675
-  cipher: chacha20-ietf-poly1305
-  password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
-- name: 未知 SS-204 | free-nodes
-  type: ss
-  server: netixu.mashhad1market.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
-- name: 未知 SS-205 | free-nodes
-  type: ss
-  server: robon.mashhad1market.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
-- name: 未知 SS-206 | free-nodes
-  type: ss
-  server: 45.32.246.180
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: TqkkHRpZTkjbTBrk
-- name: 未知 SS-207 | free-nodes
-  type: ss
-  server: 130.94.0.150
-  port: 21376
-  cipher: chacha20-ietf-poly1305
-  password: U7+at2Sny7zODyHS1OS6QRepL8-5maNUFF
-- name: 未知 SS-208 | free-nodes
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-- name: 未知 SS-209 | free-nodes
-  type: ss
-  server: 31.76.80.205
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: UZQY9hNjVNWwamajrXAf1vt8u63nj0fF
-- name: 未知 SS-210 | free-nodes
-  type: ss
-  server: 103.240.147.113
-  port: 14605
-  cipher: chacha20-ietf-poly1305
-  password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY
-- name: 未知 SS-211 | free-nodes
-  type: ss
-  server: 103.241.66.76
-  port: 14605
-  cipher: chacha20-ietf-poly1305
-  password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY
-- name: 未知 SS-212 | free-nodes
-  type: ss
-  server: 193.168.175.56
-  port: 14605
-  cipher: chacha20-ietf-poly1305
-  password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY
-- name: 未知 SS-213 | free-nodes
-  type: ss
-  server: 141.227.152.129
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: VJeAjiJ40F2Il17Elv285W
-- name: 未知 SS-214 | free-nodes
-  type: ss
-  server: 64.176.73.160
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: VJtsgllDDJfNmaTe
-- name: 未知 SS-215 | free-nodes
-  type: ss
-  server: 94.131.127.154
-  port: 48877
-  cipher: chacha20-ietf-poly1305
-  password: VZNRwzYN2qGsP7jqTdvpq5k6j3g7hU2dbM4Lkd3n9Uox324inf6PPUih2Qo9wfXEoGNCBhdDsrVutLmmvUZihMsmsuGpMu7R
-- name: 未知 SS-216 | free-nodes
-  type: ss
-  server: 94.131.127.154
-  port: 48877
-  cipher: chacha20-ietf-poly1305
-  password: VZNRwzYN2qGsP7jqTdvpq5k6j3g7hU2dbM4Lkd3n9Uox324inf6PPUih2Qo9wfXEoGNCBhdDsrVutLmmvUZihMsmsuGpMu7R
-- name: 未知 SS-217 | free-nodes
-  type: ss
-  server: 146.70.146.222
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-218 | free-nodes
-  type: ss
-  server: 146.70.222.126
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-219 | free-nodes
-  type: ss
-  server: 146.70.254.238
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-220 | free-nodes
-  type: ss
-  server: 146.70.26.156
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-221 | free-nodes
-  type: ss
-  server: 156.146.40.84
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-222 | free-nodes
-  type: ss
-  server: 184.75.221.134
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-223 | free-nodes
-  type: ss
-  server: 185.117.119.8
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-224 | free-nodes
-  type: ss
-  server: 185.128.25.36
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-225 | free-nodes
-  type: ss
-  server: 185.128.25.44
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-226 | free-nodes
-  type: ss
-  server: 185.128.27.178
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-227 | free-nodes
-  type: ss
-  server: 185.156.173.206
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-228 | free-nodes
-  type: ss
-  server: 185.156.174.106
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-229 | free-nodes
-  type: ss
-  server: 188.119.149.27
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-230 | free-nodes
-  type: ss
-  server: 194.187.249.218
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-231 | free-nodes
-  type: ss
-  server: 194.187.249.220
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-232 | free-nodes
-  type: ss
-  server: 194.187.251.2
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-233 | free-nodes
-  type: ss
-  server: 194.54.80.37
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-234 | free-nodes
-  type: ss
-  server: 195.12.48.126
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-235 | free-nodes
-  type: ss
-  server: 195.123.209.159
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-236 | free-nodes
-  type: ss
-  server: 195.154.29.29
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-237 | free-nodes
-  type: ss
-  server: 195.242.213.238
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-238 | free-nodes
-  type: ss
-  server: 217.138.207.106
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-239 | free-nodes
-  type: ss
-  server: 37.120.139.234
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-240 | free-nodes
-  type: ss
-  server: 51.159.19.174
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-241 | free-nodes
-  type: ss
-  server: 62.113.194.158
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-242 | free-nodes
-  type: ss
-  server: 62.113.194.49
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-243 | free-nodes
-  type: ss
-  server: 62.113.237.3
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-244 | free-nodes
-  type: ss
-  server: 62.210.123.100
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-245 | free-nodes
-  type: ss
-  server: 84.247.48.78
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-246 | free-nodes
-  type: ss
-  server: 91.193.5.112
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Vr06rU_v1vFPYeXq9zbsAA
-- name: 未知 SS-247 | free-nodes
-  type: ss
-  server: admin.c1.webramz.co
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-- name: 未知 SS-248 | free-nodes
-  type: ss
-  server: series-a1.samanehha.co
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-- name: 未知 SS-249 | free-nodes
-  type: ss
-  server: 178.128.101.77
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: W8T44NSLuczcncGIf92m6Q
-- name: 未知 SS-250 | free-nodes
-  type: ss
-  server: 103.111.114.80
-  port: 28061
-  cipher: chacha20-ietf-poly1305
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-- name: 未知 SS-251 | free-nodes
-  type: ss
-  server: 103.111.114.82
-  port: 28061
-  cipher: chacha20-ietf-poly1305
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-- name: 未知 SS-252 | free-nodes
-  type: ss
-  server: creativeboxnl.zanity.net
-  port: 5228
-  cipher: chacha20-ietf-poly1305
-  password: WVLhtSQD3bVjKRAM0ofofB
-- name: 未知 SS-253 | free-nodes
-  type: ss
-  server: 108.61.223.231
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: WbEN0g6Rbnsye8EJZz94OF
-- name: 未知 SS-254 | free-nodes
-  type: ss
-  server: 146.70.203.254
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-255 | free-nodes
-  type: ss
-  server: 146.70.221.238
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-256 | free-nodes
-  type: ss
-  server: 146.70.34.226
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-257 | free-nodes
-  type: ss
-  server: 146.70.53.62
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-258 | free-nodes
-  type: ss
-  server: 146.70.85.72
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-259 | free-nodes
-  type: ss
-  server: 156.146.38.195
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-260 | free-nodes
-  type: ss
-  server: 185.210.217.94
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-261 | free-nodes
-  type: ss
-  server: 185.232.22.18
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-262 | free-nodes
-  type: ss
-  server: 185.232.22.28
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-263 | free-nodes
-  type: ss
-  server: 185.236.200.210
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-264 | free-nodes
-  type: ss
-  server: 185.247.68.94
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-265 | free-nodes
-  type: ss
-  server: 190.2.147.119
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-266 | free-nodes
-  type: ss
-  server: 193.42.38.209
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-267 | free-nodes
-  type: ss
-  server: 212.83.51.81
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-268 | free-nodes
-  type: ss
-  server: 217.138.213.38
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-269 | free-nodes
-  type: ss
-  server: 37.120.131.62
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-270 | free-nodes
-  type: ss
-  server: 38.113.188.118
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-271 | free-nodes
-  type: ss
-  server: 38.132.118.198
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-272 | free-nodes
-  type: ss
-  server: 38.132.118.30
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-273 | free-nodes
-  type: ss
-  server: 68.168.114.226
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-274 | free-nodes
-  type: ss
-  server: 68.168.116.6
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-275 | free-nodes
-  type: ss
-  server: 72.10.173.91
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-276 | free-nodes
-  type: ss
-  server: 89.187.160.73
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-277 | free-nodes
-  type: ss
-  server: 89.249.74.188
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-278 | free-nodes
-  type: ss
-  server: 95.173.193.201
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-279 | free-nodes
-  type: ss
-  server: bl1.levikogjgfdd.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-280 | free-nodes
-  type: ss
-  server: us1.levikogjgfdd.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 未知 SS-281 | free-nodes
-  type: ss
-  server: vpna.poorifast.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XFPpyuqk3H0Y8JVpVGqSJw
-- name: 未知 SS-282 | free-nodes
-  type: ss
-  server: 161.118.210.227
-  port: 56927
-  cipher: chacha20-ietf-poly1305
-  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
-- name: 未知 SS-283 | free-nodes
-  type: ss
-  server: 168.107.93.104
-  port: 56927
-  cipher: chacha20-ietf-poly1305
-  password: Y2QwZTQ0MDYzOWFhNjA5YmE0NTZhNWFkODkzMWNmODU=
-- name: 未知 SS-284 | free-nodes
-  type: ss
-  server: 104.105.202.31
-  port: 1959
-  cipher: chacha20-ietf-poly1305
-  password: Y8TaKQMncgi8nl_dNnLjQRUAmT4hZga7
-- name: 未知 SS-285 | free-nodes
-  type: ss
-  server: 134.98.145.69
-  port: 45819
-  cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
-- name: 未知 SS-286 | free-nodes
-  type: ss
-  server: 144.21.34.152
-  port: 45819
-  cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
-- name: 未知 SS-287 | free-nodes
-  type: ss
-  server: 152.70.53.15
-  port: 45819
-  cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
-- name: 未知 SS-288 | free-nodes
-  type: ss
-  server: 158.101.199.246
-  port: 45819
-  cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
-- name: 未知 SS-289 | free-nodes
-  type: ss
-  server: 158.101.208.107
-  port: 45819
-  cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
-- name: 未知 SS-290 | free-nodes
-  type: ss
-  server: 193.123.37.158
-  port: 45819
-  cipher: chacha20-ietf-poly1305
-  password: YTEyZDI0OGQwM2ZmZjc4ZTg1ZTBiYTNlZTZkZjIxODM=
-- name: 未知 SS-291 | free-nodes
-  type: ss
-  server: 129.148.49.241
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-292 | free-nodes
-  type: ss
-  server: 136.248.81.138
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-293 | free-nodes
-  type: ss
-  server: 137.131.170.144
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-294 | free-nodes
-  type: ss
-  server: 144.22.183.254
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-295 | free-nodes
-  type: ss
-  server: 147.15.107.7
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-296 | free-nodes
-  type: ss
-  server: 147.15.111.224
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-297 | free-nodes
-  type: ss
-  server: 147.15.15.231
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-298 | free-nodes
-  type: ss
-  server: 147.15.32.94
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-299 | free-nodes
-  type: ss
-  server: 147.15.51.28
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-300 | free-nodes
-  type: ss
-  server: 147.15.95.165
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-301 | free-nodes
-  type: ss
-  server: 163.176.1.85
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-302 | free-nodes
-  type: ss
-  server: 163.176.113.239
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-303 | free-nodes
-  type: ss
-  server: 163.176.114.47
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-304 | free-nodes
-  type: ss
-  server: 163.176.152.109
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-305 | free-nodes
-  type: ss
-  server: 163.176.178.63
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-306 | free-nodes
-  type: ss
-  server: 163.176.191.165
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-307 | free-nodes
-  type: ss
-  server: 163.176.191.41
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-308 | free-nodes
-  type: ss
-  server: 163.176.198.213
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-309 | free-nodes
-  type: ss
-  server: 163.176.222.201
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-310 | free-nodes
-  type: ss
-  server: 163.176.245.43
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-311 | free-nodes
-  type: ss
-  server: 163.176.249.216
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-312 | free-nodes
-  type: ss
-  server: 163.176.45.154
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-313 | free-nodes
-  type: ss
-  server: 163.176.56.213
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-314 | free-nodes
-  type: ss
-  server: 64.181.177.140
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: 未知 SS-315 | free-nodes
-  type: ss
-  server: 140.82.63.79
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: ZoZtfPOyVvmKARUN
-- name: 未知 SS-316 | free-nodes
-  type: ss
-  server: namrcg001640lrm.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: a9a0d092-6f0e-4701-81ee-454643d6d506
-- name: 未知 SS-317 | free-nodes
-  type: ss
-  server: 125.224.219.227
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: a9a0d092-6f0e-4701-81ee-454643d6d506
-- name: 未知 SS-318 | free-nodes
-  type: ss
-  server: namrcg001640lrm.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: a9a0d092-6f0e-4701-81ee-454643d6d506
-- name: 未知 SS-319 | free-nodes
-  type: ss
-  server: R3MRCG00129437X.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 未知 SS-320 | free-nodes
-  type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 未知 SS-321 | free-nodes
-  type: ss
-  server: 36.224.177.236
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 未知 SS-322 | free-nodes
-  type: ss
-  server: R3MRCG00129437X.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 未知 SS-323 | free-nodes
-  type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 未知 SS-324 | free-nodes
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 未知 SS-325 | free-nodes
-  type: ss
-  server: 104.156.233.234
-  port: 27116
-  cipher: chacha20-ietf-poly1305
-  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
-- name: 未知 SS-326 | free-nodes
-  type: ss
-  server: 38.180.221.143
-  port: 17283
-  cipher: chacha20-ietf-poly1305
-  password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
-- name: 未知 SS-327 | free-nodes
-  type: ss
-  server: 38.180.221.145
-  port: 17283
-  cipher: chacha20-ietf-poly1305
-  password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
-- name: 未知 SS-328 | free-nodes
-  type: ss
-  server: gw.lydwan.com
-  port: 35606
-  cipher: chacha20-ietf-poly1305
-  password: c660716f-fd3f-454c-9f91-20afaf0b532b
-- name: 未知 SS-329 | free-nodes
-  type: ss
-  server: 31.76.82.131
-  port: 34260
-  cipher: chacha20-ietf-poly1305
-  password: cTAObwg4OWWXkZJQs0ZdgC
-- name: 未知 SS-330 | free-nodes
-  type: ss
-  server: creativeboxfin.zanity.net
-  port: 5223
-  cipher: chacha20-ietf-poly1305
-  password: d3dNkbPb1w5BCBx9Fr5xsb
-- name: 未知 SS-331 | free-nodes
-  type: ss
-  server: 62.60.255.11
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: do1DZ-_QvkFWXzsjc_w8eT5-TeYP6U3Q
-- name: 未知 SS-332 | free-nodes
-  type: ss
-  server: 202.155.141.87
-  port: 12345
-  cipher: chacha20-ietf-poly1305
-  password: e936372a-d976-4e25-8b3b-29c1a5841e06
-- name: 未知 SS-333 | free-nodes
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: 未知 SS-334 | free-nodes
-  type: ss
-  server: 144.31.168.176
-  port: 45640
-  cipher: chacha20-ietf-poly1305
-  password: eQvKkykBEbCky5p4BVghO0
-- name: 未知 SS-335 | free-nodes
-  type: ss
-  server: 166.1.129.245
-  port: 42607
-  cipher: chacha20-ietf-poly1305
-  password: f2FivziSooWMDzE6p2kBx7ri7owdLZyPnuQLPeDhnY8qXKm6zZ4M39pov4w7MfxRN5FjWqC1cCA8gGoLpZQVouPt9cCA9idN
-- name: 未知 SS-336 | free-nodes
-  type: ss
-  server: 91.108.254.104
-  port: 13683
-  cipher: chacha20-ietf-poly1305
-  password: gWBgmKb8AL1uRK0jZ44AoOPaC5lVTOHZmi
-- name: 未知 SS-337 | free-nodes
-  type: ss
-  server: sec2.masterdpibypass.com
-  port: 12892
-  cipher: chacha20-ietf-poly1305
-  password: gwzmrnjrsep/PzW/3yYc4jE4RG41aEwJAthlbTupBjw=
-- name: 未知 SS-338 | free-nodes
-  type: ss
-  server: 46.224.2.35
-  port: 47199
-  cipher: chacha20-ietf-poly1305
-  password: h2GNP6xzss0xQ5kf7BNcJI
-- name: 未知 SS-339 | free-nodes
-  type: ss
-  server: 172.234.202.34
-  port: 24833
-  cipher: chacha20-ietf-poly1305
-  password: hRd=IXkjozMEKLeGR_0q09jtwly5J2la2O
-- name: 未知 SS-340 | free-nodes
-  type: ss
-  server: 213.226.68.8
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: hkasb5cVrs4jE18jCEJxB4Gr55hVGW24y35gU9GIIeyT31Fw
-- name: 未知 SS-341 | free-nodes
-  type: ss
-  server: 213.226.68.8
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: hkasb5cVrs4jE18jCEJxB4Gr55hVGW24y35gU9GIIeyT31Fw
-- name: 未知 SS-342 | free-nodes
-  type: ss
-  server: 178.128.86.181
-  port: 51435
-  cipher: chacha20-ietf-poly1305
-  password: i8asar9lrxhavh38
-- name: 未知 SS-343 | free-nodes
-  type: ss
-  server: 82.38.31.176
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-344 | free-nodes
-  type: ss
-  server: 82.38.31.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-345 | free-nodes
-  type: ss
-  server: 82.38.31.180
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-346 | free-nodes
-  type: ss
-  server: 82.38.31.181
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-347 | free-nodes
-  type: ss
-  server: 82.38.31.189
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-348 | free-nodes
-  type: ss
-  server: 82.38.31.190
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-349 | free-nodes
-  type: ss
-  server: 82.38.31.191
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-350 | free-nodes
-  type: ss
-  server: 82.38.31.192
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-351 | free-nodes
-  type: ss
-  server: 82.38.31.193
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-352 | free-nodes
-  type: ss
-  server: 82.38.31.203
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-353 | free-nodes
-  type: ss
-  server: 82.38.31.204
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-354 | free-nodes
-  type: ss
-  server: 82.38.31.205
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-355 | free-nodes
-  type: ss
-  server: 82.38.31.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-356 | free-nodes
-  type: ss
-  server: 82.38.31.207
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-357 | free-nodes
-  type: ss
-  server: 82.38.31.208
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-358 | free-nodes
-  type: ss
-  server: 82.38.31.212
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-359 | free-nodes
-  type: ss
-  server: 82.38.31.214
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-360 | free-nodes
-  type: ss
-  server: 82.38.31.215
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-361 | free-nodes
-  type: ss
-  server: 82.38.31.216
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-362 | free-nodes
-  type: ss
-  server: 82.38.31.217
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-363 | free-nodes
-  type: ss
-  server: 47.81.56.202
-  port: 44617
-  cipher: chacha20-ietf-poly1305
-  password: lhuULRwO4slM6k262pAC4cbq5A1H6z8eaOHV27vi7Yw=
-- name: 未知 SS-364 | free-nodes
-  type: ss
-  server: 95.40.120.162
-  port: 8316
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
-- name: 未知 SS-365 | free-nodes
-  type: ss
-  server: 23.100.56.187
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: m9Qdbt9Iu35IxyqN
-- name: 未知 SS-366 | free-nodes
-  type: ss
-  server: 15.236.226.166
-  port: 1010
-  cipher: chacha20-ietf-poly1305
-  password: mdp65g6lfwphz2w6
-- name: 未知 SS-367 | free-nodes
-  type: ss
-  server: 46.246.97.3
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: nbWNC8zZ0eXokIOuW5rL8oNrXmXg5qAuL05R4fGNKCS7IG0u
-- name: 未知 SS-368 | free-nodes
-  type: ss
-  server: 46.246.97.3
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: nbWNC8zZ0eXokIOuW5rL8oNrXmXg5qAuL05R4fGNKCS7IG0u
-- name: 未知 SS-369 | free-nodes
-  type: ss
-  server: 193.29.139.129
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-370 | free-nodes
-  type: ss
-  server: 193.29.139.165
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-371 | free-nodes
-  type: ss
-  server: 193.29.139.238
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-372 | free-nodes
-  type: ss
-  server: 82.38.31.15
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-373 | free-nodes
-  type: ss
-  server: 82.38.31.162
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-374 | free-nodes
-  type: ss
-  server: 82.38.31.16
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-375 | free-nodes
-  type: ss
-  server: 82.38.31.174
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-376 | free-nodes
-  type: ss
-  server: 82.38.31.174
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-377 | free-nodes
-  type: ss
-  server: 82.38.31.17
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-378 | free-nodes
-  type: ss
-  server: 82.38.31.29
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-379 | free-nodes
-  type: ss
-  server: 82.38.31.2
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-380 | free-nodes
-  type: ss
-  server: 82.38.31.32
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-381 | free-nodes
-  type: ss
-  server: 82.38.31.3
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-382 | free-nodes
-  type: ss
-  server: 82.38.31.42
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-383 | free-nodes
-  type: ss
-  server: 82.38.31.46
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-384 | free-nodes
-  type: ss
-  server: 82.38.31.47
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-385 | free-nodes
-  type: ss
-  server: 82.38.31.48
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-386 | free-nodes
-  type: ss
-  server: 82.38.31.57
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 未知 SS-387 | free-nodes
-  type: ss
-  server: 155.103.71.163
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: pc6kxuutpbm8qgf5
-- name: 未知 SS-388 | free-nodes
-  type: ss
-  server: 135.125.113.81
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: q6bhpyjk0o352x7i
-- name: 未知 SS-389 | free-nodes
-  type: ss
-  server: grman.pubgjim.ir
-  port: 2082
-  cipher: chacha20-ietf-poly1305
-  password: qI513Sf0ARJuirKb37p0amvgUd0aNr6d
-- name: 未知 SS-390 | free-nodes
-  type: ss
-  server: 188.41.249.20
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rYfi4cQ3z7zts7BO4-Y9_A
-- name: 未知 SS-391 | free-nodes
-  type: ss
-  server: Vpna.Poorifast.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rYfi4cQ3z7zts7BO4-Y9_A
-- name: 未知 SS-392 | free-nodes
-  type: ss
-  server: vpna.poorifast.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rYfi4cQ3z7zts7BO4-Y9_A
-- name: 未知 SS-393 | free-nodes
-  type: ss
-  server: 38.54.80.160
-  port: 16292
-  cipher: chacha20-ietf-poly1305
-  password: r_NRe-+WRq2zVqMpCnJtTESlT8WyffHyFy
-- name: 未知 SS-394 | free-nodes
-  type: ss
-  server: 82.38.31.189
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知 SS-395 | free-nodes
-  type: ss
-  server: 168.138.175.92
-  port: 9888
-  cipher: aes-128-gcm
-  password: JVSuuib4ydvY8m7u6jElTYbeRO8ygJ4Hi8Iq733BqAkF
-- name: 未知 SS-396 | free-nodes
-  type: ss
-  server: 168.138.175.92
-  port: 9888
-  cipher: aes-128-gcm
-  password: JVSuuib4ydvY8m7u6jElTYbeRO8ygJ4Hi8Iq733BqAkF
-- name: 未知 SS-397 | free-nodes
-  type: ss
-  server: 173.212.251.231
-  port: 51058
-  cipher: aes-128-gcm
-  password: SySWDaP8rm1NEK0wdLdoaV5ClkSjFDfw
-- name: 未知 SS-398 | free-nodes
-  type: ss
-  server: 173.212.251.231
-  port: 51058
-  cipher: aes-128-gcm
-  password: SySWDaP8rm1NEK0wdLdoaV5ClkSjFDfw
-- name: 未知 SS-399 | free-nodes
-  type: ss
-  server: antony.athforce.ir
-  port: 51058
-  cipher: aes-128-gcm
-  password: SySWDaP8rm1NEK0wdLdoaV5ClkSjFDfw
-- name: 未知 SS-400 | free-nodes
-  type: ss
-  server: mn.qwer-cn.org
-  port: 10910
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 未知 SS-401 | free-nodes
-  type: ss
-  server: mn.qwer-cn.org
-  port: 10913
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 未知 SS-402 | free-nodes
-  type: ss
-  server: mn.qwer-cn.org
-  port: 10925
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 未知 SS-403 | free-nodes
-  type: ss
-  server: mn.qwer-cn.org
-  port: 10927
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 未知 SS-404 | free-nodes
-  type: ss
-  server: mn.qwer-cn.org
-  port: 10929
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 未知 SS-405 | free-nodes
-  type: ss
-  server: mn.qwer-cn.org
-  port: 10931
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 未知 SS-406 | free-nodes
-  type: ss
-  server: mn.qwer-cn.org
-  port: 10936
-  cipher: aes-128-gcm
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-- name: 未知 SS-407 | free-nodes
-  type: ss
-  server: 35.72.81.216
-  port: 443
-  cipher: aes-128-gcm
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-- name: 未知 SS-408 | free-nodes
-  type: ss
-  server: 161.129.71.148
-  port: 17913
-  cipher: aes-128-gcm
-  password: wcjMniCODfhz26P7L2BvpEDQfhogbFTl
-- name: 未知 SS-409 | free-nodes
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 未知 SS-410 | free-nodes
-  type: ss
-  server: c331s1.portablesubmarines.com
-  port: 8505
-  cipher: aes-256-gcm
-  password: 87xvPPL2WVWnKcse
-- name: 未知 SS-411 | free-nodes
-  type: ss
-  server: 38.65.93.241
-  port: 17525
-  cipher: aes-256-gcm
-  password: 9992b78c6a1122b3aa364721af799807
-- name: 未知 SS-412 | free-nodes
-  type: ss
-  server: 94.183.124.95
-  port: 82
-  cipher: aes-256-gcm
-  password: EMIruFl6nN37LDQxCIwstG09haCBkyjvZVjWIMOQ0Jk=
-- name: 未知 SS-413 | free-nodes
-  type: ss
-  server: 94.183.124.95
-  port: 82
-  cipher: aes-256-gcm
-  password: EMIruFl6nN37LDQxCIwstG09haCBkyjvZVjWIMOQ0Jk=
-- name: 未知 SS-414 | free-nodes
-  type: ss
-  server: 15.204.246.132
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: 未知 SS-415 | free-nodes
-  type: ss
-  server: c26s1.portablesubmarines.com
-  port: 12323
-  cipher: aes-256-gcm
-  password: HWbaU4kDuRc4Xuow
-- name: 未知 SS-416 | free-nodes
-  type: ss
-  server: 79.175.134.49
-  port: 39880
-  cipher: aes-256-gcm
-  password: PcOE52lyGO6MFRm6/m5hfuC3NpNockDvcnNYgq18Ni4=
-- name: 未知 SS-417 | free-nodes
-  type: ss
-  server: 15.204.247.175
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 未知 SS-418 | free-nodes
-  type: ss
-  server: 51.222.155.113
-  port: 5601
+  password: 0fe4bbdb-2854-4cc5-986c-f62dbb900bc5
+- name: 🇸🇦 SA 1100 SSS
+  type: ss
+  server: 217.182.198.219
+  port: 3306
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: 未知 SS-419 | free-nodes
-  type: ss
-  server: 51.79.64.198
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 未知 SS-420 | free-nodes
-  type: ss
-  server: 8.210.171.48
+- name: 🇦🇺 AU 1101 TJN
+  type: trojan
+  server: 194.195.123.173
   port: 443
-  cipher: aes-256-gcm
-  password: a172cf0d-ae89-42f3-8505-0c51dae293a1
-- name: 未知 SS-421 | free-nodes
+  password: 4b1b3f03-6493-44a9-afcf-0ccf7c754154
+- name: 🇺🇸 US 1104 SSS
   type: ss
-  server: 45.207.207.25
+  server: 5.161.81.6
+  port: 30129
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇩🇪 DE 1105 TJN
+  type: trojan
+  server: foreign04.lovehjq.xyz
+  port: 46527
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
+- name: 🇷🇺 RU 1106 SSS
+  type: ss
+  server: 193.228.128.143
+  port: 27981
+  cipher: chacha20-ietf-poly1305
+  password: 4pWVbIVIuw4LK9wvMgcHW5
+- name: 🇦🇲 AM 1108 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1110 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1111 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1112 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1116 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1118 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1120 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1121 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1122 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1124 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1127 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1129 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1130 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇪🇸 ES 1131 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61006
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1132 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60004
+  cipher: chacha20-ietf-poly1305
+  password: b6c5467a-bc99-3fec-bd8a-b33ffc52c6ab
+- name: 🇪🇸 ES 1133 SSS
+  type: ss
+  server: 3.forlive.live
+  port: 61019
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1134 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61005
+  cipher: chacha20-ietf-poly1305
+  password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7
+- name: 🇪🇸 ES 1135 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60004
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1136 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61006
+  cipher: chacha20-ietf-poly1305
+  password: d52848a3-5101-3ccc-aed8-113ce65928a8
+- name: 🇪🇸 ES 1137 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1138 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1139 SSS
+  type: ss
+  server: 3.forlive.live
+  port: 61020
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1140 SSS
+  type: ss
+  server: iepl2.forlive.live
+  port: 50105
+  cipher: chacha20-ietf-poly1305
+  password: 65af0e00-a583-31b3-a4d8-68bdb504d3a6
+- name: 🇪🇸 ES 1141 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61008
+  cipher: chacha20-ietf-poly1305
+  password: ae025e7f-6a54-3cf8-9ab5-8aa8b2b1fe2d
+- name: 🇪🇸 ES 1142 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61007
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1143 SSS
+  type: ss
+  server: 3.forlive.live
+  port: 61019
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1144 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1145 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60033
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1146 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60033
+  cipher: chacha20-ietf-poly1305
+  password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7
+- name: 🇪🇸 ES 1147 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61006
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1148 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61007
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1149 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: 6027e101-7084-3b4a-be0d-ff1230366180
+- name: 🇪🇸 ES 1150 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60004
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1151 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60033
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1152 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61005
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1153 SSS
+  type: ss
+  server: 3.forlive.live
+  port: 61020
+  cipher: chacha20-ietf-poly1305
+  password: b8eef379-1a0d-4a27-af6e-484297760477
+- name: 🇪🇸 ES 1155 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61008
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1156 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61007
+  cipher: chacha20-ietf-poly1305
+  password: 1abbe654-89f6-4f1e-837f-90e118bc74e8
+- name: 🇪🇸 ES 1158 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: 95597817-57ba-43e9-b853-c9dab67c59ce
+- name: 🇪🇸 ES 1159 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61008
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1160 SSS
+  type: ss
+  server: 185.218.20.4
   port: 443
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
-- name: 未知 SS-422 | free-nodes
+  cipher: chacha20-ietf-poly1305
+  password: cBghTxo2s8cs8GWneXlRet
+- name: 🇨🇦 CA 1161 TJN
+  type: trojan
+  server: ca-trojan.bonds.id
+  port: 443
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+- name: 🇫🇷 FR 1163 SSS
   type: ss
-  server: 15.204.247.124
+  server: 149.202.82.172
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇫🇷 FR 1164 TJN
+  type: trojan
+  server: 51.210.182.170
+  port: 443
+  password: 278fff60-fc3a-11ee-a4a6-1239d0255272
+- name: 🇫🇷 FR 1165 SSS
+  type: ss
+  server: 149.202.82.172
   port: 2375
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
-- name: 未知 SS-423 | free-nodes
+- name: 🇫🇷 FR 1167 SSS
   type: ss
-  server: 51.222.155.32
-  port: 5003
+  server: 149.202.82.172
+  port: 4444
   cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- name: 未知 SS-424 | free-nodes
+  password: pKEW8JPByTVTLtM
+- name: 🇫🇷 FR 1168 SSS
   type: ss
-  server: 51.79.49.116
+  server: 149.202.82.172
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1169 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1170 TJN
+  type: trojan
+  server: fr3-full.privateip.net
+  port: 443
+  password: fc1e07b5-840b-4446-8232-94b0606f2e0d
+- name: 🇫🇷 FR 1171 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1172 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1173 SSS
+  type: ss
+  server: 51.178.87.37
+  port: 805
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇫🇷 FR 1174 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1175 SSS
+  type: ss
+  server: 149.202.82.172
   port: 8882
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
-- name: 未知 SS-425 | free-nodes
+- name: 🇫🇷 FR 1176 SSS
   type: ss
-  server: 51.83.192.80
+  server: 51.195.149.115
+  port: 45816
+  cipher: aes-256-gcm
+  password: KkDzY101Oe
+- name: 🇫🇷 FR 1177 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1178 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 7306
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1179 TJN
+  type: trojan
+  server: 45.32.148.182
+  port: 443
+  password: wkmY1R4EcP
+  sni: z-v2-002805.kailib.com
+- name: 🇫🇷 FR 1180 TJN
+  type: trojan
+  server: 15.236.156.123
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇫🇷 FR 1181 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1182 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1183 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1184 SSS
+  type: ss
+  server: 51.159.111.208
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇫🇷 FR 1185 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1186 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇫🇷 FR 1188 SSS
+  type: ss
+  server: 51.178.87.37
+  port: 810
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇫🇷 FR 1189 SSS
+  type: ss
+  server: 195.154.169.198
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇫🇷 FR 1190 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇫🇷 FR 1191 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇫🇷 FR 1192 SSS
+  type: ss
+  server: 92.243.24.236
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: LE6Ee6PELhVu
+- name: 🇫🇷 FR 1193 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇫🇷 FR 1195 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇫🇷 FR 1196 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1197 TJN
+  type: trojan
+  server: 51.210.182.170
+  port: 443
+  password: 1038bc70-fe01-11ee-a6a2-1239d0255272
+- name: 🇫🇷 FR 1198 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1199 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇫🇷 FR 1200 SSS
+  type: ss
+  server: 92.243.27.51
+  port: 9802
+  cipher: chacha20-ietf-poly1305
+  password: cqBAAW0fZcqQ1Bn06jwhro
+- name: 🇫🇷 FR 1201 TJN
+  type: trojan
+  server: 15.188.187.126
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇫🇷 FR 1202 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1203 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇫🇷 FR 1204 TJN
+  type: trojan
+  server: 35.181.197.213
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇫🇷 FR 1205 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇨🇦 CA 1207 SSS
+  type: ss
+  server: 51.222.157.179
+  port: 49602
+  cipher: aes-256-gcm
+  password: 7gaTTlW73G
+- name: 🇫🇷 FR 1208 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1209 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇫🇷 FR 1210 TJN
+  type: trojan
+  server: 193.70.112.90
+  port: 443
+  password: fc1e07b5-840b-4446-8232-94b0606f2e0d
+- name: 🇫🇷 FR 1211 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇫🇷 FR 1212 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇯🇵 JP 1213 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 812
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇯🇵 JP 1214 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 806
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇯🇵 JP 1215 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 809
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1216 SSS
+  type: ss
+  server: 13.87.75.155
+  port: 46130
+  cipher: chacha20-ietf-poly1305
+  password: mTypilmjidrr6dQYaOGHf7
+- name: 🇬🇧 GB 1217 TJN
+  type: trojan
+  server: 18.130.65.10
+  port: 17408
+  password: dkCb8vhXc9GI
+  sni: appsvs.shop
+- name: 🇬🇧 GB 1218 TJN
+  type: trojan
+  server: kr.mjt000.com
+  port: 443
+  password: d0774966-fb63-4aca-9478-16c3f32be220
+  sni: kr.mjt000.com
+- name: 🇬🇧 GB 1219 SSS
+  type: ss
+  server: 52.151.70.6
+  port: 39271
+  cipher: chacha20-ietf-poly1305
+  password: zjQs77eXK0zdfPFyLs95l6
+- name: 🇬🇧 GB 1220 TJN
+  type: trojan
+  server: hinet.mjt001.com
+  port: 443
+  password: a1956156-b1d6-468e-b22f-59765172b07d
+- name: 🇬🇧 GB 1221 TJN
+  type: trojan
+  server: 3.9.27.170
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇬🇧 GB 1223 SSS
+  type: ss
+  server: 51.145.20.109
+  port: 40933
+  cipher: chacha20-ietf-poly1305
+  password: 1Bukuyf171ArbKaXSvaSf9
+- name: 🇬🇧 GB 1224 TJN
+  type: trojan
+  server: 45.76.130.173
+  port: 443
+  password: wkmY1R4EcP
+  sni: z-v2-003289.kailib.com
+- name: 🇬🇧 GB 1225 TJN
+  type: trojan
+  server: 35.176.117.240
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇺🇸 US 1226 SSS
+  type: ss
+  server: 198.23.196.68
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇰🇷 KR 1227 TJN
+  type: trojan
+  server: 144.24.87.186
+  port: 46521
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
+- name: 🇬🇧 GB 1228 TJN
+  type: trojan
+  server: 35.178.45.128
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇰🇷 KR 1229 TJN
+  type: trojan
+  server: 144.24.87.186
+  port: 46527
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
+- name: 🇫🇷 FR 1230 SSS
+  type: ss
+  server: 141.11.189.239
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇨🇭 CH 1231 SSS
+  type: ss
+  server: 51.103.183.241
+  port: 33910
+  cipher: chacha20-ietf-poly1305
+  password: IJl7gbeZxeXZzZGcKFMaHA
+- name: 🇬🇧 GB 1233 SSS
+  type: ss
+  server: 51.68.206.229
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇬🇧 GB 1234 TJN
+  type: trojan
+  server: hinet.mjt001.com
+  port: 443
+  password: a1956156-b1d6-468e-b22f-59765172b07d
+  sni: hinet.mjt001.com
+- name: 🇬🇧 GB 1235 SSS
+  type: ss
+  server: 52.151.77.88
+  port: 62801
+  cipher: chacha20-ietf-poly1305
+  password: QQgNHAq1zAzjVSjMSTp8Rt
+- name: 🇬🇧 GB 1236 TJN
+  type: trojan
+  server: 52.56.183.187
+  port: 443
+  password: your_password
+  sni: aws-uk-london-1.f1rocketnode.com
+- name: 🇬🇧 GB 1237 TJN
+  type: trojan
+  server: 18.175.9.188
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇬🇧 GB 1238 TJN
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: d0774966-fb63-4aca-9478-16c3f32be220
+  sni: sg.mjt000.com
+- name: 🇬🇧 GB 1239 SSS
+  type: ss
+  server: 77.72.5.113
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇫🇷 FR 1240 SSS
+  type: ss
+  server: 141.11.189.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇬🇧 GB 1241 TJN
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: d0774966-fb63-4aca-9478-16c3f32be220
+  sni: waphk.mjt000.com
+- name: 🇬🇧 GB 1242 SSS
+  type: ss
+  server: 52.56.201.59
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇯🇵 JP 1243 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 800
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1244 SSS
+  type: ss
+  server: 51.145.47.225
+  port: 45844
+  cipher: chacha20-ietf-poly1305
+  password: yCoZBIVH3JIqeUXNdive9B
+- name: 🇫🇷 FR 1245 SSS
+  type: ss
+  server: 141.11.189.55
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇬🇧 GB 1246 SSS
+  type: ss
+  server: 52.151.72.172
+  port: 31103
+  cipher: chacha20-ietf-poly1305
+  password: J6L1Hf4oKWPxbvMLc8i8ny
+- name: 🇯🇵 JP 1247 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 804
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇯🇵 JP 1248 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 801
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1249 TJN
+  type: trojan
+  server: 3.10.18.151
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇬🇧 GB 1250 SSS
+  type: ss
+  server: 51.143.142.183
+  port: 59083
+  cipher: chacha20-ietf-poly1305
+  password: IJIljqaePSVQhZeA7ccN1F
+- name: 🇫🇷 FR 1251 SSS
+  type: ss
+  server: 145.239.6.202
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇯🇵 JP 1252 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 811
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1253 TJN
+  type: trojan
+  server: 51.38.65.155
+  port: 443
+  password: 1d7692c0-f51c-11ee-91eb-1239d0255272
+- name: 🇬🇧 GB 1254 SSS
+  type: ss
+  server: 77.72.5.150
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇧 GB 1255 SSS
+  type: ss
+  server: 52.151.73.254
+  port: 60502
+  cipher: chacha20-ietf-poly1305
+  password: 8MDtlO0vf7UIhqFK8aZkhJ
+- name: 🇺🇸 US 1256 SSS
+  type: ss
+  server: 51.112.72.37
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mps3FwmDjLrWaOVg
+- name: 🇬🇧 GB 1257 SSS
+  type: ss
+  server: 51.68.206.229
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1258 SSS
+  type: ss
+  server: 141.11.189.88
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷 FR 1259 SSS
+  type: ss
+  server: 145.239.6.202
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇫🇷 FR 1260 SSS
+  type: ss
+  server: 145.239.6.202
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇬🇧 GB 1261 SSS
+  type: ss
+  server: 51.141.230.84
+  port: 32755
+  cipher: chacha20-ietf-poly1305
+  password: hS5KwcNlwufMFEScwyjVkz
+- name: 🇯🇵 JP 1262 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 810
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1263 SSS
+  type: ss
+  server: 3.11.154.255
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: hBEBjXU6Sk0UK4T6
+- name: 🇬🇧 GB 1264 TJN
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: d0774966-fb63-4aca-9478-16c3f32be220
+  sni: jp.mjt000.com
+- name: 🇬🇧 GB 1265 SSS
+  type: ss
+  server: 104.248.169.207
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: 8z9R4FiU9Ttgpl6it_pJPw
+- name: 🇭🇰 HK 1269 TJN
+  type: trojan
+  server: chjs.lydurlclub.top
+  port: 443
+  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
+- name: 🇭🇰 HK 1271 TJN
+  type: trojan
+  server: hkjs.lydurlclub.top
+  port: 443
+  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
+- name: 🇭🇰 HK 1272 SSS
+  type: ss
+  server: 1.65.223.223
+  port: 443
+  cipher: aes-128-gcm
+  password: a-wym4ovY4Yw
+- name: 🇭🇰 HK 1275 TJN
+  type: trojan
+  server: 210.17.253.122
+  port: 42030
+  password: 2b38ff78-05bb-4261-895c-440950cf0dbd
+  sni: hkg01.service.nahidacloud.top
+- name: 🇭🇰 HK 1276 SSS
+  type: ss
+  server: 1.65.139.54
+  port: 443
+  cipher: aes-128-gcm
+  password: a-wym4ovY4Yw
+- name: 🇮🇳 IN 1278 SSS
+  type: ss
+  server: 103.113.68.27
+  port: 2352
+  cipher: chacha20-ietf-poly1305
+  password: tErM3mZ22YFQspXVwX57xq
+- name: 🇮🇳 IN 1279 SSS
+  type: ss
+  server: 103.113.68.57
+  port: 2443
+  cipher: aes-256-gcm
+  password: hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=
+- name: 🇮🇳 IN 1280 TJN
+  type: trojan
+  server: in-full.privateip.net
+  port: 443
+  password: 3e8f7ba4-be6e-4c16-9364-84a1ee62fb03
+- name: 🇮🇳 IN 1283 TJN
+  type: trojan
+  server: in-full.privateip.net
+  port: 443
+  password: bedabbf8-7fee-4083-aa16-269dfa569c4a
+- name: 🇺🇸 US 1284 SSS
+  type: ss
+  server: 103.124.107.178
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇮🇳 IN 1285 TJN
+  type: trojan
+  server: in-full.privateip.net
+  port: 443
+  password: 6d1e8f64-c0e3-41ff-a647-e42a5f231baa
+- name: 🇺🇸 US 1288 SSS
+  type: ss
+  server: 103.124.107.178
+  port: 30129
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇺🇸 US 1292 SSS
+  type: ss
+  server: 103.124.107.15
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇮🇸 IS 1293 SSS
+  type: ss
+  server: 37.235.49.152
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇯🇵 JP 1294 TJN
+  type: trojan
+  server: dir01.netorigins2u.site
+  port: 36116
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: jp01.abpilot.xyz
+- name: 🇰🇷 KR 1295 SSS
+  type: ss
+  server: 43.201.54.34
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1296 SSS
+  type: ss
+  server: 54.249.1.223
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1297 SSS
+  type: ss
+  server: 43.207.80.176
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1298 SSS
+  type: ss
+  server: 54.168.200.34
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1300 SSS
+  type: ss
+  server: 13.115.234.77
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1301 SSS
+  type: ss
+  server: 43.203.119.237
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1302 TJN
+  type: trojan
+  server: jp4.mmmmmmmmmm.cfd
+  port: 54234
+  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  sni: apple.com
+- name: 🇯🇵 JP 1304 SSS
+  type: ss
+  server: 18.177.138.167
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1305 SSS
+  type: ss
+  server: 43.203.207.149
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1306 SSS
+  type: ss
+  server: 52.194.214.99
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1307 SSS
+  type: ss
+  server: 45.67.53.250
+  port: 443
+  cipher: aes-256-cfb
+  password: www.xbvpn.com
+- name: 🇯🇵 JP 1308 SSS
+  type: ss
+  server: 52.195.237.101
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1309 SSS
+  type: ss
+  server: 43.207.117.29
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1310 SSS
+  type: ss
+  server: 43.201.24.53
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1311 SSS
+  type: ss
+  server: 43.201.104.145
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1312 SSS
+  type: ss
+  server: 43.201.47.36
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1314 SSS
+  type: ss
+  server: 52.195.10.194
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1315 TJN
+  type: trojan
+  server: jp2.mmmmmmmmmm.cfd
+  port: 45127
+  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  sni: apple.com
+- name: 🇯🇵 JP 1318 TJN
+  type: trojan
+  server: 139.162.91.35
+  port: 443
+  password: d22c4619-9dd1-41b1-a00e-c565a09066c8
+- name: 🇯🇵 JP 1319 SSS
+  type: ss
+  server: 54.199.83.239
+  port: 2333
+  cipher: aes-256-cfb
+  password: doub.io
+- name: 🇯🇵 JP 1320 SSS
+  type: ss
+  server: 3.112.241.19
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1321 SSS
+  type: ss
+  server: 52.69.81.42
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1323 SSS
+  type: ss
+  server: 43.201.110.81
+  port: 443
+  cipher: aes-256-gcm
+  password: amazonskr05
+- name: 🇯🇵 JP 1324 SSS
+  type: ss
+  server: 13.112.216.180
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1325 SSS
+  type: ss
+  server: 13.230.190.100
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1326 SSS
+  type: ss
+  server: 43.201.55.242
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1327 SSS
+  type: ss
+  server: 43.201.34.246
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1328 SSS
+  type: ss
+  server: 43.201.56.52
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1330 SSS
+  type: ss
+  server: 43.202.41.139
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1331 SSS
+  type: ss
+  server: 54.248.173.222
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1333 SSS
+  type: ss
+  server: 13.231.229.41
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1334 SSS
+  type: ss
+  server: 43.206.237.42
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1335 SSS
+  type: ss
+  server: 43.201.69.200
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1336 SSS
+  type: ss
+  server: 43.203.233.33
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1337 SSS
+  type: ss
+  server: 54.238.182.167
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1341 SSS
+  type: ss
+  server: 54.199.15.70
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1342 SSS
+  type: ss
+  server: 43.201.110.81
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1345 SSS
+  type: ss
+  server: 43.207.197.15
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1348 SSS
+  type: ss
+  server: 3.112.218.182
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1349 SSS
+  type: ss
+  server: 43.203.201.192
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1352 TJN
+  type: trojan
+  server: 149.28.28.167
+  port: 433
+  password: 96d7e494-afd9-4eda-ad22-759646f46a9a
+  sni: apis-jp1.veadev.com
+- name: 🇯🇵 JP 1353 SSS
+  type: ss
+  server: 52.195.237.198
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1354 TJN
+  type: trojan
+  server: dir01.netorigins2u.site
+  port: 36501
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: us01.abpilot.xyz
+- name: 🇯🇵 JP 1355 SSS
+  type: ss
+  server: 13.231.229.48
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1356 SSS
+  type: ss
+  server: 13.231.78.35
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1357 TJN
+  type: trojan
+  server: dir01.netorigins2u.site
+  port: 36201
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: sg01.abpilot.xyz
+- name: 🇯🇵 JP 1359 SSS
+  type: ss
+  server: 52.195.225.184
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1361 TJN
+  type: trojan
+  server: dir01.netorigins2u.site
+  port: 36864
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: hu01.abpilot.xyz
+- name: 🇰🇷 KR 1365 SSS
+  type: ss
+  server: 43.203.192.6
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1366 SSS
+  type: ss
+  server: 43.203.220.68
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1370 SSS
+  type: ss
+  server: 54.238.23.117
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1371 SSS
+  type: ss
+  server: p110.panda001.net
+  port: 54345
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1372 SSS
+  type: ss
+  server: 125.141.26.7
+  port: 49032
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1373 SSS
+  type: ss
+  server: 221.150.109.18
+  port: 42839
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1374 SSS
+  type: ss
+  server: 203.234.238.145
+  port: 4005
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1375 SSS
+  type: ss
+  server: 221.150.109.81
+  port: 42978
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1376 SSS
+  type: ss
+  server: p232.panda004.net
+  port: 51472
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1377 SSS
+  type: ss
+  server: 13.125.25.193
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1378 SSS
+  type: ss
+  server: 13.124.212.29
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1379 SSS
+  type: ss
+  server: 221.150.109.87
+  port: 43926
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1380 SSS
+  type: ss
+  server: 222.112.15.134
+  port: 50942
+  cipher: aes-256-gcm
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1381 SSS
+  type: ss
+  server: p222.panda001.net
+  port: 51472
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1382 SSS
+  type: ss
+  server: p233.panda004.net
+  port: 50942
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1383 SSS
+  type: ss
+  server: p220.panda001.net
+  port: 42185
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1384 SSS
+  type: ss
+  server: 54.180.138.72
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1385 SSS
+  type: ss
+  server: p226.panda004.net
+  port: 58449
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1386 SSS
+  type: ss
+  server: 54.180.156.133
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1387 SSS
+  type: ss
+  server: 221.150.109.88
+  port: 51472
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1388 SSS
+  type: ss
+  server: 221.150.109.11
+  port: 57743
+  cipher: aes-256-gcm
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1389 SSS
+  type: ss
+  server: p234.panda004.net
+  port: 58449
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1390 SSS
+  type: ss
+  server: 218.237.185.230
+  port: 54345
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1391 SSS
+  type: ss
+  server: 13.125.31.113
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1392 SSS
+  type: ss
+  server: 222.112.15.134
+  port: 50942
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1393 SSS
+  type: ss
+  server: p238.panda004.net
+  port: 57743
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1394 SSS
+  type: ss
+  server: 222.112.15.140
+  port: 58449
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1395 SSS
+  type: ss
+  server: 13.209.11.98
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1396 SSS
+  type: ss
+  server: 54.180.133.185
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1397 TJN
+  type: trojan
+  server: 59.16.152.27
+  port: 443
+  password: 3df22ece-e33a-429a-bbbc-72f468755d5c
+- name: 🇰🇷 KR 1398 SSS
+  type: ss
+  server: p236.panda004.net
+  port: 42839
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1399 SSS
+  type: ss
+  server: 13.125.19.50
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1400 SSS
+  type: ss
+  server: 13.125.127.101
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1401 SSS
+  type: ss
+  server: p228.panda004.net
+  port: 57729
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1402 SSS
+  type: ss
+  server: p231.panda004.net
+  port: 43926
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1403 SSS
+  type: ss
+  server: p229.panda004.net
+  port: 10218
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1404 SSS
+  type: ss
+  server: p227.panda004.net
+  port: 49032
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1405 SSS
+  type: ss
+  server: 125.141.26.10
+  port: 4315
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1406 SSS
+  type: ss
+  server: 125.141.26.11
+  port: 10218
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1407 SSS
+  type: ss
+  server: 211.201.169.70
+  port: 54345
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1408 SSS
+  type: ss
+  server: p221.panda001.net
+  port: 49032
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1409 SSS
+  type: ss
+  server: p225.panda004.net
+  port: 4005
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1410 SSS
+  type: ss
+  server: p078.panda001.net
+  port: 5304
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1412 SSS
+  type: ss
+  server: p220.panda001.net
+  port: 53258
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1413 SSS
+  type: ss
+  server: 54.180.9.46
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1415 SSS
+  type: ss
+  server: p230.panda004.net
+  port: 42978
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1416 SSS
+  type: ss
+  server: 203.234.238.140
+  port: 58449
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇳🇱 NL 1419 SSS
+  type: ss
+  server: 109.201.152.181
+  port: 443
+  cipher: aes-128-cfb
+  password: shadowsocks
+- name: 🇳🇱 NL 1420 TJN
+  type: trojan
+  server: 142.93.226.128
+  port: 443
+  password: 8c03bc97-6dd1-485b-9ae6-c0539929592c
+- name: 🇳🇱 NL 1422 SSS
+  type: ss
+  server: beedoost.org
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+- name: 🇳🇱 NL 1424 TJN
+  type: trojan
+  server: 209.250.246.191
+  port: 443
+  password: wkmY1R4EcP
+  sni: z-v2-003294.kailib.com
+- name: 🇳🇱 NL 1427 TJN
+  type: trojan
+  server: 95.179.128.114
+  port: 443
+  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
+  sni: hdfy8d1.cpi1.eu.org
+- name: 🇫🇷 FR 1428 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1429 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇵🇱 PL 1430 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 7306
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1431 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇫🇷 FR 1432 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1433 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1434 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇵🇱 PL 1435 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇫🇷 FR 1436 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇵🇱 PL 1437 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇵🇱 PL 1438 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇫🇷 FR 1439 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇳 UN 1440 SSS
+  type: ss
+  server: 193.243.147.128
+  port: 40368
+  cipher: aes-256-gcm
+  password: 7BcLdsO1WweoGD0X
+- name: 🇫🇷 FR 1441 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇫🇷 FR 1442 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇵🇱 PL 1443 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1444 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇵🇱 PL 1445 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇫🇷 FR 1446 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇵🇱 PL 1447 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇫🇷 FR 1448 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 7306
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1449 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇵🇱 PL 1450 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇵🇱 PL 1451 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇵🇱 PL 1452 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1453 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1454 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1455 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇫🇷 FR 1456 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇵🇱 PL 1457 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇵🇱 PL 1458 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1459 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1460 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1461 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇫🇷 FR 1462 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇫🇷 FR 1463 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1464 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇫🇷 FR 1465 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇫🇷 FR 1466 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇫🇷 FR 1467 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1468 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇵🇱 PL 1469 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇵🇱 PL 1470 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇫🇷 FR 1471 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇵🇱 PL 1472 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1473 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇵🇱 PL 1474 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇵🇱 PL 1475 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇵🇱 PL 1476 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1477 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1478 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇵🇱 PL 1479 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇵🇱 PL 1480 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇵🇱 PL 1481 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1482 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 CA 1483 TJN
+  type: trojan
+  server: ca-full.privateip.net
+  port: 443
+  password: 71ab3866-4c8b-4a0b-a4bd-a64f110afe0b
+- name: 🇷🇺 RU 1485 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1487 SSS
+  type: ss
+  server: 45.139.24.63
+  port: 57456
+  cipher: chacha20-ietf-poly1305
+  password: 3fbeb668f48414f6
+- name: 🇷🇺 RU 1489 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇹🇷 TR 1490 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9043
+  cipher: aes-256-cfb
+  password: HSZuyJQcWe8dxNdF
+- name: 🇵🇱 PL 1491 SSS
+  type: ss
+  server: 217.30.10.68
+  port: 9038
+  cipher: aes-256-cfb
+  password: gYCYXfkUQEs2TaJQ
+- name: 🇷🇺 RU 1492 SSS
+  type: ss
+  server: 212.192.9.220
+  port: 998
+  cipher: chacha20-ietf-poly1305
+  password: cg0KkMjbGdJEh
+- name: 🇷🇺 RU 1493 TJN
+  type: trojan
+  server: ru01.freeflyingcloud.xyz
+  port: 30002
+  password: faa0fd1b-ecf9-42ae-a5f3-0a96274b64cb
+  sni: ru01.freeflyingcloud.xyz
+- name: 🇷🇺 RU 1494 SSS
+  type: ss
+  server: 139.28.220.18
+  port: 5700
+  cipher: chacha20-ietf-poly1305
+  password: UXoGWyjwDVZIl1WMuHtxSi
+- name: 🇷🇺 RU 1495 SSS
+  type: ss
+  server: 77.105.140.135
+  port: 2562
+  cipher: chacha20-ietf-poly1305
+  password: tEO1As10EffDW5svXAwgvb
+- name: 🇵🇱 PL 1497 SSS
+  type: ss
+  server: 217.30.10.68
+  port: 9079
+  cipher: aes-256-cfb
+  password: TPqX8edgbAURcAMb
+- name: 🇷🇺 RU 1498 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇹🇷 TR 1499 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9030
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇷🇺 RU 1500 SSS
+  type: ss
+  server: 89.19.216.18
   port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 未知 SS-426 | free-nodes
-  type: ss
-  server: 103.130.147.40
-  port: 1122
-  cipher: aes-256-gcm
-  password: wc/eqRPrYjnxfAJ2JKnio7cG2Ko9K9DiMwzonRjU3LI=
-- name: 未知 SS-427 | free-nodes
-  type: ss
-  server: 103.130.147.40
-  port: 1122
-  cipher: aes-256-gcm
-  password: wc/eqRPrYjnxfAJ2JKnio7cG2Ko9K9DiMwzonRjU3LI=
-- name: 未知 TROJAN-428 | free-nodes
+  cipher: chacha20-ietf-poly1305
+  password: NC7jORVNrruV/+3+PwOJrnnOeG7n75X1
+- name: 🇷🇺 RU 1501 TJN
   type: trojan
-  server: 8y7r-2-4-3-1-4-5-2-2-3.poki-pakipon.ir
-  port: 27111
-  password: '-----------BanV2ray------------'
-  sni: chi.yahoo.com
-  skip-cert-verify: true
-- name: 未知 TROJAN-429 | free-nodes
+  server: 89.221.224.94
+  port: 80
+  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
+  sni: is2-t.sshmax.xyz
+- name: 🇷🇺 RU 1502 TJN
   type: trojan
-  server: uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir
-  port: 26378
-  password: '-----------BanV2ray-----------'
-  sni: chi.yahoo.com
-- name: 未知 TROJAN-430 | free-nodes
-  type: trojan
-  server: bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir
-  port: 53159
-  password: '-------BanV2ray------'
-  sni: chi.yahoo.com
-- name: 未知 TROJAN-431 | free-nodes
-  type: trojan
-  server: edededededededededededede-66.poki-pakipon.ir
-  port: 36268
-  password: '-------BanV2ray------'
-  sni: chi.yahoo.com
-- name: 未知 TROJAN-432 | free-nodes
-  type: trojan
-  server: us01.duotg.top
-  port: 46292
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
-  sni: www.microsoft.com
-- name: 未知 TROJAN-433 | free-nodes
-  type: trojan
-  server: 47.250.84.25
-  port: 443
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  sni: moltbot.doctoroyy.net
-- name: 未知 TROJAN-434 | free-nodes
-  type: trojan
-  server: 45.90.216.147
-  port: 8443
-  password: 5e19b3c8-c1dc-4163-95e2-895319c15d6c
-  sni: cloud.mail.ru
-- name: 未知 TROJAN-435 | free-nodes
-  type: trojan
-  server: kkvlvvq-a.catcat321.com
-  port: 20065
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 未知 TROJAN-436 | free-nodes
-  type: trojan
-  server: 44.251.158.80
-  port: 443
-  password: FH72359861
-  sni: obliging-louse.rooster465.autos
-- name: 未知 TROJAN-437 | free-nodes
-  type: trojan
-  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  port: 443
-  password: eb6fb64d-18c0-44d0-9ee5-f29c29194083
-  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  skip-cert-verify: true
-- name: 未知 TROJAN-438 | free-nodes
-  type: trojan
-  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  port: 443
-  password: eb6fb64d-18c0-44d0-9ee5-f29c29194083
-  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-- name: 未知 TROJAN-439 | free-nodes
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-- name: 未知 VLESS-440 | free-nodes
-  type: vless
-  server: x4g-production-c71f.up.railway.app
-  port: 443
-  uuid: 01200f5c-5321-d946-7028-0661ea0a2c0e
-  tls: true
-  servername: x4g-production-c71f.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: x4g-production-c71f.up.railway.app
-    path: /ws/01200f5c-5321-d946-7028-0661ea0a2c0e
-- name: 未知 VLESS-441 | free-nodes
-  type: vless
-  server: 167.233.219.201
-  port: 443
-  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 未知 VLESS-442 | free-nodes
-  type: vless
-  server: 62.171.228.244
-  port: 8443
-  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 未知 VLESS-443 | free-nodes
-  type: vless
-  server: estproxy4.lockdwn.com
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    headers:
-      Host: estproxy4.lockdwn.com
-    path: /
-- name: 未知 VLESS-444 | free-nodes
-  type: vless
-  server: irhub-production-4401.up.railway.app
-  port: 443
-  uuid: 07352861-2376-1f43-59c2-cedaa49dff2d
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: irhub-production-4401.up.railway.app
-    path: /ws/07352861-2376-1f43-59c2-cedaa49dff2d
-- name: 未知 VLESS-445 | free-nodes
-  type: vless
-  server: ansooyefilter-production-abf6.up.railway.app
-  port: 443
-  uuid: 08183979-836e-ac85-15db-8a5a48eae531
-  tls: true
-  servername: ansooyefilter-production-abf6.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: ansooyefilter-production-abf6.up.railway.app
-    path: /ws/08183979-836e-ac85-15db-8a5a48eae531
-- name: 未知 VLESS-446 | free-nodes
-  type: vless
-  server: 45.136.126.70
-  port: 8443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  servername: www.google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 未知 VLESS-447 | free-nodes
-  type: vless
-  server: ansooyefilter6.up.railway.app
-  port: 443
-  uuid: 0b0dd312-eecb-cb9d-fe12-6d0c1df30ae4
-  tls: true
-  servername: ansooyefilter6.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: ansooyefilter6.up.railway.app
-    path: /ws/0b0dd312-eecb-cb9d-fe12-6d0c1df30ae4
-- name: 未知 VLESS-448 | free-nodes
-  type: vless
-  server: 134.122.202.244
-  port: 44915
-  uuid: 0ca45842-71e2-47fe-889f-9e75f93ea459
-- name: GB VLESS-449 | free-nodes
-  type: vless
-  server: hostvds-nl-nl.kvnfreetest.uk
-  port: 21443
-  uuid: 122f8c58-f173-4f4a-acb8-86172ba5e10d
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: 未知 VLESS-450 | free-nodes
-  type: vless
-  server: x4g-production-06e2.up.railway.app
-  port: 443
-  uuid: 14dc1390-2efc-724d-9dfa-1bc02bc644bc
-  tls: true
-  servername: x4g-production-06e2.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: x4g-production-06e2.up.railway.app
-    path: /ws/14dc1390-2efc-724d-9dfa-1bc02bc644bc
-- name: 未知 VLESS-451 | free-nodes
-  type: vless
-  server: x4g-production-06e2.up.railway.app
-  port: 443
-  uuid: 14dc1390-2efc-724d-9dfa-1bc02bc644bc
-  tls: true
-  servername: x4g-production-06e2.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: x4g-production-06e2.up.railway.app
-    path: /ws/14dc1390-2efc-724d-9dfa-1bc02bc644bc
-- name: RU VLESS-452 | free-nodes
-  type: vless
-  server: red-fhmq5ehr3ievlnabv8l2.concept7.ru
-  port: 443
-  uuid: 15e0833c-08ad-47f3-bf80-60c2a47a6774
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: RU VLESS-453 | free-nodes
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  tls: true
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 未知 VLESS-454 | free-nodes
-  type: vless
-  server: x4g-production-0a61.up.railway.app
-  port: 443
-  uuid: 1725bfd6-5c74-759f-64d1-2f442f1c5992
-  tls: true
-  servername: x4g-production-0a61.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: x4g-production-0a61.up.railway.app
-    path: /ws/1725bfd6-5c74-759f-64d1-2f442f1c5992
-- name: 未知 VLESS-455 | free-nodes
-  type: vless
-  server: 138.124.125.211
-  port: 443
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 未知 VLESS-456 | free-nodes
-  type: vless
-  server: xiweini.dpdns.org
-  port: 30100
-  uuid: 19bb341c-ee57-4899-b1e7-e9d3ebdf23df
-  tls: true
-  servername: xiweini.dpdns.org
-- name: 未知 VLESS-457 | free-nodes
-  type: vless
-  server: 194.93.61.66
-  port: 443
-  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
-  tls: true
-  client-fingerprint: chrome
-- name: 未知 VLESS-458 | free-nodes
-  type: vless
-  server: 194.93.61.70
-  port: 443
-  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
-  tls: true
-  client-fingerprint: chrome
-- name: 未知 VLESS-459 | free-nodes
-  type: vless
-  server: 194.93.61.91
-  port: 443
-  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
-  tls: true
-  servername: cdnjs.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 未知 VLESS-460 | free-nodes
-  type: vless
-  server: v546965.hosted-by-vdsina.com
-  port: 8443
-  uuid: 1cb91b20-49cc-59ff-8393-91808a4deede
-  tls: true
-  servername: www.ozon.ru
-  client-fingerprint: chrome
-- name: 未知 VLESS-461 | free-nodes
-  type: vless
-  server: 3x-ui-upgrade.up.railway.app
-  port: 443
-  uuid: 1db32709-d9b9-465b-877e-7a779a6fe215
-  tls: true
-  servername: 3x-ui-upgrade.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: 3x-ui-upgrade.up.railway.app
-    path: /
-- name: 未知 VLESS-462 | free-nodes
-  type: vless
-  server: ansooyefilter-channel-production-f50d.up.railway.app
-  port: 443
-  uuid: 2107d017-9bb3-d249-0938-c0ad831fb011
-  tls: true
-  servername: ansooyefilter-channel-production-f50d.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: ansooyefilter-channel-production-f50d.up.railway.app
-    path: /ws/2107d017-9bb3-d249-0938-c0ad831fb011
-- name: 未知 VLESS-463 | free-nodes
-  type: vless
-  server: telewebion.com.fin2.shakhle.ir
-  port: 52525
-  uuid: 21702d6d-7b35-4faa-8462-c23dc7e20e00
-- name: 未知 VLESS-464 | free-nodes
-  type: vless
-  server: 193.160.32.36
+  server: 185.236.233.111
   port: 2053
-  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
-  tls: true
-  client-fingerprint: chrome
-- name: 未知 VLESS-465 | free-nodes
-  type: vless
-  server: finite-node.rtxconfigz.com
+  password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765
+- name: 🇷🇺 RU 1504 SSS
+  type: ss
+  server: 212.113.106.243
+  port: 13022
+  cipher: chacha20-ietf-poly1305
+  password: w5drAL7PfCIwQ2ycUuoDsV2Ls
+- name: 🇷🇺 RU 1505 TJN
+  type: trojan
+  server: ru01.freeflyingcloud.xyz
+  port: 30002
+  password: ebd1c3e8-a136-49a5-a76c-88c4bf0a23aa
+  sni: ru01.freeflyingcloud.xyz
+- name: 🇳🇱 NL 1506 SSS
+  type: ss
+  server: 109.107.172.30
+  port: 28190
+  cipher: chacha20-ietf-poly1305
+  password: 1f8jdOIKkxRWMUeOfXPeo8
+- name: 🇷🇺 RU 1507 SSS
+  type: ss
+  server: 94.142.138.56
+  port: 25091
+  cipher: chacha20-ietf-poly1305
+  password: hnRXsWFscwBEAvGnqQQoU2
+- name: 🇨🇦 CA 1508 TJN
+  type: trojan
+  server: ca-full.privateip.net
   port: 443
-  uuid: 25f3beef-a4b6-40bc-aa74-17a0f89f683c
-- name: 未知 VLESS-466 | free-nodes
-  type: vless
-  server: c9v1mt2xe451.contigolibre.com
-  port: 21847
-  uuid: 286c065e-566f-438c-b7c4-9c361baf96aa
-  tls: true
-  servername: www.speedtest.net
-  client-fingerprint: chrome
-- name: 未知 VLESS-467 | free-nodes
-  type: vless
-  server: 91panel-axiora-vpn.korvexe.ir
-  port: 14368
-  uuid: 28926c34-865c-447e-8d42-a17240af743b
-  tls: true
-  servername: 91panel-axiora-vpn.korvexe.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: cdn-xui911.korvexe.ir
-    path: /
-- name: 未知 VLESS-468 | free-nodes
-  type: vless
-  server: bolguarmarz.horlutr.ir
+  password: 8b47d63f-1f8e-4f8e-a1e8-ead3686e5da6
+- name: 🇷🇺 RU 1509 SSS
+  type: ss
+  server: 46.226.162.112
+  port: 32913
+  cipher: chacha20-ietf-poly1305
+  password: KTwIQM1cQJwtkrjfld6Usn
+- name: 🇷🇺 RU 1510 SSS
+  type: ss
+  server: 212.113.106.243
+  port: 12949
+  cipher: chacha20-ietf-poly1305
+  password: P2zxXPewlV3BlfqqYiSthvtLc
+- name: 🇪🇸 ES 1511 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9030
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇳🇱 NL 1512 TJN
+  type: trojan
+  server: 188.119.112.242
+  port: 443
+  password: bf2307e1-a58f-41c2-8392-d76197fc2866
+- name: 🇷🇺 RU 1513 SSS
+  type: ss
+  server: 92.246.136.190
+  port: 32025
+  cipher: chacha20-ietf-poly1305
+  password: VRKnPTULDqxaExI5yLJjoc
+- name: 🇪🇸 ES 1514 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9041
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
+- name: 🇷🇺 RU 1516 SSS
+  type: ss
+  server: 78.153.149.211
+  port: 25365
+  cipher: aes-128-gcm
+  password: Telegram-ZEDMODEON
+- name: 🇷🇺 RU 1518 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1519 SSS
+  type: ss
+  server: 195.2.76.71
+  port: 60422
+  cipher: chacha20-ietf-poly1305
+  password: u3vnfMkutB4brBoGSkAphE
+- name: 🇷🇺 RU 1520 SSS
+  type: ss
+  server: 85.192.63.92
+  port: 31212
+  cipher: chacha20-ietf-poly1305
+  password: xCoBqYZGaMivNlzIhjpIH5
+- name: 🇷🇺 RU 1521 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1522 TJN
+  type: trojan
+  server: 45.140.169.83
+  port: 30002
+  password: ebd1c3e8-a136-49a5-a76c-88c4bf0a23aa
+  sni: ru01.freeflyingcloud.xyz
+- name: 🇷🇺 RU 1523 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1525 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1526 SSS
+  type: ss
+  server: 94.228.165.234
+  port: 15214
+  cipher: chacha20-ietf-poly1305
+  password: DmMQUmI7pgQDnrWqLXC00L
+- name: 🇷🇺 RU 1527 SSS
+  type: ss
+  server: 91.192.81.21
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1q7RNKaIk2wYO8fEPmEX0vWQ7Va+QRTA
+- name: 🇹🇷 TR 1529 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9040
+  cipher: aes-256-cfb
+  password: p9z5BVADH2YFs3MN
+- name: 🇷🇺 RU 1530 SSS
+  type: ss
+  server: 46.226.164.2
+  port: 16006
+  cipher: chacha20-ietf-poly1305
+  password: IKDBUJ8RH6qI10QR1MSTqR
+- name: 🇪🇸 ES 1531 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9042
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇷🇺 RU 1532 SSS
+  type: ss
+  server: 185.229.65.157
+  port: 8234
+  cipher: chacha20-ietf-poly1305
+  password: u6RYZyNId5RmoWTNTum0nz
+- name: 🇷🇺 RU 1533 SSS
+  type: ss
+  server: 94.228.169.114
+  port: 25663
+  cipher: chacha20-ietf-poly1305
+  password: 1ef9jGvAyzXLLnjssRFr8M
+- name: 🇷🇺 RU 1534 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1535 SSS
+  type: ss
+  server: 212.113.106.76
+  port: 61992
+  cipher: chacha20-ietf-poly1305
+  password: xG1e8ntN2cff9zWCkKqXEd
+- name: 🇹🇷 TR 1536 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9041
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
+- name: 🇷🇺 RU 1537 SSS
+  type: ss
+  server: 83.217.9.199
+  port: 59393
+  cipher: chacha20-ietf-poly1305
+  password: NdipHbnILjBtQgQx0Iww5q
+- name: 🇹🇷 TR 1538 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9001
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇳🇱 NL 1539 TJN
+  type: trojan
+  server: nl-full.privateip.net
+  port: 443
+  password: bf2307e1-a58f-41c2-8392-d76197fc2866
+- name: 🇷🇺 RU 1540 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1542 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1544 SSS
+  type: ss
+  server: 146.185.198.44
+  port: 51348
+  cipher: chacha20-ietf-poly1305
+  password: Zu5sVdhPITkII1Rf9bUTjt0ws1nks4vgBoHhe7QxwEk0j3Ai
+- name: 🇹🇷 TR 1546 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9031
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
+- name: 🇷🇺 RU 1547 SSS
+  type: ss
+  server: 212.113.106.76
+  port: 61992
+  cipher: chacha20-ietf-poly1305
+  password: oog65JXEql48VTve79V89g
+- name: 🇰🇿 KZ 1548 SSS
+  type: ss
+  server: 213.156.137.67
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇪🇸 ES 1549 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9031
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
+- name: 🇳🇱 NL 1550 TJN
+  type: trojan
+  server: nl-full.privateip.net
+  port: 443
+  password: d2b376a2-c9b7-42be-8f52-26c0987f2884
+- name: 🇷🇺 RU 1551 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇦🇪 AE 1553 SSS
+  type: ss
+  server: 5.44.42.60
+  port: 64930
+  cipher: chacha20-ietf-poly1305
+  password: CkMpBwWZ0Cr1RhVVNSXXMp
+- name: 🇷🇺 RU 1555 TJN
+  type: trojan
+  server: 176.32.35.167
+  port: 1007
+  password: 85bce006-4885-11ee-8792-f23c9164ca5d
+- name: 🇷🇺 RU 1556 SSS
+  type: ss
+  server: 217.196.103.206
+  port: 29312
+  cipher: chacha20-ietf-poly1305
+  password: qgpdyzHj8rZW9fDxxkUHRI
+- name: 🇷🇺 RU 1559 SSS
+  type: ss
+  server: 46.19.69.244
+  port: 50211
+  cipher: chacha20-ietf-poly1305
+  password: XZMPTXYRC2XB8jet5UiHOn
+- name: 🇷🇺 RU 1561 SSS
+  type: ss
+  server: 5.42.86.33
+  port: 16991
+  cipher: chacha20-ietf-poly1305
+  password: zErfOQDf3lOXZ24DK9EcAL
+- name: 🇨🇿 CZ 1562 SSS
+  type: ss
+  server: 194.87.179.169
+  port: 40928
+  cipher: chacha20-ietf-poly1305
+  password: uSFiNtjwzC1y2QMPNhrXAT5gknE1mgHggsqL6gPkUFPvWqrHC63U5p5VCNZBktT7BNoykGd1gxPZy9zoSsj6Hrw5YV3XvoPh
+- name: 🇷🇺 RU 1563 SSS
+  type: ss
+  server: 185.174.137.72
+  port: 57262
+  cipher: chacha20-ietf-poly1305
+  password: WrszSP43UAOcFljDkb8vAL
+- name: 🇷🇺 RU 1564 TJN
+  type: trojan
+  server: ru01.freeflyingcloud.xyz
+  port: 30002
+  password: 4aa4c780-e45f-4011-8b0d-5ce48071bfa0
+  sni: ru01.freeflyingcloud.xyz
+- name: 🇷🇺 RU 1566 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇵🇱 PL 1567 SSS
+  type: ss
+  server: 217.30.10.68
+  port: 9033
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇵🇱 PL 1568 SSS
+  type: ss
+  server: 217.30.10.18
+  port: 9019
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+- name: 🇷🇺 RU 1570 SSS
+  type: ss
+  server: 62.113.110.233
+  port: 15174
+  cipher: chacha20-ietf-poly1305
+  password: LLVD6lbENjzG1vj15Fvq7r
+- name: 🇷🇺 RU 1572 TJN
+  type: trojan
+  server: hk-full.privateip.net
+  port: 443
+  password: 01278779-3f58-4477-8ae7-7b82033a5d2e
+- name: 🇨🇭 CH 1573 SSS
+  type: ss
+  server: 5.182.36.245
+  port: 10141
+  cipher: chacha20-ietf-poly1305
+  password: ndJuPjq7WbFDjB4oacljGw
+- name: 🇪🇸 ES 1574 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9037
+  cipher: aes-256-cfb
+  password: TN2YqghxeFDKZfLU
+- name: 🇷🇺 RU 1575 SSS
+  type: ss
+  server: 45.67.32.147
+  port: 13896
+  cipher: chacha20-ietf-poly1305
+  password: ygSXLTCrL8zeKb2n6mghK8J26GVHWmZA4pyy84Pyg6E=
+- name: 🇦🇲 AM 1576 SSS
+  type: ss
+  server: 146.185.248.22
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇸🇬 SG 1578 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1579 TJN
+  type: trojan
+  server: 139.162.39.206
+  port: 443
+  password: 557340ab-4ae8-4593-989f-a8053bec73b6
+- name: 🇸🇬 SG 1580 SSS
+  type: ss
+  server: 13.250.63.15
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US 1581 TJN
+  type: trojan
+  server: 128.199.13.40
+  port: 30020
+  password: e9edd1db-e6f0-4c37-9be7-135335a81e6c
+  sni: us05.freeflyingcloud.xyz
+- name: 🇸🇬 SG 1582 SSS
+  type: ss
+  server: 13.250.57.60
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1583 SSS
+  type: ss
+  server: 52.221.183.250
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1584 SSS
+  type: ss
+  server: 18.142.225.182
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1585 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20182
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1586 TJN
+  type: trojan
+  server: 139.162.50.211
+  port: 443
+  password: af7d4ea7-e793-4030-9766-9a13e1f099f5
+- name: 🇸🇬 SG 1587 SSS
+  type: ss
+  server: 3.0.50.219
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1588 TJN
+  type: trojan
+  server: 134.209.105.33
+  port: 443
+  password: yR7hP9aw5L
+  sni: aka.ms
+- name: 🇸🇬 SG 1589 SSS
+  type: ss
+  server: 52.221.231.138
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1590 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20172
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇭🇰 HK 1591 SSS
+  type: ss
+  server: 8.210.89.240
+  port: 81
+  cipher: aes-128-gcm
+  password: a-wym4ovY4Yw
+- name: 🇸🇬 SG 1592 SSS
+  type: ss
+  server: 13.228.23.150
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1593 TJN
+  type: trojan
+  server: 188.166.252.91
+  port: 443
+  password: I4bO2YDEgs
+  sni: aka.ms
+- name: 🇸🇬 SG 1594 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20180
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1595 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1596 TJN
+  type: trojan
+  server: sg3-full.privateip.net
+  port: 443
+  password: b3965d2d-3b82-45cc-927b-1336aca3f3fe
+- name: 🇸🇬 SG 1597 TJN
+  type: trojan
+  server: 175.41.172.250
+  port: 17418
+  password: ISpGyFeSDr06
+  sni: appsvs.shop
+- name: 🇸🇬 SG 1598 TJN
+  type: trojan
+  server: sg04.freeflyingcloud.xyz
+  port: 30018
+  password: 15f804fa-27be-4b0f-85d4-cead43a483ef
+  sni: sg04.freeflyingcloud.xyz
+- name: 🇸🇬 SG 1599 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1600 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1603 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20181
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1604 SSS
+  type: ss
+  server: 54.251.168.143
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1605 SSS
+  type: ss
+  server: 13.229.57.68
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1606 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇺🇸 US 1607 TJN
+  type: trojan
+  server: us05.freeflyingcloud.xyz
+  port: 30020
+  password: 15f804fa-27be-4b0f-85d4-cead43a483ef
+  sni: us05.freeflyingcloud.xyz
+- name: 🇸🇬 SG 1608 SSS
+  type: ss
+  server: 13.250.61.18
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1609 SSS
+  type: ss
+  server: 13.229.184.181
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1610 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1611 SSS
+  type: ss
+  server: 54.169.147.64
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1613 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1614 SSS
+  type: ss
+  server: 18.142.56.221
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1615 SSS
+  type: ss
+  server: 18.141.207.80
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1616 TJN
+  type: trojan
+  server: 139.162.49.215
+  port: 443
+  password: b3965d2d-3b82-45cc-927b-1336aca3f3fe
+- name: 🇸🇬 SG 1617 SSS
+  type: ss
+  server: 54.254.167.160
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1618 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20177
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1619 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20175
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1620 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1621 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1623 SSS
+  type: ss
+  server: 13.250.63.15
+  port: 443
+  cipher: aes-256-gcm
+  password: amazonskr05
+- name: 🇸🇬 SG 1624 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1625 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1627 SSS
+  type: ss
+  server: 54.179.101.194
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1628 TJN
+  type: trojan
+  server: sg2-full.privateip.net
+  port: 443
+  password: 557340ab-4ae8-4593-989f-a8053bec73b6
+- name: 🇺🇸 US 1629 TJN
+  type: trojan
+  server: tj2.dalazhi.cyou
+  port: 443
+  password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+- name: 🇺🇳 UN 1632 TJN
+  type: trojan
+  server: 104.17.61.7
+  port: 443
+  password: 4732adfa16c6450bbef87264e41332db
+  sni: jobscareerfortoday.com
+- name: 🇺🇳 UN 1635 TJN
+  type: trojan
+  server: 104.18.203.232
+  port: 2083
+  password: 2dbd2a10-9512-4b60-84e6-5d9926a9fe5b
+  sni: laenatbar.seyedalikhameneibinamous.site
+- name: 🇩🇪 DE 1638 TJN
+  type: trojan
+  server: 164.90.167.242
+  port: 443
+  password: a6f2dfa2-dfde-46db-9b0d-29f8c9032ed5
+- name: 🇺🇸 US 1640 TJN
+  type: trojan
+  server: zula.ir
+  port: 443
+  password: b7f2d4a0-e736-11ee-b58a-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 1641 TJN
+  type: trojan
+  server: 172.67.159.13
+  port: 443
+  password: 75beb6a0-f893-11ee-9276-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 1643 SSS
+  type: ss
+  server: 38.121.43.65
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇸 US 1647 SSS
+  type: ss
+  server: 38.68.135.18
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 KR 1648 SSS
+  type: ss
+  server: 3.38.162.154
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US 1652 SSS
+  type: ss
+  server: 38.110.1.107
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇸 US 1654 SSS
+  type: ss
+  server: 38.68.134.9
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇸🇪 SE 1658 TJN
+  type: trojan
+  server: 13.50.184.228
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇺🇸 US 1665 SSS
+  type: ss
+  server: 38.114.114.208
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇺🇸 US 1666 TJN
+  type: trojan
+  server: 172.66.213.38
   port: 2087
-  uuid: 289c4c75-9ea6-4c23-bda2-17d32c533db4
-- name: 未知 VLESS-469 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:150:5400:6ff:fe44:1cfd
+  password: 8380da47-5632-4b0a-8047-b0939f797112
+  sni: hamrah.havafaza.shop
+- name: 🇺🇸 US 1667 SSS
+  type: ss
+  server: 18.246.209.149
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3783.wagahaha.xyz
-- name: 未知 VLESS-470 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:150:5400:6ff:fe44:1cfd
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US 1668 SSS
+  type: ss
+  server: 167.88.62.62
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇺🇸 US 1672 SSS
+  type: ss
+  server: 38.75.136.21
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇬🇧 GB 1673 TJN
+  type: trojan
+  server: 198.244.190.189
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3784.wagahaha.xyz
-- name: 未知 VLESS-471 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:311:5400:6ff:fe43:9d49
+  password: 57afed5a-5a70-4a8b-bb40-4d81c26e65dd
+- name: 🇺🇸 US 1678 SSS
+  type: ss
+  server: 38.75.136.21
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇸 US 1679 SSS
+  type: ss
+  server: 45.79.79.37
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3607.wagahaha.xyz
-- name: 未知 VLESS-472 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:311:5400:6ff:fe43:9d49
+  cipher: aes-256-cfb
+  password: 9d6cceaa373bf2c8acb22e60b6a58be6
+- name: 🇺🇸 US 1680 SSS
+  type: ss
+  server: 38.75.136.21
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇸 US 1681 TJN
+  type: trojan
+  server: 172.67.204.84
+  port: 2083
+  password: 0e81a9cd-d849-4101-8d64-574c283207de
+  sni: de1.trojanvpn.de
+- name: 🇺🇸 US 1683 SSS
+  type: ss
+  server: 38.114.114.208
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇬🇧 GB 1684 SSS
+  type: ss
+  server: account-mec.emofid.co
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3608.wagahaha.xyz
-- name: 未知 VLESS-473 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:311:5400:6ff:fe43:9d49
+  cipher: chacha20-ietf-poly1305
+  password: 7ivrGEHY88sQk3DP
+- name: 🇺🇸 US 1687 SSS
+  type: ss
+  server: 38.110.1.88
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇸 US 1690 SSS
+  type: ss
+  server: 38.75.136.33
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇸 US 1694 TJN
+  type: trojan
+  server: 172.67.159.13
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3609.wagahaha.xyz
-- name: 未知 VLESS-474 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:4410:5400:6ff:fe43:9d50
+  password: 75beb6a0-f893-11ee-9276-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 1695 TJN
+  type: trojan
+  server: zula.ir
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3633.wagahaha.xyz
-- name: 未知 VLESS-475 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:4410:5400:6ff:fe43:9d50
+  password: 7cb94590-fd39-11ee-b4f1-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 1696 SSS
+  type: ss
+  server: 38.75.137.42
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇺🇸 US 1697 TJN
+  type: trojan
+  server: 146.190.84.34
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3634.wagahaha.xyz
-- name: 未知 VLESS-476 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:4425:5400:6ff:fe40:9725
+  password: GToK9gzuwh
+  sni: aka.ms
+- name: 🇺🇸 US 1698 SSS
+  type: ss
+  server: 38.68.134.9
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇸 US 1699 SSS
+  type: ss
+  server: 15.204.87.217
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇺🇸 US 1700 SSS
+  type: ss
+  server: 38.75.136.135
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇳 UN 1701 TJN
+  type: trojan
+  server: 104.21.41.21
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us2758.wagahaha.xyz
-  flow: xtls-rprx-vision
-- name: 未知 VLESS-477 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:4425:5400:6ff:fe40:9725
+  password: 64559da0-f51c-11ee-8db0-1239d0255272
+  sni: fr1.test3.net
+- name: 🇺🇸 US 1705 TJN
+  type: trojan
+  server: 172.67.175.243
+  port: 2053
+  password: 1883668e14d4a92
+  sni: frankfoortvip.followprovider.ir
+- name: 🇸🇪 SE 1711 TJN
+  type: trojan
+  server: 13.51.46.95
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇺🇸 US 1713 TJN
+  type: trojan
+  server: us2-full.privateip.net
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us2759.wagahaha.xyz
-  flow: xtls-rprx-vision
-- name: 未知 VLESS-478 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:4b02:5400:6ff:fe42:b713
+  password: 8a6fc43e-b81b-4efc-ae38-4b9de1720ffe
+- name: 🇺🇳 UN 1715 TJN
+  type: trojan
+  server: 104.16.123.175
+  port: 2083
+  password: qG9K8AGnn9XH5jUqeFu96g
+  sni: cdn13.cdn2cdn.com
+- name: 🇺🇸 US 1718 TJN
+  type: trojan
+  server: us03.freeflyingcloud.xyz
+  port: 30018
+  password: 4aa4c780-e45f-4011-8b0d-5ce48071bfa0
+  sni: us03.freeflyingcloud.xyz
+- name: 🇺🇳 UN 1722 TJN
+  type: trojan
+  server: 104.16.159.2
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3139.wagahaha.xyz
-- name: 未知 VLESS-479 | free-nodes
-  type: vless
-  server: 2001:19f0:7001:4b02:5400:6ff:fe42:b713
+  password: cb1f26aa437d4bfa9b841d28503ce8cc
+  sni: jobscareerforstudent.com
+- name: 🇺🇸 US 1724 SSS
+  type: ss
+  server: 38.110.1.111
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇺🇸 US 1725 SSS
+  type: ss
+  server: 75.102.51.26
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇫🇷 FR 1726 TJN
+  type: trojan
+  server: 13.37.183.9
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇺🇸 US 1728 SSS
+  type: ss
+  server: 54.218.30.121
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3140.wagahaha.xyz
-- name: 未知 VLESS-480 | free-nodes
-  type: vless
-  server: 2001:19f0:7002:51a:5400:6ff:fe44:1d16
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US 1729 SSS
+  type: ss
+  server: 15.204.87.217
+  port: 5499
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: 🇮🇳 IN 1731 SSS
+  type: ss
+  server: 143.110.242.24
+  port: 51117
+  cipher: chacha20-ietf-poly1305
+  password: P7Mq81xOOwVCMxRtTYqv0T
+- name: 🇺🇸 US 1739 SSS
+  type: ss
+  server: 167.88.62.62
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇳 UN 1742 TJN
+  type: trojan
+  server: 104.16.192.159
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3977.wagahaha.xyz
-- name: 未知 VLESS-481 | free-nodes
-  type: vless
-  server: 2001:19f0:7002:51a:5400:6ff:fe44:1d16
+  password: cb1f26aa437d4bfa9b841d28503ce8cc
+  sni: jobsapplyworld.com
+- name: 🇺🇸 US 1747 SSS
+  type: ss
+  server: 169.197.142.216
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇺🇸 US 1749 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-tr.1ytnode.com
+  port: 56385
+  password: cd7239af-77ad-4628-a871-00acfa219f02
+- name: 🇺🇳 UN 1758 TJN
+  type: trojan
+  server: 104.19.159.6
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3978.wagahaha.xyz
-- name: 未知 VLESS-482 | free-nodes
-  type: vless
-  server: 2401:c080:1000:1443:5400:6ff:fe41:a334
+  password: b0b861c2c85346a389b9e95769c3cba4
+  sni: jobscareerforstudent.com
+- name: 🇺🇸 US 1761 SSS
+  type: ss
+  server: 156.146.38.163
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3017.wagahaha.xyz
-- name: 未知 VLESS-483 | free-nodes
-  type: vless
-  server: 2401:c080:1000:1443:5400:6ff:fe41:a334
+  cipher: aes-128-cfb
+  password: shadowsocks
+- name: 🇺🇸 US 1762 SSS
+  type: ss
+  server: 38.75.137.93
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇺🇸 US 1763 TJN
+  type: trojan
+  server: zula.ir
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3018.wagahaha.xyz
-- name: 未知 VLESS-484 | free-nodes
-  type: vless
-  server: 2401:c080:1000:1443:5400:6ff:fe41:a334
+  password: 7cb94590-fd39-11ee-b4f1-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 1764 TJN
+  type: trojan
+  server: zula.ir
   port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us3019.wagahaha.xyz
-- name: 未知 VLESS-485 | free-nodes
-  type: vless
-  server: 2401:c080:1000:15f9:5400:6ff:fe41:55a6
-  port: 443
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  tls: true
-  servername: u729792us2810.wagahaha.xyz
-  flow: xtls-rprx-vision
+  password: 7cb94590-fd39-11ee-b4f1-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 1766 TJN
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56357
+  password: cd7239af-77ad-4628-a871-00acfa219f02
+- name: 🇺🇸 US 1768 SSS
+  type: ss
+  server: 172.245.180.193
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇺🇸 US 1769 SSS
+  type: ss
+  server: 38.75.136.33
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
