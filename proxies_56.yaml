@@ -1,4 +1,296 @@
 proxies:
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: 185.140.12.160
+  port: 2083
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  tls: true
+  servername: derman.neobo-tooth.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: '>>@oneclickvpnkeys::IT'
+  type: vless
+  server: 151.241.215.109
+  port: 443
+  uuid: 699ce9a1-abbb-4525-988e-b940381352e8
+  network: ws
+  ws-opts:
+    path: /
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: milan.adaspoloandco.com
+  port: 8443
+  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  tls: true
+  servername: milan.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /RoBeRt
+- name: '>>@v2ray1_ng::RU'
+  type: vless
+  server: 31.128.37.67
+  port: 16560
+  uuid: 6d60c73d-5915-4cf8-b155-e522dfd863bb
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    headers:
+      Host: usejh2.neobo-tooth.ru
+    path: /
+- name: '>>@outline_vpn::XX'
+  type: vless
+  server: 185.140.12.160
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    path: /
+- name: '>>@ShadowsocksM::US'
+  type: vless
+  server: 104.17.58.113
+  port: 8880
+  uuid: 6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494
+  network: ws
+  ws-opts:
+    headers:
+      Host: small-cake-e99b.390-a20.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: 89.36.161.222
+  port: 2053
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  tls: true
+  servername: vk.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: 45.131.4.115
+  port: 80
+  uuid: 74ed78f1-4095-47e6-b043-094e494fb7e5
+  network: ws
+  ws-opts:
+    headers:
+      Host: worker3.gisenoj224.workers.dev
+    path: /sVnT0vhrV7WAl52Z
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    headers:
+      Host: laoye.in-gect.fun
+    path: /
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: laoye.in-gect.fun
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    headers:
+      Host: laoye.in-gect.fun
+    path: /
+- name: '>>@v2rayng_fast::US'
+  type: vless
+  server: 104.19.214.98
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: cf.9999669.xyz
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: mfa.gov.ua
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+    path: /
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: www.shopify.com
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+    path: /
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: 89.36.161.222
+  port: 2083
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  tls: true
+  servername: laoye.in-gect.fun
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: laoye.in-gect.fun
+  port: 2083
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  tls: true
+  servername: laoye.in-gect.fun
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: '>>@EliV2ray::DE'
+  type: vless
+  server: 168.222.194.138
+  port: 9880
+  uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: usejh2.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    headers:
+      Host: usejh2.neobo-tooth.ru
+    path: /
+- name: '>>@outline_vpn::XX'
+  type: vless
+  server: derman.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    headers:
+      Host: derman.neobo-tooth.ru
+    path: /
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: usejh2.neobo-tooth.ru
+  port: 2083
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  tls: true
+  servername: usejh2.neobo-tooth.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: '>>@shadowproxy66::DE'
+  type: vless
+  server: 64.188.82.152
+  port: 443
+  uuid: 7836b28e-8451-4596-ad3e-e3601b2335ba
+  tls: true
+  servername: cloudflare.vhub.pro
+  network: ws
+  ws-opts:
+    headers:
+      Host: cloudflare.vhub.pro
+    path: /websocket?ed=2560
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    headers:
+      Host: OV-Germany1.09vpn.com
+    path: /vless/
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 7a629a11-b75a-4889-957d-dc0987a73a19
+  network: ws
+  ws-opts:
+    headers:
+      Host: jimifree.jimshofree1.workers.dev
+    path: /eyJqdW5rIjoieVMzbmVFWlBsd3prIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
+  network: ws
+  ws-opts:
+    headers:
+      Host: dry-credit-fc26.203-d8c.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: '>>@oneclickvpnkeys::PL'
+  type: vless
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  network: ws
+  ws-opts:
+    headers:
+      Host: pl2.lckdwn.ru
+    path: /
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: 147.182.212.232
+  port: 56565
+  uuid: 7b188eea-b08f-42c2-bac7-d3b0e74218b8
+  tls: true
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: true
+  servername: cdn.asshole.eu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: cdn.asshole.eu.cc
+    path: /
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    headers:
+      Host: cdn.asshole.eu.cc
+    path: /
 - name: '>>@oneclickvpnkeys::US'
   type: vless
   server: support.cloudflare.com
