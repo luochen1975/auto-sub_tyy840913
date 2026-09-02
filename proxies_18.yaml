@@ -1,4 +1,168 @@
 proxies:
+- name: 荷兰 032
+  type: vless
+  server: 45.130.125.6
+  port: 443
+  uuid: ac006062-f051-43c6-bd4c-f409285c8635
+  tls: true
+- name: 伊朗 034
+  type: vless
+  server: 79.127.70.123
+  port: 2083
+  uuid: aca7039a-eb24-404d-94ac-28099c5b9afd
+  tls: true
+- name: 美国 685
+  type: vless
+  server: 104.18.4.138
+  port: 2096
+  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: greattehran.hozheen.ir
+    path: /ws?ed=2560
+- name: 英国 023
+  type: vless
+  server: 169.197.113.179
+  port: 20190
+  uuid: ad4dd89a-2e4b-4f33-bb96-7e9c4eb85d0b
+  tls: true
+- name: 俄罗斯 023
+  type: vless
+  server: 89.208.113.16
+  port: 443
+  uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
+  tls: true
+- name: 比利时 007
+  type: vless
+  server: 150.251.153.55
+  port: 443
+  uuid: adecf771-063e-44e9-a09c-1d3b6cd39b33
+  tls: true
+- name: 美国 686
+  type: vless
+  server: 104.24.19.99
+  port: 443
+  uuid: aebeb940-51cb-429f-830d-c421351d18e3
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: novapanell.abdollahvand3.ir
+    path: /LUANVO
+- name: 英国 024
+  type: vless
+  server: 178.104.129.39
+  port: 14726
+  uuid: aebf0af6-7890-45ec-adf9-e6f502f2303e
+  tls: true
+- name: 美国 687
+  type: vless
+  server: 104.19.208.184
+  port: 8443
+  uuid: aeec50e6-f176-4f87-9f46-0610a0e76435
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: interim.adaspoloandco.com
+    path: /RoBeRt
+- name: 伊朗 035
+  type: vless
+  server: 94.183.149.98
+  port: 6000
+  uuid: aef92bdf-79b6-4962-b3ff-164dd938d2dd
+  tls: true
+- name: 俄罗斯 024
+  type: vless
+  server: 85.234.114.53
+  port: 22231
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  tls: true
+- name: 美国 688
+  type: vless
+  server: 151.101.1.242
+  port: 443
+  uuid: b0cf4078-96b8-4e11-80a8-0f9352565a16
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: minimize-evenness.cdn-content.com
+    path: /ws
+- name: 美国 689
+  type: vless
+  server: 151.101.193.242
+  port: 443
+  uuid: b0cf4078-96b8-4e11-80a8-0f9352565a16
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+    path: /ws
+- name: 美国 690
+  type: vless
+  server: 199.232.173.242
+  port: 443
+  uuid: b0cf4078-96b8-4e11-80a8-0f9352565a16
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: piracy-android.video-streams.org
+    path: /ws
+- name: 美国 691
+  type: vless
+  server: 162.159.46.0
+  port: 8880
+  uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: new.106-79e.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 英国 025
+  type: vless
+  server: 45.8.211.57
+  port: 443
+  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: terazhediii.info
+    path: /hdgrbws
+- name: 伊朗 036
+  type: vless
+  server: 85.9.96.140
+  port: 35198
+  uuid: b3484939-b3ed-4c47-933c-b8d8acaa98fb
+  tls: true
+- name: 荷兰 033
+  type: vless
+  server: 45.130.125.76
+  port: 8443
+  uuid: b37be529-83c9-4851-a3cf-73d7d05bf308
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: drrfddgbv.turbooserver.net.tr
+    path: /
+- name: 美国 692
+  type: vless
+  server: 69.46.46.111
+  port: 443
+  uuid: b44c0f43-6824-b02f-4827-2ac84bfa6802
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: rvg-production-7dfb.up.railway.app
+    path: /ws/b44c0f43-6824-b02f-4827-2ac84bfa6802
 - name: 意大利 001
   type: vless
   server: 88.218.196.52
@@ -3683,120 +3847,6 @@ proxies:
 - name: 🏳️_未知_248
   type: trojan
   server: 104.16.174.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_249
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_250
-  type: trojan
-  server: 104.16.174.185
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_251
-  type: trojan
-  server: 104.18.152.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_252
-  type: trojan
-  server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇸🇨_塞舌尔_253
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_254
-  type: trojan
-  server: 141.101.90.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_255
-  type: trojan
-  server: 104.18.152.207
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_256
-  type: trojan
-  server: 104.18.152.207
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_257
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_258
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_259
-  type: trojan
-  server: 104.18.152.73
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_260
-  type: trojan
-  server: 104.16.73.213
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_261
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_262
-  type: trojan
-  server: 104.18.152.97
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_263
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_264
-  type: trojan
-  server: 104.18.152.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_265
-  type: trojan
-  server: 104.16.174.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_266
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🏳️_未知_267
-  type: trojan
-  server: 104.16.174.117
   port: 443
   password: humanity
   sni: www.ignitelimit.com

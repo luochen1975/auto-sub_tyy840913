@@ -1,4 +1,80 @@
 proxies:
+- name: 🇩🇪_DE_德国
+  type: vless
+  server: 94.156.122.215
+  port: 8443
+  uuid: ce5b6383-60f2-4aa3-9099-eacb6b01cf2b
+  tls: true
+- name: 🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国
+  type: vless
+  server: 217.60.193.1
+  port: 443
+  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+  tls: true
+- name: 🇫🇷_FR_法国
+  type: vless
+  server: 15.237.177.139
+  port: 43248
+  uuid: f9d8ca28-2fff-45de-9b25-3bf29186018e
+  tls: true
+- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 6e2e03e2-4f66-479a-a186-a34d66ca8c91
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: pan11.global.ssl.fastly.net
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+- name: 🇩🇪_DE_德国_1
+  type: vless
+  server: 45.80.111.7
+  port: 443
+  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: De2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: de.catxstar.com
+- name: 🇨🇭_CH_瑞士
+  type: vless
+  server: 199.68.196.79
+  port: 443
+  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
+  tls: true
+- name: 🇨🇭_CH_瑞士_1
+  type: vless
+  server: ch.tunnelx.space
+  port: 443
+  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
+  tls: true
+- name: 🇩🇪_DE_德国_2
+  type: vless
+  server: 159.195.139.217
+  port: 8443
+  uuid: 48267e65-8bf0-4046-923f-4ee967009344
+  tls: true
+- name: 🇪🇸_ES_西班牙
+  type: vless
+  server: 46.28.71.104
+  port: 2053
+  uuid: 504d0b6e-400d-45ec-b2d0-1c79006ebc16
+  tls: true
+- name: 🇺🇸_US_美国
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  tls: true
 - name: 🇺🇸_US_美国_1
   type: vless
   server: 217.177.75.7
@@ -3559,72 +3635,6 @@ proxies:
 - name: US美国(mibei77.com 米贝节点分享)_172
   type: trojan
   server: 141.101.90.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_173
-  type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_174
-  type: trojan
-  server: 104.16.174.37
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_175
-  type: trojan
-  server: 104.18.152.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: GB英国(mibei77.com 米贝节点分享)_2
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_176
-  type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_177
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_178
-  type: trojan
-  server: 104.18.152.230
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_179
-  type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_180
-  type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_181
-  type: trojan
-  server: 104.18.152.219
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_182
-  type: trojan
-  server: 104.18.152.225
   port: 443
   password: humanity
   sni: www.ignitelimit.com
