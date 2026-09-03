@@ -1,42 +1,4 @@
 proxies:
-- name: 🇨🇦CA加拿大丨yoyapai.com
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
-  network: ws
-  ws-opts:
-    headers:
-      Host: calm-haze-d105.21-7cd.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 🇹🇭TH泰國丨yoyapai.com
-  type: vless
-  server: www.true.th
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  tls: true
-  servername: d1yxsk0zprgivr.cloudfront.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
-    path: /
-- name: 🇫🇷FR法國丨yoyapai.com
-  type: trojan
-  server: www.speedtest.org
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: ❓未知丨yoyapai.com
-  type: vless
-  server: 50.62.194.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime37.workers.dev
-    path: /
 - name: ❓未知丨yoyapai.com
   type: vless
   server: 104.26.13.40
@@ -3874,3 +3836,27 @@ proxies:
   port: 59319
   cipher: 2022-blake3-chacha20-poly1305
   password: l9J76M7suWl7vAPE/4hyTmUNqoImWoumsZ2fhuRX7cI=
+- name: 未知 SS-133 | free-nodes
+  type: ss
+  server: 129.151.85.16
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: lOBiDHm0bZU0UrfNQhSXRmRJWXdFDJoXtJxYCnxul9k=
+- name: 未知 SS-134 | free-nodes
+  type: ss
+  server: 163.176.194.118
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: lpYNiPiwJ1rV1HSmT5yzHLcLsv9qVgXIXWSuNw3ohhY=
+- name: 未知 SS-135 | free-nodes
+  type: ss
+  server: 144.24.226.15
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: m03E8gi3urOxgrIv7T06vEoae3ctMWTS2XnYst6jJSI=
+- name: 未知 SS-136 | free-nodes
+  type: ss
+  server: 161.118.215.233
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: m5LHmfSALidcG/rys3lkmyWVRPeMymkZVm3LbSM4p1g=

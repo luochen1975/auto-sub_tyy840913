@@ -1,48 +1,4 @@
 proxies:
-- name: 🏳️_未知_45
-  type: vless
-  server: 172.67.185.142
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7-m20.c3d5336a-3310-48b7-8505-ec90b7a7df24.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: 🏳️_未知_46
-  type: vless
-  server: 172.67.223.223
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: 🏳️_未知_47
-  type: vless
-  server: 172.67.213.128
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 9-m20.cd6b506e-5a88-4c5d-9e11-906f39613c04.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: 🏳️_未知_48
-  type: vless
-  server: 172.67.223.223
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 9-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
 - name: 🏳️_未知_49
   type: vless
   server: 172.67.223.223
@@ -4446,3 +4402,41 @@ proxies:
   servername: yandex.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇨🇦CA加拿大丨yoyapai.com
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+  network: ws
+  ws-opts:
+    headers:
+      Host: calm-haze-d105.21-7cd.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇹🇭TH泰國丨yoyapai.com
+  type: vless
+  server: www.true.th
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  tls: true
+  servername: d1yxsk0zprgivr.cloudfront.net
+  network: ws
+  ws-opts:
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+    path: /
+- name: 🇫🇷FR法國丨yoyapai.com
+  type: trojan
+  server: www.speedtest.org
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: ❓未知丨yoyapai.com
+  type: vless
+  server: 50.62.194.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime37.workers.dev
+    path: /

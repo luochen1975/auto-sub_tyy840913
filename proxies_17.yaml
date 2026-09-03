@@ -1,63 +1,4 @@
 proxies:
-- name: 🇯🇵JP-176.97.73.215-0140 | 22.538MB
-  type: ss
-  server: 176.97.73.215
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: ma6zc4JoLRJA
-- name: 🇩🇪DE-209.46.102.22-0145 | 22.083MB
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-- name: 🇬🇧GB-45.85.88.194-2115 | 20.067MB
-  type: trojan
-  server: xn--1ugy405pdua.gayvibe.dpdns.org
-  port: 2174
-  password: tripitropa444
-- name: 🇩🇪DE-8.209.74.72-0144 | 16.198MB
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-- name: 🇬🇧GB-141.98.101.181-0143 | 16.038MB
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: TH-103.169.67.34-0174 | 14.008MB
-  type: ss
-  server: 103.169.67.34
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇬🇧GB-94.156.250.148-0281 | 12.869MB
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇺🇸US-144.31.243.2-0153 | 9.165MB
-  type: ss
-  server: 144.31.243.2
-  port: 16015
-  cipher: chacha20-ietf-poly1305
-  password: J1InuU6QRT5JOh1mQfkjU2
-- name: ZA-102.133.165.160-0150 | 9.128MB
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: ZA-102.37.156.224-0147 | 8.792MB
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
 - name: 🇫🇷FR-95.170.13.47-0148 | 7.624MB
   type: ss
   server: 95.170.13.47
@@ -697,11 +638,47 @@ proxies:
   port: 30001
   cipher: aes-256-gcm
   password: Butterfly123@qwe9527
-- name: 🇺🇸US_19|1.6MB/s
-  type: trojan
-  server: littoral.appagent.net
+- name: 🇳🇱NL_3|2.1MB/s
+  type: ss
+  server: 85.209.157.209
+  port: 29367
+  cipher: chacha20-ietf-poly1305
+  password: 3hSrBrmKmrgNGsD97RSGOS5p+XIFqEVk6Zo4AHbsRhg=
+- name: 🇰🇷KR_1|4.7MB/s
+  type: ss
+  server: 121.46.230.138
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇬🇧GB_1|2.6MB/s
+  type: ss
+  server: 35.178.132.176
   port: 443
-  password: UQfj7bdfjibTjpUHfg72aew51S7fB32g
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪DE_6|3.5MB/s
+  type: trojan
+  server: 185.204.170.130
+  port: 2097
+  password: ysbdg3l5iqbvo26u
+- name: 🇨🇦CA_1|1.9MB/s
+  type: ss
+  server: 166.88.130.218
+  port: 8011
+  cipher: aes-256-gcm
+  password: fbcec76953a2d173
+- name: 🇨🇦CA_2|3.9MB/s
+  type: ss
+  server: 35.183.81.172
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇮🇪IE_1|3.6MB/s
+  type: ss
+  server: 54.246.193.66
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
   type: vless
   server: 31.76.71.140
@@ -998,60 +975,26 @@ proxies:
   port: 101
   password: 4568465a-a435-4569-b3ab-7f606018474f
   skip-cert-verify: true
-- name: 美国+乔治亚洲亚特兰大Fastly节点
+- name: 美国+CloudFlare节点
   type: vless
-  server: 151.101.56.7
+  server: 172.67.133.136
   port: 443
-  uuid: d2299018-601d-488e-afd6-8f55b3f7439f
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
   tls: true
-  servername: ssl.fastly.com
+  servername: 0-M13.1332aFDc-0737-4Bb1-8ca8-EE4F0Cd20bc6.KdNS.FR
   network: ws
   ws-opts:
     headers:
-      Host: pan1.global.ssl.fastly.net
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.174.37
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.21.70.21
-  port: 443
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
-  sni: id1.nathaya.web.id
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.103
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 英国+V2CROSS.COM
+      Host: 0-m13.1332aFDC-0737-4BB1-8Ca8-eE4F0CD20Bc6.Kdns.fr
+    path: /ED3ZQPu7lqyeDGD58KabZ
+- name: 日本+V2CROSS.COM
   type: vless
-  server: rrr.windconnect.pro
-  port: 443
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-  tls: true
-  servername: rrr.windconnect.pro
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+- name: 巴西圣保罗+CloudFlare节点
   type: trojan
-  server: 104.18.152.175
+  server: 188.114.97.7
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1063,90 +1006,142 @@ proxies:
   sni: www.ignitelimit.com
 - name: 美国+CloudFlare节点
   type: vless
-  server: 172.67.200.222
+  server: 104.21.16.74
   port: 443
   uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
   tls: true
-  servername: 3-M13.4B49f101-6328-41c6-953D-00cEb79b58aC.KDns.FR
+  servername: 0-m13.378Bb7Ff-11cf-4daD-b89E-72538aC75e29.Kdns.fr
   network: ws
   ws-opts:
     headers:
-      Host: 3-m13.4b49f101-6328-41C6-953d-00CEB79B58ac.kDNs.Fr
+      Host: 0-m13.378Bb7ff-11CF-4dAD-B89E-72538AC75e29.KDNS.Fr
     path: /ED3ZQPu7lqyeDGD58KabZ
-- name: 英国+V2CROSS.COM
-  type: vless
-  server: 31.76.4.128
-  port: 5001
-  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
-  tls: true
-  servername: fi.aeternavpn.space
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
 - name: 美国+CloudFlare节点
+  type: vless
+  server: 172.67.155.252
+  port: 443
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
+  tls: true
+  servername: 2-m13.0ee25773-D3D3-479D-a8fF-3F51D1D20031.kDNs.fR
+  network: ws
+  ws-opts:
+    headers:
+      Host: 2-m13.0ee25773-D3d3-479D-a8ff-3F51d1D20031.kDnS.Fr
+    path: /ED3ZQPu7lqyeDGD58KabZ
+- name: 美国+加州
   type: trojan
-  server: www.speedtest.net
+  server: render.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 英国+V2CROSS.COM
+  type: trojan
+  server: 176.97.66.175
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: 美国+CloudFlare节点
   type: vless
-  server: 104.21.12.3
+  server: 104.21.31.110
   port: 443
   uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
   tls: true
-  servername: 6-m19.MexiCO-PoRt.CcWU.Cc
+  servername: 8-M19.SOUth-aFrIcA.cCWU.cC
   network: ws
   ws-opts:
     headers:
-      Host: 6-m19.mExiCo-pOrT.cCwu.cc
+      Host: 8-m19.SouTh-aFRIca.cCWU.Cc
     path: /CjBjB9sn5pCvaSwScc
-- name: 日本+V2CROSS.COM
+- name: 美国+CloudFlare节点
   type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  server: 172.67.155.189
+  port: 443
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  tls: true
+  servername: 0-M13.1B9390A5-6209-45bd-ba0e-057EBB2641c3.KdNS.FR
+  network: ws
+  ws-opts:
+    headers:
+      Host: 0-m13.1b9390a5-6209-45Bd-ba0E-057EbB2641C3.kdNS.fr
+    path: /ED3ZQPu7lqyeDGD58KabZ
+- name: 澳大利亚+V2CROSS.COM
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  ws-opts:
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
+    path: /29c8fed7ca22
 - name: 美国+CloudFlare节点
   type: trojan
-  server: 104.18.152.179
+  server: 104.18.152.246
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 加拿大+V2CROSS.COM
+- name: 美国+CloudFlare节点
   type: trojan
-  server: 130.250.137.171
+  server: 104.16.174.14
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 美国+V2CROSS.COM
+- name: 美国+乔治亚洲亚特兰大Fastly节点
   type: trojan
-  server: 199.232.78.160
+  server: 151.101.56.7
   port: 443
   password: MiTiVPN
   sni: ssl.fastly.com
 - name: 美国+CloudFlare节点
   type: trojan
-  server: 104.16.174.6
+  server: 104.17.111.1
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 英国+V2CROSS.COM
+  type: vless
+  server: 188.220.67.245
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.16.174.121
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.225
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: 美国+CloudFlare节点
   type: vless
-  server: 172.67.134.13
+  server: 172.67.185.142
   port: 443
-  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
   tls: true
-  servername: 1-M13-sTatic-cSS.Xcv.ccwU.CC
+  servername: 6-m20.c3d5336a-3310-48b7-8505-ec90b7a7df24.kdns.fr
   network: ws
   ws-opts:
     headers:
-      Host: 1-M13-sTAtiC-CsS.XCv.cCWu.cC
-    path: /ED3ZQPu7lqyeDGD58KabZ
+      Host: 6-m20.c3d5336a-3310-48b7-8505-ec90b7a7df24.kdns.fr
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
 - name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.133
+  type: vless
+  server: 104.21.22.82
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  tls: true
+  servername: 1-M19.mju.cCwU.cC
+  network: ws
+  ws-opts:
+    headers:
+      Host: 1-M19.mJU.CCwU.cC
+    path: /CjBjB9sn5pCvaSwScc
 - name: 新加坡 001
   type: trojan
   server: 18.142.250.141
@@ -4020,3 +4015,42 @@ proxies:
     headers:
       Host: vms.lifetime04.workers.dev
     path: /
+- name: 美国 567
+  type: vless
+  server: 50.62.194.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime37.workers.dev
+    path: /
+- name: 俄罗斯 020
+  type: vless
+  server: 89.23.106.39
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- name: 德国 034
+  type: vless
+  server: 185.231.115.48
+  port: 2053
+  uuid: 6263516e-13f4-4a29-8c6b-a999aafa438b
+  tls: true
+- name: 美国 568
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 63650025-84ff-4272-cfd4-61e7b9ee8834
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: c12.com
+    path: /?TELEGRAM--BYA--CHANEL---
