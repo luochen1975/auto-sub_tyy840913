@@ -1,4 +1,18 @@
 proxies:
+- name: 🇳🇴 Join+Telegram:@Farah_VPN 🇳🇴
+  type: vless
+  server: 151.242.168.155
+  port: 443
+  uuid: 43ca296b-321f-4b61-a12c-ddf8370b9761
+  tls: true
+  servername: kibi-institut.de
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪 - DE - @FreeOnlineVPN
+  type: vless
+  server: rose5.lhpuniversity.online
+  port: 54338
+  uuid: 44289654-8618-403b-a573-a79a849100ce
 - name: چنل عضو شو @v2ra_config
   type: vless
   server: d7e209882c98f0ecd7e209882c98f0ec.ssdhdd.org
@@ -4486,25 +4500,3 @@ proxies:
     headers:
       Host: apiv2.global.ssl.fastly.net
     path: /
-- name: 🇵🇱 PL
-  type: vless
-  server: 144.31.1.201
-  port: 8090
-  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
-  tls: true
-  servername: mold.speedload.online
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇵🇱 @V2RAYNG_IP 🔥
-  type: vless
-  server: 144.31.1.201
-  port: 8090
-  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
-  tls: true
-  servername: mold.speedload.online
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc

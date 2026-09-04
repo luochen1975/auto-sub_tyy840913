@@ -1,4 +1,20 @@
 proxies:
+- name: '@hex_proxy ⁶'
+  type: vless
+  server: 188.220.67.140
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+- name: '@hex_proxy ¹'
+  type: vless
+  server: 188.220.67.161
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
 - name: '@Alpha_V2rayip'
   type: vless
   server: 188.220.67.181
@@ -4374,19 +4390,3 @@ proxies:
   servername: www.theverge.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '@Alfred_Config'
-  type: vless
-  server: 2a01:4f8:1c18:4078::1
-  port: 443
-  uuid: a9a95d7c-ee7e-4ee0-9cbd-89cb566d08e9
-  tls: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: '@Daily_Configs'
-  type: vless
-  server: 5.83.129.124
-  port: 443
-  uuid: a9aceeb9-17cc-470e-a03b-b7c3ee0f9f14
-  tls: true
-  servername: 50gport3.potatosubge20.org
-  flow: xtls-rprx-vision-udp443

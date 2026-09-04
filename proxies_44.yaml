@@ -1,4 +1,18 @@
 proxies:
+- name: '@V2rayng_Fast 💟'
+  type: vless
+  server: 82.118.18.224
+  port: 443
+  uuid: bfb66910-f920-42c6-b52a-5f56e1dabcb4
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪All⁴ | @BigSmoke_Config
+  type: vless
+  server: grt1.milkabebar.ir
+  port: 38479
+  uuid: bff91870-914a-4ac5-ad60-33dc224570c5
 - name: 🇫🇷139852 | ⚡️Telegram = t.me/SOSkeyNET
   type: vless
   server: 78.17.208.22
@@ -4470,25 +4484,3 @@ proxies:
     headers:
       Host: adminv2.jikecloud.cc
     path: /vless
-- name: '@KAFING_2'
-  type: vless
-  server: creativecommons.org
-  port: 443
-  uuid: d89d6641-3b1a-4f51-a194-9c9109fd21b6
-  tls: true
-  servername: DiprOX.pages.DEV
-  network: ws
-  ws-opts:
-    headers:
-      Host: diprox.pages.dev
-    path: /assets
-- name: '@KAFING_2'
-  type: vless
-  server: cf.gafe-marz.ir
-  port: 2083
-  uuid: d8ade4cc-c672-4195-964b-473f21584100
-  tls: true
-  servername: austrish.digishopcenter.ir
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Love

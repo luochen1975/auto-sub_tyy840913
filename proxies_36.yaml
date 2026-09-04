@@ -1,6 +1,16 @@
 proxies:
 - name: '@CUSTOMVPNSERVER'
   type: vless
+  server: 193.151.133.114
+  port: 1000
+  uuid: 083399de-c587-47b3-aa4b-7ae55e40d68f
+- name: '@CUSTOMVPNSERVER'
+  type: vless
+  server: 193.151.133.252
+  port: 1000
+  uuid: 083399de-c587-47b3-aa4b-7ae55e40d68f
+- name: '@CUSTOMVPNSERVER'
+  type: vless
   server: 193.151.134.39
   port: 1000
   uuid: 083399de-c587-47b3-aa4b-7ae55e40d68f
@@ -4412,22 +4422,3 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: '@iTV2RAY'
-- name: 🇨🇦CA_578_@Surfboardv2ray
-  type: vless
-  server: 104.16.98.215
-  port: 8880
-  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
-  network: ws
-  ws-opts:
-    headers:
-      Host: steep-thunder-97fa.108-d10.workers.dev
-    path: /
-- name: '@v2rayng3'
-  type: vless
-  server: 104.16.98.215
-  port: 8880
-  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
-  network: ws
-  ws-opts:
-    headers:
-      Host: steep-thunder-97fa.108-d10.workers.dev

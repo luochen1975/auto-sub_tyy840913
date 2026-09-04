@@ -1,4 +1,300 @@
 proxies:
+- name: 🇺🇸US美國丨yoyapai.com
+  type: vless
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  tls: true
+  servername: ru2.skydrgn-online.online
+  client-fingerprint: chrome
+- name: 🇩🇪德國丨yoyapai.com
+  type: vless
+  server: 170.168.97.3
+  port: 443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  tls: true
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+- name: 🇮🇷_IR_伊朗
+  type: vmess
+  server: 94.182.88.61
+  port: 2078
+  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_US美國丨yoyapai.com
+  type: vless
+  server: 3.170.185.91
+  port: 80
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  network: ws
+  ws-opts:
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
+    path: /
+- name: JP 🇯🇵 日本丨
+  type: vmess
+  server: cindy50.ceoiii.com
+  port: 36801
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
+- name: CA加拿大丨yoyapai.com
+  type: vless
+  server: ad-013.pixel9xdmq.info
+  port: 8443
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  tls: true
+  servername: ad-013.pixel9xdmq.info
+  network: ws
+  ws-opts:
+    headers:
+      Host: ad-013.pixel9xdmq.info
+    path: /
+- name: 🇯🇵JP日本丨yoyapai.com
+  type: vless
+  server: 2.27.27.64
+  port: 443
+  uuid: 94d2d711-76e5-4d82-a3c9-4f06fd5558c8
+  tls: true
+  servername: jp.musicwave.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇳🇱 荷蘭丨yoyapai.com
+  type: vless
+  server: 94.102.51.218
+  port: 443
+  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
+  tls: true
+  servername: fair-lunar.cdn.cachefleet.com
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: 美國丨yoyapai.com
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  tls: true
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪德國丨yoyapai.com
+  type: vless
+  server: 88.218.44.4
+  port: 443
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+- name: 🇨🇦CA加拿大丨yoyapai.com
+  type: vless
+  server: 104.26.2.173
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+    path: /sg-melbi
+- name: MY 🇲🇾 馬來西亞
+  type: vmess
+  server: cindy52.ceoiii.com
+  port: 36803
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
+- name: 🇨🇦加拿大丨yoyapai.com
+  type: vless
+  server: 104.17.121.110
+  port: 8880
+  uuid: f3d6c244-772a-428f-b8fe-e2d632cd76e4
+- name: 🇨🇦加拿大丨yoyapai.com
+  type: vless
+  server: 104.21.88.174
+  port: 2052
+  uuid: 81e09a82-fe8d-4393-aefb-747322b20795
+- name: 🇺🇸 美國丨yoyapai.com
+  type: vless
+  server: 88.218.44.4
+  port: 8443
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇺🇸美國丨yoyapai.com
+  type: vless
+  server: www.true.th
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  tls: true
+  servername: d1yxsk0zprgivr.cloudfront.net
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸美國丨yoyapai.com
+  type: vless
+  server: 162.159.156.214
+  port: 8880
+  uuid: 12cebf33-2f96-48a3-af37-c2231e5cef75
+  network: ws
+  ws-opts:
+    headers:
+      Host: throbbing-moon-a07c.90-ec4.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: 🇺🇸美國丨yoyapai.com
+  type: vless
+  server: 94.124.119.187
+  port: 16565
+  uuid: 8a3756ec-179b-48fe-b861-27c0287710ae
+  tls: true
+  servername: yulife.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇭🇰香港丨yoyapai.com
+  type: vless
+  server: 47.82.120.47
+  port: 43630
+  uuid: 01a95af3-a2f6-453e-9f88-b2fc011627cc
+- name: 🇲🇾馬來西亞丨
+  type: vmess
+  server: cindy52.ceoiii.com
+  port: 36803
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
+- name: 🇷🇺俄羅斯丨yoyapai.com
+  type: vless
+  server: 157.22.193.73
+  port: 443
+  uuid: 1bced29a-3051-42b8-b393-005135b97616
+  tls: true
+  servername: larkix.pulsio.cfd
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇳🇱_荷兰
+  type: vmess
+  server: 185.246.152.159
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: apjhdggyx.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: apjhdggyx.com
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+- name: 🇩🇪德国丨yoyapai.com
+  type: vless
+  server: 217.60.193.4
+  port: 443
+  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
+  tls: true
+  servername: ddc-akn.astralweb.tech
+- name: 🇩🇪德国丨yoyapai.com
+  type: vless
+  server: 104.18.12.149
+  port: 443
+  uuid: afcc2147-1350-4155-9ec0-95c4ba4be847
+  tls: true
+  servername: fran.sarzamiiinahang.ir
+- name: 🇯🇵日本丨yoyapai.com
+  type: vless
+  server: 45.192.200.66
+  port: 8443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: rubifen.adaspoloandco.com
+    path: /GOrbEh
+- name: 🇷🇺俄罗斯丨yoyapai.com
+  type: vless
+  server: 104.18.32.47
+  port: 443
+  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
+  tls: true
+  servername: rus.aba-hum.store
+- name: 🇷🇺俄罗斯丨yoyapai.com
+  type: vless
+  server: 176.98.178.17
+  port: 4100
+  uuid: 87f3bc47-ee10-4418-9260-7a4e43f28e00
+  network: ws
+  ws-opts:
+    headers:
+      Host: live.ok.ru
+    path: /v1
+- name: 🇷🇺俄罗斯丨yoyapai.com
+  type: vless
+  server: 217.177.74.229
+  port: 443
+  uuid: 23e18cb4-9db3-4eb1-93d3-26c62095159d
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇨🇦CA加拿大丨yoyapai.com
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+  network: ws
+  ws-opts:
+    headers:
+      Host: calm-haze-d105.21-7cd.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: 🇹🇭TH泰國丨yoyapai.com
+  type: vless
+  server: www.true.th
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  tls: true
+  servername: d1yxsk0zprgivr.cloudfront.net
+  network: ws
+  ws-opts:
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+    path: /
+- name: 🇫🇷FR法國丨yoyapai.com
+  type: trojan
+  server: www.speedtest.org
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: ❓未知丨yoyapai.com
+  type: vless
+  server: 50.62.194.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime37.workers.dev
+    path: /
 - name: ❓未知丨yoyapai.com
   type: vless
   server: 104.26.13.40
@@ -3668,195 +3964,3 @@ proxies:
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
   password: YsZAgtzuuQHa9Ekc7um7AhfAhEvtiIKJw4oxCLsN3eY=
-- name: 未知 SS-105 | free-nodes
-  type: ss
-  server: 152.70.53.76
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: YyppYr+19SFyy4WAU2OmSlq+NwKjR+L0oV2CCJ6rMAM=
-- name: 未知 SS-106 | free-nodes
-  type: ss
-  server: 144.21.41.115
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ZeqOjswvStX6F1ERR5Ig2ciBWvu2URg5QyOR7dQmQys=
-- name: 未知 SS-107 | free-nodes
-  type: ss
-  server: 129.151.75.194
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: a/UK8LHF/90SAehQnn56RP5pUgdXKFLeP4sXt/D7VOw=
-- name: 未知 SS-108 | free-nodes
-  type: ss
-  server: 144.24.228.8
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: aJDDrOnNoK7sY+Nppl9cwE3IsZKyeANsnXUcJETinYU=
-- name: 未知 SS-109 | free-nodes
-  type: ss
-  server: 136.248.80.6
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo=
-- name: 未知 SS-110 | free-nodes
-  type: ss
-  server: 144.22.210.207
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bJqLdTAJymgdGwNASsjxuR4N7THATrNjW/6mZv77qRw=
-- name: 未知 SS-111 | free-nodes
-  type: ss
-  server: 158.101.222.193
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: c1X6HxfuG20TnAmSC8ZYQYDJqmxgjOP1vwvrkQcPMdQ=
-- name: 未知 SS-112 | free-nodes
-  type: ss
-  server: 129.151.74.128
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: dIQ//bx/BDhH5+YWp3RN0CvBfWy9WJPELBxOF3ta93k=
-- name: 未知 SS-113 | free-nodes
-  type: ss
-  server: 129.146.167.71
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: e/LtVsVh1d/nLym2Se5Q1iueknHxIiUB4eNujOLXNe8=
-- name: 未知 SS-114 | free-nodes
-  type: ss
-  server: 130.61.145.205
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: e34Inp7/4vQjik8hcfs5/QHNx5wCFeAsZmFTu4iU0pY=
-- name: 未知 SS-115 | free-nodes
-  type: ss
-  server: 129.159.55.129
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: e7n6+Uknur6uXiP4zuJYN+n6KACAX9+s17J3MLnzNB4=
-- name: 未知 SS-116 | free-nodes
-  type: ss
-  server: 141.144.237.150
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: exnBBtDxsVWVIjGGxAWpNalNuPYaQcOCpjkOO9b2wBg=
-- name: 未知 SS-117 | free-nodes
-  type: ss
-  server: 129.146.113.93
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: fLNIIbHAv/g58k4JwMx87hCjA8+Uod3DuU7fo6yi1Bk=
-- name: 未知 SS-118 | free-nodes
-  type: ss
-  server: 129.151.66.31
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: fr5M3Mv/8HIcozWHJCfI8SeuOYixEodurkiYtFmanP8=
-- name: 未知 SS-119 | free-nodes
-  type: ss
-  server: 143.47.186.208
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kPWjZHoxMU/XHy8n7QCOdvJx8GQeDr6m5/SDM6wPX2c=
-- name: 未知 SS-120 | free-nodes
-  type: ss
-  server: 141.144.250.61
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kdTMVAm8v43BRuJZr+GI+udAziQPGR2QdYITH9w2WNg=
-- name: 未知 SS-121 | free-nodes
-  type: ss
-  server: 134.65.61.103
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kl3y4L+253t5duqM0xIkuYbiQS6Q/UL4fjXfuoqiG0I=
-- name: 未知 SS-122 | free-nodes
-  type: ss
-  server: 129.151.82.201
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: hIQF8+K9VdZUUvML50mUwcPk2TtPvuf2FCcxXICzvt4=
-- name: 未知 SS-123 | free-nodes
-  type: ss
-  server: 141.148.242.123
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: i3rd8p/HM52Cidn3DqOXRvo4BWjKri9B+UkuTyhK0/k=
-- name: 未知 SS-124 | free-nodes
-  type: ss
-  server: 130.61.148.92
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: iMCyLh/KjHKyfw2Y9uT9AK5zu6o04oI6AtshYHbgpVY=
-- name: 未知 SS-125 | free-nodes
-  type: ss
-  server: 161.153.119.148
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ifrTlZy7Avf81frUk4hicQ8bxe7Vm9kV+JngePHDDTk=
-- name: 未知 SS-126 | free-nodes
-  type: ss
-  server: 130.61.40.100
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jeFxHeDLdS3v1c6txqm38GivrrSQFTuxRBft80ewg6Q=
-- name: 未知 SS-127 | free-nodes
-  type: ss
-  server: 129.153.74.252
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jpJxo3GBO0Z7kQjyDLt0HTiPuI+R5S6UQxnaxaHJUGg=
-- name: 未知 SS-128 | free-nodes
-  type: ss
-  server: 141.148.241.211
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: k//4bvSvtf5XFTJVWWSaOHAr/631ZWJzHo4vSOObpQU=
-- name: 未知 SS-129 | free-nodes
-  type: ss
-  server: 134.65.60.219
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oNh1eL/Q4w8hzh0wY6/JPnFjFMidf6FZLhICWd1Gmok=
-- name: 未知 SS-130 | free-nodes
-  type: ss
-  server: 89.168.120.74
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oO67I0PJh4tRO53xg07xfQmBMxBZb2JSIbKYkcz5V+I=
-- name: 未知 SS-131 | free-nodes
-  type: ss
-  server: 129.146.167.224
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oa7A0+9L7mp4aPLp9pFZ8FayB0x3G70Kw64suapoH8k=
-- name: 未知 SS-132 | free-nodes
-  type: ss
-  server: 136.248.118.107
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: l9J76M7suWl7vAPE/4hyTmUNqoImWoumsZ2fhuRX7cI=
-- name: 未知 SS-133 | free-nodes
-  type: ss
-  server: 129.151.85.16
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: lOBiDHm0bZU0UrfNQhSXRmRJWXdFDJoXtJxYCnxul9k=
-- name: 未知 SS-134 | free-nodes
-  type: ss
-  server: 163.176.194.118
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: lpYNiPiwJ1rV1HSmT5yzHLcLsv9qVgXIXWSuNw3ohhY=
-- name: 未知 SS-135 | free-nodes
-  type: ss
-  server: 144.24.226.15
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: m03E8gi3urOxgrIv7T06vEoae3ctMWTS2XnYst6jJSI=
-- name: 未知 SS-136 | free-nodes
-  type: ss
-  server: 161.118.215.233
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: m5LHmfSALidcG/rys3lkmyWVRPeMymkZVm3LbSM4p1g=

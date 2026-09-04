@@ -1,4 +1,20 @@
 proxies:
+- name: '@Alfred_Config'
+  type: vless
+  server: 2a01:4f8:1c18:4078::1
+  port: 443
+  uuid: a9a95d7c-ee7e-4ee0-9cbd-89cb566d08e9
+  tls: true
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: '@Daily_Configs'
+  type: vless
+  server: 5.83.129.124
+  port: 443
+  uuid: a9aceeb9-17cc-470e-a03b-b7c3ee0f9f14
+  tls: true
+  servername: 50gport3.potatosubge20.org
+  flow: xtls-rprx-vision-udp443
 - name: '@tootffarangi🍓-4'
   type: vless
   server: 5.83.129.124
@@ -4291,17 +4307,3 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '@V2rayng_Fast 💟'
-  type: vless
-  server: 82.118.18.224
-  port: 443
-  uuid: bfb66910-f920-42c6-b52a-5f56e1dabcb4
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪All⁴ | @BigSmoke_Config
-  type: vless
-  server: grt1.milkabebar.ir
-  port: 38479
-  uuid: bff91870-914a-4ac5-ad60-33dc224570c5

@@ -1,4 +1,26 @@
 proxies:
+- name: '@Daily_Configs'
+  type: vless
+  server: bg1.univesalsrv.com
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  tls: true
+  servername: bg1.univesalsrv.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: gw.v1.StreamService
+- name: '@V2RAYNG_IP 🌟'
+  type: vless
+  server: bg1.univesalsrv.com
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  tls: true
+  servername: bg1.univesalsrv.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: gw.v1.StreamService
 - name: 👉@V2RAYNG_IP 🚀
   type: vless
   server: bg1.univesalsrv.com
@@ -4690,17 +4712,3 @@ proxies:
   servername: kibi-institut.de
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇳🇴 Join+Telegram:@Farah_VPN 🇳🇴
-  type: vless
-  server: 151.242.168.155
-  port: 443
-  uuid: 43ca296b-321f-4b61-a12c-ddf8370b9761
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪 - DE - @FreeOnlineVPN
-  type: vless
-  server: rose5.lhpuniversity.online
-  port: 54338
-  uuid: 44289654-8618-403b-a573-a79a849100ce

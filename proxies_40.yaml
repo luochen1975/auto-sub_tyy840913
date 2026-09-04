@@ -1,4 +1,26 @@
 proxies:
+- name: 🇵🇱 PL
+  type: vless
+  server: 144.31.1.201
+  port: 8090
+  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
+  tls: true
+  servername: mold.speedload.online
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇵🇱 @V2RAYNG_IP 🔥
+  type: vless
+  server: 144.31.1.201
+  port: 8090
+  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
+  tls: true
+  servername: mold.speedload.online
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 - name: 🔱@V2RAYNG_IP 🇩🇪
   type: vless
   server: 144.31.1.201
@@ -4478,20 +4500,3 @@ proxies:
   server: 5.75.201.211
   port: 56539
   uuid: 77984ae0-58cb-4bf3-9fe4-346043bf71b2
-- name: 🇹🇷TR-🚀@VPNine1
-  type: vless
-  server: www.dd.mobilesari.ir
-  port: 443
-  uuid: 784d2430-124f-4390-b83c-e20c166d9b8a
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Daily_Configs'
-  type: vless
-  server: 87.58.153.39
-  port: 8443
-  uuid: 785923c4-0b40-43b4-8506-523e31578d21
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome

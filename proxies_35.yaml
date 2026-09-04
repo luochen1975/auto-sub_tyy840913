@@ -1,14 +1,4 @@
 proxies:
-- name: 🇭🇰HK_39_@Surfboardv2ray
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
 - name: 🇮🇳 IN
   type: vmess
   server: 152.67.8.205
@@ -2646,6 +2636,18 @@ proxies:
   network: ws
   ws-opts:
     path: /hls/cctv5phd.m3u8
+- name: Server 132
+  type: vless
+  server: 93.123.85.32
+  port: 41809
+  uuid: 87e26a6f-e243-4c8d-9bf6-362b0adee4f2
+- name: Latvia
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts: {}
 - name: '@FarazV2ray'
   type: vless
   server: 180.178.60.254
@@ -2691,6 +2693,14 @@ proxies:
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 🪢94@oneclickvpnkeys
+  type: vless
+  server: meow-warsaw.nethcloud.top
+  port: 8443
+  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
+  tls: true
+  servername: wikihow.com
+  client-fingerprint: chrome
+- name: 🪢93@oneclickvpnkeys
   type: vless
   server: meow-warsaw.nethcloud.top
   port: 8443
@@ -4688,15 +4698,5 @@ proxies:
 - name: '@CUSTOMVPNSERVER'
   type: vless
   server: 193.151.130.42
-  port: 1000
-  uuid: 083399de-c587-47b3-aa4b-7ae55e40d68f
-- name: '@CUSTOMVPNSERVER'
-  type: vless
-  server: 193.151.133.114
-  port: 1000
-  uuid: 083399de-c587-47b3-aa4b-7ae55e40d68f
-- name: '@CUSTOMVPNSERVER'
-  type: vless
-  server: 193.151.133.252
   port: 1000
   uuid: 083399de-c587-47b3-aa4b-7ae55e40d68f

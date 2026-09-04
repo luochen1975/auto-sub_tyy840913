@@ -1,4 +1,23 @@
 proxies:
+- name: 🇨🇦CA_578_@Surfboardv2ray
+  type: vless
+  server: 104.16.98.215
+  port: 8880
+  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
+  network: ws
+  ws-opts:
+    headers:
+      Host: steep-thunder-97fa.108-d10.workers.dev
+    path: /
+- name: '@v2rayng3'
+  type: vless
+  server: 104.16.98.215
+  port: 8880
+  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
+  network: ws
+  ws-opts:
+    headers:
+      Host: steep-thunder-97fa.108-d10.workers.dev
 - name: '[ 🇳🇱 ] | @Cfox_SerVer'
   type: vless
   server: 150.251.141.91
@@ -5040,25 +5059,3 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: hub.v1.ApiService
-- name: '@Daily_Configs'
-  type: vless
-  server: bg1.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: bg1.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: gw.v1.StreamService
-- name: '@V2RAYNG_IP 🌟'
-  type: vless
-  server: bg1.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  tls: true
-  servername: bg1.univesalsrv.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: gw.v1.StreamService
