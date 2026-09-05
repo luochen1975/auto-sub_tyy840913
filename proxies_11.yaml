@@ -1,4 +1,15 @@
 proxies:
+- name: 🇩🇪_德国丨yoyapai.com
+  type: vless
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: edge.yzkvm.top
+    path: /
 - name: 🇵🇱波兰丨yoyapai.com
   type: vless
   server: 213.226.112.19
@@ -3304,12 +3315,6 @@ proxies:
 - name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 123
   type: trojan
   server: 104.16.174.44
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 124
-  type: trojan
-  server: 104.18.152.233
   port: 443
   password: humanity
   sni: www.ignitelimit.com
