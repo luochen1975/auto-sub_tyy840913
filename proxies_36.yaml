@@ -1,4437 +1,2928 @@
 proxies:
-- name: Proxy_mtm-31
-  type: vless
-  server: web-c5266a-610916-production.up.railway.app
-  port: 443
-  uuid: 0baadb70-df8b-59fa-b0ee-0a756bcffe82
-  tls: true
-  servername: web-c5266a-610916-production.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-c5266a-610916-production.up.railway.app
-    path: /ws/Vip
-- name: '@Daily_Configs'
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 0bbd1c9c-bd0a-4c47-8ad1-4ca7da1a1114
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: netgerb.global.ssl.fastly.net.
-    path: /
-- name: 法国
-  type: vless
-  server: 141.227.160.23
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: se.sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 瑞典
-  type: vless
-  server: 141.227.160.23
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: se.sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: تو کانال نتورلد نباشید قطع میشن@networld_vpn
-  type: vless
-  server: 141.227.174.79
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: gb.sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🩳78@oneclickvpnkeys
-  type: vless
-  server: 141.227.174.79
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: gb.sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 141.227.174.79
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: gb.sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇨🇭 direct
-  type: vless
-  server: 141.227.174.79
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: gb.sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 俄罗斯
-  type: vless
-  server: 193.233.255.45
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[ 🇷🇺 ] | @Cfox_SerVer'
-  type: vless
-  server: 193.233.255.45
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🩳51@oneclickvpnkeys
-  type: vless
-  server: 193.233.255.45
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Azaranv2ray'
-  type: vless
-  server: 193.233.255.45
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇹⇝ @GpConnectSho کانکت شو! 💠
-  type: vless
-  server: 193.233.255.45
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@networld_vpn'
-  type: vless
-  server: 57.130.20.7
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: fr.sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🩳71@oneclickvpnkeys
-  type: vless
-  server: 57.130.20.7
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: fr.sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇸🇪 @V2RAYNG_IP
-  type: vless
-  server: 57.130.20.7
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  tls: true
-  servername: fr.sellflow.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@confing_v2rayy کانفینگ بیشتر در چنل 👈'
-  type: vless
-  server: 104.16.101.215
-  port: 8880
-  uuid: 0bd6aa8d-3bdb-4fa3-893e-75a844e2e409
-  network: ws
-  ws-opts:
-    headers:
-      Host: wispy-cake-ec69.193-bc6.workers.dev
-    path: /
-- name: '@V2ray_confiig'
-  type: vless
-  server: tr1p.soundfiy.ir
-  port: 61169
-  uuid: 0c0ec86e-e118-4879-a988-60440253e223
-- name: '@EVAY_VPN 2'
-  type: vless
-  server: 104.17.108.1
-  port: 443
-  uuid: 0c217232-8d94-4aab-a961-4bbdc963d004
-  tls: true
-  servername: aa.farxmode.ir
-- name: 🇫🇮 FIN _ CDN Cloud ایرانسل (5191973) [VLESS - ws]
-  type: vless
-  server: go.lumen.com
-  port: 2052
-  uuid: 0c5e5c45-b5b9-4b62-b852-d39404c77c26
-  network: ws
-  ws-opts:
-    headers:
-      Host: fin.v2shop.xyz
-    path: /
-- name: '@v2ray313 کانالمون ⚡'
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: '@vmess_ir'
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: '@vmesskhodam'
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: Bia-mtmvpn
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: Tel-@ProxyMtAlpha🌰 3
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: '@MARAMBASHI 🇩🇪'
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: '@MARAMBASHI 🇳🇱'
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: '@V2rayng_Fast 🇩🇪'
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: '@V2ray_confiig'
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-13'
-  type: vless
-  server: 144.31.213.199
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: vip.check-ghost.space
-  flow: xtls-rprx-vision
-- name: 🇩🇪All¹ | @BigSmoke_Config
-  type: vless
-  server: free.filecloudos.space
-  port: 443
-  uuid: 0c78b433-e644-4249-9e56-86ab4c5106e2
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🔐@LOCKEY_VPN
-  type: vless
-  server: www.speedtest.net
-  port: 2096
-  uuid: 0c90175d-41df-4a62-c663-67b8652371c4
-  tls: true
-  servername: Locke.check-speedtest-internet-dns-ping-ip.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: Locke.check-speedtest-internet-dns-ping-ip.ir
-    path: /@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN
-- name: 🙃Tel:@pPal03🙃Join🙃
-  type: vless
-  server: 104.16.132.136
-  port: 80
-  uuid: 0cca1132-94a6-476c-ab13-6b28e0727751
-  network: ws
-  ws-opts:
-    headers:
-      Host: blue-pine-59a0-ppal03.haleyaw148.workers.dev
-    path: /?ed=2560
-- name: 🙃Tel:@pPal03🙃Join🙃
-  type: vless
-  server: 104.24.192.51
-  port: 80
-  uuid: 0cca1132-94a6-476c-ab13-6b28e0727751
-  network: ws
-  ws-opts:
-    headers:
-      Host: blue-pine-59a0-ppal03.haleyaw148.workers.dev
-    path: /?ed=2560
-- name: '@Begoo_VPN ²⁹²'
-  type: vless
-  server: 89.127.204.17
-  port: 8443
-  uuid: 0cfc585b-26f2-4597-9b70-e1bb1095a2f2
-  tls: true
-  servername: yandex.aero
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2ray_confiig'
-  type: vless
-  server: 151.101.1.242
-  port: 443
-  uuid: 0d03e44f-f60f-41b6-8ad7-13445af164fd
-  tls: true
-  servername: minimize-evenness.cdn-content.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: minimize-evenness.cdn-content.com
-    path: /ws
-- name: '@V2ray_confiig'
-  type: vless
-  server: 151.101.65.242
-  port: 443
-  uuid: 0d03e44f-f60f-41b6-8ad7-13445af164fd
-  tls: true
-  servername: adheres-scruple.quick-cdn.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-    path: /ws
-- name: '@v2ray313 کانالمون ☹️'
-  type: vless
-  server: 151.101.65.242
-  port: 443
-  uuid: 0d03e44f-f60f-41b6-8ad7-13445af164fd
-  tls: true
-  servername: adheres-scruple.quick-cdn.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-    path: /ws
-- name: '@V2ray_confiig'
-  type: vless
-  server: 199.232.173.242
-  port: 443
-  uuid: 0d03e44f-f60f-41b6-8ad7-13445af164fd
-  tls: true
-  servername: piracy-android.video-streams.org
-  network: ws
-  ws-opts:
-    headers:
-      Host: piracy-android.video-streams.org
-    path: /ws
-- name: '@KAFING_2'
-  type: vless
-  server: 172.67.175.86
-  port: 443
-  uuid: 0d0b3fe7-cd79-4ff4-a760-aa6e5357ab41
-  tls: true
-  servername: ndkwiut2718.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: hs-495e987f.ndkwiut2718.ir
-    path: /pa
-- name: '@VASLBOX❤️‍🔥👈🏻خرید سرور'
-  type: vless
-  server: am1.milkabebar.ir
-  port: 38479
-  uuid: 0d3713e4-74f7-4b05-8d6a-1515913725de
-- name: 🇩🇪All¹³ | @BigSmoke_Config
-  type: vless
-  server: neth1.mechanicir.ir
-  port: 38479
-  uuid: 0d3713e4-74f7-4b05-8d6a-1515913725de
-- name: گیگی 5500 @ATOVPN ⚡️
-  type: vless
-  server: 185.128.139.11
-  port: 18244
-  uuid: 0d543aed-4e30-4553-b5ac-211419bb0961
-- name: '@KAFING_2'
-  type: vless
-  server: 37.152.175.93
-  port: 8443
-  uuid: 0d9e572e-ad55-4fb8-adcf-858cbafb9c40
-  tls: true
-  servername: parsabr.com
-  client-fingerprint: chrome
-- name: 'channel : @freedomofinfor'
-  type: vless
-  server: 104.18.32.47
-  port: 443
-  uuid: 0dbad6ba-be87-46e1-ab90-30c53ef1878d
-  tls: true
-  servername: drive.speegy.club
-- name: 'Channel id: @ConfigV2RayNG 🇫🇮'
-  type: vless
-  server: 13.143.132.176
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: fi-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇮162581 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 13.143.132.176
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: fi-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇮FI-🚀@VPNine1
-  type: vless
-  server: 13.143.132.176
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: fi-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇳🇱'
-  type: vless
-  server: 130.17.23.252
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: nl-4.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇩🇪'
-  type: vless
-  server: 144.31.167.221
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-4.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[🇱🇹]t.me/ConfigV2RayNG'
-  type: vless
-  server: 144.31.243.249
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: lt-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 144.31.243.249
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: lt-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇱🇹'
-  type: vless
-  server: 144.31.243.249
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: lt-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇫🇮'
-  type: vless
-  server: 144.31.53.52
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: fi-8.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇮162597 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 144.31.53.52
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: fi-8.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇦🇹'
-  type: vless
-  server: 150.241.72.148
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: at-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[🇸🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: 150.241.72.251
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: at-2.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 150.241.72.251
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: at-2.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇦🇹'
-  type: vless
-  server: 150.241.72.251
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: at-2.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@v2raybaaz'
-  type: vless
-  server: 193.222.99.142
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇩🇪'
-  type: vless
-  server: 193.222.99.142
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 瑞士
-  type: vless
-  server: 194.154.29.149
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: ch-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ☺️27@oneclickvpnkeys
-  type: vless
-  server: 194.154.29.149
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: ch-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇨🇭'
-  type: vless
-  server: 194.154.29.149
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: ch-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ☺️15@oneclickvpnkeys
-  type: vless
-  server: 2.26.2.158
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: nl-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ☺️24@oneclickvpnkeys
-  type: vless
-  server: 2.26.81.93
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-5.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ☺️20@oneclickvpnkeys
-  type: vless
-  server: 2.26.84.22
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-6.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ☺️14@oneclickvpnkeys
-  type: vless
-  server: 2.27.21.62
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: nl-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇩🇪'
-  type: vless
-  server: 31.76.10.234
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-7.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇩🇪'
-  type: vless
-  server: 31.76.11.4
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-8.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 31.76.83.137
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: lt-2.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ☺️9@oneclickvpnkeys
-  type: vless
-  server: 31.77.100.16
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: nl-2.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇰🇿'
-  type: vless
-  server: 45.144.175.185
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: kz-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇷🇺'
-  type: vless
-  server: 46.149.68.186
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: tw-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇵🇭'
-  type: vless
-  server: 61.245.11.164
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: ph-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇩🇪'
-  type: vless
-  server: 64.188.65.238
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-2.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[🇩🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: 64.188.91.247
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 64.188.91.247
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@v2raybaaz'
-  type: vless
-  server: 64.188.91.247
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇩🇪'
-  type: vless
-  server: 64.188.91.247
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 79.137.184.61
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: fi-4.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇪🇪'
-  type: vless
-  server: 93.123.39.205
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: ee-4.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇩🇪'
-  type: vless
-  server: 94.156.170.2
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: fi-5.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇸🇪'
-  type: vless
-  server: at-1.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: at-1.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[🇸🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: at-2.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: at-2.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: at-2.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: at-2.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇸🇪'
-  type: vless
-  server: at-2.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: at-2.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: de-3.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[🇩🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: de-3.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇩🇪'
-  type: vless
-  server: de-3.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: de-3.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 芬兰
-  type: vless
-  server: fi-4.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: fi-4.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: fi-4.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: fi-4.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇳🇱'
-  type: vless
-  server: nl-4.kihsuyhf8jkiugsxb.cfd
-  port: 443
-  uuid: 0dc1fc26-b8e9-4296-9870-0996de3c2333
-  tls: true
-  servername: nl-4.kihsuyhf8jkiugsxb.cfd
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Shh_Proxy-New²'
-  type: vless
-  server: ger3.orangesms.ir
-  port: 1824
-  uuid: 0dc5792d-0e46-497c-8bb3-03f32da0b311
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@V2ray_Alpha🌋 3'
-  type: vless
-  server: myleto.orangesms.ir
-  port: 61169
-  uuid: 0dc5792d-0e46-497c-8bb3-03f32da0b311
-- name: '@V2ray_Alpha🎗️ 2'
-  type: vless
-  server: myleto.orangesms.ir
-  port: 61169
-  uuid: 0dc5792d-0e46-497c-8bb3-03f32da0b311
-- name: برای اتصال دائمی جوین شو🥎 TelegramID ⌲Express_freevpn 🪩
-  type: vless
-  server: 194.48.217.165
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: avc.cloudvk.cc
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@meliproxyy'
-  type: vless
-  server: 194.48.217.165
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: avc.cloudvk.cc
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[ 🇩🇪 ] | @Cfox_SerVer'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@Daily_Configs'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@meliproxyy'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '[🇩🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@tootffarangi🍓-4'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: • 🇩🇪 | 𝗚𝗲𝗿𝗺𝗮𝗻𝘆 - @HesarWeb
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@MARAMBASHI 🇩🇪'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@V2rayng_Fast 🇩🇪'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: Tel-@ProxyMtAlpha😻 5
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: filembad-75
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@B2Hub'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@VConfing'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@bored_vpn'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@mehrosaboran'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@v2ray313 کانالمون ❤️'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@vmess_ir'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: FarazV2ray@
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: Telegram @mtmvpn 8
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@ICV2RAY'
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: Telegram @mtmvpn 11
-  type: vless
-  server: 91.92.33.95
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@meliproxyy'
-  type: vless
-  server: 93.152.223.193
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: ded53.cloudvk.cc
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@icv2ray'
-  type: vless
-  server: 94.26.83.7
-  port: 443
-  uuid: 0dd9cfaa-cebd-4444-8778-70cb22737944
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '@v2ray313 کانالمون 🫪'
-  type: vless
-  server: 193.34.213.72
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel : @Daily_Configs'
-  type: vless
-  server: 193.34.213.72
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@irdusti(2)🇵🇱¹'
-  type: vless
-  server: 193.34.213.72
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@MARAMBASHI 🩵'
-  type: vless
-  server: 193.34.213.72
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2rayng_Fast 🩵'
-  type: vless
-  server: 193.34.213.72
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-4'
-  type: vless
-  server: 193.34.213.72
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@irdusti(2)🇫🇮'
-  type: vless
-  server: 2.26.27.92
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@irdusti(2)🇳🇱¹'
-  type: vless
-  server: 2.26.77.112
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: • 🇷🇺 | 𝗥𝘂𝘀𝘀𝗶𝗮 - @HesarWeb
-  type: vless
-  server: 201.24.114.60
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@configprxy'
-  type: vless
-  server: 201.24.114.60
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: Tel-@ProxyMtAlpha💄 5
-  type: vless
-  server: 201.24.114.60
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-1'
-  type: vless
-  server: 201.24.114.60
-  port: 443
-  uuid: 0dea82cd-a030-4c11-bccd-f3c0be845297
-  tls: true
-  servername: app.prostocalc.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪All⁴ | @BigSmoke_Config
-  type: vless
-  server: t.yemmira.ir
-  port: 443
-  uuid: 0e075587-861e-46c4-a81a-91756693b72e
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: Tel-@ProxyMtAlpha🫜 1
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: BlackGod.global.ssl.fastly.net
-    path: /
-- name: کانال ما
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: BlackGod.global.ssl.fastly.net
-    path: /
-- name: 🇺🇸162654 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: BlackGod.global.ssl.fastly.net
-    path: /
-- name: '@V2ray_Alpha🧳 4'
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
-    path: /
-- name: '@filembad'
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
-    path: /
-- name: '@meliproxyy'
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
-    path: /
-- name: '[38109] - Telegram : @V2All'
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
-    path: /
-- name: کانال ما
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
-    path: /
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
-    path: /
-- name: Tel-@ProxyMtAlpha🫜 2
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  network: ws
-  ws-opts:
-    headers:
-      Host: FastSvn.global.ssl.fastly.net
-    path: /
-- name: 🇺🇸162655 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  network: ws
-  ws-opts:
-    headers:
-      Host: FastSvn.global.ssl.fastly.net
-    path: /
-- name: Tel-@ProxyMtAlpha🫜 6
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  network: ws
-  ws-opts:
-    headers:
-      Host: yaSharClass.global.ssl.fastly.net
-    path: /
-- name: '@V2ray_Alpha🧳 2'
-  type: vless
-  server: de11.bexait.ir
-  port: 2434
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: '@meliproxyy'
-  type: vless
-  server: de11.bexait.ir
-  port: 2434
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: '[38108] - Telegram : @V2All'
-  type: vless
-  server: de11.bexait.ir
-  port: 2434
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: کانال ما
-  type: vless
-  server: de11.bexait.ir
-  port: 2434
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: 🇩🇪162656 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: de11.bexait.ir
-  port: 2434
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: 🇩🇪DE-🚀@VPNine1
-  type: vless
-  server: de11.bexait.ir
-  port: 2434
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: de11.bexait.ir
-  port: 2434
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: 🇩🇪DE-🚀@VPNine1
-  type: vless
-  server: fn3.bexait.ir
-  port: 2434
-  uuid: 0e36cfc2-66e2-43d9-91b4-a62b26bcfe4c
-  tls: true
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: 🇺🇸hollowocn-T3@hollowcon
-  type: vless
-  server: digin.riziro.ir
-  port: 8443
-  uuid: 0e6001f1-fe90-4e8c-9f4f-57071268af6e
-  tls: true
-  servername: au2-images.shop.samsung.com
-  client-fingerprint: chrome
-- name: 🇳🇱hollowcon-T3@hollowcon
-  type: vless
-  server: hollowcon.riziro.ir
-  port: 8443
-  uuid: 0e6001f1-fe90-4e8c-9f4f-57071268af6e
-  tls: true
-  servername: au2-images.shop.samsung.com
-  client-fingerprint: chrome
-- name: '@v2ray313 کانالمون 😪'
-  type: vless
-  server: spt2.milkabebar.ir
-  port: 10694
-  uuid: 0ee1200e-049d-4eb4-9356-3bc3530f58ef
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@V2RAYNG_IP 🇮🇹'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@V2RAYNG_IP 💎'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@vmesskhodam'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: '%'
-- name: '@tootffarangi🍓-11'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM--TOOTFFARANGI?ed=512
-- name: FarazV2ray@
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM--madshopx?ed=512
-- name: '@B2Hub'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@MARAMBASHI 🇩🇪'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@MARAMBASHI 🇫🇮'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@MARAMBASHI 🇮🇹'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@MARAMBASHI 🇳🇱'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@V2rayng_Fast 🇩🇪'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@V2rayng_Fast 🇫🇮'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@V2rayng_Fast 🇮🇹'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@meliproxyy'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '[🇨🇦]t.me/ConfigV2RayNG'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@MARAMBASHI 🇬🇧'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@V2rayng_Fast 🇬🇧'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: '@tootffarangi🍓-12'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-TOOTFFARANGI?ed=512
-- name: '@V2ray_confiig'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?TELEGRAM-V2ray_confiig?ed=512
-- name: '@configprxy'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048
-- name: '@FarazV2ray'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048
-- name: '@V2raySaman'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048
-- name: '@V2rayng_Fast'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048
-- name: Telegram-MTMVPN
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048
-- name: Telegram-MTMVPN-5
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048
-- name: • 🇬🇧 | United Kingdom - @HesarWeb
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048
-- name: ♾️𝗝𝗼𝗶𝗻➠🆔️@ATLAS_V2VPN🆓️📶‎🛰️543🌐🆕️
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048
-- name: 🇨🇦162567 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048
-- name: 'Channel id: @ConfigV2RayNG 🇺🇸'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048-MTMVPN
-- name: Proxy_mtm-35
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048-MTMVPN
-- name: TELEGRAM @mtmvpn-2
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: /?ed=2048-MTMVPN
-- name: Telegram @mtmvpn 14
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
-- name: Telegram @mtmvpn 5
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  tls: true
-  servername: xwrivr.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: xwrivr.pages.dev
-    path: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
-- name: 🇺🇸139806 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 0f350a5d-e801-4eca-a1b9-abe9798ad48a
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: pan1.global.ssl.fastly.net
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-- name: '@VEGAAS_VPN'
-  type: vless
-  server: g--e--r--m.cd2-ger1.ir
-  port: 2087
-  uuid: 0fa411a1-ed93-4ab5-a481-62ad460bc4a0
-- name: 🇬🇧@AZARBAYJA1
-  type: vless
-  server: 109.169.76.39
-  port: 443
-  uuid: 0fcbc45d-acdc-40cf-9a66-961c00f5b4a5
-  tls: true
-  servername: slashdot.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇬🇧@ELiV2Ray
-  type: vless
-  server: 109.169.76.39
-  port: 443
-  uuid: 0fcbc45d-acdc-40cf-9a66-961c00f5b4a5
-  tls: true
-  servername: slashdot.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸@iNetChnl
-  type: vless
-  server: inetchnl-production-0e5a.up.railway.app
-  port: 443
-  uuid: 0fe06ab3-12dc-5692-5bcb-9acb85bc865b
-  tls: true
-  servername: inetchnl-production-0e5a.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: inetchnl-production-0e5a.up.railway.app
-    path: /ws/0fe06ab3-12dc-5692-5bcb-9acb85bc865b
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: store2.vevluma.ir
-  port: 1234
-  uuid: 0fe5364c-b21e-4338-a51c-1eb179999c4f
-  tls: true
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ✅  @vistav2ray  👈👈کانال ما ✅
-  type: vless
-  server: store2.vevluma.ir
-  port: 1234
-  uuid: 0fe5364c-b21e-4338-a51c-1eb179999c4f
-  tls: true
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇹⇝ @GpConnectSho کانکت شو! 💠
-  type: vless
-  server: shima-production.up.railway.app
-  port: 443
-  uuid: 100f366d-c615-ba1b-2337-73c983069b1d
-  tls: true
-  servername: shima-production.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: shima-production.up.railway.app
-    path: /ws/100f366d-c615-ba1b-2337-73c983069b1d
-- name: 3 🇳🇱 @V2ngNet
-  type: vless
-  server: 69.46.46.33
-  port: 443
-  uuid: 10381974-34b1-2888-7733-b0f5f3d874c0
-  tls: true
-  servername: arctic-compass-2fd0-production.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: arctic-compass-2fd0-production.up.railway.app
-    path: /ws/10381974-34b1-2888-7733-b0f5f3d874c0
-- name: TEL;Father_vpn
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 1043634e-8d9d-4736-83fa-f14ddc9d464c
-  tls: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-    path: /id-amz
-- name: '@KAFING_2'
-  type: vless
-  server: fast1.mrsf.ir
-  port: 443
-  uuid: 1066d253-ee38-47d8-a599-a431c7f658ee
-  tls: true
-  servername: digikala.com.
-- name: 🇩🇪@FreakConfig
-  type: vless
-  server: 91.107.145.117
-  port: 40893
-  uuid: 109de54b-25f8-40cd-acfa-a05df873942e
-- name: '@irdusti(1)🇵🇱'
-  type: vless
-  server: 144.31.4.105
-  port: 443
-  uuid: 10a60cfd-a88d-4d18-88f6-a1cfed828280
-  tls: true
-  servername: pl.miginfo.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪 DE
-  type: vless
-  server: d8.syslogd.ir
-  port: 9094
-  uuid: 10c27186-9d0d-4b5e-afa8-53bff7aa70d6
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇰🇷 Join+Telegram:@Farah_VPN 🇰🇷
-  type: vless
-  server: 3.38.1.152
-  port: 19179
-  uuid: 10dd7b2d-eda2-4a47-9f6e-5093a3cd7ded
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇱139892 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: yt.nl.xanka.best
-  port: 2761
-  uuid: 10e2817c-9a84-4c42-9eff-a8cfd6ec9283
-  tls: true
-  servername: nl.xanka.best
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Hope_Net-join-us-on-Telegram'
-  type: vless
-  server: 146.19.21.88
-  port: 2096
-  uuid: 1149be91-5a4f-47de-995f-66f8d7d64498
-  tls: true
-  servername: De15.SiMaNsAnAt.Ir.
-  network: ws
-  ws-opts:
-    headers:
-      Host: De15.SiMaNsAnAt.Ir.
-- name: 🇩🇪⇝ @GpConnectSho کانکت شو! 💠
-  type: vless
-  server: 144.172.119.9
-  port: 8080
-  uuid: 11992f2b-181b-403a-9521-813fcd7927a8
-- name: '@v2mystery 👈 عضو شو'
-  type: vless
-  server: 153.75.87.192
-  port: 110
-  uuid: 11992f2b-181b-403a-9521-813fcd7927a8
-- name: 🇫🇷⇝ @GpConnectSho کانکت شو! 💠
-  type: vless
-  server: 153.75.87.192
-  port: 8080
-  uuid: 11992f2b-181b-403a-9521-813fcd7927a8
-- name: 🇩🇪⇝ @GpConnectSho کانکت شو! 💠
-  type: vless
-  server: 91.228.227.112
-  port: 8080
-  uuid: 11992f2b-181b-403a-9521-813fcd7927a8
-- name: 意大利
-  type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@CUSTOMVPNSERVER'
-  type: vless
-  server: 157.173.127.225
-  port: 443
-  uuid: 11beaf11-726d-4c11-8ce9-27308c1c608c
-  tls: true
-  servername: analytics.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪All⁷ | @BigSmoke_Config
-  type: vless
-  server: s5.zynetrax.ir
-  port: 2087
-  uuid: 11cb0c12-7d9f-4286-759d-3428e7505337
-  tls: true
-  servername: s5.zynetrax.ir
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: vless
-  server: 38.180.132.206
-  port: 443
-  uuid: 11e559f8-f5b7-48be-9ab5-7fc0915569e0
-  tls: true
-  servername: google.com
-  client-fingerprint: chrome
-- name: حجم ۲۵۰ گیگ
-  type: vless
-  server: plt.starferi.ir
-  port: 8460
-  uuid: 1205caca-020f-4b79-a002-e344cc81fb2c
-- name: '@bored_vpn'
-  type: vless
-  server: 5.188.26.176
-  port: 7443
-  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
-  tls: true
-  servername: max.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@v2ray313 کانالمون 💦'
-  type: vless
-  server: 5.188.26.176
-  port: 7443
-  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
-  tls: true
-  servername: max.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: Proxy_mtm-42
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 120ac4b3-4bfe-4081-b552-0754af32136e
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: Swedenman.global.ssl.fastly.net.
-    path: /
-- name: کانال ما
-  type: vless
-  server: web-production-624e95.up.railway.app
-  port: 443
-  uuid: 12a6a006-59cc-49e1-8d35-df701ebe786f
-  tls: true
-  servername: web-production-624e95.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-production-624e95.up.railway.app
-    path: /vl-ws
-- name: 🇺🇸162664 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: web-production-624e95.up.railway.app
-  port: 443
-  uuid: 12a6a006-59cc-49e1-8d35-df701ebe786f
-  tls: true
-  servername: web-production-624e95.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-production-624e95.up.railway.app
-    path: /vl-ws
-- name: '@meliproxyy'
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 12a9194f-16fc-4fb9-a6eb-441c076b70e2
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel: @Daily_Configs'
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 12a9194f-16fc-4fb9-a6eb-441c076b70e2
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel: @proxy_kafee'
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 12a9194f-16fc-4fb9-a6eb-441c076b70e2
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Hope_Net-join-us-on-Telegram'
-  type: vless
-  server: 172.67.190.208
-  port: 443
-  uuid: 12b3cbba-e6ac-485a-9481-546a0415eab9
-  tls: true
-  servername: eSETSECURITyLIcEnse.gpGRbd.woRKErS.dEv
-  network: ws
-  ws-opts:
-    headers:
-      Host: EsETsECUrItyLiCENsE.GpGrbd.WorkERS.Dev
-    path: /Btvjgv4WL5X48Nfv?ed=2560
-- name: 🇸🇬 Join+Telegram:@Farah_VPN 🇸🇬
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 12cebf33-2f96-48a3-af37-c2231e5cef75
-  network: ws
-  ws-opts:
-    headers:
-      Host: throbbing-moon-a07c.90-ec4.workers.dev
-    path: /pyip=proxyip.us.cmliussss.net
-- name: TEL:Father_vpn
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 12d8b109-394d-4d0c-a208-2b9a41f09f36
-  tls: true
-  servername: ads.ruangguru.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: ads.ruangguru.com.cyylr.eu.cc
-    path: /my-wbv
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: 69.46.46.20
-  port: 443
-  uuid: 13177436-dd6b-344d-711c-c7d456e69b92
-  tls: true
-  servername: ekhraj-production.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: ekhraj-production.up.railway.app
-    path: /ws/13177436-dd6b-344d-711c-c7d456e69b92
-- name: 🇺🇸@iNetChnl
-  type: vless
-  server: inetchnl-production-c818.up.railway.app
-  port: 443
-  uuid: 1356b8a2-25f1-43be-1640-566c9ad4154d
-  tls: true
-  servername: inetchnl-production-c818.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: inetchnl-production-c818.up.railway.app
-    path: /ws/1356b8a2-25f1-43be-1640-566c9ad4154d
-- name: 🇳🇱hollowcon-T2@Hollowcon
-  type: vless
-  server: digia.riziro.ir
-  port: 8443
-  uuid: 137539a1-15a1-442d-b0d1-7a9ec3e1f1a6
-  tls: true
-  servername: stg-mena-images.shop.samsung.com
-  client-fingerprint: chrome
-- name: 🇺🇸hollowocn-T2@Hollowcon
-  type: vless
-  server: digin.riziro.ir
-  port: 8443
-  uuid: 137539a1-15a1-442d-b0d1-7a9ec3e1f1a6
-  tls: true
-  servername: ru-images.shop.samsung.com
-  client-fingerprint: chrome
-- name: ✅  @vistav2ray  👈👈کانال ما ✅
-  type: vless
-  server: 69.46.46.21
-  port: 443
-  uuid: 139650cc-4f46-b5b3-921b-5d5377b956c8
-  tls: true
-  servername: taj-production.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: taj-production.up.railway.app
-    path: /ws/139650cc-4f46-b5b3-921b-5d5377b956c8
-- name: 🇺🇸 - US - @FreeOnlineVPN
-  type: vless
-  server: 172.67.141.220
-  port: 80
-  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
-  network: ws
-  ws-opts:
-    headers:
-      Host: ghju.apocalypse.cc.cd
-    path: /XR8So0uqFVa3vY9ZbxgW4
-- name: '@B2Hub'
-  type: vless
-  server: 31.76.88.150
-  port: 443
-  uuid: 13b54a52-a29f-4737-9941-26f54a4f87c4
-  tls: true
-  servername: www.yandex.ru
-  client-fingerprint: chrome
-- name: '@Shh_Proxy-New⁷'
-  type: vless
-  server: it.selqora.ir
-  port: 22211
-  uuid: 14079f86-f06b-48a5-a83c-5a6a0f6f14bd
-- name: '112'
-  type: vless
-  server: tmesubgift.up.railway.app
-  port: 443
-  uuid: 140b8981-d737-77df-7fba-6a6c060909df
-  tls: true
-  servername: tmesubgift.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: tmesubgift.up.railway.app
-    path: /ws/140b8981-d737-77df-7fba-6a6c060909df
-- name: 法国
-  type: vless
-  server: 104.105.202.38
-  port: 29239
-  uuid: 14155d8d-14f7-4105-984b-f477e3880943
-  tls: true
-  servername: www.sony.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@zyzzzoao'
-  type: vless
-  server: 172.81.102.142
-  port: 37533
-  uuid: 1416a27c-edba-4822-90d5-728b4333114d
-  tls: true
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: vless
-  server: cdnirtr16.2ad.ir.nic.stp.debian.org.ubuntu.ir.reservedns.website
-  port: 1053
-  uuid: 14426333-11de-4573-8783-6b4cc43f537a
-- name: '@WebShecan-27Mordad-1'
-  type: vless
-  server: webshecan.webredirect.org
-  port: 2087
-  uuid: 144bc4ad-3b59-4b9f-b8f6-00a810a4046a
-  tls: true
-  servername: www.speedtest.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@v2ray_phoenix'
-  type: vless
-  server: 82.40.62.197
-  port: 11834
-  uuid: 144bf0fc-4a8f-4db5-acaa-a1cdc1757028
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: ⚡️ KURDNET | کرد نت
-  type: vless
-  server: 82.40.62.197
-  port: 11834
-  uuid: 144bf0fc-4a8f-4db5-acaa-a1cdc1757028
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: TEL:Father_vpn
-  type: vless
-  server: 195.74.93.254
-  port: 443
-  uuid: 146eb6cf-a99c-4022-85ca-022cf81502dc
-  tls: true
-  servername: web.max.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@leviconfigs🪐-30'
-  type: vless
-  server: 176.108.243.192
-  port: 9880
-  uuid: 14777bd9-56a5-46f6-a94f-826b4800dc05
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: vless
-  server: 77.239.103.29
-  port: 2040
-  uuid: 14818654-7689-453a-9a1f-4c72f89782d5
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: 德国
-  type: vless
-  server: 31.77.220.32
-  port: 443
-  uuid: 148e52d4-c3fc-4527-b7e9-47c4a259cd61
-  tls: true
-  servername: de.global-cdn.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 德国
-  type: vless
-  server: de.global-cdn.org
-  port: 443
-  uuid: 148e52d4-c3fc-4527-b7e9-47c4a259cd61
-  tls: true
-  servername: de.global-cdn.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ✰𝗝𝗼𝗶𝗻 ➠ @v2raymelliii✰
-  type: vless
-  server: de.global-cdn.org
-  port: 443
-  uuid: 148e52d4-c3fc-4527-b7e9-47c4a259cd61
-  tls: true
-  servername: de.global-cdn.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: • 🇩🇪 | 𝗚𝗲𝗿𝗺𝗮𝗻𝘆 - @HesarWeb
-  type: vless
-  server: 179.61.251.89
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Join @mtmvpn
-  type: vless
-  server: 179.61.251.89
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Proxy_mtm-34
-  type: vless
-  server: 179.61.251.89
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: TELEGRAM @mtmvpn-13
-  type: vless
-  server: 179.61.251.89
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '[🇩🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: 179.61.251.89
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@Daily_Configs'
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: کانال ما
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: 🇩🇪162644 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@appsooner کانال تلگرام 🕊️'
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@Selinc'
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@V2ray_confiig'
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Proxy_mtm-39
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Proxy_mtm-50
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: TELEGRAM @mtmvpn-14
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Telegram:@v2rayng3
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '[🇩🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: kurdconfig
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: ✨ @NOFiLTERING2 | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: 🇩🇪@FreakConfig
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: 🇩🇪139874 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@appsooner کانال تلگرام 🕊️'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@configprxy'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@leviconfigs🪐-11'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: TELEGRAM:@ConfigV2RayNG
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Telegram:@v2rayng3
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '[🇩🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: ' telegram @mtmvpn 17'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@B2Hub'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@FarazV2ray'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@V2raySaman'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@V2ray_confiig'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@V2rayng_Fast'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@bored_vpn'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@vmess_ir'
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: FarazV2ray@
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Join to mtmvpn
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Proxy_mtm-43
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: TELEGRAM @mtmvpn-23
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Tel-@ProxyMtAlpha🍉 6
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: 🔰 @ConfigV2RayNG (تلگرام)
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: 🇩🇪139897 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: soskeynets.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@GozargahAzad|🇩🇪'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: '@V2RAYNG_IP 🍉'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: '@Capoit'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@vmessorg'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@vmesskhodam'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: '@FarazV2ray'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@V2raySaman'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@V2ray_confiig'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@V2rayng_Fast'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '[🇩🇪]t.me/ConfigV2RayNG'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: ' telegram @mtmvpn'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: FarazV2ray@
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: V2rayng_Fast@
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: musiclovers85
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: TELEGRAM @mtmvpn-15
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: Telegram @mtmvpn 2
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: '@confiig_hub'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@appsooner کانال تلگرام 🕊️'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: ✰𝗝𝗼𝗶𝗻 ➠ @v2raymelliii✰
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: 🇩🇪@FreakConfig
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-- name: '@NOFiLTERING2🇩🇪'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: '@v2rayng3'
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Telegram:@v2rayng3
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: Bisto4_Service
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  tls: true
-  servername: static.lotussec.com
-- name: fastkanfig@
-  type: vless
-  server: 104.16.72.101
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  servername: vangoghhh.info
-  network: ws
-  ws-opts:
-    headers:
-      Host: vangoghhh.info
-    path: /rdfgtws
-- name: گیگی 5500 @ATOVPN ⚡️
-  type: vless
-  server: 104.16.72.101
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  servername: vangoghhh.info
-  network: ws
-  ws-opts:
-    headers:
-      Host: vangoghhh.info
-    path: /rdfgtws
-- name: '@v2rayng3'
-  type: vless
-  server: 104.16.72.2
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  servername: vangoghhh.info
-  network: ws
-  ws-opts:
-    headers:
-      Host: vangoghhh.info
-    path: /rdfgtws
-- name: '@V2rayng3'
-  type: vless
-  server: 162.159.38.119
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  servername: vangoghhh.info
-  network: ws
-  ws-opts:
-    headers:
-      Host: vangoghhh.info
-    path: /rdfgtws
-- name: '@V2rayng3'
-  type: vless
-  server: 45.131.211.136
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  servername: vangoghhh.info
-  network: ws
-  ws-opts:
-    headers:
-      Host: vangoghhh.info
-    path: /rdfgtws
-- name: '@V2rayng3'
-  type: vless
-  server: 45.8.211.217
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  servername: vangoghhh.info
-  network: ws
-  ws-opts:
-    headers:
-      Host: vangoghhh.info
-    path: /rdfgtws
-- name: '@V2rayng3'
-  type: vless
-  server: 89.116.250.135
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  servername: vangoghhh.info
-  network: ws
-  ws-opts:
-    headers:
-      Host: vangoghhh.info
-    path: /rdfgtws
-- name: '@KAFING_2'
-  type: vless
-  server: cd4ul9u4hlil.fly.p7d.ir
-  port: 80
-  uuid: 14ba9603-1936-4d79-889a-f2b12d7508c2
-- name: 🇺🇸139850 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 179.255.148.66
-  port: 47588
-  uuid: 14be84e2-8b22-42c0-a1ba-3535fc8e9257
-  tls: true
-  servername: yellowpages.amazon.com
-  client-fingerprint: chrome
-- name: '@Hope_Net-join-us-on-Telegram'
-  type: vless
-  server: 62.60.200.88
+- name: 🇨🇳 CN 1013 TJN
+  type: trojan
+  server: bepgzbgp01.004837963.xyz
+  port: 14514
+  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
+  sni: mpvideo.qpic.cn
+- name: 🇨🇳 CN 1014 SSS
+  type: ss
+  server: 04.forlive.live
+  port: 22259
+  cipher: aes-128-gcm
+  password: b3a52055-af1a-4cbc-a554-1e107a82e76f
+- name: 🇨🇳 CN 1015 TJN
+  type: trojan
+  server: 1t8h01.a3b5wy.xyz
+  port: 36904
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: th01.abpilot.xyz
+- name: 🇨🇳 CN 1016 SSS
+  type: ss
+  server: rk2.izoizoizo.top
+  port: 34507
+  cipher: chacha20-ietf-poly1305
+  password: 3bf7be43-e331-4dad-856c-8d312dedea90
+- name: 🇨🇳 CN 1018 SSS
+  type: ss
+  server: service.ouluyun9803.com
+  port: 20005
+  cipher: chacha20-ietf-poly1305
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+- name: 🇨🇳 CN 1021 SSS
+  type: ss
+  server: 120.199.94.29
+  port: 27274
+  cipher: chacha20-ietf-poly1305
+  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
+- name: 🇨🇳 CN 1022 SSS
+  type: ss
+  server: bff6ce3.xvvrkb.lol
+  port: 40676
+  cipher: aes-128-gcm
+  password: d9c577328fb349fe
+- name: 🇨🇳 CN 1023 SSS
+  type: ss
+  server: zjp1.capoonetwork.com
+  port: 13484
+  cipher: aes-256-gcm
+  password: 20ff026e-e9c7-4147-bf3c-d6e21063f92c
+- name: 🇨🇳 CN 1024 SSS
+  type: ss
+  server: wqfuinwqffq.dfcloud.xyz
+  port: 30818
+  cipher: chacha20-ietf-poly1305
+  password: 8e949d75-3510-4678-8593-3c5032dd931a
+- name: 🇨🇳 CN 1026 SSS
+  type: ss
+  server: 220.195.133.232
+  port: 50019
+  cipher: chacha20-ietf-poly1305
+  password: 1abbe654-89f6-4f1e-837f-90e118bc74e8
+- name: 🇨🇳 CN 1029 SSS
+  type: ss
+  server: 04.forlive.live
+  port: 22268
+  cipher: aes-128-gcm
+  password: e10bcd91-0b82-4c76-91c7-33aff0eb94bb
+- name: 🇹🇼 TW 1033 TJN
+  type: trojan
+  server: 211.72.35.155
+  port: 3389
+  password: 0cc6b4268dea0ba8
+- name: 🇹🇼 TW 1034 TJN
+  type: trojan
+  server: 211.72.35.155
+  port: 3389
+  password: b84d16a244460e09
+- name: 🇹🇼 TW 1035 TJN
+  type: trojan
+  server: b13.ntbq.dynu.net
+  port: 9489
+  password: 5425aa49-ec9d-4df3-aaad-878270e78635
+  sni: b13.ntbq.dynu.net
+- name: 🇹🇼 TW 1036 TJN
+  type: trojan
+  server: b24.ntbq.dynu.net
+  port: 3271
+  password: 5425aa49-ec9d-4df3-aaad-878270e78635
+  sni: b24.ntbq.dynu.net
+- name: 🇹🇼 TW 1037 TJN
+  type: trojan
+  server: ty12t.twty.dynu.net
+  port: 18912
+  password: 5425aa49-ec9d-4df3-aaad-878270e78635
+  sni: ty12t.twty.dynu.net
+- name: 🇹🇼 TW 1038 TJN
+  type: trojan
+  server: b12.ntbq.dynu.net
+  port: 9755
+  password: 158141ca-528d-407d-88f2-c0ddca399b26
+  sni: b12.ntbq.dynu.net
+- name: 🇹🇼 TW 1044 TJN
+  type: trojan
+  server: 211.72.35.152
+  port: 3389
+  password: 26a663656e575c0b
+- name: 🇹🇼 TW 1045 SSS
+  type: ss
+  server: 61.224.80.194
+  port: 443
+  cipher: aes-128-gcm
+  password: oiwym4ovI4Yb
+- name: 🇹🇼 TW 1046 SSS
+  type: ss
+  server: 111.243.65.86
+  port: 443
+  cipher: aes-128-gcm
+  password: oiwym4ovI4Yb
+- name: 🇹🇼 TW 1048 SSS
+  type: ss
+  server: 211.75.79.233
+  port: 16505
+  cipher: aes-256-cfb
+  password: QozzuzLs2W32
+- name: 🇹🇼 TW 1049 TJN
+  type: trojan
+  server: 36.228.203.34
+  port: 443
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  sni: glc-tw1.windowsupdatea.com
+- name: 🇹🇼 TW 1052 TJN
+  type: trojan
+  server: 211.72.35.155
+  port: 3389
+  password: 26a663656e575c0b
+- name: 🇹🇼 TW 1053 TJN
+  type: trojan
+  server: 211.72.35.157
+  port: 3389
+  password: 26a663656e575c0b
+- name: 🇹🇼 TW 1054 TJN
+  type: trojan
+  server: 211.72.35.155
+  port: 3389
+  password: 3febb05ea76a940f
+- name: 🇹🇼 TW 1055 TJN
+  type: trojan
+  server: 211.72.35.152
+  port: 3389
+  password: 4bacb8f1a089763b
+- name: 🇹🇼 TW 1056 TJN
+  type: trojan
+  server: 211.72.35.155
+  port: 3389
+  password: 7b06d22a8a7c764f
+- name: 🇹🇼 TW 1057 TJN
+  type: trojan
+  server: 211.72.35.157
+  port: 3389
+  password: 8b475d9e868e43e0
+- name: 🇹🇼 TW 1058 TJN
+  type: trojan
+  server: 211.72.35.157
+  port: 3389
+  password: b09d2aaa443af97a
+- name: 🇩🇪 DE 1060 TJN
+  type: trojan
+  server: 18.153.252.91
   port: 22222
-  uuid: 14c2d9ed-4950-4614-b67a-a90f6b5f5018
-  network: ws
-  ws-opts:
-    path: /
-- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  type: vless
-  server: 177.3.212.127
-  port: 8443
-  uuid: 14da77da-4fb3-4e49-ac4f-7881ea19b267
-  tls: true
-  servername: neth6.lckdwn.ru
-- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  type: vless
-  server: neth6.lckdwn.ru
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇫🇷 FR 1063 TJN
+  type: trojan
+  server: 51.20.211.209
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇩🇪 DE 1065 TJN
+  type: trojan
+  server: 89.163.220.99
   port: 443
-  uuid: 14da77da-4fb3-4e49-ac4f-7881ea19b267
-  network: ws
-  ws-opts:
-    path: /
-- name: '@V2ray_Alpha🐼 8'
-  type: vless
-  server: fsercicesl.iramssnew2.ir
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  sni: glc-de1.windowsupdatea.com
+- name: 🇫🇷 FR 1066 TJN
+  type: trojan
+  server: 51.21.28.221
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇸🇦 SA 1067 SSS
+  type: ss
+  server: 217.182.198.219
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇸🇦 SA 1071 SSS
+  type: ss
+  server: 217.182.198.219
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇩🇪 DE 1072 TJN
+  type: trojan
+  server: 18.197.182.188
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇩🇪 DE 1073 TJN
+  type: trojan
+  server: foreign01.lovehjq.xyz
+  port: 46521
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
+- name: 🇩🇪 DE 1074 TJN
+  type: trojan
+  server: 51.75.77.237
   port: 443
-  uuid: 14e84681-eba8-4503-9bfd-c64e35ef4726
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@configprxy'
-  type: vless
-  server: fsercicesl.iramssnew2.ir
+  password: 8ea03cb9-e073-4904-8081-f43cb43fddac
+- name: 🇩🇪 DE 1075 TJN
+  type: trojan
+  server: 54.93.172.88
   port: 443
-  uuid: 14e84681-eba8-4503-9bfd-c64e35ef4726
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@vasl_bashim'
-  type: vless
-  server: fsercicesl.iramssnew2.ir
+  password: your_password
+  sni: aws-ge-frankfurt-1.f1rocketnode.com
+- name: 🇩🇪 DE 1078 SSS
+  type: ss
+  server: 49.13.10.50
+  port: 1194
+  cipher: chacha20-ietf-poly1305
+  password: Uxm4ADwftKdXq5qRA4ZfHS
+- name: 🇩🇪 DE 1079 TJN
+  type: trojan
+  server: 103.252.90.93
   port: 443
-  uuid: 14e84681-eba8-4503-9bfd-c64e35ef4726
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@Vpn_Mafia 🇳🇴'
-  type: vless
-  server: 194.110.207.48
+  password: 7d2c1050-fc3a-11ee-9230-1239d0255272
+- name: 🇫🇷 FR 1080 TJN
+  type: trojan
+  server: 141.94.115.231
   port: 443
-  uuid: 14eb2c19-89ba-4a10-bd52-cbf6a5f5cae0
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Azaranv2ray'
-  type: vless
-  server: 194.110.207.48
+  password: 0fe4bbdb-2854-4cc5-986c-f62dbb900bc5
+- name: 🇸🇦 SA 1082 SSS
+  type: ss
+  server: 217.182.198.219
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇩🇪 DE 1084 SSS
+  type: ss
+  server: 136.244.81.170
+  port: 20888
+  cipher: chacha20-ietf-poly1305
+  password: jhblmJdHApr5afBcB1rtSt
+- name: 🇸🇦 SA 1085 SSS
+  type: ss
+  server: 217.182.198.219
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇸🇦 SA 1086 SSS
+  type: ss
+  server: 217.182.198.219
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1088 TJN
+  type: trojan
+  server: fr-full.privateip.net
   port: 443
-  uuid: 14eb2c19-89ba-4a10-bd52-cbf6a5f5cae0
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@ICV2RAY'
-  type: vless
-  server: 194.110.207.48
+  password: c55c7930-858b-45f5-9ac3-d66b805a4569
+- name: 🇩🇪 DE 1090 TJN
+  type: trojan
+  server: de-full.privateip.net
   port: 443
-  uuid: 14eb2c19-89ba-4a10-bd52-cbf6a5f5cae0
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@confiig_hub'
-  type: vless
-  server: 194.110.207.48
+  password: 8ea03cb9-e073-4904-8081-f43cb43fddac
+- name: 🇩🇪 DE 1093 TJN
+  type: trojan
+  server: de-full.privateip.net
   port: 443
-  uuid: 14eb2c19-89ba-4a10-bd52-cbf6a5f5cae0
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇴 Join+Telegram:@Farah_VPN 🇳🇴
-  type: vless
-  server: 194.110.207.48
+  password: ea630804-4d5d-4180-a464-a360e3793dc2
+- name: 🇩🇪 DE 1094 TJN
+  type: trojan
+  server: 3.122.135.247
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇩🇪 DE 1095 SSS
+  type: ss
+  server: 185.242.86.156
+  port: 54170
+  cipher: chacha20-ietf-poly1305
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+- name: 🇩🇪 DE 1096 TJN
+  type: trojan
+  server: 3.122.21.121
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇩🇪 DE 1097 TJN
+  type: trojan
+  server: 3.124.56.58
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇱🇹 LT 1098 SSS
+  type: ss
+  server: 213.183.44.17
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: XwWVRmO2kKu6qK1Xlih3Lfe6Lh3RRa9r
+- name: 🇫🇷 FR 1099 TJN
+  type: trojan
+  server: fr-full.privateip.net
   port: 443
-  uuid: 14eb2c19-89ba-4a10-bd52-cbf6a5f5cae0
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@leviconfigs🪐-6'
-  type: vless
-  server: 130.185.123.32
+  password: 0fe4bbdb-2854-4cc5-986c-f62dbb900bc5
+- name: 🇸🇦 SA 1100 SSS
+  type: ss
+  server: 217.182.198.219
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇦🇺 AU 1101 TJN
+  type: trojan
+  server: 194.195.123.173
   port: 443
-  uuid: 14f493a7-242a-4add-8413-cecc063b3ce3
-  tls: true
-- name: '@confiig_hub'
-  type: vless
-  server: shadow.mikikoo.com
-  port: 2087
-  uuid: 15150c26-7e7f-42a7-8e7a-d0b9ab359214
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: yourServiceName
-- name: '@v2ray313 کانالمون 😈'
-  type: vless
-  server: shadow.mikikoo.com
-  port: 2087
-  uuid: 15150c26-7e7f-42a7-8e7a-d0b9ab359214
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: yourServiceName
-- name: '@hopev2ray❤️'
-  type: vless
-  server: 185.247.16.3
-  port: 2200
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  network: ws
-  ws-opts:
-    headers:
-      Host: rzd.ru
-    path: /v1
-- name: '@hopev2ray🤎'
-  type: vless
-  server: 87.228.122.108
-  port: 4100
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  network: ws
-  ws-opts:
-    path: /v1
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: vless
-  server: f1.springpaatogh8.store
-  port: 8443
-  uuid: 15a8a868-ddd3-4a8c-bf7a-bb81671bf157
-  tls: true
-  servername: digikala.sorza.ir
-  network: ws
-  ws-opts:
-    headers:
-      Host: takken.sorza.ir
-    path: /
-- name: '@leviconfigs🪐-2'
-  type: vless
-  server: 144.31.237.77
-  port: 443
-  uuid: 15e83ced-7544-422e-863d-deafe29a1dbe
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: 69.46.46.10
-  port: 443
-  uuid: 15e9c884-4541-f430-cf55-66401979319d
-  tls: true
-  servername: golden-grove-39ee-production.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: golden-grove-39ee-production.up.railway.app
-    path: /ws/15e9c884-4541-f430-cf55-66401979319d
-- name: '@leviconfigs🪐-14'
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  tls: true
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇳162568 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: preview.netraidly.ru
-  port: 40443
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  tls: true
-  servername: deepl.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: vless
-  server: 104.26.14.21
-  port: 443
-  uuid: 16068e83-af4c-49ba-8048-98fcff3e5e7b
-  tls: true
-  servername: afrcloud22.mmv.kr
-  network: ws
-  ws-opts:
-    headers:
-      Host: afrcloud22.mmv.kr
-    path: /131.186.26.129
-- name: '@v2rayng3'
-  type: vless
-  server: 185.143.232.201
-  port: 443
-  uuid: 16227db7-1914-4a97-bb6b-7bf98e6b525b
-  tls: true
-  servername: zapzap.mc.filimo.cam
-  network: ws
-  ws-opts:
-    headers:
-      Host: zapzap.mc.filimo.cam
-    path: /
-- name: Tel-@ProxyMtAlpha🌰 2
-  type: vless
-  server: 109.169.84.94
-  port: 443
-  uuid: 16529590-1702-4e7d-90d8-e64f4e18c1e2
-  tls: true
-  servername: strapi.io
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@leviconfigs🪐-12'
-  type: vless
-  server: 62.238.60.118
-  port: 2096
-  uuid: 16569657-116c-46ed-8920-758ab8abaac4
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@leviconfigs🪐-9'
-  type: vless
-  server: 62.238.60.118
-  port: 2096
-  uuid: 16569657-116c-46ed-8920-758ab8abaac4
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  type: vless
-  server: djuc1.rapidmesh.ir
-  port: 2096
-  uuid: 16569657-116c-46ed-8920-758ab8abaac4
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 𝐕𝟐𝐗𝐍𝐄𝐓
-  type: vless
-  server: 69.46.46.123
-  port: 443
-  uuid: 1667f049-f3c4-4c42-85f0-0f243467736e
-  tls: true
-  servername: spiderpanel-production-d448.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: spiderpanel-production-d448.up.railway.app
-    path: /ws/1667f049-f3c4-4c42-85f0-0f243467736e
-- name: 荷兰
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  tls: true
-  servername: torr.wlrus.cfd
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🩳92@oneclickvpnkeys
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  tls: true
-  servername: torr.wlrus.cfd
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: '@Iran_v2ray1'
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  tls: true
-  servername: torr.wlrus.cfd
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: vpnsal
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  tls: true
-  servername: torr.wlrus.cfd
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇮🇹 Join+Telegram:@Farah_VPN 🇮🇹
-  type: vless
-  server: 172.238.232.239
-  port: 32833
-  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Net2ray | 🇫🇷 France, Paris'
-  type: vless
-  server: lvksp.kintuso.com
-  port: 443
-  uuid: 16a1eeb0-8408-4592-a469-ecd33751021e
-  tls: true
-  servername: lvksp.kintuso.com
-  flow: xtls-rprx-vision
-- name: ⚡️ KURDNET | کرد نت
-  type: vless
-  server: 82.40.62.197
-  port: 46059
-  uuid: 16b8c926-76a5-4451-99a5-1a81e0326ab1
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: Join---@Arshiavpn12
-  type: vless
-  server: 31.77.145.230
-  port: 443
-  uuid: 16d65374-b0ed-4344-b73e-f3f1c9fe27b1
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 荷兰
-  type: vless
-  server: 87.199.193.132
-  port: 443
-  uuid: 1706df43-55c1-4a03-ae37-d447bf3817c8
-  tls: true
-  servername: qvl7eap6oyf9.bosfiles.net
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  type: vless
-  server: us6.lunariai.ru
-  port: 443
-  uuid: 170e1be8-e51b-4a82-a779-3ad27b78607c
-  network: ws
-  ws-opts:
-    headers:
-      Host: us6.lunariai.ru
-    path: /
-- name: CxrolVPN Free (4)
-  type: vless
-  server: 104.21.16.1
+  password: 4b1b3f03-6493-44a9-afcf-0ccf7c754154
+- name: 🇺🇸 US 1104 SSS
+  type: ss
+  server: 5.161.81.6
+  port: 30129
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇩🇪 DE 1105 TJN
+  type: trojan
+  server: foreign04.lovehjq.xyz
+  port: 46527
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
+- name: 🇷🇺 RU 1106 SSS
+  type: ss
+  server: 193.228.128.143
+  port: 27981
+  cipher: chacha20-ietf-poly1305
+  password: 4pWVbIVIuw4LK9wvMgcHW5
+- name: 🇦🇲 AM 1108 TJN
+  type: trojan
+  server: 185.162.228.4
   port: 80
-  uuid: 1737df47-a4b2-4096-9fc3-1d869aa50c08
-  network: ws
-  ws-opts:
-    headers:
-      Host: cxrolvpn.freev2-edb.workers.dev
-    path: /Lf40Du14nxmNjCFx?ed=2560
-- name: CxrolVPN Free (6)
-  type: vless
-  server: 104.21.32.1
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1110 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1111 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1112 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1116 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1118 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1120 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1121 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1122 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1124 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1127 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1129 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇦🇲 AM 1130 TJN
+  type: trojan
+  server: 185.162.228.4
+  port: 80
+  password: dGKXcHgs3P
+- name: 🇪🇸 ES 1131 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61006
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1132 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60004
+  cipher: chacha20-ietf-poly1305
+  password: b6c5467a-bc99-3fec-bd8a-b33ffc52c6ab
+- name: 🇪🇸 ES 1133 SSS
+  type: ss
+  server: 3.forlive.live
+  port: 61019
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1134 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61005
+  cipher: chacha20-ietf-poly1305
+  password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7
+- name: 🇪🇸 ES 1135 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60004
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1136 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61006
+  cipher: chacha20-ietf-poly1305
+  password: d52848a3-5101-3ccc-aed8-113ce65928a8
+- name: 🇪🇸 ES 1137 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1138 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1139 SSS
+  type: ss
+  server: 3.forlive.live
+  port: 61020
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1140 SSS
+  type: ss
+  server: iepl2.forlive.live
+  port: 50105
+  cipher: chacha20-ietf-poly1305
+  password: 65af0e00-a583-31b3-a4d8-68bdb504d3a6
+- name: 🇪🇸 ES 1141 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61008
+  cipher: chacha20-ietf-poly1305
+  password: ae025e7f-6a54-3cf8-9ab5-8aa8b2b1fe2d
+- name: 🇪🇸 ES 1142 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61007
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1143 SSS
+  type: ss
+  server: 3.forlive.live
+  port: 61019
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1144 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1145 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60033
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1146 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60033
+  cipher: chacha20-ietf-poly1305
+  password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7
+- name: 🇪🇸 ES 1147 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61006
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1148 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61007
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1149 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: 6027e101-7084-3b4a-be0d-ff1230366180
+- name: 🇪🇸 ES 1150 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60004
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1151 SSS
+  type: ss
+  server: 5.forlive.live
+  port: 60033
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1152 SSS
+  type: ss
+  server: 2.forlive.live
+  port: 61005
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1153 SSS
+  type: ss
+  server: 3.forlive.live
+  port: 61020
+  cipher: chacha20-ietf-poly1305
+  password: b8eef379-1a0d-4a27-af6e-484297760477
+- name: 🇪🇸 ES 1155 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61008
+  cipher: chacha20-ietf-poly1305
+  password: be134ab3-1760-3e70-8b87-f197a365ffc3
+- name: 🇪🇸 ES 1156 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61007
+  cipher: chacha20-ietf-poly1305
+  password: 1abbe654-89f6-4f1e-837f-90e118bc74e8
+- name: 🇪🇸 ES 1158 SSS
+  type: ss
+  server: 4.forlive.live
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: 95597817-57ba-43e9-b853-c9dab67c59ce
+- name: 🇪🇸 ES 1159 SSS
+  type: ss
+  server: 1.forlive.live
+  port: 61008
+  cipher: chacha20-ietf-poly1305
+  password: 835d21b0-5322-4a77-8aff-4aff633642b0
+- name: 🇪🇸 ES 1160 SSS
+  type: ss
+  server: 185.218.20.4
   port: 443
-  uuid: 1737df47-a4b2-4096-9fc3-1d869aa50c08
-  tls: true
-  servername: cxrolvpn.freev2-edb.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: cxrolvpn.freev2-edb.workers.dev
-    path: /ebmJ4UcdPxKGcPdT?ed=2560
-- name: CxrolVPN Free (1)
-  type: vless
-  server: 104.21.48.1
+  cipher: chacha20-ietf-poly1305
+  password: cBghTxo2s8cs8GWneXlRet
+- name: 🇨🇦 CA 1161 TJN
+  type: trojan
+  server: ca-trojan.bonds.id
+  port: 443
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+- name: 🇫🇷 FR 1163 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇫🇷 FR 1164 TJN
+  type: trojan
+  server: 51.210.182.170
+  port: 443
+  password: 278fff60-fc3a-11ee-a4a6-1239d0255272
+- name: 🇫🇷 FR 1165 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇫🇷 FR 1167 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇫🇷 FR 1168 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1169 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1170 TJN
+  type: trojan
+  server: fr3-full.privateip.net
+  port: 443
+  password: fc1e07b5-840b-4446-8232-94b0606f2e0d
+- name: 🇫🇷 FR 1171 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1172 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1173 SSS
+  type: ss
+  server: 51.178.87.37
+  port: 805
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇫🇷 FR 1174 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1175 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇫🇷 FR 1176 SSS
+  type: ss
+  server: 51.195.149.115
+  port: 45816
+  cipher: aes-256-gcm
+  password: KkDzY101Oe
+- name: 🇫🇷 FR 1177 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1178 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 7306
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1179 TJN
+  type: trojan
+  server: 45.32.148.182
+  port: 443
+  password: wkmY1R4EcP
+  sni: z-v2-002805.kailib.com
+- name: 🇫🇷 FR 1180 TJN
+  type: trojan
+  server: 15.236.156.123
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇫🇷 FR 1181 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1182 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1183 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1184 SSS
+  type: ss
+  server: 51.159.111.208
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇫🇷 FR 1185 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1186 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇫🇷 FR 1188 SSS
+  type: ss
+  server: 51.178.87.37
+  port: 810
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇫🇷 FR 1189 SSS
+  type: ss
+  server: 195.154.169.198
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇫🇷 FR 1190 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇫🇷 FR 1191 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇫🇷 FR 1192 SSS
+  type: ss
+  server: 92.243.24.236
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: LE6Ee6PELhVu
+- name: 🇫🇷 FR 1193 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇫🇷 FR 1195 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇫🇷 FR 1196 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1197 TJN
+  type: trojan
+  server: 51.210.182.170
+  port: 443
+  password: 1038bc70-fe01-11ee-a6a2-1239d0255272
+- name: 🇫🇷 FR 1198 SSS
+  type: ss
+  server: 149.202.82.172
   port: 8080
-  uuid: 1737df47-a4b2-4096-9fc3-1d869aa50c08
-  network: ws
-  ws-opts:
-    headers:
-      Host: cxrolvpn.freev2-edb.workers.dev
-    path: /S0dQP0TopmwsC1K3?ed=2560
-- name: CxrolVPN Free (2)
-  type: vless
-  server: 104.21.64.1
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1199 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇫🇷 FR 1200 SSS
+  type: ss
+  server: 92.243.27.51
+  port: 9802
+  cipher: chacha20-ietf-poly1305
+  password: cqBAAW0fZcqQ1Bn06jwhro
+- name: 🇫🇷 FR 1201 TJN
+  type: trojan
+  server: 15.188.187.126
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇫🇷 FR 1202 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1203 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇫🇷 FR 1204 TJN
+  type: trojan
+  server: 35.181.197.213
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇫🇷 FR 1205 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇨🇦 CA 1207 SSS
+  type: ss
+  server: 51.222.157.179
+  port: 49602
+  cipher: aes-256-gcm
+  password: 7gaTTlW73G
+- name: 🇫🇷 FR 1208 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1209 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇫🇷 FR 1210 TJN
+  type: trojan
+  server: 193.70.112.90
+  port: 443
+  password: fc1e07b5-840b-4446-8232-94b0606f2e0d
+- name: 🇫🇷 FR 1211 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇫🇷 FR 1212 SSS
+  type: ss
+  server: 149.202.82.172
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇯🇵 JP 1213 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 812
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇯🇵 JP 1214 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 806
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇯🇵 JP 1215 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 809
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1216 SSS
+  type: ss
+  server: 13.87.75.155
+  port: 46130
+  cipher: chacha20-ietf-poly1305
+  password: mTypilmjidrr6dQYaOGHf7
+- name: 🇬🇧 GB 1217 TJN
+  type: trojan
+  server: 18.130.65.10
+  port: 17408
+  password: dkCb8vhXc9GI
+  sni: appsvs.shop
+- name: 🇬🇧 GB 1218 TJN
+  type: trojan
+  server: kr.mjt000.com
+  port: 443
+  password: d0774966-fb63-4aca-9478-16c3f32be220
+  sni: kr.mjt000.com
+- name: 🇬🇧 GB 1219 SSS
+  type: ss
+  server: 52.151.70.6
+  port: 39271
+  cipher: chacha20-ietf-poly1305
+  password: zjQs77eXK0zdfPFyLs95l6
+- name: 🇬🇧 GB 1220 TJN
+  type: trojan
+  server: hinet.mjt001.com
+  port: 443
+  password: a1956156-b1d6-468e-b22f-59765172b07d
+- name: 🇬🇧 GB 1221 TJN
+  type: trojan
+  server: 3.9.27.170
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇬🇧 GB 1223 SSS
+  type: ss
+  server: 51.145.20.109
+  port: 40933
+  cipher: chacha20-ietf-poly1305
+  password: 1Bukuyf171ArbKaXSvaSf9
+- name: 🇬🇧 GB 1224 TJN
+  type: trojan
+  server: 45.76.130.173
+  port: 443
+  password: wkmY1R4EcP
+  sni: z-v2-003289.kailib.com
+- name: 🇬🇧 GB 1225 TJN
+  type: trojan
+  server: 35.176.117.240
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇺🇸 US 1226 SSS
+  type: ss
+  server: 198.23.196.68
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇰🇷 KR 1227 TJN
+  type: trojan
+  server: 144.24.87.186
+  port: 46521
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
+- name: 🇬🇧 GB 1228 TJN
+  type: trojan
+  server: 35.178.45.128
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇰🇷 KR 1229 TJN
+  type: trojan
+  server: 144.24.87.186
+  port: 46527
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
+- name: 🇫🇷 FR 1230 SSS
+  type: ss
+  server: 141.11.189.239
   port: 8080
-  uuid: 1737df47-a4b2-4096-9fc3-1d869aa50c08
-  network: ws
-  ws-opts:
-    headers:
-      Host: cxrolvpn.freev2-edb.workers.dev
-    path: /AKzyeMv5F4RdKNLT?ed=2560
-- name: CxrolVPN Free (5)
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 1737df47-a4b2-4096-9fc3-1d869aa50c08
-  tls: true
-  servername: cxrolvpn.freev2-edb.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: cxrolvpn.freev2-edb.workers.dev
-    path: /16K876L0W1BeJ0u0?ed=2560
-- name: CxrolVPN Free (3)
-  type: vless
-  server: www.speedtest.net
-  port: 80
-  uuid: 1737df47-a4b2-4096-9fc3-1d869aa50c08
-  network: ws
-  ws-opts:
-    headers:
-      Host: cxrolvpn.freev2-edb.workers.dev
-    path: /DBD001v7ZAlmIpnP?ed=2560
-- name: TEL;Father_vpn
-  type: vless
-  server: 185.18.250.245
-  port: 443
-  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
-  tls: true
-  servername: crm.lotussec.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: crm.lotussec.com
-    path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
-- name: TEL;Father_vpn
-  type: vless
-  server: 185.18.250.252
-  port: 443
-  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
-  tls: true
-  servername: crm.lotussec.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: crm.lotussec.com
-    path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
-- name: TEL;Father_vpn
-  type: vless
-  server: 185.193.28.212
-  port: 443
-  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
-  tls: true
-  servername: crm.lotussec.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: crm.lotussec.com
-    path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
-- name: TEL;Father_vpn
-  type: vless
-  server: 66.81.247.155
-  port: 443
-  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
-  tls: true
-  servername: crm.lotussec.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: crm.lotussec.com
-    path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
-- name: '@confiig_hub'
-  type: vless
-  server: 31.56.184.133
-  port: 443
-  uuid: 176bc48c-460b-4260-abbd-68fd5ea85270
-  tls: true
-  servername: nll.mcqueenconnection.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: vless
-  server: 188.40.210.8
-  port: 1083
-  uuid: 179ddf63-c263-40ff-98a1-f53708573059
-- name: '@alo_v2rayng با کانفیگ رایگان اینستا نرو آی پی ثابت نیس دیسیبل میشه پیجت'
-  type: vless
-  server: sourceforge.net
-  port: 2052
-  uuid: 18161878-c749-40fe-8146-8b061a41bd4f
-  network: ws
-  ws-opts:
-    headers:
-      Host: v2cityv2raygmsix6.6.6.6.ir.com.site.列列男事的事列上赛男.科斯涅過濾器斯.mobileiraniii.ir
-    path: /telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----hameV2rayGmSix6.6.6.6.ir.Com.Site.xn--fhq0la447aac5504dea701axr1g
-- name: 🇩🇪 DE
-  type: vless
-  server: 144.172.119.9
-  port: 110
-  uuid: 18450ff3-1ebb-4665-957b-219aef3d83c7
-- name: 🇩🇪 @V2RAYNG_IP ✅
-  type: vless
-  server: 144.172.119.9
-  port: 110
-  uuid: 18450ff3-1ebb-4665-957b-219aef3d83c7
-- name: 🇩🇪 @V2RAYNG_IP 🔥
-  type: vless
-  server: 144.172.119.9
-  port: 110
-  uuid: 18450ff3-1ebb-4665-957b-219aef3d83c7
-- name: '@Shh_Proxy-New⁶'
-  type: vless
-  server: 144.172.119.9
-  port: 110
-  uuid: 18450ff3-1ebb-4665-957b-219aef3d83c7
-- name: '❄️Tel: @pPal03❄️Join❄️'
-  type: vless
-  server: 104.16.19.242
-  port: 80
-  uuid: 1853d1d2-1ccf-48e6-ae05-0c0bb285a8c4
-  network: ws
-  ws-opts:
-    headers:
-      Host: winter-bush-f08c-ppal03.himigaw787.workers.dev
-    path: /?ed=2560
-- name: '❄️Tel: @pPal03❄️Join❄️'
-  type: vless
-  server: 104.24.189.102
-  port: 80
-  uuid: 1853d1d2-1ccf-48e6-ae05-0c0bb285a8c4
-  network: ws
-  ws-opts:
-    headers:
-      Host: winter-bush-f08c-ppal03.himigaw787.workers.dev
-    path: /?ed=2560
-- name: '@confiig_hub'
-  type: vless
-  server: 69.46.46.123
-  port: 443
-  uuid: 18758b47-442c-ce87-982f-95da64c3228b
-  tls: true
-  servername: sr-production-c685.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: sr-production-c685.up.railway.app
-    path: /ws/18758b47-442c-ce87-982f-95da64c3228b
-- name: '@𝐕𝟐𝐗𝐍𝐄𝐓'
-  type: vless
-  server: 69.46.46.123
-  port: 443
-  uuid: 18758b47-442c-ce87-982f-95da64c3228b
-  tls: true
-  servername: sr-production-c685.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: sr-production-c685.up.railway.app
-    path: /ws/18758b47-442c-ce87-982f-95da64c3228b
-- name: '@ICV2RAY'
-  type: vless
-  server: 144.31.242.69
-  port: 443
-  uuid: 188079af-1b15-4256-90f7-d1c4646d2062
-  tls: true
-  servername: dk1.hat.onl
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇬🇧'
-  type: vless
-  server: 31.76.60.110
-  port: 443
-  uuid: 188079af-1b15-4256-90f7-d1c4646d2062
-  tls: true
-  servername: uk1.hat.onl
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel id: @ConfigV2RayNG 🇹🇷'
-  type: vless
-  server: 62.133.63.253
-  port: 443
-  uuid: 188079af-1b15-4256-90f7-d1c4646d2062
-  tls: true
-  servername: tr1.hat.onl
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@IRAN_V2RAY1'
-  type: vless
-  server: 138.124.123.127
-  port: 2086
-  uuid: 188c0927-b022-4478-86f7-be53449e2d8b
-- name: '@IRAN_V2RAY1'
-  type: vless
-  server: 153.52.92.160
-  port: 2082
-  uuid: 188c0927-b022-4478-86f7-be53449e2d8b
-  tls: true
-  servername: www.zelnora.ir
-  client-fingerprint: chrome
-- name: '@IRAN_V2RAY1'
-  type: vless
-  server: rgb.awextr.ir
-  port: 2082
-  uuid: 188c0927-b022-4478-86f7-be53449e2d8b
-  tls: true
-  servername: www.zelnora.ir
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: crm.mobileemdad.top
-  port: 3131
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: کانال ما
-  type: vless
-  server: crm.mobileemdad.top
-  port: 3131
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪162674 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: crm.mobileemdad.top
-  port: 3131
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪DE-🚀@VPNine1
-  type: vless
-  server: crm.mobileemdad.top
-  port: 3131
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: crm.mobileemdad.top
-  port: 3131
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: کانال ما
-  type: vless
-  server: fna.mobileemdad.top
-  port: 42542
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-- name: 🇫🇮162675 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: fna.mobileemdad.top
-  port: 42542
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-- name: '@filembad'
-  type: vless
-  server: fr13.montago-shop.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR-🚀@VPNine1
-  type: vless
-  server: fr13.montago-shop.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@filembad'
-  type: vless
-  server: gsv1.montago-shop.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@meliproxyy'
-  type: vless
-  server: gsv1.montago-shop.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪162576 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: gsv1.montago-shop.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪DE-🚀@VPNine1
-  type: vless
-  server: gsv1.montago-shop.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: gsv1.montago-shop.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: ita.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹IT-🚀@VPNine1
-  type: vless
-  server: ita.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: ita.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: itl.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹IT-🚀@VPNine1
-  type: vless
-  server: itl.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: itl.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: pk-play.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: delivery.mp.microsoft.com
-  client-fingerprint: chrome
-- name: '@meliproxyy'
-  type: vless
-  server: pk-play.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: delivery.mp.microsoft.com
-  client-fingerprint: chrome
-- name: 🇦🇪162573 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: pk-play.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: delivery.mp.microsoft.com
-  client-fingerprint: chrome
-- name: 🇦🇪AE-🚀@VPNine1
-  type: vless
-  server: pk-play.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: delivery.mp.microsoft.com
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: pt-play.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@meliproxyy'
-  type: vless
-  server: pt-play.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇮162577 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: pt-play.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇮FI-🚀@VPNine1
-  type: vless
-  server: pt-play.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: pt-play.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: tr5.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '[38102] - Telegram : @V2All'
-  type: vless
-  server: tr5.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: tr5.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: ugb.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@meliproxyy'
-  type: vless
-  server: ugb.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: filembad-96
-  type: vless
-  server: ugb.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪162574 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: ugb.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪DE-🚀@VPNine1
-  type: vless
-  server: ugb.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: ugb.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: uka.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷FR-🚀@VPNine1
-  type: vless
-  server: uka.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: uka.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: ukm.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@meliproxyy'
-  type: vless
-  server: ukm.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪162578 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: ukm.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪DE-🚀@VPNine1
-  type: vless
-  server: ukm.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: ukm.mobileemdad.top
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@filembad'
-  type: vless
-  server: usa3.moon-night.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US-🚀@VPNine1
-  type: vless
-  server: usa3.moon-night.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: usa3.moon-night.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@filembad'
-  type: vless
-  server: usa4.moon-night.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@meliproxyy'
-  type: vless
-  server: usa4.moon-night.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸162579 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: usa4.moon-night.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸US-🚀@VPNine1
-  type: vless
-  server: usa4.moon-night.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: usa4.moon-night.ir
-  port: 443
-  uuid: 18a46172-92db-42b2-959a-4f3af68597f7
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@Alpha_V2rayip'
-  type: vless
-  server: 3h-unitedstates1.09vpn.com
-  port: 80
-  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: '@hollowcon'
-  type: vless
-  server: web-production-6ffd7.up.railway.app
-  port: 443
-  uuid: 19307550-126a-4b8b-a1a3-115197320370
-  tls: true
-  servername: web-production-6ffd7.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-production-6ffd7.up.railway.app
-    path: /ws/19307550-126a-4b8b-a1a3-115197320370
-- name: '@CUSTOMVPNSERVER'
-  type: vless
-  server: 89.167.17.75
-  port: 443
-  uuid: 19773cc6-89a3-47c6-bc10-885460cd2b7b
-- name: 🇺🇸 US
-  type: vless
-  server: 172.233.156.42
-  port: 12668
-  uuid: 1990630e-c2cf-4d1f-bba0-a51423df89a9
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_439_@Surfboardv2ray
-  type: vless
-  server: 172.233.156.42
-  port: 12668
-  uuid: 1990630e-c2cf-4d1f-bba0-a51423df89a9
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@fastkanfig'
-  type: vless
-  server: 172.233.156.42
-  port: 12668
-  uuid: 1990630e-c2cf-4d1f-bba0-a51423df89a9
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇩🇪 | Germany - @Salarvand_Cloud , @Hideng_App
-  type: vless
-  server: connect.0912.org
-  port: 443
-  uuid: 19a1e376-d05a-4af0-b7ef-c7d33133c2ff
-- name: '@confiig_hub'
-  type: vless
-  server: 45.198.96.210
-  port: 443
-  uuid: 19b64e79-73b4-4478-bbfc-fb57737b94f8
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: 45.198.96.210
-  port: 443
-  uuid: 19b64e79-73b4-4478-bbfc-fb57737b94f8
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: ✨ @NOFiLTERING2 | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
-  type: vless
-  server: 45.198.96.210
-  port: 443
-  uuid: 19b64e79-73b4-4478-bbfc-fb57737b94f8
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: Tel-@ProxyMtAlpha🏠 6
-  type: vless
-  server: trg.awextr.ir
-  port: 2082
-  uuid: 19c21f30-3590-4b97-a65a-39b50b810edf
-- name: 🇹🇴AZARBAYJAB1
-  type: vless
-  server: 118.167.230.216
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇭🇺@AZARBAYJAB1
-  type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 Join+Telegram:@Farah_VPN 🇹🇼
-  type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: '@v2mystery 👈 عضو شو'
-  type: vless
-  server: 65.109.177.140
-  port: 47762
-  uuid: 19e53328-8f3c-40d0-9769-73d5ad14d5c1
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 'Channel: @VPNLime'
-  type: vless
-  server: 37.32.10.174
-  port: 33269
-  uuid: 19f143e1-95dc-42f6-f4b4-0554988e876d
-  network: ws
-  ws-opts:
-    path: /@VPNlime
-- name: 'Channel: @VPNLime  ری اکشن بالا باشه انرژی بگیریم ❤️❤️ 🍋@vpnlime'
-  type: vless
-  server: 37.32.10.174
-  port: 33269
-  uuid: 19f143e1-95dc-42f6-f4b4-0554988e876d
-  network: ws
-  ws-opts:
-    path: /@VPNlime
-- name: TEL;Father_vpn
-  type: vless
-  server: fr.connfull.org
-  port: 9443
-  uuid: 19f51967-ca91-4fab-a37b-51c424de801d
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: fr.connfull.org
-    path: /stream
-- name: '@vmesskhodam'
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 1a083e25-c9e1-451a-8412-6358a09f803b
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[38097] - Telegram : @V2All'
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 1a083e25-c9e1-451a-8412-6358a09f803b
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@MARAMBASHI 🇬🇧'
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 1a083e25-c9e1-451a-8412-6358a09f803b
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@V2rayng_Fast 🇬🇧'
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 1a083e25-c9e1-451a-8412-6358a09f803b
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@filembad'
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 1a083e25-c9e1-451a-8412-6358a09f803b
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@tootffarangi🍓-10'
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 1a083e25-c9e1-451a-8412-6358a09f803b
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🔵@chillguy_vpn
-  type: vless
-  server: 207.241.172.254
-  port: 4777
-  uuid: 1a083e25-c9e1-451a-8412-6358a09f803b
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: vpnsal
-  type: vless
-  server: 54.180.145.182
-  port: 8686
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: '@icv2ray'
-  type: vless
-  server: 31.76.106.68
-  port: 10443
-  uuid: 1a17fbd6-a54f-456c-8e71-5282893e2b69
-- name: Telegram-MTMVPN-6
-  type: vless
-  server: 31.76.106.68
-  port: 10443
-  uuid: 1a17fbd6-a54f-456c-8e71-5282893e2b69
-- name: SulgX-@hollowcon
-  type: vless
-  server: web-production-9a1f3.up.railway.app
-  port: 443
-  uuid: 1a7015d0-1790-452f-a31d-d863b69b7bcb
-  tls: true
-  servername: web-production-9a1f3.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-production-9a1f3.up.railway.app
-    path: /ws/1a7015d0-1790-452f-a31d-d863b69b7bcb
-- name: 🇩🇪All⁵ | @BigSmoke_Config
-  type: vless
-  server: okm.corerelay.ir
-  port: 2096
-  uuid: 1a89d654-5a5b-476c-8157-6691a8f85687
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@hopev2ray💜'
-  type: vless
-  server: 104.21.41.131
-  port: 8443
-  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
-  tls: true
-  servername: ad-020.vector9nmb3.info
-  network: ws
-  ws-opts:
-    headers:
-      Host: ad-020.vector9nmb3.info
-    path: /
-- name: '@V2ray_Alpha🫚 2'
-  type: vless
-  server: 91.228.227.172
-  port: 110
-  uuid: 1b0a74e1-3c69-4386-ae77-9db408d0687f
-- name: Tel-@ProxyMtAlpha🫔 9
-  type: vless
-  server: 91.228.227.172
-  port: 443
-  uuid: 1b0a74e1-3c69-4386-ae77-9db408d0687f
-- name: '@IRan_v2ray1'
-  type: vless
-  server: 91.228.227.172
-  port: 443
-  uuid: 1b0a74e1-3c69-4386-ae77-9db408d0687f
-- name: '@V2ray_Alpha🫚 10'
-  type: vless
-  server: 91.228.227.172
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇨🇭 CH 1231 SSS
+  type: ss
+  server: 51.103.183.241
+  port: 33910
+  cipher: chacha20-ietf-poly1305
+  password: IJl7gbeZxeXZzZGcKFMaHA
+- name: 🇬🇧 GB 1233 SSS
+  type: ss
+  server: 51.68.206.229
   port: 8080
-  uuid: 1b0a74e1-3c69-4386-ae77-9db408d0687f
-- name: 🇺🇸US-🚀@VPNine1
-  type: vless
-  server: 199.232.78.159
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇬🇧 GB 1234 TJN
+  type: trojan
+  server: hinet.mjt001.com
+  port: 443
+  password: a1956156-b1d6-468e-b22f-59765172b07d
+  sni: hinet.mjt001.com
+- name: 🇬🇧 GB 1235 SSS
+  type: ss
+  server: 52.151.77.88
+  port: 62801
+  cipher: chacha20-ietf-poly1305
+  password: QQgNHAq1zAzjVSjMSTp8Rt
+- name: 🇬🇧 GB 1236 TJN
+  type: trojan
+  server: 52.56.183.187
+  port: 443
+  password: your_password
+  sni: aws-uk-london-1.f1rocketnode.com
+- name: 🇬🇧 GB 1237 TJN
+  type: trojan
+  server: 18.175.9.188
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: 🇬🇧 GB 1238 TJN
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: d0774966-fb63-4aca-9478-16c3f32be220
+  sni: sg.mjt000.com
+- name: 🇬🇧 GB 1239 SSS
+  type: ss
+  server: 77.72.5.113
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇫🇷 FR 1240 SSS
+  type: ss
+  server: 141.11.189.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇬🇧 GB 1241 TJN
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: d0774966-fb63-4aca-9478-16c3f32be220
+  sni: waphk.mjt000.com
+- name: 🇬🇧 GB 1242 SSS
+  type: ss
+  server: 52.56.201.59
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇯🇵 JP 1243 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 800
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1244 SSS
+  type: ss
+  server: 51.145.47.225
+  port: 45844
+  cipher: chacha20-ietf-poly1305
+  password: yCoZBIVH3JIqeUXNdive9B
+- name: 🇫🇷 FR 1245 SSS
+  type: ss
+  server: 141.11.189.55
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇬🇧 GB 1246 SSS
+  type: ss
+  server: 52.151.72.172
+  port: 31103
+  cipher: chacha20-ietf-poly1305
+  password: J6L1Hf4oKWPxbvMLc8i8ny
+- name: 🇯🇵 JP 1247 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 804
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇯🇵 JP 1248 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 801
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1249 TJN
+  type: trojan
+  server: 3.10.18.151
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: 🇬🇧 GB 1250 SSS
+  type: ss
+  server: 51.143.142.183
+  port: 59083
+  cipher: chacha20-ietf-poly1305
+  password: IJIljqaePSVQhZeA7ccN1F
+- name: 🇫🇷 FR 1251 SSS
+  type: ss
+  server: 145.239.6.202
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇯🇵 JP 1252 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 811
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1253 TJN
+  type: trojan
+  server: 51.38.65.155
+  port: 443
+  password: 1d7692c0-f51c-11ee-91eb-1239d0255272
+- name: 🇬🇧 GB 1254 SSS
+  type: ss
+  server: 77.72.5.150
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇧 GB 1255 SSS
+  type: ss
+  server: 52.151.73.254
+  port: 60502
+  cipher: chacha20-ietf-poly1305
+  password: 8MDtlO0vf7UIhqFK8aZkhJ
+- name: 🇺🇸 US 1256 SSS
+  type: ss
+  server: 51.112.72.37
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mps3FwmDjLrWaOVg
+- name: 🇬🇧 GB 1257 SSS
+  type: ss
+  server: 51.68.206.229
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1258 SSS
+  type: ss
+  server: 141.11.189.88
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷 FR 1259 SSS
+  type: ss
+  server: 145.239.6.202
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇫🇷 FR 1260 SSS
+  type: ss
+  server: 145.239.6.202
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇬🇧 GB 1261 SSS
+  type: ss
+  server: 51.141.230.84
+  port: 32755
+  cipher: chacha20-ietf-poly1305
+  password: hS5KwcNlwufMFEScwyjVkz
+- name: 🇯🇵 JP 1262 SSS
+  type: ss
+  server: 185.172.113.182
+  port: 810
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 🇬🇧 GB 1263 SSS
+  type: ss
+  server: 3.11.154.255
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: hBEBjXU6Sk0UK4T6
+- name: 🇬🇧 GB 1264 TJN
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: d0774966-fb63-4aca-9478-16c3f32be220
+  sni: jp.mjt000.com
+- name: 🇬🇧 GB 1265 SSS
+  type: ss
+  server: 104.248.169.207
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: 8z9R4FiU9Ttgpl6it_pJPw
+- name: 🇭🇰 HK 1269 TJN
+  type: trojan
+  server: chjs.lydurlclub.top
+  port: 443
+  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
+- name: 🇭🇰 HK 1271 TJN
+  type: trojan
+  server: hkjs.lydurlclub.top
+  port: 443
+  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
+- name: 🇭🇰 HK 1272 SSS
+  type: ss
+  server: 1.65.223.223
+  port: 443
+  cipher: aes-128-gcm
+  password: a-wym4ovY4Yw
+- name: 🇭🇰 HK 1275 TJN
+  type: trojan
+  server: 210.17.253.122
+  port: 42030
+  password: 2b38ff78-05bb-4261-895c-440950cf0dbd
+  sni: hkg01.service.nahidacloud.top
+- name: 🇭🇰 HK 1276 SSS
+  type: ss
+  server: 1.65.139.54
+  port: 443
+  cipher: aes-128-gcm
+  password: a-wym4ovY4Yw
+- name: 🇮🇳 IN 1278 SSS
+  type: ss
+  server: 103.113.68.27
+  port: 2352
+  cipher: chacha20-ietf-poly1305
+  password: tErM3mZ22YFQspXVwX57xq
+- name: 🇮🇳 IN 1279 SSS
+  type: ss
+  server: 103.113.68.57
+  port: 2443
+  cipher: aes-256-gcm
+  password: hh4JlBhsJ0JthpDP3vIwxXvJWHknI16AijGx6sbcqWI=
+- name: 🇮🇳 IN 1280 TJN
+  type: trojan
+  server: in-full.privateip.net
+  port: 443
+  password: 3e8f7ba4-be6e-4c16-9364-84a1ee62fb03
+- name: 🇮🇳 IN 1283 TJN
+  type: trojan
+  server: in-full.privateip.net
+  port: 443
+  password: bedabbf8-7fee-4083-aa16-269dfa569c4a
+- name: 🇺🇸 US 1284 SSS
+  type: ss
+  server: 103.124.107.178
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇮🇳 IN 1285 TJN
+  type: trojan
+  server: in-full.privateip.net
+  port: 443
+  password: 6d1e8f64-c0e3-41ff-a647-e42a5f231baa
+- name: 🇺🇸 US 1288 SSS
+  type: ss
+  server: 103.124.107.178
+  port: 30129
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇺🇸 US 1292 SSS
+  type: ss
+  server: 103.124.107.15
+  port: 16899
+  cipher: aes-128-gcm
+  password: Yc2CtrIz8L
+- name: 🇮🇸 IS 1293 SSS
+  type: ss
+  server: 37.235.49.152
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇯🇵 JP 1294 TJN
+  type: trojan
+  server: dir01.netorigins2u.site
+  port: 36116
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: jp01.abpilot.xyz
+- name: 🇰🇷 KR 1295 SSS
+  type: ss
+  server: 43.201.54.34
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1296 SSS
+  type: ss
+  server: 54.249.1.223
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1297 SSS
+  type: ss
+  server: 43.207.80.176
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1298 SSS
+  type: ss
+  server: 54.168.200.34
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1300 SSS
+  type: ss
+  server: 13.115.234.77
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1301 SSS
+  type: ss
+  server: 43.203.119.237
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1302 TJN
+  type: trojan
+  server: jp4.mmmmmmmmmm.cfd
+  port: 54234
+  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  sni: apple.com
+- name: 🇯🇵 JP 1304 SSS
+  type: ss
+  server: 18.177.138.167
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1305 SSS
+  type: ss
+  server: 43.203.207.149
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1306 SSS
+  type: ss
+  server: 52.194.214.99
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1307 SSS
+  type: ss
+  server: 45.67.53.250
+  port: 443
+  cipher: aes-256-cfb
+  password: www.xbvpn.com
+- name: 🇯🇵 JP 1308 SSS
+  type: ss
+  server: 52.195.237.101
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1309 SSS
+  type: ss
+  server: 43.207.117.29
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1310 SSS
+  type: ss
+  server: 43.201.24.53
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1311 SSS
+  type: ss
+  server: 43.201.104.145
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1312 SSS
+  type: ss
+  server: 43.201.47.36
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1314 SSS
+  type: ss
+  server: 52.195.10.194
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1315 TJN
+  type: trojan
+  server: jp2.mmmmmmmmmm.cfd
+  port: 45127
+  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  sni: apple.com
+- name: 🇯🇵 JP 1318 TJN
+  type: trojan
+  server: 139.162.91.35
+  port: 443
+  password: d22c4619-9dd1-41b1-a00e-c565a09066c8
+- name: 🇯🇵 JP 1319 SSS
+  type: ss
+  server: 54.199.83.239
+  port: 2333
+  cipher: aes-256-cfb
+  password: doub.io
+- name: 🇯🇵 JP 1320 SSS
+  type: ss
+  server: 3.112.241.19
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1321 SSS
+  type: ss
+  server: 52.69.81.42
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1323 SSS
+  type: ss
+  server: 43.201.110.81
+  port: 443
+  cipher: aes-256-gcm
+  password: amazonskr05
+- name: 🇯🇵 JP 1324 SSS
+  type: ss
+  server: 13.112.216.180
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1325 SSS
+  type: ss
+  server: 13.230.190.100
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1326 SSS
+  type: ss
+  server: 43.201.55.242
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1327 SSS
+  type: ss
+  server: 43.201.34.246
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1328 SSS
+  type: ss
+  server: 43.201.56.52
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1330 SSS
+  type: ss
+  server: 43.202.41.139
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1331 SSS
+  type: ss
+  server: 54.248.173.222
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1333 SSS
+  type: ss
+  server: 13.231.229.41
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1334 SSS
+  type: ss
+  server: 43.206.237.42
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1335 SSS
+  type: ss
+  server: 43.201.69.200
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1336 SSS
+  type: ss
+  server: 43.203.233.33
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1337 SSS
+  type: ss
+  server: 54.238.182.167
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1341 SSS
+  type: ss
+  server: 54.199.15.70
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1342 SSS
+  type: ss
+  server: 43.201.110.81
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1345 SSS
+  type: ss
+  server: 43.207.197.15
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1348 SSS
+  type: ss
+  server: 3.112.218.182
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1349 SSS
+  type: ss
+  server: 43.203.201.192
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1352 TJN
+  type: trojan
+  server: 149.28.28.167
+  port: 433
+  password: 96d7e494-afd9-4eda-ad22-759646f46a9a
+  sni: apis-jp1.veadev.com
+- name: 🇯🇵 JP 1353 SSS
+  type: ss
+  server: 52.195.237.198
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1354 TJN
+  type: trojan
+  server: dir01.netorigins2u.site
+  port: 36501
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: us01.abpilot.xyz
+- name: 🇯🇵 JP 1355 SSS
+  type: ss
+  server: 13.231.229.48
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1356 SSS
+  type: ss
+  server: 13.231.78.35
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1357 TJN
+  type: trojan
+  server: dir01.netorigins2u.site
+  port: 36201
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: sg01.abpilot.xyz
+- name: 🇯🇵 JP 1359 SSS
+  type: ss
+  server: 52.195.225.184
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1361 TJN
+  type: trojan
+  server: dir01.netorigins2u.site
+  port: 36864
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: hu01.abpilot.xyz
+- name: 🇰🇷 KR 1365 SSS
+  type: ss
+  server: 43.203.192.6
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1366 SSS
+  type: ss
+  server: 43.203.220.68
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 JP 1370 SSS
+  type: ss
+  server: 54.238.23.117
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1371 SSS
+  type: ss
+  server: p110.panda001.net
+  port: 54345
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1372 SSS
+  type: ss
+  server: 125.141.26.7
+  port: 49032
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1373 SSS
+  type: ss
+  server: 221.150.109.18
+  port: 42839
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1374 SSS
+  type: ss
+  server: 203.234.238.145
+  port: 4005
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1375 SSS
+  type: ss
+  server: 221.150.109.81
+  port: 42978
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1376 SSS
+  type: ss
+  server: p232.panda004.net
+  port: 51472
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1377 SSS
+  type: ss
+  server: 13.125.25.193
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1378 SSS
+  type: ss
+  server: 13.124.212.29
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1379 SSS
+  type: ss
+  server: 221.150.109.87
+  port: 43926
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1380 SSS
+  type: ss
+  server: 222.112.15.134
+  port: 50942
+  cipher: aes-256-gcm
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1381 SSS
+  type: ss
+  server: p222.panda001.net
+  port: 51472
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1382 SSS
+  type: ss
+  server: p233.panda004.net
+  port: 50942
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1383 SSS
+  type: ss
+  server: p220.panda001.net
+  port: 42185
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1384 SSS
+  type: ss
+  server: 54.180.138.72
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1385 SSS
+  type: ss
+  server: p226.panda004.net
+  port: 58449
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1386 SSS
+  type: ss
+  server: 54.180.156.133
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1387 SSS
+  type: ss
+  server: 221.150.109.88
+  port: 51472
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1388 SSS
+  type: ss
+  server: 221.150.109.11
+  port: 57743
+  cipher: aes-256-gcm
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1389 SSS
+  type: ss
+  server: p234.panda004.net
+  port: 58449
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1390 SSS
+  type: ss
+  server: 218.237.185.230
+  port: 54345
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1391 SSS
+  type: ss
+  server: 13.125.31.113
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1392 SSS
+  type: ss
+  server: 222.112.15.134
+  port: 50942
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1393 SSS
+  type: ss
+  server: p238.panda004.net
+  port: 57743
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1394 SSS
+  type: ss
+  server: 222.112.15.140
+  port: 58449
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1395 SSS
+  type: ss
+  server: 13.209.11.98
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1396 SSS
+  type: ss
+  server: 54.180.133.185
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1397 TJN
+  type: trojan
+  server: 59.16.152.27
+  port: 443
+  password: 3df22ece-e33a-429a-bbbc-72f468755d5c
+- name: 🇰🇷 KR 1398 SSS
+  type: ss
+  server: p236.panda004.net
+  port: 42839
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1399 SSS
+  type: ss
+  server: 13.125.19.50
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1400 SSS
+  type: ss
+  server: 13.125.127.101
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1401 SSS
+  type: ss
+  server: p228.panda004.net
+  port: 57729
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1402 SSS
+  type: ss
+  server: p231.panda004.net
+  port: 43926
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1403 SSS
+  type: ss
+  server: p229.panda004.net
+  port: 10218
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1404 SSS
+  type: ss
+  server: p227.panda004.net
+  port: 49032
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1405 SSS
+  type: ss
+  server: 125.141.26.10
+  port: 4315
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1406 SSS
+  type: ss
+  server: 125.141.26.11
+  port: 10218
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1407 SSS
+  type: ss
+  server: 211.201.169.70
+  port: 54345
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1408 SSS
+  type: ss
+  server: p221.panda001.net
+  port: 49032
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1409 SSS
+  type: ss
+  server: p225.panda004.net
+  port: 4005
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1410 SSS
+  type: ss
+  server: p078.panda001.net
+  port: 5304
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1412 SSS
+  type: ss
+  server: p220.panda001.net
+  port: 53258
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1413 SSS
+  type: ss
+  server: 54.180.9.46
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 KR 1415 SSS
+  type: ss
+  server: p230.panda004.net
+  port: 42978
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 KR 1416 SSS
+  type: ss
+  server: 203.234.238.140
+  port: 58449
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇳🇱 NL 1419 SSS
+  type: ss
+  server: 109.201.152.181
+  port: 443
+  cipher: aes-128-cfb
+  password: shadowsocks
+- name: 🇳🇱 NL 1420 TJN
+  type: trojan
+  server: 142.93.226.128
+  port: 443
+  password: 8c03bc97-6dd1-485b-9ae6-c0539929592c
+- name: 🇳🇱 NL 1422 SSS
+  type: ss
+  server: beedoost.org
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+- name: 🇳🇱 NL 1424 TJN
+  type: trojan
+  server: 209.250.246.191
+  port: 443
+  password: wkmY1R4EcP
+  sni: z-v2-003294.kailib.com
+- name: 🇳🇱 NL 1427 TJN
+  type: trojan
+  server: 95.179.128.114
+  port: 443
+  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
+  sni: hdfy8d1.cpi1.eu.org
+- name: 🇫🇷 FR 1428 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1429 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇵🇱 PL 1430 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 7306
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1431 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇫🇷 FR 1432 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1433 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1434 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇵🇱 PL 1435 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇫🇷 FR 1436 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇵🇱 PL 1437 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇵🇱 PL 1438 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇫🇷 FR 1439 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇳 UN 1440 SSS
+  type: ss
+  server: 193.243.147.128
+  port: 40368
+  cipher: aes-256-gcm
+  password: 7BcLdsO1WweoGD0X
+- name: 🇫🇷 FR 1441 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇫🇷 FR 1442 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇵🇱 PL 1443 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1444 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇵🇱 PL 1445 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇫🇷 FR 1446 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇵🇱 PL 1447 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇫🇷 FR 1448 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 7306
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇫🇷 FR 1449 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇵🇱 PL 1450 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇵🇱 PL 1451 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇵🇱 PL 1452 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1453 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1454 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1455 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇫🇷 FR 1456 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇵🇱 PL 1457 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇵🇱 PL 1458 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1459 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1460 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1461 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8881
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇫🇷 FR 1462 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇫🇷 FR 1463 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇫🇷 FR 1464 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇫🇷 FR 1465 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇫🇷 FR 1466 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5004
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇫🇷 FR 1467 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1468 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇵🇱 PL 1469 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 6379
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇵🇱 PL 1470 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇫🇷 FR 1471 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇵🇱 PL 1472 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1473 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇵🇱 PL 1474 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇵🇱 PL 1475 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇵🇱 PL 1476 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇫🇷 FR 1477 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇫🇷 FR 1478 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇵🇱 PL 1479 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8009
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇵🇱 PL 1480 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇵🇱 PL 1481 SSS
+  type: ss
+  server: 51.77.53.200
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 FR 1482 SSS
+  type: ss
+  server: 54.36.174.181
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 CA 1483 TJN
+  type: trojan
+  server: ca-full.privateip.net
+  port: 443
+  password: 71ab3866-4c8b-4a0b-a4bd-a64f110afe0b
+- name: 🇷🇺 RU 1485 TJN
+  type: trojan
+  server: 185.176.24.84
   port: 80
-  uuid: 1b71edb8-bfaf-43fc-9a95-7e81bab7e197
-  network: ws
-  ws-opts:
-    headers:
-      Host: BlackGod.global.ssl.fastly.net
-    path: /
-- name: '@v2rayng'
-  type: vless
-  server: gr4.levikogjgfdd.ir
-  port: 3031
-  uuid: 1b73f053-2709-4698-bbec-cb20e8a5f288
-- name: TEL;Father_vpn
-  type: vless
-  server: 62.238.32.25
+  password: maHanVPpN
+- name: 🇷🇺 RU 1487 SSS
+  type: ss
+  server: 45.139.24.63
+  port: 57456
+  cipher: chacha20-ietf-poly1305
+  password: 3fbeb668f48414f6
+- name: 🇷🇺 RU 1489 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇹🇷 TR 1490 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9043
+  cipher: aes-256-cfb
+  password: HSZuyJQcWe8dxNdF
+- name: 🇵🇱 PL 1491 SSS
+  type: ss
+  server: 217.30.10.68
+  port: 9038
+  cipher: aes-256-cfb
+  password: gYCYXfkUQEs2TaJQ
+- name: 🇷🇺 RU 1492 SSS
+  type: ss
+  server: 212.192.9.220
+  port: 998
+  cipher: chacha20-ietf-poly1305
+  password: cg0KkMjbGdJEh
+- name: 🇷🇺 RU 1493 TJN
+  type: trojan
+  server: ru01.freeflyingcloud.xyz
+  port: 30002
+  password: faa0fd1b-ecf9-42ae-a5f3-0a96274b64cb
+  sni: ru01.freeflyingcloud.xyz
+- name: 🇷🇺 RU 1494 SSS
+  type: ss
+  server: 139.28.220.18
+  port: 5700
+  cipher: chacha20-ietf-poly1305
+  password: UXoGWyjwDVZIl1WMuHtxSi
+- name: 🇷🇺 RU 1495 SSS
+  type: ss
+  server: 77.105.140.135
+  port: 2562
+  cipher: chacha20-ietf-poly1305
+  password: tEO1As10EffDW5svXAwgvb
+- name: 🇵🇱 PL 1497 SSS
+  type: ss
+  server: 217.30.10.68
+  port: 9079
+  cipher: aes-256-cfb
+  password: TPqX8edgbAURcAMb
+- name: 🇷🇺 RU 1498 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇹🇷 TR 1499 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9030
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇷🇺 RU 1500 SSS
+  type: ss
+  server: 89.19.216.18
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NC7jORVNrruV/+3+PwOJrnnOeG7n75X1
+- name: 🇷🇺 RU 1501 TJN
+  type: trojan
+  server: 89.221.224.94
+  port: 80
+  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
+  sni: is2-t.sshmax.xyz
+- name: 🇷🇺 RU 1502 TJN
+  type: trojan
+  server: 185.236.233.111
+  port: 2053
+  password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765
+- name: 🇷🇺 RU 1504 SSS
+  type: ss
+  server: 212.113.106.243
+  port: 13022
+  cipher: chacha20-ietf-poly1305
+  password: w5drAL7PfCIwQ2ycUuoDsV2Ls
+- name: 🇷🇺 RU 1505 TJN
+  type: trojan
+  server: ru01.freeflyingcloud.xyz
+  port: 30002
+  password: ebd1c3e8-a136-49a5-a76c-88c4bf0a23aa
+  sni: ru01.freeflyingcloud.xyz
+- name: 🇳🇱 NL 1506 SSS
+  type: ss
+  server: 109.107.172.30
+  port: 28190
+  cipher: chacha20-ietf-poly1305
+  password: 1f8jdOIKkxRWMUeOfXPeo8
+- name: 🇷🇺 RU 1507 SSS
+  type: ss
+  server: 94.142.138.56
+  port: 25091
+  cipher: chacha20-ietf-poly1305
+  password: hnRXsWFscwBEAvGnqQQoU2
+- name: 🇨🇦 CA 1508 TJN
+  type: trojan
+  server: ca-full.privateip.net
   port: 443
-  uuid: 1b9e301d-cecd-4eb1-8b36-eef811c2696d
-  tls: true
-  servername: yastatic.net
-  client-fingerprint: chrome
-- name: '@Nexus_Panell چنل تلگرام'
-  type: vless
-  server: frl3.mechanicir.ir
-  port: 10694
-  uuid: 1c142498-85ea-4762-b3a6-8b425fdc1cbc
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@Nexus_Panell چنل تلگرام'
-  type: vless
-  server: frl3.mechanicir.ir
-  port: 38479
-  uuid: 1c142498-85ea-4762-b3a6-8b425fdc1cbc
-- name: '@Nexus_Panell چنل تلگرام'
-  type: vless
-  server: lanl2.mechanicir.ir
-  port: 10694
-  uuid: 1c142498-85ea-4762-b3a6-8b425fdc1cbc
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: '@Nexus_Panell چنل تلگرام'
-  type: vless
-  server: lanl2.mechanicir.ir
-  port: 38479
-  uuid: 1c142498-85ea-4762-b3a6-8b425fdc1cbc
-- name: '@Nexus_Panell چنل تلگرام'
-  type: vless
-  server: swedl2.mechanicir.ir
-  port: 10694
-  uuid: 1c142498-85ea-4762-b3a6-8b425fdc1cbc
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸@iNetChnl
-  type: vless
-  server: inetchnl-production-3d8c.up.railway.app
+  password: 8b47d63f-1f8e-4f8e-a1e8-ead3686e5da6
+- name: 🇷🇺 RU 1509 SSS
+  type: ss
+  server: 46.226.162.112
+  port: 32913
+  cipher: chacha20-ietf-poly1305
+  password: KTwIQM1cQJwtkrjfld6Usn
+- name: 🇷🇺 RU 1510 SSS
+  type: ss
+  server: 212.113.106.243
+  port: 12949
+  cipher: chacha20-ietf-poly1305
+  password: P2zxXPewlV3BlfqqYiSthvtLc
+- name: 🇪🇸 ES 1511 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9030
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇳🇱 NL 1512 TJN
+  type: trojan
+  server: 188.119.112.242
   port: 443
-  uuid: 1c1ecd7e-52dd-7f6e-75a7-81c9475d15f9
-  tls: true
-  servername: inetchnl-production-3d8c.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: inetchnl-production-3d8c.up.railway.app
-    path: /ws/1c1ecd7e-52dd-7f6e-75a7-81c9475d15f9
-- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @ISVvpn'
-  type: vless
-  server: 104.167.24.227
-  port: 18443
-  uuid: 1c20357e-be52-4e5e-8eb6-6434adcb4b71
-  tls: true
-  servername: gp1.steptofsvo.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 'Channel : @Daily_Configs'
-  type: vless
-  server: 104.167.24.227
-  port: 18443
-  uuid: 1c20357e-be52-4e5e-8eb6-6434adcb4b71
-  tls: true
-  servername: gp1.steptofsvo.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@hex_proxy ⁴'
-  type: vless
-  server: 104.167.24.227
-  port: 18443
-  uuid: 1c20357e-be52-4e5e-8eb6-6434adcb4b71
-  tls: true
-  servername: gp1.steptofsvo.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@v2ray313 کانالمون 💚'
-  type: vless
-  server: 104.167.24.227
-  port: 18443
-  uuid: 1c20357e-be52-4e5e-8eb6-6434adcb4b71
-  tls: true
-  servername: gp1.steptofsvo.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: Tel-@ProxyMtAlpha🕌 4
-  type: vless
-  server: 104.167.24.227
-  port: 18443
-  uuid: 1c20357e-be52-4e5e-8eb6-6434adcb4b71
-  tls: true
-  servername: gp1.steptofsvo.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@hex_proxy ³'
-  type: vless
-  server: 104.167.24.227
-  port: 18443
-  uuid: 1c20357e-be52-4e5e-8eb6-6434adcb4b71
-  tls: true
-  servername: gp1.steptofsvo.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@hex_proxy ⁷'
-  type: vless
-  server: 104.167.24.227
-  port: 18443
-  uuid: 1c20357e-be52-4e5e-8eb6-6434adcb4b71
-  tls: true
-  servername: gp1.steptofsvo.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '@Vpn_Mafia 🇷🇺'
-  type: vless
-  server: 144.31.50.236
+  password: bf2307e1-a58f-41c2-8392-d76197fc2866
+- name: 🇷🇺 RU 1513 SSS
+  type: ss
+  server: 92.246.136.190
+  port: 32025
+  cipher: chacha20-ietf-poly1305
+  password: VRKnPTULDqxaExI5yLJjoc
+- name: 🇪🇸 ES 1514 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9041
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
+- name: 🇷🇺 RU 1516 SSS
+  type: ss
+  server: 78.153.149.211
+  port: 25365
+  cipher: aes-128-gcm
+  password: Telegram-ZEDMODEON
+- name: 🇷🇺 RU 1518 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1519 SSS
+  type: ss
+  server: 195.2.76.71
+  port: 60422
+  cipher: chacha20-ietf-poly1305
+  password: u3vnfMkutB4brBoGSkAphE
+- name: 🇷🇺 RU 1520 SSS
+  type: ss
+  server: 85.192.63.92
+  port: 31212
+  cipher: chacha20-ietf-poly1305
+  password: xCoBqYZGaMivNlzIhjpIH5
+- name: 🇷🇺 RU 1521 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1522 TJN
+  type: trojan
+  server: 45.140.169.83
+  port: 30002
+  password: ebd1c3e8-a136-49a5-a76c-88c4bf0a23aa
+  sni: ru01.freeflyingcloud.xyz
+- name: 🇷🇺 RU 1523 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1525 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1526 SSS
+  type: ss
+  server: 94.228.165.234
+  port: 15214
+  cipher: chacha20-ietf-poly1305
+  password: DmMQUmI7pgQDnrWqLXC00L
+- name: 🇷🇺 RU 1527 SSS
+  type: ss
+  server: 91.192.81.21
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1q7RNKaIk2wYO8fEPmEX0vWQ7Va+QRTA
+- name: 🇹🇷 TR 1529 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9040
+  cipher: aes-256-cfb
+  password: p9z5BVADH2YFs3MN
+- name: 🇷🇺 RU 1530 SSS
+  type: ss
+  server: 46.226.164.2
+  port: 16006
+  cipher: chacha20-ietf-poly1305
+  password: IKDBUJ8RH6qI10QR1MSTqR
+- name: 🇪🇸 ES 1531 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9042
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇷🇺 RU 1532 SSS
+  type: ss
+  server: 185.229.65.157
+  port: 8234
+  cipher: chacha20-ietf-poly1305
+  password: u6RYZyNId5RmoWTNTum0nz
+- name: 🇷🇺 RU 1533 SSS
+  type: ss
+  server: 94.228.169.114
+  port: 25663
+  cipher: chacha20-ietf-poly1305
+  password: 1ef9jGvAyzXLLnjssRFr8M
+- name: 🇷🇺 RU 1534 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1535 SSS
+  type: ss
+  server: 212.113.106.76
+  port: 61992
+  cipher: chacha20-ietf-poly1305
+  password: xG1e8ntN2cff9zWCkKqXEd
+- name: 🇹🇷 TR 1536 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9041
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
+- name: 🇷🇺 RU 1537 SSS
+  type: ss
+  server: 83.217.9.199
+  port: 59393
+  cipher: chacha20-ietf-poly1305
+  password: NdipHbnILjBtQgQx0Iww5q
+- name: 🇹🇷 TR 1538 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9001
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇳🇱 NL 1539 TJN
+  type: trojan
+  server: nl-full.privateip.net
   port: 443
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[ 🇷🇺 ] | @Cfox_SerVer'
-  type: vless
-  server: 144.31.50.236
+  password: bf2307e1-a58f-41c2-8392-d76197fc2866
+- name: 🇷🇺 RU 1540 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1542 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇷🇺 RU 1544 SSS
+  type: ss
+  server: 146.185.198.44
+  port: 51348
+  cipher: chacha20-ietf-poly1305
+  password: Zu5sVdhPITkII1Rf9bUTjt0ws1nks4vgBoHhe7QxwEk0j3Ai
+- name: 🇹🇷 TR 1546 SSS
+  type: ss
+  server: 45.89.52.66
+  port: 9031
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
+- name: 🇷🇺 RU 1547 SSS
+  type: ss
+  server: 212.113.106.76
+  port: 61992
+  cipher: chacha20-ietf-poly1305
+  password: oog65JXEql48VTve79V89g
+- name: 🇰🇿 KZ 1548 SSS
+  type: ss
+  server: 213.156.137.67
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇪🇸 ES 1549 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9031
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
+- name: 🇳🇱 NL 1550 TJN
+  type: trojan
+  server: nl-full.privateip.net
   port: 443
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇮 Join+Telegram:@Farah_VPN 🇫🇮
-  type: vless
-  server: 144.31.50.236
+  password: d2b376a2-c9b7-42be-8f52-26c0987f2884
+- name: 🇷🇺 RU 1551 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇦🇪 AE 1553 SSS
+  type: ss
+  server: 5.44.42.60
+  port: 64930
+  cipher: chacha20-ietf-poly1305
+  password: CkMpBwWZ0Cr1RhVVNSXXMp
+- name: 🇷🇺 RU 1555 TJN
+  type: trojan
+  server: 176.32.35.167
+  port: 1007
+  password: 85bce006-4885-11ee-8792-f23c9164ca5d
+- name: 🇷🇺 RU 1556 SSS
+  type: ss
+  server: 217.196.103.206
+  port: 29312
+  cipher: chacha20-ietf-poly1305
+  password: qgpdyzHj8rZW9fDxxkUHRI
+- name: 🇷🇺 RU 1559 SSS
+  type: ss
+  server: 46.19.69.244
+  port: 50211
+  cipher: chacha20-ietf-poly1305
+  password: XZMPTXYRC2XB8jet5UiHOn
+- name: 🇷🇺 RU 1561 SSS
+  type: ss
+  server: 5.42.86.33
+  port: 16991
+  cipher: chacha20-ietf-poly1305
+  password: zErfOQDf3lOXZ24DK9EcAL
+- name: 🇨🇿 CZ 1562 SSS
+  type: ss
+  server: 194.87.179.169
+  port: 40928
+  cipher: chacha20-ietf-poly1305
+  password: uSFiNtjwzC1y2QMPNhrXAT5gknE1mgHggsqL6gPkUFPvWqrHC63U5p5VCNZBktT7BNoykGd1gxPZy9zoSsj6Hrw5YV3XvoPh
+- name: 🇷🇺 RU 1563 SSS
+  type: ss
+  server: 185.174.137.72
+  port: 57262
+  cipher: chacha20-ietf-poly1305
+  password: WrszSP43UAOcFljDkb8vAL
+- name: 🇷🇺 RU 1564 TJN
+  type: trojan
+  server: ru01.freeflyingcloud.xyz
+  port: 30002
+  password: 4aa4c780-e45f-4011-8b0d-5ce48071bfa0
+  sni: ru01.freeflyingcloud.xyz
+- name: 🇷🇺 RU 1566 TJN
+  type: trojan
+  server: 185.176.24.84
+  port: 80
+  password: maHanVPpN
+- name: 🇵🇱 PL 1567 SSS
+  type: ss
+  server: 217.30.10.68
+  port: 9033
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇵🇱 PL 1568 SSS
+  type: ss
+  server: 217.30.10.18
+  port: 9019
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+- name: 🇷🇺 RU 1570 SSS
+  type: ss
+  server: 62.113.110.233
+  port: 15174
+  cipher: chacha20-ietf-poly1305
+  password: LLVD6lbENjzG1vj15Fvq7r
+- name: 🇷🇺 RU 1572 TJN
+  type: trojan
+  server: hk-full.privateip.net
   port: 443
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '[ 🇷🇺 ] | @Cfox_SerVer'
-  type: vless
-  server: prep.wwwinternetvideo.click
+  password: 01278779-3f58-4477-8ae7-7b82033a5d2e
+- name: 🇨🇭 CH 1573 SSS
+  type: ss
+  server: 5.182.36.245
+  port: 10141
+  cipher: chacha20-ietf-poly1305
+  password: ndJuPjq7WbFDjB4oacljGw
+- name: 🇪🇸 ES 1574 SSS
+  type: ss
+  server: 5.188.181.201
+  port: 9037
+  cipher: aes-256-cfb
+  password: TN2YqghxeFDKZfLU
+- name: 🇷🇺 RU 1575 SSS
+  type: ss
+  server: 45.67.32.147
+  port: 13896
+  cipher: chacha20-ietf-poly1305
+  password: ygSXLTCrL8zeKb2n6mghK8J26GVHWmZA4pyy84Pyg6E=
+- name: 🇦🇲 AM 1576 SSS
+  type: ss
+  server: 146.185.248.22
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇸🇬 SG 1578 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1579 TJN
+  type: trojan
+  server: 139.162.39.206
   port: 443
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@Net2ray AU'
-  type: vless
-  server: 82.115.16.211
-  port: 2082
-  uuid: 1c404fde-0aa5-482c-ab00-0b34db703ac8
-  network: ws
-  ws-opts:
-    path: /
-- name: '@ehsawn8'
-  type: vless
-  server: suupermeat.ir
-  port: 2035
-  uuid: 1c405762-61d8-4654-abf0-1ab168a237eb
-- name: چنل عضو شو @v2ra_config
-  type: vless
-  server: suupermeat.ir
-  port: 2035
-  uuid: 1c405762-61d8-4654-abf0-1ab168a237eb
+  password: 557340ab-4ae8-4593-989f-a8053bec73b6
+- name: 🇸🇬 SG 1580 SSS
+  type: ss
+  server: 13.250.63.15
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US 1581 TJN
+  type: trojan
+  server: 128.199.13.40
+  port: 30020
+  password: e9edd1db-e6f0-4c37-9be7-135335a81e6c
+  sni: us05.freeflyingcloud.xyz
+- name: 🇸🇬 SG 1582 SSS
+  type: ss
+  server: 13.250.57.60
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1583 SSS
+  type: ss
+  server: 52.221.183.250
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1584 SSS
+  type: ss
+  server: 18.142.225.182
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1585 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20182
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1586 TJN
+  type: trojan
+  server: 139.162.50.211
+  port: 443
+  password: af7d4ea7-e793-4030-9766-9a13e1f099f5
+- name: 🇸🇬 SG 1587 SSS
+  type: ss
+  server: 3.0.50.219
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1588 TJN
+  type: trojan
+  server: 134.209.105.33
+  port: 443
+  password: yR7hP9aw5L
+  sni: aka.ms
+- name: 🇸🇬 SG 1589 SSS
+  type: ss
+  server: 52.221.231.138
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1590 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20172
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇭🇰 HK 1591 SSS
+  type: ss
+  server: 8.210.89.240
+  port: 81
+  cipher: aes-128-gcm
+  password: a-wym4ovY4Yw
+- name: 🇸🇬 SG 1592 SSS
+  type: ss
+  server: 13.228.23.150
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1593 TJN
+  type: trojan
+  server: 188.166.252.91
+  port: 443
+  password: I4bO2YDEgs
+  sni: aka.ms
+- name: 🇸🇬 SG 1594 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20180
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1595 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1596 TJN
+  type: trojan
+  server: sg3-full.privateip.net
+  port: 443
+  password: b3965d2d-3b82-45cc-927b-1336aca3f3fe
+- name: 🇸🇬 SG 1597 TJN
+  type: trojan
+  server: 175.41.172.250
+  port: 17418
+  password: ISpGyFeSDr06
+  sni: appsvs.shop
+- name: 🇸🇬 SG 1598 TJN
+  type: trojan
+  server: sg04.freeflyingcloud.xyz
+  port: 30018
+  password: 15f804fa-27be-4b0f-85d4-cead43a483ef
+  sni: sg04.freeflyingcloud.xyz
+- name: 🇸🇬 SG 1599 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1600 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1603 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20181
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1604 SSS
+  type: ss
+  server: 54.251.168.143
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1605 SSS
+  type: ss
+  server: 13.229.57.68
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1606 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇺🇸 US 1607 TJN
+  type: trojan
+  server: us05.freeflyingcloud.xyz
+  port: 30020
+  password: 15f804fa-27be-4b0f-85d4-cead43a483ef
+  sni: us05.freeflyingcloud.xyz
+- name: 🇸🇬 SG 1608 SSS
+  type: ss
+  server: 13.250.61.18
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1609 SSS
+  type: ss
+  server: 13.229.184.181
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1610 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1611 SSS
+  type: ss
+  server: 54.169.147.64
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1613 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1614 SSS
+  type: ss
+  server: 18.142.56.221
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1615 SSS
+  type: ss
+  server: 18.141.207.80
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1616 TJN
+  type: trojan
+  server: 139.162.49.215
+  port: 443
+  password: b3965d2d-3b82-45cc-927b-1336aca3f3fe
+- name: 🇸🇬 SG 1617 SSS
+  type: ss
+  server: 54.254.167.160
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1618 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20177
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1619 SSS
+  type: ss
+  server: 139.59.119.251
+  port: 20175
+  cipher: chacha20-ietf-poly1305
+  password: df30da54-317f-4726-98bd-8bc8ec8140c9
+- name: 🇸🇬 SG 1620 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1621 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1623 SSS
+  type: ss
+  server: 13.250.63.15
+  port: 443
+  cipher: aes-256-gcm
+  password: amazonskr05
+- name: 🇸🇬 SG 1624 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1625 TJN
+  type: trojan
+  server: sg1.520s.pro
+  port: 37508
+  password: 57460446-1a16-4ac4-bc7d-99b99a9ecc18
+  sni: sg01.520s.pro
+- name: 🇸🇬 SG 1627 SSS
+  type: ss
+  server: 54.179.101.194
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 SG 1628 TJN
+  type: trojan
+  server: sg2-full.privateip.net
+  port: 443
+  password: 557340ab-4ae8-4593-989f-a8053bec73b6
+- name: 🇺🇸 US 1629 TJN
+  type: trojan
+  server: tj2.dalazhi.cyou
+  port: 443
+  password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+- name: 🇺🇳 UN 1632 TJN
+  type: trojan
+  server: 104.17.61.7
+  port: 443
+  password: 4732adfa16c6450bbef87264e41332db
+  sni: jobscareerfortoday.com
+- name: 🇺🇳 UN 1635 TJN
+  type: trojan
+  server: 104.18.203.232
+  port: 2083
+  password: 2dbd2a10-9512-4b60-84e6-5d9926a9fe5b
+  sni: laenatbar.seyedalikhameneibinamous.site
+- name: 🇩🇪 DE 1638 TJN
+  type: trojan
+  server: 164.90.167.242
+  port: 443
+  password: a6f2dfa2-dfde-46db-9b0d-29f8c9032ed5
+- name: 🇺🇸 US 1640 TJN
+  type: trojan
+  server: zula.ir
+  port: 443
+  password: b7f2d4a0-e736-11ee-b58a-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 1641 TJN
+  type: trojan
+  server: 172.67.159.13
+  port: 443
+  password: 75beb6a0-f893-11ee-9276-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇸 US 1643 SSS
+  type: ss
+  server: 38.121.43.65
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇸 US 1647 SSS
+  type: ss
+  server: 38.68.135.18
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 KR 1648 SSS
+  type: ss
+  server: 3.38.162.154
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US 1652 SSS
+  type: ss
+  server: 38.110.1.107
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇸 US 1654 SSS
+  type: ss
+  server: 38.68.134.9
+  port: 9102
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
