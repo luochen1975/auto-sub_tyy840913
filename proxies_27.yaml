@@ -1,246 +1,4 @@
 proxies:
-- name: 🇬🇧GB_293|2.5MB/s|A004-260618 01
-  type: hysteria2
-  server: 104.165.205.42
-  port: 8443
-  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
-  sni: speedtestmark.com
-- name: 🇬🇧GB_294|2.6MB/s|A004-260618 01
-  type: trojan
-  server: xn--1ugy405pdua.gayvibe.dpdns.org
-  port: 2174
-  password: tripitropa444
-  sni: xn--1ugy405pdua.gayvibe.dpdns.org
-- name: 🇪🇪EE_4|2.1MB/s|A004-260618 01
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇱🇻LV_19|2.7MB/s|A004-260618 01
-  type: hysteria2
-  server: hy2-latvia2.unlimited-access.ru
-  port: 443
-  password: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
-  sni: 127.0.0.1
-- name: 🇫🇷FR_1189|2.0MB/s|A004-260618 01
-  type: vless
-  server: 172.64.32.108
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- name: 🇭🇺HU_2|1.2MB/s|M003-260806 01
-  type: trojan
-  server: 46.29.142.57
-  port: 4443
-  password: C0ldyfh-vpnjantit.com
-  sni: hu2.vpnjantit.com
-- name: 🇫🇷FR_1206|338KB/s|C002-260622 01
-  type: trojan
-  server: ez-3e9698.ezaccess1ec1f0c.workers.dev
-  port: 443
-  password: c0c17d1da2c2c9299d5094c8
-  sni: ez-3e9698.ezaccess1ec1f0c.workers.dev
-- name: 🇫🇷FR_1191|377KB/s|M003-260806 01
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: c0c17d1da2c2c9299d5094c8
-  sni: ez-3e9698.ezaccess1ec1f0c.workers.dev
-- name: 🇺🇸US_749|7.5MB/s|M003-260806 01
-  type: vless
-  server: 13.143.64.253
-  port: 443
-  uuid: 20230bb6-e0da-464d-9290-392208ad14d8
-  tls: true
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-  flow: xtls-rprx-vision
-- name: 🇳🇴NO_53|1.2MB/s|M003-260806 01
-  type: vless
-  server: 194.110.207.59
-  port: 443
-  uuid: 676e31b1-da5a-49ae-86d5-803031549189
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪AE_131|1.0MB/s|M003-260806 01
-  type: vless
-  server: estproxy3.lockdwn.com
-  port: 443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  network: ws
-  ws-opts:
-    headers:
-      Host: estproxy3.lockdwn.com
-    path: /
-- name: 🇦🇪AE_132|2.1MB/s|M003-260806 01
-  type: vless
-  server: estproxy3.lockdwn.com
-  port: 8443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  tls: true
-  servername: estproxy3.lockdwn.com
-- name: 🇫🇷FR_1192|2.1MB/s|M003-260806 01
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
-  tls: true
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇨🇦CA_83|1023KB/s|M003-260806 01
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: d165fa7e-fa7a-414f-8c75-15f18bce5105
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇦🇷AR_28|345KB/s|M003-260806 01
-  type: vless
-  server: 38.180.186.202
-  port: 443
-  uuid: ddc16e82-b242-43c3-9c9c-96c0f1cce41b
-  tls: true
-  servername: zvukipro.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_1193|579KB/s|M003-260806 01
-  type: vless
-  server: 172.67.187.121
-  port: 443
-  uuid: f8546acb-185c-43a9-8065-b901c9f353c9
-  tls: true
-  servername: jtv3y5hswdq0iiykejteoqqecsx.uybhnhbhbj.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: jtv3y5hswdq0iiykejteoqqecsx.uybhnhbhbj.workers.dev
-    path: /vl/lQvZpD6BDBDFcrhffa1JYDt?ed=2560
-- name: 🇬🇧GB_295|3.5MB/s|M002-260618 01
-  type: vless
-  server: 78.129.150.216
-  port: 443
-  uuid: 196d9250-8e02-4a0f-a3bf-effa8e4aebe4
-  tls: true
-  servername: strapi.io
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇱🇻LV_20|2.7MB/s|A004-260618 01
-  type: hysteria2
-  server: 85.159.228.22
-  port: 443
-  password: GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_
-  sni: hy2-latvia2.unlimited-access.ru
-- name: 🇬🇧GB_296|468KB/s|A004-260618 01
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: 59bf58d9-ddaf-42cd-a0ca-db3559ad8714
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇰🇷KR_37|396KB/s|A004-260618 01
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: 579ac5bd-a43d-49d4-b83e-a9e3ddd1f706
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇦CA_84|1.4MB/s|A004-260618 01
-  type: ss
-  server: 35.182.118.89
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇹🇼TW_42|494KB/s|A004-260618 01
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https
-- name: 🇬🇧GB_297|1.1MB/s|A004-260618 01
-  type: trojan
-  server: 45.85.88.194
-  port: 2234
-  password: tripitropa994825
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇬🇧GB_298|2.7MB/s|A004-260618 01
-  type: trojan
-  server: 45.85.88.194
-  port: 2234
-  password: tripitropa994825
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-- name: 🇺🇸US_750|714KB/s|F003-260618 01
-  type: vless
-  server: 104.21.56.104
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  tls: true
-  servername: 1-M19.aLbanIA.KDNs.Fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 1-m19.AlbaNiA.KdNS.Fr
-    path: /CjBjB9sn5pCvaSwScc
-- name: 🇺🇸US_751|525KB/s|F003-260618 01
-  type: vless
-  server: 172.67.215.245
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  tls: true
-  servername: 4-m19.oman-LINe.KDnS.fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 4-m19.oMAN-lIne.kdNS.fR
-    path: /CjBjB9sn5pCvaSwScc
-- name: 🇺🇸US_752|760KB/s|F003-260618 01
-  type: vless
-  server: 172.67.176.60
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  tls: true
-  servername: 2-m19.SOUTh-AFrIcA.cCwU.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: 2-M19.sOutH-aFrIca.CCwU.cC
-    path: /CjBjB9sn5pCvaSwScc
-- name: 🇺🇸US_753|662KB/s|F003-260618 01
-  type: vless
-  server: 172.67.154.230
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  servername: 6-m20.b8b57933-52ee-4a3d-9ef1-be3e98e94f9b.kdns.fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 6-m20.b8b57933-52ee-4a3d-9ef1-be3e98e94f9b.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: 🇺🇸US_754|1007KB/s|F003-260618 01
-  type: vless
-  server: 104.21.46.51
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  servername: 2-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 2-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
 - name: 🇺🇸US_755|389KB/s|F003-260618 01
   type: vless
   server: 104.21.32.105
@@ -4376,3 +4134,177 @@ proxies:
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
   password: Al3fRrC5DVErEdhREpouv5xxxkU+5wgYtkGRYiEDhQw=
+- name: 未知 SS-48 | free-nodes
+  type: ss
+  server: 168.107.84.216
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
+- name: 未知 SS-49 | free-nodes
+  type: ss
+  server: 129.146.112.34
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: B+J3OwRlIlJqP9SrgA4z53LTW6ln3omf4KzaBk7Wkfw=
+- name: 未知 SS-50 | free-nodes
+  type: ss
+  server: 129.151.64.19
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: B2fwo8FnMvOLaNLVDYYbMa5oXBejTe5GvPFJhldAyF0=
+- name: 未知 SS-51 | free-nodes
+  type: ss
+  server: 147.15.47.5
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BFQyHWB20qvH0asuixcidL1wLU6XLdmFzANF3GjLFQw=
+- name: 未知 SS-52 | free-nodes
+  type: ss
+  server: 129.146.200.6
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BI4AF0V668f8NeHizVA1o5N4bjpjTOdN2tf0lo+U7xA=
+- name: 未知 SS-53 | free-nodes
+  type: ss
+  server: 144.21.33.206
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BV86qPJylUk7GQtbhPEO8PRzZ+78F9XD24HIU2z7k4o=
+- name: 未知 SS-54 | free-nodes
+  type: ss
+  server: 137.131.35.71
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BXx9inbBMWJ1C9RDbASzhzsgJy4rvTPibOWqVhLFdNo=
+- name: 未知 SS-55 | free-nodes
+  type: ss
+  server: 141.148.237.51
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Bq7fNTetsKxZR/aGO54gR4+Dac67uZ+YYRnIWuHGIo4=
+- name: 未知 SS-56 | free-nodes
+  type: ss
+  server: 144.24.160.250
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: C1U/t2iR/+R2DqqWk+e6cFFEhaAdGJfGBR+GeNrkoME=
+- name: 未知 SS-57 | free-nodes
+  type: ss
+  server: 137.131.128.103
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GGGJ69mNdkRpgCbE/lUZvtaebOqshKW8PVWgIUaaRHc=
+- name: 未知 SS-58 | free-nodes
+  type: ss
+  server: 144.22.225.161
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GRe/0J+gpJILazFMu8n4Lo6J1AjoIG2+mdCoR7RmX74=
+- name: 未知 SS-59 | free-nodes
+  type: ss
+  server: 129.146.74.96
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: DM4XRM+YsXKRBV8vbBFXyLX1k1pwNMwXivSMmiXKZF4=
+- name: 未知 SS-60 | free-nodes
+  type: ss
+  server: 134.98.133.97
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Di0niuJKfaX3xE2XbjXVE3LnDahhHuRY3OehphQn+dw=
+- name: 未知 SS-61 | free-nodes
+  type: ss
+  server: 129.151.77.233
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: DlT2mkkr4HdSTn3gCzKZ8iF+//KKBL8Kw2ytl1qprhU=
+- name: 未知 SS-62 | free-nodes
+  type: ss
+  server: 144.24.229.230
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EOMKHJ7htCaQWlQV7lWfaNS5jnhWg94TbhEMDEby7sE=
+- name: 未知 SS-63 | free-nodes
+  type: ss
+  server: 129.146.202.210
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EoVbt6nGXCEmXrCMByEIS4GVfeplyyrCfeITadO2Td8=
+- name: 未知 SS-64 | free-nodes
+  type: ss
+  server: 167.234.235.71
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Ewcm8cFWgvx3XiB06y46iTgnANcI3QBa4UGGf1OUEJQ=
+- name: 未知 SS-65 | free-nodes
+  type: ss
+  server: 161.118.203.141
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: F2M12ztwS+zxs2LT5+VDiHt3FuhbuzBMYRiswQM8b74=
+- name: 未知 SS-66 | free-nodes
+  type: ss
+  server: 92.5.66.224
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: FRVDR68yoH7fh5rIYxMxG/xkQDwzAJwXk73cBP3PLvs=
+- name: 未知 SS-67 | free-nodes
+  type: ss
+  server: 146.235.25.6
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: FWlUCAS9IBNg+5FoZ+U0kRs3dcz+oQnQkjGI/iKZMR0=
+- name: 未知 SS-68 | free-nodes
+  type: ss
+  server: 150.230.21.175
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Fjdnp1JedS40CWon0xbYH9L2XVJ6vbbZUgRcXYF5S3w=
+- name: 未知 SS-69 | free-nodes
+  type: ss
+  server: 64.181.178.255
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Fw9bgI7CnhMMq21OpAvd0AG6kI8jmhvwPPxJ/ZV+ZaM=
+- name: 未知 SS-70 | free-nodes
+  type: ss
+  server: 129.151.86.58
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: G5/4nbtSRmrPgVOeB2mYVTVYhzjr4Tp4eVgevfAlZ8I=
+- name: 未知 SS-71 | free-nodes
+  type: ss
+  server: 161.118.225.224
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: KA1/OAHhawU2vWpzCWzboh5Sy7Pf5oJRaWpUUdVGnVw=
+- name: 未知 SS-72 | free-nodes
+  type: ss
+  server: 141.148.227.92
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: KXH1wvyRSEvM9nM+k1Twlar5OyguGkr5VdW7mi/q934=
+- name: 未知 SS-73 | free-nodes
+  type: ss
+  server: 129.151.85.177
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: HEZMw3e3ObzQ4hOH3EwEh3RsD3u7zzmSOHpVGDATZRk=
+- name: 未知 SS-74 | free-nodes
+  type: ss
+  server: 129.151.84.127
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: HKSvOU0Ruej4DuNgM41S+dNISlcFU45tqwqj3BQCuYY=
+- name: 未知 SS-75 | free-nodes
+  type: ss
+  server: 129.148.44.181
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: HWBXhJoxrIyNrENJIipt9FVnzqRABmuXjSW0HtgNGI0=
+- name: 未知 SS-76 | free-nodes
+  type: ss
+  server: 129.151.84.196
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: INRdbIRZKRRbsFj4TAxNOnbAu0Yh7G/lr33SS+4V+s8=

@@ -1,265 +1,4 @@
 proxies:
-- name: 🇬🇧GB_11|313KB/s|M002-260618 01
-  type: vless
-  server: server.slavkiti.monster
-  port: 443
-  uuid: 1896c6c9-a941-4688-a865-29027bf7f8e6
-  tls: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_91|6.3MB/s|B007-260618 01
-  type: ss
-  server: 193.29.139.168
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: 🇺🇸US_170|303KB/s|A004-260618 01
-  type: trojan
-  server: 64.94.95.114
-  port: 57142
-  password: kkzh2prsyr2ik47as615
-  sni: static.rutube.ru
-  skip-cert-verify: true
-- name: 🇺🇸US_139|1.1MB/s|A004-260618 01
-  type: trojan
-  server: 64.94.95.117
-  port: 57142
-  password: kkzh2prsyr2ik47as615
-  sni: static.rutube.ru
-  skip-cert-verify: true
-- name: 🇨🇦CA_5|1.4MB/s|B007-260618 01
-  type: vless
-  server: 216.152.147.28
-  port: 443
-  uuid: d9e4721d-cdac-44c7-bc91-117367eac194
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_129|1.5MB/s|A004-260618 01
-  type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: ❓Other_33|519KB/s|B007-260618 01
-  type: trojan
-  server: 139.59.238.97
-  port: 50573
-  password: pvZE3UfT0ziK1omVLlsjINBqeqqwab1M
-  sni: 139.59.238.97
-  skip-cert-verify: true
-- name: 🇸🇬SG_6|833KB/s|B007-260618 01
-  type: tuic
-  server: 146.235.16.130
-  port: 33738
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  sni: sg2-8sb.6121999.dpdns.org
-- name: 🇫🇷FR_332|496KB/s|B007-260618 01
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 48c20f0a-c2a4-453f-8a61-ec73ea7829c5
-  network: ws
-  ws-opts:
-    headers:
-      Host: morning-brook-d78e.347.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇫🇷FR_333|434KB/s|B007-260618 01
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  tls: true
-  servername: powered-by-surena.user68f797c2f3e1b.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: powered-by-surena.user68f797c2f3e1b.workers.dev
-    path: /?ed
-- name: 🇸🇬SG_7|692KB/s|A004-260618 01
-  type: vless
-  server: 91.192.81.214
-  port: 443
-  uuid: 607801ac-dbdd-4938-a167-129015d9978e
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_130|632KB/s|K001-260618 01
-  type: vless
-  server: 170.101.109.37
-  port: 443
-  uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_334|369KB/s|B007-260618 01
-  type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: 6b89f475-913c-4381-a102-f5e06a129685
-  network: ws
-  ws-opts:
-    headers:
-      Host: proud-dawn-56f1.125-85b.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 🇬🇧GB_12|343KB/s|M002-260618 01
-  type: vless
-  server: staging.lastilhame.monster
-  port: 443
-  uuid: de38389f-5651-4f2f-8276-5aabf3b861c9
-  tls: true
-  servername: www.hollywoodreporter.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_335|462KB/s|V006-260618 01
-  type: vless
-  server: 188.114.97.6
-  port: 2096
-  uuid: 3cb4c775-bf08-4158-a0e3-cbae9ac452d7
-  tls: true
-  servername: orange-darkness-749f.phantomnettest1-65d.workers.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: orange-darkness-749f.phantomnettest1-65d.workers.dev
-    path: /sync
-- name: 🇳🇱NL_92|257KB/s|V007-260618 01
-  type: vless
-  server: 51.158.206.98
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_132|878KB/s|A004-260618 01
-  type: vless
-  server: 169.40.42.16
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_336|567KB/s|S004-260618 01
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: cc9082e4-9c7c-4cef-a0f5-963363bed638
-  network: ws
-  ws-opts:
-    headers:
-      Host: weathered-mode-8f39.83-33c.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇺🇸US_133|814KB/s|A004-260618 01
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: f9bd8170-6d98-4623-85e6-c86b14ea9b9c
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇦CA_6|1.2MB/s|A004-260618 01
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  tls: true
-  servername: google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇫🇷FR_337|2.4MB/s|M002-260618 01
-  type: vless
-  server: 172.64.147.104
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- name: 🇫🇷FR_338|5.4MB/s|M002-260618 01
-  type: vless
-  server: 104.18.42.163
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- name: 🇫🇷FR_339|1.1MB/s|M002-260618 01
-  type: vless
-  server: 172.64.144.66
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- name: 🇫🇷FR_340|906KB/s 01
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: 75323b6f-184f-4d00-839d-323b8fc70221
-  network: ws
-  ws-opts:
-    headers:
-      Host: dry-sunset-f3c4.282.workers.dev
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: ❓Other_9|1.0MB/s|A004-260618 01
-  type: ss
-  server: 82.38.31.18
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇫🇷FR_341|1.3MB/s|B007-260618 01
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_342|419KB/s|B007-260618 01
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷FR_343|562KB/s|C002-260622 01
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: 2b5753cf-4d0a-4746-b63d-cd67a3de2ccc
-  network: ws
-  ws-opts:
-    headers:
-      Host: crimson-hill-8061.166-dcf.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 🇳🇱NL_93|3.1MB/s|C002-260622 01
-  type: vless
-  server: 51.158.206.19
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 🇳🇱NL_94|3.8MB/s|C002-260622 01
   type: vless
   server: 51.158.206.20
@@ -4476,3 +4215,227 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+- name: 🇺🇸US_307|1.5MB/s|A004-260618 01
+  type: vless
+  server: 169.40.42.133
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇦🇪AE_9|1.9MB/s|A004-260618 01
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 41a463f0-8c2d-4090-8456-e3278cab8fa2
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪AE_10|1.4MB/s|A004-260618 01
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 2eea435c-8c8f-45e3-8907-956a0c6b0182
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇸🇬SG_19|559KB/s|A004-260618 01
+  type: hysteria2
+  server: 13.212.83.43
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+- name: 🇹🇼TW_11|511KB/s|A004-260618 01
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 103.115.109.49
+- name: 🇸🇬SG_20|556KB/s|A004-260618 01
+  type: hysteria2
+  server: 47.129.98.169
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+- name: 🇸🇬SG_21|531KB/s|A004-260618 01
+  type: hysteria2
+  server: 13.212.32.171
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+- name: 🇧🇷BR_3|3.0MB/s|A004-260618 01
+  type: hysteria2
+  server: 45.192.12.93
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+- name: ❓Other_26|557KB/s|A004-260618 01
+  type: hysteria2
+  server: 13.250.120.9
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+- name: 🇬🇷GR_2|1.2MB/s|B007-260618 01
+  type: vless
+  server: 94.241.174.157
+  port: 40443
+  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+  tls: true
+  servername: deepl.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇹🇼TW_12|491KB/s|A004-260618 01
+  type: hysteria2
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+- name: 🇺🇸US_308|896KB/s|A004-260618 01
+  type: vless
+  server: 31.58.50.200
+  port: 8443
+  uuid: febfeec2-9a21-4afc-9edb-0833466672cd
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇺🇸US_309|840KB/s|A004-260618 01
+  type: vless
+  server: 31.58.50.200
+  port: 8443
+  uuid: c0c5a312-f9d3-4eb4-ad6a-0aa2738ac7ab
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪AE_11|3.8MB/s|A004-260618 01
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: b77411ca-a4f1-4c3a-aadb-b4d9320a6dc1
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪AE_12|4.7MB/s|A004-260618 01
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 93a8f0b3-4c97-4d14-999c-c207a55b70b0
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪AE_13|7.2MB/s|A004-260618 01
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 4a239f83-479c-4790-a9c7-fe7ddd483a4c
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪AE_14|2.3MB/s|A004-260618 01
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 731079ad-741a-4ffd-87be-4b829fe7e843
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪AE_15|3.7MB/s|A004-260618 01
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 9109d755-5632-40f1-be82-a9fb2e2cb104
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪AE_16|97KB/s|A004-260618 01
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 77d4bb66-82c8-4511-98e0-44edb2da8978
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇪AE_17|3.7MB/s|A004-260618 01
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: c0c5a312-f9d3-4eb4-ad6a-0aa2738ac7ab
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇦🇹AT_4|2.8MB/s|A004-260618 01
+  type: vless
+  server: 152.53.114.186
+  port: 443
+  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
+  tls: true
+  servername: as.tunnelx.space
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸US_311|895KB/s|A004-260618 01
+  type: vless
+  server: 31.58.50.200
+  port: 8443
+  uuid: e3c57af3-51e0-4e06-bfd8-f05cc37d5069
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇳🇱NL_141|4.7MB/s|A004-260618 01
+  type: hysteria2
+  server: 46.229.243.133
+  port: 8443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
+- name: 🇺🇸US_312|435KB/s|A004-260618 01
+  type: trojan
+  server: 64.94.95.118
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: static.rutube.ru
+  skip-cert-verify: true
+- name: 🇦🇺AU_1|291KB/s|A004-260618 01
+  type: hysteria2
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-au-002.fastervpn.world
+- name: 🇹🇼TW_13|509KB/s|A004-260618 01
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
+- name: 🇦🇪AE_18|3.1MB/s|A004-260618 01
+  type: hysteria2
+  server: cabinet.wwwinternetvideo.click
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: 127.0.0.1
+- name: 🇩🇪DE_21|3.9MB/s|A004-260618 01
+  type: hysteria2
+  server: 5.83.129.11
+  port: 443
+  password: umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx
+  sni: germany1.h2corp.local
+- name: 🇫🇷FR_585|608KB/s|F003-260618 01
+  type: vless
+  server: 172.67.152.71
+  port: 8880
+  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
+  network: ws
+  ws-opts:
+    headers:
+      Host: morning-feather-dc98.136-25b.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
