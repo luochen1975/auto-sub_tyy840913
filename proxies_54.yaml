@@ -1,4 +1,127 @@
 proxies:
+- name: '>>@oneclickvpnkeys::FR'
+  type: vless
+  server: finite-node.rtxconfigz.com
+  port: 443
+  uuid: 25f3beef-a4b6-40bc-aa74-17a0f89f683c
+  tls: true
+  servername: finite-node.rtxconfigz.com
+  network: ws
+  ws-opts:
+    headers:
+      Host: telegram.us
+    path: /
+- name: '>>@oneclickvpnkeys::FR'
+  type: vless
+  server: 45.128.78.6
+  port: 443
+  uuid: 2ae1bbd2-dd81-4737-bbec-6a8c1c74e8f1
+  tls: true
+  servername: sellflow.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '>>@oneclickvpnkeys::SG'
+  type: vless
+  server: 146.235.16.130
+  port: 19825
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  tls: true
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '>>@oneclickvpnkeys::DE'
+  type: vless
+  server: 82.24.203.10
+  port: 2087
+  uuid: 3165b4d0-40f7-4df0-9f59-4c89ccdac92d
+  network: ws
+  ws-opts:
+    path: /3bfc3e3ed603
+- name: '>>@ShadowsocksM::US'
+  type: vless
+  server: 172.65.90.52
+  port: 8880
+  uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
+  network: ws
+  ws-opts:
+    headers:
+      Host: blue-rice-7142.30-346.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
+- name: '>>@configV2rayNG::US'
+  type: vless
+  server: 172.67.143.56
+  port: 2096
+  uuid: 3804296d-167f-4c1b-8734-147f80473590
+  tls: true
+  servername: teLeGRaM.FrEEPerSiAnLaNd1.wOrkERS.DeV
+  network: ws
+  ws-opts:
+    headers:
+      Host: telegram.freepersianland1.workers.dev
+    path: /eyJqdW5rIjoiTGFDWG90NVpxV1B1d3B0IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==?ed=2560
+- name: '>>@mehrosaboran::HK'
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  tls: true
+  servername: mao.kipfel.kdns.fr
+  network: ws
+  ws-opts:
+    headers:
+      Host: mao.kipfel.kdns.fr
+    path: /glasspanel/guest000_0_5de14443985f/
+- name: '>>@ShadowsocksM::XX'
+  type: vless
+  server: 201.24.49.53
+  port: 4100
+  uuid: 33965d4f-f9bd-4437-8867-ed705b435518
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: 188.114.96.37
+  port: 443
+  uuid: 3804296d-167f-4c1b-8734-147f80473590
+  tls: true
+  servername: TeLegrAm.FREEPErSiANland1.woRKERS.DEv
+  network: ws
+  ws-opts:
+    headers:
+      Host: telegram.freepersianland1.workers.dev
+    path: /eyJqdW5rIjoiU29DZFZoZzF6RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIl19
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: 193.23.194.167
+  port: 443
+  uuid: 32349ee8-8551-45fa-a265-8704cec72936
+  network: ws
+  ws-opts: {}
+- name: '>>@oneclickvpnkeys::XX'
+  type: vless
+  server: 193.23.194.167
+  port: 8443
+  uuid: 32349ee8-8551-45fa-a265-8704cec72936
+  tls: true
+  servername: neth.lckdwn.ru
+- name: '>>@oneclickvpnkeys::RU'
+  type: vless
+  server: 185.147.27.183
+  port: 8443
+  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  tls: true
+  servername: user-6a917f32.noooo.win
+  flow: xtls-rprx-vision
+- name: '>>@configV2rayNG::FR'
+  type: vless
+  server: 45.131.212.62
+  port: 443
+  uuid: 3ba36a4e-9542-43d3-85c1-9f0177972231
+  tls: true
+  servername: fi.sellflow.org
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
 - name: '>>@ShadowsocksM::US'
   type: vless
   server: 172.66.170.53
@@ -1672,7 +1795,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: '@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN'
-- name: 🇯🇵JP-13.196.168.79-4985
+- name: 🇯🇵JP-13.115.191.46-0162
   type: ssr
   server: live.bilibilicloud01.com
   port: 54112
