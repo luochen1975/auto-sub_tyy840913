@@ -1,4 +1,184 @@
 proxies:
+- name: 🇯🇵_JP_日本->🇷🇴_RO_罗马尼亚
+  type: hysteria2
+  server: vmt2k5g7.zf-mix-2.9999231.xyz
+  port: 2039
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: ss
+  server: 121.46.230.233
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇫🇷_FR_法国_1
+  type: hysteria2
+  server: n.acp.us.ci
+  port: 443
+  password: vlxjqoiauby22dvb
+- name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国_1
+  type: vless
+  server: 31.76.71.140
+  port: 443
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  tls: true
+- name: CN_speednode_0001
+  type: ss
+  server: 120.232.251.128
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: CN_speednode_0002
+  type: ss
+  server: 121.46.230.234
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: CN_speednode_0003
+  type: ss
+  server: 120.232.250.161
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: US_speednode_0130
+  type: vless
+  server: 38.244.4.1
+  port: 443
+  uuid: 5905d91f-c3bc-4e80-bd66-4b17beb166cb
+  tls: true
+- name: US_speednode_0132
+  type: vless
+  server: 51.81.223.225
+  port: 11094
+  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
+  tls: true
+- name: US_speednode_0135
+  type: vless
+  server: 89.117.123.243
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  tls: true
+- name: US_speednode_0136
+  type: vless
+  server: 155.117.199.13
+  port: 29893
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+  tls: true
+- name: US_speednode_0137
+  type: vless
+  server: 155.117.199.13
+  port: 39399
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+  tls: true
+- name: US_speednode_0138
+  type: vless
+  server: 107.151.250.68
+  port: 443
+  uuid: 055dce30-0ee3-44c3-b680-be1c95b8d6e7
+  tls: true
+- name: US_speednode_0139
+  type: vless
+  server: wr28-6njjgu.linenheath.site
+  port: 443
+  uuid: 9638a83e-f1f7-4cc8-a602-924965d9534f
+  tls: true
+- name: US_speednode_0142
+  type: vless
+  server: 155.117.199.13
+  port: 39211
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+  tls: true
+- name: US_speednode_0144
+  type: vless
+  server: nsuc-znkbig.avonex.top
+  port: 443
+  uuid: ec31f6d7-c71a-413d-93aa-24296805a594
+  tls: true
+- name: 美国[01]
+  type: trojan
+  server: 107.149.238.99
+  port: 658
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+  skip-cert-verify: true
+- name: 美国[02]中转
+  type: ss
+  server: vip.baima360.com
+  port: 30104
+  cipher: chacha20-ietf-poly1305
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 美国[03]中转
+  type: ss
+  server: vip.baima360.com
+  port: 17941
+  cipher: chacha20-ietf-poly1305
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 美国[04]
+  type: trojan
+  server: 45.83.140.22
+  port: 658
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+  skip-cert-verify: true
+- name: 香港[01]
+  type: trojan
+  server: 107.149.254.26
+  port: 158
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+  skip-cert-verify: true
+- name: 香港[04]中转
+  type: ss
+  server: vip.baima360.com
+  port: 65519
+  cipher: chacha20-ietf-poly1305
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 香港[05]中转
+  type: ss
+  server: vip.baima360.com
+  port: 36511
+  cipher: chacha20-ietf-poly1305
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 香港[06]
+  type: trojan
+  server: 107.149.254.26
+  port: 159
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+  skip-cert-verify: true
+- name: 香港[07]中转
+  type: ss
+  server: vip.baima360.com
+  port: 36214
+  cipher: chacha20-ietf-poly1305
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 台湾[01]中转
+  type: ss
+  server: vip.baima360.com
+  port: 41004
+  cipher: chacha20-ietf-poly1305
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 日本[01]
+  type: ss
+  server: vip.baima360.com
+  port: 15888
+  cipher: chacha20-ietf-poly1305
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 韩国[01]
+  type: trojan
+  server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
+  port: 443
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 泰国[01]
+  type: trojan
+  server: pop.e2e6e30c-9832-4092-a925-034ef112f346.heima360.cc
+  port: 443
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 法国[01]
+  type: trojan
+  server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
+  port: 443
+  password: 4568465a-a435-4569-b3ab-7f606018474f
+- name: 马来西亚[03]
+  type: trojan
+  server: pop.4b470bd6-cc42-4520-9fe6-d7d53a67b022.heima360.cc
+  port: 443
+  password: 4568465a-a435-4569-b3ab-7f606018474f
 - name: 澳大利亚[01]
   type: trojan
   server: pop.25cbab93-4c08-4a3c-8521-3f3d8c4b36ae.heima360.cc
@@ -55,104 +235,27 @@ proxies:
   port: 101
   password: 4568465a-a435-4569-b3ab-7f606018474f
   skip-cert-verify: true
-- name: 北京市+惟译天创信息技术有限公司
+- name: 德国+V2CROSS.COM
   type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  server: s8748.okgg.top
+  port: 10829
+  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
+  tls: true
+  servername: u643766u2c5f47d6s8746.gogocs.xyz
+  flow: xtls-rprx-vision
+- name: 美国+CloudFlare节点
+  type: vless
+  server: cf5.466688.xyz
+  port: 8880
+  uuid: 7111212b-6bc3-459a-85b4-3b13038a19f8
+  network: ws
+  ws-opts:
+    headers:
+      Host: shrill-fog-67af.235-e6a.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
 - name: 美国+CloudFlare节点
   type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+乔治亚洲亚特兰大Fastly节点
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MiTiVPN
-  sni: ssl.fastly.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.26.14.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.233
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.219
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+加州
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 172.67.188.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+V2CROSS.COM
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  sni: ssl.fastly.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.246
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.23.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.187
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.21.46.3
+  server: 104.18.152.161
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -162,6 +265,52 @@ proxies:
   port: 443
   password: humanity
   sni: www.ignitelimit.com
+- name: 俄罗斯+V2CROSS.COM
+  type: vless
+  server: 176.124.223.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime38.workers.dev
+    path: /
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 172.67.179.98
+  port: 8880
+  uuid: 75e19908-ecd0-4c71-99d2-4f343a52a4d9
+  network: ws
+  ws-opts:
+    headers:
+      Host: delicate-hall-3f93.239-23c.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 172.64.151.134
+  port: 8880
+  uuid: 878dd962-027b-4bd3-a1f8-66be68a03c4d
+  network: ws
+  ws-opts:
+    headers:
+      Host: young-wind-3c58.240-2ce.workers.dev
+    path: /
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 104.17.123.204
+  port: 8880
+  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
+  network: ws
+  ws-opts:
+    headers:
+      Host: long-firefly-a226.216-ce0.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
 - name: 美国+CloudFlare节点
   type: vless
   server: 172.67.195.150
@@ -174,12 +323,93 @@ proxies:
     headers:
       Host: 9-m20.dbfb5a2a-81c7-481a-b0cc-0f51aa86cc51.kdns.fr
     path: /8qMLgNapWf6SBxo8fhQlVPYO
+- name: 乌克兰+V2CROSS.COM
+  type: vless
+  server: 185.147.26.175
+  port: 443
+  uuid: 55ed97fc-77d1-4802-baf3-acef70776331
+  tls: true
+  servername: yt.orpheous.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 巴西+V2CROSS.COM
+  type: vless
+  server: idontknow.whit3.net
+  port: 443
+  uuid: 1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a
+  tls: true
+  servername: idontknow.whit3.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 德国+V2CROSS.COM
+  type: vless
+  server: 179.61.138.177
+  port: 24424
+  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
+  tls: true
+  servername: u643766u1ae394f5s71.gogocs.xyz
+  flow: xtls-rprx-vision
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 104.18.46.46
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
 - name: 美国+CloudFlare节点
   type: trojan
-  server: 104.18.12.149
+  server: 104.18.152.159
   port: 443
   password: humanity
   sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 104.24.212.81
+  port: 443
+  uuid: 52322144-50c7-9d9f-6ba9-fdb600000003
+  tls: true
+  servername: broad-wind-e1ca.salmanmahigir9508.workers.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: broad-wind-e1ca.salmanmahigir9508.workers.dev
+    path: /sync
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.16.174.33
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 172.67.205.153
+  port: 443
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  tls: true
+  servername: 6-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr
+  network: ws
+  ws-opts:
+    headers:
+      Host: 6-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
+- name: 巴林+V2CROSS.COM
+  type: vless
+  server: 188.137.182.36
+  port: 443
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  servername: eu-west-nl-1.hanvpn.biz
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 新加坡 001
   type: trojan
   server: 18.142.250.141
@@ -4158,285 +4388,4 @@ proxies:
   server: 151.101.65.57
   port: 80
   uuid: 96eec36e-2c44-5b09-898e-6f0f0526e57f
-  tls: true
-- name: 美国 666
-  type: vless
-  server: 172.64.159.64
-  port: 80
-  uuid: 977bac99-33d4-408a-91f5-0ce737793a00
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: britain.vipserver14.workers.dev
-    path: /?ed=2048
-- name: 英国 021
-  type: vless
-  server: 193.58.119.134
-  port: 443
-  uuid: 97d216c9-7561-45fa-fd67-e56fde36360b
-  tls: true
-- name: 保加利亚 005
-  type: vless
-  server: 93.123.85.218
-  port: 52
-  uuid: 9972a440-39a6-4672-8883-5dd188863acf
-  tls: true
-- name: 美国 667
-  type: vless
-  server: 104.17.107.134
-  port: 8443
-  uuid: 99c3a53c-28b3-463f-89d7-63f04505eb32
-  tls: true
-- name: 巴西 034
-  type: vless
-  server: 186.246.12.242
-  port: 2053
-  uuid: 9a47a8ff-8cdd-4a35-b765-fbad6d40e0a0
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: bz9.wba-pn.ru
-    path: /
-- name: 爱尔兰 001
-  type: vless
-  server: 78.17.190.94
-  port: 53289
-  uuid: 9a913f1c-28b3-4d0b-aa77-698302252ab7
-  tls: true
-- name: 美国 668
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-    path: /proxyip=bpb.yousef.isegaro.com
-- name: 美国 669
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-    path: /proxyip=bpb.yousef.isegaro.com
-- name: 摩尔多瓦 003
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
-- name: 俄罗斯 020
-  type: vless
-  server: 147.45.253.97
-  port: 4100
-  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: live.ok.ru
-    path: /v1
-- name: 美国 670
-  type: vless
-  server: 69.46.46.106
-  port: 443
-  uuid: 9cc29319-4f39-d763-5c1f-1796fff0a03b
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: quiet-beacon-9ee5-production.up.railway.app
-    path: /ws/9cc29319-4f39-d763-5c1f-1796fff0a03b
-- name: 美国 671
-  type: vless
-  server: 104.16.144.131
-  port: 80
-  uuid: 9e81276e-5d48-4238-b725-5ed2feec5f51
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: muddy-sun-f05e-ppal03.nakojof452.workers.dev
-    path: /?ed=2560
-- name: 美国 672
-  type: vless
-  server: 104.24.66.98
-  port: 80
-  uuid: 9e81276e-5d48-4238-b725-5ed2feec5f51
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: muddy-sun-f05e-ppal03.nakojof452.workers.dev
-    path: /?ed=2560
-- name: 美国 673
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  tls: true
-- name: 美国 674
-  type: vless
-  server: 69.46.46.54
-  port: 443
-  uuid: 9f107ce2-d1bc-4911-90f9-64b9de682031
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: srv-2d4637-eebb3c-production.up.railway.app
-    path: /ws/vless/9f107ce2-d1bc-4911-90f9-64b9de682031?ed
-- name: 美国 675
-  type: vless
-  server: 104.18.152.233
-  port: 443
-  uuid: 9f135709-60a1-4a9b-b31c-78d326d8752a
-  tls: true
-- name: 美国 676
-  type: vless
-  server: 172.66.47.69
-  port: 80
-  uuid: 9f8e7d6c-5b4a-4321-8b7a-6c5d4e3f2a1b
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: free-hzr26-cdn.sabzi.name.ng.
-    path: /
-- name: 美国 677
-  type: vless
-  server: 104.17.107.134
-  port: 443
-  uuid: AlfredConfig
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: alfi.yas-nowin.ir
-    path: /?ed=2048
-- name: 美国 678
-  type: vless
-  server: 159.246.55.251
-  port: 443
-  uuid: AlfredConfig
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: alfi.yas-nowin.ir
-    path: /?ed=2048
-- name: 英国 022
-  type: vless
-  server: 164.38.155.135
-  port: 443
-  uuid: AlfredConfig
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: alfi.yas-nowin.ir
-    path: /?ed=2048
-- name: 美国 679
-  type: vless
-  server: 199.181.197.176
-  port: 443
-  uuid: AlfredConfig
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: alfi.yas-nowin.ir
-    path: /?ed=2048
-- name: 荷兰 030
-  type: vless
-  server: 45.130.125.66
-  port: 443
-  uuid: AlfredConfig
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: alfi.yas-nowin.ir
-    path: /?ed=2048
-- name: 美国 680
-  type: vless
-  server: 151.101.129.57
-  port: 80
-  uuid: InternetAzadRobot-AliKiller
-  tls: true
-- name: 美国 681
-  type: vless
-  server: 151.101.1.57
-  port: 80
-  uuid: InternetAzadRobot
-  tls: true
-- name: 美国 682
-  type: vless
-  server: 162.159.38.119
-  port: 8080
-  uuid: Telegram-vpnjey
-  tls: true
-- name: 西班牙 006
-  type: vless
-  server: 212.34.140.205
-  port: 443
-  uuid: Telegram
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: /sg-lnd
-- name: 英国 023
-  type: vless
-  server: 82.22.40.48
-  port: 443
-  uuid: TurboConfigs
-  tls: true
-- name: 巴西 035
-  type: vless
-  server: 188.114.97.8
-  port: 443
-  uuid: V2XNET
-  tls: true
-- name: 美国 683
-  type: vless
-  server: 140.248.186.45
-  port: 443
-  uuid: XpnTeam-11
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- name: 美国 684
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: XpnTeam-17
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- name: 美国 685
-  type: vless
-  server: 104.17.108.128
-  port: 443
-  uuid: XpnTeam-39
   tls: true
