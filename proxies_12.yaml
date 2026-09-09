@@ -1,25 +1,433 @@
 proxies:
-- name: CA加拿大(mibei77.com 米贝节点分享)
+- name: 🇺🇸US美国丨yoyapai.com_7
+  type: vless
+  server: 45.151.30.127
+  port: 9873
+  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇷🇺RU俄罗斯丨yoyapai.com_1
+  type: vless
+  server: 178.72.162.73
+  port: 443
+  uuid: 60ba3369-9a78-40fe-98c3-233a6f107043
+  tls: true
+- name: 🇷🇺RU俄罗斯丨yoyapai.com_2
+  type: vless
+  server: 168.222.140.55
+  port: 2200
+  uuid: e1e26ef7-3291-45ac-b821-a11dcdbfdb4d
+  network: ws
+  ws-opts:
+    headers:
+      Host: rzd.ru
+    path: /v1
+- name: 🇷🇺RU俄罗斯丨yoyapai.com_3
+  type: vless
+  server: 176.109.108.83
+  port: 9830
+  uuid: 553e3253-c454-431d-a7e6-42bc06ea5e14
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇷🇺RU俄罗斯丨yoyapai.com_4
+  type: vless
+  server: 185.72.145.121
+  port: 5000
+  uuid: 1cf0f330-88c6-5b9b-866e-607e08cf87d6
+  tls: true
+- name: 🇷🇺RU俄罗斯丨yoyapai.com_5
+  type: vless
+  server: 5.178.85.233
+  port: 2793
+  uuid: 2f581cf2-a54e-4e34-bd59-2d6299b7635c
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇫🇷FR法国丨yoyapai.com_1
+  type: vless
+  server: 134.0.116.208
+  port: 9878
+  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪DE德国丨yoyapai.com_2
+  type: vless
+  server: 94.249.239.33
+  port: 8443
+  uuid: 133f76fc-a5ab-463e-b46d-9587d7137e55
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪DE德国丨yoyapai.com_3
+  type: vless
+  server: 217.60.68.196
+  port: 13443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+- name: 🇩🇪DE德国丨yoyapai.com_4
+  type: vless
+  server: 217.60.68.196
+  port: 13443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+- name: 🇩🇪DE德国丨yoyapai.com_5
+  type: vless
+  server: 217.60.68.196
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+- name: 🇩🇪DE德国丨yoyapai.com_6
+  type: vless
+  server: 217.60.68.196
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+- name: 🇩🇪DE德国丨yoyapai.com_7
+  type: vless
+  server: 217.60.68.196
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+- name: 🇩🇪DE德国丨yoyapai.com_8
+  type: vless
+  server: 217.60.68.196
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+- name: 🇩🇪DE德国丨yoyapai.com_9
+  type: vless
+  server: 200.165.228.114
+  port: 9871
+  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪DE德国丨yoyapai.com_10
+  type: vless
+  server: 200.165.228.114
+  port: 9871
+  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪DE德国丨yoyapai.com_11
+  type: vless
+  server: 200.165.228.114
+  port: 9871
+  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪DE德国丨yoyapai.com_12
+  type: vless
+  server: 200.165.228.114
+  port: 9871
+  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪DE德国丨yoyapai.com_13
+  type: vless
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+- name: ❓未知丨yoyapai.com_17
+  type: trojan
+  server: 8.6.112.6
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇺🇸US美国丨yoyapai.com_8
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: fe4ca690-6fd9-4471-9a9f-94528084d180
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: pan1.global.ssl.fastly.net
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+- name: 🇺🇸US美国丨yoyapai.com_9
+  type: vless
+  server: 18.154.132.116
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+    path: /
+- name: 🇳🇱NL荷兰丨yoyapai.com_4
+  type: vless
+  server: 185.109.48.13
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: forfreeuse.rtqa.ru
+    path: /
+- name: 🇷🇺RU俄罗斯丨yoyapai.com_6
+  type: vless
+  server: 200.165.228.51
+  port: 2200
+  uuid: e3a625d4-5adb-463d-bbff-bbe06b8e2c5c
+  network: ws
+  ws-opts:
+    path: /v1
+- name: 🇫🇮FI芬兰丨yoyapai.com_1
+  type: vless
+  server: 200.165.225.174
+  port: 443
+  uuid: b6b92515-13c5-4e6e-9fea-8db2d44628a0
+  tls: true
+- name: 🇪🇪EE爱沙尼亚丨yoyapai.com
+  type: vless
+  server: 5.175.178.43
+  port: 2053
+  uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
+  tls: true
+- name: 🇮🇳IN印度丨yoyapai.com
+  type: vless
+  server: 157.245.97.66
+  port: 443
+  uuid: 19001d44-63d4-496f-9a58-312a5d65668c
+  tls: true
+- name: 🇩🇪DE德国丨yoyapai.com_14
+  type: vless
+  server: 150.241.101.218.fwqfw783rg2dad.website
+  port: 443
+  uuid: 9efe092e-e4ae-4601-bb89-169fcb3db39b
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 150.241.101.218.fwqfw783rg2dad.website
+    path: /websocket
+- name: 🇷🇺RU俄罗斯丨yoyapai.com_7
+  type: vless
+  server: 104.171.136.172
+  port: 4100
+  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
+  network: ws
+  ws-opts:
+    headers:
+      Host: live.ok.ru
+    path: /v1
+- name: ❓未知丨yoyapai.com_19
+  type: vless
+  server: 199.232.239.2
+  port: 443
+  uuid: f3ac6161-3592-43ed-82f2-daf9c97806aa
+  tls: true
+- name: ❓未知丨yoyapai.com_20
+  type: vless
+  server: 18.157.224.206
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: ❓未知丨yoyapai.com_21
+  type: vless
+  server: 217.19.122.234
+  port: 9001
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: ❓未知丨yoyapai.com_22
+  type: vless
+  server: 45.151.30.127
+  port: 9873
+  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪DE德国丨yoyapai.com_15
+  type: vless
+  server: 151.101.69.253
+  port: 443
+  uuid: 884f23e9-caab-4775-9ed9-6a3a9cae677f
+  tls: true
+- name: JP日本(mibei77.com 米贝节点分享)
+  type: vless
+  server: 130.12.102.125
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: vless
+  server: 156.248.10.58
+  port: 443
+  uuid: dcc3cd22-2f65-4961-8c33-e149a898e78b
+  tls: true
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  tls: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  tls: true
+- name: JP日本(mibei77.com 米贝节点分享)_1
+  type: vless
+  server: freshjuniper.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+- name: US美国(mibei77.com 米贝节点分享)_1
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  tls: true
+- name: US美国(mibei77.com 米贝节点分享)_2
+  type: vless
+  server: 45.40.149.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime39.workers.dev
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)_3
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime42.workers.dev
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)_4
+  type: vless
+  server: 50.62.195.4
+  port: 80
+  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+  network: ws
+  ws-opts:
+    headers:
+      Host: raspy-feather-12ec.137-257.workers.dev
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)_5
+  type: vless
+  server: 50.62.198.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime39.workers.dev
+    path: /
+- name: NL荷兰(mibei77.com 米贝节点分享)_1
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+- name: US美国(mibei77.com 米贝节点分享)_6
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+- name: US美国(mibei77.com 米贝节点分享)_7
+  type: vless
+  server: 50.62.195.4
+  port: 80
+  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+  network: ws
+  ws-opts:
+    headers:
+      Host: raspy-feather-12ec.137-257.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: US美国(mibei77.com 米贝节点分享)_8
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    headers:
+      Host: Telegram-Leviko_v2ray
+    path: /4bc027a44532
+- name: US美国(mibei77.com 米贝节点分享)_9
+  type: vless
+  server: 208.103.161.249
+  port: 80
+  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
+  network: ws
+  ws-opts:
+    headers:
+      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)_10
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    headers:
+      Host: Telegram-Leviko_v2ray
+    path: /4bc027a44532
+- name: US美国(mibei77.com 米贝节点分享)_11
   type: trojan
   server: 104.18.22.63
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_13
+- name: FR法国(mibei77.com 米贝节点分享)
   type: trojan
   server: 216.24.57.7
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_14
+- name: US美国(mibei77.com 米贝节点分享)_12
   type: trojan
-  server: 104.18.23.63
+  server: 130.250.137.171
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_15
+- name: AU澳大利亚(mibei77.com 米贝节点分享)
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  ws-opts:
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
+    path: /29c8fed7ca22
+- name: CA加拿大(mibei77.com 米贝节点分享)
   type: trojan
-  server: 165.215.250.14
+  server: 104.18.22.63
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -29,41 +437,154 @@ proxies:
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_16
-  type: trojan
-  server: render.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_17
+- name: DE德国(mibei77.com 米贝节点分享)
   type: vless
-  server: fu.baiproxy.us.ci
+  server: 163.8.195.241
   port: 2087
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  tls: true
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
   network: ws
   ws-opts:
-    headers:
-      Host: fu.baiproxy.us.ci
-    path: /?ed=2560
+    path: /29c8fed7ca22
 - name: FR法国(mibei77.com 米贝节点分享)_2
   type: trojan
   server: 216.24.57.7
   port: 443
   password: humanity
   sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_13
+  type: trojan
+  server: render.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: PL波兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+- name: PL波兰(mibei77.com 米贝节点分享)_1
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    headers:
+      Host: Telegram-Leviko_v2ray
+    path: /4bc027a44532
+- name: HK香港(mibei77.com 米贝节点分享)_1
+  type: trojan
+  server: 104.18.23.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: FR法国(mibei77.com 米贝节点分享)_3
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 西班牙(mibei77.com 米贝节点分享)
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+- name: NL荷兰(mibei77.com 米贝节点分享)_2
+  type: vless
+  server: 188.164.248.123
+  port: 8443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: vp21.cc.cd
+    path: /
+- name: FR法国(mibei77.com 米贝节点分享)_4
+  type: trojan
+  server: 104.18.23.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_14
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 172.67.221.242
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_15
+  type: trojan
+  server: render.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: GB英国(mibei77.com 米贝节点分享)_1
+  type: trojan
+  server: 104.18.23.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_1
+  type: trojan
+  server: 104.18.22.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_16
+  type: vless
+  server: 80.93.202.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime02.workers.dev
+    path: /
+- name: NL荷兰(mibei77.com 米贝节点分享)_3
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  tls: true
+- name: US美国(mibei77.com 米贝节点分享)_17
+  type: vless
+  server: 193.36.38.17
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
+- name: FR法国(mibei77.com 米贝节点分享)_5
   type: trojan
   server: render.com
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_18
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  type: vless
+  server: 155.46.167.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    headers:
+      Host: vms.lifetime50.workers.dev
+    path: /
 - name: US美国(mibei77.com 米贝节点分享)_19
   type: trojan
   server: 165.215.250.14
@@ -72,328 +593,107 @@ proxies:
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_20
   type: trojan
-  server: 216.24.57.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_4
-  type: trojan
-  server: 104.18.23.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 104.18.23.63
+  server: 216.24.57.7
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_21
   type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 西班牙(mibei77.com 米贝节点分享)_1
+  type: vless
+  server: 188.220.67.245
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+- name: GB英国(mibei77.com 米贝节点分享)_2
+  type: vless
+  server: 188.220.67.245
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+- name: DE德国(mibei77.com 米贝节点分享)_1
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+- name: US美国(mibei77.com 米贝节点分享)_22
+  type: trojan
+  server: 216.24.57.1
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: DE德国(mibei77.com 米贝节点分享)_2
+  type: vless
+  server: 188.220.67.245
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+- name: US美国(mibei77.com 米贝节点分享)_23
+  type: trojan
+  server: 172.67.221.242
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_24
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_25
+  type: trojan
   server: 104.18.23.63
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_22
+- name: US美国(mibei77.com 米贝节点分享)_26
   type: vless
-  server: 172.67.153.109
-  port: 8080
-  uuid: 45643c5f-ffc2-46f3-b82c-329aea9962d4
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
   network: ws
   ws-opts:
     headers:
-      Host: server10.sotowoy673.workers.dev
-    path: /eyJqdW5rIjoiQkRZWDhCN01sIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
-- name: CA加拿大(mibei77.com 米贝节点分享)_1
+      Host: round-haze-8783.294.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
+- name: US美国(mibei77.com 米贝节点分享)_27
   type: trojan
-  server: 104.18.22.63
+  server: 216.24.57.1
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: NL荷兰(mibei77.com 米贝节点分享)_1
+- name: US美国(mibei77.com 米贝节点分享)_28
+  type: trojan
+  server: 104.18.23.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_29
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: HK香港(mibei77.com 米贝节点分享)_2
   type: vless
   server: dey.lnmarketplace.net
   port: 443
   uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   tls: true
-- name: US美国(mibei77.com 米贝节点分享)_23
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
 - name: RU俄罗斯(mibei77.com 米贝节点分享)
-  type: vless
-  server: 176.109.88.216
-  port: 443
-  uuid: 2c7f1414-87ae-4a01-9796-a02c067891a6
-  tls: true
-- name: 拉脱维亚(mibei77.com 米贝节点分享)
-  type: vless
-  server: 195.123.210.168
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-- name: US美国(mibei77.com 米贝节点分享)_24
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 刚果(mibei77.com 米贝节点分享)
-  type: vless
-  server: nl-xh01.tcp-reset-club.net
-  port: 443
-  uuid: 0678ed07-980a-49c1-9066-05caec654967
-  tls: true
-- name: 西班牙(mibei77.com 米贝节点分享)
-  type: vless
-  server: 168.222.194.138
-  port: 9880
-  uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: US美国(mibei77.com 米贝节点分享)_25
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_26
-  type: trojan
-  server: 104.17.111.8
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_27
-  type: trojan
-  server: 104.17.111.8
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: NL荷兰(mibei77.com 米贝节点分享)_2
-  type: vless
-  server: 168.222.194.138
-  port: 9880
-  uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: DE德国(mibei77.com 米贝节点分享)_1
-  type: vless
-  server: 194.55.239.190
-  port: 8445
-  uuid: 7c59eef8-978a-4071-bda4-5bcaf6d8521f
-  tls: true
-- name: US美国(mibei77.com 米贝节点分享)_28
-  type: vless
-  server: 172.67.173.191
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 3-m20.e00e.ccwu.cc
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: US美国(mibei77.com 米贝节点分享)_29
-  type: hysteria2
-  server: ush2.shazamri.xyz
-  port: 443
-  password: d19b459e-fcc3-4f2a-8f2e-77e8701cd1d8
-- name: FR法国(mibei77.com 米贝节点分享)_5
-  type: trojan
-  server: 104.17.111.4
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_30
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_31
-  type: vless
-  server: 151.242.2.81
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-- name: US美国(mibei77.com 米贝节点分享)_32
-  type: vless
-  server: 172.67.173.191
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 4-m20.e00e.ccwu.cc
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: US美国(mibei77.com 米贝节点分享)_33
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 拉脱维亚(mibei77.com 米贝节点分享)_1
-  type: vless
-  server: 195.123.210.168
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-- name: GB英国(mibei77.com 米贝节点分享)_1
-  type: vless
-  server: se-xh01.tcp-reset-club.net
-  port: 443
-  uuid: 0678ed07-980a-49c1-9066-05caec654967
-  tls: true
-- name: CA加拿大(mibei77.com 米贝节点分享)_2
-  type: trojan
-  server: 104.17.111.8
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_34
-  type: vless
-  server: 104.21.29.124
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 4-m20.d3579eb3-e5cb-497b-82f8-c353614250e0.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: US美国(mibei77.com 米贝节点分享)_35
-  type: vless
-  server: 104.21.53.114
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 2-m20.20260721-b3fa-439e-b14e-6e2ee3f22b8c.ccwu.cc
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: US美国(mibei77.com 米贝节点分享)_36
-  type: vless
-  server: 172.67.179.82
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 1-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: US美国(mibei77.com 米贝节点分享)_37
-  type: vless
-  server: 172.67.195.150
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 1-m20.dbfb5a2a-81c7-481a-b0cc-0f51aa86cc51.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: US美国(mibei77.com 米贝节点分享)_38
-  type: vless
-  server: 172.67.195.150
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 5-m20.dbfb5a2a-81c7-481a-b0cc-0f51aa86cc51.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: DE德国(mibei77.com 米贝节点分享)_2
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: 94977b19-6720-48a6-92fd-00238757ea30
-  network: ws
-  ws-opts:
-    headers:
-      Host: fragrant-credit-c4cf.148-e68.workers.dev
-    path: /
-- name: US美国(mibei77.com 米贝节点分享)_39
-  type: vless
-  server: 104.21.62.202
-  port: 443
-  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 3-m17.KazaKHStaN-link.kDnS.FR
-    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-- name: US美国(mibei77.com 米贝节点分享)_40
-  type: vless
-  server: 104.21.62.202
-  port: 443
-  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 9-M17.kAzakHStAn-LinK.kdNs.fR
-    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-- name: US美国(mibei77.com 米贝节点分享)_41
-  type: vless
-  server: 104.21.51.202
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 1-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: US美国(mibei77.com 米贝节点分享)_42
-  type: vless
-  server: 104.21.8.136
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 6-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: US美国(mibei77.com 米贝节点分享)_43
-  type: trojan
-  server: 104.17.111.4
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_44
-  type: trojan
-  server: 176.97.66.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_45
-  type: trojan
-  server: 176.97.66.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_46
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: RU俄罗斯(mibei77.com 米贝节点分享)_1
   type: vless
   server: ru05.abvpn.ru
   port: 443
@@ -404,421 +704,503 @@ proxies:
     headers:
       Host: ru05.abvpn.ru
     path: /websocket
+- name: US美国(mibei77.com 米贝节点分享)_30
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_31
+  type: trojan
+  server: 172.67.221.242
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_32
+  type: trojan
+  server: 172.67.221.242
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_33
+  type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  network: ws
+  ws-opts:
+    path: /websocket
+- name: GB英国(mibei77.com 米贝节点分享)_3
+  type: vless
+  server: 188.220.67.245
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+- name: RU俄罗斯(mibei77.com 米贝节点分享)_1
+  type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  network: ws
+  ws-opts:
+    path: /websocket
+- name: CA加拿大(mibei77.com 米贝节点分享)_2
+  type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  network: ws
+  ws-opts:
+    path: /websocket
+- name: DE德国(mibei77.com 米贝节点分享)_3
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  ws-opts:
+    headers:
+      Host: /?–v2rayNplus–v2rayNplus–v2rayNplus–
+    path: /29c8fed7ca22
+- name: RU俄罗斯(mibei77.com 米贝节点分享)_2
+  type: vless
+  server: 45.9.15.206
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: ru05.abvpn.ru
+    path: /websocket
+- name: RU俄罗斯(mibei77.com 米贝节点分享)_3
+  type: vless
+  server: 45.9.15.206
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: ru05.abvpn.ru
+    path: /websocket
+- name: US美国(mibei77.com 米贝节点分享)_34
+  type: trojan
+  server: 104.17.111.3
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: NL荷兰(mibei77.com 米贝节点分享)_4
+  type: vless
+  server: 158.101.210.31
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- name: RU俄罗斯(mibei77.com 米贝节点分享)_4
+  type: vless
+  server: 66.81.247.240
+  port: 8880
+  uuid: 6fc81c37-e8e5-486d-8f07-3d6188ceb83b
+  network: ws
+  ws-opts:
+    headers:
+      Host: rutube.hampals.net
+    path: /rutube
+- name: US美国(mibei77.com 米贝节点分享)_35
+  type: vless
+  server: 45.9.15.206
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  network: ws
+  ws-opts:
+    path: /websocket
+- name: DE德国(mibei77.com 米贝节点分享)_4
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  ws-opts:
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
+    path: /29c8fed7ca22
+- name: US美国(mibei77.com 米贝节点分享)_36
+  type: vless
+  server: pr-media.pepro.site
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws
+- name: US美国(mibei77.com 米贝节点分享)_37
+  type: hysteria2
+  server: news.gazette.help
+  port: 443
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+- name: US美国(mibei77.com 米贝节点分享)_38
+  type: trojan
+  server: 104.17.111.8
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_3
+  type: vless
+  server: 45.9.15.206
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  network: ws
+  ws-opts:
+    path: /websocket
+- name: NL荷兰(mibei77.com 米贝节点分享)_5
+  type: ss
+  server: 134.98.152.103
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: FV3tOq7ZCGpJTl9r1HvOSeQOIwXFCRf66dTTlNBFdfY=
+- name: US美国(mibei77.com 米贝节点分享)_39
+  type: trojan
+  server: 104.17.111.4
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_40
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws
+- name: US美国(mibei77.com 米贝节点分享)_41
+  type: trojan
+  server: 104.17.111.3
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_42
+  type: hysteria2
+  server: gta.internet-card.sbs
+  port: 443
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+- name: DE德国(mibei77.com 米贝节点分享)_5
+  type: ss
+  server: 130.61.180.60
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: exV2LZ5+QUQJE5Eu5FppSExJfA/FhgyFjj7aZO+o2KE=
+- name: US美国(mibei77.com 米贝节点分享)_43
+  type: trojan
+  server: 172.67.221.242
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_44
+  type: trojan
+  server: 104.17.111.1
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: NL荷兰(mibei77.com 米贝节点分享)_6
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    headers:
+      Host: 178.95.170.83
+    path: /4bc027a44532
+- name: US美国(mibei77.com 米贝节点分享)_45
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+- name: US美国(mibei77.com 米贝节点分享)_46
+  type: trojan
+  server: 104.17.111.8
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_47
   type: trojan
-  server: www.speedtest.org
+  server: 104.17.111.1
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 伊朗(mibei77.com 米贝节点分享)
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  tls: true
+- name: CA加拿大(mibei77.com 米贝节点分享)_4
+  type: trojan
+  server: 104.17.111.4
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_5
+  type: trojan
+  server: www.speedtest.net
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_48
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  tls: true
+- name: NL荷兰(mibei77.com 米贝节点分享)_7
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  tls: true
+- name: NL荷兰(mibei77.com 米贝节点分享)_8
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  tls: true
+- name: NL荷兰(mibei77.com 米贝节点分享)_9
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  tls: true
 - name: US美国(mibei77.com 米贝节点分享)_49
   type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
+  server: 104.17.177.143
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_50
-  type: trojan
-  server: 104.16.7.70
+  type: vless
+  server: 159.195.151.156
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  uuid: b5ea4dcb-cd04-466c-bd43-f9ea10953803
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: youxuan.xiaosa.kdns.fr
+    path: /
 - name: US美国(mibei77.com 米贝节点分享)_51
   type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: NL荷兰(mibei77.com 米贝节点分享)_3
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
+  server: www.speedtest.net
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_52
   type: trojan
-  server: www.ignitelimit.com
+  server: www.speedtest.net
   port: 443
   password: humanity
   sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_6
+  type: vless
+  server: brightharbor.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+- name: PL波兰(mibei77.com 米贝节点分享)_2
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  ws-opts:
+    headers:
+      Host: 178.95.170.83
+    path: /4bc027a44532
 - name: US美国(mibei77.com 米贝节点分享)_53
   type: trojan
-  server: www.speedtest.org
+  server: 104.17.111.4
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_7
+  type: trojan
+  server: 104.17.111.8
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_54
   type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  server: 104.17.177.143
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_55
   type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  server: 104.17.111.3
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_56
   type: trojan
-  server: 104.18.152.210
+  server: 104.17.111.1
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_57
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  type: vless
+  server: 213.111.149.58
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: eded-52n.pages.dev
+    path: /
 - name: US美国(mibei77.com 米贝节点分享)_58
   type: trojan
   server: join-telegram-channel-tirexnet.trex.kdns.fr
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_59
-  type: trojan
-  server: 104.16.174.185
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_60
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_61
-  type: trojan
-  server: 104.18.152.233
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_62
-  type: trojan
-  server: 104.18.152.207
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_63
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_64
-  type: trojan
-  server: 104.16.174.44
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_65
-  type: trojan
-  server: 172.67.74.2
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_66
-  type: trojan
-  server: 104.26.14.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_67
-  type: trojan
-  server: 104.26.15.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_68
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_69
-  type: trojan
-  server: 104.18.152.73
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_70
-  type: trojan
-  server: 104.18.152.140
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_71
-  type: trojan
-  server: 104.16.174.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_72
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_6
-  type: trojan
-  server: 104.16.174.148
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_73
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_74
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA加拿大(mibei77.com 米贝节点分享)_3
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_75
-  type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_76
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_77
-  type: trojan
-  server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: NL荷兰(mibei77.com 米贝节点分享)_4
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: a1ee277e-93b7-4aa9-86a2-c7ef85a2adb0
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: pane3.global.ssl.fastly.net
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-- name: US美国(mibei77.com 米贝节点分享)_78
-  type: trojan
-  server: 104.18.152.113
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_79
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_80
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_81
-  type: trojan
-  server: 104.18.152.77
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_82
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_83
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA加拿大(mibei77.com 米贝节点分享)_4
-  type: trojan
-  server: 104.18.152.73
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_84
-  type: trojan
-  server: 104.17.111.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_85
-  type: trojan
-  server: 104.16.174.124
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_86
-  type: trojan
-  server: 104.16.174.71
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_87
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-- name: US美国(mibei77.com 米贝节点分享)_88
-  type: trojan
-  server: 104.18.152.144
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_89
-  type: trojan
-  server: 104.18.152.108
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_90
-  type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_7
-  type: trojan
-  server: 104.16.174.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_91
-  type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_92
-  type: trojan
-  server: 104.16.174.148
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_93
-  type: trojan
-  server: 104.18.152.77
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_94
-  type: trojan
-  server: 104.18.152.204
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_8
+- name: CA加拿大(mibei77.com 米贝节点分享)_8
   type: trojan
   server: 86.38.214.205
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_95
+- name: FR法国(mibei77.com 米贝节点分享)_6
   type: trojan
-  server: 104.18.152.179
+  server: 45.130.125.158
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_9
-  type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_96
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_97
+- name: US美国(mibei77.com 米贝节点分享)_59
   type: trojan
   server: 104.26.15.137
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_98
-  type: trojan
-  server: 104.18.152.144
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_99
-  type: trojan
-  server: 104.16.174.71
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_100
+- name: US美国(mibei77.com 米贝节点分享)_60
   type: trojan
   server: 172.67.149.60
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_101
+- name: US美国(mibei77.com 米贝节点分享)_61
+  type: trojan
+  server: 104.18.152.225
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_62
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_63
+  type: trojan
+  server: www.speedtest.org
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_64
+  type: trojan
+  server: www.speedtest.org
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_65
+  type: trojan
+  server: 104.16.174.148
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_66
+  type: trojan
+  server: 104.18.152.207
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_67
+  type: trojan
+  server: 104.18.152.77
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_68
+  type: trojan
+  server: 104.18.152.210
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_69
+  type: trojan
+  server: 104.18.152.244
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_70
+  type: trojan
+  server: 104.18.152.233
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_71
+  type: trojan
+  server: 104.18.152.113
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_72
+  type: trojan
+  server: 172.67.74.2
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_73
   type: trojan
   server: 172.67.149.60
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_102
+- name: CA加拿大(mibei77.com 米贝节点分享)_9
   type: trojan
-  server: 104.16.174.121
+  server: ip.myip2.qzz.io
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_103
+- name: CA加拿大(mibei77.com 米贝节点分享)_10
+  type: trojan
+  server: 104.16.174.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_74
   type: trojan
   server: 198.41.223.96
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_104
+- name: US美国(mibei77.com 米贝节点分享)_75
   type: trojan
-  server: 104.21.46.3
+  server: 104.16.174.185
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_105
+- name: US美国(mibei77.com 米贝节点分享)_76
   type: trojan
-  server: 104.17.111.4
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_106
-  type: trojan
-  server: 104.16.174.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_107
-  type: trojan
-  server: 104.16.174.46
+  server: 104.18.152.133
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -828,429 +1210,698 @@ proxies:
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: CA加拿大(mibei77.com 米贝节点分享)_5
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_108
-  type: trojan
-  server: 104.18.152.179
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_109
-  type: trojan
-  server: 104.18.152.204
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: HK香港(mibei77.com 米贝节点分享)_4
+- name: US美国(mibei77.com 米贝节点分享)_77
   type: trojan
   server: 104.18.12.149
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_110
+- name: US美国(mibei77.com 米贝节点分享)_78
   type: trojan
-  server: 104.16.73.213
+  server: 104.18.152.133
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_111
+- name: CA加拿大(mibei77.com 米贝节点分享)_11
   type: trojan
-  server: 104.19.229.21
+  server: 104.16.174.44
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_112
-  type: trojan
-  server: 104.18.152.77
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_113
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_114
-  type: trojan
-  server: 104.26.15.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: HK香港(mibei77.com 米贝节点分享)_5
-  type: trojan
-  server: www.speedtest.org
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_10
-  type: trojan
-  server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_115
-  type: trojan
-  server: 104.18.152.208
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA加拿大(mibei77.com 米贝节点分享)_6
-  type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_116
-  type: trojan
-  server: 172.67.74.2
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_117
-  type: trojan
-  server: 104.18.152.97
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_118
-  type: trojan
-  server: 104.16.174.22
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_119
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_120
-  type: trojan
-  server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_121
-  type: trojan
-  server: 104.18.152.207
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_122
-  type: trojan
-  server: 104.18.152.246
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA加拿大(mibei77.com 米贝节点分享)_7
-  type: trojan
-  server: 104.16.174.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_123
-  type: trojan
-  server: 104.16.174.34
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_124
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_11
-  type: trojan
-  server: 104.16.73.213
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_125
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_126
-  type: trojan
-  server: 104.16.174.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_127
-  type: trojan
-  server: 104.16.174.6
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_128
+- name: FR法国(mibei77.com 米贝节点分享)_7
   type: trojan
   server: 104.18.152.161
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_12
-  type: trojan
-  server: 104.16.174.124
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_129
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_130
-  type: trojan
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_131
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_13
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_132
+- name: US美国(mibei77.com 米贝节点分享)_79
   type: trojan
   server: 104.16.73.213
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_133
+- name: US美国(mibei77.com 米贝节点分享)_80
   type: trojan
-  server: 104.16.174.6
+  server: 104.19.229.21
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_134
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_135
-  type: trojan
-  server: 104.16.174.22
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_136
-  type: trojan
-  server: 104.18.152.187
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_137
-  type: trojan
-  server: 104.18.152.229
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: RU俄罗斯(mibei77.com 米贝节点分享)_2
-  type: trojan
-  server: 104.18.152.219
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: HK香港(mibei77.com 米贝节点分享)_6
-  type: trojan
-  server: 104.16.174.46
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_138
-  type: trojan
-  server: 104.18.152.246
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_139
-  type: trojan
-  server: 104.18.152.159
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_140
-  type: trojan
-  server: ip.myip2.qzz.io
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_141
-  type: trojan
-  server: 104.17.111.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_142
-  type: trojan
-  server: 188.114.97.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_143
-  type: trojan
-  server: 104.16.174.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_144
-  type: trojan
-  server: ip.myip2.qzz.io
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_145
-  type: trojan
-  server: 104.16.174.46
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_146
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_147
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_148
-  type: trojan
-  server: 104.16.174.37
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_149
-  type: trojan
-  server: 104.18.152.159
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_150
+- name: FR法国(mibei77.com 米贝节点分享)_8
   type: trojan
   server: 104.16.174.101
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_151
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_152
-  type: trojan
-  server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_153
-  type: trojan
-  server: 104.18.152.219
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_154
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_155
+- name: US美国(mibei77.com 米贝节点分享)_81
   type: trojan
   server: 104.18.152.103
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_156
+- name: US美国(mibei77.com 米贝节点分享)_82
   type: trojan
-  server: 141.101.90.101
+  server: 104.16.7.70
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_157
+- name: US美国(mibei77.com 米贝节点分享)_83
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_12
   type: trojan
   server: 104.18.152.244
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_158
+- name: US美国(mibei77.com 米贝节点分享)_84
   type: trojan
-  server: 104.16.174.14
+  server: join-telegram-channel.tirexnet.kdns.fr
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_159
+- name: US美国(mibei77.com 米贝节点分享)_85
   type: trojan
-  server: 104.18.152.246
+  server: 104.18.152.229
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_160
+- name: FR法国(mibei77.com 米贝节点分享)_9
   type: trojan
-  server: 104.18.152.144
+  server: 104.16.174.124
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_161
+- name: US美国(mibei77.com 米贝节点分享)_86
+  type: trojan
+  server: 104.16.174.117
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_13
+  type: trojan
+  server: 104.16.174.22
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_14
+  type: trojan
+  server: 104.18.152.152
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_87
+  type: trojan
+  server: 104.16.174.121
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_88
+  type: trojan
+  server: 104.18.152.155
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_89
+  type: trojan
+  server: 188.114.97.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_90
+  type: trojan
+  server: 104.16.7.70
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_91
+  type: trojan
+  server: 104.16.174.148
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_92
+  type: trojan
+  server: 104.16.174.44
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_15
+  type: trojan
+  server: 104.18.152.73
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_10
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_93
+  type: trojan
+  server: 198.41.223.96
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_94
+  type: trojan
+  server: 104.18.152.230
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_16
+  type: trojan
+  server: 104.18.152.73
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_95
+  type: trojan
+  server: 104.18.152.233
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_96
+  type: trojan
+  server: 104.16.73.213
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_97
+  type: trojan
+  server: 8.6.112.0
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_11
+  type: trojan
+  server: 45.130.125.158
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_98
+  type: trojan
+  server: 172.67.74.2
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_99
+  type: trojan
+  server: 104.16.174.44
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_100
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_101
+  type: trojan
+  server: 104.16.174.71
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_102
+  type: trojan
+  server: 104.18.152.159
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_103
+  type: trojan
+  server: 104.18.152.179
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_104
+  type: trojan
+  server: 104.16.174.71
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_105
   type: trojan
   server: 104.16.174.37
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_162
+- name: US美国(mibei77.com 米贝节点分享)_106
+  type: trojan
+  server: 104.16.174.121
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_107
+  type: trojan
+  server: 104.16.174.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_108
+  type: trojan
+  server: 104.18.152.246
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_109
+  type: trojan
+  server: 104.16.174.101
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_110
+  type: trojan
+  server: 172.67.74.2
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_12
+  type: trojan
+  server: join-telegram-channel.tirexnet.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_111
+  type: trojan
+  server: 104.18.152.144
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_112
+  type: trojan
+  server: 104.18.152.210
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_13
+  type: trojan
+  server: 104.16.174.101
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_113
+  type: trojan
+  server: 188.114.97.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_114
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_115
+  type: trojan
+  server: 104.16.174.6
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_116
+  type: trojan
+  server: 198.41.223.96
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_117
+  type: trojan
+  server: 104.18.152.208
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_118
+  type: trojan
+  server: 104.16.174.33
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_119
+  type: trojan
+  server: 104.18.152.161
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_14
+  type: trojan
+  server: 104.18.152.97
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_120
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_121
+  type: trojan
+  server: 104.18.152.161
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_17
+  type: trojan
+  server: 104.16.174.33
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_122
+  type: trojan
+  server: 104.16.174.22
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_123
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_18
+  type: trojan
+  server: 104.16.174.117
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_124
+  type: trojan
+  server: 104.18.152.175
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_125
+  type: trojan
+  server: 104.18.152.50
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_126
+  type: trojan
+  server: 104.18.152.103
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_127
+  type: trojan
+  server: 104.18.152.140
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_128
+  type: trojan
+  server: 198.41.223.96
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_129
+  type: trojan
+  server: 104.18.152.204
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_130
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_131
+  type: trojan
+  server: 104.16.73.213
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_132
+  type: trojan
+  server: 104.21.46.3
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_133
+  type: trojan
+  server: www.speedtest.org
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_134
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+- name: CA加拿大(mibei77.com 米贝节点分享)_19
+  type: trojan
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_135
   type: trojan
   server: 104.16.174.72
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_163
-  type: trojan
-  server: 104.18.152.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_164
-  type: trojan
-  server: 104.18.152.113
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_165
-  type: trojan
-  server: 104.16.174.34
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_166
+- name: FR法国(mibei77.com 米贝节点分享)_15
   type: trojan
   server: 104.18.152.207
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_167
+- name: US美国(mibei77.com 米贝节点分享)_136
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_137
+  type: trojan
+  server: ip.myip2.qzz.io
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_138
+  type: trojan
+  server: 104.18.152.187
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_139
+  type: trojan
+  server: 104.16.174.121
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_140
+  type: trojan
+  server: 104.20.6.134
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_141
+  type: trojan
+  server: 104.16.174.6
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_142
+  type: trojan
+  server: 104.18.152.77
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_143
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_16
+  type: trojan
+  server: 104.18.152.179
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_144
   type: trojan
   server: 104.18.152.97
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_145
+  type: trojan
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_146
+  type: trojan
+  server: 104.18.152.230
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_147
+  type: trojan
+  server: 45.130.125.158
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_148
+  type: trojan
+  server: 104.18.152.187
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_149
+  type: trojan
+  server: 104.18.152.144
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_150
+  type: trojan
+  server: 8.6.112.0
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_151
+  type: trojan
+  server: 104.18.152.225
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_17
+  type: trojan
+  server: 104.16.174.72
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_18
+  type: trojan
+  server: 104.16.174.109
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_152
+  type: trojan
+  server: 8.6.112.0
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_19
+  type: trojan
+  server: 86.38.214.205
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_153
+  type: trojan
+  server: 104.16.174.37
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_154
+  type: trojan
+  server: 104.18.152.149
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_20
+  type: trojan
+  server: 104.16.174.34
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_155
+  type: trojan
+  server: 104.18.152.155
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_156
+  type: trojan
+  server: 104.26.14.137
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_157
+  type: trojan
+  server: join-telegram-channel.tirexnet.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_158
+  type: trojan
+  server: 104.18.152.77
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_159
+  type: trojan
+  server: 104.16.174.36
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_160
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: CA加拿大(mibei77.com 米贝节点分享)_21
+  type: trojan
+  server: 104.18.152.246
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_161
+  type: trojan
+  server: 172.67.149.60
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_20
+  type: trojan
+  server: 104.18.152.187
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_162
+  type: trojan
+  server: 104.16.174.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_163
+  type: trojan
+  server: 104.18.152.140
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_164
+  type: trojan
+  server: 104.18.152.149
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_165
+  type: trojan
+  server: 104.16.174.46
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_166
+  type: trojan
+  server: 104.18.152.113
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: US美国(mibei77.com 米贝节点分享)_167
+  type: trojan
+  server: 104.16.174.12
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1262,1828 +1913,1445 @@ proxies:
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_169
   type: trojan
-  server: 104.18.152.159
+  server: join-telegram-channel.tirexnet.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)_21
+  type: trojan
+  server: 104.18.152.219
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_170
   type: trojan
-  server: 104.18.152.204
+  server: 104.18.152.143
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_171
   type: trojan
-  server: 141.101.90.101
+  server: 104.18.152.204
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_172
   type: trojan
-  server: 141.101.90.101
+  server: 188.114.97.7
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_173
   type: trojan
-  server: 104.18.152.152
+  server: 104.18.152.159
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_174
   type: trojan
-  server: 104.16.174.37
+  server: 104.16.174.22
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_175
   type: trojan
-  server: 104.18.152.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: GB英国(mibei77.com 米贝节点分享)_2
-  type: trojan
-  server: 172.67.221.242
+  server: 104.16.174.148
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_176
   type: trojan
-  server: 104.18.152.133
+  server: 172.67.188.109
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_177
   type: trojan
-  server: 172.67.221.242
+  server: 104.20.6.134
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_178
   type: trojan
-  server: 104.18.152.230
+  server: 104.16.174.109
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_179
   type: trojan
-  server: 104.18.152.133
+  server: 104.16.174.34
   port: 443
   password: humanity
   sni: www.ignitelimit.com
+- name: AU澳大利亚(mibei77.com 米贝节点分享)_1
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
 - name: US美国(mibei77.com 米贝节点分享)_180
   type: trojan
-  server: 104.18.152.152
+  server: 104.18.152.175
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_181
   type: trojan
-  server: 104.18.152.219
+  server: 104.18.152.210
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_182
   type: trojan
-  server: 104.18.152.225
+  server: 104.18.152.50
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_183
   type: trojan
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA加拿大(mibei77.com 米贝节点分享)_8
-  type: trojan
-  server: 104.16.174.71
+  server: 86.38.214.205
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_184
   type: trojan
-  server: 188.114.97.7
+  server: 104.16.174.185
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_185
   type: trojan
-  server: 104.18.152.225
+  server: 104.18.152.144
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_186
   type: trojan
-  server: 104.16.174.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA加拿大(mibei77.com 米贝节点分享)_9
-  type: trojan
-  server: 104.16.174.117
+  server: 104.18.152.113
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享)_187
   type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_188
-  type: trojan
-  server: ip.myip2.qzz.io
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_189
-  type: trojan
-  server: 104.18.152.108
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_190
-  type: trojan
-  server: 104.18.152.210
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: FR法国(mibei77.com 米贝节点分享)_14
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_191
-  type: trojan
-  server: 104.18.152.140
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_192
-  type: trojan
-  server: 104.18.152.210
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_193
-  type: trojan
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_194
-  type: trojan
-  server: 104.16.174.148
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_195
-  type: trojan
-  server: 104.18.152.187
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_196
-  type: trojan
-  server: 104.16.174.44
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_197
-  type: trojan
-  server: 104.18.152.208
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_198
-  type: trojan
-  server: 188.114.97.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_199
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_200
-  type: trojan
-  server: 104.18.152.155
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_201
-  type: trojan
-  server: 104.18.152.187
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_202
-  type: trojan
-  server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_203
-  type: trojan
-  server: 8.6.112.0
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_204
-  type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_205
-  type: trojan
-  server: 2.144.21.112
-  port: 40443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)_206
-  type: vless
-  server: 104.21.54.32
-  port: 443
-  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8-m17.kuwAIt-LINE.kDNs.Fr
-    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-- name: US美国(mibei77.com 米贝节点分享)_207
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: GB英国(mibei77.com 米贝节点分享)_3
-  type: vless
-  server: 31.76.4.128
-  port: 5001
-  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
-  tls: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 2
-  type: trojan
-  server: 104.18.23.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 3
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 4
-  type: trojan
-  server: 216.24.57.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 5
-  type: trojan
-  server: 104.18.23.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点)
-  type: trojan
-  server: 216.24.57.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 6
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 7
-  type: trojan
-  server: 165.215.250.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 8
-  type: trojan
-  server: 104.18.23.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 9
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 10
-  type: trojan
-  server: 216.24.57.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点)
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点) 2
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 2
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 11
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 12
-  type: trojan
-  server: 104.18.23.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 13
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 3
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 14
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 15
-  type: trojan
-  server: render.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 4
-  type: trojan
-  server: render.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 16
-  type: trojan
-  server: 104.18.23.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 17
-  type: trojan
-  server: 104.17.111.8
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 18
-  type: trojan
-  server: render.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 19
-  type: trojan
-  server: 104.17.111.8
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 5
-  type: trojan
-  server: 104.17.111.4
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 20
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 21
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 22
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 23
-  type: trojan
-  server: 104.17.111.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点) 3
-  type: trojan
-  server: 104.17.111.8
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 24
-  type: trojan
-  server: 104.17.111.4
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 26
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 27
-  type: trojan
-  server: 104.17.111.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 28
-  type: trojan
-  server: 104.18.152.103
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 29
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 30
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 31
-  type: trojan
-  server: 104.16.174.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 32
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 33
-  type: trojan
-  server: 104.18.152.155
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 34
-  type: trojan
-  server: 104.18.152.77
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 35
-  type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 36
-  type: trojan
-  server: 104.18.152.207
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 37
-  type: trojan
-  server: 104.16.174.34
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 38
-  type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 39
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 40
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 41
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 42
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 43
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 44
-  type: trojan
-  server: 104.16.174.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 45
-  type: trojan
-  server: 8.6.112.0
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 46
-  type: trojan
-  server: 104.26.15.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 47
-  type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 48
-  type: trojan
-  server: 104.26.15.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 6
-  type: trojan
-  server: 104.18.152.179
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 7
-  type: trojan
-  server: 104.16.174.124
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 49
-  type: trojan
-  server: 104.16.174.6
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 50
-  type: trojan
-  server: 104.16.174.22
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 51
-  type: trojan
-  server: 104.26.14.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 52
-  type: trojan
-  server: 104.18.152.159
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 53
-  type: trojan
-  server: 172.67.74.2
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 54
-  type: trojan
-  server: 104.16.73.213
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 55
-  type: trojan
-  server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 56
-  type: trojan
-  server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 57
-  type: trojan
-  server: 104.18.152.246
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 58
-  type: trojan
-  server: 104.18.152.246
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 59
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 60
-  type: trojan
-  server: 104.16.174.37
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 61
-  type: trojan
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 62
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 8
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 63
-  type: trojan
-  server: 104.18.152.207
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 64
-  type: trojan
-  server: 104.18.152.140
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点) 4
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 65
-  type: trojan
-  server: 176.97.66.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 66
+  server: 104.16.174.46
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 每天更新免费节点：v2rayclashfree.com
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: tg频道：@v2rayclashfree
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 更新于：2026-09-08 13:13:19
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 🇭🇰 香港 02
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+- name: 🇭🇰 香港 03
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+- name: 🇭🇰 香港 04
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+- name: 🇭🇰 香港 05
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  sni: 119.246.1.143
+- name: 🇭🇰 香港 06
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+- name: 🇭🇰 香港 07
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2fripaojiedian
+- name: 🇭🇰 香港 08
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+- name: 🇭🇰 香港 11
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  sni: t.me
+- name: 🇻🇳VN²_1|2.1MB/s|GPT⁺|GM|X|Succeed 01
+  type: ss
+  server: 103.186.154.172
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN²_2|1.6MB/s|GPT|X|History 01
+  type: ss
+  server: 103.186.155.80
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN²_3|2.9MB/s|GPT⁺|YT-US|X|History 01
+  type: ss
+  server: 103.186.154.251
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN²_4|2.2MB/s|GPT⁺|YT|X 01
+  type: ss
+  server: 103.186.154.17
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 原生机房 01
+  type: ss
+  server: 103.186.155.206
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN²_6|0.5MB/s|GPT|YT|X|History 01
+  type: ss
+  server: 103.186.154.173
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇸🇬SG²_1|2.4MB/s|X|History 01
+  type: ss
+  server: 103.186.155.16
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇳🇱NL_1|9.2MB/s 01
+  type: ss
+  server: 82.38.31.48
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_2|3.9MB/s 01
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_3|3.3MB/s 01
+  type: ss
+  server: 82.38.31.191
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇺🇸US_1|1.3MB/s 01
+  type: ss
+  server: 37.19.198.160
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL_4|4.8MB/s 01
+  type: ss
+  server: 109.201.152.181
+  port: 443
+  cipher: aes-128-cfb
+  password: shadowsocks
+- name: 🇳🇱NL_5|1.1MB/s 01
+  type: ss
+  server: 82.38.31.2
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_6|7.6MB/s 01
+  type: ss
+  server: 82.38.31.215
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_7|3.2MB/s 01
+  type: ss
+  server: 82.38.31.32
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷FR_1|1.3MB/s 01
   type: trojan
   server: 104.18.152.97
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 9
+- name: 🇫🇷FR_2|518KB/s 01
   type: trojan
-  server: 104.18.152.161
+  server: 104.18.152.219
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 67
-  type: trojan
-  server: www.ignitelimit.com
+- name: 🇫🇷FR_3|207KB/s 01
+  type: vless
+  server: bab-6.site
   port: 443
-  password: humanity
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 68
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: bab-6.site
+    path: /vws/
+- name: 🇫🇷FR_4|1.3MB/s 01
   type: trojan
-  server: 8.6.112.0
+  server: 104.18.152.113
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 69
+- name: 🇫🇷FR_5|1.4MB/s 01
+  type: trojan
+  server: 104.18.22.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇳🇱NL_9|5.5MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.29
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_10|1.5MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.46
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_11|7.1MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.47
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇺🇸US_4|1.2MB/s|A004-260618 01
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US_5|1.1MB/s|A004-260618 01
+  type: ss
+  server: 173.244.56.9
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL_12|7.9MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.200
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_13|7.4MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.187
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_14|658KB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.149
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇩🇪DE_2|2.3MB/s|A004-260618 01
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+- name: 🇳🇱NL_15|1.1MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.7
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷FR_7|1.6MB/s|B007-260618 01
+  type: trojan
+  server: 104.16.174.117
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_8|1.5MB/s|B007-260618 01
+  type: trojan
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_9|1.0MB/s|B007-260618 01
+  type: trojan
+  server: 104.18.152.225
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_10|1.5MB/s|B007-260618 01
+  type: trojan
+  server: 45.130.125.158
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_11|1.6MB/s|C002-260622 01
+  type: trojan
+  server: 104.16.174.46
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_12|749KB/s|C002-260622 01
+  type: trojan
+  server: 104.17.177.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇳🇱NL_19|4.9MB/s|C002-260622 01
+  type: ss
+  server: 82.38.31.156
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷FR_13|1.0MB/s|C002-260622 01
+  type: trojan
+  server: 104.18.152.73
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_14|1.0MB/s|C002-260622 01
+  type: trojan
+  server: 104.18.152.204
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_15|1.4MB/s|C002-260622 01
+  type: trojan
+  server: 104.18.152.175
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_16|915KB/s|C002-260622 01
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_17|1.6MB/s|C002-260622 01
+  type: trojan
+  server: 104.16.7.70
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_18|972KB/s|C002-260622 01
+  type: trojan
+  server: 104.18.152.50
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_19|898KB/s|C002-260622 01
+  type: trojan
+  server: 198.41.223.96
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_20|2.8MB/s|C002-260622 01
+  type: trojan
+  server: 104.18.152.207
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_21|942KB/s|C002-260622 01
   type: trojan
   server: www.speedtest.org
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 70
+- name: 🇺🇸US_11|978KB/s 01
+  type: ss
+  server: 173.244.56.6
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵JP_3|610KB/s|A004-260618 01
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇫🇷FR_23|152KB/s|B007-260618 01
   type: trojan
-  server: 104.18.152.140
+  server: 104.18.152.187
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 71
+- name: 🇳🇱NL_28|2.5MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.204
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇺🇸US_12|1.1MB/s|A004-260618 01
   type: trojan
-  server: 104.18.152.159
+  server: 64.94.95.117
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: static.rutube.ru
+- name: 🇳🇱NL_30|3.9MB/s|B007-260618 01
+  type: ss
+  server: 82.38.31.162
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_31|604KB/s 01
+  type: ss
+  server: 82.38.31.208
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇫🇷FR_24|515KB/s 01
+  type: trojan
+  server: 104.18.23.63
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 72
-  type: trojan
-  server: 104.17.111.4
+- name: 🇳🇱NL_32|414KB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.181
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_33|4.1MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.174
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_34|869KB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.206
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_35|2.2MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.34
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_36|7.8MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.185
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_37|1.0MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.3
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇯🇵JP_4|693KB/s|A004-260618 01
+  type: ss
+  server: 149.22.87.241
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 73
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US_14|1006KB/s|B007-260618 01
   type: trojan
-  server: 104.18.152.113
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 74
+  server: 64.94.95.115
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: static.rutube.ru
+- name: 🇺🇸US_21|960KB/s|C002-260622 01
   type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 75
+  server: 64.94.95.114
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: 64.94.95.114
+- name: 🇺🇸US_22|846KB/s|C002-260622 01
   type: trojan
-  server: 104.16.174.71
+  server: 64.94.95.117
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: 64.94.95.117
+- name: 🇫🇷FR_25|2.0MB/s|M002-260618 01
+  type: vless
+  server: 104.18.42.163
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_26|1.7MB/s|M002-260618 01
+  type: vless
+  server: 172.64.144.66
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_27|1.0MB/s|T001-260618 01
+  type: vless
+  server: 104.18.42.54
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_28|1.3MB/s|M002-260618 01
+  type: vless
+  server: 172.64.53.194
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇹🇼TW_2|327KB/s|R002-260618 01
+  type: vless
+  server: 60.248.219.78
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 76
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+- name: 🇳🇱NL_45|3.4MB/s|B007-260618 01
+  type: ss
+  server: 82.38.31.201
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇺🇸US_34|929KB/s|B007-260618 01
   type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 77
-  type: trojan
-  server: 104.26.14.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点) 5
-  type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 78
-  type: trojan
-  server: 104.16.174.37
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 79
-  type: trojan
-  server: 172.67.74.2
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 10
-  type: trojan
-  server: 104.18.152.219
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点) 6
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 80
-  type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 81
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 82
-  type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 83
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 84
-  type: trojan
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 85
-  type: trojan
-  server: 104.16.174.37
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 86
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 87
-  type: trojan
-  server: 104.16.174.185
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 88
-  type: trojan
-  server: 104.18.152.159
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 89
-  type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 11
-  type: trojan
-  server: 104.16.174.148
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 90
-  type: trojan
-  server: 104.16.174.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 91
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 92
-  type: trojan
-  server: 104.18.152.73
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 93
-  type: trojan
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 94
+  server: 64.94.95.115
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+- name: 🇫🇷FR_29|1.6MB/s|S004-260618 01
   type: trojan
   server: 104.26.15.137
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 95
-  type: trojan
-  server: ip.myip2.qzz.io
+- name: 🇳🇱NL_46|3.3MB/s 01
+  type: ss
+  server: 82.38.31.210
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_47|4.8MB/s 01
+  type: ss
+  server: 82.38.31.15
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 96
-  type: trojan
-  server: 104.18.152.208
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_48|3.2MB/s 01
+  type: ss
+  server: 82.38.31.180
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_49|1007KB/s 01
+  type: ss
+  server: 193.29.139.144
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇺🇸US_39|1.5MB/s 01
+  type: ss
+  server: 108.181.57.93
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: RSo52SbxW40r
+- name: 🇳🇱NL_50|7.4MB/s 01
+  type: ss
+  server: 82.38.31.183
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_51|8.3MB/s 01
+  type: ss
+  server: 82.38.31.213
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_52|368KB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.203
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_53|4.7MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.207
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_54|2.5MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.16
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_55|3.1MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.17
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_56|963KB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.57
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 97
-  type: trojan
-  server: 172.67.149.60
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_57|3.6MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.18
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_58|2.3MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_59|6.5MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.35
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 98
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇺🇸US_41|992KB/s|A004-260618 01
   type: trojan
-  server: 104.16.174.34
+  server: 64.94.95.114
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: static.rutube.ru
+- name: 🇳🇱NL_60|8.8MB/s|B007-260618 01
+  type: ss
+  server: 82.38.31.36
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 99
-  type: trojan
-  server: 104.18.152.210
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_61|6.1MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.216
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_62|3.0MB/s|S004-260618 01
+  type: ss
+  server: 82.38.31.36
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_63|2.0MB/s|B007-260618 01
+  type: ss
+  server: 193.29.139.132
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_64|6.3MB/s|A004-260618 01
+  type: ss
+  server: 193.29.139.234
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: 🇳🇱NL_65|345KB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.189
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇨🇦CA_4|1.1MB/s|A004-260618 01
+  type: ss
+  server: 149.22.95.183
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 100
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 101
-  type: trojan
-  server: 104.18.152.155
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 12
-  type: trojan
-  server: 104.18.152.97
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 102
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL_67|3.8MB/s|A004-260618 01
+  type: ss
+  server: 193.29.139.230
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷FR_30|5.1MB/s|M002-260618 01
+  type: vless
+  server: 104.16.150.246
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_31|6.3MB/s|M002-260618 01
+  type: vless
+  server: 104.16.151.21
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_32|2.3MB/s|M002-260618 01
+  type: vless
+  server: 172.64.52.30
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_34|2.6MB/s|M002-260618 01
+  type: vless
+  server: 104.19.215.97
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_35|921KB/s|S004-260618 01
   type: trojan
   server: 104.18.152.140
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 103
+- name: 🇫🇷FR_36|1.9MB/s|M002-260618 01
+  type: vless
+  server: 172.64.52.173
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_37|1000KB/s|B007-260618 01
   type: trojan
-  server: 104.18.152.152
+  server: render.com
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 104
+- name: 🇫🇷FR_39|1.9MB/s|M002-260618 01
+  type: vless
+  server: 172.64.52.97
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_40|2.1MB/s|T001-260618 01
+  type: vless
+  server: 172.64.53.240
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_41|3.1MB/s|M002-260618 01
+  type: vless
+  server: 172.64.52.68
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_42|1.3MB/s|M002-260618 01
+  type: vless
+  server: 104.16.150.108
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_43|1.8MB/s|M002-260618 01
+  type: vless
+  server: 104.18.38.47
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_44|1.5MB/s|M002-260618 01
+  type: vless
+  server: 104.19.214.97
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_45|1.5MB/s|F003-260618 01
   type: trojan
-  server: 104.16.7.70
+  server: 8.6.112.6
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点) 7
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 105
-  type: trojan
-  server: 104.18.152.187
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 106
-  type: trojan
-  server: 104.18.152.161
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 107
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 108
-  type: trojan
-  server: ip.myip2.qzz.io
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 109
-  type: trojan
-  server: 104.16.174.6
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 110
-  type: trojan
-  server: 8.6.112.0
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 13
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 111
-  type: trojan
-  server: 104.18.152.208
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 112
-  type: trojan
-  server: 104.18.152.219
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 14
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 113
-  type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 114
-  type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 115
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 116
-  type: trojan
-  server: 104.16.174.22
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 117
-  type: trojan
-  server: 188.114.97.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 118
-  type: trojan
-  server: 104.18.152.113
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 119
+- name: 🇫🇷FR_46|4.3MB/s|M002-260618 01
+  type: vless
+  server: 172.64.149.209
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: ❓Other_2|634KB/s|A001-260618 01
   type: trojan
   server: 104.16.174.14
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 120
+- name: 🇫🇷FR_47|1.6MB/s|M002-260618 01
+  type: vless
+  server: 104.19.214.146
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_48|2.1MB/s|M002-260618 01
+  type: vless
+  server: 172.64.145.202
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_49|1.4MB/s|F003-260618 01
   type: trojan
-  server: 104.18.152.50
+  server: 216.24.57.1
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 121
-  type: trojan
-  server: 104.16.174.44
+- name: 🇺🇸US_74|1.1MB/s 01
+  type: ss
+  server: 156.146.38.169
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 122
-  type: trojan
-  server: 104.18.152.229
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US_75|1.3MB/s 01
+  type: ss
+  server: 156.146.38.170
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 123
-  type: trojan
-  server: 104.16.174.44
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 124
-  type: trojan
-  server: 104.18.152.233
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 125
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 126
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 127
-  type: trojan
-  server: 104.18.152.230
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 128
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 129
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 130
-  type: trojan
-  server: 104.16.174.44
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 131
-  type: trojan
-  server: 104.16.174.71
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 132
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 133
-  type: trojan
-  server: 104.16.174.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 134
-  type: trojan
-  server: 104.16.174.22
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 135
-  type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 136
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL_73|1.2MB/s 01
+  type: ss
+  server: 82.38.31.192
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_74|2.1MB/s 01
+  type: ss
+  server: 82.38.31.35
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_75|1.1MB/s 01
+  type: ss
+  server: 82.38.31.10
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_76|585KB/s 01
+  type: ss
+  server: 82.38.31.219
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇫🇷FR_50|942KB/s 01
   type: trojan
   server: www.ignitelimit.com
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 137
+- name: 🇫🇷FR_51|208KB/s 01
   type: trojan
-  server: 104.18.152.187
+  server: 104.17.111.8
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 138
+- name: 🇳🇱NL_78|2.1MB/s 01
+  type: ss
+  server: 82.38.31.39
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇺🇸US_76|1.4MB/s 01
+  type: ss
+  server: 138.199.42.68
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪DE_8|3.3MB/s 01
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+- name: 🇳🇱NL_79|1.0MB/s 01
+  type: ss
+  server: 82.38.31.9
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_80|3.3MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_81|3.3MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.193
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_82|7.8MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.214
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇺🇸US_77|1.5MB/s|A004-260618 01
+  type: ss
+  server: 37.19.198.236
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧GB_6|4.0MB/s|A004-260618 01
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱NL_83|1.6MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.13
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_84|4.7MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.211
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_85|8.8MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.184
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇪🇸ES_1|3.1MB/s|A004-260618 01
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+- name: 🇳🇱NL_86|9.0MB/s|A004-260618 01
+  type: ss
+  server: 82.38.31.155
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇺🇸US_78|777KB/s|A004-260618 01
   type: trojan
-  server: 104.18.152.149
+  server: 64.94.95.118
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+- name: 🇫🇷FR_53|1.2MB/s|B007-260618 01
+  type: trojan
+  server: 104.16.174.44
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 139
-  type: trojan
-  server: 104.16.174.124
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 15
-  type: trojan
-  server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 140
-  type: trojan
-  server: 104.16.174.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 141
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 142
-  type: trojan
-  server: 104.18.152.108
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 143
-  type: trojan
-  server: 104.16.174.46
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 144
-  type: trojan
-  server: 104.18.152.103
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 16
-  type: trojan
-  server: 104.16.174.124
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 145
-  type: trojan
-  server: 104.18.152.229
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 146
-  type: trojan
-  server: 104.18.152.144
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 147
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 148
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 149
-  type: trojan
-  server: 104.18.152.244
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 150
-  type: trojan
-  server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 151
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 152
-  type: trojan
-  server: 104.18.152.179
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 153
-  type: trojan
-  server: 104.18.152.233
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 154
-  type: trojan
-  server: 104.18.152.207
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 155
-  type: trojan
-  server: 176.97.66.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 156
-  type: trojan
-  server: 104.16.174.6
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 157
-  type: trojan
-  server: 104.16.73.213
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 158
-  type: trojan
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 159
-  type: trojan
-  server: 104.18.152.204
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点) 8
-  type: trojan
-  server: 104.18.152.73
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 160
-  type: trojan
-  server: 104.18.152.77
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 161
-  type: trojan
-  server: 104.18.152.208
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 162
-  type: trojan
-  server: 104.18.152.210
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 163
-  type: trojan
-  server: 104.18.152.204
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 164
-  type: trojan
-  server: 104.16.174.148
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 165
-  type: trojan
-  server: 104.18.152.155
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 166
-  type: trojan
-  server: 104.18.152.108
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 167
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 168
-  type: trojan
-  server: 104.18.152.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 169
-  type: trojan
-  server: 104.18.152.113
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 170
-  type: trojan
-  server: 104.18.152.179
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 171
-  type: trojan
-  server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 172
-  type: trojan
-  server: 104.16.174.185
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 173
-  type: trojan
-  server: 2.144.21.112
-  port: 40443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 174
-  type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 175
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 176
-  type: trojan
-  server: 104.16.174.46
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 177
-  type: trojan
-  server: 104.18.152.187
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 178
-  type: trojan
-  server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 179
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 180
-  type: trojan
-  server: 104.18.152.77
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 181
-  type: trojan
-  server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 182
-  type: trojan
-  server: 188.114.97.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 183
-  type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点) 9
+- name: 🇫🇷FR_54|1.7MB/s|B007-260618 01
   type: trojan
   server: 104.16.174.71
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 184
+- name: 🇫🇷FR_55|353KB/s|B007-260618 01
   type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  server: 104.18.152.208
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 185
+- name: 🇫🇷FR_56|1.1MB/s|B007-260618 01
   type: trojan
-  server: 104.16.174.46
+  server: 104.26.14.137
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 186
+- name: 🇫🇷FR_57|1.2MB/s|B007-260618 01
   type: trojan
-  server: 104.18.152.204
+  server: www.ignitelimit.com
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 187
+- name: 🇫🇷FR_58|905KB/s|B007-260618 01
   type: trojan
-  server: 104.18.152.73
+  server: join-telegram-channel.tirexnet.kdns.fr
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 188
+- name: 🇫🇷FR_59|3.6MB/s|C002-260622 01
+  type: vless
+  server: mfa.gov.ua
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_60|1.4MB/s|C002-260622 01
   type: trojan
-  server: 104.16.174.109
+  server: 104.16.73.213
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 189
+- name: 🇫🇷FR_61|686KB/s|C002-260622 01
   type: trojan
-  server: 198.41.223.96
+  server: 8.6.112.0
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 190
+- name: 🇫🇷FR_62|1.7MB/s|C002-260622 01
   type: trojan
-  server: 104.16.174.143
+  server: 104.16.174.34
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 191
-  type: trojan
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 192
-  type: trojan
-  server: 141.101.90.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 193
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 194
+- name: 🇫🇷FR_63|4.1MB/s|C002-260622 01
+  type: vless
+  server: cf.9999669.xyz
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_64|792KB/s|C002-260622 01
   type: trojan
   server: 104.18.152.144
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 195
+- name: 🇫🇷FR_65|718KB/s|C002-260622 01
   type: trojan
-  server: 104.18.152.144
+  server: 104.18.152.210
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 196
+- name: 🇫🇷FR_66|770KB/s|C002-260622 01
   type: trojan
-  server: ip.myip2.qzz.io
+  server: 104.18.152.103
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 197
+- name: 🇫🇷FR_67|831KB/s|C002-260622 01
   type: trojan
-  server: 141.101.90.101
+  server: 104.16.174.22
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 198
-  type: trojan
-  server: 104.18.152.230
+- name: 🇫🇷FR_68|226KB/s|M002-260618 01
+  type: vless
+  server: bab-6.site
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇮🇩ID-103.180.125.252-0005
-  type: trojan
-  server: idtj-ikd.bonds.id
-  port: 443
-  password: 21887810-2e7d-11ed-918b-1239d0255272
-- name: 🇫🇷FR-51.38.118.42-0019
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  tls: true
+  network: ws
+  ws-opts:
+    path: /vws/
+- name: 🇬🇧GB_7|3.3MB/s 01
   type: ss
-  server: 51.38.118.42
-  port: 811
-  cipher: chacha20-ietf-poly1305
-  password: Ultr@r00t_2017
-- name: 🇭🇰HK-103.135.251.200-0021
-  type: ss
-  server: 103.135.251.200
-  port: 6800
-  cipher: aes-256-gcm
-  password: abcd1234
-- name: 🇺🇸US-167.88.61.213-0024
-  type: ss
-  server: 167.88.61.213
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- name: 🇺🇸US-38.75.136.21-0025
-  type: ss
-  server: 38.75.136.21
-  port: 6379
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇺🇸US-64.112.42.72-0029
-  type: ss
-  server: 64.112.42.72
-  port: 16999
-  cipher: aes-256-gcm
-  password: CBYyPc0GwoaQ9m2oqWdE
-- name: 🇺🇸US-64.112.42.53-0030
-  type: ss
-  server: 64.112.42.53
-  port: 16999
-  cipher: aes-256-gcm
-  password: CBYyPc0GwoaQ9m2oqWdE
-- name: 🇺🇸US-38.91.107.72-0031
-  type: ss
-  server: 38.91.107.72
-  port: 5500
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: 🇺🇸US-167.88.63.79-0032
-  type: ss
-  server: 167.88.63.79
-  port: 8881
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇺🇸US-167.88.61.236-0033
-  type: ss
-  server: 167.88.61.236
-  port: 809
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: 🇺🇸US-167.88.63.79-0035
-  type: ss
-  server: 167.88.63.79
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: 🇺🇸US-167.88.62.62-0036
-  type: ss
-  server: 167.88.62.62
-  port: 3389
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇺🇸US-167.88.62.62-0037
-  type: ss
-  server: 167.88.62.62
-  port: 8090
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: 🇺🇸US-38.68.134.85-0038
-  type: ss
-  server: 38.68.134.85
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇺🇸US-38.75.136.102-0039
-  type: ss
-  server: 38.75.136.102
-  port: 8090
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: 🇺🇸US-38.114.114.67-0040
-  type: ss
-  server: 38.114.114.67
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-- name: 🇺🇸US-38.75.136.102-0041
-  type: ss
-  server: 38.75.136.102
-  port: 8881
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇺🇸US-38.68.134.135-0042
-  type: ss
-  server: 38.68.134.135
-  port: 809
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: 🇺🇸US-38.91.107.225-0043
-  type: ss
-  server: 38.91.107.225
-  port: 800
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: 🇺🇸US-38.68.135.18-0044
-  type: ss
-  server: 38.68.135.18
-  port: 8090
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: 🇺🇸US-38.91.101.159-0045
-  type: ss
-  server: 38.91.101.159
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇺🇸US-38.91.101.159-0046
-  type: ss
-  server: 38.91.101.159
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: 🇺🇸US-38.68.135.18-0047
-  type: ss
-  server: 38.68.135.18
-  port: 5500
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: 🇺🇸US-38.91.107.225-0049
-  type: ss
-  server: 38.91.107.225
-  port: 802
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: 🇺🇸US-38.121.43.71-0050
-  type: ss
-  server: 38.121.43.71
-  port: 3306
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇺🇸US-38.143.66.55-0051
-  type: ss
-  server: 38.143.66.55
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: 🇺🇸US-167.88.61.213-0052
-  type: ss
-  server: 167.88.61.213
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: 🇺🇸US-38.91.100.207-0054
-  type: ss
-  server: 38.91.100.207
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- name: 🇸🇬SG-139.177.189.122-0059
-  type: trojan
-  server: 139.177.189.122
-  port: 443
-  password: a1e12464-9208-4583-bd21-ab6889fdd242
-  sni: cdn.qchwnd.moe
-- name: 🇺🇸US-167.88.61.236-0063
-  type: ss
-  server: 167.88.61.236
-  port: 802
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: 🇺🇸US-169.197.141.5-0075
-  type: ss
-  server: 169.197.141.5
-  port: 3306
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇺🇸US-169.197.142.187-0076
-  type: ss
-  server: 169.197.142.187
-  port: 7306
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: 🇺🇸US-169.197.142.187-0077
-  type: ss
-  server: 169.197.142.187
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: 🇨🇦CA-85.208.108.58-0088
-  type: ss
-  server: 85.208.108.58
+  server: 146.70.61.37
   port: 8080
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: 🇨🇦CA-85.208.108.58-0089
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇳🇱NL_95|7.4MB/s|A003-260618 01
   type: ss
-  server: 85.208.108.58
-  port: 8888
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦CA-85.208.108.19-0090
-  type: ss
-  server: 85.208.108.19
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇩🇪DE-49.12.203.80-0093
-  type: ss
-  server: 49.12.203.80
-  port: 40960
-  cipher: aes-256-gcm
-  password: 6kA7b3f9Aw2508erQ3W7D4
-- name: 🇨🇦CA-196.247.59.156-0094
-  type: ss
-  server: 196.247.59.156
-  port: 808
+  server: 82.38.31.217
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: 🇨🇦CA-196.247.59.154-0095
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_96|6.5MB/s|A004-260618 01
   type: ss
-  server: 196.247.59.154
-  port: 809
+  server: 82.38.31.26
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷FR_69|1.3MB/s|B007-260618 01
+  type: trojan
+  server: 104.16.174.36
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_70|1.1MB/s|C002-260622 01
+  type: trojan
+  server: 86.38.214.205
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇿🇦ZA_2|936KB/s|A004-260618 01
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+- name: 🇿🇦ZA_3|859KB/s|A004-260618 01
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+- name: 🇫🇷FR_71|932KB/s|C002-260622 01
+  type: trojan
+  server: 104.18.152.246
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇳🇱NL_99|3.4MB/s|B007-260618 01
+  type: ss
+  server: 193.29.139.198
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇫🇷FR_72|1009KB/s|B007-260618 01
+  type: trojan
+  server: 104.18.152.152
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇳🇱NL_100|7.5MB/s|A003-260618 01
+  type: ss
+  server: 82.38.31.212
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇺🇸US_97|271KB/s|B007-260618 01
+  type: trojan
+  server: 64.94.95.114
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: static.rutube.ru
+- name: 🇺🇸US_98|546KB/s|B007-260618 01
+  type: trojan
+  server: 64.94.95.117
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: static.rutube.ru
+- name: 🇺🇸US_102|315KB/s|A004-260618 01
+  type: trojan
+  server: 64.94.95.117
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+- name: 🇸🇬SG_9|102KB/s|A004-260618 01
+  type: trojan
+  server: 139.59.238.97
+  port: 50573
+  password: pvZE3UfT0ziK1omVLlsjINBqeqqwab1M
+- name: 🇺🇸US_105|430KB/s|A004-260618 01
+  type: trojan
+  server: 64.94.95.114
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+- name: 🇫🇷FR_73|1.7MB/s|M002-260618 01
+  type: vless
+  server: 172.64.147.104
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_74|3.3MB/s|M002-260618 01
+  type: vless
+  server: 172.64.53.140
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_75|2.1MB/s|M002-260618 01
+  type: vless
+  server: 104.16.150.130
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_76|1.8MB/s|M002-260618 01
+  type: vless
+  server: 172.64.145.166
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_77|3.0MB/s|M002-260618 01
+  type: vless
+  server: 104.19.214.98
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇳🇱NL_103|2.1MB/s|S004-260618 01
+  type: ss
+  server: 82.38.31.175
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱NL_104|2.7MB/s|B007-260618 01
+  type: ss
+  server: 82.38.31.42
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷FR_78|1.4MB/s|S004-260618 01
+  type: trojan
+  server: 104.17.111.4
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🇫🇷FR_79|2.6MB/s|T001-260618 01
+  type: vless
+  server: 172.64.146.211
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_80|4.4MB/s|M002-260618 01
+  type: vless
+  server: 172.64.53.74
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇳🇱NL_106|3.8MB/s 01
+  type: ss
+  server: 82.38.31.190
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱NL_108|3.1MB/s|A004-260618 01
+  type: ss
+  server: 193.29.139.129
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷FR_81|1.6MB/s|M002-260618 01
+  type: vless
+  server: 104.18.40.152
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
+- name: 🇫🇷FR_82|1.3MB/s|B007-260618 01
+  type: trojan
+  server: 104.18.152.133
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
