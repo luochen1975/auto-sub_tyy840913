@@ -1,4 +1,15 @@
 proxies:
+- name: 🇫🇷FR_132|4.3MB/s|T001-260618 01
+  type: vless
+  server: 104.16.150.7
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
 - name: 🇩🇪DE_22|850KB/s|T001-260618 01
   type: ss
   server: 2.58.81.221
@@ -4250,9 +4261,3 @@ proxies:
   port: 20065
   password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
   sni: us01.duotg.top
-- name: 🇺🇸US_617|446KB/s|M003-260806 01
-  type: trojan
-  server: 107.150.105.84
-  port: 43022
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
-  sni: www.microsoft.com

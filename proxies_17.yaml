@@ -1,4 +1,15 @@
 proxies:
+- name: 🇺🇸US_893|502KB/s|F003-260618 01
+  type: vless
+  server: 172.67.210.53
+  port: 443
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 0-M13.38c4495b-7E6d-4aAa-8A0a-3139FF704E1F.kDNs.fR
+    path: /ED3ZQPu7lqyeDGD58KabZ
 - name: 🇷🇺RU_12|393KB/s|K001-260618 01
   type: ss
   server: 194.87.196.13
@@ -3323,9 +3334,3 @@ proxies:
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸US-104.219.250.37-1972
-  type: trojan
-  server: hn.xiaohouzi.club
-  port: 48464
-  password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5
-  sni: $$vuus04.xiaohouzi.club

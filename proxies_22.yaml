@@ -1,4 +1,10 @@
 proxies:
+- name: 🇺🇸US-205.134.180.143-7630
+  type: ss
+  server: 205.134.180.143
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: R9Xc4dHXGv3c
 - name: 🇺🇸US-205.134.180.137-7631
   type: ss
   server: 205.134.180.137
@@ -2883,12 +2889,6 @@ proxies:
 - name: 🇫🇷 法国 | FRA 6
   type: trojan
   server: 104.18.152.208
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国 | FRA 7
-  type: trojan
-  server: 104.16.174.124
   port: 443
   password: humanity
   sni: www.ignitelimit.com

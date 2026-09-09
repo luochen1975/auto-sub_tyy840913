@@ -1,4 +1,10 @@
 proxies:
+- name: 🇫🇷 法国 | FRA 7
+  type: trojan
+  server: 104.16.174.124
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: 🇫🇷 法国 | FRA 8
   type: trojan
   server: 104.18.152.152
@@ -490,77 +496,96 @@ proxies:
   password: 4568465a-a435-4569-b3ab-7f606018474f
   skip-cert-verify: true
 - name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 加拿大+安大略省研究网络
   type: vless
-  server: 130.12.102.125
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 172.64.53.42
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 104.21.56.202
-  port: 443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  tls: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-    path: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.159
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.108
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 巴西圣保罗+CloudFlare节点
-  type: vless
-  server: 188.114.97.6
-  port: 2052
+  server: 104.18.47.113
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-    path: /
-- name: 美国+Muskingum+College
-  type: vless
-  server: 143.246.223.73
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
+- name: 德国+法尔肯施泰因Hetzner
+  type: trojan
+  server: 88.198.82.150
   port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-  tls: true
-  servername: mold2.freeinternat.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+加州
+  type: trojan
+  server: 216.24.57.1
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 巴西圣保罗+CloudFlare节点
+  type: trojan
+  server: 188.114.97.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: 美国+CloudFlare节点
   type: trojan
-  server: 104.16.174.121
+  server: 104.21.46.3
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 104.21.90.161
+  port: 443
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  tls: true
+  servername: 3-M19.pERu-line.CCWu.cC
+  network: ws
+  ws-opts:
+    headers:
+      Host: 3-M19.peRu-LinE.cCwU.CC
+    path: /CjBjB9sn5pCvaSwScc
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.17.111.4
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+加利福尼亚州洛杉矶Cloudflare+Warp节点
+  type: trojan
+  server: 8.47.69.0
+  port: 443
+  password: humanity
+  sni: www.pleadcourt.org
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.204
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 104.21.56.104
+  port: 443
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  tls: true
+  servername: 1-M19.aLbanIA.KDNs.Fr
+  network: ws
+  ws-opts:
+    headers:
+      Host: 1-m19.AlbaNiA.KdNS.Fr
+    path: /CjBjB9sn5pCvaSwScc
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.21.8.107
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.97
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.155
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -575,9 +600,15 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
 - name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.149
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
   type: vless
-  server: 172.64.52.6
-  port: 2082
+  server: 172.64.158.146
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
@@ -585,75 +616,24 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
 - name: 美国+CloudFlare节点
-  type: vless
-  server: 162.159.43.187
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- name: 美国+CloudFlare节点
   type: trojan
-  server: 104.16.174.117
+  server: 104.16.174.44
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 英国+V2CROSS.COM
-  type: hysteria2
-  server: 31.76.71.63
-  port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 104.21.8.136
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  servername: 6-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 6-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: 美国+CloudFlare节点
+- name: 美国+加州
   type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 英国+V2CROSS.COM
-  type: hysteria2
-  server: faq.wwwinternetvideo.click
-  port: 443
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.174.185
+  server: 216.24.57.7
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: 美国+CloudFlare节点
-  type: vless
-  server: 104.21.69.218
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  servername: 6-m20.cd6b506e-5a88-4c5d-9e11-906f39613c04.kdns.fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 6-m20.cd6b506e-5a88-4c5d-9e11-906f39613c04.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: 美国+CloudFlare节点
   type: trojan
-  server: 104.18.152.246
+  server: 104.16.174.37
   port: 443
   password: humanity
   sni: www.ignitelimit.com
+  skip-cert-verify: true
 - name: 澳大利亚 001
   type: trojan
   server: 43.199.146.46
