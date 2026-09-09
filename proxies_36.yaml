@@ -1,4 +1,395 @@
 proxies:
+- name: 🇺🇸 US 3541 TJN
+  type: trojan
+  server: 172.67.204.84
+  port: 443
+  password: 78a47480-fd01-11ee-a917-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇳 UN 3543 TJN
+  type: trojan
+  server: zula.ir
+  port: 443
+  password: 7cb94590-fd39-11ee-b4f1-1239d0255272
+  sni: us1.test3.net
+- name: 🇺🇳 UN 3546 SSS
+  type: ss
+  server: 104.16.100.23
+  port: 443
+  cipher: aes-128-gcm
+  password: v9443iEa9gWv
+- name: 🇺🇸 US 3551 SSS
+  type: ss
+  server: 209.182.232.30
+  port: 51348
+  cipher: chacha20-ietf-poly1305
+  password: 9NJugkSe6yoPFJiS4dvLRRg07K92JEvAJSRfLr75VHxd7KM5
+- name: 🇺🇸 US 3553 SSS
+  type: ss
+  server: 38.110.1.51
+  port: 8090
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇺🇸 US 3554 SSS
+  type: ss
+  server: 38.114.114.208
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇺🇸 US 3555 SSS
+  type: ss
+  server: 38.110.1.43
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇸 US 3556 SSS
+  type: ss
+  server: 38.143.66.87
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇸 US 3558 SSS
+  type: ss
+  server: 38.121.43.71
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇨🇳 CN 3586 TJN
+  type: trojan
+  server: ppg-hk.05vr9nyqg5.download
+  port: 10807
+  password: 511fa4e6-5571-4419-b8c0-e930e603c03f
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+- name: 🇺🇸 US 3596 SSS
+  type: ss
+  server: 169.197.142.216
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇳 UN 3601 SSS
+  type: ss
+  server: zy.aand.site
+  port: 48375
+  cipher: chacha20-ietf-poly1305
+  password: c440808b-a8ad-484a-90c2-4399d5a26dbe
+- name: 🇺🇳 UN 3606 SSS
+  type: ss
+  server: 23.154.136.51
+  port: 5499
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: 🇺🇳 UN 3623 SSS
+  type: ss
+  server: mb2.aand.site
+  port: 21883
+  cipher: chacha20-ietf-poly1305
+  password: c440808b-a8ad-484a-90c2-4399d5a26dbe
+- name: 🇺🇳 UN 3633 SSS
+  type: ss
+  server: zy.aand.site
+  port: 19409
+  cipher: chacha20-ietf-poly1305
+  password: c440808b-a8ad-484a-90c2-4399d5a26dbe
+- name: 🇺🇳 UN 3644 SSS
+  type: ss
+  server: mb2.aand.site
+  port: 14988
+  cipher: chacha20-ietf-poly1305
+  password: c440808b-a8ad-484a-90c2-4399d5a26dbe
+- name: 🇺🇳 UN 3675 SSS
+  type: ss
+  server: zy.aand.site
+  port: 43605
+  cipher: chacha20-ietf-poly1305
+  password: c440808b-a8ad-484a-90c2-4399d5a26dbe
+- name: 🇺🇳 UN 3710 SSS
+  type: ss
+  server: mb2.aand.site
+  port: 34097
+  cipher: chacha20-ietf-poly1305
+  password: c440808b-a8ad-484a-90c2-4399d5a26dbe
+- name: 🇺🇳 UN 3714 SSS
+  type: ss
+  server: mb2.aand.site
+  port: 43624
+  cipher: chacha20-ietf-poly1305
+  password: c440808b-a8ad-484a-90c2-4399d5a26dbe
+- name: 🇺🇳 UN 3721 SSS
+  type: ss
+  server: mb2.aand.site
+  port: 45780
+  cipher: chacha20-ietf-poly1305
+  password: c440808b-a8ad-484a-90c2-4399d5a26dbe
+- name: 🇺🇸 US 3728 SSS
+  type: ss
+  server: 169.197.142.216
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: AF 1 → tg@nicevpn123
+  type: ss
+  server: 121.127.46.147
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AL 1 → tg@nicevpn123
+  type: ss
+  server: 31.171.153.181
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AL 2 → tg@nicevpn123
+  type: ss
+  server: 31.171.153.178
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AO 1 → tg@nicevpn123
+  type: ss
+  server: us.sptnk.space
+  port: 57456
+  cipher: chacha20-ietf-poly1305
+  password: 3fbeb668f48414f6
+- name: AO 2 → tg@nicevpn123
+  type: ss
+  server: 104.167.197.23
+  port: 57456
+  cipher: chacha20-ietf-poly1305
+  password: 3fbeb668f48414f6
+- name: AR 1 → tg@nicevpn123
+  type: ss
+  server: 170.80.111.6
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AR 2 → tg@nicevpn123
+  type: ss
+  server: 138.186.142.4
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AR 3 → tg@nicevpn123
+  type: ss
+  server: 170.80.111.5
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AR 4 → tg@nicevpn123
+  type: ss
+  server: 190.103.176.29
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AR 5 → tg@nicevpn123
+  type: ss
+  server: 190.103.179.23
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AT 1 → tg@nicevpn123
+  type: ss
+  server: 192.36.27.116
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AT 2 → tg@nicevpn123
+  type: ss
+  server: 192.71.166.102
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AT 3 → tg@nicevpn123
+  type: ss
+  server: 192.71.166.100
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: AT 4 → tg@nicevpn123
+  type: ss
+  server: 185.180.12.81
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: BA 1 → tg@nicevpn123
+  type: ss
+  server: 185.164.35.9
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: BE 1 → tg@nicevpn123
+  type: ss
+  server: 57.180.10.14
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: BE 2 → tg@nicevpn123
+  type: ss
+  server: 57.181.42.0
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: BE 3 → tg@nicevpn123
+  type: trojan
+  server: 57.180.26.205
+  port: 17391
+  password: NtttpUsd92KX
+  sni: appsvs.shop
+- name: BE 4 → tg@nicevpn123
+  type: ss
+  server: 57.180.65.163
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: BG 14 → tg@nicevpn123
+  type: ss
+  server: 213.183.63.69
+  port: 9027
+  cipher: aes-256-cfb
+  password: EXN3S3eQpjE7EJu8
+- name: BG 15 → tg@nicevpn123
+  type: ss
+  server: 213.183.63.69
+  port: 9020
+  cipher: aes-256-cfb
+  password: BNmAXXxAHYpTRdzu
+- name: BG 16 → tg@nicevpn123
+  type: ss
+  server: 213.183.63.69
+  port: 9025
+  cipher: aes-256-cfb
+  password: XPtzA9sCug3SPR4c
+- name: BG 17 → tg@nicevpn123
+  type: ss
+  server: 213.183.63.69
+  port: 9073
+  cipher: aes-256-cfb
+  password: daFYagqDdBdA6VTX
+- name: BG 18 → tg@nicevpn123
+  type: ss
+  server: 213.183.63.69
+  port: 9019
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+- name: BG 19 → tg@nicevpn123
+  type: ss
+  server: 213.183.63.69
+  port: 9029
+  cipher: aes-256-gcm
+  password: dU3DSNS8wYPXzEKw
+- name: BR 1 → tg@nicevpn123
+  type: ss
+  server: fell3.dogsvpn.top
+  port: 7704
+  cipher: aes-256-gcm
+  password: 8be51adf-b081-4fb9-b751-8859cca58fd4
+- name: CH 1 → tg@nicevpn123
+  type: trojan
+  server: 64.110.64.80
+  port: 11005
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+- name: CH 2 → tg@nicevpn123
+  type: trojan
+  server: 64.110.64.80
+  port: 11007
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+- name: CH 3 → tg@nicevpn123
+  type: trojan
+  server: 64.110.64.80
+  port: 11006
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+- name: CH 4 → tg@nicevpn123
+  type: trojan
+  server: 64.110.64.80
+  port: 11004
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+- name: CH 5 → tg@nicevpn123
+  type: trojan
+  server: 64.110.64.80
+  port: 11000
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+- name: CY 1 → tg@nicevpn123
+  type: ss
+  server: 213.169.137.221
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: EC 1 → tg@nicevpn123
+  type: ss
+  server: 179.49.5.114
+  port: 989
+  cipher: aes-256-gcm
+  password: f8f7aCzcPKbsF8p3
+- name: FI 1 → tg@nicevpn123
+  type: ss
+  server: 195.20.17.224
+  port: 34282
+  cipher: aes-256-gcm
+  password: fVdovvKBlC06pO7s
+- name: FI 2 → tg@nicevpn123
+  type: ss
+  server: 95.217.181.48
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Telegram-AlfredConfig-13
+- name: IE 1 → tg@nicevpn123
+  type: trojan
+  server: 54.155.61.41
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: IE 10 → tg@nicevpn123
+  type: trojan
+  server: 52.209.230.191
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: IE 11 → tg@nicevpn123
+  type: trojan
+  server: 52.208.218.51
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: IE 2 → tg@nicevpn123
+  type: trojan
+  server: 54.72.213.33
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: IE 3 → tg@nicevpn123
+  type: trojan
+  server: 34.255.145.254
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: IE 4 → tg@nicevpn123
+  type: trojan
+  server: 54.72.176.224
+  port: 22222
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: IE 5 → tg@nicevpn123
+  type: ss
+  server: 52.169.202.174
+  port: 28612
+  cipher: chacha20-ietf-poly1305
+  password: R5vcCFayGJ8ZwKMSUfdyfF
+- name: IE 6 → tg@nicevpn123
+  type: trojan
+  server: 34.249.148.68
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: IE 7 → tg@nicevpn123
+  type: trojan
+  server: 52.18.22.51
+  port: 22222
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: IE 8 → tg@nicevpn123
+  type: ss
+  server: 23.92.127.134
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
 - name: IE 9 → tg@nicevpn123
   type: trojan
   server: 34.254.88.91
@@ -2550,397 +2941,3 @@ proxies:
   port: 27277
   cipher: chacha20-ietf-poly1305
   password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 238 → tg@nicevpn123
-  type: ss
-  server: rk.izoizoizo.top
-  port: 34507
-  cipher: chacha20-ietf-poly1305
-  password: 3bf7be43-e331-4dad-856c-8d312dedea90
-- name: 🇨🇳 CN 239 → tg@nicevpn123
-  type: ss
-  server: beromo.youxinye.com
-  port: 26001
-  cipher: aes-128-gcm
-  password: c44758e2-67a4-40b2-bbc8-4ca97861ea47
-- name: 🇨🇳 CN 24 → tg@nicevpn123
-  type: ss
-  server: gzcm183.pkyun.xyz
-  port: 57617
-  cipher: chacha20-ietf-poly1305
-  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
-- name: 🇨🇳 CN 240 → tg@nicevpn123
-  type: ss
-  server: 220.195.133.232
-  port: 50014
-  cipher: chacha20-ietf-poly1305
-  password: 65af0e00-a583-31b3-a4d8-68bdb504d3a6
-- name: 🇨🇳 CN 241 → tg@nicevpn123
-  type: trojan
-  server: 112.29.94.24
-  port: 51000
-  password: MyYoZhfX
-- name: 🇨🇳 CN 243 → tg@nicevpn123
-  type: ss
-  server: kr01.ktp.wtf
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 245 → tg@nicevpn123
-  type: ss
-  server: 36.212.129.235
-  port: 27252
-  cipher: chacha20-ietf-poly1305
-  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 246 → tg@nicevpn123
-  type: ss
-  server: zhk1.capoonetwork.com
-  port: 12710
-  cipher: aes-256-gcm
-  password: 20ff026e-e9c7-4147-bf3c-d6e21063f92c
-- name: 🇨🇳 CN 248 → tg@nicevpn123
-  type: ss
-  server: 9s5g01.a3b5wy.xyz
-  port: 36020
-  cipher: chacha20-ietf-poly1305
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-- name: 🇨🇳 CN 249 → tg@nicevpn123
-  type: trojan
-  server: bepgzbgp01.004837963.xyz
-  port: 14401
-  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
-  sni: mpvideo.qpic.cn
-- name: 🇨🇳 CN 25 → tg@nicevpn123
-  type: ss
-  server: service.ouluyun9803.com
-  port: 20005
-  cipher: chacha20-ietf-poly1305
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-- name: 🇨🇳 CN 250 → tg@nicevpn123
-  type: ss
-  server: 36.212.129.234
-  port: 27274
-  cipher: chacha20-ietf-poly1305
-  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 251 → tg@nicevpn123
-  type: ss
-  server: zus1.capoonetwork.com
-  port: 34815
-  cipher: aes-256-gcm
-  password: 20ff026e-e9c7-4147-bf3c-d6e21063f92c
-- name: 🇨🇳 CN 252 → tg@nicevpn123
-  type: ss
-  server: 211.99.97.6
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 253 → tg@nicevpn123
-  type: ss
-  server: 1j8p01.a3b5wy.xyz
-  port: 36010
-  cipher: chacha20-ietf-poly1305
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-- name: 🇨🇳 CN 255 → tg@nicevpn123
-  type: ss
-  server: tw12.ktp.wtf
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 256 → tg@nicevpn123
-  type: trojan
-  server: 8t6w01.a3b5wy.xyz
-  port: 36301
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  sni: tw01.abpilot.xyz
-- name: 🇨🇳 CN 258 → tg@nicevpn123
-  type: ss
-  server: 211.99.97.15
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 260 → tg@nicevpn123
-  type: ss
-  server: tw15.ktp.wtf
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 262 → tg@nicevpn123
-  type: trojan
-  server: 8t6w02.a3b5wy.xyz
-  port: 36306
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  sni: tw02.abpilot.xyz
-- name: 🇨🇳 CN 265 → tg@nicevpn123
-  type: ss
-  server: tw14.ktp.wtf
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 268 → tg@nicevpn123
-  type: trojan
-  server: bepbjbgp01.004837963.xyz
-  port: 14498
-  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
-  sni: mpvideo.qpic.cn
-- name: 🇨🇳 CN 269 → tg@nicevpn123
-  type: ss
-  server: 120.199.94.29
-  port: 27274
-  cipher: chacha20-ietf-poly1305
-  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 271 → tg@nicevpn123
-  type: ss
-  server: 04.forlive.live
-  port: 22302
-  cipher: aes-128-gcm
-  password: 6044e7a8-a7e2-41a2-b5fa-b2d371f9da51
-- name: 🇨🇳 CN 272 → tg@nicevpn123
-  type: ss
-  server: ztw2.capoonetwork.com
-  port: 16263
-  cipher: aes-256-gcm
-  password: 20ff026e-e9c7-4147-bf3c-d6e21063f92c
-- name: 🇨🇳 CN 273 → tg@nicevpn123
-  type: ss
-  server: 36.212.237.146
-  port: 27277
-  cipher: chacha20-ietf-poly1305
-  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 274 → tg@nicevpn123
-  type: ss
-  server: 123.88.16.163
-  port: 30006
-  cipher: chacha20-ietf-poly1305
-  password: f6e72e98-34b2-4a93-8252-80f875ebbcfa
-- name: 🇨🇳 CN 275 → tg@nicevpn123
-  type: trojan
-  server: 5a4u01.a3b5wy.xyz
-  port: 36821
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  sni: au01.abpilot.xyz
-- name: 🇨🇳 CN 276 → tg@nicevpn123
-  type: ss
-  server: jp02.ktp.wtf
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 279 → tg@nicevpn123
-  type: trojan
-  server: bepbjbgp01.004837963.xyz
-  port: 14504
-  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
-  sni: mpvideo.qpic.cn
-- name: 🇨🇳 CN 28 → tg@nicevpn123
-  type: trojan
-  server: 9s5g02.a3b5wy.xyz
-  port: 36206
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  sni: sg02.abpilot.xyz
-- name: 🇨🇳 CN 281 → tg@nicevpn123
-  type: ss
-  server: 36.212.129.235
-  port: 27251
-  cipher: chacha20-ietf-poly1305
-  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 282 → tg@nicevpn123
-  type: ss
-  server: 1j8p01.a3b5wy.xyz
-  port: 36011
-  cipher: chacha20-ietf-poly1305
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-- name: 🇨🇳 CN 284 → tg@nicevpn123
-  type: ss
-  server: 120.199.94.30
-  port: 27273
-  cipher: chacha20-ietf-poly1305
-  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 285 → tg@nicevpn123
-  type: ss
-  server: fr01.ktp.wtf
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 286 → tg@nicevpn123
-  type: ss
-  server: 36.212.129.235
-  port: 27255
-  cipher: chacha20-ietf-poly1305
-  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 287 → tg@nicevpn123
-  type: ss
-  server: 04.forlive.live
-  port: 22259
-  cipher: aes-128-gcm
-  password: 61d681ab-d52b-4e1a-ad01-127825f9cdb8
-- name: 🇨🇳 CN 288 → tg@nicevpn123
-  type: trojan
-  server: bepshbgp01.004837963.xyz
-  port: 14435
-  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
-  sni: mpvideo.qpic.cn
-- name: 🇨🇳 CN 289 → tg@nicevpn123
-  type: ss
-  server: zf.miaosu666.xyz
-  port: 44584
-  cipher: aes-128-gcm
-  password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69
-- name: 🇨🇳 CN 290 → tg@nicevpn123
-  type: trojan
-  server: bepgzbgp01.004837963.xyz
-  port: 14402
-  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
-  sni: mpvideo.qpic.cn
-- name: 🇨🇳 CN 291 → tg@nicevpn123
-  type: trojan
-  server: bepshbgp01.004837963.xyz
-  port: 14508
-  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
-  sni: mpvideo.qpic.cn
-- name: 🇨🇳 CN 294 → tg@nicevpn123
-  type: ss
-  server: 9s5g02.a3b5wy.xyz
-  port: 36021
-  cipher: chacha20-ietf-poly1305
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-- name: 🇨🇳 CN 295 → tg@nicevpn123
-  type: ss
-  server: hk05.ktp.wtf
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 296 → tg@nicevpn123
-  type: trojan
-  server: 8u9a01.a3b5wy.xyz
-  port: 36871
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  sni: ua01.abpilot.xyz
-- name: 🇨🇳 CN 298 → tg@nicevpn123
-  type: trojan
-  server: 1t8h01.a3b5wy.xyz
-  port: 36904
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  sni: th01.abpilot.xyz
-- name: 🇨🇳 CN 300 → tg@nicevpn123
-  type: trojan
-  server: 112.16.228.100
-  port: 51000
-  password: MyYoZhfX
-- name: 🇨🇳 CN 301 → tg@nicevpn123
-  type: ss
-  server: gzcm183.pkyun.xyz
-  port: 29500
-  cipher: chacha20-ietf-poly1305
-  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
-- name: 🇨🇳 CN 302 → tg@nicevpn123
-  type: ss
-  server: zjp3.capoonetwork.com
-  port: 32432
-  cipher: aes-256-gcm
-  password: 20ff026e-e9c7-4147-bf3c-d6e21063f92c
-- name: 🇨🇳 CN 304 → tg@nicevpn123
-  type: ss
-  server: beromo.youxinye.com
-  port: 22001
-  cipher: aes-128-gcm
-  password: 91ee9465-8be4-4735-80de-f80023b8eaae
-- name: 🇨🇳 CN 305 → tg@nicevpn123
-  type: trojan
-  server: 3u1s03.a3b5wy.xyz
-  port: 36511
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  sni: us03.abpilot.xyz
-- name: 🇨🇳 CN 306 → tg@nicevpn123
-  type: ss
-  server: 03.forlive.live
-  port: 22233
-  cipher: aes-128-gcm
-  password: 517e4b6c-8190-4f1b-8b77-53973f536225
-- name: 🇨🇳 CN 307 → tg@nicevpn123
-  type: ss
-  server: 03.forlive.live
-  port: 22302
-  cipher: aes-128-gcm
-  password: 61d681ab-d52b-4e1a-ad01-127825f9cdb8
-- name: 🇨🇳 CN 308 → tg@nicevpn123
-  type: trojan
-  server: 2u3k01.a3b5wy.xyz
-  port: 36811
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  sni: uk01.abpilot.xyz
-- name: 🇨🇳 CN 309 → tg@nicevpn123
-  type: ss
-  server: 36.212.129.235
-  port: 27267
-  cipher: chacha20-ietf-poly1305
-  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 31 → tg@nicevpn123
-  type: ss
-  server: db.quanstring.top
-  port: 42107
-  cipher: chacha20-ietf-poly1305
-  password: e50dd0c1-b1bc-4910-aa3e-7237d55043c1
-- name: 🇨🇳 CN 310 → tg@nicevpn123
-  type: ss
-  server: 123.88.16.163
-  port: 30018
-  cipher: chacha20-ietf-poly1305
-  password: f6e72e98-34b2-4a93-8252-80f875ebbcfa
-- name: 🇨🇳 CN 311 → tg@nicevpn123
-  type: ss
-  server: 211.99.102.183
-  port: 15006
-  cipher: aes-128-gcm
-  password: f9nawu1Umf2xWKGVsDuTu
-- name: 🇨🇳 CN 312 → tg@nicevpn123
-  type: ss
-  server: gzyd.pkyun.xyz
-  port: 37967
-  cipher: chacha20-ietf-poly1305
-  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
-- name: 🇨🇳 CN 314 → tg@nicevpn123
-  type: ss
-  server: 120.199.94.30
-  port: 27274
-  cipher: chacha20-ietf-poly1305
-  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
-- name: 🇨🇳 CN 315 → tg@nicevpn123
-  type: ss
-  server: bff6ce3.xvvrkb.lol
-  port: 47034
-  cipher: aes-128-gcm
-  password: d9c577328fb349fe
-- name: 🇨🇳 CN 316 → tg@nicevpn123
-  type: ss
-  server: bff6ce3.xvvrkb.lol
-  port: 41832
-  cipher: aes-128-gcm
-  password: d9c577328fb349fe
-- name: 🇨🇳 CN 317 → tg@nicevpn123
-  type: ss
-  server: 8h2k03.a3b5wy.xyz
-  port: 36018
-  cipher: chacha20-ietf-poly1305
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-- name: 🇨🇳 CN 318 → tg@nicevpn123
-  type: trojan
-  server: bepgzbgp01.004837963.xyz
-  port: 14413
-  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
-  sni: mpvideo.qpic.cn
-- name: 🇨🇳 CN 319 → tg@nicevpn123
-  type: trojan
-  server: bepshbgp01.004837963.xyz
-  port: 14497
-  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
-  sni: mpvideo.qpic.cn
-- name: 🇨🇳 CN 32 → tg@nicevpn123
-  type: ss
-  server: 211.99.97.4
-  port: 24603
-  cipher: rc4-md5
-  password: dbEcUJ
-- name: 🇨🇳 CN 320 → tg@nicevpn123
-  type: ss
-  server: service.ouluyun9803.com
-  port: 20003
-  cipher: chacha20-ietf-poly1305
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
