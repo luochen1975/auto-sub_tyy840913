@@ -1,4 +1,74 @@
 proxies:
+- name: 🇺🇸 US_30
+  type: hysteria2
+  server: us.bailian.site
+  port: 20462
+  password: b4bd215d-adc5-4d76-bf0b-242eff786ab8
+- name: 🇺🇸 US_31
+  type: hysteria2
+  server: do-us.aikunapp.com
+  port: 5001
+  password: 96cad374-7573-4463-8804-4665c2c3d932
+- name: TW_32
+  type: ss
+  server: free.6vczxw.xyz
+  port: 41241
+  cipher: chacha20-ietf-poly1305
+  password: 1e24f942-4daf-4333-91bc-5ce1344ef136
+- name: TW_33
+  type: ss
+  server: t-wn03.loveroise.com
+  port: 54036
+  cipher: chacha20-ietf-poly1305
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+- name: TW_34
+  type: ss
+  server: t-wn04.loveroise.com
+  port: 54038
+  cipher: chacha20-ietf-poly1305
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+- name: 🇦🇺 AU_35
+  type: ss
+  server: free.6vczxw.xyz
+  port: 41411
+  cipher: chacha20-ietf-poly1305
+  password: 1e24f942-4daf-4333-91bc-5ce1344ef136
+- name: 🇧🇷 BR_36
+  type: ss
+  server: free.6vczxw.xyz
+  port: 41671
+  cipher: chacha20-ietf-poly1305
+  password: 1e24f942-4daf-4333-91bc-5ce1344ef136
+- name: 🇨🇦 CA_37
+  type: ss
+  server: 138.124.51.236
+  port: 59923
+  cipher: chacha20-ietf-poly1305
+  password: 3Vkbowf0PLHJkVMmPFjcA7i/j0ABb6EbYtbe/Xrwuds=
+- name: 🇨🇦 CA_38
+  type: ss
+  server: 38.111.114.114
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 CA_39
+  type: ss
+  server: free.6vczxw.xyz
+  port: 41441
+  cipher: chacha20-ietf-poly1305
+  password: 1e24f942-4daf-4333-91bc-5ce1344ef136
+- name: 🇩🇪 DE_40
+  type: ss
+  server: free.6vczxw.xyz
+  port: 41471
+  cipher: chacha20-ietf-poly1305
+  password: 1e24f942-4daf-4333-91bc-5ce1344ef136
+- name: 🇪🇸 ES_41
+  type: ss
+  server: free.6vczxw.xyz
+  port: 41741
+  cipher: chacha20-ietf-poly1305
+  password: 1e24f942-4daf-4333-91bc-5ce1344ef136
 - name: 🇫🇮 FI_42
   type: ss
   server: 77.91.70.76
@@ -1013,11 +1083,11 @@ proxies:
   port: 28331
   password: 4cDgyx33xaypDCIFaOj84Snjy3g9XpulOI3FF0CaaTSyY3ElCOeYKx8eCeN7zRRZnCu2A
   sni: sohtsa.taiwanesefood.link
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+- name: 🇨🇦telegram➠@v2rayNG_Matsuri
   type: vmess
-  server: 165.140.217.2
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
 - name: 🇬🇧 @proxy_kafee
@@ -1474,11 +1544,59 @@ proxies:
     headers:
       Host: U2FRxj0G13vDI0Wo.v.3dns.vip
     path: /ws-vmess
+- name: '[42135] - Telegram : @V2All'
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇩🇪139810 | ⚡️Telegram = t.me/SOSkeyNET
   type: vmess
   server: 140.233.177.28
   port: 33506
   uuid: 2b3e907a-88b8-497b-8ff7-e73d889c5c19
+  alterId: 0
+  cipher: auto
+- name: '[42147] - Telegram : @V2All'
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇭🇰166995 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: '[42137] - Telegram : @V2All'
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸166993 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
 - name: 🇳🇱139729 | ⚡️Telegram = t.me/SOSkeyNET
@@ -1492,21 +1610,50 @@ proxies:
   servername: astra.iraniangamersclub.ir
 - name: 🔵@chillguy_vpn
   type: vmess
-  server: 212.74.39.88
-  port: 8080
-  uuid: a748127d-70d4-4ffd-8dd0-9789ef58caf0
+  server: 188.132.232.85
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
   alterId: 0
   cipher: auto
-- name: 🇬🇧166823 | ⚡️Telegram = t.me/SOSkeyNET
+- name: 🔵@chillguy_vpn
   type: vmess
   server: 212.74.39.88
   port: 8080
   uuid: a748127d-70d4-4ffd-8dd0-9789ef58caf0
   alterId: 0
   cipher: auto
+- name: 🇭🇰166994 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
 - name: 🇹🇷139866 | ⚡️Telegram = t.me/SOSkeyNET
   type: vmess
   server: 5.188.190.252
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇬🇧166953 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: google.com
+    path: /vmess/
+- name: '[42136] - Telegram : @V2All'
+  type: vmess
+  server: 66.163.117.58
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -1525,48 +1672,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇳🇱NL-🚀@VPNine1
-  type: vmess
-  server: 85.234.65.189
-  port: 2083
-  uuid: a63049c0-67ce-400c-beda-1403be8b8de8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: eeaxtirr4c22.dop33.com
-- name: 🇳🇱166734 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vmess
-  server: 85.234.65.189
-  port: 2083
-  uuid: a63049c0-67ce-400c-beda-1403be8b8de8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: eeaxtirr4c22.dop33.com
-- name: '[045450] - 🇳🇱 The Netherlands | @freenettir'
-  type: vmess
-  server: 85.234.65.189
-  port: 2083
-  uuid: a63049c0-67ce-400c-beda-1403be8b8de8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: eeaxtirr4c22.dop33.com
 - name: 🔵@chillguy_vpn
-  type: vmess
-  server: 94.184.21.218
-  port: 80
-  uuid: 09e18d23-eaa6-43bd-8cd0-3bd191962bcc
-  alterId: 0
-  cipher: auto
-- name: 🇮🇷IR-🚀@VPNine1
-  type: vmess
-  server: 94.184.21.218
-  port: 80
-  uuid: 09e18d23-eaa6-43bd-8cd0-3bd191962bcc
-  alterId: 0
-  cipher: auto
-- name: 🇮🇷166791 | ⚡️Telegram = t.me/SOSkeyNET
   type: vmess
   server: 94.184.21.218
   port: 80
@@ -1601,6 +1707,90 @@ proxies:
   uuid: cf692710-935d-4a93-a294-71171b207d60
   alterId: 0
   cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1001
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🇮🇷166906 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1001
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1002
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🇮🇷166909 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1002
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1003
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🇮🇷166912 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1003
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2001
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🇮🇷166913 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2001
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2002
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🇮🇷166914 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2002
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2003
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: 🇮🇷166915 | ⚡️Telegram = t.me/SOSkeyNET
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2003
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
 - name: '@leviconfigs🪐-2'
   type: vmess
   server: 43.228.126.187
@@ -1615,7 +1805,61 @@ proxies:
   uuid: 92a048ec-a160-497e-8069-c2e902626d7a
   alterId: 0
   cipher: auto
+- name: "کانال ما \n@netghjlkj 5"
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇭🇰
+  type: vmess
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇭🇰
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
 - name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @EXPRESSVPN_420'
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: google.com
+    path: /vmess/
+- name: "کانال ما \n@netghjlkj 9"
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: google.com
+    path: /vmess/
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇬🇧
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -1726,13 +1970,6 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: '@i10VPN⁶'
   type: vmess
   server: 82.198.246.233
@@ -1748,6 +1985,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: '@i10VPN🥬'
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -1817,21 +2061,7 @@ proxies:
   uuid: 5e40f49a-d8ce-4efa-a0eb-5136586f4fe1
   alterId: 0
   cipher: auto
-- name: '@filembad'
-  type: vmess
-  server: 94.184.21.218
-  port: 80
-  uuid: 09e18d23-eaa6-43bd-8cd0-3bd191962bcc
-  alterId: 0
-  cipher: auto
-- name: "کانال ما \n@netghjlkj 2"
-  type: vmess
-  server: 94.184.21.218
-  port: 80
-  uuid: 09e18d23-eaa6-43bd-8cd0-3bd191962bcc
-  alterId: 0
-  cipher: auto
-- name: "کانال ما \n@netghjlkj 9"
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇮🇷
   type: vmess
   server: 94.184.21.218
   port: 80
@@ -1968,6 +2198,13 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇸🇬
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 Join+Telegram:@Farah_VPN 🇸🇬
   type: vmess
   server: 149.88.23.207
@@ -1989,6 +2226,16 @@ proxies:
   uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
   alterId: 0
   cipher: auto
+- name: "کانال ما \n@netghjlkj 6"
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇨🇦 Join+Telegram:@Farah_VPN 🇨🇦
   type: vmess
   server: 158.51.121.63
@@ -2017,6 +2264,13 @@ proxies:
   server: 165.140.216.141
   port: 443
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: "کانال ما \n@netghjlkj 4"
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
 - name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇺🇸
@@ -2082,7 +2336,7 @@ proxies:
   uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
   alterId: 0
   cipher: auto
-- name: Vegaas_vpn
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇹🇼
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -2171,7 +2425,7 @@ proxies:
   cipher: auto
   tls: true
   servername: 185.204.170.125
-- name: '@filembad'
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇹🇷
   type: vmess
   server: 188.132.232.85
   port: 2086
@@ -2229,27 +2483,6 @@ proxies:
   network: ws
   ws-opts:
     path: /dkfjh222
-- name: '@filembad'
-  type: vmess
-  server: 212.74.39.88
-  port: 8080
-  uuid: a748127d-70d4-4ffd-8dd0-9789ef58caf0
-  alterId: 0
-  cipher: auto
-- name: "کانال ما \n@netghjlkj 1"
-  type: vmess
-  server: 212.74.39.88
-  port: 8080
-  uuid: a748127d-70d4-4ffd-8dd0-9789ef58caf0
-  alterId: 0
-  cipher: auto
-- name: "کانال ما \n@netghjlkj 5"
-  type: vmess
-  server: 212.74.39.88
-  port: 8080
-  uuid: a748127d-70d4-4ffd-8dd0-9789ef58caf0
-  alterId: 0
-  cipher: auto
 - name: '@Iran_v2ray1 🌟'
   type: vmess
   server: 212.74.39.88
@@ -2278,6 +2511,13 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: '@v2raybaaz ³'
+  type: vmess
+  server: 31.77.8.97
+  port: 110
+  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+  alterId: 0
+  cipher: auto
 - name: '@vpnbaz 🍭'
   type: vmess
   server: 31.77.8.97
@@ -2304,6 +2544,83 @@ proxies:
   server: 38.110.1.246
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: '[🇮🇷]ConfigV2RayNG '
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1003
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: '[🇮🇷]ConfigV2RayNG '
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2002
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: '[🇮🇷]ConfigV2RayNG '
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2003
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: '@filembad'
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1001
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: '@filembad'
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1002
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: '@filembad'
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1003
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇮🇷
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 1003
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: '@filembad'
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2001
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: '@filembad'
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2002
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇮🇷
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2002
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  alterId: 0
+  cipher: auto
+- name: '@filembad'
+  type: vmess
+  server: tun-1.veraspeed.ir
+  port: 2003
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
   alterId: 0
   cipher: auto
 - name: '@custom_config (mtn)'
@@ -2639,20 +2956,6 @@ proxies:
     headers:
       Host: sog.shahinnet.shop
     path: /
-- name: "کانال ما \n@netghjlkj 9"
-  type: vmess
-  server: snnsjsowowiwueieyeye.sobu.ir
-  port: 40864
-  uuid: 4a9a2ec3-91f4-46ed-a647-0a092bf4b6a3
-  alterId: 0
-  cipher: auto
-- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇫🇮
-  type: vmess
-  server: snnsjsowowiwueieyeye.sobu.ir
-  port: 40864
-  uuid: 4a9a2ec3-91f4-46ed-a647-0a092bf4b6a3
-  alterId: 0
-  cipher: auto
 - name: '%40V2RAYNG_IP%20%E2%98%80%EF%B8%8F'
   type: vmess
   server: newrelax.relaxedboy.online
@@ -2777,27 +3080,37 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇲🇾MY-47.250.45.234-5363
+- name: 🇮🇳IN-152.67.8.205-0297
   type: vmess
-  server: 47.250.45.234
-  port: 8613
-  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇭🇰HK-47.244.120.197-5473
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     path: /arki?ed=2048
-- name: 🇲🇾MY-47.250.45.234-5362
+- name: 🇭🇰HK-47.244.120.197-5289
   type: vmess
-  server: 47.250.45.234
-  port: 43063
-  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /arki?ed=2048
-- name: 🇭🇰HK-156.245.232.239-0198
+    path: /arki
+- name: 🇭🇰HK-156.245.232.239-0202
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -2807,17 +3120,79 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇳🇱NL-195.54.174.18-4927
+- name: 🇲🇾MY-47.250.45.234-5485
   type: vmess
-  server: 195.54.174.18
+  server: 47.250.45.234
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+- name: 🏁RELAY-104.16.89.44-4979
+  type: vmess
+  server: 104.16.89.44
+  port: 443
+  uuid: 9a18cbb1-81d2-4720-9f09-46ea276b6ddb
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: zhuyong.hucloud-dns.xyz
+  network: ws
+  ws-opts:
+    headers:
+      Host: zhuyong.hucloud-dns.xyz
+    path: /huhublog
+- name: 🇺🇸US-205.185.121.4-0112
+  type: vmess
+  server: 205.185.121.4
   port: 80
-  uuid: 6d6f413f-3dc2-4d02-8d35-8b45e39feb72
+  uuid: 1e45ace9-8284-445b-b8fd-195b51ec8b6b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: 205.185.121.4
+    path: /
+- name: 🇺🇸US-205.185.121.4-0091
+  type: vmess
+  server: 205.185.121.4
+  port: 80
+  uuid: 1e45ace9-8284-445b-b8fd-195b51ec8b6b
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     path: /
-- name: 🇨🇳CN-120.240.55.137-0103
+- name: 🏁RELAY-172.67.167.120-0088
+  type: vmess
+  server: 172.67.167.120
+  port: 443
+  uuid: f5e74e66-0241-447c-83a4-a4005f438536
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: m4.v2rayfree1.xyz
+  network: ws
+  ws-opts:
+    headers:
+      Host: m4.v2rayfree1.xyz
+    path: /ray
+- name: 🇰🇷KR-152.67.218.38-0083
+  type: vmess
+  server: 152.67.218.38
+  port: 443
+  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: 152.67.218.38
+    path: /
+- name: 🇨🇳CN-120.240.55.137-0052
   type: vmess
   server: 120.240.55.137
   port: 38201
@@ -2829,7 +3204,17 @@ proxies:
     headers:
       Host: 120.240.55.137
     path: /hls/cctv5phd.m3u8
-- name: 🇦🇺AU-103.224.212.142-0087
+- name: 🇨🇳CN-120.240.55.137-0050
+  type: vmess
+  server: 120.240.55.137
+  port: 38201
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+- name: 🇦🇺AU-103.224.212.142-0047
   type: vmess
   server: akazz-1048-v2-2.tyo-r-kcd-a.nd.cjhh.mom
   port: 39928
@@ -2843,7 +3228,7 @@ proxies:
     headers:
       Host: edge.cjhh.mom
     path: /je5x3pBN1vez3NQudNkB
-- name: 🇦🇺AU-103.224.212.142-0084
+- name: 🇦🇺AU-103.224.212.142-0043
   type: vmess
   server: mpdee-1042-v2-0.tyo-d-kcd.ap.cjhh.beauty
   port: 888
@@ -2857,77 +3242,17 @@ proxies:
     headers:
       Host: s3.cjhh.beauty
     path: /je5x3pBN1vez3NQudNkB
-- name: 🇻🇳VN-103.186.148.113-0078
+- name: 🇲🇾MY-47.250.45.234-0186
   type: vmess
-  server: 103.186.148.113
-  port: 80
-  uuid: 67468d89-cf87-443c-baca-49f1e73b5991
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: 103.186.148.113
-    path: /shopvpn.net
-- name: 🇰🇷KR-152.67.218.38-0068
-  type: vmess
-  server: 152.67.218.38
-  port: 443
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: 152.67.218.38
-    path: /
-- name: 🇺🇸US-205.185.121.4-0064
-  type: vmess
-  server: 205.185.121.4
-  port: 80
-  uuid: 1e45ace9-8284-445b-b8fd-195b51ec8b6b
+  server: 47.250.45.234
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     path: /
-- name: 🇺🇸US-107.175.91.118-0187
-  type: vmess
-  server: 107.175.91.118
-  port: 443
-  uuid: 1bb1f95f-7425-4442-93f7-8fc1bd1a2001
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇳CN-119.36.161.40-0034
-  type: vmess
-  server: 119.36.161.40
-  port: 443
-  uuid: 2a23dbd5-09cf-4aa8-a835-3230728c4973
-  alterId: 64
-  cipher: auto
-  tls: true
-  servername: www.25055502.xyz
-  network: ws
-  ws-opts:
-    headers:
-      Host: www.25055502.xyz
-    path: /path/323127100515
-- name: 🇭🇰HK-47.244.120.197-0199
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇲🇾MY-47.250.45.234-0200
+- name: 🇲🇾MY-47.250.45.234-0187
   type: vmess
   server: 47.250.45.234
   port: 43063
@@ -2937,61 +3262,17 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇭🇰HK-47.244.120.197-0201
+- name: 🇳🇱NL-195.54.174.18-0204
   type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇭🇰HK-18.167.20.169-0212
-  type: vmess
-  server: 18.167.20.169
-  port: 8080
-  uuid: e1f97064-adcd-40d3-91a0-3f0bea035fca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇯🇵JP-172.111.146.64-0227
-  type: vmess
-  server: 172.111.146.64
+  server: 195.54.174.18
   port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  uuid: 6d6f413f-3dc2-4d02-8d35-8b45e39feb72
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     path: /
-- name: 🏁RELAY-172.64.145.93-0229
-  type: vmess
-  server: www.shopify.com
-  port: 443
-  uuid: d187a23a-76a9-4d55-84e3-ea3b8b222cbf
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: dimensional-regularly-buildings-keys.trycloudflare.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: dimensional-regularly-buildings-keys.trycloudflare.com
-    path: /
-- name: 🇮🇳IN-152.67.8.205-0238
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇳CN-120.240.55.137-0239
+- name: 🇨🇳CN-120.240.55.137-0208
   type: vmess
   server: 120.240.55.137
   port: 38201
@@ -3000,8 +3281,24 @@ proxies:
   cipher: auto
   network: ws
   ws-opts:
+    headers:
+      Host: 120.240.55.137
     path: /
-- name: 🇦🇺AU-103.224.212.142-0240
+- name: 🇦🇺AU-103.224.212.142-0222
+  type: vmess
+  server: akazz-1048-v2-2.tyo-r-kcd-a.nd.cjhh.mom
+  port: 39928
+  uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: edge.cjhh.mom
+  network: ws
+  ws-opts:
+    headers:
+      Host: edge.cjhh.mom
+    path: /
+- name: 🇦🇺AU-103.224.212.142-0223
   type: vmess
   server: mpdee-1042-v2-0.tyo-d-kcd.ap.cjhh.beauty
   port: 888
@@ -3015,101 +3312,63 @@ proxies:
     headers:
       Host: s3.cjhh.beauty
     path: /
-- name: 🇨🇳CN-120.240.55.137-0242
+- name: 🇻🇳VN-103.186.148.113-0224
   type: vmess
-  server: 120.240.55.137
-  port: 38201
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  server: 103.186.148.113
+  port: 80
+  uuid: 67468d89-cf87-443c-baca-49f1e73b5991
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     headers:
-      Host: 120.240.55.137
+      Host: 103.186.148.113
     path: /
-- name: 🏁RELAY-104.17.77.77-0246
+- name: 🇦🇺AU-103.224.212.142-0028
   type: vmess
-  server: 104.17.77.77
+  server: asjlg-1041-v2-1.hkg-d-hkt.nd.cjhh.mom
+  port: 888
+  uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: edge.cjhh.mom
+  network: ws
+  ws-opts:
+    headers:
+      Host: edge.cjhh.mom
+    path: /je5x3pBN1vez3NQudNkB
+- name: 🇺🇸US-107.175.91.118-0253
+  type: vmess
+  server: 107.175.91.118
+  port: 443
+  uuid: 1bb1f95f-7425-4442-93f7-8fc1bd1a2001
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+- name: '@Daily_Configs :‌ کانال تلگرام'
+  type: vless
+  server: ro-xh02.tcp-reset-club.net
   port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  uuid: 4fb82973-a7f1-4fc2-9958-cb21f5162f06
   tls: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /
-- name: 🇻🇳VN-103.186.148.106-0248
-  type: vmess
-  server: 103.186.148.106
-  port: 80
-  uuid: a479fc02-07c5-4864-8564-c4f147dfa488
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: frontier-i18n.tiktokv.com
-    path: /
-- name: 🇲🇾MY-47.250.45.234-0253
-  type: vmess
-  server: 47.250.45.234
-  port: 8613
-  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇿CZ-46.8.9.220-0259
-  type: vmess
-  server: fr-v.sshmax.xyz
-  port: 80
-  uuid: 8500264f-8362-4c30-a97f-6594d8445e0b
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    headers:
-      Host: fr-v.sshmax.xyz
-    path: /
-- name: '@v2rayNG_Matsuri'
+  servername: s3.netavex.com
+  client-fingerprint: chrome
+- name: '@V2rayng_Fast 🇫🇷'
   type: vless
-  server: 193.148.253.186
-  port: 49188
-  uuid: 4ce7fa65-37ee-48ef-b7a3-902caf592e81
-- name: '@v2rayNG_Matsuri'
-  type: vless
-  server: 172.67.217.10
+  server: 150.40.126.18
   port: 443
-  uuid: bfea31b5-371b-48d9-a9fa-4767ed6a5973
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
   tls: true
-  servername: bluerocketway-bcc.lat
-  network: ws
-  ws-opts:
-    headers:
-      Host: bluerocketway-bcc.lat
-    path: /jetiona
-- name: '@v2rayNG_Matsuri'
-  type: vless
-  server: 89.124.251.218
-  port: 20110
-  uuid: e2f46341-0eea-4c34-9175-312db4d0cc57
-- name: 𝗝𝗼𝗶𝗻➠@PlanB_net
-  type: vless
-  server: 95.85.253.208
-  port: 443
-  uuid: 568addfa-796a-40f8-820d-a071ee2ca50a
-  tls: true
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🎡10@oneclickvpnkeys
-  type: vless
-  server: 91.107.179.8
-  port: 15003
-  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
+  servername: rs1.univesalsrv.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: node.v2.ObjectService
 - name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
   type: vless
   server: ro-xh02.tcp-reset-club.net
@@ -3118,6 +3377,11 @@ proxies:
   tls: true
   servername: s3.netavex.com
   client-fingerprint: chrome
+- name: 🎡10@oneclickvpnkeys
+  type: vless
+  server: 91.107.179.8
+  port: 15003
+  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
 - name: ✅64@oneclickvpnkeys
   type: vless
   server: nl-xh02.tcp-reset-club.net
@@ -3134,6 +3398,16 @@ proxies:
   tls: true
   servername: play.google.com
   client-fingerprint: random
+- name: '@Shh_Proxy-New⁷'
+  type: vless
+  server: 57.131.21.102
+  port: 8443
+  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  tls: true
+  servername: milan.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /RoBeRt
 - name: '@V2rayng_Fast 🇩🇪'
   type: vless
   server: 31.76.91.72
@@ -3177,17 +3451,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-- name: '@v2raybaaz ²'
+- name: '@FarazV2ray'
   type: vless
-  server: md5.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  server: 31.76.91.72
+  port: 2087
+  uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
   tls: true
-  servername: md5.univesalsrv.com
-  client-fingerprint: firefox
+  servername: ads.x5.ru
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: app.v1.PushService
+    grpc-service-name: grpc
 - name: Poland
   type: vless
   server: 54.38.138.175
@@ -3270,7 +3544,7 @@ proxies:
   servername: amp-api-edge.apps.apple.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '@filembad'
+- name: filembad-29
   type: vless
   server: 207.241.172.98
   port: 4777
@@ -3304,15 +3578,6 @@ proxies:
   uuid: 008678b8-5e27-49fa-b95a-1fff4c61a849
   tls: true
   servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: filembad-33
-  type: vless
-  server: 5.253.38.67
-  port: 40444
-  uuid: 00882583-1f20-4701-bfa6-05f2294b07df
-  tls: true
-  servername: www.lovelive-anime.jp
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: 2 🇺🇸 @V2ngNet
@@ -3361,6 +3626,24 @@ proxies:
     headers:
       Host: cdn.melodyshopone2.ir
     path: /
+- name: '[045944] - 🇳🇱 The Netherlands | ⚡️ 27.08ms | @freenettir'
+  type: vless
+  server: 107.189.25.18
+  port: 443
+  uuid: 00f53158-c278-4d64-ae98-a60c5fe09ffa
+  tls: true
+  servername: cdn.dodostatic.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇳🇱NL-🚀@VPNine1
+  type: vless
+  server: 107.189.25.18
+  port: 443
+  uuid: 00f53158-c278-4d64-ae98-a60c5fe09ffa
+  tls: true
+  servername: cdn.dodostatic.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: 🇩🇪All¹ | @BigSmoke_Config
   type: vless
   server: lovesykun.cn
@@ -3716,13 +3999,6 @@ proxies:
     headers:
       Host: tmesubgift.up.railway.app
     path: /ws/026149af-ee7c-2044-944e-34d522fd6f7e
-- name: vless-188.213.197.1
-  type: vless
-  server: 188.213.197.1
-  port: 1819
-  uuid: 0265873e-0ec7-4d73-9ce7-152df2df75f0
-  tls: true
-  servername: 130.185.120.110
 - name: All Operators @MaSTeRSeRVeR1
   type: vless
   server: 69.46.46.103
@@ -3821,312 +4097,12 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '@v2ray313 کانالمون 😦'
+- name: 🇱🇻166903 | ⚡️Telegram = t.me/SOSkeyNET
   type: vless
-  server: 31.15.17.68
-  port: 40614
-  uuid: 030bc293-1c0e-483c-a65f-0f73c0672bcd
-  tls: true
-  servername: intel.com
-  client-fingerprint: chrome
-- name: '@Net2ray KZ'
-  type: vless
-  server: 111.88.143.139
-  port: 51940
-  uuid: 03464802-b517-404b-b15c-7750ffc5e78f
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇯🇵 Join+Telegram:@Farah_VPN 🇯🇵
-  type: vless
-  server: 18.177.61.231
-  port: 30203
-  uuid: 0346a35f-8e11-4b33-852d-00fa9c642878
-  tls: true
-  servername: www.sony.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '@v2ray313 کانالمون 🕳️'
-  type: vless
-  server: 188.114.97.3
-  port: 2052
-  uuid: 035c8a3d-1cec-43e2-369d-f98593af1d9a
-- name: '@v2ray313 کانالمون 🥶'
-  type: vless
-  server: 188.114.97.3
-  port: 2052
-  uuid: 035c8a3d-1cec-43e2-369d-f98593af1d9a
-- name: Tel-@ProxyMtAlpha🥴 5
-  type: vless
-  server: 188.114.97.3
-  port: 2082
-  uuid: 035c8a3d-1cec-43e2-369d-f98593af1d9a
-- name: '@v2ray313 کانالمون 🌝'
-  type: vless
-  server: 188.114.97.3
-  port: 2082
-  uuid: 035c8a3d-1cec-43e2-369d-f98593af1d9a
-- name: '@v2ray313 کانالمون 🌝'
-  type: vless
-  server: chatgpt.com
-  port: 8880
-  uuid: 035c8a3d-1cec-43e2-369d-f98593af1d9a
-- name: 🩵+@Azarakhsh_Proxy+🩷
-  type: vless
-  server: www.speedtest.net
-  port: 2095
-  uuid: 03633612-cb32-46cc-8f93-7103d1511ade
-- name: '@leviconfigs🪐-15'
-  type: vless
-  server: 104.16.80.73
+  server: 195.123.213.28
   port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  tls: true
-  servername: de-new.ariyuz.org
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-leviconfigs?ed=512
-- name: '@Shh_Proxy-New²'
-  type: vless
-  server: 78.111.89.171
-  port: 443
-  uuid: 0370b162-baff-4757-86cc-cce4bf07f6f1
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
   tls: true
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: '@i10VPN💳'
-  type: vless
-  server: 78.111.89.171
-  port: 443
-  uuid: 0370b162-baff-4757-86cc-cce4bf07f6f1
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  type: vless
-  server: 78.111.89.171
-  port: 443
-  uuid: 0370b162-baff-4757-86cc-cce4bf07f6f1
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: All Operators @MaSTeRSeRVeR1
-  type: vless
-  server: 69.46.46.105
-  port: 443
-  uuid: 03746754-100d-565e-11bf-def7f5522759
-  tls: true
-  servername: cobalt-delta-8e5d-production.up.railway.app
-  network: ws
-  ws-opts:
-    headers:
-      Host: cobalt-delta-8e5d-production.up.railway.app
-    path: /ws/03746754-100d-565e-11bf-def7f5522759
-- name: چنل عضو شو @v2ra_config
-  type: vless
-  server: 143.246.136.234
-  port: 8080
-  uuid: 037ec3f3-d983-4f05-9ae2-03f0c1d7977c
-- name: '@Shh_Proxy-New⁵'
-  type: vless
-  server: mtn2.6.6.6.6.divar.ir.hamrahaval.fun
-  port: 9001
-  uuid: 0389f39c-0187-4331-8ed7-2211f0413afc
-- name: bisto4_service
-  type: vless
-  server: mtn2.6.6.6.6.divar.ir.hamrahaval.fun
-  port: 9001
-  uuid: 0389f39c-0187-4331-8ed7-2211f0413afc
-- name: 1 🇺🇸 @V2ngNet
-  type: vless
-  server: 69.46.46.31
-  port: 443
-  uuid: 03b90c94-0617-aa8a-9779-5fe432239d73
-  tls: true
-  servername: polar-prairie-432a-production.up.railway.app
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  type: vless
-  server: 31.76.88.10
-  port: 443
-  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
-  tls: true
-  servername: cf5.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: cf5.rumedia-cdn.com
-    path: /cdn/v3/live
-- name: 📀22@oneclickvpnkeys
-  type: vless
-  server: 94.156.232.254
-  port: 443
-  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
-  tls: true
-  servername: cf6.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: cf6.rumedia-cdn.com
-    path: /cdn/v3/live
-- name: '@v2ray313 کانالمون 💦'
-  type: vless
-  server: 94.156.232.254
-  port: 443
-  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
-  tls: true
-  servername: cf6.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: cf6.rumedia-cdn.com
-    path: /cdn/v3/live
-- name: '@fastkanfig'
-  type: vless
-  server: 94.156.232.254
-  port: 443
-  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
-  tls: true
-  servername: cf6.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: cf6.rumedia-cdn.com
-    path: /cdn/v3/live
-- name: '@BlueberryNetWork'
-  type: vless
-  server: 185.141.107.42
-  port: 777
-  uuid: 03f929bb-7a94-4400-a882-d846d18b614e
-- name: '🇫🇮 AzadMarz [ Irancell / Rightel ]-JOIN  : @AzadMarz'
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 041e5c35-5698-4005-b015-471ccf6812b8
-  network: ws
-  ws-opts:
-    headers:
-      Host: rb24.ir
-    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
-- name: 德国
-  type: vless
-  server: www.homaxcorp.com.homaxcorp.com
-  port: 2055
-  uuid: 042adee0-9b4f-43f5-a915-a627313f28c0
-  network: ws
-  ws-opts:
-    headers:
-      Host: images.mzstatic.com
-    path: /
-- name: '@Hope_Net-join-us-on-Telegram'
-  type: vless
-  server: 104.16.48.56
-  port: 80
-  uuid: 042c7251-327e-4900-a937-d6d1be58c92d
-  network: ws
-  ws-opts:
-    headers:
-      Host: FND1adV2ray8.5.8.5.CoM.SitE.IR.SHop.RubiKa.xn--4kqx5ax2nlue523g.CoM.
-    path: /admin48V2rayVipVPN?ed=2048
-- name: '@prrofile_purple | 𝗙𝗮𝗦𝗧 💚'
-  type: vless
-  server: 193.233.133.152
-  port: 53587
-  uuid: 048c2cb6-b4be-4f2a-bc04-994624b53629
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-- name: 🇳🇱 CxrolVPN
-  type: vless
-  server: 104.16.63.239
-  port: 80
-  uuid: 04969b01-ac6a-4056-b5cd-852ccf45f100
-  network: ws
-  ws-opts:
-    headers:
-      Host: netherlands.vipserver14.workers.dev
-    path: /?ed=2048
-- name: 🎡29@oneclickvpnkeys
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: '@Shh_Proxy-New³'
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇸🇬 Join+Telegram:@Farah_VPN 🇸🇬
-  type: vless
-  server: singapore.com
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  tls: true
-  servername: misaka.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: misaka.cndyw.ggff.net
-    path: /?ed=2560fp=chrome
-- name: 🇩🇪 - DE - @FreeOnlineVPN
-  type: vless
-  server: edge.aiteamplus.ir
-  port: 10007
-  uuid: 04c9681a-277f-4d97-8922-1bc64bc1cc07
-- name: 🇨🇦139894 | ⚡️Telegram = t.me/SOSkeyNET
-  type: vless
-  server: 104.16.75.207
-  port: 443
-  uuid: 04d630b3-4b8d-422d-b53c-99addcb13191
-  tls: true
-  servername: v3.sub1vpn.dpdns.org
-- name: 🇩🇪All¹ | @BigSmoke_Config
-  type: vless
-  server: 23.137.249.110
-  port: 37470
-  uuid: 04eb0e21-135d-4a0b-a22d-40a4e059d7f9
-  tls: true
-  servername: 23.137.249.110
-- name: 🎡41@oneclickvpnkeys
-  type: vless
-  server: 151.242.168.180
-  port: 443
-  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 🇳🇴 Join+Telegram:@Farah_VPN 🇳🇴
-  type: vless
-  server: 151.242.168.180
-  port: 443
-  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: Free x224 @Outline_Vpn
-  type: vless
-  server: 151.242.168.180
-  port: 443
-  uuid: 05020afd-d476-406b-8950-ee7dd63a6e64
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 𝗝𝗼𝗶𝗻➠@V2RAYNG_IP⚡️
-  type: vless
-  server: 66.33.22.232
-  port: 43484
-  uuid: 05070d8d-ddb3-4f22-9152-4f1128ba4d1b
-  tls: true
-  servername: green.ai
-  client-fingerprint: chrome
