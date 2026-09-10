@@ -1,477 +1,113 @@
 proxies:
-- name: TR【机场推荐：https://a9a.xyz】18
+- name: 德国+法尔肯施泰因Hetzner
+  type: trojan
+  server: 88.198.82.150
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 乌克兰+V2CROSS.COM
+  type: vless
+  server: 185.147.27.183
+  port: 8443
+  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  tls: true
+  servername: user-6a917f32.noooo.win
+  flow: xtls-rprx-vision
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.26.15.137
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 V2CROSS.COM
   type: vmess
-  server: 188.132.232.85
-  port: 2086
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  server: 165.140.217.2
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-- name: RU【机场推荐：https://a9a.xyz】19
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 英国+V2CROSS.COM
   type: vless
-  server: pr-media.pepro.site
-  port: 14443
-  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  server: 2.26.178.152
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   tls: true
-  servername: pr-media.pepro.site
+  servername: localhost
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 英国+V2CROSS.COM
+  type: vless
+  server: brightharbor.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+  servername: localhost
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 巴西圣保罗+CloudFlare节点
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /ws
-- name: CA【机场推荐：https://a9a.xyz】20
-  type: trojan
-  server: 172.67.188.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】21
-  type: trojan
-  server: 104.18.152.155
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】22
-  type: trojan
-  server: 104.18.152.187
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】23
-  type: trojan
-  server: 104.16.174.22
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】24
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: DE【机场推荐：https://a9a.xyz】25
-  type: trojan
-  server: 141.101.90.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】26
-  type: trojan
-  server: 104.18.152.233
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US【机场推荐：https://a9a.xyz】27
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】28
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】29
-  type: trojan
-  server: 104.18.152.140
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】30
-  type: trojan
-  server: 104.18.152.229
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】31
-  type: trojan
-  server: 104.18.152.246
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: TR【机场推荐：https://a9a.xyz】32
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】33
-  type: trojan
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】34
-  type: trojan
-  server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】35
-  type: trojan
-  server: 104.18.152.219
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】36
-  type: trojan
-  server: 104.18.152.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】37
-  type: trojan
-  server: 104.18.152.225
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】38
-  type: trojan
-  server: 104.16.174.44
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】39
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: US【机场推荐：https://a9a.xyz】40
-  type: trojan
-  server: 8.6.112.0
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】41
-  type: trojan
-  server: 104.16.174.34
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】42
-  type: trojan
-  server: 104.18.152.204
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】43
-  type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】44
-  type: trojan
-  server: 104.16.174.46
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】45
-  type: trojan
-  server: 104.16.174.6
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: CA【机场推荐：https://a9a.xyz】46
-  type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】47
-  type: trojan
-  server: 216.24.57.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】48
-  type: trojan
-  server: 104.18.152.230
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】49
-  type: trojan
-  server: 104.18.152.144
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】50
-  type: trojan
-  server: 104.18.152.210
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】51
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】52
-  type: trojan
-  server: 104.18.152.103
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】53
-  type: trojan
-  server: 104.16.174.37
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】54
-  type: trojan
-  server: 104.16.174.148
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】55
-  type: trojan
-  server: 104.16.73.213
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】56
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】57
-  type: trojan
-  server: render.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】58
-  type: trojan
-  server: 104.17.111.8
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】59
-  type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】60
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】61
-  type: trojan
-  server: 188.114.97.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】62
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+    path: /
+- name: 美国+CloudFlare节点
   type: trojan
   server: 172.67.221.242
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】63
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】64
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】65
-  type: trojan
-  server: 104.26.14.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】66
-  type: trojan
-  server: 172.67.74.2
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】67
+- name: 德国+V2CROSS.COM
   type: vless
-  server: 213.176.77.138
+  server: fr-node.usel.pro
   port: 443
-  uuid: ca19c24a-e5ec-45f8-8cd1-c97d84da5e35
+  uuid: 6fb79584-30b8-4888-b358-98f7ef6b8697
   tls: true
-  servername: de1.boutique-hotel1108.ru
-  client-fingerprint: firefox
+  servername: yunohost.org
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: UN【机场推荐：https://a9a.xyz】68
+- name: 英国+V2CROSS.COM
   type: vless
-  server: 15.188.69.42
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: UN【机场推荐：https://a9a.xyz】69
-  type: vless
-  server: a2.arshia-nova.ir
+  server: 2.26.178.129
   port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /
-- name: UN【机场推荐：https://a9a.xyz】70
-  type: trojan
-  server: 176.97.66.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: UN【机场推荐：https://a9a.xyz】71
-  type: vless
-  server: 167.104.104.138
+  servername: localhost
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 克罗地亚+V2CROSS.COM
+  type: hysteria2
+  server: 46.229.243.152
   port: 8443
-  uuid: a5194487-9b9a-462f-a047-ac7580d80201
-  tls: true
-  servername: n.tmkkarss.online
-  network: ws
-  ws-opts:
-    path: /
-- name: UN【机场推荐：https://a9a.xyz】72
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
+- name: 巴西圣保罗+CloudFlare节点
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 172.67.139.129
+  server: 188.114.97.7
   port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
   tls: true
-  servername: 8-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
+  servername: web-socket.tgdaosheng.ggff.net
   network: ws
   ws-opts:
     headers:
-      Host: 8-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
-  type: trojan
-  server: 8.6.112.0
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+加州
-  type: trojan
-  server: render.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+      Host: web-socket.tgdaosheng.ggff.net
+    path: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
 - name: 美国+V2CROSS.COM
-  type: hysteria2
-  server: 205.237.109.165
-  port: 8443
-  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
-  sni: hopp-netherland-new.dynuddns.net
-- name: 广东省广州市+UCloud
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-- name: 美国+科罗拉多州NTT(美国)通信公司
-  type: vless
-  server: 157.238.208.110
-  port: 41834
-  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
-  network: ws
-  ws-opts:
-    path: /5adeccb9
-- name: 美国+CloudFlare节点
-  type: vless
-  server: cf4.466688.xyz
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  tls: true
-  servername: mia1.pages.dev
-  network: ws
-  ws-opts:
-    headers:
-      Host: mia1.pages.dev
-    path: /retrieve/index/company?ed=2560@https://t.me/QiangLieTuiJian
-- name: 广东省广州市+UCloud
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-- name: 巴林+V2CROSS.COM
-  type: vless
-  server: 188.137.242.143
-  port: 443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  tls: true
-  servername: us-main-1.hanvpn.biz
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 172.67.118.45
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-    path: /
-- name: 美国+CloudFlare节点
   type: trojan
-  server: www.ignitelimit.com
+  server: 167.82.76.27
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-- name: 伊朗+V2CROSS.COM
-  type: vless
-  server: 151.244.30.176
-  port: 443
-  uuid: c928859b-424d-429c-b1fe-c99137af7c4b
-  tls: true
-  servername: smartcaptcha.yandexcloud.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.17.111.1
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 英国+V2CROSS.COM
-  type: hysteria2
-  server: gta.internet-card.sbs
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-- name: 美国+Muskingum+College
-  type: vless
-  server: 143.246.223.73
-  port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-  tls: true
-  servername: mold2.freeinternat.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 英国+V2CROSS.COM
-  type: vless
-  server: 178.105.61.61
-  port: 2083
-  uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
-  tls: true
-  servername: 178.105.61.61
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  password: MiTiVPN
+  sni: ssl.fastly.com
 - name: 防范境外势力渗透
   type: vmess
   server: 127.0.0.53
@@ -542,12 +178,66 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
   alterId: 0
   cipher: auto
+- name: '@Daily_Configs'
+  type: hysteria2
+  server: 162.249.125.133
+  port: 443
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+- name: 'Tel: @Daily_Configs'
+  type: hysteria2
+  server: 144.31.49.138
+  port: 443
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ru1.sferavpn.pro
+- name: ✅ t.me/bigAVPN ایران آزاد 👑
+  type: hysteria2
+  server: 2.27.249.79
+  port: 443
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: nl1.sferavpn.pro
 - name: 未命名
   type: hysteria2
   server: giftcard.gateway-stream.com
   port: 52056
   password: fr9p9ji70krwnup6
   sni: giftcard.gateway-stream.com
+- name: '@ICV2RAY'
+  type: hysteria2
+  server: giftcard.gateway-stream.com
+  port: 52021
+  password: ijrixp6yh62ectfw
+  sni: giftcard.gateway-stream.com
+- name: VCONFING
+  type: hysteria2
+  server: giftcard.gateway-stream.com
+  port: 52030
+  password: ijrixp6yh62ectfw
+  sni: giftcard.gateway-stream.com
+- name: '@ICV2RAY #1'
+  type: hysteria2
+  server: giftcard.gateway-stream.com
+  port: 52031
+  password: ijrixp6yh62ectfw
+  sni: giftcard.gateway-stream.com
+- name: -🇹🇷 @VConfing
+  type: hysteria2
+  server: giftcard.gateway-stream.com
+  port: 52067
+  password: ijrixp6yh62ectfw
+  sni: giftcard.gateway-stream.com
+- name: '-🇩🇪 @VConfing #1'
+  type: hysteria2
+  server: giftcard.gateway-stream.com
+  port: 52021
+  password: s6gt5e4mof43sfg8
+  sni: giftcard.gateway-stream.com
+- name: 'Tel: @Daily_Configs #1'
+  type: hysteria2
+  server: bwdf2fnt.xn--e1aatfr8bwa.online
+  port: 443
+  password: tnnls
+  sni: bwdf2fnt.xn--e1aatfr8bwa.online
 - name: 🇭🇰 香港|@ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -562,6 +252,160 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
+- name: 🇨🇭CH_1|1.4MB/s
+  type: hysteria2
+  server: 152.67.75.161
+  port: 443
+  password: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
+- name: 🇺🇸US_1|3.5MB/s
+  type: vmess
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16626
+  uuid: bc8a58c9-a544-4f85-87cf-274f6eb4d8cb
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: 9531724e3efc3135bdf7f4339b2e04d7.mobgslb.tbcache.com
+    path: /
+- name: 🇯🇵JP_1|4.7MB/s
+  type: vless
+  server: jp4-r.link-t7.com
+  port: 10034
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  tls: true
+  servername: s0.awsstatic.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+- name: 🇰🇷KR_1|4.7MB/s
+  type: vless
+  server: kr3-r.link-t7.com
+  port: 10048
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  tls: true
+  servername: s0.awsstatic.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+- name: 🇳🇱NL_1|2.4MB/s
+  type: hysteria2
+  server: 46.229.243.152
+  port: 8443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
+- name: 🇭🇰HK_1|3.2MB/s
+  type: vmess
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  uuid: bc8a58c9-a544-4f85-87cf-274f6eb4d8cb
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    headers:
+      Host: 9531724e3efc3135bdf7f4339b2e04d7.mobgslb.tbcache.com
+    path: /
+- name: 🇫🇷FR_1|2.8MB/s
+  type: hysteria2
+  server: vpn-fr-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-002.fastervpn.world
+- name: 🇷🇴RO_1|1.4MB/s
+  type: hysteria2
+  server: 205.237.109.176
+  port: 8443
+  password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
+  sni: hopp-netherland-new.dynuddns.net
+- name: 🇸🇬SG_1|2.0MB/s
+  type: vless
+  server: sg2-r.link-t7.com
+  port: 10037
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  tls: true
+  servername: s0.awsstatic.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+- name: 🇬🇧GB_2|1.1MB/s
+  type: vless
+  server: 2.26.178.166
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+  servername: localhost
+  flow: xtls-rprx-vision-udp443
+- name: 🇩🇪DE_3|1008KB/s
+  type: trojan
+  server: 50.62.194.195
+  port: 2096
+  password: iwangjie
+  sni: nodes.830901.xyz
+- name: 🇮🇪IE_1|1.1MB/s
+  type: vless
+  server: 50.7.5.164
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  servername: ir.failspace.top
+  flow: xtls-rprx-vision-udp443
+- name: 🇬🇧GB_6|1.6MB/s
+  type: vless
+  server: 66.90.105.210
+  port: 2083
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇮🇪IE_2|2.7MB/s
+  type: ss
+  server: 63.32.92.226
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪DE_4|1.3MB/s
+  type: vless
+  server: 104.17.181.195
+  port: 443
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  tls: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: mianfei-73q.pages.dev
+    path: /proxyip=154.3.33.43fp=chrome
+- name: 🇰🇷KR_2|4.9MB/s
+  type: vless
+  server: kr2-r.link-t7.com
+  port: 10047
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  tls: true
+  servername: s0.awsstatic.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+- name: 🇯🇵JP_2|1.1MB/s
+  type: vless
+  server: cf5.466688.xyz
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  tls: true
+  servername: mia3.pages.dev
+  network: ws
+  ws-opts:
+    headers:
+      Host: mia3.pages.dev
+    path: /buy/out.php?ed=2560fp=chrome
+- name: 🇮🇪IE_3|1006KB/s
+  type: ss
+  server: 108.129.176.139
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 8元老牌专线机场：cczzuu.top
   type: vless
   server: us22.sofast.live
@@ -2987,3 +2831,180 @@ proxies:
   port: 24603
   cipher: rc4-md5
   password: dbEcUJ
+- name: 🇨🇳 CN 524 SSS
+  type: ss
+  server: 04.forlive.live
+  port: 22302
+  cipher: aes-128-gcm
+  password: 6044e7a8-a7e2-41a2-b5fa-b2d371f9da51
+- name: 🇨🇳 CN 526 SSS
+  type: ss
+  server: 36.212.129.235
+  port: 27273
+  cipher: chacha20-ietf-poly1305
+  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
+- name: 🇨🇳 CN 527 SSS
+  type: ss
+  server: 120.238.122.208
+  port: 20005
+  cipher: chacha20-ietf-poly1305
+  password: 99301d55-a41f-4919-986b-1435996533aa
+- name: 🇨🇳 CN 528 TJN
+  type: trojan
+  server: 2u3k01.a3b5wy.xyz
+  port: 36811
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: uk01.abpilot.xyz
+- name: 🇨🇳 CN 529 SSS
+  type: ss
+  server: 120.199.94.30
+  port: 27259
+  cipher: chacha20-ietf-poly1305
+  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
+- name: 🇨🇳 CN 534 TJN
+  type: trojan
+  server: bepshbgp01.004837963.xyz
+  port: 14505
+  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
+  sni: mpvideo.qpic.cn
+- name: 🇨🇳 CN 537 TJN
+  type: trojan
+  server: bepgzbgp01.004837963.xyz
+  port: 14461
+  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
+  sni: mpvideo.qpic.cn
+- name: 🇨🇳 CN 538 TJN
+  type: trojan
+  server: bepgzbgp01.004837963.xyz
+  port: 14414
+  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
+  sni: mpvideo.qpic.cn
+- name: 🇨🇳 CN 539 SSS
+  type: ss
+  server: 03.forlive.live
+  port: 22224
+  cipher: aes-128-gcm
+  password: 6044e7a8-a7e2-41a2-b5fa-b2d371f9da51
+- name: 🇨🇳 CN 540 SSS
+  type: ss
+  server: 120.238.122.208
+  port: 20007
+  cipher: chacha20-ietf-poly1305
+  password: 99301d55-a41f-4919-986b-1435996533aa
+- name: 🇨🇳 CN 541 SSS
+  type: ss
+  server: 211.99.97.16
+  port: 24603
+  cipher: rc4-md5
+  password: dbEcUJ
+- name: 🇨🇳 CN 543 SSS
+  type: ss
+  server: us07.ktp.wtf
+  port: 24603
+  cipher: rc4-md5
+  password: dbEcUJ
+- name: 🇨🇳 CN 544 TJN
+  type: trojan
+  server: bepshbgp01.004837963.xyz
+  port: 14434
+  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
+  sni: mpvideo.qpic.cn
+- name: 🇨🇳 CN 545 TJN
+  type: trojan
+  server: 8t6w02.a3b5wy.xyz
+  port: 36306
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: tw02.abpilot.xyz
+- name: 🇨🇳 CN 546 SSS
+  type: ss
+  server: gg.efnwgood.top
+  port: 27893
+  cipher: chacha20-ietf-poly1305
+  password: 9bc1eddf-1674-40f1-ad64-00a6fc5c2054
+- name: 🇨🇳 CN 547 SSS
+  type: ss
+  server: 04.forlive.live
+  port: 22261
+  cipher: aes-128-gcm
+  password: 517e4b6c-8190-4f1b-8b77-53973f536225
+- name: 🇨🇳 CN 548 TJN
+  type: trojan
+  server: 112.29.94.24
+  port: 443
+  password: MyYoZhfX
+- name: 🇨🇳 CN 552 SSS
+  type: ss
+  server: 36.212.129.235
+  port: 27257
+  cipher: chacha20-ietf-poly1305
+  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
+- name: 🇨🇳 CN 553 TJN
+  type: trojan
+  server: 5a4u01.a3b5wy.xyz
+  port: 36821
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  sni: au01.abpilot.xyz
+- name: 🇨🇳 CN 554 SSS
+  type: ss
+  server: 04.forlive.live
+  port: 22302
+  cipher: aes-128-gcm
+  password: de572e57-d776-4c52-b8eb-61ba3859f9f1
+- name: 🇨🇳 CN 555 SSS
+  type: ss
+  server: 36.212.129.235
+  port: 27259
+  cipher: chacha20-ietf-poly1305
+  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
+- name: 🇨🇳 CN 556 SSS
+  type: ss
+  server: 101.91.164.138
+  port: 29126
+  cipher: aes-256-gcm
+  password: 34a547cd-0bfe-4905-9076-0d7c9a61f325
+- name: 🇨🇳 CN 557 TJN
+  type: trojan
+  server: 36.138.99.56
+  port: 40316
+  password: MyYoZhfX
+- name: 🇨🇳 CN 559 SSS
+  type: ss
+  server: tw14.ktp.wtf
+  port: 24603
+  cipher: rc4-md5
+  password: dbEcUJ
+- name: 🇨🇳 CN 560 SSS
+  type: ss
+  server: 36.212.129.234
+  port: 27271
+  cipher: chacha20-ietf-poly1305
+  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
+- name: 🇨🇳 CN 561 TJN
+  type: trojan
+  server: 112.29.94.23
+  port: 51003
+  password: MyYoZhfX
+- name: 🇨🇳 CN 562 SSS
+  type: ss
+  server: 36.212.237.146
+  port: 27262
+  cipher: chacha20-ietf-poly1305
+  password: d3c7f55f-e2af-4114-b0a3-058d219e2992
+- name: 🇨🇳 CN 563 TJN
+  type: trojan
+  server: bepshbgp01.004837963.xyz
+  port: 14435
+  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
+  sni: mpvideo.qpic.cn
+- name: 🇨🇳 CN 564 TJN
+  type: trojan
+  server: bepgzbgp01.004837963.xyz
+  port: 14516
+  password: 277E0712-F3F1-0435-CEC5-9177070F30FF
+  sni: mpvideo.qpic.cn
+- name: 🇨🇳 CN 565 SSS
+  type: ss
+  server: 120.199.94.29
+  port: 27271
+  cipher: chacha20-ietf-poly1305
+  password: d3c7f55f-e2af-4114-b0a3-058d219e2992

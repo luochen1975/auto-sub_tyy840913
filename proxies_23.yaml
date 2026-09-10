@@ -1,454 +1,4 @@
 proxies:
-- name: 'dc-udp-🇦🇱 Albania-Tirana #1'
-  type: hysteria2
-  server: giftcard.gateway-stream.com
-  port: 52000
-  password: zvxywxoorgqk3fzb
-- name: 'dc-udp-🇦🇷 Argentina-Buenos Air... #2'
-  type: hysteria2
-  server: giftcard.gateway-stream.com
-  port: 52001
-  password: zvxywxoorgqk3fzb
-- name: dc-udp-🇧🇪 Belgium-Brussels
-  type: hysteria2
-  server: giftcard.gateway-stream.com
-  port: 52008
-  password: zvxywxoorgqk3fzb
-- name: dc-udp-🇨🇾 Cyprus-Nicosia
-  type: hysteria2
-  server: giftcard.gateway-stream.com
-  port: 52019
-  password: zvxywxoorgqk3fzb
-- name: 🇬🇧GB_1|1.7MB/s
-  type: vless
-  server: 2.26.178.154
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-- name: 🇰🇷KR_1|2.6MB/s
-  type: vless
-  server: kr1-r.link-t7.com
-  port: 10046
-  uuid: D2436339-0F26-479A-8064-4D91C2B93652
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇬🇧GB_4|1023KB/s
-  type: vless
-  server: brightharbor.download
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-- name: 🇰🇷KR_2|1.1MB/s
-  type: ss
-  server: 121.46.230.138
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇸🇬SG_1|5.4MB/s
-  type: vless
-  server: sg2-r.link-t7.com
-  port: 10037
-  uuid: D2436339-0F26-479A-8064-4D91C2B93652
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇸🇬SG_2|4.5MB/s
-  type: vless
-  server: sg1-r.link-t7.com
-  port: 10036
-  uuid: D2436339-0F26-479A-8064-4D91C2B93652
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇨🇭CH_2|1.9MB/s
-  type: hysteria2
-  server: 152.67.75.161
-  port: 443
-  password: 3a702d4d1de4949005d8431220e040fb
-- name: 🇳🇱NL_2|2.0MB/s
-  type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: 6b504c50-8535-44cf-8e4e-f8ee674a922e
-  network: ws
-  ws-opts:
-    headers:
-      Host: old-moon-16d0.156-a25.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-- name: 🇰🇷KR_3|5.5MB/s
-  type: vless
-  server: kr3-r.link-t7.com
-  port: 10048
-  uuid: D2436339-0F26-479A-8064-4D91C2B93652
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇰🇷KR_4|5.0MB/s
-  type: vless
-  server: kr2-r.link-t7.com
-  port: 10047
-  uuid: D2436339-0F26-479A-8064-4D91C2B93652
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: US_speednode_0130
-  type: vless
-  server: 38.244.4.1
-  port: 443
-  uuid: 5905d91f-c3bc-4e80-bd66-4b17beb166cb
-  tls: true
-- name: US_speednode_0132
-  type: vless
-  server: 51.81.223.225
-  port: 11094
-  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
-  tls: true
-- name: US_speednode_0135
-  type: vless
-  server: 89.117.123.243
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  tls: true
-- name: US_speednode_0136
-  type: vless
-  server: 155.117.199.13
-  port: 29893
-  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-  tls: true
-- name: US_speednode_0137
-  type: vless
-  server: 155.117.199.13
-  port: 39399
-  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-  tls: true
-- name: US_speednode_0138
-  type: vless
-  server: 107.151.250.68
-  port: 443
-  uuid: 055dce30-0ee3-44c3-b680-be1c95b8d6e7
-  tls: true
-- name: US_speednode_0139
-  type: vless
-  server: wr28-6njjgu.linenheath.site
-  port: 443
-  uuid: 9638a83e-f1f7-4cc8-a602-924965d9534f
-  tls: true
-- name: US_speednode_0142
-  type: vless
-  server: 155.117.199.13
-  port: 39211
-  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-  tls: true
-- name: US_speednode_0144
-  type: vless
-  server: nsuc-znkbig.avonex.top
-  port: 443
-  uuid: ec31f6d7-c71a-413d-93aa-24296805a594
-  tls: true
-- name: 🇨🇭 瑞士 | CHE
-  type: vless
-  server: 45.90.59.15
-  port: 443
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  tls: true
-- name: 🇨🇭 瑞士 | CHE 2
-  type: hysteria2
-  server: 152.67.75.161
-  port: 443
-  password: 3a702d4d1de4949005d8431220e040fb
-- name: 🇩🇪 德国 | DEU
-  type: trojan
-  server: 185.204.169.163
-  port: 8080
-  password: 3cun8ob5macv9vpj
-  sni: 185.204.169.163
-- name: 🇩🇪 德国 | DEU 2
-  type: vless
-  server: aljha.typeshoes.online
-  port: 443
-  uuid: acc591a0-04ae-4676-996a-e6fe01b26ed2
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: aljha.typeshoes.online
-    path: /kdi
-- name: 🇩🇪 德国 | DEU 3
-  type: vless
-  server: 2.26.178.152
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-- name: 🇩🇪 德国 | DEU 4
-  type: vless
-  server: 178.105.30.175
-  port: 443
-  uuid: 4bda4511-b972-46e9-9afb-1e599e1964c8
-  tls: true
-- name: 🇩🇪 德国 | DEU 6
-  type: vless
-  server: 77.90.52.36
-  port: 443
-  uuid: 60300afa-3366-4ae3-959a-7b50438acebb
-  tls: true
-- name: 🇩🇪 德国 | DEU 7
-  type: vless
-  server: vnet.korluma.ir
-  port: 2093
-  uuid: fa80d79a-0410-4e1c-8bc1-1f855e794860
-  tls: true
-- name: 🇫🇷 法国 | FRA
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国 | FRA 2
-  type: trojan
-  server: 104.18.152.179
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国 | FRA 3
-  type: trojan
-  server: 212.183.88.136
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-- name: 🇫🇷 法国 | FRA 4
-  type: trojan
-  server: 104.18.152.187
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国 | FRA 5
-  type: trojan
-  server: 104.18.15.230
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国 | FRA 6
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国 | FRA 7
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇫🇷 法国 | FRA 8
-  type: vless
-  server: 89.117.112.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    headers:
-      Host: vms.lifetime11.workers.dev
-    path: /
-- name: 🇫🇷 法国 | FRA 9
-  type: trojan
-  server: 104.17.111.4
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇬🇧 英国 | GBR
-  type: vless
-  server: en-new.moriarty-web.com
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-- name: 🇬🇧 英国 | GBR 2
-  type: ss
-  server: 35.178.181.116
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 | GBR 3
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-    path: /@Marisa_kristi
-- name: 🇬🇧 英国 | GBR 4
-  type: ss
-  server: 51.38.71.51
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-- name: 🇭🇰 香港 | HKG
-  type: ss
-  server: 212.192.15.86
-  port: 20111
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
-- name: 🇭🇰 香港 | HKG 2
-  type: vless
-  server: 207.57.133.54
-  port: 18582
-  uuid: 37b1e31e-0288-49d3-aa93-fe6a848501a3
-  tls: true
-- name: 🇯🇵 日本 | JPN
-  type: vless
-  server: jp4-r.link-t7.com
-  port: 10034
-  uuid: D2436339-0F26-479A-8064-4D91C2B93652
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇰🇷 韩国 | KOR 3
-  type: vless
-  server: kr4-r.link-t7.com
-  port: 10049
-  uuid: D2436339-0F26-479A-8064-4D91C2B93652
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇳🇱 荷兰 | NLD
-  type: ss
-  server: 134.98.146.79
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Hsr5Jc02SuX2jDI6YLVxSZCS5E4NDTADQUn8iw3KbVA=
-- name: 🇳🇱 荷兰 | NLD 2
-  type: vless
-  server: viper-33.moriarty-web.com
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-- name: 🇳🇱 荷兰 | NLD 4
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
-  network: ws
-  ws-opts:
-    headers:
-      Host: ez-5faafb.esmaoi.workers.dev
-    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-- name: 🇳🇴 挪威 | NOR
-  type: vless
-  server: viper-24.moriarty-web.com
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-- name: 🇳🇴 挪威 | NOR 2
-  type: vless
-  server: viper-23.moriarty-web.com
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-- name: 🇵🇱 波兰 | POL
-  type: vless
-  server: pl-new-ded2.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-- name: 🇷🇴 罗马尼亚 | ROU
-  type: vless
-  server: abvro.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-- name: 🇷🇺 俄罗斯 | RUS
-  type: ss
-  server: 46.17.40.234
-  port: 2011
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  type: vless
-  server: 151.242.189.40
-  port: 443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-    path: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
-- name: 🇺🇸 美国 | USA
-  type: vless
-  server: bounded-crammed.video-streams.org
-  port: 443
-  uuid: eb199167-16d6-45d0-aadb-314cab5a4e72
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: bounded-crammed.video-streams.org
-    path: /ws
-- name: 🇺🇸 美国 | USA 2
-  type: vless
-  server: 188.114.96.6
-  port: 443
-  uuid: a592b4ac-e209-4a13-3cef-539600000005
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 0404.infinityconfig5.workers.dev
-    path: /sync
-- name: 🇺🇸 美国 | USA 3
-  type: vless
-  server: freshjuniper.download
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-- name: 🇺🇸 美国 | USA 4
-  type: vless
-  server: 5.34.178.120
-  port: 443
-  uuid: 9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f
-  tls: true
-- name: 🇺🇸 美国 | USA 5
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: XpnTeam-7
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- name: 🇺🇸 美国 | USA 6
-  type: vless
-  server: 104.19.149.119
-  port: 2087
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: mianfei-73q.pages.dev
-    path: /proxyip=154.3.33.43
-- name: 🇺🇸 美国 | USA 7
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: cc9082e4-9c7c-4cef-a0f5-963363bed638
-  network: ws
-  ws-opts:
-    headers:
-      Host: weathered-mode-8f39.83-33c.workers.dev
-    path: /pyip=ProxyIP.JP.CMLiussss.net
 - name: 🇺🇸 美国 | USA 8
   type: vless
   server: minimize-evenness.cdn-content.com
@@ -738,6 +288,34 @@ proxies:
   port: 101
   password: 4568465a-a435-4569-b3ab-7f606018474f
   skip-cert-verify: true
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.244
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+V2CROSS.COM
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+- name: 伊朗+V2CROSS.COM
+  type: vless
+  server: 31.59.150.174
+  port: 9443
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  tls: true
+  servername: hotcoals.aeternavpn.space
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: 英国+V2CROSS.COM
   type: vless
   server: 31.76.55.181
@@ -747,40 +325,61 @@ proxies:
   servername: ee2.yservice.help
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.21.8.107
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
+- name: 加拿大+V2CROSS.COM
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  network: ws
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /fp
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 172.67.221.242
+  server: 45.74.158.180
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 104.21.58.93
-  port: 443
-  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
+  uuid: 42994234-1689-48bc-8d01-cfb16e7b017a
   tls: true
-  servername: 4-M13.aYUTtHAya-XX.kDnS.fR
-  network: ws
-  ws-opts:
-    headers:
-      Host: 4-m13.aYUtThaYA-xx.KdnS.Fr
-    path: /ED3ZQPu7lqyeDGD58KabZ
+  servername: refersion.com
+  client-fingerprint: chrome
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.210
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.225
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.21.70.21
+  port: 443
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  sni: id1.nathaya.web.id
+- name: 英国+V2CROSS.COM
+  type: trojan
+  server: 176.97.66.175
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.175
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.17.177.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 172.67.188.109
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
 - name: 荷兰+V2CROSS.COM
   type: vless
   server: 89.105.202.115
@@ -790,113 +389,23 @@ proxies:
   servername: g2.steptofsvo.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 澳大利亚+V2CROSS.COM
-  type: hysteria2
-  server: de1.xiaoliyu.cyou
-  port: 4433
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: de1.xiaoliyu.cyou
 - name: 美国+CloudFlare节点
-  type: vless
-  server: 104.21.92.49
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  tls: true
-  servername: 7-m19.omAn-linK.KdNS.FR
-  network: ws
-  ws-opts:
-    headers:
-      Host: 7-m19.OmAn-link.kdnS.FR
-    path: /CjBjB9sn5pCvaSwScc
-- name: 加拿大+安大略省研究网络
-  type: vless
-  server: 130.12.102.125
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
-- name: 巴西圣保罗+CloudFlare节点
   type: trojan
-  server: 188.114.97.7
+  server: 104.16.174.71
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 西班牙+V2CROSS.COM
-  type: vless
-  server: 150.241.68.208
-  port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
-  tls: true
-  servername: cf13.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    headers:
-      Host: cf13.rumedia-cdn.com
-    path: /cdn/v3/live
-- name: 美国 V2CROSS.COM
-  type: vmess
-  server: 165.140.217.2
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 172.67.223.223
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  tls: true
-  servername: 1-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 1-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- name: 伊朗+University+of+Arak
-  type: vless
-  server: 213.176.77.138
-  port: 443
-  uuid: ca19c24a-e5ec-45f8-8cd1-c97d84da5e35
-  tls: true
-  servername: de1.boutique-hotel1108.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  tls: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-    path: /proxyip=bpb.yousef.isegaro.com
-- name: 伊朗+V2CROSS.COM
-  type: vless
-  server: 151.242.17.99
-  port: 8443
-  uuid: a04814d9-d006-4e7b-ae20-8ab304b3b429
-  tls: true
-  servername: de.emvservice.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 美国+CloudFlare节点
+- name: 美国+乔治亚洲亚特兰大Fastly节点
   type: trojan
-  server: 172.67.149.60
+  server: 151.101.56.6
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.26.14.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  password: MiTiVPN
+  sni: ssl.fastly.com
+- name: 广东省广州市+UCloud
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
 - name: 美国 009
   type: trojan
   server: 23.227.38.11
@@ -3080,24 +2589,6 @@ proxies:
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 🇩🇪DE_3|1008KB/s
-  type: trojan
-  server: 50.62.194.195
-  port: 2096
-  password: iwangjie
-  sni: nodes.830901.xyz
-- name: 🇮🇪IE_2|2.7MB/s
-  type: ss
-  server: 63.32.92.226
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇮🇪IE_3|1006KB/s
-  type: ss
-  server: 108.129.176.139
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇩🇪 德国 法兰克福101 - 墙了个墙
   type: trojan
   server: fkvip102.qlgq.fun
@@ -3290,3 +2781,414 @@ proxies:
   port: 50355
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   sni: z264.hongkongnode.top
+- name: 🇬🇧 中转•英国267•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 25238
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z267.hongkongnode.top
+- name: 🇬🇧 中转•英国268•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 11215
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z268.hongkongnode.top
+- name: 🇩🇪 中转•德国302•GPT - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20302
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z302.hongkongnode.top
+- name: 🇩🇪 中转•德国303•GPT - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20303
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z303.hongkongnode.top
+- name: 🇩🇪 中转•德国304•GPT - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20304
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z304.hongkongnode.top
+- name: 🇩🇪 中转•德国305•GPT - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20305
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z305.hongkongnode.top
+- name: 🇩🇪 中转•德国306•GPT - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20306
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z306.hongkongnode.top
+- name: 🇭🇰 广港•香港309•专线 - 飞翔吧
+  type: trojan
+  server: gyl.58n.net
+  port: 20309
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z309.hongkongnode.top
+- name: 🇭🇰 中转•香港102•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 43337
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z102.hongkongnode.top
+- name: 🇭🇰 中转•香港307•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20307
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z307.hongkongnode.top
+- name: 🇭🇰 广港•香港143•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 28678
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z143.hongkongnode.top
+- name: 🇭🇰 广港•香港259•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 24603
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z259.hongkongnode.top
+- name: 🇭🇰 广港•香港269•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 22741
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: dufu.hongkongnode.top
+- name: 🇭🇰 广港•香港278•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20278
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z278.hongkongnode.top
+- name: 🇭🇰 广港•香港279•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20279
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z279.hongkongnode.top
+- name: 🇭🇰 广港•香港294•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20294
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z294.hongkongnode.top
+- name: 🇹🇼 中转•台湾100•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 59021
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x100.flybar.work
+- name: 🇹🇼 中转•台湾91•原生 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 21247
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x91.flybar.work
+- name: 🇹🇼 广港•台湾261•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 33323
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z261.hongkongnode.top
+- name: 🇹🇼 广港•台湾262•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 36821
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z262.hongkongnode.top
+- name: 🇺🇸 中转•美国295•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20295
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z295.hongkongnode.top
+- name: 🇺🇸 中转•美国296•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20296
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z296.hongkongnode.top
+- name: 🇺🇸 中转•美国308•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20308
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z308.hongkongnode.top
+- name: 🇺🇸 中转•美国40•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 16895
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x40.flybar.work
+- name: 🇺🇸 中转•美国41•原生 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 21970
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x41.flybar.work
+- name: 🇺🇸 中转•美国61•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 30767
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z61.hongkongnode.top
+- name: 🇺🇸 广港•美国266•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 56783
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z266.hongkongnode.top
+- name: 🇺🇸 广港•美国288•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20288
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z288.hongkongnode.top
+- name: 🇯🇵 中转•日本298•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20298
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z298.hongkongnode.top
+- name: 🇯🇵 中转•日本300•原生 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20300
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z300.hongkongnode.top
+- name: 🇯🇵 日本•高速114•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 41767
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x114.flybar.work
+- name: 🇯🇵 日本•高速115•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 54178
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x115.flybar.work
+- name: 🇯🇵 日本•高速139•铂金 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20139
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z139.hongkongnode.top
+- name: 🇯🇵 日本•高速140•铂金 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20140
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z140.hongkongnode.top
+- name: 🇯🇵 日本•高速141•铂金 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20141
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z141.hongkongnode.top
+- name: 🇯🇵 日本•高速142•原生 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20142
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: z142.hongkongnode.top
+- name: 🇯🇵 日本•高速59•青铜 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20059
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x59.flybar.work
+- name: 🇯🇵 日本•高速71•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20071
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x71.flybar.work
+- name: 🇯🇵 日本•高速76•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20076
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x76.flybar.work
+- name: 🇸🇬 中转•新加坡299•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20299
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x299.flybar.work
+- name: 🇸🇬 中转•新加坡65•青铜 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 17806
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x65.flybar.work
+- name: 🇸🇬 中转•新加坡83•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 30712
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x83.flybar.work
+- name: 🇸🇬 新加坡•高速129•高速 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20129
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x129.flybar.work
+- name: 🇸🇬 新加坡•高速130•铂金 - 飞翔吧
+  type: trojan
+  server: gy.58n.net
+  port: 20130
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  sni: x130.flybar.work
+- name: C🟠🇭🇰[🎬🤖📺🎭]_dokng.com_617c8d98
+  type: vless
+  server: 64.90.29.53
+  port: 443
+  uuid: bbbad538-910a-8972-278a-718093dc9980
+  tls: true
+- name: C🟠🇸🇬[🤖📺🎪✨]_dokng.com_69c9d83c
+  type: vless
+  server: sg2-r.link-t7.com
+  port: 10037
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: A🟢🇺🇸[🤖📺🎭🎪]_dokng.com_a2c7c222
+  type: vless
+  server: 38.147.173.43
+  port: 32073
+  uuid: b145ee79-42dd-4399-adcc-044660ad306f
+  tls: true
+- name: A🟢🇰🇷[📺🎭🎪📦]_dokng.com_2ac9659b
+  type: vless
+  server: 103.86.47.237
+  port: 443
+  uuid: bbbad538-910a-8972-278a-718093dc9980
+  tls: true
+- name: D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_36f6c104
+  type: hysteria2
+  server: jpsui.jzy88.top
+  port: 54325
+  password: XrgOXIVkpI
+- name: C🟠🇰🇷[🎬🤖📺🎭]_dokng.com_bee92f43
+  type: hysteria2
+  server: 158.180.88.172
+  port: 45534
+  password: z4zi7wYc7s
+- name: C🟠🇰🇷_dokng.com_d872fb22
+  type: vless
+  server: kr1-r.link-t7.com
+  port: 10046
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: D🔴🇯🇵[🤖]_dokng.com_75e7c0dd
+  type: vless
+  server: 149.28.19.44
+  port: 443
+  uuid: 3b0a4993-9c20-4103-8913-bb024d51d949
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: fm3.pages.dev
+    path: /?ed=2560
+- name: A🟢🇺🇸[🎬🤖📺🎭]_dokng.com_97af359b
+  type: vless
+  server: 207.57.128.241
+  port: 48256
+  uuid: c9858759-70bc-4d9d-b43b-b9ce233c0353
+  tls: true
+- name: A🟢🇺🇸[🎬📺🎭🎪]_dokng.com_967990bd
+  type: vless
+  server: 38.207.178.244
+  port: 51895
+  uuid: 51fb4051-a146-45cd-b902-a24df5325b23
+  tls: true
+- name: C🟠🇺🇸[🎬🤖📺🎭]_dokng.com_c980b4b4
+  type: ss
+  server: 121.46.230.232
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: U⚪🏳️_dokng.com_79f3708c
+  type: trojan
+  server: 185.220.238.77
+  port: 11543
+  password: HutaoCloud
+  sni: 185.220.238.77
+- name: C🟠🇬🇧[🎬🤖📺🎪]_dokng.com_4c57f368
+  type: ss
+  server: 35.178.181.116
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: C🟠🇺🇸[🎬🤖📺🎭]_dokng.com_b1b47d3c
+  type: vless
+  server: 179.255.109.57
+  port: 443
+  uuid: bbbad538-910a-8972-278a-718093dc9980
+  tls: true
+- name: C🟠🇺🇸[🎬🤖📺🎭]_dokng.com_fc1370e1
+  type: vless
+  server: 179.255.101.58
+  port: 443
+  uuid: bbbad538-910a-8972-278a-718093dc9980
+  tls: true
+- name: A🟢🇺🇸[🎬🤖📺🎭]_dokng.com_b614883f
+  type: vless
+  server: 207.57.135.46
+  port: 17144
+  uuid: e1be6b8f-a0f5-45a9-8aa6-634c26793325
+  tls: true
+- name: A🟢🇺🇸[🎬📺🎭🎪]_dokng.com_820d5934
+  type: vless
+  server: 207.57.133.52
+  port: 13809
+  uuid: 0b95d6b2-f567-4c81-b298-1884c1f6ec27
+  tls: true
+- name: A🟢🇯🇵[🎬🤖📺🎭]_dokng.com_8476d8df
+  type: vless
+  server: 116.206.93.227
+  port: 443
+  uuid: 99ee7869-84e6-4e07-a7d2-1f56acd3a295
+  tls: true
+- name: U⚪🏳️_dokng.com_81ed1f80
+  type: vless
+  server: 195.133.73.65
+  port: 443
+  uuid: ebd1c0d6-7ff4-4b9f-8692-237517a27a64
+  tls: true
+- name: A🟢🇺🇸[🎬🤖📺🎭]_dokng.com_9a9dd4bc
+  type: vless
+  server: 207.57.133.226
+  port: 45643
+  uuid: 87d6ec62-660b-430a-a89c-dcd85d5aff75
+  tls: true
+- name: D🔴🇫🇮[🎬🤖📺🎭]_dokng.com_ab7137c4
+  type: vless
+  server: 2.26.178.128
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+- name: U⚪🏳️[✨]_dokng.com_7169e124
+  type: vless
+  server: 2.59.134.226
+  port: 443
+  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
+  tls: true
+- name: C🟠🇬🇧[🤖📺🎭🎪]_dokng.com_c99a3dab
+  type: vless
+  server: 45.152.65.157
+  port: 30521
+  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
+  tls: true
