@@ -1,411 +1,105 @@
 proxies:
-- name: 🇺🇸 美国 | USA 8
-  type: vless
-  server: minimize-evenness.cdn-content.com
-  port: 443
-  uuid: 7eeeaa43-4ffd-4223-88a6-484a2be9cb95
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: minimize-evenness.cdn-content.com
-    path: /ws
-- name: 🇺🇸 美国 | USA 9
-  type: trojan
-  server: 104.18.152.144
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 10
-  type: trojan
-  server: render.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 11
-  type: vless
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  uuid: 7eeeaa43-4ffd-4223-88a6-484a2be9cb95
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-    path: /ws
-- name: 🇺🇸 美国 | USA 12
-  type: vless
-  server: 104.17.148.22
-  port: 443
-  uuid: 0432902e-6604-40cd-bbd0-57ab4e5d909f
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: bpb-4dc4958b.hxjkcghchv.workers.dev
-    path: /eyJqdW5rIjoiOENNZnB6WTgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-- name: 🇺🇸 美国 | USA 13
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: ez-5faafb.esmaoi.workers.dev
-    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-- name: 🇺🇸 美国 | USA 14
-  type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇺🇸 美国 | USA 15
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /
-- name: 🇺🇸 美国 | USA 17
-  type: vless
-  server: 104.21.0.87
-  port: 443
-  uuid: 5da16620-0386-4da3-a252-12a6380ed1a6
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: server3.pegibol940.workers.dev
-    path: /eyJqdW5rIjoiUHRlMEpuSzRFY1EyeUUwIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0=
-- name: 🇺🇸 美国 | USA 18
-  type: vless
-  server: 8.35.211.171
-  port: 8443
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: mianfei-73q.pages.dev
-    path: /proxyip=154.3.33.43
-- name: 🇺🇸 美国 | USA 19
-  type: vless
-  server: 130.12.102.125
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-- name: 🇺🇸 美国 | USA 20
-  type: ss
-  server: 166.88.130.218
-  port: 20111
-  cipher: aes-256-gcm
-  password: fbcec76953a2d173
-- name: 🇺🇸 美国 | USA 21
-  type: vless
-  server: 172.67.153.109
-  port: 8080
-  uuid: 45643c5f-ffc2-46f3-b82c-329aea9962d4
-  network: ws
-  ws-opts:
-    headers:
-      Host: server10.sotowoy673.workers.dev
-    path: /eyJqdW5rIjoiQkRZWDhCN01sIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
-- name: 🇺🇸 美国 | USA 22
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇾🇪 YE_136
-  type: trojan
-  server: z-jp1.1card.cc
-  port: 10010
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  sni: www.cloudflare.com
-- name: CN_speednode_0001
-  type: ss
-  server: 120.232.251.128
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: CN_speednode_0002
-  type: ss
-  server: 121.46.230.234
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: CN_speednode_0003
-  type: ss
-  server: 120.232.250.161
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 美国[01]
-  type: trojan
-  server: 107.149.238.99
-  port: 658
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-  skip-cert-verify: true
-- name: 美国[02]中转
-  type: ss
-  server: vip.baima360.com
-  port: 30104
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 美国[03]中转
-  type: ss
-  server: vip.baima360.com
-  port: 17941
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 美国[04]
-  type: trojan
-  server: 45.83.140.22
-  port: 658
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-  skip-cert-verify: true
-- name: 香港[01]
-  type: trojan
-  server: 107.149.254.26
-  port: 158
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-  skip-cert-verify: true
-- name: 香港[04]中转
-  type: ss
-  server: vip.baima360.com
-  port: 65519
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 香港[05]中转
-  type: ss
-  server: vip.baima360.com
-  port: 36511
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 香港[06]
-  type: trojan
-  server: 107.149.254.26
-  port: 159
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-  skip-cert-verify: true
-- name: 香港[07]中转
-  type: ss
-  server: vip.baima360.com
-  port: 36214
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 台湾[01]中转
-  type: ss
-  server: vip.baima360.com
-  port: 41004
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 日本[01]
-  type: ss
-  server: vip.baima360.com
-  port: 15888
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 韩国[01]
-  type: trojan
-  server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
-  port: 443
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 泰国[01]
-  type: trojan
-  server: pop.e2e6e30c-9832-4092-a925-034ef112f346.heima360.cc
-  port: 443
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 法国[01]
-  type: trojan
-  server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
-  port: 443
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 马来西亚[03]
-  type: trojan
-  server: pop.4b470bd6-cc42-4520-9fe6-d7d53a67b022.heima360.cc
-  port: 443
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 澳大利亚[01]
-  type: trojan
-  server: pop.25cbab93-4c08-4a3c-8521-3f3d8c4b36ae.heima360.cc
-  port: 443
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 印度[01]
-  type: trojan
-  server: pop.6801ae4e-545d-471e-8de5-413dc61b505b.heima360.cc
-  port: 443
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 越南[01]
-  type: trojan
-  server: pop.4519b5e5-ebc7-400b-90c5-3eb372a5c2c1.heima360.cc
-  port: 443
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 新加坡[02]
-  type: trojan
-  server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
-  port: 443
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 德国[01]中转
-  type: ss
-  server: vip.baima360.com
-  port: 55997
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 英国[01]中转
-  type: ss
-  server: vip.baima360.com
-  port: 10683
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 巴西[01]中转
-  type: ss
-  server: vip.baima360.com
-  port: 30752
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 俄罗斯[01]中转
-  type: ss
-  server: vip.baima360.com
-  port: 23499
-  cipher: chacha20-ietf-poly1305
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-- name: 马来西亚[01]
-  type: trojan
-  server: 103.75.189.152
-  port: 100
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-  skip-cert-verify: true
-- name: 马来西亚[02]
-  type: trojan
-  server: 103.75.188.189
-  port: 101
-  password: 4568465a-a435-4569-b3ab-7f606018474f
-  skip-cert-verify: true
 - name: 美国+CloudFlare节点
   type: trojan
-  server: 104.18.152.244
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+V2CROSS.COM
-  type: trojan
-  server: 165.215.250.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-- name: 伊朗+V2CROSS.COM
-  type: vless
-  server: 31.59.150.174
-  port: 9443
-  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-  tls: true
-  servername: hotcoals.aeternavpn.space
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 英国+V2CROSS.COM
-  type: vless
-  server: 31.76.55.181
-  port: 443
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  tls: true
-  servername: ee2.yservice.help
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 加拿大+V2CROSS.COM
-  type: vless
-  server: 45.74.158.180
-  port: 443
-  uuid: 42994234-1689-48bc-8d01-cfb16e7b017a
-  tls: true
-  servername: refersion.com
-  client-fingerprint: chrome
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.210
+  server: 104.18.152.161
   port: 443
   password: humanity
   sni: www.ignitelimit.com
 - name: 美国+CloudFlare节点
   type: trojan
-  server: 104.18.152.225
+  server: 104.16.174.117
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.21.70.21
-  port: 443
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
-  sni: id1.nathaya.web.id
-- name: 英国+V2CROSS.COM
-  type: trojan
-  server: 176.97.66.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 172.67.188.109
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-- name: 荷兰+V2CROSS.COM
-  type: vless
-  server: 89.105.202.115
-  port: 443
-  uuid: 4550993c-2191-493a-a612-aaba4a4ec083
-  tls: true
-  servername: g2.steptofsvo.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 - name: 美国+CloudFlare节点
   type: trojan
   server: 104.16.174.71
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-- name: 美国+乔治亚洲亚特兰大Fastly节点
+- name: 美国+CloudFlare节点
   type: trojan
-  server: 151.101.56.6
+  server: 104.18.152.233
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.22.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.16.174.36
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.18.152.208
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.16.174.185
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 俄罗斯+V2CROSS.COM
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  tls: true
+  servername: pr-media.pepro.site
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 美国+V2CROSS.COM
+  type: trojan
+  server: 199.232.78.160
   port: 443
   password: MiTiVPN
   sni: ssl.fastly.com
-- name: 广东省广州市+UCloud
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+- name: 加拿大+V2CROSS.COM
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.17.111.8
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: join-telegram-channel.tirexnet.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: 美国 009
   type: trojan
   server: 23.227.38.11
@@ -2589,6 +2283,36 @@ proxies:
   port: 443
   password: humanity
   sni: www.ignitelimit.com
+- name: 🇰🇷KR_1|1.3MB/s
+  type: ss
+  server: 121.46.230.138
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇮🇪IE_1|4.3MB/s
+  type: ss
+  server: 63.32.92.226
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇨🇦CA_1|4.3MB/s
+  type: ss
+  server: 16.52.168.26
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇮🇪IE_3|1.8MB/s
+  type: ss
+  server: 3.254.74.220
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇨🇦CA_2|4.3MB/s
+  type: ss
+  server: 35.182.182.58
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇩🇪 德国 法兰克福101 - 墙了个墙
   type: trojan
   server: fkvip102.qlgq.fun
@@ -3192,3 +2916,299 @@ proxies:
   port: 30521
   uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
   tls: true
+- name: C🟠🇭🇰[🎬🤖📺🎭]_dokng.com_d658a447
+  type: vless
+  server: 45.144.137.129
+  port: 41923
+  uuid: b28936a7-c11a-4147-8806-b66efd1658a8
+  tls: true
+- name: U⚪🏳️[✈️]_dokng.com_a8482bc1
+  type: vless
+  server: 176.96.138.122
+  port: 443
+  uuid: b229d38c-35ec-4a0b-9c86-8fceba243d6c
+  tls: true
+- name: C🟠🇩🇪[🎭]_dokng.com_b23f918e
+  type: vless
+  server: 178.105.61.61
+  port: 2083
+  uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
+  tls: true
+- name: C🟠🇬🇧[🎬🤖📺🎭]_dokng.com_91b88cb6
+  type: ss
+  server: 51.38.71.51
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+- name: U⚪🏳️[✨]_dokng.com_c68a66d6
+  type: vless
+  server: bz9.wba-pn.ru
+  port: 2053
+  uuid: 9a47a8ff-8cdd-4a35-b765-fbad6d40e0a0
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: bz9.wba-pn.ru
+    path: /
+- name: A🟢🇺🇸[📺🎪📦]_dokng.com_661fa51a
+  type: vless
+  server: 38.147.172.2
+  port: 18830
+  uuid: 4ca5286a-05f1-476f-a5ff-e522a2f41b95
+  tls: true
+- name: A🟢🇺🇸[🎬🤖📺🎭]_dokng.com_cfecff58
+  type: vless
+  server: 207.57.135.123
+  port: 35621
+  uuid: 6f8acdfd-0ce0-4386-ba02-5040da4c6fea
+  tls: true
+- name: U⚪🏳️[🎭🎞️📦✈️]_dokng.com_cc90b49c
+  type: vless
+  server: 186.246.12.242
+  port: 2053
+  uuid: 9a47a8ff-8cdd-4a35-b765-fbad6d40e0a0
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: bz9.wba-pn.ru
+    path: /
+- name: D🔴🇩🇰[🎬🤖📺🎭]_dokng.com_3e0cd9c4
+  type: vless
+  server: 193.180.215.69
+  port: 443
+  uuid: 4cbf8a4f-2ed9-4983-a9ed-548e62a5661e
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgt-3.pages.dev
+    path: /
+- name: D🔴🇰🇷[🎬📺🎭🎪]_dokng.com_8d795582
+  type: vless
+  server: 104.17.58.217
+  port: 443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: fq.jp188.dpdns.org
+    path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
+- name: A🟢🇺🇸[🎬🤖📺🎭]_dokng.com_98f90002
+  type: vless
+  server: america.shoptwo.xyz
+  port: 443
+  uuid: 8316ca95-b32f-49a5-9de6-7e43aa6b710a
+  tls: true
+- name: D🔴🇰🇷[🎬📺🎭🎪]_dokng.com_4c8805ae
+  type: vless
+  server: 104.17.189.78
+  port: 2053
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: fq.jp188.dpdns.org
+    path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
+- name: A🟢🇺🇸_dokng.com_b5937681
+  type: ss
+  server: cdn.shopify.com
+  port: 80
+  cipher: 2022-blake3-aes-128-gcm
+  password: YTE1ZWU4ZTEyZjc3YmEzZA==:ZjQ4NzExMzUtMGYzNy00NA==
+- name: C🟠🇰🇷_dokng.com_f9dd3272
+  type: ss
+  server: 121.46.230.138
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: A🟢🇺🇸[🎪]_dokng.com_4e4c3dfc
+  type: vless
+  server: 207.57.134.153
+  port: 38156
+  uuid: 3940f40e-1d33-420c-90ca-1896e4911d2c
+  tls: true
+- name: C🟠🇺🇸[🎬📺🎭🎪]_dokng.com_8cceac04
+  type: hysteria2
+  server: 24.233.8.109
+  port: 443
+  password: 8294f130408299df8cab08c80bf6f819
+- name: D🔴🇰🇷[🎬🤖📺🎭]_dokng.com_515866ab
+  type: vless
+  server: 110.10.178.240
+  port: 443
+  uuid: 3b0a4993-9c20-4103-8913-bb024d51d949
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: fm3.pages.dev
+    path: /?ed=2560
+- name: D🔴🇪🇸[🎬📺🎭🎪]_dokng.com_2f0aea35
+  type: vless
+  server: 172.233.97.34
+  port: 443
+  uuid: 4cbf8a4f-2ed9-4983-a9ed-548e62a5661e
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgt-3.pages.dev
+    path: /
+- name: C🟠🇦🇺[🎬🤖📺🎭]_dokng.com_256bd141
+  type: hysteria2
+  server: 152.67.115.203
+  port: 443
+  password: 633bc3be486b646190661ac2387c150a
+- name: D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_0cd50cb7
+  type: vless
+  server: 192.220.28.221
+  port: 2083
+  uuid: 4cbf8a4f-2ed9-4983-a9ed-548e62a5661e
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgt-2s.pages.dev
+    path: /
+- name: A🟢🇺🇸[🎬📺🎭🎪]_dokng.com_0917aa03
+  type: vless
+  server: 207.57.131.118
+  port: 36297
+  uuid: 82267970-9ba7-44f9-a552-e69720df81f1
+  tls: true
+- name: U⚪🏳️[🎬📺🎭🎪]_dokng.com_f74b03b3
+  type: vless
+  server: 104.25.199.149
+  port: 80
+  uuid: 50414e45-4c5f-5a45-5553-5dd075c8ae9b
+  network: ws
+  ws-opts:
+    headers:
+      Host: web-app-gjn19f.z0zxy6ehuwgs.workers.dev
+    path: /api/ws
+- name: D🔴🇮🇳[📺🎭🎪✨]_dokng.com_517000a6
+  type: vless
+  server: 52.66.200.252
+  port: 443
+  uuid: 9f9dfdcb-6a45-4c86-b6a1-28c6c504ed5a
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: fm3.pages.dev
+    path: /?ed=2560
+- name: A🟢🇺🇸[🎬🤖📺🎭]_dokng.com_ecea1eb5
+  type: vless
+  server: 68.64.180.228
+  port: 8797
+  uuid: 7cfc0cb0-f127-4786-9a01-618a7ef064bb
+  tls: true
+- name: A🟢🇺🇸[🎬🤖📺🎭]_dokng.com_e27f5b2d
+  type: vless
+  server: 207.57.131.123
+  port: 26631
+  uuid: 906f32ff-9293-46ee-a694-a5eee40b8b42
+  tls: true
+- name: D🔴🇫🇷[🤖📺🎭🎪]_dokng.com_1935be73
+  type: trojan
+  server: 88.198.82.150
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: A🟢🇺🇸[🎬🤖📺🎭]_dokng.com_a8d2512a
+  type: vless
+  server: 207.57.133.237
+  port: 56109
+  uuid: 751b489c-27e6-4bae-b43c-f02fb304d768
+  tls: true
+- name: C🟠🇭🇰[🎬🤖📺🎭]_dokng.com_e495e856
+  type: vless
+  server: 45.136.14.251
+  port: 23974
+  uuid: 8aea14f7-5a77-4fa7-9924-f3921abc4cc2
+  tls: true
+- name: C🟠🇬🇧[🤖📺🎭🎪]_dokng.com_c0c39940
+  type: vless
+  server: 45.152.64.9
+  port: 11763
+  uuid: fe564b09-1fd8-4053-934b-3106350e4272
+  tls: true
+- name: A🟢🇺🇸[📺🎭🎪]_dokng.com_49a9eb72
+  type: vless
+  server: 207.57.133.49
+  port: 23156
+  uuid: 46554735-415f-4be5-9390-a19dc430a15c
+  tls: true
+- name: D🔴🇫🇮[🎬🤖📺🎭]_dokng.com_d14ad3d6
+  type: vless
+  server: 94.237.18.53
+  port: 443
+  uuid: 4cbf8a4f-2ed9-4983-a9ed-548e62a5661e
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: edgt-3.pages.dev
+    path: /
+- name: D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_b9a2621f
+  type: vless
+  server: 130.12.102.125
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  tls: true
+- name: C🟠🇹🇷[🎬🤖📺🎭]_dokng.com_10c828bb
+  type: vless
+  server: rital-caca.tempfast.ir
+  port: 4323
+  uuid: 78440584-c334-44a8-bab1-8b1a7d08012b
+  tls: true
+- name: C🟠🇭🇰[📺🎭🎞️📦]_dokng.com_7162b579
+  type: vless
+  server: 193.134.211.201
+  port: 64136
+  uuid: cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c
+  tls: true
+- name: D🔴🇷🇺[📺✨📦]_dokng.com_7e45da41
+  type: vless
+  server: 185.147.27.183
+  port: 8443
+  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  tls: true
+- name: C🟠🇭🇰[🎬📺🎭🎪]_dokng.com_0a62ae7c
+  type: vless
+  server: 45.144.137.55
+  port: 10766
+  uuid: 2b61c167-5563-43ab-94a0-7d02c0a27ca5
+  tls: true
+- name: U⚪🏳️[🎬📺🎭🎪]_dokng.com_db4e9584
+  type: vless
+  server: 38.207.178.88
+  port: 5585
+  uuid: 356d377d-2cdf-4a3f-8bc3-44452f9718b7
+  tls: true
+- name: A🟢🇺🇸[🎬📺🎭🎪]_dokng.com_908fac7f
+  type: vless
+  server: 207.57.135.125
+  port: 31895
+  uuid: 5e483359-08a3-46d9-904b-8f1f469577ac
+  tls: true
+- name: D🔴🇸🇬[🎬🤖📺🎭]_dokng.com_f0cfb41d
+  type: vless
+  server: 165.22.104.36
+  port: 443
+  uuid: 9f9dfdcb-6a45-4c86-b6a1-28c6c504ed5a
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: fm3.pages.dev
+    path: /?ed=2560
+- name: C🟠🇰🇷[🎬🤖📺🎭]_dokng.com_a253ccb7
+  type: hysteria2
+  server: 152.70.237.123
+  port: 2053
+  password: maintell
