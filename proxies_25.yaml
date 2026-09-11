@@ -1,4 +1,89 @@
 proxies:
+- name: 🇸🇬SG_5|640KB/s|A004-260618 01
+  type: vless
+  server: 91.192.81.214
+  port: 443
+  uuid: 607801ac-dbdd-4938-a167-129015d9978e
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸US_38|1.1MB/s|A004-260618 01
+  type: vless
+  server: 167.17.69.171
+  port: 443
+  uuid: 00144519-7e0d-476b-8d28-435576af9262
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇬🇧GB_4|217KB/s|M002-260618 01
+  type: vless
+  server: staging.lastilhame.monster
+  port: 443
+  uuid: 106d20f6-d70a-40e2-b69b-8e82baf8d117
+  tls: true
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸US_368|964KB/s|B007-260618 01
+  type: trojan
+  server: 64.94.95.117
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: 64.94.95.117
+  skip-cert-verify: true
+- name: 🇷🇺RU_1|3.5MB/s|C002-260622 01
+  type: hysteria2
+  server: 91.196.32.163
+  port: 443
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: 91.196.32.163
+- name: 🇬🇧GB_5|364KB/s|M002-260618 01
+  type: vless
+  server: staging.lastilhame.monster
+  port: 443
+  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
+  tls: true
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇬🇧GB_6|364KB/s|M002-260618 01
+  type: vless
+  server: staging.lastilhame.monster
+  port: 443
+  uuid: 2f6e2b17-4d5e-4a12-8979-f53fdd347580
+  tls: true
+  servername: www.mozilla.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇺🇸US_42|714KB/s|T001-260618 01
+  type: vless
+  server: 31.58.50.200
+  port: 8443
+  uuid: 8a02c9f7-936a-4d78-a88f-c1e9229f4d5d
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇺🇸US_43|654KB/s|A004-260618 01
+  type: vless
+  server: 31.58.50.200
+  port: 8443
+  uuid: e27dce75-b33b-49b6-afb7-17e29ce67bb1
+  tls: true
+  servername: tradingview.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: 🇺🇸US_44|693KB/s|A004-260618 01
+  type: vless
+  server: 169.40.42.184
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
 - name: 🇫🇷FR_53|1.5MB/s|M002-260618 01
   type: vless
   server: 104.18.42.163
@@ -4074,85 +4159,4 @@ proxies:
   tls: true
   servername: zvukipro.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇮🇹IT_4|241KB/s|A004-260618 01
-  type: ss
-  server: 91.201.65.122
-  port: 9065
-  cipher: aes-256-cfb
-  password: PeHSHm5SqEjBuEXE
-- name: 🇱🇻LV_8|1.9MB/s|A004-260618 01
-  type: ss
-  server: 185.135.86.175
-  port: 9007
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
-- name: 🇬🇧GB_54|132KB/s|A004-260618 01
-  type: vless
-  server: 95.154.237.50
-  port: 443
-  uuid: 6e77d410-b5b3-4f7c-9674-7ae4fe70f583
-  tls: true
-  servername: lanacion.com.ar
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇬🇧GB_55|289KB/s|M002-260618 01
-  type: vless
-  server: 107.181.151.39
-  port: 443
-  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
-  tls: true
-  servername: www.mozilla.org
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇬🇧GB_56|1.4MB/s|A004-260618 01
-  type: vless
-  server: 78.129.150.110
-  port: 443
-  uuid: dad2115c-0644-40a7-96d2-652bc30dfdfd
-  tls: true
-  servername: strapi.io
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇧🇷BR_1|1.2MB/s|R002-260618 01
-  type: hysteria2
-  server: go2.wwwinternetvideo.click
-  port: 443
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-- name: 🇦🇪AE_41|5.1MB/s|A004-260618 01
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: c1531de5-1fde-4a15-b413-5e4456a16337
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇨🇦CA_13|385KB/s|A004-260618 01
-  type: vless
-  server: 51.161.199.124
-  port: 443
-  uuid: 643cdd4d-8731-440b-9e46-9496f593aa27
-  tls: true
-  servername: suetinklerartglass.co.uk
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: ❓Other_65|94KB/s|A004-260618 01
-  type: vless
-  server: 51.161.199.124
-  port: 443
-  uuid: a407c73c-acca-4530-97d9-13f99768b6bf
-  tls: true
-  servername: suetinklerartglass.co.uk
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: 🇦🇪AE_42|336KB/s|A004-260618 01
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: fbf81d6c-b115-485f-99a6-f42f46fe36fd
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
   flow: xtls-rprx-vision
