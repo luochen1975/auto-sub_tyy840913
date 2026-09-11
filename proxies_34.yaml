@@ -1,91 +1,4 @@
 proxies:
-- name: 🇬🇧GB_306|2.3MB/s|B007-260618 01
-  type: vless
-  server: 194.34.175.11
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: 🇵🇱PL_33|637KB/s|B007-260618 01
-  type: vless
-  server: 144.31.5.3
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  servername: pl4.moritech.net
-  flow: xtls-rprx-vision
-- name: 🇵🇱PL_34|724KB/s|B007-260618 01
-  type: vless
-  server: 50.7.248.234
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  servername: viper-22.moriarty-web.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_888|680KB/s|F003-260618 01
-  type: vless
-  server: 104.21.13.173
-  port: 443
-  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
-  tls: true
-  servername: 0-m13.4B49f101-6328-41C6-953d-00CEB79B58AC.KdnS.FR
-  network: ws
-  ws-opts:
-    headers:
-      Host: 0-M13.4b49f101-6328-41C6-953D-00CeB79B58AC.kdNs.fr
-    path: /ED3ZQPu7lqyeDGD58KabZ
-- name: 🇺🇸US_889|665KB/s|F003-260618 01
-  type: vless
-  server: 104.21.41.153
-  port: 443
-  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
-  tls: true
-  servername: 1-m13.aYuttHAYA-X.kDnS.FR
-  network: ws
-  ws-opts:
-    headers:
-      Host: 1-M13.AyutThAYa-x.kdNs.fR
-    path: /ED3ZQPu7lqyeDGD58KabZ
-- name: 🇺🇸US_890|865KB/s|F003-260618 01
-  type: vless
-  server: 172.67.184.123
-  port: 443
-  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
-  tls: true
-  servername: 0-m13.35C73e3F-b0ae-4Ae0-b41F-62DFD753A988.KdNs.Fr
-  network: ws
-  ws-opts:
-    headers:
-      Host: 0-m13.35c73e3f-b0aE-4AE0-B41f-62dFd753A988.kdNS.fr
-    path: /ED3ZQPu7lqyeDGD58KabZ
-- name: 🇺🇸US_891|677KB/s|F003-260618 01
-  type: vless
-  server: 104.21.41.158
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  tls: true
-  servername: 0-m19.noRth-koREa-pARk.KDnS.FR
-  network: ws
-  ws-opts:
-    headers:
-      Host: 0-M19.nORTh-KoReA-park.KDNs.FR
-    path: /CjBjB9sn5pCvaSwScc
-- name: 🇫🇷FR_2086|764KB/s|M003-260806 01
-  type: trojan
-  server: 104.21.8.107
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇬🇧GB_307|315KB/s|M003-260806 01
-  type: vless
-  server: 130.12.102.62
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
 - name: 🇬🇧GB_308|2.3MB/s|M003-260806 01
   type: vless
   server: 194.34.175.19
@@ -4674,3 +4587,57 @@ proxies:
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
   password: 0ZQmK4h6FYfJ1g8JU3Jmh0vKH6WlCFtEkcmbSRCyAoM=
+- name: 未知 SS-11 | free-nodes
+  type: ss
+  server: 130.61.41.25
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 0g/TsnuY8fpXjGhv1QMzb/3s3CD00hkrUffPgishOvo=
+- name: 未知 SS-12 | free-nodes
+  type: ss
+  server: 158.180.50.45
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 0x6PTrJCGMD7Pz0EQnpRsIKEJ3Cy55hPKAAgJiA58ic=
+- name: 未知 SS-13 | free-nodes
+  type: ss
+  server: 89.168.83.14
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 0yzaYXEBbvQSJurLwkByo3Yjq+/wVZto1Oo9V4z3i+E=
+- name: 未知 SS-14 | free-nodes
+  type: ss
+  server: 158.178.155.37
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 14zduVOpqZOK6iayk+xd34h98ymp6qr2NuJj2xtWXiY=
+- name: 未知 SS-15 | free-nodes
+  type: ss
+  server: 129.151.84.137
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1MX/11eaRm2ObfaODRKi4ZNAWWxrsaPFCKtiyssCJMs=
+- name: 未知 SS-16 | free-nodes
+  type: ss
+  server: 130.61.46.211
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1n2jXlack06RUjGg0EB2ZyyorM76puOm/J6DIvNSxc8=
+- name: 未知 SS-17 | free-nodes
+  type: ss
+  server: 161.118.242.201
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1afbKC3jNUktuuCAaP8cpCX3zhmd3q5Fs5bDgI8zrH0=
+- name: 未知 SS-18 | free-nodes
+  type: ss
+  server: 161.153.115.187
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2ecH6KjZ47PFvs90eNt1AAstlT3n5eZergD2O5IXEas=
+- name: 未知 SS-19 | free-nodes
+  type: ss
+  server: 163.176.56.46
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw=

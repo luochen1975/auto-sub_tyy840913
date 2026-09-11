@@ -1,58 +1,4 @@
 proxies:
-- name: 未知 SS-511 | free-nodes
-  type: ss
-  server: 64.177.90.30
-  port: 8388
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-- name: 未知 SS-512 | free-nodes
-  type: ss
-  server: 139.84.166.47
-  port: 8388
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
-- name: 未知 SS-513 | free-nodes
-  type: ss
-  server: 94.183.124.95
-  port: 82
-  cipher: aes-256-gcm
-  password: EMIruFl6nN37LDQxCIwstG09haCBkyjvZVjWIMOQ0Jk=
-- name: 未知 SS-514 | free-nodes
-  type: ss
-  server: c26s1.portablesubmarines.com
-  port: 12323
-  cipher: aes-256-gcm
-  password: HWbaU4kDuRc4Xuow
-- name: 未知 SS-515 | free-nodes
-  type: ss
-  server: 79.175.134.49
-  port: 39880
-  cipher: aes-256-gcm
-  password: PcOE52lyGO6MFRm6/m5hfuC3NpNockDvcnNYgq18Ni4=
-- name: 未知 SS-516 | free-nodes
-  type: ss
-  server: 15.204.246.107
-  port: 8888
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 未知 SS-517 | free-nodes
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 未知 SS-518 | free-nodes
-  type: ss
-  server: 15.204.246.189
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 未知 SS-519 | free-nodes
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
 - name: 未知 SS-520 | free-nodes
   type: ss
   server: 8.210.171.48
@@ -4320,3 +4266,94 @@ proxies:
   network: ws
   ws-opts:
     path: /arki
+- name: 未知 VMESS-1013 | free-nodes
+  type: vmess
+  server: 107.173.27.219
+  port: 6666
+  uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /youtube
+- name: 未知 VMESS-1014 | free-nodes
+  type: vmess
+  server: 107.173.7.186
+  port: 2095
+  uuid: 383737a2-a196-44b6-a9ac-4f8cc23c9637
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 383737a2-a196-44b6-a9ac-4f8cc23c9637-vm
+- name: 未知 VMESS-1015 | free-nodes
+  type: vmess
+  server: 108.165.236.142
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- name: 未知 VMESS-1016 | free-nodes
+  type: vmess
+  server: 109.248.162.194
+  port: 443
+  uuid: 94e32bc4-9d3c-4d39-9858-7adb3aa5c754
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 未知 VMESS-1017 | free-nodes
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+- name: 未知 VMESS-1018 | free-nodes
+  type: vmess
+  server: 115.89.98.231
+  port: 10509
+  uuid: 4f1c1ca1-a422-4014-9423-04e39ed73b03
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+- name: 未知 VMESS-1019 | free-nodes
+  type: vmess
+  server: 118.193.57.167
+  port: 49667
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /d46bf492
+- name: 未知 VMESS-1020 | free-nodes
+  type: vmess
+  server: 128.242.109.20
+  port: 17432
+  uuid: 6cc4a312-2d18-4694-b92d-0af1c039e697
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+- name: 未知 VMESS-1021 | free-nodes
+  type: vmess
+  server: 13.214.178.3
+  port: 443
+  uuid: 714d82c3-184d-457b-bbb3-d8ad3861e5ef
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess
