@@ -1,4 +1,24 @@
 proxies:
+- name: 🇫🇷FR_783|5.4MB/s|T001-260618 01
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 737678dc-cc15-4643-85a4-ca9359df1aa4
+  network: ws
+  ws-opts:
+    headers:
+      Host: patient-moon-c61f.ggfsa55.workers.dev
+    path: /
+- name: 🇫🇷FR_784|422KB/s|T001-260618 01
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  network: ws
+  ws-opts:
+    headers:
+      Host: courses.mftplus.qzz.io
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
 - name: 🇫🇷FR_785|678KB/s|T001-260618 01
   type: vless
   server: 188.114.97.6
@@ -4980,24 +5000,3 @@ proxies:
     headers:
       Host: muddy-queen-cdda.181-cf9.workers.dev
     path: /
-- name: 🇫🇷FR_1249|568KB/s|B007-260618 01
-  type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: 160ca353-676d-4b7f-a041-0289e388b865
-  network: ws
-  ws-opts:
-    headers:
-      Host: proud-cloud-7bdd.208-a52.workers.dev
-    path: /
-- name: 🇫🇷FR_1250|831KB/s|B007-260618 01
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: billowing-fire-a10b.301-d6c.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net

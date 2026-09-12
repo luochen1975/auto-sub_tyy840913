@@ -1,4 +1,16 @@
 proxies:
+- name: 🇬🇧GB_25|4.8MB/s|A004-260618 01
+  type: ss
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+- name: 🇫🇷FR_98|1.6MB/s|B007-260618 01
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
 - name: 🇫🇷FR_99|1.9MB/s|T001-260618 01
   type: vless
   server: 172.64.53.227
@@ -4341,18 +4353,6 @@ proxies:
 - name: 🇫🇷FR_396|1.2MB/s 01
   type: trojan
   server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 🇳🇱NL_247|3.6MB/s|A003-260618 01
-  type: ss
-  server: 158.173.20.208
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇫🇷FR_397|1.3MB/s|A001-260618 01
-  type: trojan
-  server: 162.159.136.234
   port: 443
   password: humanity
   sni: www.ignitelimit.com

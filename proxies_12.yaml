@@ -1,4 +1,18 @@
 proxies:
+- name: 🇷🇺RU俄罗斯丨yoyapai.com_6
+  type: vless
+  server: 200.165.228.51
+  port: 2200
+  uuid: e3a625d4-5adb-463d-bbff-bbe06b8e2c5c
+  network: ws
+  ws-opts:
+    path: /v1
+- name: 🇫🇮FI芬兰丨yoyapai.com_1
+  type: vless
+  server: 200.165.225.174
+  port: 443
+  uuid: b6b92515-13c5-4e6e-9fea-8db2d44628a0
+  tls: true
 - name: 🇪🇪EE爱沙尼亚丨yoyapai.com
   type: vless
   server: 5.175.178.43
@@ -3334,15 +3348,3 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
-- name: 🇬🇧GB_25|4.8MB/s|A004-260618 01
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-- name: 🇫🇷FR_98|1.6MB/s|B007-260618 01
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
